@@ -82,3 +82,44 @@ tr:hover td { background: #fbfcfa; }
 
 .subject-subunits { display: flex; flex-wrap: wrap; gap: 5px; margin: 8px 0; }
 .subject-subunits span { display: inline-flex; padding: 3px 7px; border-radius: 999px; background: #f0f3ef; color: #4f5a51; font-size: 11px; border: 1px solid rgba(0,0,0,.06); }
+
+/* v7 GitHub-ready data editor refinements */
+body { background: linear-gradient(135deg, #f5f7f2 0%, #edf2ec 100%); }
+.sidebar { box-shadow: 12px 0 36px rgba(30,42,33,.12); }
+.editor-notice, .filter-bar, .events-table-container, .subject-card, .import-card, .export-card {
+  box-shadow: 0 12px 34px rgba(30,42,33,.07);
+}
+.events-table-container { overflow-x: auto; }
+.events-table { min-width: 920px; }
+.title-cell strong { font-size: 12.5px; }
+.title-cell small { max-height: 3.1em; overflow: hidden; }
+.action-cell .btn { min-width: 48px; }
+.type-badge { min-width: 42px; text-align: center; }
+.date-cell { letter-spacing: .02em; }
+.subject-card { transition: transform .18s ease, box-shadow .18s ease; }
+.subject-card:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(30,42,33,.10); }
+
+@media (max-width: 1100px) {
+  .filter-bar { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .section-header { align-items: flex-start; }
+}
+@media (max-width: 760px) {
+  .sidebar-header { padding: 14px; }
+  .sidebar-header h2 { font-size: 17px; }
+  .sidebar-header p { display: none; }
+  .sidebar-nav { flex-direction: row; overflow-x: auto; padding: 10px; gap: 8px; }
+  .nav-item { flex: 0 0 auto; padding: 9px 10px; font-size: 13px; }
+  .sidebar-footer { display: none; }
+  .main-content { padding: 12px; }
+  .editor-notice { font-size: 12px; line-height: 1.55; }
+  .section-header { flex-direction: column; gap: 10px; }
+  .section-header h1 { font-size: 22px; }
+  .filter-bar { grid-template-columns: 1fr; padding: 10px; }
+  .events-table { min-width: 820px; }
+  .pagination { flex-wrap: wrap; }
+  .page-jump { width: 100%; margin-left: 0; }
+  .subjects-grid { grid-template-columns: 1fr; }
+  .modal { padding: 10px; align-items: flex-end; }
+  .modal-content, .modal-content.wide { width: 100%; max-height: 94dvh; border-radius: 18px 18px 0 0; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+}

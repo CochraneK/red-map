@@ -1,8 +1,12 @@
 # 红军长征星火路线
 
-![项目截图](docs/screenshot.png)
+一个以“星火铺开、分路前进、最终会师”为叙事逻辑的红军长征交互式路线项目。项目支持多路红军独立行进、敌军围追堵截示意线、人物事迹、战役会议、会师节点、动态统计、《七律·长征》诗句触发效果，以及适配桌面端与手机端的展示布局。
 
-一个以“星火铺开、分路前进、最终会师”为叙事逻辑的红军长征交互式路线项目。项目支持多路红军独立行进、敌军围追堵截示意线、人物事迹、战役会议、会师节点、动态统计与《七律·长征》诗句触发效果。
+![项目首页预览](docs/readme-home.png)
+
+<p align="center">
+  <img src="docs/readme-mobile.png" alt="手机端预览" width="260" />
+</p>
 
 ## 功能特性
 
@@ -13,7 +17,14 @@
 - **下属部队展示**：右侧路线面板展示各路红军下属部队，采用小型标签，不参与勾选筛选。
 - **动态统计**：参征人数、损失人数、胜利节点、歼俘敌、里程推进、历时等随时间推进动态变化。
 - **中英文版本**：中文首页 `index.html`，英文页面 `index-en.html`，也可在页面右上角切换语言。
+- **手机端适配**：小屏幕下会压缩顶部标题、路线面板、动态统计和底部播放器，避免固定面板互相重叠。
 - **本地数据编辑器**：后台可编辑事件和主体，并支持导出 JSON。
+
+## 数据管理界面
+
+后台用于本地整理事件、主体、颜色、下属部队和统计字段。它不会直接写入线上文件；编辑后需要导出 JSON 并替换 `data/long_march_events.json`。
+
+![数据管理界面预览](docs/readme-admin.png)
 
 ## 快速启动
 
@@ -91,9 +102,20 @@ data/long_march_events.json
 ├── data_edit/                    # 人工维护表格
 ├── admin/                        # 本地数据编辑器
 ├── tools/                        # 表格转 JSON 脚本
-├── docs/screenshot.png           # README 截图
+├── docs/readme-home.png          # 首页展示图
+├── docs/readme-mobile.png        # 手机端展示图
+├── docs/readme-admin.png         # 数据管理展示图
 └── start_server.bat              # Windows 一键启动
 ```
+
+## 发布到 GitHub Pages
+
+1. 将整个项目提交到 GitHub 仓库。
+2. 在仓库设置中启用 GitHub Pages。
+3. 选择 `main` 分支和根目录 `/` 作为发布源。
+4. 发布后访问仓库生成的 Pages 地址即可。
+
+注意：如果线上页面样式拥挤，优先检查浏览器缩放比例是否为 100%，并确认最新的 `css/style.css` 已经随仓库提交。
 
 ## 注意事项
 
@@ -105,9 +127,13 @@ data/long_march_events.json
 
 # Long March Spark Routes
 
-![Project screenshot](docs/screenshot-en.png)
+An interactive Long March route project built around the narrative logic of scattered revolutionary “sparks,” multiple marching columns, pressure from pursuit and blockade, and final convergence in the northwest. The layout is optimized for both desktop and mobile screens.
 
-An interactive Long March route project built around the narrative logic of scattered revolutionary “sparks,” multiple marching columns, pressure from pursuit and blockade, and final convergence in the northwest.
+![Desktop preview](docs/readme-home-en.png)
+
+<p align="center">
+  <img src="docs/readme-mobile.png" alt="Mobile preview" width="260" />
+</p>
 
 ## Features
 
@@ -118,7 +144,14 @@ An interactive Long March route project built around the narrative logic of scat
 - **Sub-unit display**: The right-side route panel lists smaller sub-units as compact tags without adding extra checkboxes.
 - **Dynamic statistics**: Participants, losses, victory nodes, enemy defeated, mileage, and elapsed time update as the timeline advances.
 - **Bilingual pages**: Chinese page at `index.html`, English page at `index-en.html`, plus an in-page language switcher.
+- **Mobile responsive layout**: On small screens, the title, route panel, statistics panel, and player are compacted to avoid overlay collisions.
 - **Local data editor**: The admin panel allows editing events and subjects, then exporting JSON.
+
+## Data Editor
+
+The data editor is designed for local curation of events, subjects, colors, sub-units, and statistics fields. It does not directly write to deployed files; export JSON and replace `data/long_march_events.json` after editing.
+
+![Data editor preview](docs/readme-admin.png)
 
 ## Quick Start
 
@@ -183,6 +216,15 @@ The build script converts it to ISO date format in JSON:
 ```text
 1935-01-15
 ```
+
+## Publishing to GitHub Pages
+
+1. Commit the entire project to a GitHub repository.
+2. Enable GitHub Pages in repository settings.
+3. Select the `main` branch and root `/` as the publishing source.
+4. Open the generated Pages URL after deployment.
+
+If the deployed page looks crowded, first verify browser zoom is set to 100% and confirm the latest `css/style.css` has been committed.
 
 ## Notes
 
