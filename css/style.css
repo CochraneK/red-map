@@ -797,3 +797,112 @@ body { overscroll-behavior: none; }
     border-radius: 8px;
   }
 }
+
+/* v11 patch: remove dynamic statistics; mobile keeps only the map and playback bar. */
+.stats-panel {
+  display: none !important;
+}
+
+@media (min-width: 901px) {
+  .timeline-control {
+    width: min(860px, calc(100vw - 420px)) !important;
+    min-width: 430px !important;
+  }
+}
+
+@media (max-width: 1180px) and (min-width: 901px) {
+  .timeline-control {
+    width: min(720px, calc(100vw - 360px)) !important;
+    min-width: 360px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .header,
+  .admin-link,
+  .media-panel,
+  .comment-box,
+  .danmu-layer,
+  .mobile-panel-tabs,
+  .force-panel,
+  .stats-panel,
+  .event-panel,
+  .narrative-banner,
+  .location-label-wrapper,
+  body.mobile-force-open .force-panel,
+  body.mobile-stats-open .stats-panel,
+  body.mobile-detail-open .event-panel.show {
+    display: none !important;
+  }
+
+  #container,
+  #map {
+    height: 100dvh !important;
+  }
+
+  .timeline-control {
+    display: block !important;
+    left: 8px !important;
+    right: 8px !important;
+    bottom: 8px !important;
+    transform: none !important;
+    width: auto !important;
+    min-width: 0 !important;
+    padding: 9px 10px 8px !important;
+    border-radius: 16px !important;
+    z-index: 1400 !important;
+  }
+
+  .timeline-info {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    margin-bottom: 4px !important;
+  }
+
+  .date-display,
+  .timeline-labels {
+    display: none !important;
+  }
+
+  .event-title {
+    grid-column: 1 !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    line-height: 1.25 !important;
+    max-width: 100% !important;
+  }
+
+  .timeline-slider-container {
+    height: 18px !important;
+  }
+
+  .player-controls {
+    gap: 7px !important;
+    margin-top: 5px !important;
+  }
+
+  .control-btn {
+    width: 29px !important;
+    height: 29px !important;
+  }
+
+  .play-btn {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .speed-control {
+    font-size: 10.5px !important;
+    margin-left: 0 !important;
+  }
+
+  .speed-control select {
+    max-width: 58px !important;
+    padding: 4px 5px !important;
+  }
+
+  .leaflet-control-zoom,
+  .leaflet-control-attribution {
+    display: none !important;
+  }
+}
