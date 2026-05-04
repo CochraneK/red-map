@@ -329,26 +329,122 @@ function reconcileLabels(events, latestByForce) {
     used.add(key);
     candidates.push({ key, event, force, text, coords });
   });
+
   const wanted = new Set(candidates.map(c => c.key));
-  candidates.forEach((c, idx) => {
+  const placements = computeMeetingLabelPlacements(candidates, events);
+
+  candidates.forEach(c => {
+    const placement = placements.get(c.key);
+    if (!placement) return;
     const color = c.force.isEnemy ? '#777' : (c.force.color || '#555');
-    const cls = ['location-label', c.event.type === '会师' ? 'location-label-meeting' : '', c.event.poem ? 'location-label-poem' : '', c.force.isEnemy ? 'location-label-enemy' : ''].join(' ');
-    const html = `<div class="${cls}" style="--label-color:${escapeAttr(color)}"><span>${escapeHTML(c.text)}</span></div>`;
-    const icon = L.divIcon({ className:'location-label-wrapper', html, iconSize:null, iconAnchor:[-10, 28] });
-    const adjusted = offsetCoordinates(c.coords, idx % 4);
+    const cls = ['location-label', 'location-label-meeting', c.force.isEnemy ? 'location-label-enemy' : ''].join(' ');
+    const html = `<div class="${cls}" style="--label-color:${escapeAttr(color)};width:${placement.w}px"><span>${escapeHTML(c.text)}</span></div>`;
+    const icon = L.divIcon({ className:'location-label-wrapper', html, iconSize:[placement.w, placement.h], iconAnchor:[placement.w / 2, placement.h / 2] });
+    const labelLatLng = map.unproject(L.point(placement.x, placement.y), map.getZoom());
+    const leaderLatLng = map.unproject(L.point(placement.x, placement.y + placement.h * 0.12), map.getZoom());
+    const lineOpts = { color, weight:1.4, opacity:.45, dashArray:'3 5', lineCap:'round', interactive:false, className:'meeting-label-leader' };
+
     if (!labelByKey.has(c.key)) {
-      const marker = L.marker(adjusted, { icon, interactive:false, zIndexOffset: c.event.type === '会师' ? 9000 : 6200 }).addTo(map);
-      labelByKey.set(c.key, { marker, html });
+      const marker = L.marker(labelLatLng, { icon, interactive:false, zIndexOffset: 9300 }).addTo(map);
+      const leader = L.polyline([c.coords, leaderLatLng], lineOpts).addTo(map);
+      labelByKey.set(c.key, { marker, leader, html, x:placement.x, y:placement.y });
     } else {
       const rec = labelByKey.get(c.key);
-      rec.marker.setLatLng(adjusted);
+      rec.marker.setLatLng(labelLatLng);
+      if (rec.leader) rec.leader.setLatLngs([c.coords, leaderLatLng]).setStyle(lineOpts);
       if (rec.html !== html) { rec.marker.setIcon(icon); rec.html = html; }
     }
   });
+
   for (const [key, rec] of [...labelByKey.entries()]) {
-    if (!wanted.has(key)) { map.removeLayer(rec.marker); labelByKey.delete(key); }
+    if (!wanted.has(key)) {
+      if (rec.leader) map.removeLayer(rec.leader);
+      map.removeLayer(rec.marker);
+      labelByKey.delete(key);
+    }
   }
 }
+
+function computeMeetingLabelPlacements(candidates, visibleEvents) {
+  const placements = new Map();
+  if (!map || !candidates.length) return placements;
+  const viewport = map.getSize();
+  const usedRects = [];
+  const routeSegments = buildScreenRouteSegments(visibleEvents);
+  const offsets = [
+    [128, -82], [-150, -82], [132, 66], [-154, 66],
+    [72, -132], [-98, -132], [74, 116], [-102, 116],
+    [196, -18], [-216, -18], [4, -166], [4, 154],
+    [226, 76], [-242, 76], [226, -108], [-242, -108]
+  ];
+
+  candidates.forEach((c, idx) => {
+    const base = map.project(c.coords, map.getZoom());
+    const textLen = [...String(c.text || '')].length;
+    const w = Math.min(188, Math.max(96, textLen * (currentLang === 'en' ? 8.2 : 14.2) + 28));
+    const h = 34;
+    let best = null;
+    let bestScore = Infinity;
+
+    offsets.forEach((off, offIdx) => {
+      const dx = off[0] + (idx % 3) * 12;
+      const dy = off[1] + (idx % 2) * 10;
+      const center = L.point(base.x + dx, base.y + dy);
+      const rect = rectFromCenter(center, w, h, 8);
+      let score = Math.abs(dx) * 0.08 + Math.abs(dy) * 0.08 + offIdx;
+      if (!rectWithinViewport(rect, viewport, 12)) score += 10000;
+      usedRects.forEach(r => { if (rectsOverlap(rect, r, 14)) score += 6000; });
+      routeSegments.forEach(seg => { if (segmentIntersectsRect(seg, rect)) score += 950; });
+      if (pointInRect(base, expandRect(rect, 16))) score += 8000;
+      if (score < bestScore) { bestScore = score; best = { x:center.x, y:center.y, w, h, rect }; }
+    });
+
+    if (!best) {
+      const fallback = L.point(base.x + 140 + idx * 10, base.y - 90 - idx * 8);
+      best = { x:fallback.x, y:fallback.y, w, h, rect:rectFromCenter(fallback, w, h, 8) };
+    }
+    usedRects.push(best.rect);
+    placements.set(c.key, best);
+  });
+  return placements;
+}
+
+function buildScreenRouteSegments(events) {
+  const segments = [];
+  const byForce = groupBy(events.filter(e => e.location?.coordinates), e => e.forceId);
+  Object.values(byForce).forEach(forceEvents => {
+    const sorted = [...forceEvents].sort(sortEventAscending);
+    for (let i = 1; i < sorted.length; i++) {
+      segments.push({
+        a: map.project(sorted[i - 1].location.coordinates, map.getZoom()),
+        b: map.project(sorted[i].location.coordinates, map.getZoom())
+      });
+    }
+  });
+  return segments;
+}
+
+function rectFromCenter(center, w, h, pad=0) {
+  return { left:center.x - w/2 - pad, right:center.x + w/2 + pad, top:center.y - h/2 - pad, bottom:center.y + h/2 + pad };
+}
+function expandRect(r, pad) { return { left:r.left-pad, right:r.right+pad, top:r.top-pad, bottom:r.bottom+pad }; }
+function rectWithinViewport(r, size, margin=0) { return r.left >= margin && r.top >= margin && r.right <= size.x - margin && r.bottom <= size.y - margin; }
+function rectsOverlap(a, b, margin=0) { return !(a.right + margin < b.left || a.left - margin > b.right || a.bottom + margin < b.top || a.top - margin > b.bottom); }
+function pointInRect(p, r) { return p.x >= r.left && p.x <= r.right && p.y >= r.top && p.y <= r.bottom; }
+function segmentIntersectsRect(seg, rect) {
+  const r = expandRect(rect, 3);
+  if (pointInRect(seg.a, r) || pointInRect(seg.b, r)) return true;
+  const edges = [
+    [{x:r.left,y:r.top},{x:r.right,y:r.top}], [{x:r.right,y:r.top},{x:r.right,y:r.bottom}],
+    [{x:r.right,y:r.bottom},{x:r.left,y:r.bottom}], [{x:r.left,y:r.bottom},{x:r.left,y:r.top}]
+  ];
+  return edges.some(edge => segmentsIntersect(seg.a, seg.b, edge[0], edge[1]));
+}
+function segmentsIntersect(p1, p2, p3, p4) {
+  const d1 = direction(p3, p4, p1), d2 = direction(p3, p4, p2), d3 = direction(p1, p2, p3), d4 = direction(p1, p2, p4);
+  return ((d1 > 0 && d2 < 0) || (d1 < 0 && d2 > 0)) && ((d3 > 0 && d4 < 0) || (d3 < 0 && d4 > 0));
+}
+function direction(a, b, c) { return (c.x - a.x) * (b.y - a.y) - (b.x - a.x) * (c.y - a.y); }
 
 function shouldShowLocationLabel(event, latestByForce) {
   // Only keep place labels for the final convergence nodes.
