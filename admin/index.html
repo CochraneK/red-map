@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>长征数据管理</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="admin-container">
+    <aside class="sidebar">
+      <div class="sidebar-header"><h2>长征数据管理</h2><p>本地编辑 · 导出 JSON 后替换数据文件</p></div>
+      <nav class="sidebar-nav">
+        <a href="#events" class="nav-item active" data-section="events"><span>📍</span><b>事件管理</b></a>
+        <a href="#subjects" class="nav-item" data-section="subjects"><span>🚩</span><b>主体管理</b></a>
+        <a href="#import" class="nav-item" data-section="import"><span>📥</span><b>数据导入</b></a>
+        <a href="#export" class="nav-item" data-section="export"><span>📤</span><b>数据导出</b></a>
+      </nav>
+      <div class="sidebar-footer"><a href="../index.html" class="back-link">← 返回地图</a></div>
+    </aside>
+    <main class="main-content">
+      <div class="editor-notice">提示：这是静态项目的本地数据编辑器。修改后请导出 JSON，并替换 <code>data/long_march_events.json</code>；如果继续使用表格流程，也要同步维护 <code>data_edit/*.csv</code>。</div>
+
+      <section id="events-section" class="content-section active">
+        <header class="section-header"><div><h1>事件管理</h1><p>人物事件也直接归入所在部队路线，颜色和连线随部队一致。</p></div><button class="btn btn-primary" id="add-event-btn">+ 添加事件</button></header>
+        <div class="filter-bar">
+          <div class="filter-group"><label>排序</label><select id="sort-select"><option value="date-asc">日期升序</option><option value="date-desc">日期降序</option><option value="importance-desc">重要性降序</option><option value="title-asc">标题升序</option></select></div>
+          <div class="filter-group"><label>主体</label><select id="filter-subject"><option value="">全部主体</option></select></div>
+          <div class="filter-group"><label>类型</label><select id="filter-type"><option value="">全部类型</option></select></div>
+          <div class="filter-group search"><label>搜索</label><input type="text" id="search-input" placeholder="标题、地点、人物、描述"></div>
+        </div>
+        <div class="events-table-container">
+          <table class="events-table">
+            <thead><tr><th class="col-date">日期</th><th class="col-force">主体</th><th class="col-type">类型</th><th class="col-title">标题 / 摘要</th><th class="col-place">地点</th><th class="col-imp">级别</th><th class="col-actions">操作</th></tr></thead>
+            <tbody id="events-tbody"></tbody>
+          </table>
+        </div>
+        <div class="pagination"><button id="prev-page" class="btn btn-sm">上一页</button><span id="page-info">第 1 页 / 共 1 页</span><button id="next-page" class="btn btn-sm">下一页</button><span class="page-jump">跳转 <input type="number" id="page-jump-input" min="1" value="1"><button id="page-jump-btn" class="btn btn-sm">确定</button></span></div>
+      </section>
+
+      <section id="subjects-section" class="content-section">
+        <header class="section-header"><div><h1>主体管理</h1><p>主体颜色会联动地图路线、节点和事件编辑下拉框。</p></div><button class="btn btn-primary" id="add-subject-btn">+ 添加主体</button></header>
+        <div class="subject-type-tabs"><button class="tab-btn active" data-type="all">全部</button><button class="tab-btn" data-type="force">部队/路线</button><button class="tab-btn" data-type="person">人物</button></div>
+        <div class="subjects-grid" id="subjects-grid"></div>
+      </section>
+
+      <section id="import-section" class="content-section">
+        <header class="section-header"><h1>数据导入</h1></header>
+        <div class="import-options">
+          <div class="import-card"><h3>从 JSON 文件导入</h3><p>替换当前浏览器内存中的数据。</p><input type="file" id="import-file" accept=".json" hidden><button class="btn btn-secondary" onclick="document.getElementById('import-file').click()">选择 JSON</button></div>
+          <div class="import-card"><h3>从 Excel/CSV 粘贴事件</h3><p>格式：日期,主体ID,类型,标题,地点,纬度,经度,描述,人物。日期支持 YYYYMMDD。</p><textarea id="import-textarea" placeholder="19350115,red_first,会议,遵义会议召开,贵州遵义,27.70,106.93,……,毛泽东;周恩来"></textarea><button class="btn btn-secondary" id="import-paste-btn">导入粘贴内容</button></div>
+        </div>
+      </section>
+
+      <section id="export-section" class="content-section">
+        <header class="section-header"><h1>数据导出</h1></header>
+        <div class="export-options">
+          <div class="export-card"><h3>导出 JSON</h3><p>用于替换 <code>data/long_march_events.json</code>。</p><button class="btn btn-primary" id="export-json-btn">下载 JSON</button></div>
+          <div class="export-card"><h3>导出 CSV</h3><p>用于人工审查和继续整理。</p><button class="btn btn-primary" id="export-csv-btn">下载 CSV</button></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="event-modal" class="modal">
+    <div class="modal-content wide">
+      <div class="modal-header"><h2 id="event-modal-title">添加事件</h2><button class="modal-close">×</button></div>
+      <div class="modal-body">
+        <form id="event-form">
+          <input type="hidden" id="event-id">
+          <div class="form-row"><div class="form-group"><label>日期 * <small>YYYYMMDD</small></label><input type="text" id="event-date" placeholder="19350115" inputmode="numeric" required></div><div class="form-group"><label>所属主体 *</label><select id="event-subject" required></select></div><div class="form-group"><label>类型 *</label><select id="event-type" required></select></div><div class="form-group"><label>重要性</label><select id="event-importance"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5" selected>5</option></select></div></div>
+          <div class="form-group"><label>事件标题 *</label><input type="text" id="event-title" required></div>
+          <div class="form-group"><label>事件描述</label><textarea id="event-description" rows="4"></textarea></div>
+          <div class="form-row"><div class="form-group"><label>地点 *</label><input type="text" id="location-name" required></div><div class="form-group"><label>纬度 *</label><input type="number" id="location-lat" step="0.0001" required></div><div class="form-group"><label>经度 *</label><input type="number" id="location-lng" step="0.0001" required></div></div>
+          <div class="form-row"><div class="form-group"><label>主要人物</label><input type="text" id="event-participants" placeholder="分号分隔，如 毛泽东; 周恩来"></div><div class="form-group"><label>结果</label><input type="text" id="event-result"></div><div class="form-group"><label>损失/伤亡</label><input type="text" id="event-casualties"></div></div>
+          <div class="form-row"><div class="form-group"><label>参征人数增量</label><input type="number" id="metric-joined" placeholder="如 86000"></div><div class="form-group"><label>损失人数估算</label><input type="number" id="metric-loss" placeholder="如 50000"></div><div class="form-group"><label>歼俘敌估算</label><input type="number" id="metric-enemy" placeholder="如 1700"></div><div class="form-group"><label>里程节点</label><input type="number" id="metric-distance" placeholder="如 25000"></div></div>
+          <div class="form-row"><div class="form-group"><label>七律诗句</label><input type="text" id="poem-line" placeholder="如 金沙水拍云崖暖"></div><div class="form-group"><label>诗句标题</label><input type="text" id="poem-title"></div></div>
+          <div class="form-group"><label>诗句解释</label><textarea id="poem-text" rows="2"></textarea></div>
+        </form>
+      </div>
+      <div class="modal-footer"><button class="btn btn-secondary modal-cancel">取消</button><button class="btn btn-primary" id="save-event-btn">保存事件</button></div>
+    </div>
+  </div>
+
+  <div id="subject-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header"><h2 id="subject-modal-title">添加主体</h2><button class="modal-close">×</button></div>
+      <div class="modal-body">
+        <form id="subject-form">
+          <input type="hidden" id="subject-original-id">
+          <div class="form-row"><div class="form-group"><label>主体ID *</label><input type="text" id="subject-id" placeholder="red_first" required></div><div class="form-group"><label>类型 *</label><select id="subject-type"><option value="force">部队/路线</option><option value="person">人物</option></select></div></div>
+          <div class="form-row"><div class="form-group"><label>名称 *</label><input type="text" id="subject-name" required></div><div class="form-group"><label>简称</label><input type="text" id="subject-short-name"></div></div>
+          <div class="form-row"><div class="form-group"><label>颜色</label><input type="color" id="subject-color" value="#d73027"></div><div class="form-group"><label>排序</label><input type="number" id="subject-sort" value="99"></div></div>
+          <div class="form-group"><label>主要人物 / 说明</label><input type="text" id="subject-leader"></div>
+          <div class="form-group"><label>下属部队（用分号分隔）</label><input type="text" id="subject-subunits" placeholder="红一军团; 红三军团; 红三十四师"></div>
+          <div class="form-group"><label>Sub-units in English</label><input type="text" id="subject-subunits-en" placeholder="1st Corps; 3rd Corps; 34th Division"></div>
+          <div class="form-group"><label>描述</label><textarea id="subject-description" rows="3"></textarea></div>
+          <div class="form-group inline-check"><label><input type="checkbox" id="subject-is-enemy"> 敌军/对手路线（半透明灰色虚线）</label></div>
+        </form>
+      </div>
+      <div class="modal-footer"><button class="btn btn-secondary modal-cancel">取消</button><button class="btn btn-primary" id="save-subject-btn">保存主体</button></div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

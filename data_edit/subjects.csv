@@ -1,0 +1,23 @@
+﻿id,type,name,shortName,color,leader,sort,description,nameEn,shortNameEn,leaderEn,descriptionEn,isEnemy,subUnits,subUnitsEn
+red_first,force,红一方面军,红一方面军,#d73027,毛泽东、周恩来、朱德、张闻天、王稼祥、彭德怀等,10,中央红军主力。1934年10月从中央苏区战略转移，1935年10月到达陕北。,Red First Front Army / Central Red Army,Red First Front Army,"Mao Zedong, Zhou Enlai, Zhu De, Zhang Wentian, Wang Jiaxiang, Peng Dehuai, Lin Biao, etc.","Main column of the Central Red Army, departing from the Central Soviet Area in October 1934 and reaching northern Shaanxi in October 1935.",,红一军团; 红三军团; 红五军团; 红八军团; 红九军团; 中央军委纵队; 红三十四师,1st Corps; 3rd Corps; 5th Corps; 8th Corps; 9th Corps; Central Military Commission Column; 34th Division
+red_25th,force,红二十五军,红二十五军,#fdae61,程子华、吴焕先、徐海东等,20,鄂豫皖根据地重要力量，1934年11月从河南罗山何家冲出发，最早到达陕北。,Red Twenty-Fifth Army,Red Twenty-Fifth Army,"Cheng Zihua, Wu Huanxian, Xu Haidong, etc.","A force from the Hubei-Henan-Anhui base area, among the earliest Red Army columns to reach northern Shaanxi.",,红二十五军第七十三师; 红二十五军第七十四师; 红二十五军第七十五师; 北上抗日第二先遣队,73rd Division; 74th Division; 75th Division; Second Northern Anti-Japanese Advance Detachment
+red_fourth,force,红四方面军,红四方面军,#4575b4,徐向前、陈昌浩、张国焘、李先念等,30,由川陕根据地转移，经历嘉陵江战役、懋功会师、南下挫折、甘孜会师，1936年10月与红一方面军会宁会师。,Red Fourth Front Army,Red Fourth Front Army,"Xu Xiangqian, Chen Changhao, Zhang Guotao, Li Xiannian, etc.","A major Red Army force from the Sichuan-Shaanxi base area, later converging with the First and Second Front Armies.",,红四军; 红九军; 红三十军; 红三十一军; 红三十三军; 妇女独立团,4th Corps; 9th Corps; 30th Corps; 31st Corps; 33rd Corps; Women's Independent Regiment
+red_second,force,红二方面军,红二方面军,#1a9850,贺龙、任弼时、萧克、关向应、刘伯承等,40,1935年11月从湘鄂川黔根据地出发，1936年7月正式组成红二方面军，10月到达将台堡。,Red Second Front Army,Red Second Front Army,"He Long, Ren Bishi, Guan Xiangying, Xiao Ke, Wang Zhen, etc.",The Second and Sixth Corps departed from Sangzhi in 1935 and were later reorganized as the Second Front Army.,,红二军团; 红六军团; 红三十二军; 红十八师; 红十六师,2nd Corps; 6th Corps; 32nd Corps; 18th Division; 16th Division
+shaanbei_red,force,陕甘红军,陕甘红军,#984ea3,刘志丹、谢子长、习仲勋、徐海东等,50,陕甘边、陕北根据地革命武装，为中央和各路红军长征提供落脚点。,Shaanxi-Gansu Red Army and revolutionary base,Shaan-Gan,"Liu Zhidan, Xie Zichang, Xi Zhongxun, Gao Gang, etc.",The northwestern revolutionary base that became the landing point for the Long March.,,红二十六军; 红二十七军; 红二十八军; 红十五军团; 陕北游击队; 陕甘边游击队,26th Army; 27th Army; 28th Army; 15th Corps; Northern Shaanxi guerrillas; Shaanxi-Gansu border guerrillas
+enemy_kmt,force,国民党军,国民党军,#7b7b7b,蒋介石及各路追堵部队,90,用于半透明灰色路线示意长征途中敌军追击、封锁、围堵与压迫态势。此路线为概括性叙事层，不代表精确战斗部署。,Nationalist pursuit and blockade line,KMT forces,"Chiang Kai-shek, Xue Yue, He Jian, Long Yun, Hu Zongnan and related forces","A schematic grey layer showing pursuit, blockade, encirclement and pressure against Red Army routes; not a precise deployment map.",TRUE,中央军; 湘军; 桂军; 滇军; 黔军; 川军; 西北军; 马家军,Central Army; Hunan troops; Guangxi troops; Yunnan troops; Guizhou troops; Sichuan troops; Northwest Army; Ma clique forces
+maozedong,person,毛泽东,毛泽东,#E53935,,101,,,,,,,,
+zhouenlai,person,周恩来,周恩来,#E53935,,102,,,,,,,,
+zhude,person,朱德,朱德,#1E88E5,,103,,,,,,,,
+liubocheng,person,刘伯承,刘伯承,#E53935,,104,,,,,,,,
+xiaoyedan,person,小叶丹,小叶丹,#795548,,105,,,,,,,,
+hezizhen,person,贺子珍,贺子珍,#E53935,,106,,,,,,,,
+helong,person,贺龙,贺龙,#43A047,,201,,,,,,,,
+hejiesheng,person,贺捷生,贺捷生,#43A047,,202,,,,,,,,
+renbishi,person,任弼时,任弼时,#43A047,,203,,,,,,,,
+xuxiangqian,person,徐向前,徐向前,#1E88E5,,301,,,,,,,,
+zhangguotao,person,张国焘,张国焘,#1E88E5,,302,,,,,,,,
+wuhuanxian,person,吴焕先,吴焕先,#FB8C00,,401,,,,,,,,
+xuhaidong,person,徐海东,徐海东,#FB8C00,,402,,,,,,,,
+liuzhidan,person,刘志丹,刘志丹,#8E24AA,,501,,,,,,,,
+xiezichang,person,谢子长,谢子长,#8E24AA,,502,,,,,,,,
+xizhongxun,person,习仲勋,习仲勋,#8E24AA,,503,,,,,,,,

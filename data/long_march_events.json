@@ -1,0 +1,4687 @@
+{
+  "title": "红军长征星火路线数据",
+  "description": "红军长征多路路线、人物事迹、会师、敌军围堵与七律长征诗句联动。",
+  "version": "v6-bilingual-github",
+  "timeRange": {
+    "start": "1934-10-10",
+    "end": "1936-10-22"
+  },
+  "sources": [
+    {
+      "id": "src_cpc_century",
+      "title": "中国共产党一百年大事记（1921年7月－2021年6月）",
+      "publisher": "最高人民检察院转载新华社/中共中央党史和文献研究院资料",
+      "url": "https://www.spp.gov.cn/zdgz/202106/t20210628_522564.shtml",
+      "note": "用于中央红军长征开始、湘江战役损失、各路红军战略转移等基础时间线。"
+    },
+    {
+      "id": "src_zunyi_hunan",
+      "title": "党史大事件·1935年：遵义会议等",
+      "publisher": "湖南省工业和信息化厅党史学习资料",
+      "url": "https://gxt.hunan.gov.cn/gxt/syzt/dsxxjy/dsydyy/dsdsj/202103/t20210329_15075565.html",
+      "note": "用于遵义会议、巧渡金沙江、强渡大渡河、飞夺泸定桥等节点。"
+    },
+    {
+      "id": "src_yihai_people",
+      "title": "小叶丹：彝海结盟谱写民族团结之歌",
+      "publisher": "中国共产党新闻网/人民网",
+      "url": "https://cpc.people.com.cn/n1/2022/0729/c443712-32488716.html",
+      "note": "用于刘伯承与小叶丹彝海结盟、民族工作与向导协助。"
+    },
+    {
+      "id": "src_red2_start_12371",
+      "title": "百年瞬间｜中国工农红军红二、六军团开始长征",
+      "publisher": "共产党员网",
+      "url": "https://www.12371.cn/2021/11/19/VIDE1637314320431426.shtml",
+      "note": "用于红二、六军团从桑植出发、人数约一万七千多人、贺捷生出生18天随军长征。"
+    },
+    {
+      "id": "src_jiangtaibao_12371",
+      "title": "身边的红色印记：将台堡",
+      "publisher": "共产党员网",
+      "url": "https://www.12371.cn/2022/01/07/VIDE1641535681331454.shtml",
+      "note": "用于1936年10月22日红一、红二方面军将台堡会师，标志长征胜利结束。"
+    },
+    {
+      "id": "src_jiangtaibao_cppcc",
+      "title": "从这里走向胜利——追忆宁夏将台堡红军长征会师",
+      "publisher": "中国政协网",
+      "url": "https://www.cppcc.gov.cn/zxww/2021/06/25/ARTI1624583644785160.shtml",
+      "note": "用于将台堡会师地点、参加会师部队等。"
+    },
+    {
+      "id": "src_meetings_xinhua",
+      "title": "长征中的6次会师",
+      "publisher": "新华网",
+      "url": "https://www.xinhuanet.com/politics/2016-10/11/c_1119695332.htm",
+      "note": "用于懋功、甘孜、会宁、将台堡等会师关系。"
+    },
+    {
+      "id": "src_red25_people",
+      "title": "红二十五军：万里长征赤胆忠心",
+      "publisher": "党史学习教育官网/人民网",
+      "url": "https://dangshi.people.com.cn/n1/2021/0809/c436975-32185678.html",
+      "note": "用于红二十五军出发、宣传抗日救国、转战路线。"
+    },
+    {
+      "id": "src_dushuzhen_people",
+      "title": "红二十五军鏖战独树镇",
+      "publisher": "中国共产党新闻网/人民政协报",
+      "url": "https://cpc.people.com.cn/n1/2024/1126/c443712-40369199.html",
+      "note": "用于1934年11月26日至27日独树镇战斗。"
+    },
+    {
+      "id": "src_yongping_people",
+      "title": "永坪会师：为红军长征找到落脚点",
+      "publisher": "中国共产党新闻网/人民网",
+      "url": "https://dangshi.people.com.cn/n1/2021/0714/c436975-32157361.html",
+      "note": "用于红二十五军与红二十六、红二十七军会师，合编红十五军团。"
+    },
+    {
+      "id": "src_shaanbei_12371",
+      "title": "陕甘革命根据地：伟大长征的落脚点、伟大抗战的出发点",
+      "publisher": "共产党员网",
+      "url": "https://www.12371.cn/2021/06/18/ARTI1623971854207634.shtml",
+      "note": "用于陕甘革命根据地由刘志丹、谢子长、习仲勋等开拓，并成为长征落脚点。"
+    },
+    {
+      "id": "src_liuzhidan_mva",
+      "title": "刘志丹：群众领袖，民族英雄",
+      "publisher": "退役军人事务部",
+      "url": "https://www.mva.gov.cn/sy/zt/jdbn/qhxzc/202105/t20210517_47328.html",
+      "note": "用于刘志丹开辟陕甘边根据地、1936年4月14日牺牲。"
+    },
+    {
+      "id": "src_hezizhen_81",
+      "title": "贺子珍含泪托孤",
+      "publisher": "中国军网",
+      "url": "https://www.81.cn/jwzl/2016-08/24/content_7223651.htm",
+      "note": "用于贺子珍长征途中生女并托孤的情节。"
+    },
+    {
+      "id": "src_xinhua_25000",
+      "title": "二万五千里长征遭质疑？苍茫大地不答应！",
+      "publisher": "新华网",
+      "url": "https://www.xinhuanet.com/politics/2016-10/25/c_1119782026.htm",
+      "note": "用于中央红军行程二万五千里、红二十五军近万里等里程口径。"
+    },
+    {
+      "id": "src_xinhua_overall_stats",
+      "title": "长征，红旗漫卷西风",
+      "publisher": "新华网",
+      "url": "https://www.xinhuanet.com/politics/2021-04/16/c_1127336547.htm",
+      "note": "用于长征历时两年、600余次战役战斗、近百条江河、40余座高山等总体口径。"
+    },
+    {
+      "id": "src_epic_people",
+      "title": "伟大的史诗 不朽的丰碑",
+      "publisher": "中国共产党新闻网/人民网",
+      "url": "https://cpc.people.com.cn/n1/2021/1022/c441345-32261301.html",
+      "note": "用于湘江牺牲、平均三天一次激战、平均300米一名红军牺牲等壮烈叙事。"
+    },
+    {
+      "id": "src_chenshuxiang_xinhua",
+      "title": "绝对忠诚：断肠师长陈树湘的生命倒计时",
+      "publisher": "新华网",
+      "url": "https://www.xinhuanet.com/politics/2019-06/30/c_1124690507.htm",
+      "note": "用于陈树湘与红三十四师绝命后卫叙事。"
+    },
+    {
+      "id": "src_hezizhen_people",
+      "title": "解密：毛泽东长征川南痛失爱女始末",
+      "publisher": "中国共产党新闻网/人民网",
+      "url": "https://dangshi.people.com.cn/n/2013/0614/c85037-21844643.html",
+      "note": "用于贺子珍长征途中生女并托孤情节。"
+    },
+    {
+      "id": "src_hejiesheng_cppcc",
+      "title": "贺捷生：唯有信仰不灭",
+      "publisher": "中国政协网",
+      "url": "https://www.cppcc.gov.cn/zxww/2016/01/19/ARTI1453173514705901.shtml",
+      "note": "用于贺捷生出生18天随军长征。"
+    },
+    {
+      "id": "src_longmarch_provinces",
+      "title": "红军长征途经多少省",
+      "publisher": "新华社",
+      "url": "https://www.xinhuanet.com/politics/2016-09/26/c_1119625593.htm",
+      "note": "用于各路红军长征经过省份口径。"
+    },
+    {
+      "id": "src_party_chronology_xinhua",
+      "title": "中国共产党一百年大事记（1921年7月－2021年6月）",
+      "publisher": "新华社/中共中央党史和文献研究院",
+      "url": "https://www.xinhuanet.com/2021-06/28/c_1127603399.htm",
+      "note": "用于通道、黎平、遵义等会议与长征节点。"
+    },
+    {
+      "id": "src_dengping_people_2025",
+      "title": "邓萍：遵义烽火中的不朽英魂",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2025/0322/c443712-40444333.html",
+      "note": "邓萍、娄山关、遵义战役"
+    },
+    {
+      "id": "src_wumeng_people_2023",
+      "title": "乌蒙山回旋战：集游击战和运动战之大成",
+      "publisher": "中国共产党新闻网/党建网",
+      "url": "https://cpc.people.com.cn/BIG5/n1/2023/0615/c443712-40013864.html",
+      "note": "红二、六军团乌蒙山回旋战"
+    },
+    {
+      "id": "src_red25_yuanjiagou_people_2026",
+      "title": "红二十五军袁家沟口歼敌军",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2026/0402/c443712-40693754.html",
+      "note": "红二十五军袁家沟口战斗"
+    },
+    {
+      "id": "src_red25_xinhua_2017",
+      "title": "红军长征到达陕北的第一支部队：红二十五军",
+      "publisher": "新华网",
+      "url": "https://www.xinhuanet.com/politics/2017-08/05/c_1121436475.htm",
+      "note": "红二十五军到达永坪并与西北红军会师"
+    },
+    {
+      "id": "src_red25_base_ujn",
+      "title": "鄂豫陕革命根据地——红军长征播撒的革命火种",
+      "publisher": "济南大学党史学习教育资料",
+      "url": "https://www.ujn.edu.cn/dsxxjy/info/1005/1476.htm",
+      "note": "红二十五军创建鄂豫陕根据地、相关战斗"
+    },
+    {
+      "id": "src_redfourth_sichuan",
+      "title": "红四方面军曲折复杂的长征历程",
+      "publisher": "四川省地方志工作办公室",
+      "url": "https://scdfz.sc.gov.cn/ztzl/hjczzsc/zzyj/content_16665",
+      "note": "红四方面军嘉陵江、土门等节点"
+    },
+    {
+      "id": "src_stats_xinhua_2016",
+      "title": "伟大的长征精神，远超悲情意识",
+      "publisher": "新华网",
+      "url": "https://www.xinhuanet.com/politics/2016-09/20/c_129289465.htm",
+      "note": "长征损失、总人数等统计口径"
+    },
+    {
+      "id": "src_stats_people_2021",
+      "title": "震古烁今的伟大远征",
+      "publisher": "人民网党史频道",
+      "url": "https://dangshi.people.cn/n1/2021/0413/c436975-32076293.html",
+      "note": "长征出发人数、补充兵力、牺牲损失"
+    },
+    {
+      "id": "src_ganzi_12371",
+      "title": "大会师阶段(1936.7.1——1936.12.12)",
+      "publisher": "共产党员网",
+      "url": "https://news.12371.cn/2014/10/14/ARTI1413280686525511.shtml",
+      "note": "红二、六军团与红四方面军甘孜会师及北上"
+    },
+    {
+      "id": "src_qilv_people",
+      "title": "从毛泽东诗词感悟长征精神",
+      "publisher": "人民网理论频道",
+      "url": "https://theory.people.com.cn/n1/2017/1110/c415240-29639472.html",
+      "note": "七律长征涉及五岭、乌蒙、金沙、大渡、岷山等意象"
+    },
+    {
+      "id": "src_qilv_dangjian_2024",
+      "title": "红军不怕远征难——长征诗歌价值初释",
+      "publisher": "党建网",
+      "url": "https://www.dangjian.cn/jdcd/2024/10/23/detail_202410237001577.html",
+      "note": "七律长征山川意象解读"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "red_first",
+      "type": "force",
+      "name": "红一方面军",
+      "shortName": "红一方面军",
+      "color": "#d73027",
+      "leader": "毛泽东、周恩来、朱德、张闻天、王稼祥、彭德怀等",
+      "sort": 10,
+      "description": "中央红军主力。1934年10月从中央苏区战略转移，1935年10月到达陕北。",
+      "nameEn": "Red First Front Army / Central Red Army",
+      "shortNameEn": "Red First Front Army",
+      "leaderEn": "Mao Zedong, Zhou Enlai, Zhu De, Zhang Wentian, Wang Jiaxiang, Peng Dehuai, Lin Biao, etc.",
+      "descriptionEn": "Main column of the Central Red Army, departing from the Central Soviet Area in October 1934 and reaching northern Shaanxi in October 1935.",
+      "subUnits": "红一军团; 红三军团; 红五军团; 红八军团; 红九军团; 中央军委纵队; 红三十四师",
+      "subUnitsEn": "1st Corps; 3rd Corps; 5th Corps; 8th Corps; 9th Corps; Central Military Commission Column; 34th Division"
+    },
+    {
+      "id": "red_25th",
+      "type": "force",
+      "name": "红二十五军",
+      "shortName": "红二十五军",
+      "color": "#fdae61",
+      "leader": "程子华、吴焕先、徐海东等",
+      "sort": 20,
+      "description": "鄂豫皖根据地重要力量，1934年11月从河南罗山何家冲出发，最早到达陕北。",
+      "nameEn": "Red Twenty-Fifth Army",
+      "shortNameEn": "Red Twenty-Fifth Army",
+      "leaderEn": "Cheng Zihua, Wu Huanxian, Xu Haidong, etc.",
+      "descriptionEn": "A force from the Hubei-Henan-Anhui base area, among the earliest Red Army columns to reach northern Shaanxi.",
+      "subUnits": "红二十五军第七十三师; 红二十五军第七十四师; 红二十五军第七十五师; 北上抗日第二先遣队",
+      "subUnitsEn": "73rd Division; 74th Division; 75th Division; Second Northern Anti-Japanese Advance Detachment"
+    },
+    {
+      "id": "red_fourth",
+      "type": "force",
+      "name": "红四方面军",
+      "shortName": "红四方面军",
+      "color": "#4575b4",
+      "leader": "徐向前、陈昌浩、张国焘、李先念等",
+      "sort": 30,
+      "description": "由川陕根据地转移，经历嘉陵江战役、懋功会师、南下挫折、甘孜会师，1936年10月与红一方面军会宁会师。",
+      "nameEn": "Red Fourth Front Army",
+      "shortNameEn": "Red Fourth Front Army",
+      "leaderEn": "Xu Xiangqian, Chen Changhao, Zhang Guotao, Li Xiannian, etc.",
+      "descriptionEn": "A major Red Army force from the Sichuan-Shaanxi base area, later converging with the First and Second Front Armies.",
+      "subUnits": "红四军; 红九军; 红三十军; 红三十一军; 红三十三军; 妇女独立团",
+      "subUnitsEn": "4th Corps; 9th Corps; 30th Corps; 31st Corps; 33rd Corps; Women's Independent Regiment"
+    },
+    {
+      "id": "red_second",
+      "type": "force",
+      "name": "红二方面军",
+      "shortName": "红二方面军",
+      "color": "#1a9850",
+      "leader": "贺龙、任弼时、萧克、关向应、刘伯承等",
+      "sort": 40,
+      "description": "1935年11月从湘鄂川黔根据地出发，1936年7月正式组成红二方面军，10月到达将台堡。",
+      "nameEn": "Red Second Front Army",
+      "shortNameEn": "Red Second Front Army",
+      "leaderEn": "He Long, Ren Bishi, Guan Xiangying, Xiao Ke, Wang Zhen, etc.",
+      "descriptionEn": "The Second and Sixth Corps departed from Sangzhi in 1935 and were later reorganized as the Second Front Army.",
+      "subUnits": "红二军团; 红六军团; 红三十二军; 红十八师; 红十六师",
+      "subUnitsEn": "2nd Corps; 6th Corps; 32nd Corps; 18th Division; 16th Division"
+    },
+    {
+      "id": "shaanbei_red",
+      "type": "force",
+      "name": "陕甘红军",
+      "shortName": "陕甘红军",
+      "color": "#984ea3",
+      "leader": "刘志丹、谢子长、习仲勋、徐海东等",
+      "sort": 50,
+      "description": "陕甘边、陕北根据地革命武装，为中央和各路红军长征提供落脚点。",
+      "nameEn": "Shaanxi-Gansu Red Army and revolutionary base",
+      "shortNameEn": "Shaan-Gan",
+      "leaderEn": "Liu Zhidan, Xie Zichang, Xi Zhongxun, Gao Gang, etc.",
+      "descriptionEn": "The northwestern revolutionary base that became the landing point for the Long March.",
+      "subUnits": "红二十六军; 红二十七军; 红二十八军; 红十五军团; 陕北游击队; 陕甘边游击队",
+      "subUnitsEn": "26th Army; 27th Army; 28th Army; 15th Corps; Northern Shaanxi guerrillas; Shaanxi-Gansu border guerrillas"
+    },
+    {
+      "id": "enemy_kmt",
+      "type": "force",
+      "name": "国民党军",
+      "shortName": "国民党军",
+      "color": "#7b7b7b",
+      "leader": "蒋介石及各路追堵部队",
+      "sort": 90,
+      "description": "用于半透明灰色路线示意长征途中敌军追击、封锁、围堵与压迫态势。此路线为概括性叙事层，不代表精确战斗部署。",
+      "nameEn": "Nationalist pursuit and blockade line",
+      "shortNameEn": "KMT forces",
+      "leaderEn": "Chiang Kai-shek, Xue Yue, He Jian, Long Yun, Hu Zongnan and related forces",
+      "descriptionEn": "A schematic grey layer showing pursuit, blockade, encirclement and pressure against Red Army routes; not a precise deployment map.",
+      "subUnits": "中央军; 湘军; 桂军; 滇军; 黔军; 川军; 西北军; 马家军",
+      "subUnitsEn": "Central Army; Hunan troops; Guangxi troops; Yunnan troops; Guizhou troops; Sichuan troops; Northwest Army; Ma clique forces",
+      "isEnemy": true
+    },
+    {
+      "id": "maozedong",
+      "type": "person",
+      "name": "毛泽东",
+      "shortName": "毛泽东",
+      "color": "#E53935",
+      "leader": "",
+      "sort": 101,
+      "description": ""
+    },
+    {
+      "id": "zhouenlai",
+      "type": "person",
+      "name": "周恩来",
+      "shortName": "周恩来",
+      "color": "#E53935",
+      "leader": "",
+      "sort": 102,
+      "description": ""
+    },
+    {
+      "id": "zhude",
+      "type": "person",
+      "name": "朱德",
+      "shortName": "朱德",
+      "color": "#1E88E5",
+      "leader": "",
+      "sort": 103,
+      "description": ""
+    },
+    {
+      "id": "liubocheng",
+      "type": "person",
+      "name": "刘伯承",
+      "shortName": "刘伯承",
+      "color": "#E53935",
+      "leader": "",
+      "sort": 104,
+      "description": ""
+    },
+    {
+      "id": "xiaoyedan",
+      "type": "person",
+      "name": "小叶丹",
+      "shortName": "小叶丹",
+      "color": "#795548",
+      "leader": "",
+      "sort": 105,
+      "description": ""
+    },
+    {
+      "id": "hezizhen",
+      "type": "person",
+      "name": "贺子珍",
+      "shortName": "贺子珍",
+      "color": "#E53935",
+      "leader": "",
+      "sort": 106,
+      "description": ""
+    },
+    {
+      "id": "helong",
+      "type": "person",
+      "name": "贺龙",
+      "shortName": "贺龙",
+      "color": "#43A047",
+      "leader": "",
+      "sort": 201,
+      "description": ""
+    },
+    {
+      "id": "hejiesheng",
+      "type": "person",
+      "name": "贺捷生",
+      "shortName": "贺捷生",
+      "color": "#43A047",
+      "leader": "",
+      "sort": 202,
+      "description": ""
+    },
+    {
+      "id": "renbishi",
+      "type": "person",
+      "name": "任弼时",
+      "shortName": "任弼时",
+      "color": "#43A047",
+      "leader": "",
+      "sort": 203,
+      "description": ""
+    },
+    {
+      "id": "xuxiangqian",
+      "type": "person",
+      "name": "徐向前",
+      "shortName": "徐向前",
+      "color": "#1E88E5",
+      "leader": "",
+      "sort": 301,
+      "description": ""
+    },
+    {
+      "id": "zhangguotao",
+      "type": "person",
+      "name": "张国焘",
+      "shortName": "张国焘",
+      "color": "#1E88E5",
+      "leader": "",
+      "sort": 302,
+      "description": ""
+    },
+    {
+      "id": "wuhuanxian",
+      "type": "person",
+      "name": "吴焕先",
+      "shortName": "吴焕先",
+      "color": "#FB8C00",
+      "leader": "",
+      "sort": 401,
+      "description": ""
+    },
+    {
+      "id": "xuhaidong",
+      "type": "person",
+      "name": "徐海东",
+      "shortName": "徐海东",
+      "color": "#FB8C00",
+      "leader": "",
+      "sort": 402,
+      "description": ""
+    },
+    {
+      "id": "liuzhidan",
+      "type": "person",
+      "name": "刘志丹",
+      "shortName": "刘志丹",
+      "color": "#8E24AA",
+      "leader": "",
+      "sort": 501,
+      "description": ""
+    },
+    {
+      "id": "xiezichang",
+      "type": "person",
+      "name": "谢子长",
+      "shortName": "谢子长",
+      "color": "#8E24AA",
+      "leader": "",
+      "sort": 502,
+      "description": ""
+    },
+    {
+      "id": "xizhongxun",
+      "type": "person",
+      "name": "习仲勋",
+      "shortName": "习仲勋",
+      "color": "#8E24AA",
+      "leader": "",
+      "sort": 503,
+      "description": ""
+    }
+  ],
+  "events": [
+    {
+      "id": "en_19341010_encirclement",
+      "date": "1934-10-10",
+      "displayDate": "1934-10-10",
+      "sequence": 2,
+      "forceId": "enemy_kmt",
+      "type": "围堵",
+      "title": "第五次“围剿”后敌军压迫中央苏区",
+      "description": "中央苏区第五次反“围剿”失利后，国民党军继续压迫和封锁中央苏区，中央红军被迫实行战略转移。",
+      "location": {
+        "name": "江西中央苏区周边",
+        "coordinates": [
+          25.88,
+          116.03
+        ],
+        "nameEn": "Central Soviet Area, Jiangxi"
+      },
+      "participants": [
+        "国民党军",
+        "中央红军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_cpc_century",
+        "src_epic_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Enemy pressure around the Central Soviet Area after the fifth encirclement campaign",
+      "descriptionEn": "After the failure of the fifth counter-encirclement campaign, Nationalist forces kept pressing and blockading the Central Soviet Area, forcing strategic transfer."
+    },
+    {
+      "id": "rf_19341010_ruijin",
+      "date": "1934-10-10",
+      "displayDate": "1934-10-10",
+      "sequence": 2,
+      "forceId": "red_first",
+      "type": "启程",
+      "title": "中央红军主力开始战略转移",
+      "description": "中共中央、中革军委率中央红军主力从中央苏区出发，开始战略转移。数据以瑞金、于都一带作为可视化起点，实际出发涉及多地集结与渡河。",
+      "location": {
+        "name": "江西瑞金/于都一带",
+        "coordinates": [
+          25.88,
+          116.03
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "朱德",
+        "博古",
+        "李德"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Start at 江西瑞金/于都一带",
+      "descriptionEn": "This node marks a start event on the Red First Front Army route near 江西瑞金/于都一带 (19341010).",
+      "metrics": {
+        "redJoined": 86000,
+        "distanceLi": 0
+      }
+    },
+    {
+      "id": "rf_19341017_yudu",
+      "date": "1934-10-17",
+      "displayDate": "1934-10-17",
+      "sequence": 3,
+      "forceId": "red_first",
+      "type": "渡河",
+      "title": "中央红军渡过于都河",
+      "description": "中央红军从于都等地夜渡于都河，离开中央苏区腹地。此点用于把起点从政治中心推进到实际行军路线。",
+      "location": {
+        "name": "江西于都",
+        "coordinates": [
+          25.95,
+          115.42
+        ]
+      },
+      "participants": [
+        "中央红军主力",
+        "于都群众"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: River crossing at 江西于都",
+      "descriptionEn": "This node marks a river crossing event on the Red First Front Army route near 江西于都 (19341017).",
+      "metrics": {
+        "distanceLi": 350
+      }
+    },
+    {
+      "id": "rf_19341021_first_blockade",
+      "date": "1934-10-21",
+      "displayDate": "1934-10-21",
+      "sequence": 21,
+      "forceId": "red_first",
+      "type": "突围",
+      "title": "突破第一道封锁线",
+      "description": "中央红军离开中央苏区后，先后突破敌军数道封锁线，继续向湘粤桂边界推进。",
+      "location": {
+        "name": "赣南安远/信丰一带",
+        "coordinates": [
+          25.13,
+          115.39
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Breakthrough at 赣南安远/信丰一带",
+      "descriptionEn": "This node marks a breakthrough event on the Red First Front Army route near 赣南安远/信丰一带 (19341021).",
+      "result": "突破封锁线"
+    },
+    {
+      "id": "sha_19341107_nanliang",
+      "date": "1934-11-07",
+      "displayDate": "1934-11-07",
+      "sequence": 1,
+      "forceId": "shaanbei_red",
+      "type": "根据",
+      "title": "南梁革命根据地建设推进",
+      "description": "陕甘边革命根据地以南梁为中心逐步发展，为后续陕甘、陕北革命根据地联结奠定基础。此类节点用于说明长征最终落脚点并非凭空出现，而是由西北红军长期开拓形成。",
+      "location": {
+        "name": "甘肃华池南梁",
+        "coordinates": [
+          36.5,
+          108.0
+        ]
+      },
+      "participants": [
+        "刘志丹",
+        "习仲勋",
+        "陕甘边军民"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_shaanbei_12371",
+        "src_liuzhidan_mva"
+      ],
+      "certainty": "month",
+      "titleEn": "Shaan-Gan: Base building at 甘肃华池南梁",
+      "descriptionEn": "This node marks a base building event on the Shaan-Gan route near 甘肃华池南梁 (19341107)."
+    },
+    {
+      "id": "rf_19341115_third_blockade",
+      "date": "1934-11-15",
+      "displayDate": "1934-11-15",
+      "sequence": 38,
+      "forceId": "red_first",
+      "type": "突围",
+      "title": "连续突破第三道封锁线",
+      "description": "中央红军向湘江方向推进，连续突破敌军封锁，但部队在持续追击与堵截中消耗加重。",
+      "location": {
+        "name": "湘南宜章/临武一带",
+        "coordinates": [
+          25.28,
+          112.56
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Breakthrough at 湘南宜章/临武一带",
+      "descriptionEn": "This node marks a breakthrough event on the Red First Front Army route near 湘南宜章/临武一带 (19341115)."
+    },
+    {
+      "id": "r25_19341116_hejiachong",
+      "date": "1934-11-16",
+      "displayDate": "1934-11-16",
+      "sequence": 4,
+      "forceId": "red_25th",
+      "type": "启程",
+      "title": "红二十五军从何家冲开始长征",
+      "description": "红二十五军高举北上抗日第二先遣队旗帜，从河南罗山何家冲出发，开始战略转移。",
+      "location": {
+        "name": "河南罗山何家冲",
+        "coordinates": [
+          31.8,
+          114.52
+        ]
+      },
+      "participants": [
+        "程子华",
+        "吴焕先",
+        "徐海东"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_red25_people",
+        "src_dushuzhen_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: Start at 河南罗山何家冲",
+      "descriptionEn": "This node marks a start event on the Red Twenty-Fifth Army route near 河南罗山何家冲 (19341116).",
+      "metrics": {
+        "redJoined": 2900,
+        "distanceLi": 0
+      }
+    },
+    {
+      "id": "r25_19341126_dushuzhen",
+      "date": "1934-11-26",
+      "displayDate": "1934-11-26",
+      "sequence": 5,
+      "forceId": "red_25th",
+      "type": "战斗",
+      "title": "红二十五军独树镇战斗",
+      "description": "红二十五军在河南方城独树镇七里岗附近遭优势敌军包围，27日冲出包围，保存有生力量。",
+      "location": {
+        "name": "河南方城独树镇",
+        "coordinates": [
+          33.3,
+          113.05
+        ]
+      },
+      "participants": [
+        "吴焕先",
+        "程子华",
+        "徐海东"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_dushuzhen_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: Battle at 河南方城独树镇",
+      "descriptionEn": "This node marks a battle event on the Red Twenty-Fifth Army route near 河南方城独树镇 (19341126)."
+    },
+    {
+      "id": "en_19341127_xiangjiang_block",
+      "date": "1934-11-27",
+      "displayDate": "1934-11-27",
+      "sequence": 6,
+      "forceId": "enemy_kmt",
+      "type": "封锁",
+      "title": "湘江一线形成多重封锁",
+      "description": "敌军在湘江沿线形成严密封锁，试图截断中央红军西进通道，湘江战役由此成为长征初期最惨烈的战役之一。",
+      "location": {
+        "name": "广西全州湘江一线",
+        "coordinates": [
+          25.95,
+          111.07
+        ],
+        "nameEn": "Xiang River line, Guangxi"
+      },
+      "participants": [
+        "国民党军",
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_epic_people",
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Multiple blockade lines form along the Xiang River",
+      "descriptionEn": "Enemy forces formed dense blockades along the Xiang River, attempting to cut off the westward movement of the Central Red Army."
+    },
+    {
+      "id": "rf_19341127_xiangjiang",
+      "date": "1934-11-27",
+      "displayDate": "1934-11-27",
+      "sequence": 6,
+      "forceId": "red_first",
+      "type": "战役",
+      "title": "湘江战役开始",
+      "description": "中央红军突破第四道封锁线，在湘江两岸付出重大代价。渡过湘江后，中央红军由出发时8.6万余人锐减至3万余人。",
+      "location": {
+        "name": "广西兴安/全州湘江一线",
+        "coordinates": [
+          25.6,
+          110.65
+        ]
+      },
+      "participants": [
+        "中央红军",
+        "红五军团后卫部队"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Campaign at 广西兴安/全州湘江一线",
+      "descriptionEn": "This node marks a campaign event on the Red First Front Army route near 广西兴安/全州湘江一线 (19341127).",
+      "casualties": "湘江战役后中央红军由8万余人锐减至约3万余人，损失极为惨重。",
+      "metrics": {
+        "redLosses": 50000,
+        "distanceLi": 4200
+      }
+    },
+    {
+      "id": "rf_19341130_xiangjiang_cover",
+      "date": "1934-11-30",
+      "displayDate": "1934-11-30",
+      "sequence": 7,
+      "forceId": "red_first",
+      "type": "牺牲",
+      "title": "红三十四师等部血战湘江，掩护主力突围",
+      "description": "湘江战役中，红五军团第34师和红三军团第18团等部担负掩护任务，与数倍敌军苦战，大部壮烈牺牲。",
+      "location": {
+        "name": "广西全州湘江一线",
+        "coordinates": [
+          25.95,
+          111.07
+        ],
+        "nameEn": "Xiang River area, Quanzhou, Guangxi"
+      },
+      "participants": [
+        "红三十四师",
+        "红十八团",
+        "陈树湘"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_epic_people",
+        "src_chenshuxiang_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "The 34th Division fights at the Xiang River to cover the main force",
+      "descriptionEn": "During the Xiang River Campaign, the 34th Division and related covering units fought against overwhelming enemy forces, suffering devastating losses while protecting the main column.",
+      "casualties": "红三十四师等部大部牺牲"
+    },
+    {
+      "id": "rf_19341201_wuling",
+      "date": "1934-12-01",
+      "displayDate": "1934-12-01",
+      "sequence": 50,
+      "forceId": "red_first",
+      "type": "险阻",
+      "title": "越过五岭余脉，湘江突围后继续西进",
+      "description": "湘江战役后，中央红军在五岭山地间艰难西进。山川阻隔与敌军追堵交织，长征的艰难在此集中展开。",
+      "location": {
+        "name": "桂北越城岭一带",
+        "coordinates": [
+          25.52,
+          110.75
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_qilv_people",
+        "src_qilv_dangjian_2024"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Hardship at 桂北越城岭一带",
+      "descriptionEn": "This node marks a hardship event on the Red First Front Army route near 桂北越城岭一带 (19341201).",
+      "poem": {
+        "line": "五岭逶迤腾细浪",
+        "title": "五岭并非细浪",
+        "text": "五岭山地横亘南方，行军并不轻松。诗句把连绵山脉写成“细浪”，显出红军面对万水千山的气魄。"
+      }
+    },
+    {
+      "id": "rf_19341210_chenshuxiang",
+      "date": "1934-12-10",
+      "displayDate": "1934-12-10",
+      "sequence": 8,
+      "forceId": "red_first",
+      "type": "牺牲",
+      "title": "陈树湘壮烈牺牲，红三十四师成为“绝命后卫”",
+      "description": "红三十四师师长陈树湘在湘江突围后负伤被俘，最终壮烈牺牲。“为苏维埃流尽最后一滴血”的事迹成为长征壮烈精神的重要象征。",
+      "location": {
+        "name": "湖南道县一带",
+        "coordinates": [
+          25.52,
+          111.6
+        ],
+        "nameEn": "Daoxian area, Hunan"
+      },
+      "participants": [
+        "陈树湘",
+        "红三十四师"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_chenshuxiang_xinhua",
+        "src_epic_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Chen Shuxiang dies after the Xiang River breakout",
+      "descriptionEn": "Chen Shuxiang, commander of the 34th Division, was wounded and captured after the Xiang River breakout and died heroically, becoming a symbol of sacrifice on the Long March."
+    },
+    {
+      "id": "r25_19341210_funiushan",
+      "date": "1934-12-10",
+      "displayDate": "1934-12-10",
+      "sequence": 9,
+      "forceId": "red_25th",
+      "type": "转进",
+      "title": "红二十五军越过伏牛山，转入豫陕边",
+      "description": "独树镇突围后，红二十五军向伏牛山、豫陕边转进，开始在鄂豫陕边创建新的活动空间。",
+      "location": {
+        "name": "河南伏牛山一带",
+        "coordinates": [
+          33.7,
+          111.5
+        ],
+        "nameEn": "Funiu Mountains, Henan"
+      },
+      "participants": [
+        "程子华",
+        "吴焕先",
+        "徐海东",
+        "红二十五军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red25_people",
+        "src_dushuzhen_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "The 25th Red Army crosses the Funiu Mountains toward the Henan-Shaanxi border",
+      "descriptionEn": "After breaking through at Dushuzhen, the 25th Red Army moved into the Funiu Mountains and the Henan-Shaanxi border region."
+    },
+    {
+      "id": "r25_19341226_yujiahe",
+      "date": "1934-12-10",
+      "displayDate": "1934-12-10",
+      "sequence": 9,
+      "forceId": "red_25th",
+      "type": "会议",
+      "title": "红二十五军庾家河会议后转入鄂豫陕",
+      "description": "红二十五军在转战中调整战略方向，推动创建鄂豫陕根据地，并继续承担北上抗日先遣队角色。",
+      "location": {
+        "name": "陕西商洛庾家河",
+        "coordinates": [
+          33.62,
+          110.0
+        ]
+      },
+      "participants": [
+        "程子华",
+        "吴焕先",
+        "徐海东"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red25_people",
+        "src_red25_base_ujn"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: Meeting at 陕西商洛庾家河",
+      "descriptionEn": "This node marks a meeting event on the Red Twenty-Fifth Army route near 陕西商洛庾家河 (19341210)."
+    },
+    {
+      "id": "rf_19341212_tongdao",
+      "date": "1934-12-12",
+      "displayDate": "1934-12-12",
+      "sequence": 7,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "通道会议调整进军方向",
+      "description": "中央红军在湘桂黔边境转向贵州方向，避免继续按原计划与敌重兵相撞。此节点作为遵义会议前军事路线调整的铺垫。",
+      "location": {
+        "name": "湖南通道",
+        "coordinates": [
+          26.16,
+          109.78
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "朱德"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Meeting at 湖南通道",
+      "descriptionEn": "This node marks a meeting event on the Red First Front Army route near 湖南通道 (19341212)."
+    },
+    {
+      "id": "rf_19341218_liping",
+      "date": "1934-12-18",
+      "displayDate": "1934-12-18",
+      "sequence": 8,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "黎平会议决定向黔北进军",
+      "description": "中央政治局在黎平召开会议，采纳向黔北进军的主张，为后续占领遵义和召开遵义会议创造条件。",
+      "location": {
+        "name": "贵州黎平",
+        "coordinates": [
+          26.23,
+          109.13
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "朱德",
+        "张闻天"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Meeting at 贵州黎平",
+      "descriptionEn": "This node marks a meeting event on the Red First Front Army route near 贵州黎平 (19341218)."
+    },
+    {
+      "id": "rf_19350101_houchang",
+      "date": "1935-01-01",
+      "displayDate": "1935-01-01",
+      "sequence": 102,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "猴场会议限制军事指挥权集中于少数人",
+      "description": "猴场会议要求重大军事行动须经中央政治局讨论，为遵义会议前进一步纠正错误指挥创造条件。",
+      "location": {
+        "name": "贵州瓮安猴场",
+        "coordinates": [
+          27.1,
+          107.48
+        ]
+      },
+      "participants": [
+        "中共中央政治局",
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Meeting at 贵州瓮安猴场",
+      "descriptionEn": "This node marks a meeting event on the Red First Front Army route near 贵州瓮安猴场 (19350101)."
+    },
+    {
+      "id": "rf_19350107_zunyi_city",
+      "date": "1935-01-07",
+      "displayDate": "1935-01-07",
+      "sequence": 10,
+      "forceId": "red_first",
+      "type": "到达",
+      "title": "中央红军占领遵义",
+      "description": "中央红军进入遵义，为召开具有转折意义的遵义会议创造条件。",
+      "location": {
+        "name": "贵州遵义",
+        "coordinates": [
+          27.73,
+          106.92
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_zunyi_hunan"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Arrival at 贵州遵义",
+      "descriptionEn": "This node marks a arrival event on the Red First Front Army route near 贵州遵义 (19350107)."
+    },
+    {
+      "id": "en_19350110_zunyi_pressure",
+      "date": "1935-01-10",
+      "displayDate": "1935-01-10",
+      "sequence": 12,
+      "forceId": "enemy_kmt",
+      "type": "追堵",
+      "title": "敌军向黔北追堵，遵义周边压力上升",
+      "description": "中央红军进入黔北后，敌军继续向遵义周边压迫。军事危局与路线调整共同构成遵义会议的背景。",
+      "location": {
+        "name": "贵州遵义周边",
+        "coordinates": [
+          27.69,
+          106.93
+        ],
+        "nameEn": "Zunyi area, Guizhou"
+      },
+      "participants": [
+        "国民党军",
+        "中央红军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_party_chronology_xinhua",
+        "src_epic_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Enemy pressure rises around Zunyi",
+      "descriptionEn": "After the Central Red Army entered northern Guizhou, enemy pressure continued around Zunyi, forming the military context of the Zunyi Meeting."
+    },
+    {
+      "id": "r25_19350110_eyushan_base",
+      "date": "1935-01-10",
+      "displayDate": "1935-01-10",
+      "sequence": 13,
+      "forceId": "red_25th",
+      "type": "根据",
+      "title": "红二十五军开辟鄂豫陕根据地",
+      "description": "红二十五军进入鄂豫陕边后，依托山地与群众工作创建新的游击根据地，形成“星星之火”式的支线铺开。",
+      "location": {
+        "name": "鄂豫陕边区",
+        "coordinates": [
+          33.65,
+          110.6
+        ],
+        "nameEn": "Hubei-Henan-Shaanxi border region"
+      },
+      "participants": [
+        "红二十五军",
+        "鄂豫陕边群众"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red25_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "The 25th Red Army develops the Hubei-Henan-Shaanxi base area",
+      "descriptionEn": "In the border region, the 25th Red Army developed a new guerrilla base through mountain warfare and mass work."
+    },
+    {
+      "id": "rf_19350115_zunyi_meeting",
+      "date": "1935-01-15",
+      "displayDate": "1935-01-15",
+      "sequence": 11,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "遵义会议召开",
+      "description": "中共中央政治局在遵义召开扩大会议，集中解决军事和组织问题，结束王明“左”倾教条主义在中共中央的统治，确立毛泽东在党和红军中的领导地位。",
+      "location": {
+        "name": "贵州遵义",
+        "coordinates": [
+          27.73,
+          106.92
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "张闻天",
+        "周恩来",
+        "朱德",
+        "王稼祥",
+        "博古",
+        "李德"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_zunyi_hunan"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Meeting at 贵州遵义",
+      "descriptionEn": "This node marks a meeting event on the Red First Front Army route near 贵州遵义 (19350115)."
+    },
+    {
+      "id": "rf_19350128_tucheng",
+      "date": "1935-01-28",
+      "displayDate": "1935-01-28",
+      "sequence": 130,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "土城战斗后调整渡江计划",
+      "description": "土城战斗未能达到预期，中央红军随即调整行动，转而西渡赤水，拉开四渡赤水机动作战序幕。",
+      "location": {
+        "name": "贵州习水土城",
+        "coordinates": [
+          28.33,
+          106.2
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "朱德",
+        "中央红军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Battle at 贵州习水土城",
+      "descriptionEn": "This node marks a battle event on the Red First Front Army route near 贵州习水土城 (19350128)."
+    },
+    {
+      "id": "rf_19350129_tucheng_chishui1",
+      "date": "1935-01-29",
+      "displayDate": "1935-01-29",
+      "sequence": 12,
+      "forceId": "red_first",
+      "type": "战役",
+      "title": "一渡赤水，转入川南",
+      "description": "中央红军在土城战斗后西渡赤水，开启四渡赤水机动作战。",
+      "location": {
+        "name": "贵州土城/赤水河",
+        "coordinates": [
+          28.17,
+          106.17
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "朱德",
+        "周恩来",
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_zunyi_hunan"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Campaign at 贵州土城/赤水河",
+      "descriptionEn": "This node marks a campaign event on the Red First Front Army route near 贵州土城/赤水河 (19350129)."
+    },
+    {
+      "id": "r25_19350131_caiyuyao",
+      "date": "1935-01-31",
+      "displayDate": "1935-01-31",
+      "sequence": 145,
+      "forceId": "red_25th",
+      "type": "战斗",
+      "title": "蔡玉窑战斗重创追敌",
+      "description": "春节前后，红二十五军在陕南连续作战，为创建鄂豫陕根据地打开局面。",
+      "location": {
+        "name": "陕西柞水蔡玉窑一带",
+        "coordinates": [
+          33.68,
+          109.13
+        ]
+      },
+      "participants": [
+        "红二十五军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red25_base_ujn"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: Battle at 陕西柞水蔡玉窑一带",
+      "descriptionEn": "This node marks a battle event on the Red Twenty-Fifth Army route near 陕西柞水蔡玉窑一带 (19350131).",
+      "result": "取得战斗胜利",
+      "metrics": {
+        "victory": true
+      }
+    },
+    {
+      "id": "en_19350201_chishui_pursuit",
+      "date": "1935-02-01",
+      "displayDate": "1935-02-01",
+      "sequence": 132,
+      "forceId": "enemy_kmt",
+      "type": "追堵",
+      "title": "川黔敌军围堵赤水河流域",
+      "description": "中央红军一渡赤水后，国民党军调集多路部队试图在川黔边界围堵红军。",
+      "location": {
+        "name": "川黔赤水河流域",
+        "coordinates": [
+          28.58,
+          105.7
+        ]
+      },
+      "participants": [
+        "国民党军",
+        "中央红军"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "KMT forces: Pursuit at 川黔赤水河流域",
+      "descriptionEn": "This node marks a pursuit event on the KMT forces route near 川黔赤水河流域 (19350201)."
+    },
+    {
+      "id": "rf_19350205_hezizhen",
+      "date": "1935-02-05",
+      "displayDate": "1935-02-05",
+      "sequence": 15,
+      "forceId": "red_first",
+      "type": "生活",
+      "title": "贺子珍川南生女并含泪托孤",
+      "description": "中央红军转战川南古蔺一带时，贺子珍生下一名女婴。因部队急行军和敌情紧迫，孩子被寄养当地群众家中，个体命运折射长征的人间苦难。",
+      "location": {
+        "name": "四川古蔺白沙场一带",
+        "coordinates": [
+          28.04,
+          105.81
+        ],
+        "nameEn": "Baishachang area, Gulin, Sichuan"
+      },
+      "participants": [
+        "贺子珍",
+        "毛泽东",
+        "当地群众"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hezizhen_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "He Zizhen gives birth in southern Sichuan and entrusts the child to locals",
+      "descriptionEn": "In the Gulin area of southern Sichuan, He Zizhen gave birth during the march. Under urgent military pressure, the infant was entrusted to local people, reflecting the human suffering behind the campaign."
+    },
+    {
+      "id": "r25_19350205_wengongling",
+      "date": "1935-02-05",
+      "displayDate": "1935-02-05",
+      "sequence": 155,
+      "forceId": "red_25th",
+      "type": "战斗",
+      "title": "文公岭战斗奠定陕南根据地基础",
+      "description": "红二十五军在文公岭一带打击陕军，为建立第二块革命根据地创造条件。",
+      "location": {
+        "name": "陕西蓝田文公岭一带",
+        "coordinates": [
+          34.05,
+          109.33
+        ]
+      },
+      "participants": [
+        "吴焕先",
+        "程子华",
+        "徐海东",
+        "红二十五军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red25_base_ujn"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: Battle at 陕西蓝田文公岭一带",
+      "descriptionEn": "This node marks a battle event on the Red Twenty-Fifth Army route near 陕西蓝田文公岭一带 (19350205).",
+      "result": "重创陕军第126旅相关部队",
+      "metrics": {
+        "victory": true
+      }
+    },
+    {
+      "id": "rf_19350209_zhaxi",
+      "date": "1935-02-09",
+      "displayDate": "1935-02-09",
+      "sequence": 16,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "扎西会议继续调整中央领导与军事部署",
+      "description": "遵义会议后，中央红军向川滇黔边转进，在扎西一带继续讨论组织分工、军事行动和根据地问题，推动遵义会议精神落实。",
+      "location": {
+        "name": "云南威信扎西",
+        "coordinates": [
+          27.85,
+          105.05
+        ],
+        "nameEn": "Zhaxi, Weixin, Yunnan"
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "张闻天",
+        "中共中央政治局"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_party_chronology_xinhua",
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Zhaxi meetings continue organizational and military adjustments",
+      "descriptionEn": "After the Zunyi Meeting, the Central Red Army moved through the Sichuan-Yunnan-Guizhou border area; meetings near Zhaxi continued the adjustment of leadership and military deployment."
+    },
+    {
+      "id": "sha_19350215_shangang_unify",
+      "date": "1935-02-15",
+      "displayDate": "1935-02-15",
+      "sequence": 14,
+      "forceId": "shaanbei_red",
+      "type": "根据",
+      "title": "陕甘边与陕北革命根据地统一为陕甘革命根据地",
+      "description": "陕甘边革命根据地与陕北革命根据地统一为陕甘革命根据地，又称西北革命根据地，成为土地革命战争后期保存较完整的重要根据地。",
+      "location": {
+        "name": "陕甘边/陕北根据地",
+        "coordinates": [
+          36.6,
+          108.8
+        ]
+      },
+      "participants": [
+        "刘志丹",
+        "谢子长",
+        "习仲勋",
+        "陕甘边军民"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_shaanbei_12371",
+        "src_liuzhidan_mva"
+      ],
+      "certainty": "month",
+      "titleEn": "Shaan-Gan: Base building at 陕甘边/陕北根据地",
+      "descriptionEn": "This node marks a base building event on the Shaan-Gan route near 陕甘边/陕北根据地 (19350215)."
+    },
+    {
+      "id": "rf_19350218_taipingdu_chishui2",
+      "date": "1935-02-18",
+      "displayDate": "1935-02-18",
+      "sequence": 13,
+      "forceId": "red_first",
+      "type": "战役",
+      "title": "二渡赤水，回师黔北",
+      "description": "中央红军由太平渡、二郎滩等地二渡赤水，回师黔北，寻机打击敌军。",
+      "location": {
+        "name": "贵州习水太平渡",
+        "coordinates": [
+          28.15,
+          106.24
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_zunyi_hunan"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Campaign at 贵州习水太平渡",
+      "descriptionEn": "This node marks a campaign event on the Red First Front Army route near 贵州习水太平渡 (19350218)."
+    },
+    {
+      "id": "rf_19350225_loushanguan",
+      "date": "1935-02-25",
+      "displayDate": "1935-02-25",
+      "sequence": 15,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "娄山关战斗与遵义大捷",
+      "description": "中央红军夺取娄山关并再克遵义，是长征以来一次重要胜利，提振士气。",
+      "location": {
+        "name": "贵州娄山关",
+        "coordinates": [
+          28.13,
+          106.86
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_zunyi_hunan"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Battle at 贵州娄山关",
+      "descriptionEn": "This node marks a battle event on the Red First Front Army route near 贵州娄山关 (19350225).",
+      "metrics": {
+        "victory": true
+      }
+    },
+    {
+      "id": "rf_19350227_dengping",
+      "date": "1935-02-27",
+      "displayDate": "1935-02-27",
+      "sequence": 180,
+      "forceId": "red_first",
+      "type": "牺牲",
+      "title": "邓萍在遵义城下侦察敌情时牺牲",
+      "description": "红三军团参谋长邓萍在遵义战役前线侦察敌情时中弹牺牲，是长征途中牺牲的红军高级指挥员之一。",
+      "location": {
+        "name": "贵州遵义老城",
+        "coordinates": [
+          27.7,
+          106.93
+        ]
+      },
+      "participants": [
+        "邓萍",
+        "张爱萍",
+        "红三军团"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_dengping_people_2025",
+        "src_zunyi_hunan"
+      ],
+      "certainty": "high",
+      "titleEn": "Red First Front Army: Sacrifice at 贵州遵义老城",
+      "descriptionEn": "This node marks a sacrifice event on the Red First Front Army route near 贵州遵义老城 (19350227).",
+      "casualties": "邓萍牺牲，年仅27岁。"
+    },
+    {
+      "id": "rf_19350310_gouba",
+      "date": "1935-03-10",
+      "displayDate": "1935-03-10",
+      "sequence": 19,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "苟坝会议围绕作战方针展开争论",
+      "description": "中央红军在遵义以南苟坝一带召开会议，围绕是否进攻打鼓新场等问题展开争论。该节点用于表现长征中的军事决策并非线性推进，而是在危局中反复权衡。",
+      "location": {
+        "name": "贵州遵义苟坝",
+        "coordinates": [
+          27.48,
+          106.72
+        ],
+        "nameEn": "Gouba, Zunyi, Guizhou"
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "朱德",
+        "中共中央负责人"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_party_chronology_xinhua",
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Gouba Meeting debates operational direction",
+      "descriptionEn": "Near Gouba south of Zunyi, Red Army leaders debated operational choices under urgent military pressure, showing how decisions were repeatedly weighed amid crisis."
+    },
+    {
+      "id": "rf_19350316_maotai_chishui3",
+      "date": "1935-03-16",
+      "displayDate": "1935-03-16",
+      "sequence": 16,
+      "forceId": "red_first",
+      "type": "战役",
+      "title": "三渡赤水，西进川南",
+      "description": "中央红军由茅台及其附近三渡赤水，再次造成敌军判断混乱。",
+      "location": {
+        "name": "贵州茅台",
+        "coordinates": [
+          27.85,
+          106.38
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_zunyi_hunan"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Campaign at 贵州茅台",
+      "descriptionEn": "This node marks a campaign event on the Red First Front Army route near 贵州茅台 (19350316)."
+    },
+    {
+      "id": "en_19350320_chishui_encircle",
+      "date": "1935-03-20",
+      "displayDate": "1935-03-20",
+      "sequence": 20,
+      "forceId": "enemy_kmt",
+      "type": "围堵",
+      "title": "赤水河两岸敌军重兵围堵",
+      "description": "四渡赤水期间，中央红军在川黔滇边敌军重兵之间穿插机动，以不规则转进打乱围堵部署。",
+      "location": {
+        "name": "川黔赤水河流域",
+        "coordinates": [
+          28.59,
+          105.69
+        ],
+        "nameEn": "Chishui River region"
+      },
+      "participants": [
+        "国民党军",
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_epic_people",
+        "src_party_chronology_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Enemy forces attempt encirclement along the Chishui River",
+      "descriptionEn": "During the Four Crossings of the Chishui, the Central Red Army maneuvered through heavy enemy pressure in the Sichuan-Guizhou-Yunnan border region."
+    },
+    {
+      "id": "rf_19350321_erlangtan_chishui4",
+      "date": "1935-03-21",
+      "displayDate": "1935-03-21",
+      "sequence": 17,
+      "forceId": "red_first",
+      "type": "战役",
+      "title": "四渡赤水，跳出重围",
+      "description": "中央红军四渡赤水，佯动与机动结合，摆脱敌军围追堵截。",
+      "location": {
+        "name": "贵州二郎滩",
+        "coordinates": [
+          28.12,
+          106.28
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_zunyi_hunan"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Campaign at 贵州二郎滩",
+      "descriptionEn": "This node marks a campaign event on the Red First Front Army route near 贵州二郎滩 (19350321)."
+    },
+    {
+      "id": "r4_19350328_jialingjiang",
+      "date": "1935-03-28",
+      "displayDate": "1935-03-28",
+      "sequence": 18,
+      "forceId": "red_fourth",
+      "type": "战役",
+      "title": "红四方面军强渡嘉陵江",
+      "description": "红四方面军发起嘉陵江战役，突破嘉陵江防线。以此作为红四方面军战略转移的可视化起点；另有口径将放弃川陕苏区后的5月初作为长征起点。",
+      "location": {
+        "name": "四川苍溪嘉陵江",
+        "coordinates": [
+          31.73,
+          105.93
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "陈昌浩",
+        "红四方面军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "口径有差异",
+      "titleEn": "Red Fourth Front Army: Campaign at 四川苍溪嘉陵江",
+      "descriptionEn": "This node marks a campaign event on the Red Fourth Front Army route near 四川苍溪嘉陵江 (19350328)."
+    },
+    {
+      "id": "rf_19350329_wujiang_south",
+      "date": "1935-03-29",
+      "displayDate": "1935-03-29",
+      "sequence": 19,
+      "forceId": "red_first",
+      "type": "渡河",
+      "title": "南渡乌江，佯逼贵阳",
+      "description": "中央红军南渡乌江并向贵阳方向运动，调动敌军，为西进云南、北渡金沙江创造条件。",
+      "location": {
+        "name": "贵州乌江一线",
+        "coordinates": [
+          27.3,
+          106.7
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_zunyi_hunan"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: River crossing at 贵州乌江一线",
+      "descriptionEn": "This node marks a river crossing event on the Red First Front Army route near 贵州乌江一线 (19350329)."
+    },
+    {
+      "id": "rf_19350331_guiyang",
+      "date": "1935-03-31",
+      "displayDate": "1935-03-31",
+      "sequence": 220,
+      "forceId": "red_first",
+      "type": "转进",
+      "title": "佯逼贵阳，调动敌军",
+      "description": "中央红军南渡乌江后佯逼贵阳，迫使敌军调动，为随后西进云南、巧渡金沙江创造条件。",
+      "location": {
+        "name": "贵州贵阳周边",
+        "coordinates": [
+          26.65,
+          106.63
+        ]
+      },
+      "participants": [
+        "中央红军",
+        "国民党军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: March at 贵州贵阳周边",
+      "descriptionEn": "This node marks a march event on the Red First Front Army route near 贵州贵阳周边 (19350331)."
+    },
+    {
+      "id": "rf_19350409_kunming",
+      "date": "1935-04-09",
+      "displayDate": "1935-04-09",
+      "sequence": 230,
+      "forceId": "red_first",
+      "type": "转进",
+      "title": "兵临昆明，迫使敌军回援",
+      "description": "中央红军向昆明方向急进，制造威胁，调动云南方向敌军，为北渡金沙江赢得时间。",
+      "location": {
+        "name": "云南昆明周边",
+        "coordinates": [
+          25.04,
+          102.71
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: March at 云南昆明周边",
+      "descriptionEn": "This node marks a march event on the Red First Front Army route near 云南昆明周边 (19350409)."
+    },
+    {
+      "id": "r25_19350418_huayang",
+      "date": "1935-04-18",
+      "displayDate": "1935-04-18",
+      "sequence": 24,
+      "forceId": "red_25th",
+      "type": "根据",
+      "title": "红二十五军在华阳一带开展群众工作",
+      "description": "红二十五军在秦岭南麓与陕南地区活动，通过宣传抗日、发动群众和扩充队伍，推动鄂豫陕根据地继续发展。",
+      "location": {
+        "name": "陕西洋县华阳",
+        "coordinates": [
+          33.59,
+          107.54
+        ],
+        "nameEn": "Huayang, Yangxian, Shaanxi"
+      },
+      "participants": [
+        "红二十五军",
+        "当地群众"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_red25_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "The 25th Red Army carries out mass work near Huayang",
+      "descriptionEn": "Near Huayang in southern Shaanxi, the 25th Red Army promoted anti-Japanese propaganda, mobilized local people and expanded its forces."
+    },
+    {
+      "id": "r4_19350421_jialing_end",
+      "date": "1935-04-21",
+      "displayDate": "1935-04-21",
+      "sequence": 23,
+      "forceId": "red_fourth",
+      "type": "战役",
+      "title": "嘉陵江战役结束，红四方面军控制大片区域",
+      "description": "红四方面军强渡嘉陵江后，历时二十余日作战，向川甘边推进并控制大片地区，为后续西进与会师创造条件。",
+      "location": {
+        "name": "四川苍溪至阆中一线",
+        "coordinates": [
+          31.74,
+          105.93
+        ],
+        "nameEn": "Cangxi-Langzhong line, Sichuan"
+      },
+      "participants": [
+        "徐向前",
+        "陈昌浩",
+        "红四方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_epic_people",
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Jialing River Campaign ends with the Fourth Front Army pushing west",
+      "descriptionEn": "After crossing the Jialing River, the Fourth Front Army fought for more than twenty days and pushed toward the Sichuan-Gansu border."
+    },
+    {
+      "id": "en_19350428_jinsha_block",
+      "date": "1935-04-28",
+      "displayDate": "1935-04-28",
+      "sequence": 27,
+      "forceId": "enemy_kmt",
+      "type": "封锁",
+      "title": "云南方向试图封锁金沙江渡口",
+      "description": "中央红军逼近金沙江时，敌军试图依托江防和地方部队封锁渡口。红军快速机动抢占渡口，跳出包围圈。",
+      "location": {
+        "name": "云南皎平渡附近",
+        "coordinates": [
+          26.29,
+          102.94
+        ],
+        "nameEn": "Jiaopingdu area, Yunnan"
+      },
+      "participants": [
+        "国民党军",
+        "中央红军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_epic_people",
+        "src_party_chronology_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Enemy forces attempt to block Jinsha River crossings",
+      "descriptionEn": "As the Red Army approached the Jinsha River, enemy forces tried to block the ferries, but rapid maneuver secured crossing points."
+    },
+    {
+      "id": "rf_19350429_jiaopingdu_start",
+      "date": "1935-04-29",
+      "displayDate": "1935-04-29",
+      "sequence": 20,
+      "forceId": "red_first",
+      "type": "渡河",
+      "title": "巧渡金沙江开始",
+      "description": "中央红军抢占金沙江渡口，准备利用少量船只渡江，摆脱南岸追兵。",
+      "location": {
+        "name": "云南禄劝皎平渡",
+        "coordinates": [
+          26.13,
+          102.52
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_zunyi_hunan",
+        "src_qilv_dangjian_2024",
+        "src_qilv_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: River crossing at 云南禄劝皎平渡",
+      "descriptionEn": "This node marks a river crossing event on the Red First Front Army route near 云南禄劝皎平渡 (19350429).",
+      "poem": {
+        "line": "金沙水拍云崖暖",
+        "title": "金沙江的“暖”",
+        "text": "在皎平渡一带渡过金沙江后，中央红军甩开追敌，获得战略主动。诗句中的“暖”，指向绝处逢生后的舒展与希望。"
+      }
+    },
+    {
+      "id": "r4_19350501_leave_soviet_area",
+      "date": "1935-05-01",
+      "displayDate": "1935-05-01",
+      "sequence": 21,
+      "forceId": "red_fourth",
+      "type": "转进",
+      "title": "红四方面军离开川陕根据地向西转移",
+      "description": "红四方面军在嘉陵江战役后继续向川西北转移，与中央红军会合。该节点用于补足红四方面军从嘉陵江向懋功的路线段。",
+      "location": {
+        "name": "四川广元/剑阁一带",
+        "coordinates": [
+          32.23,
+          105.83
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "陈昌浩",
+        "张国焘"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "approximate",
+      "titleEn": "Red Fourth Front Army: March at 四川广元/剑阁一带",
+      "descriptionEn": "This node marks a march event on the Red Fourth Front Army route near 四川广元/剑阁一带 (19350501)."
+    },
+    {
+      "id": "rf_19350503_jinsha_crossing",
+      "date": "1935-05-03",
+      "displayDate": "1935-05-03",
+      "sequence": 22,
+      "forceId": "red_first",
+      "type": "渡河",
+      "title": "中央红军主力渡过金沙江",
+      "description": "1935年5月3日至9日，中央红军仅凭少量渡船连续渡过金沙江，摆脱敌军重兵围追堵截。",
+      "location": {
+        "name": "云南皎平渡",
+        "coordinates": [
+          26.13,
+          102.52
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_zunyi_hunan",
+        "src_qilv_dangjian_2024",
+        "src_qilv_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: River crossing at 云南皎平渡",
+      "descriptionEn": "This node marks a river crossing event on the Red First Front Army route near 云南皎平渡 (19350503).",
+      "poem": {
+        "line": "金沙水拍云崖暖",
+        "title": "金沙江的“暖”",
+        "text": "在皎平渡一带渡过金沙江后，中央红军甩开追敌，获得战略主动。诗句中的“暖”，指向绝处逢生后的舒展与希望。"
+      }
+    },
+    {
+      "id": "r25_19350505_base4",
+      "date": "1935-05-05",
+      "displayDate": "1935-05-05",
+      "sequence": 282,
+      "forceId": "red_25th",
+      "type": "根据",
+      "title": "鄂豫陕根据地初步形成四块区域",
+      "description": "至1935年5月初，红二十五军在三省边界地区建立多块根据地，红军长征在途中播撒新的革命火种。",
+      "location": {
+        "name": "鄂豫陕边区商洛一带",
+        "coordinates": [
+          33.87,
+          109.94
+        ]
+      },
+      "participants": [
+        "红二十五军",
+        "地方群众"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red25_base_ujn"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: Base building at 鄂豫陕边区商洛一带",
+      "descriptionEn": "This node marks a base building event on the Red Twenty-Fifth Army route near 鄂豫陕边区商洛一带 (19350505)."
+    },
+    {
+      "id": "rf_19350512_huili",
+      "date": "1935-05-12",
+      "displayDate": "1935-05-12",
+      "sequence": 25,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "会理会议总结机动作战经验",
+      "description": "中央红军渡过金沙江后在会理一带召开会议，总结渡江与机动作战经验，统一认识，准备继续北上。",
+      "location": {
+        "name": "四川会理",
+        "coordinates": [
+          26.66,
+          102.24
+        ],
+        "nameEn": "Huili, Sichuan"
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "朱德",
+        "中央红军领导层"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_party_chronology_xinhua",
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Huili Meeting reviews mobile warfare after the Jinsha crossing",
+      "descriptionEn": "After crossing the Jinsha River, leaders met around Huili to review mobile warfare and prepare for the northward march."
+    },
+    {
+      "id": "rf_19350522_yihai_alliance",
+      "date": "1935-05-22",
+      "displayDate": "1935-05-22",
+      "sequence": 23,
+      "forceId": "red_first",
+      "type": "民族",
+      "title": "刘伯承与小叶丹彝海结盟",
+      "description": "中央红军进入凉山彝族地区后，严格执行民族纪律。刘伯承与彝族果基部落首领小叶丹在彝海边按彝族习俗歃血为盟，小叶丹派向导带路，帮助红军顺利通过彝族地区。",
+      "location": {
+        "name": "四川冕宁彝海",
+        "coordinates": [
+          28.78,
+          102.17
+        ]
+      },
+      "participants": [
+        "刘伯承",
+        "小叶丹",
+        "彝族向导",
+        "中央红军先遣队"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_yihai_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Alliance at 四川冕宁彝海",
+      "descriptionEn": "This node marks a alliance event on the Red First Front Army route near 四川冕宁彝海 (19350522)."
+    },
+    {
+      "id": "rfour_19350522_tumen",
+      "date": "1935-05-22",
+      "displayDate": "1935-05-22",
+      "sequence": 330,
+      "forceId": "red_fourth",
+      "type": "战役",
+      "title": "土门战役胜利，打破北川河谷封锁",
+      "description": "红四方面军发动土门战役，打破敌军固守北川河谷的企图，向岷江上游推进。",
+      "location": {
+        "name": "四川北川土门一带",
+        "coordinates": [
+          31.85,
+          104.45
+        ]
+      },
+      "participants": [
+        "红四方面军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_redfourth_sichuan"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Fourth Front Army: Campaign at 四川北川土门一带",
+      "descriptionEn": "This node marks a campaign event on the Red Fourth Front Army route near 四川北川土门一带 (19350522).",
+      "result": "歼敌10000余人",
+      "metrics": {
+        "enemyDefeated": 10000,
+        "victory": true
+      }
+    },
+    {
+      "id": "rf_19350525_anshunchang",
+      "date": "1935-05-25",
+      "displayDate": "1935-05-25",
+      "sequence": 24,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "强渡大渡河",
+      "description": "刘伯承、聂荣臻等指挥先遣部队在安顺场强渡大渡河，为红军北上打开通道。",
+      "location": {
+        "name": "四川石棉安顺场",
+        "coordinates": [
+          29.23,
+          102.35
+        ]
+      },
+      "participants": [
+        "刘伯承",
+        "聂荣臻",
+        "孙继先",
+        "十八勇士"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_zunyi_hunan"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Battle at 四川石棉安顺场",
+      "descriptionEn": "This node marks a battle event on the Red First Front Army route near 四川石棉安顺场 (19350525)."
+    },
+    {
+      "id": "en_19350525_dadu_block",
+      "date": "1935-05-25",
+      "displayDate": "1935-05-25",
+      "sequence": 30,
+      "forceId": "enemy_kmt",
+      "type": "封锁",
+      "title": "大渡河一线敌军封锁与追击",
+      "description": "红军逼近大渡河、泸定桥时，敌军试图借天险阻截。强渡大渡河和飞夺泸定桥成为突破天险封锁的关键节点。",
+      "location": {
+        "name": "四川安顺场—泸定桥一线",
+        "coordinates": [
+          29.23,
+          102.23
+        ],
+        "nameEn": "Anshunchang-Luding line, Sichuan"
+      },
+      "participants": [
+        "国民党军",
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_epic_people",
+        "src_party_chronology_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Enemy blockade along the Dadu River line",
+      "descriptionEn": "Enemy forces tried to use the Dadu River and Luding Bridge as natural barriers; the Red Army broke through by forced crossing and assault."
+    },
+    {
+      "id": "rf_19350529_luding_bridge",
+      "date": "1935-05-29",
+      "displayDate": "1935-05-29",
+      "sequence": 25,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "飞夺泸定桥",
+      "description": "红四团22名勇士冒着火力攀爬铁索，夺取泸定桥，保障红军主力渡过大渡河。",
+      "location": {
+        "name": "四川泸定桥",
+        "coordinates": [
+          29.92,
+          102.23
+        ]
+      },
+      "participants": [
+        "王开湘",
+        "杨成武",
+        "红四团22名勇士"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_zunyi_hunan",
+        "src_qilv_dangjian_2024",
+        "src_qilv_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Battle at 四川泸定桥",
+      "descriptionEn": "This node marks a battle event on the Red First Front Army route near 四川泸定桥 (19350529).",
+      "poem": {
+        "line": "大渡桥横铁索寒",
+        "title": "铁索桥上的寒光",
+        "text": "泸定桥横跨大渡河，铁索凌空、枪火交织。诗中的“寒”，凝聚了天险、火线与牺牲。"
+      }
+    },
+    {
+      "id": "rf_19350602_jiajinshan",
+      "date": "1935-06-02",
+      "displayDate": "1935-06-02",
+      "sequence": 26,
+      "forceId": "red_first",
+      "type": "险阻",
+      "title": "中央红军翻越夹金山",
+      "description": "中央红军翻越长征中的第一座大雪山夹金山，行军进入川西北高寒地区。",
+      "location": {
+        "name": "四川宝兴夹金山",
+        "coordinates": [
+          30.37,
+          102.82
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Hardship at 四川宝兴夹金山",
+      "descriptionEn": "This node marks a hardship event on the Red First Front Army route near 四川宝兴夹金山 (19350602).",
+      "metrics": {
+        "distanceLi": 16500
+      }
+    },
+    {
+      "id": "rf_19350612_davi_meeting",
+      "date": "1935-06-12",
+      "displayDate": "1935-06-12",
+      "sequence": 27,
+      "forceId": "red_first",
+      "type": "会师",
+      "title": "红一、红四方面军前锋在达维会师",
+      "description": "红一、红四方面军前锋部队在懋功东南的达维地区会师，形成长征途中的重要会师节点。",
+      "location": {
+        "name": "四川小金达维",
+        "coordinates": [
+          30.92,
+          102.49
+        ]
+      },
+      "participants": [
+        "红一方面军",
+        "红四方面军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Convergence at 四川小金达维",
+      "descriptionEn": "This node marks a convergence event on the Red First Front Army route near 四川小金达维 (19350612)."
+    },
+    {
+      "id": "r4_19350612_davi_meeting",
+      "date": "1935-06-12",
+      "displayDate": "1935-06-12",
+      "sequence": 28,
+      "forceId": "red_fourth",
+      "type": "会师",
+      "title": "红四方面军与中央红军达维会师",
+      "description": "红四方面军前锋与中央红军在达维会师。该事件作为红四方面军路线独立连线终点之一，避免与中央红军路线混连。",
+      "location": {
+        "name": "四川小金达维",
+        "coordinates": [
+          30.92,
+          102.49
+        ]
+      },
+      "participants": [
+        "红四方面军",
+        "红一方面军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Fourth Front Army: Convergence at 四川小金达维",
+      "descriptionEn": "This node marks a convergence event on the Red Fourth Front Army route near 四川小金达维 (19350612)."
+    },
+    {
+      "id": "r25_19350616_zijingguan",
+      "date": "1935-06-16",
+      "displayDate": "1935-06-16",
+      "sequence": 348,
+      "forceId": "red_25th",
+      "type": "战斗",
+      "title": "紫荆关战斗突破敌军围攻",
+      "description": "红二十五军在第二次反“围剿”中机动作战，取得紫荆关战斗胜利。",
+      "location": {
+        "name": "陕西山阳紫荆关一带",
+        "coordinates": [
+          33.43,
+          109.88
+        ]
+      },
+      "participants": [
+        "红二十五军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red25_base_ujn"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: Battle at 陕西山阳紫荆关一带",
+      "descriptionEn": "This node marks a battle event on the Red Twenty-Fifth Army route near 陕西山阳紫荆关一带 (19350616).",
+      "result": "突破围攻",
+      "metrics": {
+        "victory": true
+      }
+    },
+    {
+      "id": "rf_19350618_maogong_main",
+      "date": "1935-06-18",
+      "displayDate": "1935-06-18",
+      "sequence": 29,
+      "forceId": "red_first",
+      "type": "会师",
+      "title": "中央红军主力到达懋功地区",
+      "description": "中共中央、中革军委和红一方面军主力到达懋功地区，红一、红四两支主力会合。",
+      "location": {
+        "name": "四川懋功/小金",
+        "coordinates": [
+          31.0,
+          102.36
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "朱德",
+        "张国焘",
+        "徐向前"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Convergence at 四川懋功/小金",
+      "descriptionEn": "This node marks a convergence event on the Red First Front Army route near 四川懋功/小金 (19350618)."
+    },
+    {
+      "id": "rf_19350626_lianghekou",
+      "date": "1935-06-26",
+      "displayDate": "1935-06-26",
+      "sequence": 30,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "两河口会议确定北上方针",
+      "description": "中共中央政治局召开两河口会议，确定北上建立川陕甘根据地的战略方针。",
+      "location": {
+        "name": "四川小金两河口",
+        "coordinates": [
+          31.35,
+          102.35
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "张国焘",
+        "朱德"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Meeting at 四川小金两河口",
+      "descriptionEn": "This node marks a meeting event on the Red First Front Army route near 四川小金两河口 (19350626)."
+    },
+    {
+      "id": "r4_19350626_lianghekou",
+      "date": "1935-06-26",
+      "displayDate": "1935-06-26",
+      "sequence": 34,
+      "forceId": "red_fourth",
+      "type": "会议",
+      "title": "两河口会议明确共同北上方针",
+      "description": "红一、红四方面军会合后召开两河口会议，确定集中主力向北发展、创建川陕甘根据地的方针。",
+      "location": {
+        "name": "四川小金两河口",
+        "coordinates": [
+          31.02,
+          102.5
+        ],
+        "nameEn": "Lianghekou, Xiaojin, Sichuan"
+      },
+      "participants": [
+        "中共中央",
+        "红一方面军",
+        "红四方面军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua",
+        "src_party_chronology_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Lianghekou Meeting affirms the northward strategy",
+      "descriptionEn": "After the First and Fourth Front Armies met, the Lianghekou Meeting affirmed the strategy of moving north to create a Sichuan-Shaanxi-Gansu base."
+    },
+    {
+      "id": "en_19350701_red25_encirclement",
+      "date": "1935-07-01",
+      "displayDate": "1935-07-01",
+      "sequence": 390,
+      "forceId": "enemy_kmt",
+      "type": "围堵",
+      "title": "敌军三十多个团围攻鄂豫陕根据地",
+      "description": "红二十五军创建的鄂豫陕根据地遭敌军重兵围攻，红军以运动战和游击战各个击破。",
+      "location": {
+        "name": "鄂豫陕边区",
+        "coordinates": [
+          33.65,
+          109.7
+        ]
+      },
+      "participants": [
+        "国民党军",
+        "红二十五军"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_red25_base_ujn"
+      ],
+      "certainty": "medium",
+      "titleEn": "KMT forces: Encirclement at 鄂豫陕边区",
+      "descriptionEn": "This node marks a encirclement event on the KMT forces route near 鄂豫陕边区 (19350701)."
+    },
+    {
+      "id": "r25_19350702_yuanjiagou",
+      "date": "1935-07-02",
+      "displayDate": "1935-07-02",
+      "sequence": 392,
+      "forceId": "red_25th",
+      "type": "战役",
+      "title": "袁家沟口战斗歼灭陕军警备第一旅",
+      "description": "红二十五军诱敌深入，在袁家沟口突然发起攻击，全歼陕军警备第一旅，成为其长征中俘敌数量最多的一次战斗。",
+      "location": {
+        "name": "陕西山阳袁家沟口",
+        "coordinates": [
+          33.44,
+          109.89
+        ]
+      },
+      "participants": [
+        "吴焕先",
+        "程子华",
+        "徐海东",
+        "红二十五军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_red25_yuanjiagou_people_2026"
+      ],
+      "certainty": "high",
+      "titleEn": "Red Twenty-Fifth Army: Campaign at 陕西山阳袁家沟口",
+      "descriptionEn": "This node marks a campaign event on the Red Twenty-Fifth Army route near 陕西山阳袁家沟口 (19350702).",
+      "result": "毙伤敌300余人，俘敌1400余人",
+      "metrics": {
+        "enemyDefeated": 1700,
+        "victory": true
+      }
+    },
+    {
+      "id": "r25_19350713_weixi",
+      "date": "1935-07-13",
+      "displayDate": "1935-07-13",
+      "sequence": 405,
+      "forceId": "red_25th",
+      "type": "转进",
+      "title": "北出终南山，威逼西安",
+      "description": "红二十五军北出终南山，前锋直抵西安以南，牵动敌军部署并打破第二次“围剿”。",
+      "location": {
+        "name": "陕西西安南郊韦曲/子午镇",
+        "coordinates": [
+          34.06,
+          108.94
+        ]
+      },
+      "participants": [
+        "红二十五军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red25_base_ujn"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: March at 陕西西安南郊韦曲/子午镇",
+      "descriptionEn": "This node marks a march event on the Red Twenty-Fifth Army route near 陕西西安南郊韦曲/子午镇 (19350713)."
+    },
+    {
+      "id": "r25_19350716_fengyukou",
+      "date": "1935-07-16",
+      "displayDate": "1935-07-16",
+      "sequence": 31,
+      "forceId": "red_25th",
+      "type": "转进",
+      "title": "红二十五军从沣峪口西征北上",
+      "description": "红二十五军决定西征甘肃、北上陕北，赴陕甘苏区与红二十六军会合，配合中央红军北上。",
+      "location": {
+        "name": "陕西长安沣峪口",
+        "coordinates": [
+          34.02,
+          108.78
+        ]
+      },
+      "participants": [
+        "吴焕先",
+        "程子华",
+        "徐海东"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: March at 陕西长安沣峪口",
+      "descriptionEn": "This node marks a march event on the Red Twenty-Fifth Army route near 陕西长安沣峪口 (19350716)."
+    },
+    {
+      "id": "rf_19350804_shawo",
+      "date": "1935-08-04",
+      "displayDate": "1935-08-04",
+      "sequence": 38,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "沙窝会议部署红一、红四方面军混编北上",
+      "description": "红一、红四方面军会合后，中央在沙窝一带继续讨论北上方针和部队编组，长征进入雪山草地与内部路线分歧交织的新阶段。",
+      "location": {
+        "name": "四川松潘沙窝一带",
+        "coordinates": [
+          32.63,
+          103.6
+        ],
+        "nameEn": "Shawo area, Songpan, Sichuan"
+      },
+      "participants": [
+        "中共中央",
+        "红一方面军",
+        "红四方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_party_chronology_xinhua",
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Shawo Meeting discusses northward movement and reorganization",
+      "descriptionEn": "After the meeting of the First and Fourth Front Armies, discussions near Shawo addressed the northward strategy and force organization."
+    },
+    {
+      "id": "r4_19350815_maoergai",
+      "date": "1935-08-15",
+      "displayDate": "1935-08-15",
+      "sequence": 39,
+      "forceId": "red_fourth",
+      "type": "会议",
+      "title": "毛儿盖会议继续讨论北上与草地行动",
+      "description": "在雪山草地前后，红一、红四方面军围绕北上路线、草地行军和部队部署继续讨论，路线分歧逐步加深。",
+      "location": {
+        "name": "四川松潘毛儿盖",
+        "coordinates": [
+          32.45,
+          103.43
+        ],
+        "nameEn": "Maoergai, Songpan, Sichuan"
+      },
+      "participants": [
+        "中共中央",
+        "红一方面军",
+        "红四方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_party_chronology_xinhua",
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Maoergai discussions address the northward route and grassland march",
+      "descriptionEn": "Before and around the grassland crossings, leaders continued to debate the northward route and deployment."
+    },
+    {
+      "id": "r25_19350817_jingchuan",
+      "date": "1935-08-17",
+      "displayDate": "1935-08-17",
+      "sequence": 41,
+      "forceId": "red_25th",
+      "type": "战斗",
+      "title": "红二十五军泾川一带遭遇激战",
+      "description": "红二十五军西征北上途中在甘肃泾川一带与敌军激战，继续向陕甘根据地方向推进。",
+      "location": {
+        "name": "甘肃泾川",
+        "coordinates": [
+          35.33,
+          107.37
+        ],
+        "nameEn": "Jingchuan, Gansu"
+      },
+      "participants": [
+        "红二十五军",
+        "吴焕先",
+        "徐海东"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red25_people",
+        "src_yongping_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "The 25th Red Army fights near Jingchuan",
+      "descriptionEn": "During its northwestern movement, the 25th Red Army fought near Jingchuan and continued toward the Shaanxi-Gansu base area."
+    },
+    {
+      "id": "r25_19350817_longde",
+      "date": "1935-08-17",
+      "displayDate": "1935-08-17",
+      "sequence": 440,
+      "forceId": "red_25th",
+      "type": "战斗",
+      "title": "攻克隆德后向泾川推进",
+      "description": "红二十五军攻克隆德后继续向泾川方向机动，在敌军重压下寻找北上通道。",
+      "location": {
+        "name": "宁夏隆德",
+        "coordinates": [
+          35.62,
+          106.12
+        ]
+      },
+      "participants": [
+        "红二十五军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red25_xinhua_2017"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: Battle at 宁夏隆德",
+      "descriptionEn": "This node marks a battle event on the Red Twenty-Fifth Army route near 宁夏隆德 (19350817).",
+      "result": "攻克隆德",
+      "metrics": {
+        "victory": true
+      }
+    },
+    {
+      "id": "rf_19350820_maoergai",
+      "date": "1935-08-20",
+      "displayDate": "1935-08-20",
+      "sequence": 32,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "毛儿盖会议继续确定北上路线",
+      "description": "中共中央在川西北继续围绕北上战略展开部署，随后右路军进入草地。",
+      "location": {
+        "name": "四川松潘毛儿盖",
+        "coordinates": [
+          32.67,
+          103.6
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "张闻天",
+        "博古"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Meeting at 四川松潘毛儿盖",
+      "descriptionEn": "This node marks a meeting event on the Red First Front Army route near 四川松潘毛儿盖 (19350820)."
+    },
+    {
+      "id": "r25_19350821_wuhuanxian_death",
+      "date": "1935-08-21",
+      "displayDate": "1935-08-21",
+      "sequence": 33,
+      "forceId": "red_25th",
+      "type": "牺牲",
+      "title": "吴焕先在泾川战斗中牺牲",
+      "description": "红二十五军政治委员吴焕先在甘肃泾川四坡村附近战斗中牺牲。人物牺牲节点用于补充长征的个体代价。",
+      "location": {
+        "name": "甘肃泾川四坡村",
+        "coordinates": [
+          35.3,
+          107.37
+        ]
+      },
+      "participants": [
+        "吴焕先",
+        "红二十五军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: Sacrifice at 甘肃泾川四坡村",
+      "descriptionEn": "This node marks a sacrifice event on the Red Twenty-Fifth Army route near 甘肃泾川四坡村 (19350821)."
+    },
+    {
+      "id": "rf_19350821_ruoergai",
+      "date": "1935-08-21",
+      "displayDate": "1935-08-21",
+      "sequence": 34,
+      "forceId": "red_first",
+      "type": "险阻",
+      "title": "右路军开始过草地",
+      "description": "中央红军右路军进入若尔盖草地，面对缺粮、沼泽、高寒等极端困难。",
+      "location": {
+        "name": "四川若尔盖草地",
+        "coordinates": [
+          33.58,
+          102.97
+        ]
+      },
+      "participants": [
+        "中央红军右路军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Hardship at 四川若尔盖草地",
+      "descriptionEn": "This node marks a hardship event on the Red First Front Army route near 四川若尔盖草地 (19350821)."
+    },
+    {
+      "id": "en_19350825_grassland_pressure",
+      "date": "1935-08-25",
+      "displayDate": "1935-08-25",
+      "sequence": 41,
+      "forceId": "enemy_kmt",
+      "type": "追堵",
+      "title": "川西北敌军压迫红军草地行动",
+      "description": "雪山草地阶段，自然险阻与敌军压迫叠加，部队在饥饿、寒冷和追堵压力中继续北进。",
+      "location": {
+        "name": "川西北草地周边",
+        "coordinates": [
+          33.58,
+          102.96
+        ],
+        "nameEn": "Northwestern Sichuan grasslands"
+      },
+      "participants": [
+        "国民党军",
+        "红军右路军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_epic_people",
+        "src_xinhua_overall_stats"
+      ],
+      "certainty": "medium",
+      "titleEn": "Enemy pressure accompanies the grassland crossing",
+      "descriptionEn": "During the snow-mountain and grassland phase, natural hazards and enemy pressure overlapped."
+    },
+    {
+      "id": "rf_19350829_baozuo",
+      "date": "1935-08-29",
+      "displayDate": "1935-08-29",
+      "sequence": 42,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "包座战斗打开北上通道",
+      "description": "右路军走出草地后，在包座一带作战，打开继续北上的通道，使穿越草地后的部队获得喘息与前进条件。",
+      "location": {
+        "name": "四川若尔盖包座",
+        "coordinates": [
+          33.43,
+          103.18
+        ],
+        "nameEn": "Baozuo, Zoige, Sichuan"
+      },
+      "participants": [
+        "右路军",
+        "红一方面军部队"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_epic_people",
+        "src_party_chronology_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Baozuo Battle opens the route north",
+      "descriptionEn": "After crossing the grasslands, the right column fought near Baozuo and opened the route for continued movement northward.",
+      "metrics": {
+        "victory": true
+      }
+    },
+    {
+      "id": "rfour_19350829_baozuo",
+      "date": "1935-08-29",
+      "displayDate": "1935-08-29",
+      "sequence": 470,
+      "forceId": "red_fourth",
+      "type": "战斗",
+      "title": "包座方向配合打开北上道路",
+      "description": "红一、红四方面军相关部队在包座方向作战，打开继续北上的道路。",
+      "location": {
+        "name": "四川若尔盖包座",
+        "coordinates": [
+          33.69,
+          103.24
+        ]
+      },
+      "participants": [
+        "红四方面军",
+        "红一方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Fourth Front Army: Battle at 四川若尔盖包座",
+      "descriptionEn": "This node marks a battle event on the Red Fourth Front Army route near 四川若尔盖包座 (19350829).",
+      "result": "打开北上通道",
+      "metrics": {
+        "victory": true
+      }
+    },
+    {
+      "id": "rf_19350909_baxi",
+      "date": "1935-09-09",
+      "displayDate": "1935-09-09",
+      "sequence": 44,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "巴西会议后红一方面军单独北上",
+      "description": "张国焘拒绝执行北上方针并率部南下后，中共中央在巴西一带作出继续北上的决定，红一方面军独自向陕甘方向推进。",
+      "location": {
+        "name": "四川若尔盖巴西",
+        "coordinates": [
+          33.58,
+          102.96
+        ],
+        "nameEn": "Baxi, Zoige, Sichuan"
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "张闻天",
+        "红一方面军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_party_chronology_xinhua",
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "After the Baxi discussions, the First Front Army continues north alone",
+      "descriptionEn": "After Zhang Guotao rejected the northward line, the central leadership around Baxi decided to continue north toward the Shaanxi-Gansu area."
+    },
+    {
+      "id": "rf_19350912_ejie",
+      "date": "1935-09-12",
+      "displayDate": "1935-09-12",
+      "sequence": 35,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "俄界会议决定继续北上",
+      "description": "中共中央在俄界召开会议，批判分裂活动，决定率陕甘支队继续北上。",
+      "location": {
+        "name": "甘肃迭部俄界",
+        "coordinates": [
+          34.05,
+          103.1
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "张闻天",
+        "周恩来"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Meeting at 甘肃迭部俄界",
+      "descriptionEn": "This node marks a meeting event on the Red First Front Army route near 甘肃迭部俄界 (19350912)."
+    },
+    {
+      "id": "r25_19350915_yongping_arrive",
+      "date": "1935-09-15",
+      "displayDate": "1935-09-15",
+      "sequence": 36,
+      "forceId": "red_25th",
+      "type": "到达",
+      "title": "红二十五军到达陕北永坪",
+      "description": "红二十五军辗转到达陕北延川永坪镇，成为到达陕北较早的一支长征队伍。",
+      "location": {
+        "name": "陕西延川永坪",
+        "coordinates": [
+          36.88,
+          110.18
+        ]
+      },
+      "participants": [
+        "徐海东",
+        "程子华",
+        "红二十五军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_yongping_people",
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: Arrival at 陕西延川永坪",
+      "descriptionEn": "This node marks a arrival event on the Red Twenty-Fifth Army route near 陕西延川永坪 (19350915)."
+    },
+    {
+      "id": "r25_19350918_yongping_meeting",
+      "date": "1935-09-16",
+      "displayDate": "1935-09-16",
+      "sequence": 38,
+      "forceId": "red_25th",
+      "type": "会师",
+      "title": "红二十五军与陕甘红军永坪会师",
+      "description": "红二十五军与红二十六军、红二十七军在永坪举行会师庆祝活动。两军会师后合编为红十五军团，徐海东任军团长，刘志丹任副军团长。",
+      "location": {
+        "name": "陕西延川永坪",
+        "coordinates": [
+          36.88,
+          110.18
+        ]
+      },
+      "participants": [
+        "红二十五军",
+        "红二十六军",
+        "红二十七军",
+        "徐海东",
+        "刘志丹"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_yongping_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Twenty-Fifth Army: Convergence at 陕西延川永坪",
+      "descriptionEn": "This node marks a convergence event on the Red Twenty-Fifth Army route near 陕西延川永坪 (19350916)."
+    },
+    {
+      "id": "rf_19350917_lazikou",
+      "date": "1935-09-17",
+      "displayDate": "1935-09-17",
+      "sequence": 37,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "突破腊子口",
+      "description": "红军攻克天险腊子口，打开北上甘南通道。",
+      "location": {
+        "name": "甘肃迭部腊子口",
+        "coordinates": [
+          34.07,
+          103.22
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_zunyi_hunan"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Battle at 甘肃迭部腊子口",
+      "descriptionEn": "This node marks a battle event on the Red First Front Army route near 甘肃迭部腊子口 (19350917).",
+      "metrics": {
+        "distanceLi": 22200,
+        "victory": true
+      }
+    },
+    {
+      "id": "sha_19350918_yongping_meeting",
+      "date": "1935-09-18",
+      "displayDate": "1935-09-18",
+      "sequence": 39,
+      "forceId": "shaanbei_red",
+      "type": "会师",
+      "title": "陕甘红军迎接红二十五军",
+      "description": "陕甘红军与红二十五军在永坪会师，增强了西北革命根据地军事力量，也为迎接中央红军北上创造条件。",
+      "location": {
+        "name": "陕西延川永坪",
+        "coordinates": [
+          36.88,
+          110.18
+        ]
+      },
+      "participants": [
+        "刘志丹",
+        "徐海东",
+        "红二十六军",
+        "红二十七军",
+        "红二十五军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_yongping_people",
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Shaan-Gan: Convergence at 陕西延川永坪",
+      "descriptionEn": "This node marks a convergence event on the Shaan-Gan route near 陕西延川永坪 (19350918)."
+    },
+    {
+      "id": "sha_19350918_red15",
+      "date": "1935-09-18",
+      "displayDate": "1935-09-18",
+      "sequence": 48,
+      "forceId": "shaanbei_red",
+      "type": "整编",
+      "title": "红十五军团成立，西北红军力量增强",
+      "description": "红二十五军与陕甘红军会师后，合编为红十五军团，陕北根据地的正规红军力量显著增强，也为中央红军抵达提供了更坚实的军事依托。",
+      "location": {
+        "name": "陕西延川永坪",
+        "coordinates": [
+          36.87,
+          110.23
+        ],
+        "nameEn": "Yongping, Yanchuan, Shaanxi"
+      },
+      "participants": [
+        "徐海东",
+        "程子华",
+        "刘志丹",
+        "红二十五军",
+        "红二十六军",
+        "红二十七军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_yongping_people",
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "The 15th Red Army Corps is formed after the Yongping convergence",
+      "descriptionEn": "After the 25th Red Army met the Shaanxi-Gansu Red Army, the 15th Red Army Corps was formed, strengthening the northern Shaanxi base."
+    },
+    {
+      "id": "rf_19350920_hadapu",
+      "date": "1935-09-20",
+      "displayDate": "1935-09-20",
+      "sequence": 40,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "哈达铺决定前往陕北",
+      "description": "中央红军在哈达铺获得陕北红军和根据地信息，决定向陕北进军，使长征落脚点进一步明确。",
+      "location": {
+        "name": "甘肃宕昌哈达铺",
+        "coordinates": [
+          34.33,
+          104.47
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Decision at 甘肃宕昌哈达铺",
+      "descriptionEn": "This node marks a decision event on the Red First Front Army route near 甘肃宕昌哈达铺 (19350920)."
+    },
+    {
+      "id": "rf_19350923_minshan",
+      "date": "1935-09-23",
+      "displayDate": "1935-09-23",
+      "sequence": 515,
+      "forceId": "red_first",
+      "type": "雪山",
+      "title": "翻越岷山余脉，望见陕甘方向",
+      "description": "突破腊子口后，中央红军继续翻越岷山余脉，向陕甘革命根据地靠近。",
+      "location": {
+        "name": "甘肃岷山/哈达铺以北",
+        "coordinates": [
+          34.2,
+          104.25
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_qilv_people",
+        "src_qilv_dangjian_2024"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Snow mountain crossing at 甘肃岷山/哈达铺以北",
+      "descriptionEn": "This node marks a snow mountain crossing event on the Red First Front Army route near 甘肃岷山/哈达铺以北 (19350923).",
+      "poem": {
+        "line": "更喜岷山千里雪",
+        "title": "翻过雪山后的喜悦",
+        "text": "岷山的雪不是浪漫景色，而是饥寒、疲惫与生死考验。越过岷山，陕北方向逐渐清晰，长征进入胜利前夜。"
+      }
+    },
+    {
+      "id": "rf_19350927_bangluo",
+      "date": "1935-09-27",
+      "displayDate": "1935-09-27",
+      "sequence": 520,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "榜罗镇会议最终确定落脚陕北",
+      "description": "中央政治局在榜罗镇召开会议，进一步明确到陕北与陕甘红军会合的战略方向。",
+      "location": {
+        "name": "甘肃通渭榜罗镇",
+        "coordinates": [
+          35.04,
+          105.3
+        ]
+      },
+      "participants": [
+        "中共中央政治局",
+        "毛泽东",
+        "周恩来",
+        "张闻天"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "high",
+      "titleEn": "Red First Front Army: Meeting at 甘肃通渭榜罗镇",
+      "descriptionEn": "This node marks a meeting event on the Red First Front Army route near 甘肃通渭榜罗镇 (19350927)."
+    },
+    {
+      "id": "sha_19351001_laoshan",
+      "date": "1935-10-01",
+      "displayDate": "1935-10-01",
+      "sequence": 41,
+      "forceId": "shaanbei_red",
+      "type": "战役",
+      "title": "红十五军团组织劳山战役",
+      "description": "红二十五军与陕甘红军合编后，在刘志丹、徐海东等指挥下组织劳山战役，打击敌军“围剿”，为迎接中央红军创造有利条件。",
+      "location": {
+        "name": "陕西甘泉劳山",
+        "coordinates": [
+          36.26,
+          109.4
+        ]
+      },
+      "participants": [
+        "刘志丹",
+        "徐海东",
+        "红十五军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Shaan-Gan: Campaign at 陕西甘泉劳山",
+      "descriptionEn": "This node marks a campaign event on the Shaan-Gan route near 陕西甘泉劳山 (19351001)."
+    },
+    {
+      "id": "r4_19351005_zhuomudiao",
+      "date": "1935-10-05",
+      "displayDate": "1935-10-05",
+      "sequence": 42,
+      "forceId": "red_fourth",
+      "type": "分歧",
+      "title": "卓木碉会议与张国焘另立“中央”",
+      "description": "张国焘在卓木碉另立“中央”，造成党和红军内部严重分裂风险。该节点用于呈现红四方面军路线中的政治分歧。",
+      "location": {
+        "name": "四川马尔康卓木碉",
+        "coordinates": [
+          31.9,
+          102.22
+        ]
+      },
+      "participants": [
+        "张国焘",
+        "红四方面军部分领导人"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Fourth Front Army: Dispute at 四川马尔康卓木碉",
+      "descriptionEn": "This node marks a dispute event on the Red Fourth Front Army route near 四川马尔康卓木碉 (19351005)."
+    },
+    {
+      "id": "rf_19351007_liupanshan",
+      "date": "1935-10-07",
+      "displayDate": "1935-10-07",
+      "sequence": 43,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "翻越六盘山并击退追敌",
+      "description": "中央红军越过六盘山地区，接近陕甘根据地。",
+      "location": {
+        "name": "宁夏六盘山",
+        "coordinates": [
+          35.58,
+          106.22
+        ]
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Battle at 宁夏六盘山",
+      "descriptionEn": "This node marks a battle event on the Red First Front Army route near 宁夏六盘山 (19351007).",
+      "metrics": {
+        "victory": true
+      }
+    },
+    {
+      "id": "rf_19351019_wuqi",
+      "date": "1935-10-19",
+      "displayDate": "1935-10-19",
+      "sequence": 44,
+      "forceId": "red_first",
+      "type": "到达",
+      "title": "中央红军到达吴起镇",
+      "description": "中央红军到达陕北吴起镇，与陕北根据地接通，中央红军长征胜利结束。",
+      "location": {
+        "name": "陕西吴起镇",
+        "coordinates": [
+          36.93,
+          108.18
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "彭德怀",
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_cpc_century",
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Arrival at 陕西吴起镇",
+      "descriptionEn": "This node marks a arrival event on the Red First Front Army route near 陕西吴起镇 (19351019).",
+      "metrics": {
+        "distanceLi": 25000
+      }
+    },
+    {
+      "id": "sha_19351019_wuqi_welcome",
+      "date": "1935-10-19",
+      "displayDate": "1935-10-19",
+      "sequence": 52,
+      "forceId": "shaanbei_red",
+      "type": "会师",
+      "title": "陕甘红军迎接中央红军到达吴起镇",
+      "description": "中央红军到达吴起镇时，西北根据地已由刘志丹、谢子长、习仲勋等长期经营形成，红军主力终于找到落脚点。",
+      "location": {
+        "name": "陕西吴起镇",
+        "coordinates": [
+          36.93,
+          108.17
+        ],
+        "nameEn": "Wuqi, Shaanxi"
+      },
+      "participants": [
+        "中央红军",
+        "陕甘红军",
+        "刘志丹"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_shaanbei_12371",
+        "src_xinhua_25000"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Shaanxi-Gansu Red Army welcomes the Central Red Army at Wuqi",
+      "descriptionEn": "When the Central Red Army reached Wuqi, the northwestern base—built over years by local revolutionaries—became the landing point of the Long March."
+    },
+    {
+      "id": "rf_19351021_wuqi_tail",
+      "date": "1935-10-21",
+      "displayDate": "1935-10-21",
+      "sequence": 53,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "吴起镇“切尾巴”战斗击退追敌",
+      "description": "中央红军到达陕北后，在吴起镇附近击退尾追之敌，巩固落脚陕北的军事态势。",
+      "location": {
+        "name": "陕西吴起镇",
+        "coordinates": [
+          36.93,
+          108.17
+        ],
+        "nameEn": "Wuqi, Shaanxi"
+      },
+      "participants": [
+        "中央红军",
+        "追击敌军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_epic_people",
+        "src_party_chronology_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Wuqi fighting drives off pursuing forces",
+      "descriptionEn": "After reaching northern Shaanxi, the Central Red Army fought near Wuqi to repel pursuing forces and consolidate its foothold.",
+      "metrics": {
+        "victory": true
+      }
+    },
+    {
+      "id": "sha_19351025_yulinqiao",
+      "date": "1935-10-25",
+      "displayDate": "1935-10-25",
+      "sequence": 45,
+      "forceId": "shaanbei_red",
+      "type": "战役",
+      "title": "红十五军团榆林桥战斗",
+      "description": "红十五军团继续打击敌军，为巩固陕甘根据地和迎接中央红军创造条件。",
+      "location": {
+        "name": "陕西甘泉榆林桥",
+        "coordinates": [
+          36.31,
+          109.33
+        ]
+      },
+      "participants": [
+        "刘志丹",
+        "徐海东",
+        "红十五军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Shaan-Gan: Campaign at 陕西甘泉榆林桥",
+      "descriptionEn": "This node marks a campaign event on the Shaan-Gan route near 陕西甘泉榆林桥 (19351025)."
+    },
+    {
+      "id": "r2_19351101_hejiesheng_birth",
+      "date": "1935-11-01",
+      "displayDate": "1935-11-01",
+      "sequence": 46,
+      "forceId": "red_second",
+      "type": "诞生",
+      "title": "贺捷生出生，随后成为长征路上的婴儿",
+      "description": "贺龙与蹇先任的女儿贺捷生出生。红二、六军团出发时，她刚出生18天，成为随军长征的婴儿。",
+      "location": {
+        "name": "湖南桑植洪家关/刘家坪一带",
+        "coordinates": [
+          29.4,
+          110.17
+        ]
+      },
+      "participants": [
+        "贺捷生",
+        "贺龙",
+        "蹇先任"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red2_start_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Second Front Army: Birth at 湖南桑植洪家关/刘家坪一带",
+      "descriptionEn": "This node marks a birth event on the Red Second Front Army route near 湖南桑植洪家关/刘家坪一带 (19351101)."
+    },
+    {
+      "id": "r4_19351115_baizhangguan",
+      "date": "1935-11-15",
+      "displayDate": "1935-11-15",
+      "sequence": 50,
+      "forceId": "red_fourth",
+      "type": "战役",
+      "title": "红四方面军南下受挫，百丈关战役前后损失严重",
+      "description": "红四方面军南下后与川军激战，部队遭受重大损失，随后战略处境更加困难。此节点用于解释其后北上与会师的背景。",
+      "location": {
+        "name": "四川雅安百丈关",
+        "coordinates": [
+          30.1,
+          103.05
+        ]
+      },
+      "participants": [
+        "红四方面军",
+        "徐向前",
+        "张国焘"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "month",
+      "titleEn": "Red Fourth Front Army: Campaign at 四川雅安百丈关",
+      "descriptionEn": "This node marks a campaign event on the Red Fourth Front Army route near 四川雅安百丈关 (19351115)."
+    },
+    {
+      "id": "r2_19351119_sangzhi_start",
+      "date": "1935-11-19",
+      "displayDate": "1935-11-19",
+      "sequence": 47,
+      "forceId": "red_second",
+      "type": "启程",
+      "title": "红二、六军团从桑植开始长征",
+      "description": "红二、红六军团主力一万七千多人离开湘鄂川黔苏区，从湖南桑植刘家坪和轿子垭地区出发，开始长征。",
+      "location": {
+        "name": "湖南桑植刘家坪/轿子垭",
+        "coordinates": [
+          29.4,
+          110.17
+        ]
+      },
+      "participants": [
+        "贺龙",
+        "任弼时",
+        "关向应",
+        "萧克",
+        "王震",
+        "贺捷生"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_red2_start_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Second Front Army: Start at 湖南桑植刘家坪/轿子垭",
+      "descriptionEn": "This node marks a start event on the Red Second Front Army route near 湖南桑植刘家坪/轿子垭 (19351119)."
+    },
+    {
+      "id": "r2_19351101_hejiesheng_start",
+      "date": "1935-11-19",
+      "displayDate": "1935-11-19",
+      "sequence": 612,
+      "forceId": "red_second",
+      "type": "生活",
+      "title": "贺捷生出生18天后随军踏上长征路",
+      "description": "红二、六军团出发时，贺龙之女贺捷生出生仅18天，被装在马背上的箩筐里随军前行，成为长征中最小的亲历者之一。",
+      "location": {
+        "name": "湖南桑植刘家坪/洪家关",
+        "coordinates": [
+          29.4,
+          110.16
+        ]
+      },
+      "participants": [
+        "贺捷生",
+        "贺龙",
+        "蹇先任",
+        "红二、六军团"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_hejiesheng_cppcc",
+        "src_red2_start_12371"
+      ],
+      "certainty": "high",
+      "titleEn": "Red Second Front Army: Life at 湖南桑植刘家坪/洪家关",
+      "descriptionEn": "This node marks a life event on the Red Second Front Army route near 湖南桑植刘家坪/洪家关 (19351119)."
+    },
+    {
+      "id": "r2_19351120_lishui",
+      "date": "1935-11-20",
+      "displayDate": "1935-11-20",
+      "sequence": 56,
+      "forceId": "red_second",
+      "type": "渡河",
+      "title": "红二、六军团渡过澧水，贺捷生随军前行",
+      "description": "红二、六军团出发后急行军渡过澧水。出生仅18天的贺捷生由母亲和战友照护随军前行，呈现长征中家庭、生命与战争交织的另一面。",
+      "location": {
+        "name": "湖南桑植澧水一线",
+        "coordinates": [
+          29.4,
+          110.16
+        ],
+        "nameEn": "Lishui line near Sangzhi, Hunan"
+      },
+      "participants": [
+        "贺捷生",
+        "贺龙",
+        "蹇先任",
+        "红二、六军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red2_start_12371",
+        "src_hejiesheng_cppcc"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Second and Sixth Corps cross the Lishui; infant He Jiesheng travels with the column",
+      "descriptionEn": "Soon after departure, the Second and Sixth Corps crossed the Lishui. He Jiesheng, only eighteen days old, was carried with the column."
+    },
+    {
+      "id": "rf_19351121_zhiluozhen",
+      "date": "1935-11-21",
+      "displayDate": "1935-11-21",
+      "sequence": 48,
+      "forceId": "red_first",
+      "type": "战役",
+      "title": "直罗镇战役",
+      "description": "中央红军与陕北红军协同作战，粉碎敌军对陕甘根据地的“围剿”，巩固长征落脚点。",
+      "location": {
+        "name": "陕西富县直罗镇",
+        "coordinates": [
+          36.0,
+          109.37
+        ]
+      },
+      "participants": [
+        "中央红军",
+        "陕北红军",
+        "毛泽东",
+        "彭德怀"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Campaign at 陕西富县直罗镇",
+      "descriptionEn": "This node marks a campaign event on the Red First Front Army route near 陕西富县直罗镇 (19351121)."
+    },
+    {
+      "id": "sha_19351121_zhiluozhen_support",
+      "date": "1935-11-21",
+      "displayDate": "1935-11-21",
+      "sequence": 49,
+      "forceId": "shaanbei_red",
+      "type": "战役",
+      "title": "陕北红军参加直罗镇战役",
+      "description": "陕北红军与中央红军联合作战，长征落脚点由“到达”转入“巩固”。",
+      "location": {
+        "name": "陕西富县直罗镇",
+        "coordinates": [
+          36.0,
+          109.37
+        ]
+      },
+      "participants": [
+        "刘志丹",
+        "红十五军团",
+        "中央红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Shaan-Gan: Campaign at 陕西富县直罗镇",
+      "descriptionEn": "This node marks a campaign event on the Shaan-Gan route near 陕西富县直罗镇 (19351121)."
+    },
+    {
+      "id": "rf_19351217_wayao",
+      "date": "1935-12-17",
+      "displayDate": "1935-12-17",
+      "sequence": 58,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "瓦窑堡会议提出抗日民族统一战线策略",
+      "description": "中共中央在瓦窑堡召开政治局会议，分析华北事变后的国内形势，提出建立抗日民族统一战线的策略方针，长征落脚点进一步转化为抗日前进出发点。",
+      "location": {
+        "name": "陕西子长瓦窑堡",
+        "coordinates": [
+          37.14,
+          109.67
+        ],
+        "nameEn": "Wayaobao, Zichang, Shaanxi"
+      },
+      "participants": [
+        "中共中央政治局",
+        "毛泽东",
+        "张闻天",
+        "周恩来"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_party_chronology_xinhua",
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Wayaobao Meeting advances the anti-Japanese united-front strategy",
+      "descriptionEn": "At Wayaobao, the central leadership analyzed the national situation and advanced the strategy of an anti-Japanese national united front."
+    },
+    {
+      "id": "r2_19351220_xiangexiangqian",
+      "date": "1935-12-20",
+      "displayDate": "1935-12-20",
+      "sequence": 51,
+      "forceId": "red_second",
+      "type": "转进",
+      "title": "红二、六军团转战湘鄂川黔边",
+      "description": "红二、六军团离开根据地后在湘、鄂、川、黔边境机动作战，继续摆脱敌军围堵。",
+      "location": {
+        "name": "湘鄂川黔边境",
+        "coordinates": [
+          29.2,
+          109.1
+        ]
+      },
+      "participants": [
+        "贺龙",
+        "任弼时",
+        "关向应"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_red2_start_12371"
+      ],
+      "certainty": "month",
+      "titleEn": "Red Second Front Army: March at 湘鄂川黔边境",
+      "descriptionEn": "This node marks a march event on the Red Second Front Army route near 湘鄂川黔边境 (19351220)."
+    },
+    {
+      "id": "r2_19360115_guizhou_transfer",
+      "date": "1936-01-15",
+      "displayDate": "1936-01-15",
+      "sequence": 52,
+      "forceId": "red_second",
+      "type": "转进",
+      "title": "红二、六军团向贵州石阡、镇远、黄平方向转移",
+      "description": "红二、六军团进入贵州，开展机动作战，为进入乌蒙山区创造条件。",
+      "location": {
+        "name": "贵州石阡/镇远/黄平一带",
+        "coordinates": [
+          27.05,
+          108.05
+        ]
+      },
+      "participants": [
+        "贺龙",
+        "任弼时"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_red2_start_12371"
+      ],
+      "certainty": "month",
+      "titleEn": "Red Second Front Army: March at 贵州石阡/镇远/黄平一带",
+      "descriptionEn": "This node marks a march event on the Red Second Front Army route near 贵州石阡/镇远/黄平一带 (19360115)."
+    },
+    {
+      "id": "r2_19360209_bijie_people",
+      "date": "1936-02-09",
+      "displayDate": "1936-02-09",
+      "sequence": 63,
+      "forceId": "red_second",
+      "type": "根据",
+      "title": "红二、六军团在毕节开展群众动员",
+      "description": "红二、六军团转战黔西北期间，在毕节一带宣传抗日、发动群众、建立政权，补充了长征不只是行军作战，也包含政治动员与地方建设的层面。",
+      "location": {
+        "name": "贵州毕节",
+        "coordinates": [
+          27.3,
+          105.29
+        ],
+        "nameEn": "Bijie, Guizhou"
+      },
+      "participants": [
+        "贺龙",
+        "任弼时",
+        "关向应",
+        "当地群众"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red2_start_12371",
+        "src_epic_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Second and Sixth Corps mobilize local people around Bijie",
+      "descriptionEn": "In northwestern Guizhou, the corps carried out propaganda, mass mobilization and local political work around Bijie."
+    },
+    {
+      "id": "r2_19360215_bijie_base",
+      "date": "1936-02-15",
+      "displayDate": "1936-02-15",
+      "sequence": 53,
+      "forceId": "red_second",
+      "type": "根据",
+      "title": "红二、六军团转战毕节并建立地方革命政权",
+      "description": "红二、六军团在黔西北毕节地区活动，建立地方革命委员会和地方武装，宣传抗日民族统一战线。",
+      "location": {
+        "name": "贵州毕节",
+        "coordinates": [
+          27.3,
+          105.29
+        ]
+      },
+      "participants": [
+        "贺龙",
+        "任弼时",
+        "红二、六军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red2_start_12371"
+      ],
+      "certainty": "month",
+      "titleEn": "Red Second Front Army: Base building at 贵州毕节",
+      "descriptionEn": "This node marks a base building event on the Red Second Front Army route near 贵州毕节 (19360215)."
+    },
+    {
+      "id": "en_19360220_wumeng_encircle",
+      "date": "1936-02-20",
+      "displayDate": "1936-02-20",
+      "sequence": 668,
+      "forceId": "enemy_kmt",
+      "type": "围堵",
+      "title": "国民党军多路围追红二、六军团",
+      "description": "面对多路敌军尾追侧击，红二、六军团进入乌蒙山区展开回旋机动作战。",
+      "location": {
+        "name": "乌蒙山区周边",
+        "coordinates": [
+          27.6,
+          104.9
+        ]
+      },
+      "participants": [
+        "国民党军",
+        "红二、六军团"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_wumeng_people_2023"
+      ],
+      "certainty": "medium",
+      "titleEn": "KMT forces: Encirclement at 乌蒙山区周边",
+      "descriptionEn": "This node marks a encirclement event on the KMT forces route near 乌蒙山区周边 (19360220)."
+    },
+    {
+      "id": "r2_19360227_wumeng_mid",
+      "date": "1936-02-27",
+      "displayDate": "1936-02-27",
+      "sequence": 672,
+      "forceId": "red_second",
+      "type": "战役",
+      "title": "乌蒙山中部回旋，牵制多路追敌",
+      "description": "红二、六军团在乌蒙山区反复回旋，利用复杂地形牵制和摆脱敌军重兵。",
+      "location": {
+        "name": "乌蒙山区",
+        "coordinates": [
+          27.85,
+          104.75
+        ]
+      },
+      "participants": [
+        "贺龙",
+        "萧克",
+        "任弼时",
+        "红二、六军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_wumeng_people_2023"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Second Front Army: Campaign at 乌蒙山区",
+      "descriptionEn": "This node marks a campaign event on the Red Second Front Army route near 乌蒙山区 (19360227).",
+      "result": "牵制并摆脱多路追敌",
+      "metrics": {
+        "victory": true
+      }
+    },
+    {
+      "id": "r4_19360301_kangbei",
+      "date": "1936-03-01",
+      "displayDate": "1936-03-01",
+      "sequence": 65,
+      "forceId": "red_fourth",
+      "type": "转进",
+      "title": "红四方面军在川康边整顿后准备北上",
+      "description": "南下受挫后，红四方面军在川康边地区整顿、筹粮、恢复力量，随后与红二、六军团会合并重新北上。",
+      "location": {
+        "name": "四川甘孜一带",
+        "coordinates": [
+          31.62,
+          100.0
+        ],
+        "nameEn": "Garze area, Sichuan"
+      },
+      "participants": [
+        "徐向前",
+        "陈昌浩",
+        "张国焘",
+        "红四方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua",
+        "src_epic_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Fourth Front Army regroups near the Sichuan-Kham border",
+      "descriptionEn": "After setbacks in the southward movement, the Fourth Front Army regrouped around the Sichuan-Kham border before meeting the Second and Sixth Corps and moving north again."
+    },
+    {
+      "id": "r2_19360302_wumeng_start",
+      "date": "1936-03-02",
+      "displayDate": "1936-03-02",
+      "sequence": 64,
+      "forceId": "red_second",
+      "type": "战役",
+      "title": "乌蒙山回旋战开始",
+      "description": "红二、六军团在乌蒙山区与优势敌军周旋，以大范围机动摆脱围追堵截，成为红二方面军长征叙事中的关键战役群。",
+      "location": {
+        "name": "云南威信/贵州毕节乌蒙山区",
+        "coordinates": [
+          27.85,
+          105.05
+        ],
+        "nameEn": "Wumeng Mountains, Yunnan-Guizhou border"
+      },
+      "participants": [
+        "贺龙",
+        "任弼时",
+        "红二、六军团"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_epic_people",
+        "src_wumeng_people_2023",
+        "src_red2_start_12371",
+        "src_qilv_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Wumeng Mountain maneuver begins",
+      "descriptionEn": "The Second and Sixth Corps maneuvered through the Wumeng Mountains to evade superior enemy forces.",
+      "metrics": {
+        "victory": true
+      },
+      "poem": {
+        "line": "乌蒙磅礴走泥丸",
+        "title": "乌蒙山的回旋",
+        "text": "乌蒙山区山势磅礴，红军在强敌夹击中辗转机动，把险峻山地化为摆脱围堵的空间。"
+      }
+    },
+    {
+      "id": "en_19360310_wumeng_chase",
+      "date": "1936-03-10",
+      "displayDate": "1936-03-10",
+      "sequence": 66,
+      "forceId": "enemy_kmt",
+      "type": "追堵",
+      "title": "敌军围追红二、六军团于乌蒙山区",
+      "description": "红二、六军团在乌蒙山区大范围回旋时，敌军依托多路兵力围追堵截，红军以机动作战摆脱重围。",
+      "location": {
+        "name": "乌蒙山区",
+        "coordinates": [
+          27.6,
+          104.8
+        ],
+        "nameEn": "Wumeng Mountains"
+      },
+      "participants": [
+        "国民党军",
+        "红二、六军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_epic_people",
+        "src_red2_start_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Enemy forces pursue the Second and Sixth Corps in the Wumeng Mountains",
+      "descriptionEn": "Enemy forces pursued and tried to encircle the Second and Sixth Corps in the Wumeng Mountains, while the Red Army maneuvered out of danger."
+    },
+    {
+      "id": "rf_19360315_dongzheng",
+      "date": "1936-03-15",
+      "displayDate": "1936-03-15",
+      "sequence": 55,
+      "forceId": "red_first",
+      "type": "根据",
+      "title": "中央红军东征，推动陕甘根据地向抗日前沿展开",
+      "description": "中央到达陕北后，红军开展东征等行动，陕北落脚点开始转化为抗日出发点。此为长征后续展开节点。",
+      "location": {
+        "name": "陕北黄河西岸",
+        "coordinates": [
+          37.2,
+          110.3
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "彭德怀",
+        "中央红军"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_liuzhidan_mva"
+      ],
+      "certainty": "month",
+      "titleEn": "Red First Front Army: Base building at 陕北黄河西岸",
+      "descriptionEn": "This node marks a base building event on the Red First Front Army route near 陕北黄河西岸 (19360315)."
+    },
+    {
+      "id": "r2_19360328_wumeng",
+      "date": "1936-03-28",
+      "displayDate": "1936-03-28",
+      "sequence": 54,
+      "forceId": "red_second",
+      "type": "战役",
+      "title": "乌蒙山回旋战突破重围",
+      "description": "红二、六军团在乌蒙山区反复机动，牵制和摆脱敌军，保存部队并继续西进。",
+      "location": {
+        "name": "滇黔交界乌蒙山",
+        "coordinates": [
+          26.22,
+          104.1
+        ]
+      },
+      "participants": [
+        "贺龙",
+        "任弼时",
+        "萧克",
+        "王震"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_wumeng_people_2023",
+        "src_red2_start_12371",
+        "src_qilv_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Second Front Army: Campaign at 滇黔交界乌蒙山",
+      "descriptionEn": "This node marks a campaign event on the Red Second Front Army route near 滇黔交界乌蒙山 (19360328).",
+      "metrics": {
+        "victory": true
+      },
+      "poem": {
+        "line": "乌蒙磅礴走泥丸",
+        "title": "乌蒙山的回旋",
+        "text": "乌蒙山区山势磅礴，红军在强敌夹击中辗转机动，把险峻山地化为摆脱围堵的空间。"
+      }
+    },
+    {
+      "id": "sha_19360414_liuzhidan_death",
+      "date": "1936-04-14",
+      "displayDate": "1936-04-14",
+      "sequence": 56,
+      "forceId": "shaanbei_red",
+      "type": "牺牲",
+      "title": "刘志丹在东征战斗中牺牲",
+      "description": "刘志丹率红二十八军参加东征，1936年4月14日在山西中阳县三交镇战斗中侦察敌情时中弹牺牲，年仅33岁。",
+      "location": {
+        "name": "山西中阳三交镇",
+        "coordinates": [
+          37.33,
+          111.18
+        ]
+      },
+      "participants": [
+        "刘志丹",
+        "红二十八军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_liuzhidan_mva"
+      ],
+      "certainty": "medium",
+      "titleEn": "Shaan-Gan: Sacrifice at 山西中阳三交镇",
+      "descriptionEn": "This node marks a sacrifice event on the Shaan-Gan route near 山西中阳三交镇 (19360414)."
+    },
+    {
+      "id": "r4_19360415_cancel_second_center",
+      "date": "1936-04-15",
+      "displayDate": "1936-04-15",
+      "sequence": 58,
+      "forceId": "red_fourth",
+      "type": "转折",
+      "title": "张国焘被迫取消另立“中央”",
+      "description": "在党中央争取和红四方面军指战员要求下，张国焘被迫取消另立的“中央”，为红二、红四会师和共同北上铺路。",
+      "location": {
+        "name": "四川甘孜一带",
+        "coordinates": [
+          31.62,
+          100.0
+        ]
+      },
+      "participants": [
+        "张国焘",
+        "朱德",
+        "徐向前"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "month",
+      "titleEn": "Red Fourth Front Army: Turning point at 四川甘孜一带",
+      "descriptionEn": "This node marks a turning point event on the Red Fourth Front Army route near 四川甘孜一带 (19360415)."
+    },
+    {
+      "id": "r2_19360425_shigu",
+      "date": "1936-04-25",
+      "displayDate": "1936-04-25",
+      "sequence": 57,
+      "forceId": "red_second",
+      "type": "渡河",
+      "title": "红二、六军团石鼓渡过金沙江",
+      "description": "红二、六军团从云南石鼓一带渡过金沙江，继续向川西北前进。",
+      "location": {
+        "name": "云南丽江石鼓",
+        "coordinates": [
+          26.88,
+          100.23
+        ]
+      },
+      "participants": [
+        "贺龙",
+        "任弼时"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_red2_start_12371",
+        "src_qilv_dangjian_2024",
+        "src_qilv_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Second Front Army: River crossing at 云南丽江石鼓",
+      "descriptionEn": "This node marks a river crossing event on the Red Second Front Army route near 云南丽江石鼓 (19360425).",
+      "poem": {
+        "line": "金沙水拍云崖暖",
+        "title": "金沙江的“暖”",
+        "text": "在皎平渡一带渡过金沙江后，中央红军甩开追敌，获得战略主动。诗句中的“暖”，指向绝处逢生后的舒展与希望。"
+      }
+    },
+    {
+      "id": "r2_19360425_shigu_poem",
+      "date": "1936-04-25",
+      "displayDate": "1936-04-25",
+      "sequence": 720,
+      "forceId": "red_second",
+      "type": "渡河",
+      "title": "石鼓渡过金沙江，继续向康区北上",
+      "description": "红二、六军团在石鼓一带渡过金沙江，摆脱尾追敌军，向康区和甘孜方向推进。",
+      "location": {
+        "name": "云南丽江石鼓",
+        "coordinates": [
+          26.9,
+          99.95
+        ]
+      },
+      "participants": [
+        "红二、六军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red2_start_12371",
+        "src_qilv_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Second Front Army: River crossing at 云南丽江石鼓",
+      "descriptionEn": "This node marks a river crossing event on the Red Second Front Army route near 云南丽江石鼓 (19360425).",
+      "poem": {
+        "line": "金沙水拍云崖暖",
+        "title": "另一支队伍的金沙江",
+        "text": "金沙江不仅是中央红军的转折河流，也是红二、六军团北上的关键天险。渡江之后，队伍向甘孜会师方向推进。"
+      }
+    },
+    {
+      "id": "r2_19360505_zhongdian",
+      "date": "1936-05-05",
+      "displayDate": "1936-05-05",
+      "sequence": 59,
+      "forceId": "red_second",
+      "type": "民族",
+      "title": "红二、六军团经过藏区并继续北上",
+      "description": "红二、六军团经过滇川藏交界地区，行军中需要处理民族地区补给、向导与群众关系。此节点用于表现除彝海结盟外，长征中广泛存在的民族地区协调。",
+      "location": {
+        "name": "云南中甸/香格里拉一带",
+        "coordinates": [
+          27.83,
+          99.7
+        ]
+      },
+      "participants": [
+        "红二、六军团",
+        "当地群众"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_red2_start_12371"
+      ],
+      "certainty": "month",
+      "titleEn": "Red Second Front Army: Alliance at 云南中甸/香格里拉一带",
+      "descriptionEn": "This node marks a alliance event on the Red Second Front Army route near 云南中甸/香格里拉一带 (19360505)."
+    },
+    {
+      "id": "r2_19360518_xueshan",
+      "date": "1936-05-18",
+      "displayDate": "1936-05-18",
+      "sequence": 735,
+      "forceId": "red_second",
+      "type": "雪山",
+      "title": "红二、六军团翻越雪山进入康区",
+      "description": "红二、六军团在雪山峡谷中继续北上，饥寒、缺氧与敌军追击交织，行军极为艰苦。",
+      "location": {
+        "name": "川滇康边雪山地带",
+        "coordinates": [
+          29.35,
+          99.7
+        ]
+      },
+      "participants": [
+        "红二、六军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red2_start_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Second Front Army: Snow mountain crossing at 川滇康边雪山地带",
+      "descriptionEn": "This node marks a snow mountain crossing event on the Red Second Front Army route near 川滇康边雪山地带 (19360518)."
+    },
+    {
+      "id": "r2_19360520_xikang_tibetan",
+      "date": "1936-05-20",
+      "displayDate": "1936-05-20",
+      "sequence": 68,
+      "forceId": "red_second",
+      "type": "民族",
+      "title": "红二、六军团经过康区开展民族工作",
+      "description": "红二、六军团北上途中进入康区和藏族聚居区，依靠纪律、宣传与协商争取通行和补给，丰富了长征中的民族关系叙事。",
+      "location": {
+        "name": "四川甘孜康区",
+        "coordinates": [
+          31.62,
+          100.0
+        ],
+        "nameEn": "Kham area, Garze, Sichuan"
+      },
+      "participants": [
+        "红二、六军团",
+        "藏族群众"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_epic_people",
+        "src_red2_start_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Second and Sixth Corps conduct ethnic work in the Kham area",
+      "descriptionEn": "While moving north, the corps entered Tibetan-inhabited areas and relied on discipline, negotiation and propaganda to secure passage and supplies."
+    },
+    {
+      "id": "rf_19360601_xizheng",
+      "date": "1936-06-01",
+      "displayDate": "1936-06-01",
+      "sequence": 62,
+      "forceId": "red_first",
+      "type": "根据",
+      "title": "红军西征巩固扩大陕甘宁区域",
+      "description": "中央红军到达陕北后，通过西征等行动巩固扩大陕甘宁区域，长征落脚点进一步转化为战略基地。",
+      "location": {
+        "name": "陕甘宁边区一带",
+        "coordinates": [
+          36.7,
+          107.4
+        ]
+      },
+      "participants": [
+        "中央红军",
+        "陕甘红军"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_shaanbei_12371"
+      ],
+      "certainty": "range",
+      "titleEn": "Red First Front Army: Base building at 陕甘宁边区一带",
+      "descriptionEn": "This node marks a base building event on the Red First Front Army route near 陕甘宁边区一带 (19360601)."
+    },
+    {
+      "id": "r2_19360603_ganzi_meeting",
+      "date": "1936-06-03",
+      "displayDate": "1936-06-03",
+      "sequence": 60,
+      "forceId": "red_second",
+      "type": "会师",
+      "title": "红二、六军团与红四方面军甘孜会师",
+      "description": "红二、六军团与红四方面军在甘孜会师，随后共同谋划北上。",
+      "location": {
+        "name": "四川甘孜",
+        "coordinates": [
+          31.62,
+          100.0
+        ]
+      },
+      "participants": [
+        "贺龙",
+        "任弼时",
+        "朱德",
+        "张国焘",
+        "徐向前"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Second Front Army: Convergence at 四川甘孜",
+      "descriptionEn": "This node marks a convergence event on the Red Second Front Army route near 四川甘孜 (19360603)."
+    },
+    {
+      "id": "r4_19360603_ganzi_meeting",
+      "date": "1936-06-03",
+      "displayDate": "1936-06-03",
+      "sequence": 61,
+      "forceId": "red_fourth",
+      "type": "会师",
+      "title": "红四方面军与红二、六军团甘孜会师",
+      "description": "红四方面军在甘孜与红二、六军团会师。该事件作为红四方面军自身路线节点，连线只接红四方面军前一事件。",
+      "location": {
+        "name": "四川甘孜",
+        "coordinates": [
+          31.62,
+          100.0
+        ]
+      },
+      "participants": [
+        "红四方面军",
+        "红二、六军团"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Fourth Front Army: Convergence at 四川甘孜",
+      "descriptionEn": "This node marks a convergence event on the Red Fourth Front Army route near 四川甘孜 (19360603)."
+    },
+    {
+      "id": "rfour_19360703_ganzi_meeting",
+      "date": "1936-07-03",
+      "displayDate": "1936-07-03",
+      "sequence": 766,
+      "forceId": "red_fourth",
+      "type": "会议",
+      "title": "甘孜会议明确共同北上",
+      "description": "红二、红四方面军会师后，在甘孜召开会议，明确北上与中共中央会合的行动方针。",
+      "location": {
+        "name": "四川甘孜",
+        "coordinates": [
+          31.62,
+          100.0
+        ]
+      },
+      "participants": [
+        "朱德",
+        "任弼时",
+        "贺龙",
+        "刘伯承",
+        "关向应",
+        "红二方面军",
+        "红四方面军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_ganzi_12371"
+      ],
+      "certainty": "high",
+      "titleEn": "Red Fourth Front Army: Meeting at 四川甘孜",
+      "descriptionEn": "This node marks a meeting event on the Red Fourth Front Army route near 四川甘孜 (19360703)."
+    },
+    {
+      "id": "r2_19360705_red_second_formed",
+      "date": "1936-07-05",
+      "displayDate": "1936-07-05",
+      "sequence": 63,
+      "forceId": "red_second",
+      "type": "整编",
+      "title": "红二、六军团与红三十二军合编为红二方面军",
+      "description": "红二、红六军团与红三十二军在甘孜地区合编为红二方面军，贺龙任总指挥，任弼时任政治委员。",
+      "location": {
+        "name": "四川甘孜",
+        "coordinates": [
+          31.62,
+          100.0
+        ]
+      },
+      "participants": [
+        "贺龙",
+        "任弼时",
+        "关向应",
+        "萧克",
+        "王震"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Second Front Army: Reorganization at 四川甘孜",
+      "descriptionEn": "This node marks a reorganization event on the Red Second Front Army route near 四川甘孜 (19360705)."
+    },
+    {
+      "id": "r4_19360710_northward",
+      "date": "1936-07-10",
+      "displayDate": "1936-07-10",
+      "sequence": 64,
+      "forceId": "red_fourth",
+      "type": "转进",
+      "title": "红四方面军从甘孜北上",
+      "description": "红四方面军与红二方面军从甘孜地区出发，途经阿坝、包座等地，越过雪山草地，向甘南推进。",
+      "location": {
+        "name": "四川甘孜北上路段",
+        "coordinates": [
+          32.0,
+          101.0
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "朱德",
+        "张国焘"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "range",
+      "titleEn": "Red Fourth Front Army: March at 四川甘孜北上路段",
+      "descriptionEn": "This node marks a march event on the Red Fourth Front Army route near 四川甘孜北上路段 (19360710)."
+    },
+    {
+      "id": "r2_19360710_northward",
+      "date": "1936-07-10",
+      "displayDate": "1936-07-10",
+      "sequence": 65,
+      "forceId": "red_second",
+      "type": "转进",
+      "title": "红二方面军从甘孜北上",
+      "description": "红二方面军与红四方面军会师后共同北上，进入雪山草地路线。",
+      "location": {
+        "name": "四川甘孜北上路段",
+        "coordinates": [
+          32.0,
+          101.0
+        ]
+      },
+      "participants": [
+        "贺龙",
+        "任弼时",
+        "红二方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "range",
+      "titleEn": "Red Second Front Army: March at 四川甘孜北上路段",
+      "descriptionEn": "This node marks a march event on the Red Second Front Army route near 四川甘孜北上路段 (19360710)."
+    },
+    {
+      "id": "r4_19360815_grassland",
+      "date": "1936-08-15",
+      "displayDate": "1936-08-15",
+      "sequence": 66,
+      "forceId": "red_fourth",
+      "type": "险阻",
+      "title": "红四方面军再次经过雪山草地",
+      "description": "红四方面军北上途中越过雪山草地，部队承受高寒、缺粮与疾病考验。",
+      "location": {
+        "name": "川西北草地",
+        "coordinates": [
+          33.3,
+          102.7
+        ]
+      },
+      "participants": [
+        "红四方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "month",
+      "titleEn": "Red Fourth Front Army: Hardship at 川西北草地",
+      "descriptionEn": "This node marks a hardship event on the Red Fourth Front Army route near 川西北草地 (19360815)."
+    },
+    {
+      "id": "r2_19360820_grassland",
+      "date": "1936-08-20",
+      "displayDate": "1936-08-20",
+      "sequence": 67,
+      "forceId": "red_second",
+      "type": "险阻",
+      "title": "红二方面军通过草地抵近甘南",
+      "description": "红二方面军通过草地，进抵甘南地区，随后开展成徽两康等行动。",
+      "location": {
+        "name": "川甘交界草地",
+        "coordinates": [
+          33.2,
+          102.9
+        ]
+      },
+      "participants": [
+        "红二方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "month",
+      "titleEn": "Red Second Front Army: Hardship at 川甘交界草地",
+      "descriptionEn": "This node marks a hardship event on the Red Second Front Army route near 川甘交界草地 (19360820)."
+    },
+    {
+      "id": "r4_19360901_lazikou_gannan",
+      "date": "1936-09-01",
+      "displayDate": "1936-09-01",
+      "sequence": 76,
+      "forceId": "red_fourth",
+      "type": "转进",
+      "title": "红四方面军向甘南推进，接近会宁方向",
+      "description": "红四方面军走出川西北后向甘南、陇东南推进，逐步靠近红一方面军接应区域，会师态势开始显现。",
+      "location": {
+        "name": "甘肃岷县/漳县一带",
+        "coordinates": [
+          34.44,
+          104.04
+        ],
+        "nameEn": "Minxian-Zhangxian area, Gansu"
+      },
+      "participants": [
+        "红四方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua",
+        "src_epic_people"
+      ],
+      "certainty": "medium",
+      "titleEn": "The Fourth Front Army advances toward southern Gansu and Huining",
+      "descriptionEn": "After leaving northwestern Sichuan, the Fourth Front Army advanced toward southern Gansu and the Huining area."
+    },
+    {
+      "id": "r4_19360910_gannan_control",
+      "date": "1936-09-10",
+      "displayDate": "1936-09-10",
+      "sequence": 68,
+      "forceId": "red_fourth",
+      "type": "到达",
+      "title": "红四方面军进入甘南并控制漳县、渭源、通渭等地区",
+      "description": "红四方面军北上后进入甘肃南部，控制漳县、渭源、通渭等地区，为会宁会师铺开路线。",
+      "location": {
+        "name": "甘肃通渭/渭源/漳县一带",
+        "coordinates": [
+          35.2,
+          105.2
+        ]
+      },
+      "participants": [
+        "红四方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "range",
+      "titleEn": "Red Fourth Front Army: Arrival at 甘肃通渭/渭源/漳县一带",
+      "descriptionEn": "This node marks a arrival event on the Red Fourth Front Army route near 甘肃通渭/渭源/漳县一带 (19360910)."
+    },
+    {
+      "id": "r2_19360915_chenghuiliangkang",
+      "date": "1936-09-15",
+      "displayDate": "1936-09-15",
+      "sequence": 69,
+      "forceId": "red_second",
+      "type": "战役",
+      "title": "红二方面军占领成县、徽县、两当、康县等地",
+      "description": "红二方面军在甘肃南部开展成徽两康行动，扩大活动区域，随后向北转移。",
+      "location": {
+        "name": "甘肃成县/徽县/两当/康县一带",
+        "coordinates": [
+          33.75,
+          105.73
+        ]
+      },
+      "participants": [
+        "红二方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "range",
+      "titleEn": "Red Second Front Army: Campaign at 甘肃成县/徽县/两当/康县一带",
+      "descriptionEn": "This node marks a campaign event on the Red Second Front Army route near 甘肃成县/徽县/两当/康县一带 (19360915)."
+    },
+    {
+      "id": "en_19361001_gansu_pressure",
+      "date": "1936-10-01",
+      "displayDate": "1936-10-01",
+      "sequence": 80,
+      "forceId": "enemy_kmt",
+      "type": "围堵",
+      "title": "甘肃东北部敌军试图阻止红军会师",
+      "description": "三大主力红军接近会师阶段，敌军仍试图在甘肃、宁夏周边阻止红军汇合，但会宁、将台堡会师最终完成。",
+      "location": {
+        "name": "甘肃会宁—宁夏将台堡一线",
+        "coordinates": [
+          35.7,
+          105.35
+        ],
+        "nameEn": "Huining-Jiangtaibao line"
+      },
+      "participants": [
+        "国民党军",
+        "红一方面军",
+        "红二方面军",
+        "红四方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_jiangtaibao_12371",
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Enemy forces attempt to prevent final convergence in northeastern Gansu",
+      "descriptionEn": "As the main Red Army forces approached convergence, enemy forces still tried to prevent them from meeting around Gansu and Ningxia."
+    },
+    {
+      "id": "r2_19361004_weihe_north",
+      "date": "1936-10-04",
+      "displayDate": "1936-10-04",
+      "sequence": 70,
+      "forceId": "red_second",
+      "type": "转进",
+      "title": "红二方面军渡渭河北上",
+      "description": "红二方面军经中央同意放弃甘南地区，开始渡渭河向北转移，奔向会师区域。",
+      "location": {
+        "name": "甘肃渭河一线",
+        "coordinates": [
+          34.6,
+          105.7
+        ]
+      },
+      "participants": [
+        "红二方面军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Second Front Army: March at 甘肃渭河一线",
+      "descriptionEn": "This node marks a march event on the Red Second Front Army route near 甘肃渭河一线 (19361004)."
+    },
+    {
+      "id": "r4_19361009_huining",
+      "date": "1936-10-09",
+      "displayDate": "1936-10-09",
+      "sequence": 71,
+      "forceId": "red_fourth",
+      "type": "会师",
+      "title": "红四方面军与红一方面军会宁会师",
+      "description": "红四方面军同红一方面军在甘肃会宁会师。这是三大主力会师过程中的关键节点之一。",
+      "location": {
+        "name": "甘肃会宁",
+        "coordinates": [
+          35.7,
+          105.05
+        ]
+      },
+      "participants": [
+        "红四方面军",
+        "红一方面军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Fourth Front Army: Convergence at 甘肃会宁",
+      "descriptionEn": "This node marks a convergence event on the Red Fourth Front Army route near 甘肃会宁 (19361009)."
+    },
+    {
+      "id": "rf_19361009_huining",
+      "date": "1936-10-09",
+      "displayDate": "1936-10-09",
+      "sequence": 72,
+      "forceId": "red_first",
+      "type": "会师",
+      "title": "红一方面军在会宁迎接红四方面军",
+      "description": "红一方面军部分兵力控制会宁、界石铺、将台堡等地，接应红四方面军北上会师。",
+      "location": {
+        "name": "甘肃会宁",
+        "coordinates": [
+          35.7,
+          105.05
+        ]
+      },
+      "participants": [
+        "红一方面军",
+        "红四方面军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Convergence at 甘肃会宁",
+      "descriptionEn": "This node marks a convergence event on the Red First Front Army route near 甘肃会宁 (19361009)."
+    },
+    {
+      "id": "rf_19361022_jiangtaibao",
+      "date": "1936-10-22",
+      "displayDate": "1936-10-22",
+      "sequence": 73,
+      "forceId": "red_first",
+      "type": "会师",
+      "title": "红一方面军在将台堡迎接红二方面军",
+      "description": "1936年10月22日，红一、红二方面军在将台堡胜利会师。该节点与10月9日会宁会师共同构成三大主力会师完成的历史过程。",
+      "location": {
+        "name": "宁夏西吉将台堡",
+        "coordinates": [
+          35.93,
+          105.88
+        ]
+      },
+      "participants": [
+        "红一方面军",
+        "红二方面军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_jiangtaibao_12371",
+        "src_jiangtaibao_cppcc"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red First Front Army: Convergence at 宁夏西吉将台堡",
+      "descriptionEn": "This node marks a convergence event on the Red First Front Army route near 宁夏西吉将台堡 (19361022)."
+    },
+    {
+      "id": "r2_19361022_jiangtaibao",
+      "date": "1936-10-22",
+      "displayDate": "1936-10-22",
+      "sequence": 74,
+      "forceId": "red_second",
+      "type": "会师",
+      "title": "红二方面军到达将台堡，三大主力会师完成",
+      "description": "红二方面军总指挥部及红二军团到达将台堡，与红一方面军胜利会师。至此，红一、红二、红四方面军三大主力会师完成，红军长征胜利结束。",
+      "location": {
+        "name": "宁夏西吉将台堡",
+        "coordinates": [
+          35.93,
+          105.88
+        ]
+      },
+      "participants": [
+        "贺龙",
+        "任弼时",
+        "红二方面军",
+        "红一方面军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_jiangtaibao_12371",
+        "src_jiangtaibao_cppcc",
+        "src_meetings_xinhua"
+      ],
+      "certainty": "medium",
+      "titleEn": "Red Second Front Army: Convergence at 宁夏西吉将台堡",
+      "descriptionEn": "This node marks a convergence event on the Red Second Front Army route near 宁夏西吉将台堡 (19361022)."
+    },
+    {
+      "id": "sha_19361022_landingpoint",
+      "date": "1936-10-22",
+      "displayDate": "1936-10-22",
+      "sequence": 75,
+      "forceId": "shaanbei_red",
+      "type": "胜利",
+      "title": "陕甘根据地成为长征落脚点与抗战出发点",
+      "description": "各路红军会师后，陕甘根据地作为落脚点的意义进一步显现，并逐渐成为全民族抗战的重要出发点。",
+      "location": {
+        "name": "陕甘宁区域",
+        "coordinates": [
+          36.7,
+          108.5
+        ]
+      },
+      "participants": [
+        "陕甘红军",
+        "各路红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_shaanbei_12371"
+      ],
+      "certainty": "medium",
+      "titleEn": "Shaan-Gan: Victory at 陕甘宁区域",
+      "descriptionEn": "This node marks a victory event on the Shaan-Gan route near 陕甘宁区域 (19361022)."
+    },
+    {
+      "id": "all_19361022_final_stats",
+      "date": "1936-10-22",
+      "displayDate": "1936-10-22",
+      "sequence": 999,
+      "forceId": "shaanbei_red",
+      "type": "胜利",
+      "title": "四路红军长征汇入陕甘宁，新的出发点形成",
+      "description": "到1936年10月，几路红军在西北完成战略汇合。长征保存了革命骨干，也使陕甘宁区域成为中国革命新的大本营。",
+      "location": {
+        "name": "陕甘宁区域",
+        "coordinates": [
+          36.6,
+          107.6
+        ]
+      },
+      "participants": [
+        "红一方面军",
+        "红二方面军",
+        "红四方面军",
+        "红二十五军",
+        "陕甘红军"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_stats_xinhua_2016",
+        "src_stats_people_2021"
+      ],
+      "certainty": "high",
+      "titleEn": "Shaan-Gan: Victory at 陕甘宁区域",
+      "descriptionEn": "This node marks a victory event on the Shaan-Gan route near 陕甘宁区域 (19361022).",
+      "result": "长征胜利结束"
+    }
+  ],
+  "statsModel": {
+    "startDate": "1934-10-10",
+    "endDate": "1936-10-22",
+    "centralDistanceLi": 25000,
+    "overallParticipantsApprox": 200000,
+    "overallLossesApprox": 150000,
+    "survivorsApprox": "5–6万人",
+    "note": "动态统计采用史实口径与节点累积结合。"
+  }
+}

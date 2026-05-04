@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红军长征星火路线</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-light">
+    <div id="container">
+        <header class="header">
+            <div class="header-title-row">
+                <h1 data-i18n="appTitle">红军长征星火路线</h1>
+                <button id="lang-toggle" class="lang-toggle" type="button">English</button>
+            </div>
+            <p class="subtitle" data-i18n="subtitle">1934–1936年 · 多路红军星火铺开 · 突破围追堵截 · 最终大会师</p>
+        </header>
+
+        <div id="map"></div>
+
+        <div id="narrative-banner" class="narrative-banner hidden">
+            <div class="banner-kicker" id="banner-kicker">会师</div>
+            <div class="banner-title" id="banner-title">红军大会师</div>
+            <div class="banner-subtitle" id="banner-subtitle">星火汇流，长征胜利</div>
+        </div>
+
+        <div id="force-panel" class="force-panel">
+            <h3 data-i18n="routes">路线</h3>
+            <div id="force-list" class="force-list"></div>
+        </div>
+
+        <div id="timeline-control" class="timeline-control">
+            <div class="timeline-info">
+                <span class="date-display" id="current-date">1934年10月</span>
+                <span class="event-title" id="current-event-title">中央红军主力开始战略转移</span>
+            </div>
+            <div class="timeline-slider-container">
+                <input type="range" id="timeline-slider" min="0" max="100" value="0">
+            </div>
+            <div class="timeline-labels">
+                <span>1934年10月</span>
+                <span>1936年10月</span>
+            </div>
+            <div class="player-controls">
+                <button id="prev-btn" class="control-btn" title="上一个事件">⏮</button>
+                <button id="play-btn" class="control-btn play-btn" title="播放">▶</button>
+                <button id="next-btn" class="control-btn" title="下一个事件">⏭</button>
+                <div class="speed-control">
+                    <label data-i18n="speed">速度</label>
+                    <select id="speed-select">
+                        <option value="0.5">0.5x</option>
+                        <option value="0.75">0.75x</option>
+                        <option value="1" selected>1x</option>
+                        <option value="1.25">1.25x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2">2x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="event-panel" class="event-panel">
+            <div class="panel-header">
+                <h3 id="panel-title">事件详情</h3>
+                <button id="panel-close" class="close-btn">×</button>
+            </div>
+            <div class="panel-content" id="panel-content"></div>
+        </div>
+
+        <div id="stats-panel" class="stats-panel">
+            <h4 data-i18n="statsTitle">长征统计</h4>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-joined">-</span>
+                    <span class="stat-label" id="joined-label">参征人数</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-loss">-</span>
+                    <span class="stat-label" id="loss-label">损失人数</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-victory">-</span>
+                    <span class="stat-label" id="victory-label">胜利节点</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-enemy">-</span>
+                    <span class="stat-label" id="enemy-label">歼俘敌</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-distance">-</span>
+                    <span class="stat-label" id="distance-label">里程推进</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-duration">-</span>
+                    <span class="stat-label" id="duration-label">历时</span>
+                </div>
+            </div>
+            <div class="stats-note" id="stats-note">统计为史实口径与节点累积结合：参征/损失为约数，歼俘敌只汇总有明确数字的节点。</div>
+        </div>
+
+        <a href="admin/index.html" class="admin-link" target="_blank" data-i18n="editor">本地数据编辑</a>
+
+        <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+            <p data-i18n="loading">正在加载长征数据...</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
