@@ -1517,3 +1517,398 @@ body {
   }
 }
 
+
+/* v18 final override: adaptive left event-detail card.
+   Keep the narrow width from v17, but avoid forcing a full-height empty panel.
+   The card grows with content and only scrolls when the content exceeds the safe viewport height. */
+@media (min-width: 901px) {
+  .event-panel,
+  .event-panel.show {
+    left: 18px !important;
+    top: 92px !important;
+    bottom: auto !important;
+    width: 280px !important;
+    min-width: 280px !important;
+    max-width: 280px !important;
+    height: auto !important;
+    max-height: min(560px, calc(100vh - 230px)) !important;
+    overflow: hidden !important;
+  }
+
+  .event-panel .panel-header {
+    padding: 11px 12px !important;
+  }
+
+  .event-panel .panel-content {
+    height: auto !important;
+    max-height: min(455px, calc(100vh - 292px)) !important;
+    overflow-y: auto !important;
+    padding: 11px 12px 14px !important;
+  }
+
+  .event-panel .panel-header h3 {
+    font-size: 15px !important;
+    line-height: 1.34 !important;
+    letter-spacing: 0 !important;
+  }
+
+  .event-panel .event-meta {
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+    margin-bottom: 9px !important;
+  }
+
+  .event-panel .event-meta-item {
+    padding: 6px 8px !important;
+    border-radius: 10px !important;
+  }
+
+  .event-panel .event-description {
+    font-size: 12.8px !important;
+    line-height: 1.62 !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .event-panel,
+  .event-panel.show {
+    width: 280px !important;
+    min-width: 280px !important;
+    max-width: 280px !important;
+    top: 92px !important;
+    bottom: auto !important;
+    max-height: min(590px, calc(100vh - 230px)) !important;
+  }
+
+  .event-panel .panel-content {
+    max-height: min(485px, calc(100vh - 292px)) !important;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 901px) {
+  .event-panel,
+  .event-panel.show {
+    width: 270px !important;
+    min-width: 270px !important;
+    max-width: 270px !important;
+    top: 88px !important;
+    bottom: auto !important;
+    max-height: min(520px, calc(100vh - 220px)) !important;
+  }
+
+  .event-panel .panel-content {
+    max-height: min(420px, calc(100vh - 282px)) !important;
+  }
+
+  .event-panel .panel-header h3 {
+    font-size: 14.5px !important;
+  }
+
+  .event-panel .event-description {
+    font-size: 12.5px !important;
+    line-height: 1.58 !important;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 901px) {
+  .event-panel,
+  .event-panel.show {
+    top: 82px !important;
+    bottom: auto !important;
+    width: 270px !important;
+    min-width: 270px !important;
+    max-width: 270px !important;
+    max-height: calc(100vh - 190px) !important;
+  }
+
+  .event-panel .panel-content {
+    max-height: calc(100vh - 248px) !important;
+  }
+}
+
+/* v19 visual refresh: warm UI, gray basemap only, compact detail fields, centered player title. */
+:root {
+  --bg: #fbf7ee;
+  --panel: rgba(255, 252, 244, .94);
+  --panel-solid: #fffaf0;
+  --text: #211d17;
+  --muted: #6e6658;
+  --line: rgba(72, 53, 32, .16);
+  --shadow: 0 14px 36px rgba(61, 42, 25, .15);
+  --accent: #b92722;
+  --accent-dark: #741815;
+  --ink: #29352a;
+}
+
+body {
+  background: #fbf7ee !important;
+  color: var(--text) !important;
+}
+
+#map,
+.leaflet-container {
+  background: #ecebe6 !important;
+}
+
+/* Only gray the map tiles, not routes, nodes, cards, buttons, flags, or text. */
+.leaflet-tile-pane img.leaflet-tile,
+.leaflet-tile {
+  filter: grayscale(1) saturate(.08) contrast(.92) brightness(1.10) opacity(.86) !important;
+}
+
+.header-title-row,
+.force-panel,
+.timeline-control,
+.event-panel,
+.admin-link,
+.media-panel,
+.comment-box {
+  background: rgba(255, 252, 244, .93) !important;
+  border-color: rgba(90, 61, 35, .14) !important;
+  box-shadow: 0 12px 30px rgba(61, 42, 25, .13) !important;
+}
+
+.header h1 {
+  color: #2a2119 !important;
+  text-shadow: 0 2px 12px rgba(255,255,255,.92) !important;
+}
+
+.subtitle,
+.force-short,
+.event-meta-label,
+.speed-control,
+.timeline-labels {
+  color: #746a5a !important;
+}
+
+.lang-toggle,
+.force-toolbar button,
+.control-btn,
+.speed-control select {
+  background: rgba(255, 250, 240, .96) !important;
+  border-color: rgba(98, 68, 38, .18) !important;
+  color: #2a2119 !important;
+}
+
+.force-item {
+  background: rgba(255, 250, 240, .68) !important;
+  border-color: transparent !important;
+}
+
+.force-item.active {
+  background: rgba(255, 250, 240, .98) !important;
+  border-color: rgba(98, 68, 38, .14) !important;
+}
+
+.force-item:hover,
+.lang-toggle:hover,
+.force-toolbar button:hover,
+.control-btn:hover,
+.speed-control select:hover {
+  background: #fffaf0 !important;
+}
+
+/* Public map view: hide dynamic stats and Leaflet attribution as requested. */
+.stats-panel,
+.leaflet-control-attribution {
+  display: none !important;
+}
+
+/* Left event card: only content-driven height, slightly lower than title, narrow width. */
+@media (min-width: 901px) {
+  .event-panel,
+  .event-panel.show {
+    left: 18px !important;
+    top: 124px !important;
+    bottom: auto !important;
+    width: 280px !important;
+    min-width: 280px !important;
+    max-width: 280px !important;
+    height: auto !important;
+    max-height: min(520px, calc(100vh - 252px)) !important;
+    overflow: hidden !important;
+    border-radius: 18px !important;
+  }
+
+  .event-panel .panel-header {
+    padding: 10px 12px !important;
+    background: linear-gradient(135deg, rgba(255,248,232,.98), rgba(255,252,244,.92)) !important;
+  }
+
+  .event-panel .panel-header h3 {
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+    letter-spacing: .14em !important;
+    color: #48341f !important;
+  }
+
+  .event-panel .panel-content {
+    height: auto !important;
+    max-height: min(450px, calc(100vh - 312px)) !important;
+    overflow-y: auto !important;
+    padding: 11px 12px 14px !important;
+  }
+
+  .event-panel .event-meta,
+  .event-panel .event-meta-compact {
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .event-panel .event-meta-item {
+    padding: 6px 8px !important;
+    border-radius: 10px !important;
+    background: rgba(255, 250, 240, .88) !important;
+    border-color: rgba(98, 68, 38, .10) !important;
+  }
+
+  .event-panel .event-meta-value {
+    color: #2a2119 !important;
+    font-size: 12px !important;
+  }
+
+  .event-panel .event-description {
+    margin-top: 10px !important;
+    font-size: 12.8px !important;
+    line-height: 1.64 !important;
+    color: #2f2a20 !important;
+  }
+
+  .event-panel .event-participants {
+    margin-top: 12px !important;
+  }
+
+  .event-panel .event-participants h4 {
+    font-size: 12px !important;
+    margin-bottom: 7px !important;
+    color: #746a5a !important;
+  }
+
+  .participant-tag {
+    background: #f0eadf !important;
+    color: #4a3521 !important;
+    padding: 3px 8px !important;
+    font-size: 11px !important;
+  }
+
+  .poem-card {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .event-panel,
+  .event-panel.show {
+    width: 280px !important;
+    min-width: 280px !important;
+    max-width: 280px !important;
+    top: 124px !important;
+    max-height: min(560px, calc(100vh - 252px)) !important;
+  }
+
+  .event-panel .panel-content {
+    max-height: min(490px, calc(100vh - 312px)) !important;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 901px) {
+  .event-panel,
+  .event-panel.show {
+    width: 270px !important;
+    min-width: 270px !important;
+    max-width: 270px !important;
+    top: 118px !important;
+    max-height: min(500px, calc(100vh - 240px)) !important;
+  }
+
+  .event-panel .panel-content {
+    max-height: min(430px, calc(100vh - 298px)) !important;
+  }
+
+  .event-panel .event-description {
+    font-size: 12.5px !important;
+    line-height: 1.58 !important;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 901px) {
+  .event-panel,
+  .event-panel.show {
+    top: 108px !important;
+    max-height: calc(100vh - 218px) !important;
+  }
+
+  .event-panel .panel-content {
+    max-height: calc(100vh - 276px) !important;
+  }
+}
+
+/* Bottom player: centered sentence and a stronger, non-white play button. */
+@media (min-width: 901px) {
+  .timeline-control {
+    background: rgba(255, 252, 244, .94) !important;
+    border: 1px solid rgba(98, 68, 38, .14) !important;
+  }
+
+  .timeline-info {
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    align-items: center !important;
+    gap: 0 !important;
+    margin-bottom: 7px !important;
+  }
+
+  .date-display {
+    display: none !important;
+  }
+
+  .event-title {
+    grid-column: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    justify-self: center !important;
+    color: #2a2119 !important;
+    font-size: 14.5px !important;
+    line-height: 1.35 !important;
+  }
+
+  #timeline-slider {
+    accent-color: var(--accent) !important;
+  }
+
+  .play-btn {
+    background: linear-gradient(135deg, #c7332b, #7f1713) !important;
+    color: #fff9ed !important;
+    border-color: rgba(150, 32, 24, .72) !important;
+    box-shadow: 0 8px 20px rgba(139, 31, 24, .24), inset 0 1px 0 rgba(255,255,255,.25) !important;
+  }
+
+  .play-btn:hover {
+    background: linear-gradient(135deg, #d44236, #8d1d17) !important;
+  }
+}
+
+/* Keep mobile minimal: map + playback bar only, with the new warm player style. */
+@media (max-width: 900px) {
+  .timeline-control {
+    background: rgba(255, 252, 244, .94) !important;
+    border: 1px solid rgba(98, 68, 38, .14) !important;
+  }
+
+  .event-title {
+    color: #2a2119 !important;
+    text-align: center !important;
+  }
+
+  #timeline-slider {
+    accent-color: var(--accent) !important;
+  }
+
+  .play-btn {
+    background: linear-gradient(135deg, #c7332b, #7f1713) !important;
+    color: #fff9ed !important;
+    border-color: rgba(150, 32, 24, .72) !important;
+  }
+}

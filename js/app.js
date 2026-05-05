@@ -535,17 +535,17 @@ function updateEventPanel(event) {
   const title = document.getElementById('panel-title');
   const content = document.getElementById('panel-content');
   const force = getSubject(event.forceId) || {};
-  title.textContent = getEventTitle(event);
+
+  // The left detail card is intentionally compact. It only shows the fields that
+  // help the visitor understand the current node without covering the map.
+  title.textContent = t('detail');
   content.innerHTML = `
-    <div class="event-meta">
+    <div class="event-meta event-meta-compact">
       <div class="event-meta-item"><span class="event-meta-label">${t('time')}</span><span class="event-meta-value">${escapeHTML(getDisplayDate(event))}</span></div>
       <div class="event-meta-item"><span class="event-meta-label">${t('force')}</span><span class="event-meta-value"><span class="force-dot" style="background:${escapeAttr(force.color || '#777')}"></span>${escapeHTML(getSubjectName(force))}</span></div>
       <div class="event-meta-item"><span class="event-meta-label">${t('type')}</span><span class="event-meta-value"><span class="event-type-badge" style="background:${escapeAttr(force.color || '#757575')}">${escapeHTML(getTypeLabel(event.type))}</span></span></div>
       <div class="event-meta-item"><span class="event-meta-label">${t('place')}</span><span class="event-meta-value">${escapeHTML(getLocationName(event))}</span></div>
-      ${event.result ? `<div class="event-meta-item"><span class="event-meta-label">${t('result')}</span><span class="event-meta-value">${escapeHTML(event.result)}</span></div>` : ''}
-      ${event.casualties ? `<div class="event-meta-item"><span class="event-meta-label">${t('casualties')}</span><span class="event-meta-value">${escapeHTML(event.casualties)}</span></div>` : ''}
     </div>
-    ${event.poem ? `<div class="poem-card"><div class="poem-line">${escapeHTML(event.poem.line || '')}</div><div class="poem-title">${escapeHTML(event.poem.title || '')}</div><div class="poem-text">${escapeHTML(event.poem.text || '')}</div></div>` : ''}
     <div class="event-description">${escapeHTML(getEventDescription(event))}</div>
     ${Array.isArray(event.participants) && event.participants.length ? `<div class="event-participants"><h4>${t('participants')}</h4><div class="participant-tags">${event.participants.map(p => `<span class="participant-tag">${escapeHTML(p)}</span>`).join('')}</div></div>` : ''}`;
   panel.classList.add('show');
