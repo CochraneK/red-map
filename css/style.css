@@ -1139,3 +1139,65 @@ body { overscroll-behavior: none; }
     gap: 7px !important;
   }
 }
+
+/* v13 patch: extend the desktop event-detail card so most event text is readable without scrolling. */
+@media (min-width: 901px) {
+  .event-panel {
+    width: 378px !important;
+    max-height: min(560px, calc(100vh - 296px)) !important;
+  }
+
+  .panel-content {
+    max-height: min(482px, calc(100vh - 366px)) !important;
+    overflow-y: auto !important;
+    scrollbar-width: thin;
+  }
+
+  .event-meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 7px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .event-meta-item {
+    padding: 7px 9px !important;
+    border-radius: 11px !important;
+  }
+
+  .event-description {
+    font-size: 13.5px !important;
+    line-height: 1.72 !important;
+  }
+}
+
+@media (min-width: 1281px) {
+  .event-panel {
+    width: 398px !important;
+    max-height: min(610px, calc(100vh - 296px)) !important;
+  }
+
+  .panel-content {
+    max-height: min(530px, calc(100vh - 366px)) !important;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 901px) {
+  .event-panel {
+    width: 340px !important;
+    max-height: min(500px, calc(100vh - 288px)) !important;
+  }
+
+  .panel-content {
+    max-height: min(424px, calc(100vh - 358px)) !important;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 901px) {
+  .event-panel {
+    max-height: min(420px, calc(100vh - 260px)) !important;
+  }
+
+  .panel-content {
+    max-height: min(346px, calc(100vh - 330px)) !important;
+  }
+}
