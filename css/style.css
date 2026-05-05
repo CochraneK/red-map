@@ -1201,3 +1201,143 @@ body { overscroll-behavior: none; }
     max-height: min(346px, calc(100vh - 330px)) !important;
   }
 }
+
+/* v14 patch: keep only the map in grayscale, lengthen the left detail card, and hide Leaflet attribution. */
+:root {
+  --bg: #ffffff;
+  --panel: rgba(255,255,255,.94);
+  --panel-solid: #ffffff;
+  --text: #171d18;
+  --muted: #5f6860;
+  --line: rgba(24,31,26,.12);
+  --shadow: 0 14px 38px rgba(24,31,26,.14);
+}
+
+body {
+  background: #ffffff !important;
+  color: var(--text) !important;
+}
+
+#map,
+.leaflet-container {
+  background: #f1f3f1 !important;
+}
+
+/* Only the basemap is muted. Routes, nodes, flags, cards and controls keep their original colors. */
+.leaflet-tile-pane img.leaflet-tile,
+.leaflet-tile {
+  filter: grayscale(.96) saturate(.10) contrast(1.04) brightness(1.06) opacity(.90) !important;
+}
+
+.header-title-row,
+.force-panel,
+.timeline-control,
+.event-panel,
+.admin-link,
+.media-panel,
+.comment-box {
+  background: rgba(255,255,255,.94) !important;
+}
+
+.panel-header,
+.event-meta-item,
+.force-item.active,
+.force-toolbar button,
+.control-btn,
+.speed-control select {
+  background: #ffffff !important;
+}
+
+/* Remove the lower-right Leaflet attribution/logo from the public visual layer. */
+.leaflet-control-attribution {
+  display: none !important;
+}
+
+@media (min-width: 901px) {
+  .event-panel {
+    top: 104px !important;
+    bottom: 154px !important;
+    width: 430px !important;
+    max-height: none !important;
+    height: auto !important;
+    border-radius: 18px !important;
+  }
+
+  .panel-header {
+    padding: 15px 17px !important;
+  }
+
+  .panel-header h3 {
+    font-size: 18px !important;
+    line-height: 1.32 !important;
+  }
+
+  .panel-content {
+    height: calc(100% - 62px) !important;
+    max-height: none !important;
+    overflow-y: auto !important;
+    padding: 14px 17px 17px !important;
+    scrollbar-width: thin;
+  }
+
+  .event-meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .event-description {
+    font-size: 14px !important;
+    line-height: 1.72 !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .event-panel {
+    width: 462px !important;
+    top: 104px !important;
+    bottom: 152px !important;
+  }
+
+  .event-description {
+    font-size: 14.5px !important;
+    line-height: 1.76 !important;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 901px) {
+  .event-panel {
+    width: 382px !important;
+    top: 100px !important;
+    bottom: 150px !important;
+  }
+
+  .panel-content {
+    padding: 13px 15px 15px !important;
+  }
+
+  .event-description {
+    font-size: 13.5px !important;
+    line-height: 1.68 !important;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 901px) {
+  .event-panel {
+    top: 90px !important;
+    bottom: 128px !important;
+    width: 370px !important;
+  }
+
+  .panel-header {
+    padding: 12px 15px !important;
+  }
+
+  .panel-header h3 {
+    font-size: 16px !important;
+  }
+
+  .panel-content {
+    height: calc(100% - 54px) !important;
+  }
+}
