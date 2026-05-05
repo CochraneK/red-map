@@ -906,3 +906,236 @@ body { overscroll-behavior: none; }
     display: none !important;
   }
 }
+
+/* v12 patch: reduce desktop overlay collision and keep the map as the primary visual field. */
+@media (min-width: 901px) {
+  .header {
+    top: 16px !important;
+    left: 18px !important;
+    right: auto !important;
+    max-width: 360px !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+  .header-title-row {
+    padding: 9px 13px !important;
+    border-radius: 16px !important;
+    background: rgba(255,255,255,.84) !important;
+    box-shadow: 0 8px 24px rgba(30,42,33,.10) !important;
+  }
+  .header h1 {
+    font-size: 22px !important;
+    line-height: 1.15 !important;
+    letter-spacing: .02em !important;
+    white-space: nowrap !important;
+  }
+  .subtitle {
+    display: block !important;
+    margin: 6px 0 0 0 !important;
+    max-width: 340px !important;
+    padding: 4px 9px !important;
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+    background: rgba(255,255,255,.56) !important;
+  }
+  .admin-link {
+    top: 18px !important;
+    right: 18px !important;
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+  }
+  .media-panel {
+    top: 18px !important;
+    right: 154px !important;
+  }
+  .comment-box {
+    top: 58px !important;
+    right: 154px !important;
+  }
+  .event-panel {
+    top: 128px !important;
+    left: 18px !important;
+    width: 322px !important;
+    max-height: min(308px, calc(100vh - 238px)) !important;
+    border-radius: 16px !important;
+    background: rgba(255,255,255,.88) !important;
+    box-shadow: 0 12px 32px rgba(36,45,38,.13) !important;
+  }
+  .panel-header {
+    padding: 12px 14px !important;
+  }
+  .panel-header h3 {
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+  }
+  .panel-content {
+    padding: 12px 14px 14px !important;
+    max-height: min(244px, calc(100vh - 306px)) !important;
+  }
+  .event-meta {
+    gap: 6px !important;
+    margin-bottom: 10px !important;
+  }
+  .event-description {
+    font-size: 13px !important;
+    line-height: 1.62 !important;
+  }
+  .force-panel {
+    top: 96px !important;
+    right: 18px !important;
+    width: 300px !important;
+    max-height: calc(100vh - 122px) !important;
+    padding: 12px !important;
+    border-radius: 16px !important;
+    background: rgba(255,255,255,.88) !important;
+    box-shadow: 0 12px 32px rgba(36,45,38,.13) !important;
+  }
+  .force-item {
+    padding: 7px 8px !important;
+    gap: 8px !important;
+  }
+  .force-name { font-size: 12px !important; }
+  .force-short { font-size: 9px !important; }
+  .subunit-chip { font-size: 8px !important; padding: 1px 5px !important; }
+  .narrative-banner {
+    top: 22px !important;
+    left: 50% !important;
+    width: clamp(320px, calc(100vw - 780px), 500px) !important;
+    min-width: 320px !important;
+    padding: 10px 16px !important;
+    border-radius: 14px !important;
+    background: rgba(27,34,28,.80) !important;
+    box-shadow: 0 12px 34px rgba(0,0,0,.22) !important;
+  }
+  .banner-kicker {
+    font-size: 10px !important;
+    letter-spacing: .22em !important;
+    margin-bottom: 3px !important;
+  }
+  .banner-title {
+    font-size: 17px !important;
+    line-height: 1.28 !important;
+  }
+  .banner-subtitle {
+    font-size: 11px !important;
+    line-height: 1.45 !important;
+    margin-top: 4px !important;
+  }
+  .timeline-control {
+    bottom: 18px !important;
+    width: clamp(520px, 46vw, 760px) !important;
+    min-width: 460px !important;
+    padding: 12px 16px 11px !important;
+    border-radius: 18px !important;
+    background: rgba(255,255,255,.90) !important;
+    box-shadow: 0 12px 34px rgba(36,45,38,.14) !important;
+  }
+  .timeline-info {
+    grid-template-columns: 118px 1fr !important;
+    gap: 10px !important;
+    margin-bottom: 6px !important;
+  }
+  .event-title {
+    grid-column: 2 !important;
+    font-size: 14px !important;
+    line-height: 1.35 !important;
+  }
+  .date-display {
+    font-size: 13px !important;
+  }
+  .timeline-slider-container { height: 22px !important; }
+  .player-controls { margin-top: 7px !important; }
+  .control-btn { width: 32px !important; height: 32px !important; }
+  .play-btn { width: 40px !important; height: 40px !important; }
+  .leaflet-control-zoom { margin-bottom: 126px !important; }
+}
+
+@media (max-width: 1280px) and (min-width: 901px) {
+  .header { max-width: 318px !important; }
+  .header h1 { font-size: 20px !important; }
+  .subtitle { display: none !important; }
+  .event-panel { width: 294px !important; }
+  .force-panel { width: 278px !important; }
+  .narrative-banner {
+    top: 20px !important;
+    width: clamp(280px, calc(100vw - 650px), 420px) !important;
+    min-width: 280px !important;
+  }
+  .timeline-control {
+    width: clamp(420px, 44vw, 600px) !important;
+    min-width: 400px !important;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 901px) {
+  .event-panel {
+    max-height: 244px !important;
+  }
+  .panel-content {
+    max-height: 184px !important;
+  }
+  .force-panel {
+    max-height: calc(100vh - 112px) !important;
+  }
+  .narrative-banner {
+    top: 14px !important;
+  }
+  .timeline-control {
+    padding-top: 10px !important;
+    padding-bottom: 9px !important;
+  }
+}
+
+/* v12 mobile hard override: only map + playback bar; no floating cards. */
+@media (max-width: 900px) {
+  .header,
+  .admin-link,
+  .media-panel,
+  .comment-box,
+  .danmu-layer,
+  .mobile-panel-tabs,
+  .force-panel,
+  .stats-panel,
+  .event-panel,
+  .narrative-banner,
+  .location-label-wrapper,
+  .meeting-label-leader {
+    display: none !important;
+  }
+  #container,
+  #map {
+    height: 100dvh !important;
+    width: 100vw !important;
+  }
+  .timeline-control {
+    display: block !important;
+    left: 10px !important;
+    right: 10px !important;
+    bottom: 10px !important;
+    width: auto !important;
+    min-width: 0 !important;
+    transform: none !important;
+    padding: 9px 10px 8px !important;
+    border-radius: 16px !important;
+    background: rgba(255,255,255,.92) !important;
+    z-index: 1600 !important;
+  }
+  .timeline-info {
+    grid-template-columns: 1fr !important;
+    margin-bottom: 4px !important;
+  }
+  .event-title {
+    grid-column: 1 !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    white-space: nowrap !important;
+  }
+  .date-display,
+  .timeline-labels {
+    display: none !important;
+  }
+  .player-controls {
+    margin-top: 5px !important;
+    gap: 7px !important;
+  }
+}
