@@ -2036,3 +2036,27 @@ body {
   line-height: 1.25 !important;
   box-shadow: 0 8px 18px rgba(80, 40, 20, .15) !important;
 }
+
+
+/* v21: final convergence labels must not be ellipsized. */
+.location-label.location-label-meeting,
+.location-label-meeting {
+  max-width: none !important;
+  width: auto !important;
+  min-width: max-content !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.location-label.location-label-meeting span,
+.location-label-meeting span {
+  display: inline-block !important;
+  max-width: none !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+.location-label-wrapper {
+  overflow: visible !important;
+}

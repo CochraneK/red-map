@@ -380,8 +380,10 @@ function computeMeetingLabelPlacements(candidates, visibleEvents) {
   candidates.forEach((c, idx) => {
     const base = map.project(c.coords, map.getZoom());
     const textLen = [...String(c.text || '')].length;
-    const w = Math.min(170, Math.max(94, textLen * (currentLang === 'en' ? 7.6 : 13.0) + 24));
-    const h = 32;
+    // v21: convergence labels must show the full place name; do not let the
+    // Huining / Jiangtaibao labels be clipped or ellipsized.
+    const w = Math.min(260, Math.max(116, textLen * (currentLang === 'en' ? 8.2 : 15.0) + 34));
+    const h = 34;
     let best = null;
     let bestScore = Infinity;
     const text = `${c.text || ''}${c.event?.title || ''}${c.event?.location?.name || ''}`;
