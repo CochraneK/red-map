@@ -1341,3 +1341,82 @@ body {
     height: calc(100% - 54px) !important;
   }
 }
+
+/* v15 patch: make the left event-detail card taller only; do not widen it horizontally. */
+@media (min-width: 901px) {
+  .event-panel {
+    left: 18px !important;
+    top: 96px !important;
+    bottom: 136px !important;
+    width: 340px !important;
+    max-width: 340px !important;
+    max-height: none !important;
+    height: auto !important;
+  }
+
+  .panel-header {
+    padding: 13px 15px !important;
+  }
+
+  .panel-header h3 {
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+  }
+
+  .panel-content {
+    height: calc(100% - 58px) !important;
+    max-height: none !important;
+    overflow-y: auto !important;
+    padding: 13px 15px 16px !important;
+  }
+
+  .event-description {
+    font-size: 13.5px !important;
+    line-height: 1.72 !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .event-panel {
+    width: 340px !important;
+    max-width: 340px !important;
+    top: 96px !important;
+    bottom: 136px !important;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 901px) {
+  .event-panel {
+    width: 320px !important;
+    max-width: 320px !important;
+    top: 94px !important;
+    bottom: 132px !important;
+  }
+
+  .panel-header h3 {
+    font-size: 15.5px !important;
+  }
+
+  .event-description {
+    font-size: 13px !important;
+    line-height: 1.66 !important;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 901px) {
+  .event-panel {
+    top: 88px !important;
+    bottom: 118px !important;
+    width: 320px !important;
+    max-width: 320px !important;
+  }
+
+  .panel-header {
+    padding: 11px 14px !important;
+  }
+
+  .panel-content {
+    height: calc(100% - 52px) !important;
+    padding: 12px 14px 14px !important;
+  }
+}
