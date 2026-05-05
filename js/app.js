@@ -371,24 +371,29 @@ function computeMeetingLabelPlacements(candidates, visibleEvents) {
   const viewport = map.getSize();
   const usedRects = [];
   const routeSegments = buildScreenRouteSegments(visibleEvents);
-  const offsets = [
-    [128, -82], [-150, -82], [132, 66], [-154, 66],
-    [72, -132], [-98, -132], [74, 116], [-102, 116],
-    [196, -18], [-216, -18], [4, -166], [4, 154],
-    [226, 76], [-242, 76], [226, -108], [-242, -108]
+  const defaultOffsets = [
+    [92, -58], [-108, -58], [94, 52], [-112, 52],
+    [140, -10], [-156, -10], [18, -104], [18, 96],
+    [150, 58], [-166, 58], [150, -82], [-166, -82]
   ];
 
   candidates.forEach((c, idx) => {
     const base = map.project(c.coords, map.getZoom());
     const textLen = [...String(c.text || '')].length;
-    const w = Math.min(188, Math.max(96, textLen * (currentLang === 'en' ? 8.2 : 14.2) + 28));
-    const h = 34;
+    const w = Math.min(170, Math.max(94, textLen * (currentLang === 'en' ? 7.6 : 13.0) + 24));
+    const h = 32;
     let best = null;
     let bestScore = Infinity;
+    const text = `${c.text || ''}${c.event?.title || ''}${c.event?.location?.name || ''}`;
+    let offsets = defaultOffsets;
+    // Keep the final two convergence labels close to the nodes but on opposite sides:
+    // Huining/Gansu to the left, Jiangtaibao/Ningxia to the right.
+    if (/会宁|Huining/i.test(text)) offsets = [[-116, -42], [-118, 42], [-150, -6], [-90, -76], [-90, 72], ...defaultOffsets];
+    if (/将台堡|西吉|Jiangtaibao|Xiji/i.test(text)) offsets = [[116, -42], [118, 42], [150, -6], [90, -76], [90, 72], ...defaultOffsets];
 
     offsets.forEach((off, offIdx) => {
-      const dx = off[0] + (idx % 3) * 12;
-      const dy = off[1] + (idx % 2) * 10;
+      const dx = off[0] + (idx % 2) * 8;
+      const dy = off[1] + (idx % 2) * 6;
       const center = L.point(base.x + dx, base.y + dy);
       const rect = rectFromCenter(center, w, h, 8);
       let score = Math.abs(dx) * 0.08 + Math.abs(dy) * 0.08 + offIdx;
@@ -517,8 +522,8 @@ function updateSpecialEffects(event) {
 }
 function showMeetingFlag(event) {
   if (!event.location?.coordinates) return;
-  const html = `<div class="meeting-flag"><div class="flag-pole"></div><div class="flag-cloth">★</div></div>`;
-  const icon = L.divIcon({ className:'meeting-flag-wrapper', html, iconSize:[56,72], iconAnchor:[12,66] });
+  const html = `<div class="meeting-flag">🚩</div>`;
+  const icon = L.divIcon({ className:'meeting-flag-wrapper', html, iconSize:[44,44], iconAnchor:[16,38] });
   meetingFlagLayer = L.marker(event.location.coordinates, { icon, interactive:false, zIndexOffset: 12000 }).addTo(map);
   window.clearTimeout(showMeetingFlag._timer);
   showMeetingFlag._timer = window.setTimeout(() => {
@@ -538,9 +543,9 @@ function updateEventPanel(event) {
 
   // The left detail card is intentionally compact. It only shows the fields that
   // help the visitor understand the current node without covering the map.
-  title.textContent = t('detail');
+  title.textContent = '';
   content.innerHTML = `
-    <div class="event-meta event-meta-compact">
+    <div class="event-meta event-meta-compact event-meta-grid-2x2">
       <div class="event-meta-item"><span class="event-meta-label">${t('time')}</span><span class="event-meta-value">${escapeHTML(getDisplayDate(event))}</span></div>
       <div class="event-meta-item"><span class="event-meta-label">${t('force')}</span><span class="event-meta-value"><span class="force-dot" style="background:${escapeAttr(force.color || '#777')}"></span>${escapeHTML(getSubjectName(force))}</span></div>
       <div class="event-meta-item"><span class="event-meta-label">${t('type')}</span><span class="event-meta-value"><span class="event-type-badge" style="background:${escapeAttr(force.color || '#757575')}">${escapeHTML(getTypeLabel(event.type))}</span></span></div>
@@ -602,11 +607,12 @@ function getEventDescription(event) { return currentLang === 'en' ? (event.descr
 function getSubjectName(force) { if (!force) return ''; return currentLang === 'en' ? (force.shortNameEn || force.nameEn || force.shortName || force.name || force.id) : (force.shortName || force.name || force.id); }
 function getLocationName(event) { return currentLang === 'en' ? (event.location?.nameEn || event.location?.name || '') : (event.location?.name || ''); }
 function getTypeLabel(type) { return currentLang === 'en' ? (TYPE_LABELS_EN[type] || type) : type; }
-function getDisplayDate(event) { return currentLang === 'en' ? formatDateEn(event.date) : formatDateZh(event.date); }
+function getDisplayDate(event) { return currentLang === 'en' ? formatDateEn(event.date) : formatDateCompact(event.date); }
 function getSubject(id) { return marchData.subjects.find(s => s.id === id); }
 function groupBy(items, fn) { return items.reduce((acc, item) => { const key = fn(item); (acc[key] ||= []).push(item); return acc; }, {}); }
 function sortEventAscending(a,b) { return new Date(a.date) - new Date(b.date) || Number(a.sequence || 0) - Number(b.sequence || 0) || (a._globalOrder || 0) - (b._globalOrder || 0); }
 function formatDateZh(dateStr) { const d = parseDate(dateStr); return `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日`; }
+function formatDateCompact(dateStr) { const d = parseDate(dateStr); return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`; }
 function formatDateEn(dateStr) { const d = parseDate(dateStr); return d.toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' }); }
 function parseDate(dateStr) { const m = String(dateStr || '').match(/^(\d{4})-(\d{2})-(\d{2})$/); if (m) return new Date(Number(m[1]), Number(m[2])-1, Number(m[3])); return new Date(dateStr); }
 function formatWan(n) { n = Math.round(Number(n) || 0); return n >= 10000 ? `${(n/10000).toFixed(n >= 100000 ? 0 : 1)}万` : formatNumber(n); }
