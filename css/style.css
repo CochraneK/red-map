@@ -1421,105 +1421,99 @@ body {
   }
 }
 
-
-/* v16 definitive override: left event-detail card becomes taller only, not wider.
-   This block is intentionally placed at the very end to win over older v13/v14/v15 rules. */
+/* v17 final override: left event-detail card is tall but narrow.
+   This block is intentionally placed at the very end to override v13/v14/v15 remnants. */
 @media (min-width: 901px) {
   .event-panel,
-  #event-panel.event-panel {
+  .event-panel.show {
     left: 18px !important;
-    top: 72px !important;
-    bottom: 138px !important;
-    width: 320px !important;
-    max-width: 320px !important;
-    min-width: 0 !important;
+    top: 92px !important;
+    bottom: 122px !important;
+    width: 280px !important;
+    min-width: 280px !important;
+    max-width: 280px !important;
     height: auto !important;
     max-height: none !important;
     overflow: hidden !important;
   }
 
-  .event-panel .panel-header,
-  #event-panel .panel-header {
-    padding: 11px 13px !important;
+  .event-panel .panel-header {
+    padding: 11px 12px !important;
   }
 
-  .event-panel .panel-header h3,
-  #event-panel .panel-header h3 {
-    font-size: 15.5px !important;
-    line-height: 1.32 !important;
+  .event-panel .panel-header h3 {
+    font-size: 15px !important;
+    line-height: 1.34 !important;
+    letter-spacing: 0 !important;
   }
 
-  .event-panel .panel-content,
-  #event-panel .panel-content {
+  .event-panel .panel-content {
     height: calc(100% - 50px) !important;
     max-height: none !important;
     overflow-y: auto !important;
-    padding: 11px 13px 14px !important;
+    padding: 11px 12px 14px !important;
   }
 
-  .event-panel .event-meta,
-  #event-panel .event-meta {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  .event-panel .event-meta {
+    grid-template-columns: 1fr !important;
     gap: 6px !important;
     margin-bottom: 9px !important;
   }
 
-  .event-panel .event-meta-item,
-  #event-panel .event-meta-item {
-    padding: 6px 7px !important;
+  .event-panel .event-meta-item {
+    padding: 6px 8px !important;
     border-radius: 10px !important;
   }
 
-  .event-panel .event-description,
-  #event-panel .event-description {
-    font-size: 13px !important;
+  .event-panel .event-description {
+    font-size: 12.8px !important;
     line-height: 1.62 !important;
   }
 }
 
 @media (min-width: 1440px) {
   .event-panel,
-  #event-panel.event-panel {
-    width: 320px !important;
-    max-width: 320px !important;
-    top: 68px !important;
-    bottom: 138px !important;
+  .event-panel.show {
+    width: 280px !important;
+    min-width: 280px !important;
+    max-width: 280px !important;
+    top: 92px !important;
+    bottom: 122px !important;
   }
 }
 
 @media (max-width: 1280px) and (min-width: 901px) {
   .event-panel,
-  #event-panel.event-panel {
-    width: 312px !important;
-    max-width: 312px !important;
-    top: 72px !important;
-    bottom: 136px !important;
+  .event-panel.show {
+    width: 270px !important;
+    min-width: 270px !important;
+    max-width: 270px !important;
+    top: 88px !important;
+    bottom: 118px !important;
   }
 
-  .event-panel .event-description,
-  #event-panel .event-description {
-    font-size: 12.8px !important;
+  .event-panel .panel-header h3 {
+    font-size: 14.5px !important;
+  }
+
+  .event-panel .event-description {
+    font-size: 12.5px !important;
     line-height: 1.58 !important;
   }
 }
 
 @media (max-height: 760px) and (min-width: 901px) {
   .event-panel,
-  #event-panel.event-panel {
-    width: 312px !important;
-    max-width: 312px !important;
-    top: 58px !important;
-    bottom: 112px !important;
+  .event-panel.show {
+    top: 82px !important;
+    bottom: 104px !important;
+    width: 270px !important;
+    min-width: 270px !important;
+    max-width: 270px !important;
   }
 
-  .event-panel .panel-header,
-  #event-panel .panel-header {
-    padding: 9px 12px !important;
-  }
-
-  .event-panel .panel-content,
-  #event-panel .panel-content {
-    height: calc(100% - 44px) !important;
-    padding: 9px 12px 12px !important;
+  .event-panel .panel-content {
+    height: calc(100% - 46px) !important;
   }
 }
+
