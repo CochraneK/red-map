@@ -4,9 +4,6 @@
 
 ![项目首页预览](docs/readme-home.png)
 
-<p align="center">
-  <img src="docs/readme-mobile.png" alt="手机端预览" width="260" />
-</p>
 
 ## 功能特性
 
@@ -131,9 +128,6 @@ An interactive Long March route project built around the narrative logic of scat
 
 ![Desktop preview](docs/readme-home-en.png)
 
-<p align="center">
-  <img src="docs/readme-mobile.png" alt="Mobile preview" width="260" />
-</p>
 
 ## Features
 
