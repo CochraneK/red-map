@@ -47,7 +47,7 @@
       <section id="import-section" class="content-section">
         <header class="section-header"><h1>数据导入</h1></header>
         <div class="import-options">
-          <div class="import-card"><h3>从 JSON 文件导入</h3><p>替换当前浏览器内存中的数据。</p><input type="file" id="import-file" accept=".json" hidden><button class="btn btn-secondary" onclick="document.getElementById('import-file').click()">选择 JSON</button></div>
+          <div class="import-card"><h3>从 JSON 文件导入</h3><p>替换当前浏览器内存中的数据。</p><input type="file" id="import-file" accept=".json" hidden><button class="btn btn-secondary" id="select-json-btn" type="button">选择 JSON</button></div>
           <div class="import-card"><h3>从 Excel/CSV 粘贴事件</h3><p>格式：日期,主体ID,类型,标题,地点,纬度,经度,描述,人物。日期支持 YYYYMMDD。</p><textarea id="import-textarea" placeholder="19350115,red_first,会议,遵义会议召开,贵州遵义,27.70,106.93,……,毛泽东;周恩来"></textarea><button class="btn btn-secondary" id="import-paste-btn">导入粘贴内容</button></div>
         </div>
       </section>

@@ -8,12 +8,22 @@ let currentSubjectTab = 'all';
 document.addEventListener('DOMContentLoaded', initAdmin);
 
 async function initAdmin() {
-  marchData = await loadData();
-  normalizeData();
-  bindNavigation(); bindFilters(); bindPagination(); bindModals(); bindImportExport();
-  populateSelects(); renderEventsTable(); renderSubjectsGrid();
+  try {
+    marchData = await loadData();
+    normalizeData();
+    bindNavigation(); bindFilters(); bindPagination(); bindModals(); bindImportExport(); bindRowActions();
+    populateSelects(); renderEventsTable(); renderSubjectsGrid();
+  } catch (err) {
+    console.error(err);
+    showAdminError(err);
+  }
 }
 async function loadData() { const res = await fetch(`${DATA_URL}?v=${Date.now()}`, {cache:'no-store'}); if (!res.ok) throw new Error(`无法加载数据文件：${res.status}`); return await res.json(); }
+function showAdminError(err) {
+  const main = document.querySelector('.main-content');
+  if (!main) return alert(`数据加载失败：${err?.message || err}`);
+  main.innerHTML = `<div class="admin-error"><h1>数据加载失败</h1><p>${escapeHTML(err?.message || err)}</p><p>请从项目根目录启动本地服务器，例如运行 <code>start_server.bat</code>，再重新打开后台。</p></div>`;
+}
 function normalizeData() { marchData.subjects ||= []; marchData.events ||= []; marchData.sources ||= []; dedupeEvents(); sortData(); }
 function sortData() { marchData.subjects.sort((a,b)=>(Number(a.sort||999)-Number(b.sort||999)) || String(a.id).localeCompare(String(b.id))); marchData.events.sort((a,b)=> new Date(a.date)-new Date(b.date) || Number(a.sequence||0)-Number(b.sequence||0) || String(a.id).localeCompare(String(b.id))); }
 function dedupeEvents() { const seen = new Set(); marchData.events = marchData.events.filter(e => { const key = e.id || `${e.date}|${e.forceId}|${e.title}|${e.location?.name}`; if (seen.has(key)) return false; seen.add(key); return true; }); }
@@ -22,7 +32,23 @@ function bindNavigation() { document.querySelectorAll('.nav-item').forEach(item 
 function bindFilters() { ['sort-select','filter-subject','filter-type','search-input'].forEach(id => document.getElementById(id)?.addEventListener('input', () => { currentPage = 1; renderEventsTable(); })); document.querySelectorAll('.tab-btn').forEach(btn => btn.addEventListener('click', () => { currentSubjectTab = btn.dataset.type; document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); renderSubjectsGrid(); })); }
 function bindPagination() { document.getElementById('prev-page')?.addEventListener('click', () => { currentPage = Math.max(1, currentPage-1); renderEventsTable(); }); document.getElementById('next-page')?.addEventListener('click', () => { const total = Math.max(1, Math.ceil(getFilteredEvents().length / pageSize)); currentPage = Math.min(total, currentPage+1); renderEventsTable(); }); document.getElementById('page-jump-btn')?.addEventListener('click', () => { const total = Math.max(1, Math.ceil(getFilteredEvents().length / pageSize)); currentPage = Math.max(1, Math.min(total, Number(document.getElementById('page-jump-input').value || 1))); renderEventsTable(); }); }
 function bindModals() { document.getElementById('add-event-btn')?.addEventListener('click', () => openEventModal()); document.getElementById('save-event-btn')?.addEventListener('click', saveEventFromForm); document.getElementById('add-subject-btn')?.addEventListener('click', () => openSubjectModal()); document.getElementById('save-subject-btn')?.addEventListener('click', saveSubjectFromForm); document.querySelectorAll('.modal-close,.modal-cancel').forEach(btn => btn.addEventListener('click', closeModals)); document.querySelectorAll('.modal').forEach(modal => modal.addEventListener('click', ev => { if (ev.target === modal) closeModals(); })); }
-function bindImportExport() { document.getElementById('export-json-btn')?.addEventListener('click', exportJSON); document.getElementById('export-csv-btn')?.addEventListener('click', exportCSV); document.getElementById('import-file')?.addEventListener('change', importJSONFile); document.getElementById('import-paste-btn')?.addEventListener('click', importPastedRows); }
+function bindImportExport() { document.getElementById('export-json-btn')?.addEventListener('click', exportJSON); document.getElementById('export-csv-btn')?.addEventListener('click', exportCSV); document.getElementById('select-json-btn')?.addEventListener('click', () => document.getElementById('import-file')?.click()); document.getElementById('import-file')?.addEventListener('change', importJSONFile); document.getElementById('import-paste-btn')?.addEventListener('click', importPastedRows); }
+function bindRowActions() {
+  document.getElementById('events-tbody')?.addEventListener('click', ev => {
+    const btn = ev.target.closest('button[data-action]');
+    if (!btn) return;
+    const id = btn.dataset.eventId || '';
+    if (btn.dataset.action === 'edit-event') openEventModal(id);
+    if (btn.dataset.action === 'delete-event') deleteEvent(id);
+  });
+  document.getElementById('subjects-grid')?.addEventListener('click', ev => {
+    const btn = ev.target.closest('button[data-action]');
+    if (!btn) return;
+    const id = btn.dataset.subjectId || '';
+    if (btn.dataset.action === 'edit-subject') openSubjectModal(id);
+    if (btn.dataset.action === 'delete-subject') deleteSubject(id);
+  });
+}
 
 function populateSelects() {
   const subjects = getForceSubjects();
@@ -60,7 +86,7 @@ function renderEventsTable() {
       <td class="title-cell"><strong>${escapeHTML(e.title || '')}</strong><small>${escapeHTML(desc)}${(e.description || '').length > 62 ? '…' : ''}</small></td>
       <td class="place-cell">${escapeHTML(e.location?.name || '')}</td>
       <td>${escapeHTML(e.importance || '')}</td>
-      <td><div class="action-cell"><button class="btn btn-sm btn-secondary" onclick="openEventModal('${escapeAttr(e.id)}')">编辑</button><button class="btn btn-sm btn-danger" onclick="deleteEvent('${escapeAttr(e.id)}')">删除</button></div></td>
+      <td><div class="action-cell"><button class="btn btn-sm btn-secondary" data-action="edit-event" data-event-id="${escapeAttr(e.id)}">编辑</button><button class="btn btn-sm btn-danger" data-action="delete-event" data-event-id="${escapeAttr(e.id)}">删除</button></div></td>
     </tr>`;
   }).join('');
   document.getElementById('page-info').textContent = `第 ${currentPage} 页 / 共 ${totalPages} 页，共 ${rows.length} 条`;
@@ -71,7 +97,7 @@ function renderSubjectsGrid() {
   const grid = document.getElementById('subjects-grid'); if (!grid) return;
   let subjects = marchData.subjects; if (currentSubjectTab !== 'all') subjects = subjects.filter(s => s.type === currentSubjectTab); subjects = [...subjects].sort((a,b)=>(Number(a.sort||999)-Number(b.sort||999)) || String(a.id).localeCompare(String(b.id)));
   grid.innerHTML = subjects.map(s => { const eventCount = marchData.events.filter(e => e.forceId === s.id || e.subjectId === s.id).length; return `<div class="subject-card">
-    <div class="subject-card-header"><div class="subject-title"><span class="subject-color" style="background:${escapeAttr(s.color || '#777')}"></span><h3>${escapeHTML(s.name || '')}</h3></div><div class="subject-actions"><button class="btn btn-sm btn-secondary" onclick="openSubjectModal('${escapeAttr(s.id)}')">编辑</button><button class="btn btn-sm btn-danger" onclick="deleteSubject('${escapeAttr(s.id)}')">删除</button></div></div>
+    <div class="subject-card-header"><div class="subject-title"><span class="subject-color" style="background:${escapeAttr(s.color || '#777')}"></span><h3>${escapeHTML(s.name || '')}</h3></div><div class="subject-actions"><button class="btn btn-sm btn-secondary" data-action="edit-subject" data-subject-id="${escapeAttr(s.id)}">编辑</button><button class="btn btn-sm btn-danger" data-action="delete-subject" data-subject-id="${escapeAttr(s.id)}">删除</button></div></div>
     <p><strong>ID：</strong>${escapeHTML(s.id)}　<strong>简称：</strong>${escapeHTML(s.shortName || '')}</p>
     <p><strong>类型：</strong>${escapeHTML(s.type || '')}　<strong>事件：</strong>${eventCount}</p>
     ${s.leader ? `<p><strong>人物：</strong>${escapeHTML(s.leader)}</p>` : ''}
@@ -139,8 +165,3 @@ function csvEscape(value) { const str = String(value ?? ''); return /[",\n\r]/.t
 function downloadFile(filename, content, mime) { const blob = new Blob([content], {type:mime}); const url = URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download=filename; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url); }
 function escapeHTML(value) { return String(value ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;'); }
 function escapeAttr(value) { return escapeHTML(value).replaceAll('`','&#096;'); }
-
-window.openEventModal = openEventModal;
-window.deleteEvent = deleteEvent;
-window.openSubjectModal = openSubjectModal;
-window.deleteSubject = deleteSubject;

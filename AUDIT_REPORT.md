@@ -1,51 +1,47 @@
-# 本轮修订审计报告
+# 项目审计报告
 
-## 修订目标
+## 当前状态
 
-根据反馈，本轮集中修复以下问题：
+- subjects：22 个，其中包含 `enemy_kmt` 敌军动向叙事层。
+- sources：37 个，来源保留在数据中用于审校，前台不展示。
+- events：140 条。
+- persons：35 个种子人物档案。
+- personEvents：95 条人物-事件关联。
+- museum：10 个展厅、10 个展板、5 个档案/物件类展品、22 条图片资产。
+- `data_edit/*.csv` 可以完整复现 `data/long_march_events.json`。
+- 英文模式已补齐 `titleEn`、`descriptionEn`、`location.nameEn`，不再使用混入中文地名的模板英文。
 
-1. 前台不显示参考来源；
-2. 底部时间轴不显示数字序号；
-3. 播放速度放慢，留出阅读时间；
-4. 播放时旧节点保留，不做全量刷新闪烁；
-5. 每一路最新节点更大、置顶；
-6. 会师节点特殊突出；
-7. 前台不显示 `month` 等英文精度字段；
-8. 事件类型统一为两个字，并用颜色区分；
-9. 增加敌军围追堵截半透明灰色路线；
-10. 地图显示为中文；
-11. 设置黑白主题；
-12. 增加中英文切换；
-13. 长征里程和时间采用历史叙事口径，不用地图直线误导为精确距离；
-14. 继续扩充人物、战役、会议、民族工作、根据地和牺牲节点。
+## 本轮修订
 
-## 数据变化
-
-- subjects：22 个，其中新增 `enemy_kmt` 敌军动向层。
-- sources：21 个，来源保留在数据中用于审计。
-- events：110 条。
-- 事件类型均为两个字。
-- 新增英文补充字段：`titleEn`、`descriptionEn`、`location.nameEn`，但并非所有事件均已完整翻译；未翻译字段在英文模式下回退显示中文。
-
-## 前端变化
-
-- `index.html` 增加语言切换按钮与会师/牺牲/敌军叙事横幅。
-- `js/app.js` 改为增量渲染：marker 和 route 采用 Map 缓存，不再每个时间步全量清空重绘。
-- 地图底图改为中文瓦片，并通过 CSS 做灰阶显示。
-- 统计面板改为历史口径：中央红军二万五千里、全程历时两年，并说明地图线段仅为可视化示意。
-- 会师节点、牺牲节点、敌军节点分别有不同视觉样式。
-- 当前事件、每一路最新节点都提高 z-index。
+1. 后台移除 inline `onclick`，改为 `data-action` 加事件委托。
+2. 后台加载数据失败时显示明确错误页，不再静默空白。
+3. 新增 `tools/check_project.py`，统一校验 JSON、CSV 生成一致性、JS 语法和后台 inline 事件绑定。
+4. 新增 `tools/check_project.bat` 与 `tools/check_project.sh`，方便本地一键检查。
+5. 批量补齐 138 条事件地点英文名，并替换 103 条模板英文标题/描述。
+6. 从 `css/style.css` 中移除 v13-v18 旧事件卡覆盖块，保留 v19-v21 当前设计层，减少样式覆盖链。
+7. 新增 `museum.html`、`css/museum.css`、`js/museum.js`，形成线上数字博物馆入口。
+8. 新增 `persons.csv`、`person_events.csv`、`museum_halls.csv`、`exhibits.csv`、`artifacts.csv`，将人物时间线和展馆层级纳入数据生成流程。
+9. 新增 `tools/extract_steam_texts.py` 及启动脚本，用于从本机 Steam 游戏目录导出可审校文本。
+10. 新增并扩展 `visual_assets.csv`，为数字博物馆接入 Commons 图片和本地运行截图，并保留来源页、署名和许可说明。
+11. 补充洪超、谢子长、罗南辉、程翠林、蔡中等牺牲人物，以及女红军、各路指挥员、政治工作和根据地建设人物。
+12. 数字博物馆新增“策展路径”“暗线代价”“策展方法”和人物类型筛选，按“明线路线、人物透镜、暗线代价、证据层”组织。
+13. 删除未引用的旧截图 `docs/screenshot.png` 和 `docs/screenshot-en.png`。
 
 ## 已验证
 
+- `python tools/check_project.py` 通过。
 - `node --check js/app.js` 通过。
+- `node --check js/museum.js` 通过。
+- `node --check admin/admin.js` 通过。
+- `python tools/build_json_from_tables.py` 可重新生成发布 JSON。
+- `python -m py_compile tools/build_json_from_tables.py tools/check_project.py tools/extract_steam_texts.py` 通过。
 - `python -m json.tool data/long_march_events.json` 通过。
-- `python tools/build_json_from_tables.py --out data/test_build.json` 通过。
-- 本地 HTTP 访问 `index.html` 与 JSON 数据文件返回正常。
 
-## 仍需后续人工审校
+## 仍需人工审校
 
-- 敌军路线为叙事层，尚非严格军事部署图。
-- 地点经纬度为可视化近似点，需后续逐点核定。
-- 英文事件翻译尚未全量完成。
+- 敌军路线仍是概括性叙事层，不代表精确军事部署图。
+- 地点经纬度是可视化近似点，建议后续按史料逐点复核。
+- 英文文案已消除模板占位和中英混杂，但部分事件仍适合继续做人工润色。
 - 可继续补充女性红军、卫生队、宣传队、少数民族向导、地方群众支援等微观叙事节点。
+- 数字博物馆目前使用种子人物和展板结构，后续应继续按来源补充烈士、地方群众、纪念设施和实物档案。
+- Steam 游戏抽取出的文本只应作为个人整理线索，正式入库前仍需核对版权、来源和史实准确性。

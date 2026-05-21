@@ -1,0 +1,41 @@
+enabled,id,targetType,targetId,title,alt,imageUrl,imagePageUrl,credit,license,sort
+TRUE,vis_hero_red_map_final,hero,museum,red-map 运行截图,长征路线动态地图运行到最后进度的截图,docs/readme-home.png,,red-map local runtime screenshot,project asset,10
+TRUE,vis_ex_route_map,exhibit,ex_route_map,red-map 动态路线截图,长征星火路线交互地图运行截图,docs/readme-home.png,,red-map local runtime screenshot,project asset,20
+TRUE,vis_event_yudu,event,rf_19341017_yudu,于都第一渡口,中央红军长征第一渡口纪念园,docs/assets/visuals/vis_event_yudu.jpg,https://commons.wikimedia.org/wiki/File:Yudu_Zhongyang_Hongjun_Changzheng_Diyi_Dukou_2014.05.30_11-12-33.jpg,Zhangzhugang / Wikimedia Commons,see file page,30
+TRUE,vis_event_zunyi,event,rf_19350115_zunyi_meeting,遵义会议旧址,遵义会议旧址建筑,docs/assets/visuals/vis_event_zunyi.jpg,https://commons.wikimedia.org/wiki/File:Site_of_Zunyi_Conference_(20180220101816).jpg,Wikimedia Commons contributor,see file page,40
+TRUE,vis_event_luding,event,rf_19350529_luding_bridge,泸定桥,大渡河上的泸定桥,docs/assets/visuals/vis_event_luding.jpg,https://commons.wikimedia.org/wiki/File:Luding_Bridge_over_the_Dadu_River%2C_in_Luding_County%2C_Sichuan%2C_China%2C_2018.jpg,Wikimedia Commons contributor,see file page,50
+TRUE,vis_event_huining,event,r4_19361009_huining,会宁会师旧址,长征会师联欢会举行处,docs/assets/visuals/vis_event_huining.jpg,https://commons.wikimedia.org/wiki/File:%E9%95%BF%E5%BE%81%E4%BC%9A%E5%B8%88%E8%81%94%E6%AC%A2%E4%BC%9A%E4%B8%BE%E8%A1%8C%E5%A4%84.jpg,Wikimedia Commons contributor,see file page,60
+TRUE,vis_person_liuzhidan,person,liu_zhidan,刘志丹照片,刘志丹历史照片,docs/assets/visuals/vis_person_liuzhidan.jpg,https://commons.wikimedia.org/wiki/File:Liu_Zhidan.jpg,Wikimedia Commons,Public domain / see file page,65
+TRUE,vis_person_wuhuanxian,person,wu_huanxian,吴焕先照片,吴焕先历史照片,docs/assets/visuals/vis_person_wuhuanxian.jpg,https://commons.wikimedia.org/wiki/File:Wu_Huanxian.jpg,Wikimedia Commons,Public domain / see file page,66
+TRUE,vis_person_xiaoyedan,person,xiao_yedan,小叶丹照片,小叶丹历史照片,docs/assets/visuals/vis_person_xiaoyedan.jpg,https://commons.wikimedia.org/wiki/File:Xiao_Yedan_(3x4_cropped).jpg,Wikimedia Commons,Public domain / see file page,67
+TRUE,vis_person_mao,person,mao_zedong,毛泽东陕北时期照片,毛泽东在陕北时期的历史照片,docs/assets/visuals/vis_person_mao.jpg,https://commons.wikimedia.org/wiki/File:Long_march_Mao.jpg,Wikimedia Commons,see file page,70
+TRUE,vis_person_zhou,person,zhou_enlai,周恩来历史照片,周恩来历史照片,docs/assets/visuals/vis_person_zhou.jpg,https://commons.wikimedia.org/wiki/File:Zhou_Enlai.jpg,Wikimedia Commons,see file page,80
+TRUE,vis_person_zhu,person,zhu_de,朱德历史照片,朱德历史照片,docs/assets/visuals/vis_person_zhu.jpg,https://commons.wikimedia.org/wiki/File:Zhu_De.jpg,Wikimedia Commons,see file page,90
+TRUE,vis_person_liu,person,liu_bocheng,刘伯承历史照片,刘伯承历史照片,docs/assets/visuals/vis_person_liu.jpg,https://commons.wikimedia.org/wiki/File:Liu_Bocheng.jpg,Wikimedia Commons,see file page,100
+TRUE,vis_person_he,person,he_long,贺龙历史照片,贺龙历史照片,docs/assets/visuals/vis_person_he.jpg,https://commons.wikimedia.org/wiki/File:He_Long.jpg,Wikimedia Commons,see file page,110
+TRUE,vis_person_renbishi,person,ren_bishi,任弼时长征时期照片,任弼时长征时期历史照片,docs/assets/visuals/vis_person_renbishi.png,https://commons.wikimedia.org/wiki/File:%E9%95%BF%E5%BE%81%E6%97%B6%E5%80%99%E7%9A%84%E4%BB%BB%E5%BC%BC%E6%97%B6.png,Wikimedia Commons,Public domain in China; U.S. status noted on file page,115
+TRUE,vis_person_peng,person,peng_dehuai,彭德怀照片,彭德怀历史照片,docs/assets/visuals/vis_person_peng.png,https://commons.wikimedia.org/wiki/File:Peng_Dehuai_(1937).png,Wikimedia Commons,see file page,120
+TRUE,vis_person_hezizhen,person,he_zizhen,贺子珍照片,贺子珍历史照片,docs/assets/visuals/vis_person_hezizhen.jpg,https://commons.wikimedia.org/wiki/File:He_Zizhen.jpg,Wikimedia Commons,see file page,130
+TRUE,vis_person_dengyingchao,person,deng_yingchao,邓颖超照片,邓颖超历史照片,docs/assets/visuals/vis_person_dengyingchao.jpg,https://commons.wikimedia.org/wiki/File:Deng_Yingchao.jpg,Wikimedia Commons,see file page,140
+TRUE,vis_person_caichang,person,cai_chang,蔡畅照片,蔡畅历史照片,docs/assets/visuals/vis_person_caichang.jpg,https://commons.wikimedia.org/wiki/File:Cai_Chang.jpg,Wikimedia Commons,see file page,150
+TRUE,vis_person_kangkeqing,person,kang_keqing,康克清照片,康克清历史照片,docs/assets/visuals/vis_person_kangkeqing.png,https://commons.wikimedia.org/wiki/File:Kang_Keqing.png,Wikimedia Commons,see file page,160
+TRUE,vis_person_xuhaidong,person,xu_haidong,徐海东照片,徐海东历史照片,docs/assets/visuals/vis_person_xuhaidong.jpg,https://commons.wikimedia.org/wiki/File:Xu_Haidong.jpg,Wikimedia Commons,see file page,170
+TRUE,vis_person_xuxiangqian,person,xu_xiangqian,徐向前照片,徐向前历史照片,docs/assets/visuals/vis_person_xuxiangqian.jpg,https://commons.wikimedia.org/wiki/File:Xu_Xiangqian.jpg,Wikimedia Commons,see file page,180
+TRUE,vis_person_xiezichang,person,xie_zichang,谢子长照片,谢子长历史照片,docs/assets/visuals/vis_person_xiezichang.jpg,https://commons.wikimedia.org/wiki/File:Xie_ZiChang_1935.jpg,Wikimedia Commons,see file page,181
+TRUE,vis_person_zhangwentian,person,zhang_wentian,张闻天照片,张闻天历史照片,docs/assets/visuals/vis_person_zhangwentian.jpg,https://commons.wikimedia.org/wiki/File:Zhang_Wentian-2.jpg,Wikimedia Commons,see file page,182
+TRUE,vis_person_wangjiaxiang,person,wang_jiaxiang,王稼祥照片,王稼祥历史照片,docs/assets/visuals/vis_person_wangjiaxiang.jpg,https://commons.wikimedia.org/wiki/File:Wang_Jiaxiang.jpg,Wikimedia Commons,see file page,183
+TRUE,vis_person_lijianzhen,person,li_jianzhen,李坚真照片,李坚真历史照片,docs/assets/visuals/vis_person_lijianzhen.jpg,https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E5%A0%85%E7%9C%9F.jpg,Wikimedia Commons,see file page,184
+TRUE,vis_person_chengzihua,person,cheng_zihua,程子华照片,程子华历史照片,docs/assets/visuals/vis_person_chengzihua.jpg,https://commons.wikimedia.org/wiki/File:Cheng_Zihua.jpg,Wikimedia Commons,see file page,185
+TRUE,vis_person_chenchanghao,person,chen_changhao,陈昌浩照片,陈昌浩历史照片,docs/assets/visuals/vis_person_chenchanghao.jpg,https://commons.wikimedia.org/wiki/File:Chen_Changhao.jpg,Wikimedia Commons,see file page,186
+TRUE,vis_person_zhangguotao,person,zhang_guotao,张国焘照片,张国焘历史照片,docs/assets/visuals/vis_person_zhangguotao.jpg,https://commons.wikimedia.org/wiki/File:Zhang_Guotao.jpg,Wikimedia Commons,see file page,187
+TRUE,vis_person_xiaoke,person,xiao_ke,萧克照片,萧克历史照片,docs/assets/visuals/vis_person_xiaoke.jpg,https://commons.wikimedia.org/wiki/File:Xiaoke1955.jpg,Wikimedia Commons,see file page,188
+TRUE,vis_person_wangzhen,person,wang_zhen,王震照片,王震历史照片,docs/assets/visuals/vis_person_wangzhen.jpg,https://commons.wikimedia.org/wiki/File:Wangzhen1955.jpg,Wikimedia Commons,see file page,189
+TRUE,vis_person_guanxiangying,person,guan_xiangying,关向应照片,关向应历史照片,docs/assets/visuals/vis_person_guanxiangying.jpg,https://commons.wikimedia.org/wiki/File:Guan_Xiangying.jpg,Wikimedia Commons,see file page,190
+TRUE,vis_person_xizhongxun,person,xi_zhongxun,习仲勋照片,习仲勋历史照片,docs/assets/visuals/vis_person_xizhongxun.jpg,https://commons.wikimedia.org/wiki/File:Xi_Zhongxun.jpg,Wikimedia Commons,see file page,191
+TRUE,vis_person_pan_hannian,person,pan_hannian,潘汉年照片,潘汉年历史照片,docs/assets/visuals/vis_person_pan_hannian.jpg,https://commons.wikimedia.org/wiki/File:Pan_Hannian.jpg,Wikimedia Commons,see file page,192
+TRUE,vis_person_he_changgong,person,he_changgong,何长工照片,何长工历史照片,docs/assets/visuals/vis_person_he_changgong.jpg,https://commons.wikimedia.org/wiki/File:He_Changgong.jpg,Wikimedia Commons,see file page,193
+TRUE,vis_person_dai_jiying,person,dai_jiying,戴季英照片,戴季英历史照片,docs/assets/visuals/vis_person_dai_jiying.jpg,https://commons.wikimedia.org/wiki/File:Dai_Jiying.jpg,Wikimedia Commons,see file page,194
+TRUE,vis_person_li_xiannian,person,li_xiannian,李先念照片,李先念历史照片,docs/assets/visuals/vis_person_li_xiannian.jpg,https://commons.wikimedia.org/wiki/File:Li_Xiannian.jpg,Wikimedia Commons,see file page,195
+TRUE,vis_person_bai_chongxi,person,bai_chongxi,白崇禧照片,白崇禧历史照片,docs/assets/visuals/vis_person_bai_chongxi.jpg,https://commons.wikimedia.org/wiki/File:Bai_Chongxi.jpg,Wikimedia Commons,see file page,196
+TRUE,vis_person_xue_yue,person,xue_yue,薛岳照片,薛岳历史照片,docs/assets/visuals/vis_person_xue_yue.jpg,https://commons.wikimedia.org/wiki/File:Xue_Yue.jpg,Wikimedia Commons,see file page,197
+TRUE,vis_person_liu_xiang,person,liu_xiang,刘湘照片,刘湘历史照片,docs/assets/visuals/vis_person_liu_xiang.jpg,https://commons.wikimedia.org/wiki/File:Liu_Xiang.jpg,Wikimedia Commons,see file page,198

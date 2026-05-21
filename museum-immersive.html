@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>长征星火沉浸展厅</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/immersive.css">
+</head>
+<body>
+  <main class="immersive-shell">
+    <div class="immersive-scene" id="immersive-scene" aria-label="长征星火沉浸式三维展厅"></div>
+
+    <header class="immersive-topbar">
+      <a class="immersive-brand" href="museum.html#top">
+        <span>长征星火</span>
+        <strong>沉浸展厅</strong>
+      </a>
+      <nav class="immersive-modes" aria-label="沉浸展厅视角">
+        <button class="active" type="button" data-mode="overview">总览</button>
+        <button type="button" data-mode="events">事件</button>
+        <button type="button" data-mode="persons">人物</button>
+        <button type="button" data-mode="places">地点</button>
+        <button type="button" data-mode="martyrs">牺牲</button>
+      </nav>
+      <a class="immersive-link" href="museum.html#catalog">资料目录</a>
+    </header>
+
+    <section class="focus-panel" id="focus-panel" aria-live="polite">
+      <p class="eyebrow">IMMERSIVE VIEW</p>
+      <h1>红军长征星火展厅</h1>
+      <p>386 个事件、67 个人物和多路红军路线被组织为一座可参观的三维展厅。</p>
+      <div class="focus-meta" id="focus-meta"></div>
+      <a class="focus-action" id="focus-action" href="museum.html#catalog">进入资料目录</a>
+    </section>
+
+    <aside class="index-strip" id="immersive-index" aria-label="展厅索引"></aside>
+    <div class="walk-controls" aria-label="展厅漫游控制">
+      <button type="button" data-walk="prev">后退</button>
+      <strong id="walk-current">01 / 07</strong>
+      <button type="button" data-walk="next">前进</button>
+      <span>滚轮 / W S / 方向键</span>
+    </div>
+    <div class="immersive-loading" id="immersive-loading">正在搭建沉浸展厅...</div>
+  </main>
+
+  <script type="module" src="js/immersive.js"></script>
+</body>
+</html>

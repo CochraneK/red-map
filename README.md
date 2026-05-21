@@ -4,6 +4,24 @@
 
 ![项目首页预览](docs/readme-home.png)
 
+## 为什么值得 Star
+
+这个项目不是一张静态长征路线图，而是一套可继续扩展的红色数字策展原型：
+
+- 它把长征拆成可维护的数据表，事件、人物、地点、部队、来源都可以继续增长。
+- 它同时提供路线地图和线上博物馆，两种入口服务不同阅读方式。
+- 它保留资料来源和可信度字段，适合继续做史实审校、课程展示、地方红色资源整理或数字人文实验。
+- 它可以从本地研究材料、公开网页、游戏文本抽取结果中整理候选条目，再人工复核后进入正式数据。
+
+当前数据规模：
+
+- `386` 个事件节点，其中 `246` 条来自 Steam 游戏文本抽取的补充线索
+- `67` 个人物档案
+- `348` 条人物-事件关联
+- `23` 个主体/部队/人物路线层
+- `38` 条资料来源
+- `40` 个线上图片资产，其中 `34` 个人物已有肖像或历史照片
+- `10` 个线上博物馆展厅
 
 ## 功能特性
 
@@ -15,6 +33,28 @@
 - **中英文版本**：中文首页 `index.html`，英文页面 `index-en.html`，也可在页面右上角切换语言。
 - **手机端极简模式**：手机端只保留地图与底部播放条，避免卡片遮挡地图。
 - **本地数据编辑器**：后台可编辑事件、主体、颜色、下属部队和统计字段，并支持导出 JSON。
+- **数字博物馆**：`museum.html` 以“总序厅 → 路线展板 → 英烈画像墙 → 人物时间线 → 暗线代价 → 战役转折 → 地点档案 → 资料层 → 策展方法 → 纪念空间”的层级组织内容，`red-map` 是第一展厅的核心展板。
+- **沉浸式 3D 展厅**：`museum-immersive.html` 在保留原 `museum.html` 页面之外，新增走廊式 Three.js 参观视角。观众可前进、后退、滚轮或键盘漫游；事件模式会展开事件牌阵列，人物与牺牲模式会生成缓慢漂移、大小错落的头像云。
+- **资料总目录**：博物馆内新增人物、地点、事件、部队四类模块列表，可搜索、统计、跳转到人物详情或路线地图。
+- **人物时间线**：新增人物档案与人物-事件关联表，可围绕每名英雄烈士沉淀出生、参军、战斗、牺牲、纪念等节点。
+- **Steam 文本融入流程**：提供 Unreal 文本抽取与候选导入脚本，可把本地游戏文本整理为补充路线事件、人物档案和人物-事件关联，而不是直接发布原文。
+
+## 数字博物馆
+
+数字博物馆入口为：
+
+```text
+http://localhost:8000/museum.html
+```
+
+展馆结构由 `data_edit/museum_halls.csv`、`data_edit/exhibits.csv`、`data_edit/artifacts.csv` 维护；人物内容由 `data_edit/persons.csv` 和 `data_edit/person_events.csv` 维护；线上图片由 `data_edit/visual_assets.csv` 维护。生成后会写入 `data/long_march_events.json` 的 `persons`、`personEvents` 和 `museum` 字段。
+
+博物馆现在包含一个资料总目录：
+
+- **人物模块**：显示身份、生卒、籍贯、所属部队、关联事件数，可跳转到人物时间线。
+- **地点模块**：从事件坐标自动聚合地点，显示覆盖事件、时间范围和事件类型。
+- **事件模块**：按时间顺序列出全部事件，支持按标题、地点、参与者、部队检索。
+- **部队模块**：聚合各路红军、陕甘红军和敌军追堵层，显示关联事件、人物和下属部队。
 
 ## 数据管理界面
 
@@ -33,6 +73,12 @@ start_server.bat
 CMD 会显示：
 
 ```text
+Digital museum:
+http://localhost:8000/museum.html
+
+Immersive 3D museum:
+http://localhost:8000/museum-immersive.html
+
 Chinese home page:
 http://localhost:8000/
 
@@ -56,6 +102,12 @@ macOS / Linux 用户可运行：
 ```text
 data_edit/events.csv      # 事件主表
 data_edit/subjects.csv    # 主体、路线、颜色、下属部队
+data_edit/persons.csv     # 人物档案
+data_edit/person_events.csv # 人物与事件关联
+data_edit/museum_halls.csv  # 数字博物馆展厅
+data_edit/exhibits.csv      # 展板
+data_edit/artifacts.csv     # 档案与物件类展品
+data_edit/visual_assets.csv # 线上图片资产
 data_edit/sources.csv     # 资料来源，前台不显示
 data_edit/metadata.csv    # 项目标题、时间范围等
 ```
@@ -70,6 +122,62 @@ python tools/build_json_from_tables.py
 
 ```text
 data/long_march_events.json
+```
+
+发布前建议运行：
+
+```bash
+python tools/check_project.py
+```
+
+该检查会验证 JSON 格式、表格源文件与发布 JSON 是否一致、前后台 JS 语法，以及后台是否仍存在 inline 事件绑定。
+
+## Steam 游戏文本抽取
+
+如果要整理本机 Steam 游戏《长征 1934-1936》的文本，可先在 Steam 客户端中进入“管理 → 浏览本地文件”，复制游戏目录路径。这个游戏是 Unreal Engine 4 项目，剧情和数据文本主要在 `.pak` 包内，需要先解包再抽取 FString。
+
+本机已验证路径示例：
+
+```text
+D:\Software\Steam\steamapps\common\长征1934-1936\长征1934-1936
+```
+
+详细流程见：
+
+```text
+docs/STEAM_TEXT_EXTRACTION.md
+```
+
+解包后抽取时间线候选：
+
+```cmd
+python tools\extract_unreal_text_assets.py "D:\Software\codex\red-map\research_private\steam_longmarch_unpacked\ChangZheng\Content\Data" --exclude-glob "StopWords.*" --out "D:\Software\codex\red-map\research_private\steam_longmarch_unreal_text_timeline" --markdown-limit-per-file 500
+```
+
+输出重点文件：
+
+```text
+unreal_timeline_candidates.csv  # 日期 + 叙述生成的时间线候选
+unreal_text_dump.csv            # 完整抽取文本表
+unreal_text_dump.md             # 人工阅读预览
+unreal_asset_manifest.csv       # 每个资源文件的抽取数量
+```
+
+通用扫描脚本仍然保留：
+
+```text
+tools/extract_steam_texts.py
+```
+
+这些导出内容需要人工审校版权与史实口径后，再整理进 `events.csv`、`persons.csv`、`person_events.csv` 或展品表。
+
+本仓库已经用 `tools/import_steam_timeline.py` 从 `unreal_timeline_candidates.csv` 中筛选并改写了 `246` 条事件线索，写入 `data_edit/events.csv`；同时补入 `32` 个 Steam 文本人物、`253` 条人物-事件自动关联和 `18` 张可公开引用的 Wikimedia Commons 人物图片，并新增来源 `src_steam_longmarch_1934_1936`。复用流程：
+
+```cmd
+python tools\import_steam_timeline.py
+python tools\import_steam_timeline.py --apply
+python tools\build_json_from_tables.py
+python tools\check_project.py
 ```
 
 ## 日期格式
@@ -92,12 +200,20 @@ data/long_march_events.json
 .
 ├── index.html                    # 中文首页
 ├── index-en.html                 # 英文页面
+├── museum.html                   # 数字博物馆
+├── museum-immersive.html         # Three.js 沉浸式 3D 展厅
 ├── css/style.css                 # 前台样式
+├── css/museum.css                # 数字博物馆样式
+├── css/immersive.css             # 沉浸式展厅样式
 ├── js/app.js                     # 前台交互逻辑
+├── js/museum.js                  # 数字博物馆交互逻辑
+├── js/immersive.js               # Three.js 沉浸式展厅逻辑
 ├── data/long_march_events.json   # 前台读取的数据文件
 ├── data_edit/                    # 人工维护表格
 ├── admin/                        # 本地数据编辑器
-├── tools/                        # 表格转 JSON 脚本
+├── tools/                        # 表格转 JSON 与项目检查脚本
+├── tools/import_steam_timeline.py # Steam 时间线候选导入脚本
+├── docs/STEAM_TEXT_EXTRACTION.md # Steam/Unreal 文本抽取说明
 ├── docs/readme-home.png          # 首页展示图
 ├── docs/readme-home-en.png       # 英文首页展示图
 ├── docs/readme-mobile.png        # 手机端展示图
@@ -139,6 +255,11 @@ An interactive Long March route project built around the narrative logic of scat
 - **Bilingual pages**: Chinese page at `index.html`, English page at `index-en.html`, plus an in-page language switcher.
 - **Mobile minimal mode**: On mobile, only the map and bottom playback bar are shown so cards do not cover the route.
 - **Local data editor**: The admin panel allows editing events and subjects, then exporting JSON.
+- **Digital museum**: `museum.html` organizes the project into a foyer, route exhibit, martyrs wall, person timelines, turning points, place memory, archive sources, and memorial path.
+- **Immersive 3D museum**: `museum-immersive.html` keeps the original `museum.html` experience intact and adds a corridor-style Three.js museum. Visitors can move forward or backward with buttons, wheel, or keyboard controls; event mode unfolds a field of event boards, while people and martyr modes render a slowly drifting portrait cloud with varied sizes.
+- **Catalog modules**: The museum includes searchable modules for people, places, events, and forces, all derived from the same JSON dataset.
+- **Person timelines**: `persons.csv` and `person_events.csv` let each hero or martyr accumulate a structured life timeline.
+- **Steam text curation**: `tools/extract_unreal_text_assets.py` extracts local Unreal text candidates, and `tools/import_steam_timeline.py` imports curated low-certainty events, people, person-event links, and image records into the table data.
 
 ## Data Editor
 
@@ -157,6 +278,9 @@ start_server.bat
 The terminal will show:
 
 ```text
+Digital museum:
+http://localhost:8000/museum.html
+
 Chinese home page:
 http://localhost:8000/
 
@@ -180,6 +304,12 @@ Edit the table source files instead of manually editing JSON:
 ```text
 data_edit/events.csv      # Event table
 data_edit/subjects.csv    # Route subjects, colors, and sub-units
+data_edit/persons.csv     # Person profiles
+data_edit/person_events.csv # Person-event links
+data_edit/museum_halls.csv  # Museum hall hierarchy
+data_edit/exhibits.csv      # Exhibit panels
+data_edit/artifacts.csv     # Archive and artifact exhibits
+data_edit/visual_assets.csv # Online image assets and credits
 data_edit/sources.csv     # Sources retained for audit; not shown on the frontend
 data_edit/metadata.csv    # Project title and time range
 ```
@@ -196,6 +326,24 @@ The script generates:
 data/long_march_events.json
 ```
 
+Before publishing, run:
+
+```bash
+python tools/check_project.py
+```
+
+The check validates JSON parsing, table-to-JSON consistency, frontend/admin JS syntax, and the admin panel's event binding style.
+
+## Steam Text Extraction
+
+Open the game directory from Steam with `Manage > Browse local files`, then run:
+
+```cmd
+python tools\extract_steam_texts.py "D:\SteamLibrary\steamapps\common\Long March 1934-1936" --include-binary
+```
+
+The default output directory is `steam_text_dump/`. Review the exported JSONL/Markdown before moving any material into the project data tables.
+
 ## GitHub Pages
 
 1. Push the project to a GitHub repository.
@@ -204,3 +352,4 @@ data/long_march_events.json
 4. Open the generated Pages URL after deployment.
 
 If the deployed page still shows old styling, clear browser cache and confirm that the latest `css/style.css` and `docs/` images have been pushed.
+

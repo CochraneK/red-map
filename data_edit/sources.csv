@@ -31,3 +31,9 @@ src_stats_people_2021,震古烁今的伟大远征,人民网党史频道,https://
 src_ganzi_12371,大会师阶段(1936.7.1——1936.12.12),共产党员网,https://news.12371.cn/2014/10/14/ARTI1413280686525511.shtml,红二、六军团与红四方面军甘孜会师及北上
 src_qilv_people,从毛泽东诗词感悟长征精神,人民网理论频道,https://theory.people.com.cn/n1/2017/1110/c415240-29639472.html,七律长征涉及五岭、乌蒙、金沙、大渡、岷山等意象
 src_qilv_dangjian_2024,红军不怕远征难——长征诗歌价值初释,党建网,https://www.dangjian.cn/jdcd/2024/10/23/detail_202410237001577.html,七律长征山川意象解读
+src_hongchao_people,长征路上牺牲的第一位红军师长——洪超,中国共产党新闻网/人民网,https://cpc.people.com.cn/n1/2021/0820/c443712-32202080.html,用于洪超在长征初期百石战斗中牺牲。
+src_xiezichang_xinhua,谢子长：陕北红军和苏区创建人之一,新华网,https://www.xinhuanet.com/politics/2019-08/12/c_1124865941.htm,用于谢子长与西北根据地、陕北红军线索。
+src_luonanhui_xinhua,喋血长征的青年将军——罗南辉,新华网,https://www.xinhuanet.com/politics/2018-10/13/c_1123553410.htm,用于罗南辉在会师前后相关阻击战牺牲。
+src_women_redarmy_81,长征中的女红军,中国军网,https://www.81.cn/2016czsl80/2016-08/02/content_7188181.htm,用于贺子珍、邓颖超、蔡畅、康克清、刘英、李坚真等女红军长征线索。
+src_pengdehuai_people,彭德怀与长征,中国共产党新闻网/人民网,https://cpc.people.com.cn/GB/69112/78233/78687/78976/5421212.html,用于彭德怀在长征与陕北战役中的指挥线索。
+src_steam_longmarch_1934_1936,《长征1934-1936》本地游戏文本抽取,Steam 本地安装文件 / Unreal 数据资产抽取,docs/STEAM_TEXT_EXTRACTION.md,仅作线索来源；正式采用前应继续用权威党史资料复核。导入事件已压缩改写为短策展文案。

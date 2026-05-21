@@ -1,0 +1,12 @@
+﻿enabled,id,title,titleEn,subtitle,description,theme,sort,primaryExhibitId
+TRUE,foyer,总序厅,Foyer,为什么出发,从中央苏区出发、分路前进到西北会师，建立进入展馆的叙事主线。,intro,10,ex_intro_names
+TRUE,route,第一展厅：长征路线全景,Hall 1: Route Panorama,red-map 路线展板,以现有交互地图作为核心展板，连接路线、事件、人物和会师节点。,map,20,ex_route_map
+TRUE,martyrs,第二展厅：英烈画像墙,Hall 2: Martyrs Portrait Wall,让名字重新拥有面容,以英烈名录、画像、牺牲地点和人物时间线组织烈士展板。,martyrs,30,ex_martyr_wall
+TRUE,persons,第三展厅：人物生命时间线,Hall 3: Personal Timelines,从宏大路线回到具体的人,将人物与事件节点关联，展示每个人在长征叙事中的发展轨迹。,people,40,ex_person_timelines
+TRUE,costs,第四展厅：暗线代价,Hall 4: Hidden Costs,胜利背后的牺牲如何被看见,从牺牲事件、损失口径与家庭离散进入长征的隐痛层。,costs,45,ex_costs_hidden_line
+TRUE,turning_points,第五展厅：战役、会议与转折,Hall 5: Battles and Turning Points,关键节点如何改变路线,集中展示会议、战役、渡河、会师等决定路线变化的节点。,turning,50,ex_turning_points
+TRUE,places,第六展厅：地点与纪念设施,Hall 6: Places and Memory Sites,地点如何承载记忆,以于都、遵义、泸定、会宁、将台堡等历史现场组织展览。,places,60,ex_places_memory
+TRUE,archive,第七展厅：资料档案与来源审校,Hall 7: Archives and Source Review,把证据留在展板背后,展示资料来源、口述线索、史料口径和待考证字段。,archive,70,ex_archive_sources
+TRUE,method,策展方法,Curatorial Method,从研究材料到线上展馆,记录本项目如何把路线数据、人物档案和史料来源转译为网页展览。,method,75,ex_method_workflow
+TRUE,memorial,纪念空间,Memorial Space,献花、留言与学习路径,提供沉静的纪念入口，让追思最终回到路线与人物本身。,memorial,80,ex_memorial_path
+

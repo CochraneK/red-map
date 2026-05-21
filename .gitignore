@@ -1,0 +1,6 @@
+research_private/
+steam_text_dump/
+.codex-*.png
+test-results/
+tools/__pycache__/
+*.pyc

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>长征星火数字博物馆</title>
+  <link rel="stylesheet" href="css/museum.css">
+</head>
+<body>
+  <div class="museum-shell" id="top">
+    <aside class="museum-rail">
+      <a class="museum-brand" href="#top" aria-label="返回总序厅">
+        <span class="brand-mark">征</span>
+        <span>长征星火<br>数字博物馆</span>
+      </a>
+      <nav class="hall-nav" id="hall-nav" aria-label="展厅导航"></nav>
+      <div class="rail-actions">
+        <a href="museum-immersive.html">沉浸展厅</a>
+        <a href="index.html">路线地图</a>
+        <a href="admin/index.html">数据后台</a>
+      </div>
+    </aside>
+
+    <main class="museum-main">
+      <section class="museum-hero" aria-labelledby="museum-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">1934-1936</p>
+          <h1 id="museum-title">从路线进入名字</h1>
+          <p class="hero-copy">让地图上的每一步，都回到一个名字与一段命运。沿着长征路线前行，你会看到人物、英烈、地点与史料彼此交织，直到每一段行程都成为可触摸的生命记忆。</p>
+          <div class="hero-actions">
+            <a href="museum-immersive.html">进入沉浸展厅</a>
+            <a href="#route">进入路线展板</a>
+            <a href="#martyrs">查看英烈画像墙</a>
+            <a href="#persons">人物时间线</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview-band" aria-label="展馆概览">
+        <div class="metric"><strong id="metric-events">--</strong><span>事件条目</span></div>
+        <div class="metric"><strong id="metric-persons">--</strong><span>人物档案</span></div>
+        <div class="metric"><strong id="metric-martyrs">--</strong><span>英烈展板</span></div>
+        <div class="metric"><strong id="metric-costs">--</strong><span>代价记录</span></div>
+      </section>
+
+      <section class="curatorial-map" aria-label="策展路径">
+        <div class="curatorial-copy">
+          <p class="eyebrow">策展路径</p>
+          <h2>行进有其方向，胜利自有代价</h2>
+          <p>长征从来不只是一次地理迁徙。明线写下部队的行进，暗线刻下个体的失去：谁在风雪里断后，谁在渡口倒下，谁把名字留在会师之前。胜利因此有了分量，也有了回望时的沉痛。</p>
+        </div>
+        <div class="curatorial-lanes" id="curatorial-lanes"></div>
+      </section>
+
+      <section class="hall-section route-hall" id="route" aria-labelledby="route-title">
+        <div class="section-heading">
+          <p class="eyebrow">第一展厅</p>
+          <h2 id="route-title">长征路线全景展板</h2>
+        </div>
+        <div class="route-layout">
+          <div class="live-map-panel">
+            <iframe title="红军长征星火路线" src="index.html"></iframe>
+          </div>
+          <div class="route-copy" id="route-exhibit"></div>
+        </div>
+      </section>
+
+      <section class="hall-section catalog-hall" id="catalog" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <p class="eyebrow">资料总目录</p>
+          <h2 id="catalog-title">人物、地点、事件、部队</h2>
+        </div>
+        <div class="catalog-toolbar">
+          <div class="catalog-tabs" id="catalog-tabs" aria-label="资料模块"></div>
+          <label class="catalog-search">
+            <span>搜索</span>
+            <input id="catalog-search" type="search" autocomplete="off" placeholder="输入名称、地点、部队或关键词">
+          </label>
+        </div>
+        <div class="catalog-stats" id="catalog-stats"></div>
+        <div class="catalog-grid" id="catalog-grid"></div>
+      </section>
+
+      <section class="hall-section" id="martyrs" aria-labelledby="martyrs-title">
+        <div class="section-heading">
+          <p class="eyebrow">第二展厅</p>
+          <h2 id="martyrs-title">英烈画像墙</h2>
+        </div>
+        <div class="filter-row" id="martyr-filters"></div>
+        <div class="portrait-wall" id="portrait-wall"></div>
+      </section>
+
+      <section class="hall-section" id="persons" aria-labelledby="persons-title">
+        <div class="section-heading">
+          <p class="eyebrow">第三展厅</p>
+          <h2 id="persons-title">人物生命时间线</h2>
+        </div>
+        <div class="person-browser">
+          <aside class="person-sidebar">
+            <div class="person-type-filters" id="person-type-filters"></div>
+            <div class="person-list" id="person-list"></div>
+          </aside>
+          <article class="person-detail" id="person-detail"></article>
+        </div>
+      </section>
+
+      <section class="hall-section cost-hall" id="costs" aria-labelledby="costs-title">
+        <div class="section-heading">
+          <p class="eyebrow">第四展厅</p>
+          <h2 id="costs-title">暗线：牺牲与代价</h2>
+        </div>
+        <div class="cost-grid" id="cost-grid"></div>
+        <div class="cost-ledger" id="cost-ledger"></div>
+      </section>
+
+      <section class="hall-section" id="turning_points" aria-labelledby="turning-title">
+        <div class="section-heading">
+          <p class="eyebrow">第五展厅</p>
+          <h2 id="turning-title">战役、会议与转折</h2>
+        </div>
+        <div class="event-cluster" id="turning-events"></div>
+      </section>
+
+      <section class="hall-section" id="places" aria-labelledby="places-title">
+        <div class="section-heading">
+          <p class="eyebrow">第六展厅</p>
+          <h2 id="places-title">地点与纪念设施</h2>
+        </div>
+        <div class="place-grid" id="place-grid"></div>
+      </section>
+
+      <section class="hall-section" id="archive" aria-labelledby="archive-title">
+        <div class="section-heading">
+          <p class="eyebrow">第七展厅</p>
+          <h2 id="archive-title">资料档案与来源审校</h2>
+        </div>
+        <div class="archive-grid" id="archive-grid"></div>
+      </section>
+
+      <section class="hall-section method-hall" id="method" aria-labelledby="method-title">
+        <div class="section-heading">
+          <p class="eyebrow">策展方法</p>
+          <h2 id="method-title">从材料到展馆</h2>
+        </div>
+        <div class="method-grid" id="method-grid"></div>
+      </section>
+
+      <section class="hall-section memorial-hall" id="memorial" aria-labelledby="memorial-title">
+        <div class="section-heading">
+          <p class="eyebrow">纪念空间</p>
+          <h2 id="memorial-title">纪念与学习路径</h2>
+        </div>
+        <div class="memorial-panel" id="memorial-panel"></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="关闭图片">关闭</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <div class="loading" id="museum-loading">正在加载展馆数据...</div>
+  <script src="js/museum.js"></script>
+</body>
+</html>

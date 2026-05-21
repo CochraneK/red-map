@@ -20,7 +20,18 @@ def read_csv(name: str) -> list[dict[str,str]]:
     path = EDIT_DIR / name
     if not path.exists(): raise FileNotFoundError(f'缺少表格：{path}')
     with path.open('r', encoding='utf-8-sig', newline='') as f:
-        return [{(k or '').strip():(v or '').strip() for k,v in row.items()} for row in csv.DictReader(f)]
+        rows=[]
+        for row_no,row in enumerate(csv.DictReader(f), start=2):
+            if None in row and row[None]:
+                extra='; '.join(str(v).strip() for v in row[None] if str(v).strip())
+                raise ValueError(f'{name} 第 {row_no} 行列数超出表头：{extra}')
+            rows.append({(k or '').strip():(v or '').strip() for k,v in row.items() if k is not None})
+        return rows
+
+def read_optional_csv(name: str) -> list[dict[str,str]]:
+    path = EDIT_DIR / name
+    if not path.exists(): return []
+    return read_csv(name)
 
 def split_cell(value: str) -> list[str]:
     return [p.strip() for p in re.split(r'[;；,，|｜]+', value or '') if p.strip()]
@@ -94,6 +105,124 @@ def read_sources(errors, warnings):
         sources.append({'id':sid,'title':row.get('title',''),'publisher':row.get('publisher',''),'url':row.get('url',''),'note':row.get('note','')})
     return sources, ids
 
+def check_refs(kind: str, row_no: int, field: str, values: list[str], allowed: set[str], errors: list[str]):
+    missing = [v for v in values if v and v not in allowed]
+    if missing: errors.append(f'{kind} 第 {row_no} 行 {field} 未定义：{"; ".join(missing)}')
+
+def read_persons(errors, warnings, force_ids, source_ids):
+    persons=[]; ids=set()
+    for i,row in enumerate(read_optional_csv('persons.csv'), start=2):
+        if not any(row.values()) or not is_enabled(row.get('enabled','TRUE')): continue
+        pid=row.get('id','').strip()
+        if not pid: warnings.append(f'persons.csv 第 {i} 行缺少 id，已跳过'); continue
+        if pid in ids: errors.append(f'persons.csv 第 {i} 行 id 重复：{pid}'); continue
+        ids.add(pid)
+        force_id=row.get('forceId','').strip()
+        if force_id: check_refs('persons.csv', i, 'forceId', [force_id], force_ids, errors)
+        srcs=split_cell(row.get('sourceIds',''))
+        check_refs('persons.csv', i, 'sourceIds', srcs, source_ids, errors)
+        p={'id':pid,'name':row.get('name',''),'nameEn':row.get('nameEn',''),'personType':row.get('personType','人物') or '人物',
+           'birthDate':row.get('birthDate',''),'deathDate':row.get('deathDate',''),'hometown':row.get('hometown',''),
+           'hometownEn':row.get('hometownEn',''),'forceId':force_id,'summary':row.get('summary',''),'summaryEn':row.get('summaryEn',''),
+           'portrait':row.get('portrait',''),'themeTags':split_cell(row.get('themeTags','')),'sourceIds':srcs,
+           'certainty':row.get('certainty','medium') or 'medium','sort':parse_int(row.get('sort',''),999,'persons.sort')}
+        persons.append(p)
+    return sorted(persons,key=lambda p:(int(p.get('sort') or 999),p.get('id',''))), ids
+
+def read_person_events(errors, warnings, person_ids, event_ids, source_ids):
+    rows=[]
+    for i,row in enumerate(read_optional_csv('person_events.csv'), start=2):
+        if not any(row.values()) or not is_enabled(row.get('enabled','TRUE')): continue
+        person_id=row.get('personId','').strip(); event_id=row.get('eventId','').strip()
+        if not person_id or not event_id:
+            warnings.append(f'person_events.csv 第 {i} 行缺少 personId 或 eventId，已跳过'); continue
+        check_refs('person_events.csv', i, 'personId', [person_id], person_ids, errors)
+        check_refs('person_events.csv', i, 'eventId', [event_id], event_ids, errors)
+        srcs=split_cell(row.get('sourceIds',''))
+        check_refs('person_events.csv', i, 'sourceIds', srcs, source_ids, errors)
+        rows.append({'personId':person_id,'eventId':event_id,'role':row.get('role',''),'note':row.get('note',''),
+                     'sourceIds':srcs,'sort':parse_int(row.get('sort',''),999,'person_events.sort')})
+    return sorted(rows,key=lambda r:(r['personId'], int(r.get('sort') or 999), r['eventId']))
+
+def read_museum_halls(errors, warnings):
+    halls=[]; ids=set()
+    for i,row in enumerate(read_optional_csv('museum_halls.csv'), start=2):
+        if not any(row.values()) or not is_enabled(row.get('enabled','TRUE')): continue
+        hid=row.get('id','').strip()
+        if not hid: warnings.append(f'museum_halls.csv 第 {i} 行缺少 id，已跳过'); continue
+        if hid in ids: errors.append(f'museum_halls.csv 第 {i} 行 id 重复：{hid}'); continue
+        ids.add(hid)
+        halls.append({'id':hid,'title':row.get('title',''),'titleEn':row.get('titleEn',''),'subtitle':row.get('subtitle',''),
+                      'description':row.get('description',''),'theme':row.get('theme',''),'sort':parse_int(row.get('sort',''),999,'museum_halls.sort'),
+                      'primaryExhibitId':row.get('primaryExhibitId','')})
+    return sorted(halls,key=lambda h:(int(h.get('sort') or 999),h.get('id',''))), ids
+
+def read_exhibits(errors, warnings, hall_ids, event_ids, person_ids, source_ids):
+    exhibits=[]; ids=set()
+    for i,row in enumerate(read_optional_csv('exhibits.csv'), start=2):
+        if not any(row.values()) or not is_enabled(row.get('enabled','TRUE')): continue
+        eid=row.get('id','').strip()
+        if not eid: warnings.append(f'exhibits.csv 第 {i} 行缺少 id，已跳过'); continue
+        if eid in ids: errors.append(f'exhibits.csv 第 {i} 行 id 重复：{eid}'); continue
+        ids.add(eid)
+        hall_id=row.get('hallId','').strip()
+        check_refs('exhibits.csv', i, 'hallId', [hall_id], hall_ids, errors)
+        related_events=split_cell(row.get('relatedEventIds',''))
+        related_persons=split_cell(row.get('relatedPersonIds',''))
+        srcs=split_cell(row.get('sourceIds',''))
+        check_refs('exhibits.csv', i, 'relatedEventIds', related_events, event_ids, errors)
+        check_refs('exhibits.csv', i, 'relatedPersonIds', related_persons, person_ids, errors)
+        check_refs('exhibits.csv', i, 'sourceIds', srcs, source_ids, errors)
+        exhibits.append({'id':eid,'hallId':hall_id,'title':row.get('title',''),'titleEn':row.get('titleEn',''),'type':row.get('type',''),
+                         'summary':row.get('summary',''),'summaryEn':row.get('summaryEn',''),'relatedEventIds':related_events,
+                         'relatedPersonIds':related_persons,'actionLabel':row.get('actionLabel',''),'actionHref':row.get('actionHref',''),
+                         'sort':parse_int(row.get('sort',''),999,'exhibits.sort'),'sourceIds':srcs})
+    return sorted(exhibits,key=lambda e:(e['hallId'], int(e.get('sort') or 999), e.get('id',''))), ids
+
+def read_artifacts(errors, warnings, hall_ids, event_ids, person_ids, source_ids):
+    artifacts=[]; ids=set()
+    for i,row in enumerate(read_optional_csv('artifacts.csv'), start=2):
+        if not any(row.values()) or not is_enabled(row.get('enabled','TRUE')): continue
+        aid=row.get('id','').strip()
+        if not aid: warnings.append(f'artifacts.csv 第 {i} 行缺少 id，已跳过'); continue
+        if aid in ids: errors.append(f'artifacts.csv 第 {i} 行 id 重复：{aid}'); continue
+        ids.add(aid)
+        hall_id=row.get('hallId','').strip()
+        related_events=split_cell(row.get('relatedEventIds',''))
+        related_persons=split_cell(row.get('relatedPersonIds',''))
+        srcs=split_cell(row.get('sourceIds',''))
+        check_refs('artifacts.csv', i, 'hallId', [hall_id], hall_ids, errors)
+        check_refs('artifacts.csv', i, 'relatedEventIds', related_events, event_ids, errors)
+        check_refs('artifacts.csv', i, 'relatedPersonIds', related_persons, person_ids, errors)
+        check_refs('artifacts.csv', i, 'sourceIds', srcs, source_ids, errors)
+        artifacts.append({'id':aid,'hallId':hall_id,'title':row.get('title',''),'titleEn':row.get('titleEn',''),
+                          'artifactType':row.get('artifactType',''),'summary':row.get('summary',''),'summaryEn':row.get('summaryEn',''),
+                          'relatedPersonIds':related_persons,'relatedEventIds':related_events,'sourceIds':srcs,
+                          'certainty':row.get('certainty','medium') or 'medium','sort':parse_int(row.get('sort',''),999,'artifacts.sort')})
+    return sorted(artifacts,key=lambda a:(a['hallId'], int(a.get('sort') or 999), a.get('id',''))), ids
+
+def read_visual_assets(errors, warnings, hall_ids, exhibit_ids, event_ids, person_ids, artifact_ids):
+    assets=[]; ids=set()
+    target_sets={'hero': {'museum'}, 'hall': hall_ids, 'exhibit': exhibit_ids, 'event': event_ids, 'person': person_ids, 'artifact': artifact_ids}
+    for i,row in enumerate(read_optional_csv('visual_assets.csv'), start=2):
+        if not any(row.values()) or not is_enabled(row.get('enabled','TRUE')): continue
+        aid=row.get('id','').strip()
+        if not aid: warnings.append(f'visual_assets.csv 第 {i} 行缺少 id，已跳过'); continue
+        if aid in ids: errors.append(f'visual_assets.csv 第 {i} 行 id 重复：{aid}'); continue
+        ids.add(aid)
+        target_type=row.get('targetType','').strip()
+        target_id=row.get('targetId','').strip()
+        if target_type not in target_sets:
+            errors.append(f'visual_assets.csv 第 {i} 行 targetType 不支持：{target_type}')
+        else:
+            check_refs('visual_assets.csv', i, 'targetId', [target_id], target_sets[target_type], errors)
+        if not row.get('imageUrl','').strip():
+            errors.append(f'visual_assets.csv 第 {i} 行 imageUrl 不能为空')
+        assets.append({'id':aid,'targetType':target_type,'targetId':target_id,'title':row.get('title',''),'alt':row.get('alt',''),
+                       'imageUrl':row.get('imageUrl',''),'imagePageUrl':row.get('imagePageUrl',''),'credit':row.get('credit',''),
+                       'license':row.get('license',''),'sort':parse_int(row.get('sort',''),999,'visual_assets.sort')})
+    return sorted(assets,key=lambda a:(a['targetType'], a['targetId'], int(a.get('sort') or 999), a.get('id','')))
+
 def build(strict=True):
     errors=[]; warnings=[]
     metadata = read_metadata()
@@ -138,7 +267,16 @@ def build(strict=True):
         if row.get('poemLine','').strip(): ev['poem']={'line':row.get('poemLine','').strip(),'title':row.get('poemTitle','').strip(),'text':row.get('poemText','').strip()}
         events.append(ev)
     events.sort(key=lambda e:(e['date'], int(e.get('sequence') or 0), e['id']))
+    persons, person_ids = read_persons(errors, warnings, force_ids, source_ids)
+    person_events = read_person_events(errors, warnings, person_ids, event_ids, source_ids)
+    museum_halls, hall_ids = read_museum_halls(errors, warnings)
+    exhibits, exhibit_ids = read_exhibits(errors, warnings, hall_ids, event_ids, person_ids, source_ids)
+    artifacts, artifact_ids = read_artifacts(errors, warnings, hall_ids, event_ids, person_ids, source_ids)
+    visual_assets = read_visual_assets(errors, warnings, hall_ids, exhibit_ids, event_ids, person_ids, artifact_ids)
+    for hid, primary in [(h.get('id',''), h.get('primaryExhibitId','')) for h in museum_halls if h.get('primaryExhibitId','')]:
+        check_refs('museum_halls.csv', 0, f'primaryExhibitId for {hid}', [primary], exhibit_ids, errors)
     output={**metadata, 'sources':sources, 'subjects':sorted(subjects,key=lambda s:(int(s.get('sort') or 999),s.get('id',''))), 'events':events,
+            'persons':persons, 'personEvents':person_events, 'museum': {'halls':museum_halls, 'exhibits':exhibits, 'artifacts':artifacts, 'visualAssets':visual_assets},
             'statsModel': {'startDate': metadata['timeRange']['start'], 'endDate': metadata['timeRange']['end'], 'centralDistanceLi':25000, 'overallParticipantsApprox':200000, 'overallLossesApprox':150000, 'survivorsApprox':'5–6万人', 'note':'动态统计采用史实口径与节点累积结合。'}}
     if strict and errors: raise ValueError('\n'.join(errors))
     return output, warnings, errors
@@ -153,7 +291,7 @@ def main():
     out=Path(args.out); out = out if out.is_absolute() else ROOT/out
     out.parent.mkdir(parents=True, exist_ok=True); out.write_text(json.dumps(data,ensure_ascii=False,indent=2), encoding='utf-8')
     print(f'[OK] 已生成：{out}')
-    print(f"[OK] subjects={len(data['subjects'])}, sources={len(data['sources'])}, events={len(data['events'])}")
+    print(f"[OK] subjects={len(data['subjects'])}, sources={len(data['sources'])}, events={len(data['events'])}, persons={len(data.get('persons',[]))}, halls={len(data.get('museum',{}).get('halls',[]))}, visuals={len(data.get('museum',{}).get('visualAssets',[]))}")
     if warnings:
         print('\n[WARNINGS]'); [print('-',w) for w in warnings]
     if errors:

@@ -106,6 +106,8 @@ async function initApp() {
     bindPanelClose();
     bindLanguageToggle();
     applyLanguage();
+    applyHashEvent();
+    bindHashNavigation();
     renderCurrentState(true);
     hideLoading();
   } catch (err) {
@@ -224,6 +226,22 @@ function bindLanguageToggle() {
     document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : 'en';
     applyLanguage(); syncForcePanel(); refreshAllMarkerIcons(); updateTimelineDisplay(); updateStats(); updateEventPanel(sortedEvents[currentSortedIndex]); updateSpecialEffects(sortedEvents[currentSortedIndex]);
   });
+}
+function bindHashNavigation() {
+  window.addEventListener('hashchange', () => {
+    if (applyHashEvent()) renderCurrentState(true);
+  });
+}
+function applyHashEvent() {
+  const raw = window.location.hash.replace(/^#/, '');
+  if (!raw || !sortedEvents.length) return false;
+  const params = new URLSearchParams(raw);
+  const eventId = params.get('event');
+  if (!eventId) return false;
+  const idx = sortedEvents.findIndex(e => e.id === eventId);
+  if (idx < 0) return false;
+  currentSortedIndex = idx;
+  return true;
 }
 function applyLanguage() { document.querySelectorAll('[data-i18n]').forEach(el => el.textContent = t(el.dataset.i18n)); document.title = t('appTitle'); const btn = document.getElementById('lang-toggle'); if (btn) btn.textContent = t('langBtn'); updateTimelineLabels(); }
 function stepTimeline(delta) { const next = Math.max(0, Math.min(sortedEvents.length - 1, currentSortedIndex + delta)); if (next !== currentSortedIndex) { currentSortedIndex = next; renderCurrentState(true); } }
