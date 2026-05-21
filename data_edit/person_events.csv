@@ -1,4 +1,4 @@
-enabled,personId,eventId,role,note,sourceIds,sort
+﻿enabled,personId,eventId,role,note,sourceIds,sort
 TRUE,mao_zedong,rf_19341010_ruijin,参与者,随中央红军主力开始战略转移,src_cpc_century,10
 TRUE,mao_zedong,rf_19350115_zunyi_meeting,关键参与者,遵义会议集中解决军事和组织问题,src_zunyi_hunan,20
 TRUE,mao_zedong,rf_19350129_tucheng_chishui1,领导层,四渡赤水机动作战开始,src_zunyi_hunan,30
@@ -49,7 +49,7 @@ TRUE,zhang_wentian,rf_19350927_bangluo,会议参与者,榜罗镇会议明确落�
 TRUE,wang_jiaxiang,rf_19350115_zunyi_meeting,关键参与者,遵义会议中的中央领导成员,src_zunyi_hunan;src_party_chronology_xinhua,10
 TRUE,wang_jiaxiang,rf_19350626_lianghekou,会议参与者,红一、红四方面军会合后的战略讨论参与者,src_meetings_xinhua;src_party_chronology_xinhua,20
 TRUE,he_zizhen,rf_19341010_ruijin,参与者,随中央红军开始长征,src_women_redarmy_81;src_cpc_century,10
-TRUE,he_zizhen,rf_19350205_hezizhen,主角,川南生女并托孤的女性亲历节点,src_hezizhen_people;src_women_redarmy_81,20
+TRUE,he_zizhen,rf_19350205_hezizhen,主角,川南生女并托孤的女性亲历条目,src_hezizhen_people;src_women_redarmy_81,20
 TRUE,he_zizhen,rf_19351019_wuqi,亲历者,随中央红军到达陕北落脚点,src_women_redarmy_81;src_shaanbei_12371,30
 TRUE,deng_yingchao,rf_19341010_ruijin,参与者,参加中央红军长征,src_women_redarmy_81;src_cpc_century,10
 TRUE,deng_yingchao,rf_19350821_ruoergai,亲历者,女红军在雪山草地阶段承受极端行军压力,src_women_redarmy_81;src_meetings_xinhua,20
@@ -347,3 +347,5 @@ TRUE,xu_haidong,steam_r25_19350904_cb1e11f2,Steam文本提及,,src_steam_longmar
 TRUE,xu_haidong,steam_r25_19350907_0bb1fca6,担任军长,,src_steam_longmarch_1934_1936,9346
 TRUE,cheng_zihua,steam_r25_19350907_0bb1fca6,Steam文本提及,,src_steam_longmarch_1934_1936,9347
 TRUE,dai_jiying,steam_r25_19350907_0bb1fca6,担任参谋长,,src_steam_longmarch_1934_1936,9348
+
+

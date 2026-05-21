@@ -1,4 +1,4 @@
-enabled,id,targetType,targetId,title,alt,imageUrl,imagePageUrl,credit,license,sort
+﻿enabled,id,targetType,targetId,title,alt,imageUrl,imagePageUrl,credit,license,sort
 TRUE,vis_hero_red_map_final,hero,museum,red-map 运行截图,长征路线动态地图运行到最后进度的截图,docs/readme-home.png,,red-map local runtime screenshot,project asset,10
 TRUE,vis_ex_route_map,exhibit,ex_route_map,red-map 动态路线截图,长征星火路线交互地图运行截图,docs/readme-home.png,,red-map local runtime screenshot,project asset,20
 TRUE,vis_event_yudu,event,rf_19341017_yudu,于都第一渡口,中央红军长征第一渡口纪念园,docs/assets/visuals/vis_event_yudu.jpg,https://commons.wikimedia.org/wiki/File:Yudu_Zhongyang_Hongjun_Changzheng_Diyi_Dukou_2014.05.30_11-12-33.jpg,Zhangzhugang / Wikimedia Commons,see file page,30
@@ -39,3 +39,4 @@ TRUE,vis_person_li_xiannian,person,li_xiannian,李先念照片,李先念历史�
 TRUE,vis_person_bai_chongxi,person,bai_chongxi,白崇禧照片,白崇禧历史照片,docs/assets/visuals/vis_person_bai_chongxi.jpg,https://commons.wikimedia.org/wiki/File:Bai_Chongxi.jpg,Wikimedia Commons,see file page,196
 TRUE,vis_person_xue_yue,person,xue_yue,薛岳照片,薛岳历史照片,docs/assets/visuals/vis_person_xue_yue.jpg,https://commons.wikimedia.org/wiki/File:Xue_Yue.jpg,Wikimedia Commons,see file page,197
 TRUE,vis_person_liu_xiang,person,liu_xiang,刘湘照片,刘湘历史照片,docs/assets/visuals/vis_person_liu_xiang.jpg,https://commons.wikimedia.org/wiki/File:Liu_Xiang.jpg,Wikimedia Commons,see file page,198
+

@@ -1,4 +1,4 @@
-# 数据编辑说明
+﻿# 数据编辑说明
 
 本项目推荐使用“表格编辑 → 自动生成 JSON”的维护方式。
 
@@ -64,15 +64,15 @@ data_edit/metadata.csv    # 项目标题、时间范围
 | redJoined | 参征人数增量，可空 |
 | redLosses | 损失人数估算，可空 |
 | enemyDefeated | 歼俘敌估算，可空 |
-| distanceLi | 中央红军里程节点，可空 |
-| victory | TRUE/FALSE，是否计为胜利节点 |
+| distanceLi | 中央红军里程记录，可空 |
+| victory | TRUE/FALSE，是否计为胜利记录 |
 | poemLine / poemTitle / poemText | 七律长征诗句触发卡片 |
 
 ## 5. 新增部队/路线或人物
 
 在 `subjects.csv` 增加一行。若 `type=force`，该主体会出现在前台路线开关和事件编辑下拉框中；若 `type=person`，主要用于资料管理。
 
-部队颜色由 `color` 字段控制。前台地图路线和节点统一按部队颜色显示，不再按事件类型上色。
+部队颜色由 `color` 字段控制。前台地图路线和点位统一按部队颜色显示，不再按事件类型上色。
 
 ## 6. 维护人物时间线
 
@@ -83,7 +83,7 @@ data_edit/persons.csv
 data_edit/person_events.csv
 ```
 
-先在 `persons.csv` 中维护人物基本档案，再在 `person_events.csv` 中把人物 `personId` 关联到已有事件 `eventId`。如果某个人物缺少关键节点，应先在 `events.csv` 中补充事件，再建立关联。这样路线地图、英烈墙和人物时间线会共用同一套事件数据。
+先在 `persons.csv` 中维护人物基本档案，再在 `person_events.csv` 中把人物 `personId` 关联到已有事件 `eventId`。如果某个人物缺少关键环节，应先在 `events.csv` 中补充事件，再建立关联。这样路线地图、英烈墙和人物时间线会共用同一套事件数据。
 
 常用字段：
 
@@ -95,19 +95,19 @@ data_edit/person_events.csv
 | persons.csv | themeTags | 标签，用分号分隔 |
 | person_events.csv | personId | 对应 persons.csv |
 | person_events.csv | eventId | 对应 events.csv |
-| person_events.csv | note | 该人物在此节点的叙事说明 |
+| person_events.csv | note | 该人物在此事件叙事说明 |
 
 ## 7. 维护数字博物馆展板
 
 数字博物馆页面为 `museum.html`。展厅层级在 `museum_halls.csv` 中维护；展板在 `exhibits.csv` 中维护；档案、物件、纪念设施类内容在 `artifacts.csv` 中维护。
 
-`red-map` 路线地图作为第一展厅的展板，使用 iframe 嵌入 `index.html`。其他展板通过 `relatedEventIds` 和 `relatedPersonIds` 连接到事件与人物档案。
+`red-map` 路线地图作为第一展厅的展板，使用 iframe 嵌入 `map.html`。`index.html` 是数字博物馆首页入口；其他展板通过 `relatedEventIds` 和 `relatedPersonIds` 连接到事件与人物档案。
 
 图片资产在 `visual_assets.csv` 中维护。`targetType` 支持 `hero`、`hall`、`exhibit`、`event`、`person`、`artifact`；`targetId` 必须对应相应表中的 ID。新增网上图片时，应同时填写 `imagePageUrl`、`credit` 和 `license`，方便上线前审校版权与来源。
 
 建议的扩展顺序：
 
-1. 先在 `events.csv` 补足史实节点。
+1. 先在 `events.csv` 补足史实条目。
 2. 再在 `persons.csv` 和 `person_events.csv` 建人物时间线。
 3. 在 `visual_assets.csv` 给关键展板、地点和人物补图。
 4. 最后在 `exhibits.csv` 或 `artifacts.csv` 组织展板叙事。
@@ -163,3 +163,5 @@ http://localhost:8000/museum.html
 ```text
 http://localhost:8000/admin/index.html
 ```
+
+

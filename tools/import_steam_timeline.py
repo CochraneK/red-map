@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Import curated Steam text candidates into the editable timeline tables.
 
@@ -94,38 +94,38 @@ SOURCE_LIMITS = {
 }
 
 STEAM_PERSON_ROWS = [
-    {"id": "du_heng", "name": "杜衡", "personType": "争议人物", "forceId": "shaanbei_red", "summary": "Steam 文本中出现的陕甘边早期组织和军事行动相关人物，用于补足西北根据地前史线索。", "themeTags": "陕甘边;根据地前史;待复核", "sort": "801"},
-    {"id": "wang_shitai", "name": "王世泰", "personType": "军事指挥", "forceId": "shaanbei_red", "summary": "Steam 文本中作为陕甘边早期红军干部出现，关联红二十六军与照金、南梁等根据地建设线索。", "themeTags": "陕甘边;红二十六军;待复核", "sort": "802"},
-    {"id": "jin_like", "name": "金理科", "personType": "政治工作", "forceId": "shaanbei_red", "summary": "Steam 文本中出现于照金和陕甘边特委相关叙述，用于呈现根据地组织层面的前史。", "themeTags": "照金;陕甘边特委;待复核", "sort": "803"},
-    {"id": "zhou_dongzhi", "name": "周冬至", "personType": "根据地建设", "forceId": "shaanbei_red", "summary": "Steam 文本中出现于陕甘边革命委员会相关叙述，补充根据地政权建设人物线索。", "themeTags": "陕甘边;革命委员会;待复核", "sort": "804"},
-    {"id": "wang_taiji", "name": "王泰吉", "personType": "军事指挥", "forceId": "shaanbei_red", "summary": "Steam 文本中出现于陕甘边红军临时总指挥部和红二十六军相关叙述。", "themeTags": "陕甘边;红二十六军;待复核", "sort": "805"},
-    {"id": "gao_gang", "name": "高岗", "personType": "根据地建设", "forceId": "shaanbei_red", "summary": "Steam 文本中多次出现于陕甘边、陕北根据地统一领导和军事组织相关叙述。", "themeTags": "西北根据地;政治工作;待复核", "sort": "806"},
-    {"id": "guo_hongtao", "name": "郭洪涛", "personType": "政治工作", "forceId": "shaanbei_red", "summary": "Steam 文本中出现于陕北红军游击队总指挥部等组织建设线索。", "themeTags": "陕北红军;组织建设;待复核", "sort": "807"},
-    {"id": "he_jinnian", "name": "贺晋年", "personType": "军事指挥", "forceId": "shaanbei_red", "summary": "Steam 文本中出现于陕北游击队和西北红军相关叙述，补充落脚点形成前的地方武装线索。", "themeTags": "陕北游击队;西北红军;待复核", "sort": "808"},
-    {"id": "yang_qi", "name": "杨琪", "personType": "军事指挥", "forceId": "shaanbei_red", "summary": "Steam 文本中出现于红二十七军第八十四师相关叙述，是陕北根据地武装整编线索人物。", "themeTags": "红二十七军;整编;待复核", "sort": "809"},
-    {"id": "zhang_dazhi", "name": "张达志", "personType": "政治工作", "forceId": "shaanbei_red", "summary": "Steam 文本中出现于陕北红军整编与根据地建设相关叙述。", "themeTags": "陕北根据地;整编;待复核", "sort": "810"},
-    {"id": "ma_mingfang", "name": "马明方", "personType": "根据地建设", "forceId": "shaanbei_red", "summary": "Steam 文本中出现于陕北苏维埃政府成立等根据地政权建设线索。", "themeTags": "陕北苏维埃;根据地建设;待复核", "sort": "811"},
-    {"id": "pan_hannian", "name": "潘汉年", "personType": "政治工作", "forceId": "red_first", "summary": "Steam 文本中以潘健行、潘汉年等称谓出现，关联中央红军战略转移前的秘密谈判线索。", "themeTags": "寻乌会谈;战略转移;待复核", "sort": "812"},
-    {"id": "he_changgong", "name": "何长工", "personType": "政治工作", "forceId": "red_first", "summary": "Steam 文本中出现于中央红军转移前后秘密接洽和行动准备线索。", "themeTags": "战略转移;谈判;待复核", "sort": "813"},
-    {"id": "chen_jitang", "name": "陈济棠", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "Steam 文本中作为粤军方面人物出现，关联中央红军转移前的秘密谈判与借道线索。", "themeTags": "粤军;寻乌会谈;待复核", "sort": "814"},
-    {"id": "bai_chongxi", "name": "白崇禧", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "Steam 文本中作为桂军方面人物出现，用于说明湘江前后敌军部署和封锁压力。", "themeTags": "桂军;湘江;待复核", "sort": "815"},
-    {"id": "he_jian", "name": "何键", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "Steam 文本中多次出现于湘军追堵、湖南封锁和红二、红六军团牵制行动叙述。", "themeTags": "湘军;追堵;待复核", "sort": "816"},
-    {"id": "xue_yue", "name": "薛岳", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "Steam 文本中出现于中央红军和红二、红六军团周边追堵部署线索。", "themeTags": "追堵;国民党军;待复核", "sort": "817"},
-    {"id": "zhang_xueliang", "name": "张学良", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "Steam 文本中出现于鄂豫皖和红二十五军所处军事压力背景。", "themeTags": "鄂豫皖;东北军;待复核", "sort": "818"},
-    {"id": "dai_jiying", "name": "戴季英", "personType": "政治工作", "forceId": "red_25th", "summary": "Steam 文本中出现于红二十五军鄂豫皖根据地和战略转移前后叙述。", "themeTags": "红二十五军;鄂豫皖;待复核", "sort": "819"},
-    {"id": "zheng_weisan", "name": "郑位三", "personType": "政治工作", "forceId": "red_25th", "summary": "Steam 文本中出现于鄂东北道委和红二十五军行动决策相关叙述。", "themeTags": "鄂东北;红二十五军;待复核", "sort": "820"},
-    {"id": "xun_huaizhou", "name": "寻淮洲", "personType": "军事指挥", "forceId": "red_7th_advance", "summary": "Steam 文本中出现于红七军团北上抗日先遣队叙述，是先遣队人物线索的核心之一。", "themeTags": "红七军团;北上抗日先遣队;待复核", "sort": "821"},
-    {"id": "le_shaohua", "name": "乐少华", "personType": "政治工作", "forceId": "red_7th_advance", "summary": "Steam 文本中出现于红七军团北上抗日先遣队相关战斗和转移叙述。", "themeTags": "红七军团;北上抗日先遣队;待复核", "sort": "822"},
-    {"id": "su_yu", "name": "粟裕", "personType": "军事指挥", "forceId": "red_7th_advance", "summary": "Steam 文本中出现于红七军团北上抗日先遣队战斗叙述，连接先遣队与后续革命军事人物线索。", "themeTags": "红七军团;北上抗日先遣队;待复核", "sort": "823"},
-    {"id": "li_xiannian", "name": "李先念", "personType": "军事指挥", "forceId": "red_fourth", "summary": "Steam 文本和项目路线中均可关联红四方面军行动，用于补足红四方面军人物层。", "themeTags": "红四方面军;北上;待复核", "sort": "824"},
-    {"id": "liu_xiang", "name": "刘湘", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "Steam 文本中出现于川军与红四方面军作战背景，补充川陕苏区和嘉陵江前后的军事压力。", "themeTags": "川军;川陕苏区;待复核", "sort": "825"},
-    {"id": "liu_wenhui", "name": "刘文辉", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "Steam 文本中出现于四川地方军政背景，用于说明红四方面军长征前后的区域压力。", "themeTags": "川军;四川地方势力;待复核", "sort": "826"},
-    {"id": "xia_xi", "name": "夏曦", "personType": "政治工作", "forceId": "red_second", "summary": "Steam 文本中出现于湘鄂川黔边临时省委和红二、红六军团早期行动叙述。", "themeTags": "湘鄂川黔;红二、红六军团;待复核", "sort": "827"},
-    {"id": "zhang_ziyi", "name": "张子意", "personType": "政治工作", "forceId": "red_second", "summary": "Steam 文本中出现于湘鄂川黔边临时省委相关叙述，补充红二、红六军团组织层人物。", "themeTags": "湘鄂川黔;组织建设;待复核", "sort": "828"},
-    {"id": "chen_quzhen", "name": "陈渠珍", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "Steam 文本中出现于红二、红六军团湘西攻势和沅陵、常德周边军事压力。", "themeTags": "湘西;红二、红六军团;待复核", "sort": "829"},
-    {"id": "liao_huaizhong", "name": "廖怀中", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "Steam 文本中出现于沅陵防守和红二、红六军团攻势相关叙述。", "themeTags": "沅陵;湘军;待复核", "sort": "830"},
-    {"id": "dai_jitao", "name": "戴季韬", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "Steam 文本中出现于沅陵周边布防线索，作为红二、红六军团湘西行动的对照人物。", "themeTags": "沅陵;湘西攻势;待复核", "sort": "831"},
-    {"id": "zhou_xieqing", "name": "周燮卿", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "Steam 文本中出现于沅陵周边布防线索，补充红二、红六军团行动的地方军事背景。", "themeTags": "沅陵;湘西攻势;待复核", "sort": "832"},
+    {"id": "du_heng", "name": "杜衡", "personType": "争议人物", "forceId": "shaanbei_red", "summary": "补充材料中出现的陕甘边早期组织和军事行动相关人物，用于补足西北根据地前史线索。", "themeTags": "陕甘边;根据地前史;补充线索", "sort": "801"},
+    {"id": "wang_shitai", "name": "王世泰", "personType": "军事指挥", "forceId": "shaanbei_red", "summary": "补充材料中作为陕甘边早期红军干部出现，关联红二十六军与照金、南梁等根据地建设线索。", "themeTags": "陕甘边;红二十六军;补充线索", "sort": "802"},
+    {"id": "jin_like", "name": "金理科", "personType": "政治工作", "forceId": "shaanbei_red", "summary": "补充材料中出现于照金和陕甘边特委相关叙述，用于呈现根据地组织层面的前史。", "themeTags": "照金;陕甘边特委;补充线索", "sort": "803"},
+    {"id": "zhou_dongzhi", "name": "周冬至", "personType": "根据地建设", "forceId": "shaanbei_red", "summary": "补充材料中出现于陕甘边革命委员会相关叙述，补充根据地政权建设人物线索。", "themeTags": "陕甘边;革命委员会;补充线索", "sort": "804"},
+    {"id": "wang_taiji", "name": "王泰吉", "personType": "军事指挥", "forceId": "shaanbei_red", "summary": "补充材料中出现于陕甘边红军临时总指挥部和红二十六军相关叙述。", "themeTags": "陕甘边;红二十六军;补充线索", "sort": "805"},
+    {"id": "gao_gang", "name": "高岗", "personType": "根据地建设", "forceId": "shaanbei_red", "summary": "补充材料中多次出现于陕甘边、陕北根据地统一领导和军事组织相关叙述。", "themeTags": "西北根据地;政治工作;补充线索", "sort": "806"},
+    {"id": "guo_hongtao", "name": "郭洪涛", "personType": "政治工作", "forceId": "shaanbei_red", "summary": "补充材料中出现于陕北红军游击队总指挥部等组织建设线索。", "themeTags": "陕北红军;组织建设;补充线索", "sort": "807"},
+    {"id": "he_jinnian", "name": "贺晋年", "personType": "军事指挥", "forceId": "shaanbei_red", "summary": "补充材料中出现于陕北游击队和西北红军相关叙述，补充落脚点形成前的地方武装线索。", "themeTags": "陕北游击队;西北红军;补充线索", "sort": "808"},
+    {"id": "yang_qi", "name": "杨琪", "personType": "军事指挥", "forceId": "shaanbei_red", "summary": "补充材料中出现于红二十七军第八十四师相关叙述，是陕北根据地武装整编线索人物。", "themeTags": "红二十七军;整编;补充线索", "sort": "809"},
+    {"id": "zhang_dazhi", "name": "张达志", "personType": "政治工作", "forceId": "shaanbei_red", "summary": "补充材料中出现于陕北红军整编与根据地建设相关叙述。", "themeTags": "陕北根据地;整编;补充线索", "sort": "810"},
+    {"id": "ma_mingfang", "name": "马明方", "personType": "根据地建设", "forceId": "shaanbei_red", "summary": "补充材料中出现于陕北苏维埃政府成立等根据地政权建设线索。", "themeTags": "陕北苏维埃;根据地建设;补充线索", "sort": "811"},
+    {"id": "pan_hannian", "name": "潘汉年", "personType": "政治工作", "forceId": "red_first", "summary": "补充材料中以潘健行、潘汉年等称谓出现，关联中央红军战略转移前的秘密谈判线索。", "themeTags": "寻乌会谈;战略转移;补充线索", "sort": "812"},
+    {"id": "he_changgong", "name": "何长工", "personType": "政治工作", "forceId": "red_first", "summary": "补充材料中出现于中央红军转移前后秘密接洽和行动准备线索。", "themeTags": "战略转移;谈判;补充线索", "sort": "813"},
+    {"id": "chen_jitang", "name": "陈济棠", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "补充材料中作为粤军方面人物出现，关联中央红军转移前的秘密谈判与借道线索。", "themeTags": "粤军;寻乌会谈;补充线索", "sort": "814"},
+    {"id": "bai_chongxi", "name": "白崇禧", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "补充材料中作为桂军方面人物出现，用于说明湘江前后敌军部署和封锁压力。", "themeTags": "桂军;湘江;补充线索", "sort": "815"},
+    {"id": "he_jian", "name": "何键", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "补充材料中多次出现于湘军追堵、湖南封锁和红二、红六军团牵制行动叙述。", "themeTags": "湘军;追堵;补充线索", "sort": "816"},
+    {"id": "xue_yue", "name": "薛岳", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "补充材料中出现于中央红军和红二、红六军团周边追堵部署线索。", "themeTags": "追堵;国民党军;补充线索", "sort": "817"},
+    {"id": "zhang_xueliang", "name": "张学良", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "补充材料中出现于鄂豫皖和红二十五军所处军事压力背景。", "themeTags": "鄂豫皖;东北军;补充线索", "sort": "818"},
+    {"id": "dai_jiying", "name": "戴季英", "personType": "政治工作", "forceId": "red_25th", "summary": "补充材料中出现于红二十五军鄂豫皖根据地和战略转移前后叙述。", "themeTags": "红二十五军;鄂豫皖;补充线索", "sort": "819"},
+    {"id": "zheng_weisan", "name": "郑位三", "personType": "政治工作", "forceId": "red_25th", "summary": "补充材料中出现于鄂东北道委和红二十五军行动决策相关叙述。", "themeTags": "鄂东北;红二十五军;补充线索", "sort": "820"},
+    {"id": "xun_huaizhou", "name": "寻淮洲", "personType": "军事指挥", "forceId": "red_7th_advance", "summary": "补充材料中出现于红七军团北上抗日先遣队叙述，是先遣队人物线索的核心之一。", "themeTags": "红七军团;北上抗日先遣队;补充线索", "sort": "821"},
+    {"id": "le_shaohua", "name": "乐少华", "personType": "政治工作", "forceId": "red_7th_advance", "summary": "补充材料中出现于红七军团北上抗日先遣队相关战斗和转移叙述。", "themeTags": "红七军团;北上抗日先遣队;补充线索", "sort": "822"},
+    {"id": "su_yu", "name": "粟裕", "personType": "军事指挥", "forceId": "red_7th_advance", "summary": "补充材料中出现于红七军团北上抗日先遣队战斗叙述，连接先遣队与后续革命军事人物线索。", "themeTags": "红七军团;北上抗日先遣队;补充线索", "sort": "823"},
+    {"id": "li_xiannian", "name": "李先念", "personType": "军事指挥", "forceId": "red_fourth", "summary": "补充材料和项目路线中均可关联红四方面军行动，用于补足红四方面军人物层。", "themeTags": "红四方面军;北上;补充线索", "sort": "824"},
+    {"id": "liu_xiang", "name": "刘湘", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "补充材料中出现于川军与红四方面军作战背景，补充川陕苏区和嘉陵江前后的军事压力。", "themeTags": "川军;川陕苏区;补充线索", "sort": "825"},
+    {"id": "liu_wenhui", "name": "刘文辉", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "补充材料中出现于四川地方军政背景，用于说明红四方面军长征前后的区域压力。", "themeTags": "川军;四川地方势力;补充线索", "sort": "826"},
+    {"id": "xia_xi", "name": "夏曦", "personType": "政治工作", "forceId": "red_second", "summary": "补充材料中出现于湘鄂川黔边临时省委和红二、红六军团早期行动叙述。", "themeTags": "湘鄂川黔;红二、红六军团;补充线索", "sort": "827"},
+    {"id": "zhang_ziyi", "name": "张子意", "personType": "政治工作", "forceId": "red_second", "summary": "补充材料中出现于湘鄂川黔边临时省委相关叙述，补充红二、红六军团组织层人物。", "themeTags": "湘鄂川黔;组织建设;补充线索", "sort": "828"},
+    {"id": "chen_quzhen", "name": "陈渠珍", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "补充材料中出现于红二、红六军团湘西攻势和沅陵、常德周边军事压力。", "themeTags": "湘西;红二、红六军团;补充线索", "sort": "829"},
+    {"id": "liao_huaizhong", "name": "廖怀中", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "补充材料中出现于沅陵防守和红二、红六军团攻势相关叙述。", "themeTags": "沅陵;湘军;补充线索", "sort": "830"},
+    {"id": "dai_jitao", "name": "戴季韬", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "补充材料中出现于沅陵周边布防线索，作为红二、红六军团湘西行动的对照人物。", "themeTags": "沅陵;湘西攻势;补充线索", "sort": "831"},
+    {"id": "zhou_xieqing", "name": "周燮卿", "personType": "相关对手", "forceId": "enemy_kmt", "summary": "补充材料中出现于沅陵周边布防线索，补充红二、红六军团行动的地方军事背景。", "themeTags": "沅陵;湘西攻势;补充线索", "sort": "832"},
 ]
 
 PERSON_ALIASES = {"潘健行": "pan_hannian"}
@@ -515,7 +515,7 @@ def selected_event_records(candidates_path: Path, event_rows: list[dict[str, str
             participants = list(dict.fromkeys([force_short, *people[:4]]))
             description = (
                 f"{row.get('date_label', date_text)}，{force_short}在{locname}一带形成"
-                f"“{action}”节点。该条由 Steam 游戏文本抽取后压缩改写，作为待复核路线线索。"
+                f"“{action}”条目。该条由 补充材料抽取后压缩改写，作为补充路线线索。"
             )
 
             event_row = {
@@ -535,7 +535,7 @@ def selected_event_records(candidates_path: Path, event_rows: list[dict[str, str
                     "importance": infer_importance(summary, locname),
                     "sourceIds": STEAM_SOURCE_ID,
                     "certainty": "low",
-                    "notes": "Steam《长征1934-1936》本地文本抽取线索，已压缩改写，待权威资料复核。",
+                    "notes": "Steam《长征1934-1936》本地文本抽取线索，已压缩改写，需继续校订。",
                     "result": "",
                     "casualties": "",
                     "redJoined": "",
@@ -685,7 +685,7 @@ def ensure_person_event_links(
                     "personId": person_id,
                     "eventId": event_id,
                     "role": infer_person_role(name, record["summary"]),
-                    "note": "由 Steam 游戏文本候选自动关联，待权威资料复核。",
+                    "note": "由 补充材料候选自动关联，需继续校订。",
                     "sourceIds": STEAM_SOURCE_ID,
                     "sort": str(sort_base + added + 1),
                 }
@@ -831,3 +831,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+

@@ -9,7 +9,7 @@ const focusAction = document.getElementById('focus-action');
 const indexStrip = document.getElementById('immersive-index');
 const walkCurrent = document.getElementById('walk-current');
 
-const boardSpacing = 23;
+const boardSpacing = 26;
 const boardStartZ = -10;
 
 let data;
@@ -75,7 +75,7 @@ function createBoardData() {
       mode: 'catalog',
       title: '资料总目录',
       subtitle: '人物、地点、事件、部队四类模块',
-      body: '把 Steam 文本线索、公开资料和人工表格统一组织为可搜索的资料目录。',
+      body: '把游戏文本线索、公开资料和人工表格统一组织为可搜索的资料目录。',
       href: 'museum.html#catalog',
       action: '进入资料目录',
       accent: '#d7a752',
@@ -84,8 +84,8 @@ function createBoardData() {
       id: 'events',
       mode: 'events',
       title: '事件星图',
-      subtitle: `${steamEvents} 条 Steam 补充线索`,
-      body: '事件按时间和地点进入路线，相关条目会保留来源标记。',
+      subtitle: `${steamEvents} 条补充事件线索`,
+      body: '事件按时间和地点进入路线，补充材料会保留来源标记，方便后续校订。',
       href: 'museum.html#catalog',
       action: '查看事件模块',
       accent: '#5884b9',
@@ -184,7 +184,6 @@ function buildMuseum() {
   buildCorridor();
   buildBoards();
   buildRouteTable();
-  buildSideMemorials();
   modeLayer = new THREE.Group();
   scene.add(modeLayer);
 }
@@ -420,26 +419,25 @@ function addDynamicGroup(group, board, href = board.href) {
 function buildEventPanelCloud(board) {
   const events = getEventPanelItems();
   const anchorZ = board.z || boardZ(2);
-  const columns = [-12.5, -7.2, -2.4, 2.4, 7.2, 12.5];
+  const columns = [-8.4, -2.8, 2.8, 8.4];
   events.forEach((event, index) => {
     const column = index % columns.length;
     const row = Math.floor(index / columns.length);
     const group = new THREE.Group();
     const accent = getSubject(event.forceId)?.color || board.accent;
     const title = `${event.date || ''}  ${event.title || ''}`;
-    const subtitle = `${event.type || '事件'} / ${event.location?.name || ''}\n${shortText(event.description || '', 44)}`;
+    const subtitle = `${event.type || '事件'} / ${event.location?.name || ''}\n${shortText(event.description || '', 36)}`;
     const card = makeTextPlane(title, subtitle, accent, 720, 430);
-    const scale = 0.52 + (index % 4) * 0.04;
-    card.scale.set(scale, scale, 1);
+    card.scale.set(0.46, 0.46, 1);
     group.add(card);
-    group.position.set(columns[column], 3.2 + row * 2.7 + (index % 2) * 0.28, anchorZ + 8 - row * 3.2 - (column % 2) * 0.9);
-    group.rotation.y = -columns[column] * 0.018;
+    group.position.set(columns[column], 3.2 + row * 2.45, anchorZ + 5.8 - row * 0.7);
+    group.rotation.y = -columns[column] * 0.012;
     group.userData.float = {
       origin: group.position.clone(),
       phase: index * 0.85,
-      speed: 0.22 + (index % 5) * 0.018,
-      sway: 0.08,
-      lift: 0.12,
+      speed: 0.12,
+      sway: 0.025,
+      lift: 0.045,
     };
     floatingObjects.push(group);
     addDynamicGroup(group, board, 'museum.html#catalog');
@@ -451,7 +449,7 @@ function getEventPanelItems() {
   return data.events
     .filter(event => priorityTypes.has(event.type) || Number(event.importance || 0) >= 4)
     .sort((a, b) => Number(b.importance || 0) - Number(a.importance || 0) || compareEvents(a, b))
-    .slice(0, 12)
+    .slice(0, 8)
     .sort(compareEvents);
 }
 
@@ -463,25 +461,26 @@ function buildPortraitCloud(board) {
   people.forEach((person, index) => {
     const visual = getVisual('person', person.id);
     const card = createPortraitCard(person, visual, board.accent);
-    const depth = rand();
-    const sideBias = index % 2 ? 1 : -1;
-    const x = sideBias * (2.5 + rand() * 11.5);
-    const y = 2.9 + rand() * 8.2;
-    const z = anchorZ + 6.8 - depth * 15.5;
-    const scale = 0.82 + rand() * 0.52;
+    const columns = [-7.6, -3.8, 0, 3.8, 7.6];
+    const col = index % columns.length;
+    const row = Math.floor(index / columns.length);
+    const x = columns[col] + (rand() - 0.5) * 0.28;
+    const y = 3.15 + row * 3.15 + (rand() - 0.5) * 0.16;
+    const z = anchorZ + 5.2 - row * 0.55;
+    const scale = 0.78 + rand() * 0.16;
     card.position.set(x, y, z);
     card.scale.setScalar(scale);
+    card.rotation.y = -x * 0.018;
     card.userData.float = {
       origin: card.position.clone(),
       phase: rand() * Math.PI * 2,
-      speed: 0.14 + rand() * 0.18,
-      sway: 0.22 + rand() * 0.42,
-      lift: 0.14 + rand() * 0.28,
+      speed: 0.09 + rand() * 0.04,
+      sway: 0.035,
+      lift: 0.05,
     };
     floatingObjects.push(card);
     addDynamicGroup(card, board, href);
   });
-  renderPortraitOverlay(people, board);
 }
 
 function renderPortraitOverlay(people, board) {
@@ -519,7 +518,7 @@ function getPortraitPeople(boardId) {
     : data.persons;
   return [...people]
     .sort((a, b) => Number(visualIds.has(b.id)) - Number(visualIds.has(a.id)) || Number(a.sort || 9999) - Number(b.sort || 9999))
-    .slice(0, boardId === 'martyrs' ? 18 : 34);
+    .slice(0, boardId === 'martyrs' ? 10 : 10);
 }
 
 function createPortraitCard(person, visual, accent) {
@@ -761,16 +760,16 @@ function animate(time = 0) {
   requestAnimationFrame(animate);
   const t = time * 0.001;
   pointer.lerp(pointerTarget, 0.05);
-  const parallax = new THREE.Vector3(pointer.x * 0.85, pointer.y * 0.38, Math.sin(t * 0.35) * 0.32);
+  const parallax = new THREE.Vector3(pointer.x * 0.45, pointer.y * 0.2, Math.sin(t * 0.28) * 0.12);
   camera.position.lerp(cameraTarget.clone().add(parallax), 0.05);
-  const look = lookTarget.clone().add(new THREE.Vector3(pointer.x * 0.55, pointer.y * 0.3, 0));
+  const look = lookTarget.clone().add(new THREE.Vector3(pointer.x * 0.28, pointer.y * 0.16, 0));
   camera.lookAt(look);
   boardMeshes.forEach((group, index) => {
     const desired = group === hoveredBoard ? 1.04 : 1;
     const current = group.scale.x;
     const next = current + (desired - current) * 0.12;
     group.scale.setScalar(next);
-    group.position.y = 6.3 + Math.sin(t * 0.7 + index) * 0.04;
+    group.position.y = 6.3 + Math.sin(t * 0.55 + index) * 0.018;
   });
   floatingObjects.forEach((group, index) => {
     const float = group.userData.float;

@@ -19,7 +19,7 @@
       "title": "党史大事件·1935年：遵义会议等",
       "publisher": "湖南省工业和信息化厅党史学习资料",
       "url": "https://gxt.hunan.gov.cn/gxt/syzt/dsxxjy/dsydyy/dsdsj/202103/t20210329_15075565.html",
-      "note": "用于遵义会议、巧渡金沙江、强渡大渡河、飞夺泸定桥等节点。"
+      "note": "用于遵义会议、巧渡金沙江、强渡大渡河、飞夺泸定桥等条目。"
     },
     {
       "id": "src_yihai_people",
@@ -152,7 +152,7 @@
       "title": "中国共产党一百年大事记（1921年7月－2021年6月）",
       "publisher": "新华社/中共中央党史和文献研究院",
       "url": "https://www.xinhuanet.com/2021-06/28/c_1127603399.htm",
-      "note": "用于通道、黎平、遵义等会议与长征节点。"
+      "note": "用于通道、黎平、遵义等会议与长征条目。"
     },
     {
       "id": "src_dengping_people_2025",
@@ -194,7 +194,7 @@
       "title": "红四方面军曲折复杂的长征历程",
       "publisher": "四川省地方志工作办公室",
       "url": "https://scdfz.sc.gov.cn/ztzl/hjczzsc/zzyj/content_16665",
-      "note": "红四方面军嘉陵江、土门等节点"
+      "note": "红四方面军嘉陵江、土门等条目"
     },
     {
       "id": "src_stats_xinhua_2016",
@@ -11421,7 +11421,7 @@
       "hometown": "湖南湘潭",
       "hometownEn": "Xiangtan, Hunan",
       "forceId": "red_first",
-      "summary": "中央红军长征中的重要领导人之一。人物线集中关联遵义会议、四渡赤水、会师和陕北落脚点等节点。",
+      "summary": "中央红军长征中的重要领导人之一。人物线集中关联遵义会议、四渡赤水、会师和陕北落脚点等条目。",
       "summaryEn": "One of the central leaders during the Long March. His timeline connects major nodes including the Zunyi Meeting, Chishui maneuvering, convergence, and the northern Shaanxi landing point.",
       "portrait": "",
       "themeTags": [
@@ -11446,7 +11446,7 @@
       "hometown": "江苏淮安",
       "hometownEn": "Huaian, Jiangsu",
       "forceId": "red_first",
-      "summary": "中央红军长征中的重要领导人之一，多次出现在会议、渡河、作战调整与会师节点中。",
+      "summary": "中央红军长征中的重要领导人之一，多次出现在会议、渡河、作战调整与会师时刻中。",
       "summaryEn": "A major central leader during the Long March, appearing across meeting, river-crossing, operational adjustment, and convergence nodes.",
       "portrait": "",
       "themeTags": [
@@ -11496,7 +11496,7 @@
       "hometown": "四川开县",
       "hometownEn": "Kaixian, Sichuan",
       "forceId": "red_first",
-      "summary": "中央红军先遣部队重要指挥员。彝海结盟和强渡大渡河等节点体现军事行动与民族工作交织。",
+      "summary": "中央红军先遣部队重要指挥员。彝海结盟和强渡大渡河等条目体现军事行动与民族工作交织。",
       "summaryEn": "An important commander in the Central Red Army advance units. His timeline links the Yihai alliance and the Dadu River crossing, where military action and ethnic-relations work intersected.",
       "portrait": "",
       "themeTags": [
@@ -11720,7 +11720,7 @@
       "hometown": "四川成都",
       "hometownEn": "Chengdu, Sichuan",
       "forceId": "red_fourth",
-      "summary": "红四方面军高级指挥员。会宁会师前后在阻击战中牺牲，其人物线提醒观众：胜利节点背后仍有掩护与牺牲。",
+      "summary": "红四方面军高级指挥员。会宁会师前后在阻击战中牺牲，其人物线提醒观众：胜利记录背后仍有掩护与牺牲。",
       "summaryEn": "A senior commander of the Red Fourth Front Army. He died in covering actions around the final convergence, reminding viewers that victory nodes still carried sacrifice.",
       "portrait": "",
       "themeTags": [
@@ -11745,7 +11745,7 @@
       "hometown": "湖南湘潭",
       "hometownEn": "Xiangtan, Hunan",
       "forceId": "red_first",
-      "summary": "中央红军重要军事指挥员。人物线连接出发、娄山关、吴起镇和直罗镇等节点，体现长征后期从突围到立足陕北的军事转变。",
+      "summary": "中央红军重要军事指挥员。人物线连接出发、娄山关、吴起镇和直罗镇等条目，体现长征后期从突围到立足陕北的军事转变。",
       "summaryEn": "A major commander of the Central Red Army. His timeline connects the departure, Loushan Pass, Wuqi, and Zhiluozhen, showing the shift from breakout to foothold in northern Shaanxi.",
       "portrait": "",
       "themeTags": [
@@ -11770,7 +11770,7 @@
       "hometown": "江苏南汇",
       "hometownEn": "Nanhui, Jiangsu",
       "forceId": "red_first",
-      "summary": "中共中央重要领导人。人物线集中在通道、遵义、扎西、榜罗镇等会议节点，体现长征中的组织与路线调整。",
+      "summary": "中共中央重要领导人。人物线集中在通道、遵义、扎西、榜罗镇等会议条目，体现长征中的组织与路线调整。",
       "summaryEn": "A major central leader whose timeline focuses on the Tongdao, Zunyi, Zhaxi, and Bangluo meetings, showing organizational and strategic adjustment during the march.",
       "portrait": "",
       "themeTags": [
@@ -11795,7 +11795,7 @@
       "hometown": "安徽泾县",
       "hometownEn": "Jingxian, Anhui",
       "forceId": "red_first",
-      "summary": "中共中央与红军领导成员之一。遵义会议等节点中的人物线用于呈现长征决策层内部的调整过程。",
+      "summary": "中共中央与红军领导成员之一。遵义会议等条目中的人物线用于呈现长征决策层内部的调整过程。",
       "summaryEn": "A central Party and Red Army leader. His timeline around the Zunyi Meeting shows the internal adjustment of leadership during the Long March.",
       "portrait": "",
       "themeTags": [
@@ -11820,7 +11820,7 @@
       "hometown": "江西永新",
       "hometownEn": "Yongxin, Jiangxi",
       "forceId": "red_first",
-      "summary": "参加中央红军长征。川南生女并托孤的节点把战争行军、家庭分离和女性亲历者的痛苦联系在一起。",
+      "summary": "参加中央红军长征。川南生女并托孤的条目把战争行军、家庭分离和女性亲历者的痛苦联系在一起。",
       "summaryEn": "A participant in the Central Red Army's Long March. The southern Sichuan childbirth and entrusting episode connects military movement, family separation, and women's lived experience.",
       "portrait": "",
       "themeTags": [
@@ -12194,13 +12194,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "shaanbei_red",
-      "summary": "Steam 文本中出现的陕甘边早期组织和军事行动相关人物，用于补足西北根据地前史线索。",
+      "summary": "补充材料中出现的陕甘边早期组织和军事行动相关人物，用于补足西北根据地前史线索。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "陕甘边",
         "根据地前史",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12218,13 +12218,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "shaanbei_red",
-      "summary": "Steam 文本中作为陕甘边早期红军干部出现，关联红二十六军与照金、南梁等根据地建设线索。",
+      "summary": "补充材料中作为陕甘边早期红军干部出现，关联红二十六军与照金、南梁等根据地建设线索。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "陕甘边",
         "红二十六军",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12242,13 +12242,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "shaanbei_red",
-      "summary": "Steam 文本中出现于照金和陕甘边特委相关叙述，用于呈现根据地组织层面的前史。",
+      "summary": "补充材料中出现于照金和陕甘边特委相关叙述，用于呈现根据地组织层面的前史。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "照金",
         "陕甘边特委",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12266,13 +12266,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "shaanbei_red",
-      "summary": "Steam 文本中出现于陕甘边革命委员会相关叙述，补充根据地政权建设人物线索。",
+      "summary": "补充材料中出现于陕甘边革命委员会相关叙述，补充根据地政权建设人物线索。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "陕甘边",
         "革命委员会",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12290,13 +12290,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "shaanbei_red",
-      "summary": "Steam 文本中出现于陕甘边红军临时总指挥部和红二十六军相关叙述。",
+      "summary": "补充材料中出现于陕甘边红军临时总指挥部和红二十六军相关叙述。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "陕甘边",
         "红二十六军",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12314,13 +12314,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "shaanbei_red",
-      "summary": "Steam 文本中多次出现于陕甘边、陕北根据地统一领导和军事组织相关叙述。",
+      "summary": "补充材料中多次出现于陕甘边、陕北根据地统一领导和军事组织相关叙述。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "西北根据地",
         "政治工作",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12338,13 +12338,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "shaanbei_red",
-      "summary": "Steam 文本中出现于陕北红军游击队总指挥部等组织建设线索。",
+      "summary": "补充材料中出现于陕北红军游击队总指挥部等组织建设线索。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "陕北红军",
         "组织建设",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12362,13 +12362,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "shaanbei_red",
-      "summary": "Steam 文本中出现于陕北游击队和西北红军相关叙述，补充落脚点形成前的地方武装线索。",
+      "summary": "补充材料中出现于陕北游击队和西北红军相关叙述，补充落脚点形成前的地方武装线索。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "陕北游击队",
         "西北红军",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12386,13 +12386,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "shaanbei_red",
-      "summary": "Steam 文本中出现于红二十七军第八十四师相关叙述，是陕北根据地武装整编线索人物。",
+      "summary": "补充材料中出现于红二十七军第八十四师相关叙述，是陕北根据地武装整编线索人物。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "红二十七军",
         "整编",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12410,13 +12410,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "shaanbei_red",
-      "summary": "Steam 文本中出现于陕北红军整编与根据地建设相关叙述。",
+      "summary": "补充材料中出现于陕北红军整编与根据地建设相关叙述。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "陕北根据地",
         "整编",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12434,13 +12434,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "shaanbei_red",
-      "summary": "Steam 文本中出现于陕北苏维埃政府成立等根据地政权建设线索。",
+      "summary": "补充材料中出现于陕北苏维埃政府成立等根据地政权建设线索。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "陕北苏维埃",
         "根据地建设",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12458,13 +12458,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "red_first",
-      "summary": "Steam 文本中以潘健行、潘汉年等称谓出现，关联中央红军战略转移前的秘密谈判线索。",
+      "summary": "补充材料中以潘健行、潘汉年等称谓出现，关联中央红军战略转移前的秘密谈判线索。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "寻乌会谈",
         "战略转移",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12482,13 +12482,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "red_first",
-      "summary": "Steam 文本中出现于中央红军转移前后秘密接洽和行动准备线索。",
+      "summary": "补充材料中出现于中央红军转移前后秘密接洽和行动准备线索。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "战略转移",
         "谈判",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12506,13 +12506,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "enemy_kmt",
-      "summary": "Steam 文本中作为粤军方面人物出现，关联中央红军转移前的秘密谈判与借道线索。",
+      "summary": "补充材料中作为粤军方面人物出现，关联中央红军转移前的秘密谈判与借道线索。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "粤军",
         "寻乌会谈",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12530,13 +12530,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "enemy_kmt",
-      "summary": "Steam 文本中作为桂军方面人物出现，用于说明湘江前后敌军部署和封锁压力。",
+      "summary": "补充材料中作为桂军方面人物出现，用于说明湘江前后敌军部署和封锁压力。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "桂军",
         "湘江",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12554,13 +12554,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "enemy_kmt",
-      "summary": "Steam 文本中多次出现于湘军追堵、湖南封锁和红二、红六军团牵制行动叙述。",
+      "summary": "补充材料中多次出现于湘军追堵、湖南封锁和红二、红六军团牵制行动叙述。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "湘军",
         "追堵",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12578,13 +12578,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "enemy_kmt",
-      "summary": "Steam 文本中出现于中央红军和红二、红六军团周边追堵部署线索。",
+      "summary": "补充材料中出现于中央红军和红二、红六军团周边追堵部署线索。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "追堵",
         "国民党军",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12602,13 +12602,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "enemy_kmt",
-      "summary": "Steam 文本中出现于鄂豫皖和红二十五军所处军事压力背景。",
+      "summary": "补充材料中出现于鄂豫皖和红二十五军所处军事压力背景。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "鄂豫皖",
         "东北军",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12626,13 +12626,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "red_25th",
-      "summary": "Steam 文本中出现于红二十五军鄂豫皖根据地和战略转移前后叙述。",
+      "summary": "补充材料中出现于红二十五军鄂豫皖根据地和战略转移前后叙述。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "红二十五军",
         "鄂豫皖",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12650,13 +12650,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "red_25th",
-      "summary": "Steam 文本中出现于鄂东北道委和红二十五军行动决策相关叙述。",
+      "summary": "补充材料中出现于鄂东北道委和红二十五军行动决策相关叙述。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "鄂东北",
         "红二十五军",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12674,13 +12674,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "red_7th_advance",
-      "summary": "Steam 文本中出现于红七军团北上抗日先遣队叙述，是先遣队人物线索的核心之一。",
+      "summary": "补充材料中出现于红七军团北上抗日先遣队叙述，是先遣队人物线索的核心之一。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "红七军团",
         "北上抗日先遣队",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12698,13 +12698,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "red_7th_advance",
-      "summary": "Steam 文本中出现于红七军团北上抗日先遣队相关战斗和转移叙述。",
+      "summary": "补充材料中出现于红七军团北上抗日先遣队相关战斗和转移叙述。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "红七军团",
         "北上抗日先遣队",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12722,13 +12722,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "red_7th_advance",
-      "summary": "Steam 文本中出现于红七军团北上抗日先遣队战斗叙述，连接先遣队与后续革命军事人物线索。",
+      "summary": "补充材料中出现于红七军团北上抗日先遣队战斗叙述，连接先遣队与后续革命军事人物线索。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "红七军团",
         "北上抗日先遣队",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12746,13 +12746,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "red_fourth",
-      "summary": "Steam 文本和项目路线中均可关联红四方面军行动，用于补足红四方面军人物层。",
+      "summary": "补充材料和项目路线中均可关联红四方面军行动，用于补足红四方面军人物层。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "红四方面军",
         "北上",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12770,13 +12770,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "enemy_kmt",
-      "summary": "Steam 文本中出现于川军与红四方面军作战背景，补充川陕苏区和嘉陵江前后的军事压力。",
+      "summary": "补充材料中出现于川军与红四方面军作战背景，补充川陕苏区和嘉陵江前后的军事压力。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "川军",
         "川陕苏区",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12794,13 +12794,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "enemy_kmt",
-      "summary": "Steam 文本中出现于四川地方军政背景，用于说明红四方面军长征前后的区域压力。",
+      "summary": "补充材料中出现于四川地方军政背景，用于说明红四方面军长征前后的区域压力。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "川军",
         "四川地方势力",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12818,13 +12818,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "red_second",
-      "summary": "Steam 文本中出现于湘鄂川黔边临时省委和红二、红六军团早期行动叙述。",
+      "summary": "补充材料中出现于湘鄂川黔边临时省委和红二、红六军团早期行动叙述。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "湘鄂川黔",
         "红二、红六军团",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12842,13 +12842,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "red_second",
-      "summary": "Steam 文本中出现于湘鄂川黔边临时省委相关叙述，补充红二、红六军团组织层人物。",
+      "summary": "补充材料中出现于湘鄂川黔边临时省委相关叙述，补充红二、红六军团组织层人物。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "湘鄂川黔",
         "组织建设",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12866,13 +12866,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "enemy_kmt",
-      "summary": "Steam 文本中出现于红二、红六军团湘西攻势和沅陵、常德周边军事压力。",
+      "summary": "补充材料中出现于红二、红六军团湘西攻势和沅陵、常德周边军事压力。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "湘西",
         "红二、红六军团",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12890,13 +12890,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "enemy_kmt",
-      "summary": "Steam 文本中出现于沅陵防守和红二、红六军团攻势相关叙述。",
+      "summary": "补充材料中出现于沅陵防守和红二、红六军团攻势相关叙述。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "沅陵",
         "湘军",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12914,13 +12914,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "enemy_kmt",
-      "summary": "Steam 文本中出现于沅陵周边布防线索，作为红二、红六军团湘西行动的对照人物。",
+      "summary": "补充材料中出现于沅陵周边布防线索，作为红二、红六军团湘西行动的对照人物。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "沅陵",
         "湘西攻势",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -12938,13 +12938,13 @@
       "hometown": "",
       "hometownEn": "",
       "forceId": "enemy_kmt",
-      "summary": "Steam 文本中出现于沅陵周边布防线索，补充红二、红六军团行动的地方军事背景。",
+      "summary": "补充材料中出现于沅陵周边布防线索，补充红二、红六军团行动的地方军事背景。",
       "summaryEn": "",
       "portrait": "",
       "themeTags": [
         "沅陵",
         "湘西攻势",
-        "待复核"
+        "补充线索"
       ],
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
@@ -13823,7 +13823,7 @@
       "personId": "he_zizhen",
       "eventId": "rf_19350205_hezizhen",
       "role": "主角",
-      "note": "川南生女并托孤的女性亲历节点",
+      "note": "川南生女并托孤的女性亲历条目",
       "sourceIds": [
         "src_hezizhen_people",
         "src_women_redarmy_81"
@@ -16515,7 +16515,7 @@
         "title": "第一展厅：长征路线全景",
         "titleEn": "Hall 1: Route Panorama",
         "subtitle": "red-map 路线展板",
-        "description": "以现有交互地图作为核心展板，连接路线、事件、人物和会师节点。",
+        "description": "以现有交互地图作为核心展板，连接路线、事件、人物和会师时刻。",
         "theme": "map",
         "sort": 20,
         "primaryExhibitId": "ex_route_map"
@@ -16535,7 +16535,7 @@
         "title": "第三展厅：人物生命时间线",
         "titleEn": "Hall 3: Personal Timelines",
         "subtitle": "从宏大路线回到具体的人",
-        "description": "将人物与事件节点关联，展示每个人在长征叙事中的发展轨迹。",
+        "description": "将人物与事件条目关联，展示每个人在长征叙事中的发展轨迹。",
         "theme": "people",
         "sort": 40,
         "primaryExhibitId": "ex_person_timelines"
@@ -16554,8 +16554,8 @@
         "id": "turning_points",
         "title": "第五展厅：战役、会议与转折",
         "titleEn": "Hall 5: Battles and Turning Points",
-        "subtitle": "关键节点如何改变路线",
-        "description": "集中展示会议、战役、渡河、会师等决定路线变化的节点。",
+        "subtitle": "关键环节如何改变路线",
+        "description": "集中展示会议、战役、渡河、会师等决定路线变化的条目。",
         "theme": "turning",
         "sort": 50,
         "primaryExhibitId": "ex_turning_points"
@@ -16608,8 +16608,8 @@
         "title": "资料档案与来源审校",
         "titleEn": "Archives and Source Review",
         "type": "archive",
-        "summary": "所有展板都保留来源 ID、资料口径和确定性字段。后续微信文章、Steam 文本和地方志材料都应先进入研究目录，再整理为候选条目。",
-        "summaryEn": "Every panel keeps source IDs, certainty, and evidence notes. Future WeChat articles, Steam text, and local gazetteer materials should enter the research folder first and then become candidate entries.",
+        "summary": "所有展板都保留来源 ID、资料口径和确定性字段。后续微信文章、游戏文本和地方志材料都应先进入研究目录，再整理为候选条目。",
+        "summaryEn": "Every panel keeps source IDs, certainty, and evidence notes. Future WeChat articles, game text, and local gazetteer materials should enter the research folder first and then become candidate entries.",
         "relatedEventIds": [],
         "relatedPersonIds": [],
         "actionLabel": "查看资料规则",
@@ -16685,7 +16685,7 @@
         "title": "英烈画像与名录展板",
         "titleEn": "Martyr Portrait and Name Register",
         "type": "portrait-wall",
-        "summary": "以烈士姓名、所属部队、牺牲节点、资料可信度组织画像墙。没有照片的个体也以“待考证铭牌”呈现，让缺失本身成为展览内容。",
+        "summary": "以烈士姓名、所属部队、牺牲记录、资料可信度组织画像墙。没有照片的个体也以“待考证铭牌”呈现，让缺失本身成为展览内容。",
         "summaryEn": "The portrait wall is organized by name, force, sacrifice node, and source certainty. Individuals without surviving photographs are shown with research plaques so absence itself remains visible.",
         "relatedEventIds": [
           "rf_19341210_chenshuxiang",
@@ -16749,7 +16749,7 @@
         "title": "人物生命时间线展板",
         "titleEn": "Personal Timeline Panels",
         "type": "timeline",
-        "summary": "每个人物页都像一份微型传记：从生平到战场，从节点到归宿。点开一个名字，就能看到他或她如何在时代激流中留下自己的坐标。",
+        "summary": "每个人物页都像一份微型传记：从生平到战场，从条目到归宿。点开一个名字，就能看到他或她如何在时代激流中留下自己的坐标。",
         "summaryEn": "Each person panel combines basic biography, related events, route nodes, and source notes. Selecting a person reveals how their life connects to the map.",
         "relatedEventIds": [
           "rf_19350522_yihai_alliance",
@@ -16807,7 +16807,7 @@
         "title": "长征星火路线交互展板",
         "titleEn": "Interactive Long March Spark Route Panel",
         "type": "map",
-        "summary": "嵌入现有 red-map 作为核心路线展板。地图节点会继续承担事件播放、会师提示和路线筛选功能。",
+        "summary": "嵌入现有 red-map 作为核心路线展板。地图条目会继续承担事件播放、会师提示和路线筛选功能。",
         "summaryEn": "The existing red-map is preserved as the core route panel, keeping event playback, convergence prompts, and route filtering.",
         "relatedEventIds": [
           "rf_19341010_ruijin",
@@ -16820,7 +16820,7 @@
           "zhu_de"
         ],
         "actionLabel": "打开完整地图",
-        "actionHref": "index.html",
+        "actionHref": "map.html",
         "sort": 10,
         "sourceIds": [
           "src_cpc_century",
@@ -16830,10 +16830,10 @@
       {
         "id": "ex_turning_points",
         "hallId": "turning_points",
-        "title": "战役会议与转折节点",
+        "title": "战役会议与转折条目",
         "titleEn": "Battles Meetings and Turning Points",
         "type": "event-cluster",
-        "summary": "将遵义会议、四渡赤水、强渡大渡河、会宁与将台堡会师等节点组织为路线变化的因果链。",
+        "summary": "将遵义会议、四渡赤水、强渡大渡河、会宁与将台堡会师等条目组织为路线变化的因果链。",
         "summaryEn": "This panel groups Zunyi, the Chishui maneuvers, the Dadu River crossing, Huining, and Jiangtaibao into a chain of decisions and route changes.",
         "relatedEventIds": [
           "rf_19350115_zunyi_meeting",
@@ -16850,7 +16850,7 @@
           "he_long",
           "ren_bishi"
         ],
-        "actionLabel": "查看转折节点",
+        "actionLabel": "查看转折条目",
         "actionHref": "museum.html#turning_points",
         "sort": 10,
         "sourceIds": [
@@ -16946,10 +16946,10 @@
       {
         "id": "art_yihai_alliance",
         "hallId": "turning_points",
-        "title": "彝海结盟节点",
+        "title": "彝海结盟条目",
         "titleEn": "Yihai Alliance Node",
         "artifactType": "event-evidence",
-        "summary": "彝海结盟展现长征中的民族工作、纪律和地方协助，不只是军事行军节点。",
+        "summary": "彝海结盟展现长征中的民族工作、纪律和地方协助，不只是军事行军条目。",
         "summaryEn": "The Yihai alliance shows ethnic-relations work, discipline, and local support during the Long March, not merely a marching node.",
         "relatedPersonIds": [
           "liu_bocheng",
@@ -17455,6 +17455,6 @@
     "overallParticipantsApprox": 200000,
     "overallLossesApprox": 150000,
     "survivorsApprox": "5–6万人",
-    "note": "动态统计采用史实口径与节点累积结合。"
+    "note": "动态统计采用史实口径与点位累积结合。"
   }
 }

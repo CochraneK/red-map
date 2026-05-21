@@ -85,7 +85,7 @@ function renderRouteExhibit() {
     <p>${escapeHTML(exhibit.summary)}</p>
     ${imageFigure(visual, 'panel-image')}
     <div class="tag-row">${exhibit.relatedEventIds.map(id => `<span>${escapeHTML(getEvent(id)?.location?.name || id)}</span>`).join('')}</div>
-    <a class="panel-action" href="${escapeAttr(exhibit.actionHref || 'index.html')}">${escapeHTML(exhibit.actionLabel || '打开地图')}</a>`;
+    <a class="panel-action" href="${escapeAttr(exhibit.actionHref || 'map.html')}">${escapeHTML(exhibit.actionLabel || '打开地图')}</a>`;
 }
 
 function renderModuleCatalog() {
@@ -276,7 +276,7 @@ function placeCatalogCard(item) {
     <p>${escapeHTML(item.body)}</p>
     ${moduleMeta(item.chips.slice(1))}
     ${moduleTags(item.tags)}
-    ${firstEvent ? `<a class="module-action" href="index.html#event=${encodeURIComponent(firstEvent.id)}">地图定位</a>` : ''}
+    ${firstEvent ? `<a class="module-action" href="map.html#event=${encodeURIComponent(firstEvent.id)}">地图定位</a>` : ''}
   </article>`;
 }
 
@@ -287,7 +287,7 @@ function eventCatalogCard(item) {
     <p>${escapeHTML(item.body)}</p>
     ${moduleMeta(item.chips.slice(1))}
     ${moduleTags(item.tags)}
-    <a class="module-action" href="index.html#event=${encodeURIComponent(item.id)}">地图查看</a>
+    <a class="module-action" href="map.html#event=${encodeURIComponent(item.id)}">地图查看</a>
   </article>`;
 }
 
@@ -425,7 +425,7 @@ function timelineItem(event, rel) {
     <div>
       <h4>${escapeHTML(event.title)}</h4>
       <p>${escapeHTML(rel.note || event.description || '')}</p>
-      <a href="index.html#event=${encodeURIComponent(event.id)}">在路线地图中查看</a>
+      <a href="map.html#event=${encodeURIComponent(event.id)}">在路线地图中查看</a>
     </div>
   </div>`;
 }

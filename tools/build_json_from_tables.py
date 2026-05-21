@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Build data/long_march_events.json from data_edit CSV tables.
 
@@ -277,7 +277,7 @@ def build(strict=True):
         check_refs('museum_halls.csv', 0, f'primaryExhibitId for {hid}', [primary], exhibit_ids, errors)
     output={**metadata, 'sources':sources, 'subjects':sorted(subjects,key=lambda s:(int(s.get('sort') or 999),s.get('id',''))), 'events':events,
             'persons':persons, 'personEvents':person_events, 'museum': {'halls':museum_halls, 'exhibits':exhibits, 'artifacts':artifacts, 'visualAssets':visual_assets},
-            'statsModel': {'startDate': metadata['timeRange']['start'], 'endDate': metadata['timeRange']['end'], 'centralDistanceLi':25000, 'overallParticipantsApprox':200000, 'overallLossesApprox':150000, 'survivorsApprox':'5–6万人', 'note':'动态统计采用史实口径与节点累积结合。'}}
+            'statsModel': {'startDate': metadata['timeRange']['start'], 'endDate': metadata['timeRange']['end'], 'centralDistanceLi':25000, 'overallParticipantsApprox':200000, 'overallLossesApprox':150000, 'survivorsApprox':'5–6万人', 'note':'动态统计采用史实口径与点位累积结合。'}}
     if strict and errors: raise ValueError('\n'.join(errors))
     return output, warnings, errors
 
@@ -298,3 +298,5 @@ def main():
         print('\n[ERRORS - no-strict]'); [print('-',e) for e in errors]
     return 0
 if __name__ == '__main__': raise SystemExit(main())
+
+

@@ -5,6 +5,7 @@ cd /d %~dp0
 set PORT=8000
 set MUSEUM_URL=http://localhost:%PORT%/museum.html
 set HOME_URL=http://localhost:%PORT%/
+set MAP_URL=http://localhost:%PORT%/map.html
 set EN_URL=http://localhost:%PORT%/index-en.html
 set ADMIN_URL=http://localhost:%PORT%/admin/index.html
 
@@ -18,6 +19,9 @@ echo  %MUSEUM_URL%
 echo.
 echo  Chinese home page:
 echo  %HOME_URL%
+echo.
+echo  Route map:
+echo  %MAP_URL%
 echo.
 echo  English page:
 echo  %EN_URL%

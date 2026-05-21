@@ -23,6 +23,7 @@ def check_required_files() -> None:
     print("[CHECK] required project files")
     required = [
         "index.html",
+        "map.html",
         "index-en.html",
         "museum.html",
         "museum-immersive.html",

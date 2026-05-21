@@ -217,7 +217,7 @@ body {
   width: min(340px, calc(100vw - 48px));
   max-height: 42vh;
   overflow: auto;
-  display: grid;
+  display: none;
   gap: 8px;
   padding: 10px;
   border: 1px solid var(--line);
@@ -332,13 +332,7 @@ body {
   .focus-meta { gap: 6px; }
   .focus-action { padding: 9px 12px; }
   .index-strip {
-    right: 12px;
-    left: 12px;
-    top: 152px;
-    bottom: auto;
-    width: auto;
-    max-height: 18vh;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: none;
   }
   .walk-controls {
     left: 12px;

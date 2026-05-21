@@ -1,10 +1,10 @@
-/**
+﻿/**
  * 红军长征星火路线 v5
  * - 数据源：data/long_march_events.json
  * - 播放：全局时间顺序
  * - 连线：只连接同一部队/路线
  * - 色彩：按部队统一，不再按事件类型染色
- * - 节点：取消内部文字，减少地图噪音；最新节点更大且置顶
+ * - 点位：取消内部文字，减少地图噪音；最新点位更大且置顶
  * - 特效：会师、牺牲、七律诗句、敌军围堵触发叙事横幅
  */
 
@@ -51,8 +51,8 @@ const UI = {
     appTitle: '红军长征星火路线',
     subtitle: '多路红军星火铺开 · 突破围追堵截 · 最终大会师',
     routes: '路线', all: '全选', clear: '清空', speed: '速度', editor: '本地数据编辑',
-    statsTitle: '动态统计', joinedLabel: '参征人数', lossLabel: '损失人数', victoryLabel: '胜利节点', enemyLabel: '歼俘敌', distanceLabel: '里程推进', durationLabel: '历时',
-    statsNote: '统计为史实口径与节点累积结合：参征/损失为约数，歼俘敌只汇总有明确数字的节点。',
+    statsTitle: '动态统计', joinedLabel: '参征人数', lossLabel: '损失人数', victoryLabel: '胜利记录', enemyLabel: '歼俘敌', distanceLabel: '里程推进', durationLabel: '历时',
+    statsNote: '统计为史实口径与点位累积结合：参征/损失为约数，歼俘敌只汇总有明确数字的条目。',
     detail: '事件详情', time: '时间', force: '路线', type: '类型', place: '地点', result: '结果', casualties: '损失', participants: '人物 / 群体',
     loading: '正在加载长征数据...', langBtn: 'English', days: '天', li: '里', approx: '约',
     meetingKicker: '会师', meetingSubtitle: '分散的星火汇流，长征胜利向前推进。',
@@ -643,3 +643,5 @@ function hideLoading() { document.getElementById('loading')?.classList.add('hidd
 function showLoadingError(err) { const loading = document.getElementById('loading'); if (!loading) return; loading.innerHTML = `<div class="loading-error"><h2>数据加载失败</h2><p>${escapeHTML(err.message || err)}</p><p>请使用项目根目录的 <code>start_server.bat</code> 启动。</p></div>`; }
 
 window.marchMap = { data: () => marchData, sortedEvents: () => sortedEvents, showEvent: index => { currentSortedIndex = Math.max(0, Math.min(sortedEvents.length - 1, Number(index) || 0)); renderCurrentState(true); }, activeForces: () => [...activeForces] };
+
+

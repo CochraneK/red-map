@@ -1,4 +1,4 @@
-# 红军长征星火路线
+﻿# 红军长征星火路线
 
 一个以“星火铺开、分路前进、最终会师”为叙事逻辑的红军长征交互式路线项目。项目强调多路红军各自成线、全局时间顺序播放、同一路线独立连线，并通过会师红旗、人物事迹、战役会议、敌军围追堵截示意线，呈现长征过程中的艰险、牺牲与汇流。
 
@@ -15,7 +15,7 @@
 
 当前数据规模：
 
-- `386` 个事件节点，其中 `246` 条来自 Steam 游戏文本抽取的补充线索
+- `386` 个事件条目，其中 `246` 条来自 补充材料抽取的补充线索
 - `67` 个人物档案
 - `348` 条人物-事件关联
 - `23` 个主体/部队/人物路线层
@@ -26,17 +26,17 @@
 ## 功能特性
 
 - **多路线并行**：红一方面军、红二十五军、红四方面军、红二方面军、陕甘红军分别独立连线，国民党军作为半透明灰色追堵线。
-- **全局时间播放**：底部时间轴按事件时间顺序推进，但地图连线只连接同一路线的连续节点。
+- **全局时间播放**：底部时间轴按事件时间顺序推进，但地图连线只连接同一路线的连续点位。
 - **会师红旗特效**：凡涉及会师的事件，地图上会浮现红旗，经过淡入、轻微抖动、静止、淡出后继续播放。
 - **统一军团颜色**：每一路线固定颜色，人物、战役、会议、牺牲等事件都继承所在路线颜色。
 - **下属部队展示**：右侧路线面板展示各路红军下属部队，采用小型标签，不额外设置勾选项。
-- **中英文版本**：中文首页 `index.html`，英文页面 `index-en.html`，也可在页面右上角切换语言。
+- **首页即博物馆**：`index.html` 会直接进入 `museum.html`；原互动路线地图保留为 `map.html`，英文路线页保留为 `index-en.html`。
 - **手机端极简模式**：手机端只保留地图与底部播放条，避免卡片遮挡地图。
 - **本地数据编辑器**：后台可编辑事件、主体、颜色、下属部队和统计字段，并支持导出 JSON。
 - **数字博物馆**：`museum.html` 以“总序厅 → 路线展板 → 英烈画像墙 → 人物时间线 → 暗线代价 → 战役转折 → 地点档案 → 资料层 → 策展方法 → 纪念空间”的层级组织内容，`red-map` 是第一展厅的核心展板。
-- **沉浸式 3D 展厅**：`museum-immersive.html` 在保留原 `museum.html` 页面之外，新增走廊式 Three.js 参观视角。观众可前进、后退、滚轮或键盘漫游；事件模式会展开事件牌阵列，人物与牺牲模式会生成缓慢漂移、大小错落的头像云。
+- **沉浸式 3D 展厅**：`museum-immersive.html` 在保留原 `museum.html` 页面之外，新增走廊式 Three.js 参观视角。观众可前进、后退、滚轮或键盘漫游；事件、人物与牺牲内容以更克制的展柜式阵列呈现，避免信息漂浮过载。
 - **资料总目录**：博物馆内新增人物、地点、事件、部队四类模块列表，可搜索、统计、跳转到人物详情或路线地图。
-- **人物时间线**：新增人物档案与人物-事件关联表，可围绕每名英雄烈士沉淀出生、参军、战斗、牺牲、纪念等节点。
+- **人物时间线**：新增人物档案与人物-事件关联表，可围绕每名英雄烈士沉淀出生、参军、战斗、牺牲、纪念等阶段。
 - **Steam 文本融入流程**：提供 Unreal 文本抽取与候选导入脚本，可把本地游戏文本整理为补充路线事件、人物档案和人物-事件关联，而不是直接发布原文。
 
 ## 数字博物馆
@@ -81,6 +81,9 @@ http://localhost:8000/museum-immersive.html
 
 Chinese home page:
 http://localhost:8000/
+
+Route map:
+http://localhost:8000/map.html
 
 English page:
 http://localhost:8000/index-en.html
@@ -132,7 +135,7 @@ python tools/check_project.py
 
 该检查会验证 JSON 格式、表格源文件与发布 JSON 是否一致、前后台 JS 语法，以及后台是否仍存在 inline 事件绑定。
 
-## Steam 游戏文本抽取
+## 补充材料抽取
 
 如果要整理本机 Steam 游戏《长征 1934-1936》的文本，可先在 Steam 客户端中进入“管理 → 浏览本地文件”，复制游戏目录路径。这个游戏是 Unreal Engine 4 项目，剧情和数据文本主要在 `.pak` 包内，需要先解包再抽取 FString。
 
@@ -171,7 +174,7 @@ tools/extract_steam_texts.py
 
 这些导出内容需要人工审校版权与史实口径后，再整理进 `events.csv`、`persons.csv`、`person_events.csv` 或展品表。
 
-本仓库已经用 `tools/import_steam_timeline.py` 从 `unreal_timeline_candidates.csv` 中筛选并改写了 `246` 条事件线索，写入 `data_edit/events.csv`；同时补入 `32` 个 Steam 文本人物、`253` 条人物-事件自动关联和 `18` 张可公开引用的 Wikimedia Commons 人物图片，并新增来源 `src_steam_longmarch_1934_1936`。复用流程：
+本仓库已经用 `tools/import_steam_timeline.py` 从 `unreal_timeline_candidates.csv` 中筛选并改写了 `246` 条事件线索，写入 `data_edit/events.csv`；同时补入 `32` 个游戏文本人物、`253` 条人物-事件自动关联和一批已本地化保存的公开图片资产，并新增来源 `src_steam_longmarch_1934_1936`。复用流程：
 
 ```cmd
 python tools\import_steam_timeline.py
@@ -198,7 +201,8 @@ python tools\check_project.py
 
 ```text
 .
-├── index.html                    # 中文首页
+├── index.html                    # 首页跳转到数字博物馆
+├── map.html                      # 中文互动路线地图
 ├── index-en.html                 # 英文页面
 ├── museum.html                   # 数字博物馆
 ├── museum-immersive.html         # Three.js 沉浸式 3D 展厅
@@ -252,11 +256,11 @@ An interactive Long March route project built around the narrative logic of scat
 - **Convergence flag effect**: Every convergence event triggers a red flag animation with fade-in, subtle shake, a short hold, and fade-out before playback continues.
 - **Route-based color system**: Each route keeps one consistent color. Battles, meetings, sacrifices, people-related events, and other nodes inherit the color of their route.
 - **Sub-unit display**: The right-side route panel lists smaller sub-units as compact tags without adding extra checkboxes.
-- **Bilingual pages**: Chinese page at `index.html`, English page at `index-en.html`, plus an in-page language switcher.
+- **Museum-first home**: `index.html` now opens the digital museum, while the original interactive route map remains available at `map.html`; the English route page remains `index-en.html`.
 - **Mobile minimal mode**: On mobile, only the map and bottom playback bar are shown so cards do not cover the route.
 - **Local data editor**: The admin panel allows editing events and subjects, then exporting JSON.
 - **Digital museum**: `museum.html` organizes the project into a foyer, route exhibit, martyrs wall, person timelines, turning points, place memory, archive sources, and memorial path.
-- **Immersive 3D museum**: `museum-immersive.html` keeps the original `museum.html` experience intact and adds a corridor-style Three.js museum. Visitors can move forward or backward with buttons, wheel, or keyboard controls; event mode unfolds a field of event boards, while people and martyr modes render a slowly drifting portrait cloud with varied sizes.
+- **Immersive 3D museum**: `museum-immersive.html` keeps the original `museum.html` experience intact and adds a corridor-style Three.js museum. Visitors can move forward or backward with buttons, wheel, or keyboard controls; event, people, and martyr modes use restrained gallery arrays instead of an overloaded floating cloud.
 - **Catalog modules**: The museum includes searchable modules for people, places, events, and forces, all derived from the same JSON dataset.
 - **Person timelines**: `persons.csv` and `person_events.csv` let each hero or martyr accumulate a structured life timeline.
 - **Steam text curation**: `tools/extract_unreal_text_assets.py` extracts local Unreal text candidates, and `tools/import_steam_timeline.py` imports curated low-certainty events, people, person-event links, and image records into the table data.
@@ -352,4 +356,6 @@ The default output directory is `steam_text_dump/`. Review the exported JSONL/Ma
 4. Open the generated Pages URL after deployment.
 
 If the deployed page still shows old styling, clear browser cache and confirm that the latest `css/style.css` and `docs/` images have been pushed.
+
+
 
