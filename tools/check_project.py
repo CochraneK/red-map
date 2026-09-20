@@ -117,6 +117,12 @@ def check_source_registry_metadata() -> None:
 def check_required_files() -> None:
     print("[CHECK] required project files")
     required = [
+        "AGENTS.md",
+        "HANDOFF.md",
+        "STATUS.md",
+        "DECISIONS.md",
+        "PROVENANCE_STATUS.md",
+        "docs/architecture.md",
         "index.html",
         "map.html",
         "index-en.html",
@@ -129,6 +135,8 @@ def check_required_files() -> None:
         "js/museum.js",
         "js/immersive.js",
         "admin/index.html",
+        "data_edit/sources.csv",
+        "data_edit/events.csv",
         "data_edit/persons.csv",
         "data_edit/person_events.csv",
         "data_edit/museum_halls.csv",
