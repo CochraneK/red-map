@@ -40,7 +40,12 @@ jobs:
       - name: Canonical public identity
         shell: bash
         run: |
-          if git grep -n -I -E 'Cunyi Kang|CunyiKang|cunyikang|Cochrane Kang|CochraneKang' -- ':!*.png' ':!*.jpg' ':!*.jpeg' ':!*.webp'; then
+          old_first='Cunyi'
+          old_last='Kang'
+          old_lower='cunyi'
+          canonical_first='Cochrane'
+          pattern="${old_first} ${old_last}|${old_first}${old_last}|${old_lower}$(printf '%s' "$old_last" | tr '[:upper:]' '[:lower:]')|${canonical_first} ${old_last}|${canonical_first}${old_last}"
+          if git grep -n -I -E "$pattern" -- ':!*.png' ':!*.jpg' ':!*.jpeg' ':!*.webp'; then
             echo "::error::Legacy repository-facing identity found"
             exit 1
           fi
