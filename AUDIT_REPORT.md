@@ -1,48 +1,61 @@
-﻿# 项目审计报告
+# 项目审计报告
 
 ## 当前状态
 
-- subjects：22 个，其中包含 `enemy_kmt` 敌军动向叙事层。
-- sources：37 个，来源保留在数据中用于审校，前台不展示。
-- events：140 条。
-- persons：35 个种子人物档案。
-- personEvents：95 条人物-事件关联。
-- museum：10 个展厅、10 个展板、5 个档案/物件类展品、22 条图片资产。
-- `data_edit/*.csv` 可以完整复现 `data/long_march_events.json`。
-- 英文模式已补齐 `titleEn`、`descriptionEn`、`location.nameEn`，不再使用混入中文地名的模板英文。
+本文件不再手工维护 subjects / sources / events / persons / museum / visual assets 的具体数量。数据表持续增长时，静态数字很容易与真实仓库状态漂移。
 
-## 本轮修订
+当前数量与一致性以以下命令的实时输出为准：
 
-1. 后台移除 inline `onclick`，改为 `data-action` 加事件委托。
-2. 后台加载数据失败时显示明确错误页，不再静默空白。
-3. 新增 `tools/check_project.py`，统一校验 JSON、CSV 生成一致性、JS 语法和后台 inline 事件绑定。
-4. 新增 `tools/check_project.bat` 与 `tools/check_project.sh`，方便本地一键检查。
-5. 批量补齐 138 条事件地点英文名，并替换 103 条模板英文标题/描述。
-6. 从 `css/style.css` 中移除 v13-v18 旧事件卡覆盖块，保留 v19-v21 当前设计层，减少样式覆盖链。
-7. 新增 `museum.html`、`css/museum.css`、`js/museum.js`，形成线上数字博物馆入口。
-8. 新增 `persons.csv`、`person_events.csv`、`museum_halls.csv`、`exhibits.csv`、`artifacts.csv`，将人物时间线和展馆层级纳入数据生成流程。
-9. 新增 `tools/extract_steam_texts.py` 及启动脚本，用于从本机 Steam 游戏目录导出可审校文本。
-10. 新增并扩展 `visual_assets.csv`，为数字博物馆接入 Commons 图片和本地运行截图，并保留来源页、署名和许可说明。
-11. 补充洪超、谢子长、罗南辉、程翠林、蔡中等牺牲人物，以及女红军、各路指挥员、政治工作和根据地建设人物。
-12. 数字博物馆新增“策展路径”“暗线代价”“策展方法”和人物类型筛选，按“明线路线、人物透镜、暗线代价、证据层”组织。
-13. 删除未引用的旧截图 `docs/screenshot.png` 和 `docs/screenshot-en.png`。
+```bash
+python tools/check_project.py
+```
 
-## 已验证
+当前审计模型把几类问题分开处理：
 
-- `python tools/check_project.py` 通过。
-- `node --check js/app.js` 通过。
-- `node --check js/museum.js` 通过。
-- `node --check admin/admin.js` 通过。
-- `python tools/build_json_from_tables.py` 可重新生成发布 JSON。
-- `python -m py_compile tools/build_json_from_tables.py tools/check_project.py tools/extract_steam_texts.py` 通过。
-- `python -m json.tool data/long_march_events.json` 通过。
+- **工程一致性**：`data_edit/*.csv` 必须完整复现 `data/long_march_events.json`。
+- **引用完整性**：事件、人物、展板、档案等引用的 source / person / event / hall id 必须存在。
+- **候选材料边界**：仅由本地游戏文本抽取来源支持的公开事件必须保持 `certainty=low`。
+- **第三方材料边界**：原始游戏文本与解包材料必须留在忽略的 `research_private/`。
+- **图片 provenance**：外部图片如果仍只有 `see file page` 等泛化许可信息，会继续作为 provenance 警告，不会被误标为已清权。
+- **史实/解释边界**：自动化检查不替代人工史料审校，也不把地图坐标或概括性路线当成精确历史重建。
 
-## 仍需人工审校
+更完整的状态见 [PROVENANCE_STATUS.md](PROVENANCE_STATUS.md)。
 
-- 敌军路线仍是概括性叙事层，不代表精确军事部署图。
-- 地点经纬度是可视化近似点，建议后续按史料逐点复核。
-- 英文文案已消除模板占位和中英混杂，但部分事件仍适合继续做人工润色。
-- 可继续补充女性红军、卫生队、宣传队、少数民族向导、地方群众支援等微观叙事条目。
-- 数字博物馆目前使用种子人物和展板结构，后续应继续按来源补充烈士、地方群众、纪念设施和实物档案。
-- Steam 游戏抽取出的文本只应作为个人整理线索，正式入库前仍需核对版权、来源和史实准确性。
+## 已建立的工程门禁
 
+- `python tools/check_project.py`：
+  - 必需文件；
+  - 发布 JSON 结构；
+  - CSV → JSON 可复现性；
+  - Python / JavaScript 语法；
+  - 后台事件绑定约束；
+  - 来源登记必要字段；
+  - 游戏文本候选的低确定性约束；
+  - 外部图片许可/credit 完整度报告；
+  - 英文占位内容提示。
+- GitHub Actions `Quality`：
+  - 在干净环境运行完整项目检查；
+  - 确认 `research_private/` / `steam_text_dump/` 没有被 Git 跟踪；
+  - 检查公开仓库中的 canonical identity。
+
+## 历史修订摘要
+
+已完成的主要工程重构包括：
+
+1. 后台从 inline handler 改为事件委托。
+2. 后台数据加载失败显式报错。
+3. 建立表格 → JSON 的确定性构建与检查。
+4. 建立数字博物馆、人物时间线、展厅/展板/档案数据层。
+5. 建立本地 Steam / Unreal 文本抽取与候选导入流程。
+6. 将原始第三方抽取材料隔离到 `research_private/`。
+7. 为图片资产保留来源页、credit、license 字段。
+8. 增加 AGENTS / HANDOFF / STATUS / DECISIONS / architecture / provenance 文档，支持跨 Agent 持续维护。
+
+## 仍需人工推进
+
+- 为仅有候选来源的条目逐步补入独立来源，或继续保持低确定性。
+- 对外部图片逐文件补齐精确许可证、作者/机构与 attribution；无法核实的素材应在发布前替换或移除。
+- 对地图坐标、概括性路线和英文策展文案继续人工复核。
+- 对新增史料、解释性文案和第三方材料执行人工来源/版权审校。
+
+工程检查通过只表示仓库契约通过，不表示历史解释、版权许可或事实核验已经全部完成。
