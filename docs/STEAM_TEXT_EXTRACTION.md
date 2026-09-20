@@ -4,11 +4,12 @@
 
 ## 已确认的游戏结构
 
-本机路径：
+先定义两个本地路径变量：
 
-```powershell
-D:\Software\Steam\steamapps\common\长征1934-1936\长征1934-1936
-```
+- `<GAME_DIR>`：Steam 客户端“管理 → 浏览本地文件”打开的游戏目录；
+- `<REPO_DIR>`：本仓库根目录。
+
+不要把开发者机器的绝对路径写回公开文档。原始解包与抽取材料统一留在 `<REPO_DIR>/research_private/`。
 
 这是 Unreal Engine 4 项目，核心内容在：
 
@@ -28,7 +29,8 @@ ChangZheng\Content\Paks\ChangZheng-WindowsNoEditor.pak
 如果 `research_private/tools/repak/repak.exe` 不存在，先下载开源工具：
 
 ```powershell
-$tools = 'D:\Software\codex\red-map\research_private\tools'
+$repo = '<REPO_DIR>'
+$tools = Join-Path $repo 'research_private\tools'
 New-Item -ItemType Directory -Force -Path $tools | Out-Null
 $zip = Join-Path $tools 'repak_cli-x86_64-pc-windows-msvc.zip'
 Invoke-WebRequest -Uri 'https://github.com/trumank/repak/releases/download/v0.2.2/repak_cli-x86_64-pc-windows-msvc.zip' -OutFile $zip
@@ -38,12 +40,12 @@ Expand-Archive -LiteralPath $zip -DestinationPath (Join-Path $tools 'repak') -Fo
 只解包与文本相关的数据资产：
 
 ```powershell
-D:\Software\codex\red-map\research_private\tools\repak\repak.exe unpack -f -q `
-  -o "D:\Software\codex\red-map\research_private\steam_longmarch_unpacked" `
+& "<REPO_DIR>\research_private\tools\repak\repak.exe" unpack -f -q `
+  -o "<REPO_DIR>\research_private\steam_longmarch_unpacked" `
   -i "ChangZheng/Content/Data" `
   -i "ChangZheng/Config" `
   -i "ChangZheng/Content/HUD/UI/scene/certainEvent" `
-  "D:\Software\Steam\steamapps\common\长征1934-1936\长征1934-1936\ChangZheng\Content\Paks\ChangZheng-WindowsNoEditor.pak"
+  "<GAME_DIR>\ChangZheng\Content\Paks\ChangZheng-WindowsNoEditor.pak"
 ```
 
 ## 抽取 Unreal 文本
@@ -52,9 +54,9 @@ D:\Software\codex\red-map\research_private\tools\repak\repak.exe unpack -f -q `
 
 ```powershell
 python tools\extract_unreal_text_assets.py `
-  "D:\Software\codex\red-map\research_private\steam_longmarch_unpacked\ChangZheng\Content\Data" `
+  "<REPO_DIR>\research_private\steam_longmarch_unpacked\ChangZheng\Content\Data" `
   --exclude-glob "StopWords.*" `
-  --out "D:\Software\codex\red-map\research_private\steam_longmarch_unreal_text_timeline" `
+  --out "<REPO_DIR>\research_private\steam_longmarch_unreal_text_timeline" `
   --markdown-limit-per-file 500
 ```
 
@@ -105,3 +107,16 @@ python tools\check_project.py
 - `tools/extract_steam_texts.py`：通用 Steam 文本/二进制候选扫描。
 - `tools/extract_unreal_text_assets.py`：Unreal `.uasset/.uexp/.umap` FString 抽取，适合本项目。
 - `tools/import_steam_timeline.py`：将抽取候选筛选、匹配地点、压缩改写并导入 `data_edit/events.csv`。
+
+
+## Provenance gate
+
+公开仓库只允许保留：
+- 抽取工具本身；
+- 抽取流程说明；
+- 经压缩改写的候选条目；
+- 来源 id 与确定性字段。
+
+公开仓库不得提交原始游戏文本 dump、解包资源或其他 `research_private/` 内容。仅由 `src_steam_longmarch_1934_1936` 支持的事件必须保持 `certainty=low`，直到补入独立来源并完成人工审校。
+
+`python tools/check_project.py` 会自动检查这条确定性约束。
