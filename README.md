@@ -1,5 +1,7 @@
 ﻿# 红军长征星火路线
 
+[**在线页面**](https://cochranek.github.io/red-map/) · [**Agent handoff**](HANDOFF.md) · [**当前状态**](STATUS.md) · [**来源 / 资产 provenance**](PROVENANCE_STATUS.md) · [**架构**](docs/architecture.md)
+
 一个以“星火铺开、分路前进、最终会师”为叙事逻辑的红军长征交互式路线项目。项目强调多路红军各自成线、全局时间顺序播放、同一路线独立连线，并通过会师红旗、人物事迹、战役会议、敌军围追堵截示意线，呈现长征过程中的艰险、牺牲与汇流。
 
 ![项目首页预览](docs/readme-home.png)
@@ -16,15 +18,13 @@
 - 它保留资料来源和可信度字段，适合继续做史实审校、课程展示、地方红色资源整理或数字人文实验。
 - 它可以从本地研究材料、公开网页、游戏文本抽取结果中整理候选条目，再人工复核后进入正式数据。
 
-当前数据规模：
+当前数据规模不再在 README 手工维护，避免表格增长后数字失真。运行：
 
-- `386` 个事件条目，其中 `246` 条来自 补充材料抽取的补充线索
-- `67` 个人物档案
-- `348` 条人物-事件关联
-- `23` 个主体/部队/人物路线层
-- `38` 条资料来源
-- `40` 个线上图片资产，其中 `34` 个人物已有肖像或历史照片
-- `10` 个线上博物馆展厅
+```bash
+python tools/check_project.py
+```
+
+检查器会输出当前 subjects / sources / events / persons / halls / visuals 数量，并同时验证表格到发布 JSON 的可复现性。
 
 ## 功能特性
 
@@ -136,17 +136,13 @@ data/long_march_events.json
 python tools/check_project.py
 ```
 
-该检查会验证 JSON 格式、表格源文件与发布 JSON 是否一致、前后台 JS 语法，以及后台是否仍存在 inline 事件绑定。
+该检查会验证 JSON 格式、表格源文件与发布 JSON 是否一致、前后台 JS/Python 语法、后台事件绑定、来源登记完整性、游戏文本候选的低确定性约束，并报告尚未补齐精确许可信息的外部图片资产。
 
 ## 补充材料抽取
 
 如果要整理本机 Steam 游戏《长征 1934-1936》的文本，可先在 Steam 客户端中进入“管理 → 浏览本地文件”，复制游戏目录路径。这个游戏是 Unreal Engine 4 项目，剧情和数据文本主要在 `.pak` 包内，需要先解包再抽取 FString。
 
-本机已验证路径示例：
-
-```text
-D:\Software\Steam\steamapps\common\长征1934-1936\长征1934-1936
-```
+把游戏安装目录记为 `<GAME_DIR>`，把本仓库目录记为 `<REPO_DIR>`。原始解包与抽取结果必须放在 `<REPO_DIR>/research_private/`（已被 Git 忽略）。
 
 详细流程见：
 
@@ -157,7 +153,7 @@ docs/STEAM_TEXT_EXTRACTION.md
 解包后抽取时间线候选：
 
 ```cmd
-python tools\extract_unreal_text_assets.py "D:\Software\codex\red-map\research_private\steam_longmarch_unpacked\ChangZheng\Content\Data" --exclude-glob "StopWords.*" --out "D:\Software\codex\red-map\research_private\steam_longmarch_unreal_text_timeline" --markdown-limit-per-file 500
+python tools\extract_unreal_text_assets.py "<REPO_DIR>\research_private\steam_longmarch_unpacked\ChangZheng\Content\Data" --exclude-glob "StopWords.*" --out "<REPO_DIR>\research_private\steam_longmarch_unreal_text_timeline" --markdown-limit-per-file 500
 ```
 
 输出重点文件：
@@ -227,6 +223,22 @@ python tools\check_project.py
 ├── docs/readme-admin.png         # 数据管理展示图
 └── start_server.bat              # Windows 一键启动
 ```
+
+## Agent / 数据交接
+
+新的 Agent、电脑或对话优先读取：
+
+```text
+AGENTS.md
+→ HANDOFF.md
+→ STATUS.md
+→ DECISIONS.md
+→ PROVENANCE_STATUS.md
+→ docs/architecture.md
+→ data_edit/*.csv
+```
+
+Git 是长期 canonical state。历史候选线索、外部图片许可状态和人工审校待办不能只保存在聊天里。
 
 ## 发布到 GitHub Pages
 
@@ -346,7 +358,7 @@ The check validates JSON parsing, table-to-JSON consistency, frontend/admin JS s
 Open the game directory from Steam with `Manage > Browse local files`, then run:
 
 ```cmd
-python tools\extract_steam_texts.py "D:\SteamLibrary\steamapps\common\Long March 1934-1936" --include-binary
+python tools\extract_steam_texts.py "<GAME_DIR>" --include-binary
 ```
 
 The default output directory is `steam_text_dump/`. Review the exported JSONL/Markdown before moving any material into the project data tables.
