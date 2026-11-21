@@ -61,3 +61,5 @@ All new time-extended events (1927-1950) are marked as 延伸视角 in notes; th
 - Browser verified: 8 person / 12 force / 10 place / 6 event cards render; `?person=dongzhengtang` selects 董振堂 correctly. No runtime errors (favicon 404 only).
 
 Local scanned gazetteers (绥德州志 etc., PDF, 39-154MB) have NO text layer — need OCR before the book pipeline can use them. No OCR engine installed locally at time of writing.
+
+**UI decision (user, same day)**: keep the previous museum-first UI. `index.html` and both start scripts point back to `museum.html`. `explore.html` remains in the repo as an optional, non-default entry. Evidence-model and input-pipeline changes from v11 are unaffected.

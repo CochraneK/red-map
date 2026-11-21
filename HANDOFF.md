@@ -46,7 +46,7 @@ Keep the public museum/map reproducible from structured sources while reducing h
 
 ## 2026-11-22 evidence model + explore UI (v11)
 
-- Start at `explore.html` (index.html redirects there) — the issue-driven thematic entry (person/force/place/event). `museum.html` still works standalone; `museum.html?person=<id>` deep-links to a person.
+- Default UI is museum-first: `index.html` redirects to `museum.html`; start scripts open the museum. `explore.html` is an optional, non-default thematic entry (person/force/place/event) kept in the repo. `museum.html?person=<id>` deep-links to a person.
 - To add material from books/subtitles: run the extract_* tools → review candidates in `research_private/` → only then import source-backed items with certainty <= medium. Non-authoritative sources are blocked from `certainty=high` by check_project.py.
 - Scanned PDFs (local 绥德州志 etc.) need OCR first; no OCR engine is bundled. Install one (PaddleOCR/Tesseract) or use an external OCR tool, then feed the text/TXT to extract_book_candidates.py.
 - Method note: "science-based enrichment" = measure coverage first (主体×时间×证据等级), prefer upgrading low→high over adding more low, deepen person-event links, then broaden. See conversation / STATUS for the four-dimension framework.
