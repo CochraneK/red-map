@@ -822,6 +822,14 @@
       "url": "https://wintermelonc.github.io/WintermelonC_Docs/file/history_CPC/CPC_doc2.pdf",
       "note": "斯诺1936年保安亲访毛泽东与红军幸存者的一手见闻；public_narrative层，非权威定论",
       "sourceType": "authoritative"
+    },
+    {
+      "id": "src_changzhengji_people",
+      "title": "长征记（曲爱国、张从田）",
+      "publisher": "中国共产党新闻网·党史频道（华夏出版社授权发布）",
+      "url": "https://dangshi.people.com.cn/GB/146570/406330/index.html",
+      "note": "军事科学院专家著，权威史著事实层。页面请勿转载，仅提取事实要素注明出处",
+      "sourceType": "authoritative"
     }
   ],
   "subjects": [
@@ -2974,6 +2982,36 @@
       "certainty": "low"
     },
     {
+      "id": "ev_czj_19341112_wulu",
+      "date": "1934-11-12",
+      "displayDate": "1934-11-12",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "蒋介石五路追堵部署",
+      "description": "1934年11月12日，蒋介石作出将红军歼灭于湘水、漓水以东地区的部署，任湖南军阀何键为追剿军总司令，确定五路追堵：刘建绪第一路在黄沙河集结，薛岳第二路在零陵沿湘桂公路机动，周浑元第三路先攻道县，李云杰第四路经嘉禾向宁远尾追，李韫珩第五路经临武、水口尾追。连同粤、桂、黔军共动用二十五个师近三十万人。",
+      "location": {
+        "name": "湖南/广西湘江一线",
+        "coordinates": [
+          26.0,
+          111.0
+        ]
+      },
+      "participants": [
+        "蒋介石",
+        "何键",
+        "刘建绪",
+        "薛岳",
+        "周浑元"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第2章血战湘江；官方授权连载事实要素"
+    },
+    {
       "id": "rf_19341115_third_blockade",
       "date": "1934-11-15",
       "displayDate": "1934-11-15",
@@ -3090,6 +3128,33 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_czj_19341122_gui",
+      "date": "1934-11-22",
+      "displayDate": "1934-11-22",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "桂军让出湘江渡口",
+      "description": "1934年11月22日，桂系李宗仁、白崇禧为促使红军尽快过境、确保广西腹地安全，将担负兴安至全州段六十公里江防的第15军撤至龙虎关、恭城地区，为红军让出渡江通道。红军三天后才获知，于25日17时下达强渡湘江命令。桂军让道提供了抢渡窗口，但军委纵队行动迟缓未能及时利用。",
+      "location": {
+        "name": "广西兴安至全州",
+        "coordinates": [
+          25.6,
+          110.9
+        ]
+      },
+      "participants": [
+        "李宗仁",
+        "白崇禧"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第2章血战湘江"
     },
     {
       "id": "steam_rf_19341122_09e74207",
@@ -3347,6 +3412,35 @@
       "notes": "low→high：经权威史料核实，游戏文本线索升级；红二十五军独树镇战斗占领高地，1934年11月27日，日期吻合"
     },
     {
+      "id": "ev_czj_19341128_xinxu",
+      "date": "1934-11-28",
+      "displayDate": "1934-11-28",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "新圩阻击战",
+      "description": "1934年11月28日起，桂军第15军以两个师又一个独立团轮番进攻新圩。中革军委令红3军团第5师不惜一切代价坚守二至四天。师长李天佑、政委钟赤兵率第14、第15团固守，激战三天三夜。参谋长胡震、红14团团长黄冕昌等牺牲，两团营以下干部大部牺牲，全师伤亡两千余人，但未让桂军前进一步。",
+      "location": {
+        "name": "广西灌阳新圩",
+        "coordinates": [
+          25.5,
+          111.1
+        ]
+      },
+      "participants": [
+        "李天佑",
+        "钟赤兵",
+        "胡震",
+        "黄冕昌"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第2章血战湘江"
+    },
+    {
       "id": "steam_r25_19341128_bb9dcee8",
       "date": "1934-11-28",
       "displayDate": "1934-11-28",
@@ -3371,6 +3465,37 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_czj_19341129_guanghua",
+      "date": "1934-11-29",
+      "displayDate": "1934-11-29",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "光华铺与脚山铺阻击战",
+      "description": "11月29日至30日，红3军团第4师第10团在界首以南光华铺、枫林铺阻击桂军十余次冲击，团长沈述清、接任的参谋长杜中美先后牺牲，政委杨勇指挥下伤亡四百余人。同时在界首以北脚山铺，林彪、聂荣臻指挥红1军团主力阻击湘军四个师，五团政委易荡平牺牲，阵地反复争夺，牢牢卡住湘桂公路。",
+      "location": {
+        "name": "广西界首",
+        "coordinates": [
+          25.7,
+          110.9
+        ]
+      },
+      "participants": [
+        "沈述清",
+        "杜中美",
+        "杨勇",
+        "林彪",
+        "聂荣臻",
+        "易荡平"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第2章血战湘江"
     },
     {
       "id": "rf_19341130_xiangjiang_cover",
@@ -3570,6 +3695,34 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_czj_19341210_yujiahe",
+      "date": "1934-12-10",
+      "displayDate": "1934-12-10",
+      "sequence": 1,
+      "forceId": "red_25th",
+      "type": "战斗",
+      "title": "红25军庾家河战斗",
+      "description": "1934年12月10日，中共鄂豫皖省委在庾家河召开常委会议时，国民党军第60师师长陈沛发现红军从朱阳关一侧悄然入陕，率全师尾随突袭，占领东山坳口制高点。红军指挥员中断会议，从军长到炊事员一齐投入战斗，与敌展开二十多次反复冲击，激战至黄昏歼敌八百余人，打垮该师，余敌向河南卢氏方向败退。",
+      "location": {
+        "name": "陕西洛南庾家河",
+        "coordinates": [
+          33.8,
+          110.2
+        ]
+      },
+      "participants": [
+        "陈沛",
+        "吴焕先",
+        "徐海东"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第6章红25军开始长征"
     },
     {
       "id": "rf_19341210_chenshuxiang",
@@ -4577,6 +4730,38 @@
       "certainty": "low"
     },
     {
+      "id": "ev_czj_19350128_tucheng",
+      "date": "1935-01-28",
+      "displayDate": "1935-01-28",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "土城战斗与一渡赤水决策",
+      "description": "1935年1月28日，红3、红5军团在青杠坡向川军郭勋祺旅进攻，中革军委急令预备队红2师投入，川军六个多旅相继增援。毛泽东判断再战不利，提出撤出战斗西渡赤水。29日3时中革军委下令西渡，朱德、刘伯承前线指挥撤离，周恩来指挥架浮桥，陈云安置伤员，叶剑英确定过河计划。",
+      "location": {
+        "name": "贵州土城",
+        "coordinates": [
+          28.3,
+          106.0
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "郭勋祺",
+        "朱德",
+        "刘伯承",
+        "周恩来",
+        "陈云",
+        "叶剑英"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第8章四渡赤水（上）"
+    },
+    {
       "id": "rf_19350128_tucheng",
       "date": "1935-01-28",
       "displayDate": "1935-01-28",
@@ -4750,6 +4935,34 @@
       }
     },
     {
+      "id": "ev_czj_193502_r2",
+      "date": "1935-02-01",
+      "displayDate": "1935-02-01",
+      "sequence": 1,
+      "forceId": "red_second",
+      "type": "战役",
+      "title": "红2、6军团粉碎第二次围剿",
+      "description": "1935年2月，蒋介石调集十一个师又四个旅约十一万人分六路围剿湘鄂川黔苏区。红2、红6军团以任弼时、贺龙、关向应为核心，采取外线机动与内线防御结合，至8月先后取得陈家河、桃子溪、忠堡、板栗园等战斗胜利，共歼国民党军两个师、一个旅，俘虏、击毙师长各一人，缴获大批武器，部队发展到两万一千余人。",
+      "location": {
+        "name": "湘鄂川黔苏区",
+        "coordinates": [
+          29.0,
+          110.0
+        ]
+      },
+      "participants": [
+        "任弼时",
+        "贺龙",
+        "关向应"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第24章红2、红6军团开始长征"
+    },
+    {
       "id": "en_19350201_chishui_pursuit",
       "date": "1935-02-01",
       "displayDate": "1935-02-01",
@@ -4828,6 +5041,34 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_czj_19350203_shaanan",
+      "date": "1935-02-03",
+      "displayDate": "1935-02-03",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "战役",
+      "title": "陕南战役",
+      "description": "1935年2月3日，徐向前率红四方面军十二个团发起陕南战役，目的是调动沿江国民党军北上、制造嘉陵江中段突破空隙。激战两日全歼陕军独立第一旅第2团，活捉团长杨竹荪；至2月9日连克宁羌、沔县、阳平关，共歼敌四个多团、俘敌四千余人，2月中旬回师川北投入渡江准备。",
+      "location": {
+        "name": "陕西南部",
+        "coordinates": [
+          33.0,
+          106.9
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "杨竹荪",
+        "孙蔚如"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第13章强渡嘉陵江"
     },
     {
       "id": "steam_r4_19350203_b2abd803",
@@ -5107,6 +5348,33 @@
       "certainty": "medium",
       "titleEn": "The Zhaxi meetings continue organizational and military adjustments",
       "descriptionEn": "After the Zunyi Meeting, the Central Red Army moved through the Sichuan-Yunnan-Guizhou border area; meetings near Zhaxi continued the adjustment of leadership and military deployment."
+    },
+    {
+      "id": "ev_czj_19350210_zhaxi",
+      "date": "1935-02-10",
+      "displayDate": "1935-02-10",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "整编",
+      "title": "扎西整编缩编为十六个团",
+      "description": "1935年2月10日，中革军委发布各军团缩编命令，为适应机动作战，全军除干部团外共编十六个团，师长、师政委下任团长、团政委，逐级下任。整编后每团两千余人，并在扎西招收新兵三千余人。同时以徐策、余鸿泽等组成川南特委，抽调数百人组建川南游击纵队。",
+      "location": {
+        "name": "云南扎西",
+        "coordinates": [
+          27.85,
+          105.05
+        ]
+      },
+      "participants": [
+        "徐策",
+        "余鸿泽"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第8章四渡赤水（上）"
     },
     {
       "id": "steam_rf_19350210_24f02cba",
@@ -5826,6 +6094,35 @@
       "descriptionEn": "On Mar 21, 1935, the Central Red Army conducted a campaign that shaped the movement of nearby columns around Erlangtan, Guizhou. This entry keeps the chronological route, local context, and visual connection to adjacent events."
     },
     {
+      "id": "ev_czj_193503_r9",
+      "date": "1935-03-25",
+      "displayDate": "1935-03-25",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行动",
+      "title": "红9军团伪装主力牵敌",
+      "description": "1935年3月下旬，红9军团在罗炳辉、何长工指挥下于马鬃岭与主力分兵单独行动，召开群众大会、四处张贴标语、行军红旗招展、宿营地炊烟四起，成功伪装成红军主力，将周浑元、吴奇伟纵队六个师精锐牢牢吸引在身边，掩护主力南下。",
+      "location": {
+        "name": "贵州马鬃岭",
+        "coordinates": [
+          27.4,
+          106.6
+        ]
+      },
+      "participants": [
+        "罗炳辉",
+        "何长工",
+        "周浑元",
+        "吴奇伟"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第9章四渡赤水（下）"
+    },
+    {
       "id": "steam_rf_19350326_bda4a11f",
       "date": "1935-03-26",
       "displayDate": "1935-03-26",
@@ -5849,6 +6146,35 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_czj_19350328_jialing",
+      "date": "1935-03-28",
+      "displayDate": "1935-03-28",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "决策",
+      "title": "嘉陵江渡江点选择",
+      "description": "1935年3月，徐向前亲自勘察嘉陵江地形水文，将渡江地段选在田颂尧第29军防区，于苍溪至阆中选定三个渡点，以苍溪东南塔子山为主要渡江点。该段田颂尧以江面宽、背后有剑门关天险判断红军不会由此渡江，百里江防仅部署三个团、四个营。28日午夜，被授钢军团称号的红263团两个营和总部教导营乘木船偷渡成功。",
+      "location": {
+        "name": "四川苍溪嘉陵江",
+        "coordinates": [
+          31.6,
+          105.9
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "张国焘",
+        "王树声",
+        "田颂尧"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第13章强渡嘉陵江"
     },
     {
       "id": "r4_19350328_jialingjiang",
@@ -6013,6 +6339,34 @@
       ],
       "certainty": "high",
       "notes": "low→high：经权威史料核实，游戏文本线索升级；强渡嘉陵江战役中占领阆中，1935年3月底，日期吻合"
+    },
+    {
+      "id": "ev_czj_19350401_jianmen",
+      "date": "1935-04-01",
+      "displayDate": "1935-04-01",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "战斗",
+      "title": "剑门关战斗",
+      "description": "1935年4月1日至2日，王树声指挥红31军主攻、红30军配合攻打剑门关。红88师、红91师、红93师分路进攻，七名勇士由群众带路绕道梯子崖，换上川军服装、打着缴获旗帜喊自己人冲上关楼。2日总攻，红274团2营投入肉搏，激战至黄昏全歼川军宪兵司令刁文俊部三个团，攻占插翅难飞的剑门关要隘。",
+      "location": {
+        "name": "四川剑阁剑门关",
+        "coordinates": [
+          32.2,
+          105.5
+        ]
+      },
+      "participants": [
+        "王树声",
+        "徐向前",
+        "刁文俊"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第13章强渡嘉陵江"
     },
     {
       "id": "ev_snow_193504_ham",
@@ -6878,6 +7232,38 @@
       "notes": "斯诺一手见闻(p174)；石达开为历史对比人物"
     },
     {
+      "id": "ev_czj_19350525_17",
+      "date": "1935-05-25",
+      "displayDate": "1935-05-25",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "十七勇士强渡安顺场（权威口径）",
+      "description": "1935年5月25日9时，红1团团长杨得志、政委黎林指挥，1营营长孙继先选定2连十六人组成突击队，由2连连长熊尚林带队，通信员陈万清主动加入，共十七人。刘伯承江边指挥，以六挺重机枪、几十挺轻机枪、三门迫击炮掩护，神炮手赵章成一炮摧毁对岸碉堡。突击队分两船强渡，熊尚林率九人先登岸占领滩头，突破大渡河天险。",
+      "location": {
+        "name": "四川安顺场",
+        "coordinates": [
+          29.4,
+          102.3
+        ]
+      },
+      "participants": [
+        "杨得志",
+        "黎林",
+        "孙继先",
+        "熊尚林",
+        "陈万清",
+        "赵章成",
+        "刘伯承"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第12章；军事科学院口径十七勇士，与斯诺线索口径并存"
+    },
+    {
       "id": "ev_snow_19350525_17",
       "date": "1935-05-25",
       "displayDate": "1935-05-25",
@@ -7015,6 +7401,37 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_czj_19350529_luding",
+      "date": "1935-05-29",
+      "displayDate": "1935-05-29",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "红4团一昼夜奔袭泸定桥（权威口径）",
+      "description": "1935年5月28日，林彪、聂荣臻令红4团次日夺取泸定桥。团长黄开湘、政委杨成武率部一昼夜边打边走一百二十公里，途中点燃火把，用缴获的川军号谱和川籍战士应答，与对岸川军第38团隔河火龙并行而未被识破，29日6时抵达西岸。下午4时总攻，2连连长廖大珠率二十二名突击队员攀铁索冲锋，三连随后铺板，不到两小时夺桥占领泸定城，三名突击队员牺牲。",
+      "location": {
+        "name": "四川泸定桥",
+        "coordinates": [
+          29.9,
+          102.2
+        ]
+      },
+      "participants": [
+        "黄开湘",
+        "杨成武",
+        "廖大珠",
+        "王友才",
+        "林彪",
+        "聂荣臻"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第12章；军事科学院口径22勇士13铁索，与斯诺线索口径并存"
     },
     {
       "id": "ev_snow_19350529_luding",
@@ -7935,6 +8352,33 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_czj_19350702_longriba",
+      "date": "1935-07-02",
+      "displayDate": "1935-07-02",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "战斗",
+      "title": "龙日坝红6团遭遇战",
+      "description": "1935年7月2日，红1军团政治部主任朱瑞、红2师师长陈光率红6团和红5团3营为前卫进入草地，向龙日坝行进时与青海军阀所属麦桑骑兵支队二千余人遭遇。地形开阔无遮拦，敌骑兵剽悍善射，红6团就地抵抗，激战两个多小时打退进攻，自身伤亡四百余人。当夜在1营掩护下撤退，军委据此决定左路军主力改道直向黑水、芦花。",
+      "location": {
+        "name": "四川松潘草地龙日坝",
+        "coordinates": [
+          33.0,
+          103.0
+        ]
+      },
+      "participants": [
+        "朱瑞",
+        "陈光"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第16章从两河到沙窝"
     },
     {
       "id": "r25_19350702_yuanjiagou",
@@ -8991,6 +9435,37 @@
       "certainty": "low"
     },
     {
+      "id": "ev_czj_19350829_baozuo",
+      "date": "1935-08-29",
+      "displayDate": "1935-08-29",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "战役",
+      "title": "包座战斗",
+      "description": "1935年8月29日至31日，刚出草地的红30军在徐向前、陈昌浩指挥下，由政委李先念、代军长程世才率领攻打包座。红268团直扑包座桥将敌阵切成三段，红263、265团一小时全歼第291团四个营，红266、267团歼灭第289团。此战重创胡宗南第49师，毙伤四千余人、俘八百余人，缴枪一千五百余支，为会师后首个重大胜利；红10师师长王友均攻坚中弹牺牲。",
+      "location": {
+        "name": "四川若尔盖包座",
+        "coordinates": [
+          33.6,
+          102.8
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "陈昌浩",
+        "李先念",
+        "程世才",
+        "伍诚仁",
+        "王友均"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第17章过草地"
+    },
+    {
       "id": "rf_19350829_baozuo",
       "date": "1935-08-29",
       "displayDate": "1935-08-29",
@@ -9105,6 +9580,36 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_czj_19350904_banqiao",
+      "date": "1935-09-04",
+      "displayDate": "1935-09-04",
+      "sequence": 1,
+      "forceId": "red_25th",
+      "type": "战斗",
+      "title": "红25军板桥战斗",
+      "description": "1935年9月4日，红25军在合水县板桥镇准备出发时，因集合讲话耽误、警戒疏忽，后卫红225团3营遭国民党军骑兵突袭并被包围。徐海东从前卫飞马赶到指挥2营掩护，仍被冲散。敌骑兵发现骑马的徐海东后高喊捉活的狂追，红225团1营营长韩先楚、营政委刘震抢占山头以火力制止敌人，掩护其突围。此战红25军损失二百余人，红225团团长方炳仁牺牲。",
+      "location": {
+        "name": "甘肃合水板桥",
+        "coordinates": [
+          35.7,
+          107.6
+        ]
+      },
+      "participants": [
+        "徐海东",
+        "韩先楚",
+        "刘震",
+        "戴季英",
+        "方炳仁"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第19章红25军与陕甘红军会师"
     },
     {
       "id": "steam_r25_19350904_cb1e11f2",
@@ -11297,6 +11802,35 @@
       }
     },
     {
+      "id": "ev_czj_193604_shigu",
+      "date": "1936-04-26",
+      "displayDate": "1936-04-26",
+      "sequence": 1,
+      "forceId": "red_second",
+      "type": "渡河",
+      "title": "红2、6军团石鼓渡金沙江",
+      "description": "1936年4月，红2、红6军团以声东击西佯攻昆明调出滇军主力，随后横扫滇西在石鼓地区集结。因国民党军封江仅找到一条木船，红军在石鼓至巨甸约七十五公里沿江段先后找到大小船只七条、船工二十八人，另扎制十余只木筏，选定木瓜寨、木取独、格子、士可、余化达五个渡口。4月26日起两个军团一万八千余人梯队抢渡，28日全部过江。",
+      "location": {
+        "name": "云南石鼓金沙江",
+        "coordinates": [
+          26.9,
+          99.9
+        ]
+      },
+      "participants": [
+        "贺龙",
+        "任弼时",
+        "关向应",
+        "龙云"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第24章红2、红6军团开始长征"
+    },
+    {
       "id": "steam_r4_19360427_fe081696",
       "date": "1936-04-27",
       "displayDate": "1936-04-27",
@@ -11672,6 +12206,36 @@
       "certainty": "high",
       "titleEn": "Red Fourth Front Army holds a key meeting at Garze, Sichuan",
       "descriptionEn": "On Jul 3, 1936, the Red Fourth Front Army held a political or military meeting that influenced later decisions around Garze, Sichuan. This entry keeps the chronological route, local context, and visual connection to adjacent events."
+    },
+    {
+      "id": "ev_czj_19360705_ganzi",
+      "date": "1936-07-05",
+      "displayDate": "1936-07-05",
+      "sequence": 1,
+      "forceId": "red_second",
+      "type": "会师",
+      "title": "甘孜会师与红二方面军组建",
+      "description": "1936年6月3日，红6军团先头红16师在理化以南甲洼与红四方面军红32军会师；6月30日红2军团在甘孜绒坝岔与红30军会师，朱德、刘伯承前往迎接；7月1日两军团齐集甘孜，2日举行两大主力会师联欢会。7月5日中革军委决定以红2、红6军团和红32军组成红二方面军，贺龙任总指挥、任弼时任政委。",
+      "location": {
+        "name": "四川甘孜",
+        "coordinates": [
+          31.62,
+          100.0
+        ]
+      },
+      "participants": [
+        "朱德",
+        "刘伯承",
+        "贺龙",
+        "任弼时",
+        "关向应"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第25章甘孜会师"
     },
     {
       "id": "r2_19360705_red_second_formed",
@@ -12867,6 +13431,39 @@
       ],
       "certainty": "high",
       "notes": "坐标待核"
+    },
+    {
+      "id": "ev_czj_19361121_shanchengbao",
+      "date": "1936-11-21",
+      "displayDate": "1936-11-21",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "战役",
+      "title": "山城堡战役·长征最后一仗",
+      "description": "1936年11月，红军三大主力会师后，蒋介石令胡宗南、毛炳文、王均等十几个师进攻。中革军委决定诱敌深入，11月14日至15日令主力向山城堡靠近，各兵团绝对服从前敌总指挥彭德怀命令，周恩来与朱德、彭德怀共同指挥。21日黄昏红1军团第1、第4师主攻，红15军团、红31军迂回切断退路，激战至22日9时歼灭胡宗南第78师一个多旅，为长征最后一仗。",
+      "location": {
+        "name": "甘肃环县山城堡",
+        "coordinates": [
+          36.8,
+          107.0
+        ]
+      },
+      "participants": [
+        "彭德怀",
+        "周恩来",
+        "朱德",
+        "毛泽东",
+        "贺龙",
+        "任弼时",
+        "聂荣臻",
+        "丁德隆"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "第27章；长征终点最后一仗，原数据缺口"
     },
     {
       "id": "ev_wxyj_193612",

@@ -107,3 +107,13 @@ User asked to add classic films (四渡赤水/长征/古田会议), books, video
 - Totals: events 440→452, sources 101→102. check passes; browser verified 12 snow events load as medium.
 
 **Value note**: 斯诺 is a 1936 first-hand witness — these add the "detail layer" (numbers, dialogue, scenes) missing from authoritative党史 entries, but are explicitly NOT treated as high-certainty fact.
+
+## 2026-11-22 book inventory + 长征记 facts (v16)
+
+- **Book inventory**: ~125 titles across 7 categories (一手回忆录31/通史7/专题史17/军史9/学术20/地方史26/纪实文学~15). Full lists in `research_private/sourced_research/11`~`14` (git-ignored). Each with author/year/value/copyright status/source URL.
+- **Download strategy (3 zones)**: green=公版/官方公开可下载; yellow=受版权但官方连载→只抽事实; red=受版权→只登记不下载. Key nuance: 公版原著≠公版译本 (斯诺原著2023公版 but 董乐山译本 protected to 2049).
+- **Platform reality**: 人民网/党史网 fetchable (via curl -k + GBK decode); archive.org/Anna's/LibGen/Z-Lib unreachable; Gutenberg official 503 (pglaf mirror OK). No paywall/DRM bypass.
+- **人民网《长征记》全29章抓取** (~100k chars, 曲爱国/张从田, 华夏出版社授权): `tools/fetch_changzhengji.py`. Page says 请勿转载 → facts-only extraction, no full text published.
+- **20 authoritative facts extracted** from 长征记 (`15_长征记事实补录.json`), all certainty=high: 蒋介石五路追堵/桂军让道/新圩光华铺脚山铺阻击/土城决策/扎西整编/红9伪装/17勇士/泸定桥22勇士/嘉陵江/剑门关/陕南/龙日坝/包座/庾家河/板桥/红2巩固苏区/石鼓渡江/甘孜会师/山城堡(原缺口). Agent verified each absent from existing 452 events.
+- **口径冲突 handled by coexistence**: 斯诺线索(30勇士/16铁索, medium) vs 军事科学院(22勇士/13铁索, high) — both kept with notes stating the difference, not force-merged.
+- Totals: events 452→472, sources 102→103. check passes; browser verified 20 facts load + 山城堡 gap filled.
