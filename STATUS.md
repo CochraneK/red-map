@@ -38,3 +38,17 @@ Applied structural changes from the 2026-05-28 meeting feedback (see `docs/FEEDB
 Gates unchanged: game-only events remain low-certainty (246), raw extraction stays outside Git, visual-asset licenses still unresolved (34/38). All structural additions are candidate/skeleton and must not be presented as verified history without independent sourcing.
 
 Validation: `python tools/check_project.py` passes (subjects=28, events=386, persons=67). Browser smoke test confirmed grouping labels, viewpoint nav, and new-longmarch section render without runtime errors (only favicon 404).
+
+## 2026-11-22 sourced-research pass (v10)
+
+Authorized historical research added with authoritative sources; see `research_private/sourced_research/*.md` for full source URLs and ⚠️ doubtful items.
+
+- **Sources** 38→59, **events** 386→411, **persons** 67→79. All 25 new events are `certainty=high` with resolvable source ids; 12 new persons added.
+- **西路军** (7 events, force `red_west_route`): 渡河/组建/永昌山丹/高台/倪家营子/石窝/星星峡. **东北抗联** (5, `spark_dongbei`), **琼崖纵队** (8, `spark_qiongya`), **东江纵队** (5, `spark_dongjiang`).
+- Correction applied: 董振堂 title is 红五军军长 (not 军团军团长); 杨克明 is 红五军政治部主任 (not 董振堂政委). Rejected as unverifiable: "熊炳林" (查无此人), "陈荣香/陈文香断肠" (无权威来源, likely confused with 陈树湘).
+- **新长征**: quote corrected to 2016-10-21 长征胜利80周年讲话原文, with explicit note that "一代人有一代人的长征..." is from 2019-04-30 五四讲话; both official gov.cn links added.
+- **Memorial layer**: `data/memorial_sites.geojson` — 16 长征-related memorial sites with GCJ-02 coordinates sourced from 腾讯地图 POI / government sites. Toggle button `#memorial-toggle` on map page shows/hides `L.circleMarker` layer (no external API key). Browser test: marker count 1→17 on toggle.
+- **Game-content audit** (`docs/GAME_CONTENT_AUDIT.md`): game text extraction yields 5,905 strings / 1,028 timeline candidates, but only 246 events + 32 persons were imported (all `low` certainty). Game content is NOT fully in the project.
+- New tool `tools/import_sourced_research.py` (idempotent, by id) reproduces the table additions.
+
+All new time-extended events (1927-1950) are marked as 延伸视角 in notes; they enlarge the timeline beyond 1934-1936 by design (西路军 is the Long March epilogue; 琼崖/东江/抗联 are the "星星之火" follow-on). Check passes with 0 errors (1 pre-existing visual-asset license warning).

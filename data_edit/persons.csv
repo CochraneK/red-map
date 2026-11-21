@@ -68,3 +68,15 @@ TRUE,dai_jitao,戴季韬,,相关对手,,,,,enemy_kmt,补充材料中出现于沅
 TRUE,zhou_xieqing,周燮卿,,相关对手,,,,,enemy_kmt,补充材料中出现于沅陵周边布防线索，补充红二、红六军团行动的地方军事背景。,,,沅陵;湘西攻势;补充线索,src_steam_longmarch_1934_1936,low,832
 
 
+TRUE,dongzhengtang,董振堂,Dong Zhentang,人物,1895,1937-01-20,河北新河,,red_west_route,红五军军长。1931年12月与赵博生等领导宁都起义加入红军，1932年入党。1937年1月率部血战高台，城破后壮烈牺牲，是红军牺牲的最高级别将领之一。,,,宁都起义;高台血战;英烈,src_dongzhengtang_cpc;src_wxyj_81,high,601
+TRUE,yangkeming,杨克明,Yang Keming,人物,1905,1937-01-20,四川涪陵,,red_west_route,红五军政治部主任。长征中三过草地，高台血战中掩护董振堂撤离，中弹牺牲，与2000余将士殉难。,,,西路军;高台血战;英烈,src_yangkeming_dangshi,high,602
+TRUE,zhangqiqiu,张琴秋,Zhang Qinqiu,人物,1904,1968,浙江桐乡,,red_fourth,西路军政治部组织部长，曾任妇女独立师师长。被俘后经周恩来交涉获释，1937年10月回延安。,,,妇女红军;西路军,src_women_div_81,high,603
+TRUE,fengbaiju,冯白驹,Feng Baiju,人物,,,海南琼山,,spark_qiongya,琼崖纵队司令员兼政委，二十三年红旗不倒的主要领导者。1926年入党，1932-33年率部在母瑞山坚持8个多月并带25人突围，1938年任琼崖抗日独立队队长。（生卒年权威来源未明确，待核）,,,琼崖纵队;母瑞山;抗战,src_qiongya_cpc,high,701
+TRUE,wangwenming,王文明,Wang Wenming,人物,,,海南,,spark_qiongya,琼崖革命先驱，中共琼崖地委首任书记、琼崖苏维埃政府主席。1928年反围剿受挫后率部转移母瑞山，保存革命火种。,,,琼崖纵队;母瑞山,src_qiongya_wangwenming,high,702
+TRUE,yangshanji,杨善集,Yang Shanji,人物,,1927,海南,,spark_qiongya,中共琼崖特委首任书记，1927年9月领导椰子寨战斗，打响琼崖武装暴动第一枪，激战中牺牲。,,,琼崖纵队;英烈,src_qiongya_hainan,high,703
+TRUE,zengsheng,曾生,Zeng Sheng,人物,,,广东惠阳,,spark_dongjiang,东江纵队司令员。1938年回惠阳组织抗日武装，1943年东江纵队成立任司令员，1946年率部北撤烟台。,,,东江纵队;港九大队;北撤,src_dongjiang_cpc,high,801
+TRUE,wangzuoyao,王作尧,Wang Zuoyao,人物,,,广东,,spark_dongjiang,东江纵队早期领导人，1943年12月任副司令员兼参谋长。1944年5月梅塘战斗指挥部队抢占马山阻击日军。,,,东江纵队;抗战,src_dongjiang_cpc,high,802
+TRUE,yinlinping,尹林平,Yin Linping,人物,,,广东,,spark_dongjiang,中共广东省临委书记，1943年12月东江纵队成立兼任政治委员。,,,东江纵队;抗战,src_dongjiang_cpc,high,803
+TRUE,yangjingyu,杨靖宇,Yang Jingyu,人物,1905,1940-02-23,河南确山,,spark_dongbei,东北抗日联军第一路军总司令兼政委。1940年2月23日在靖宇县三道崴子壮烈牺牲，年仅35岁，胃中尽是草根树皮棉絮。,,,东北抗联;英烈,src_yangjingyu_cpc,high,901
+TRUE,zhaoyiman,赵一曼,Zhao Yiman,人物,1905,1936-08-02,四川宜宾,,spark_dongbei,东北抗联第3军第2团政治委员。1935年11月负重伤被俘，狱中坚贞不屈并写下致儿子遗书，1936年8月2日在哈尔滨就义，年仅31岁。,,,东北抗联;英烈,src_zhaoyiman_people,high,902
+TRUE,zhoubaozhong,周保中,Zhou Baozhong,人物,,,云南大理,,spark_dongbei,东北抗日联军领导人，抗联教导旅旅长，1945年配合苏军解放东北。,,,东北抗联;教导旅,src_dongbeikanglian_xinhua,high,903

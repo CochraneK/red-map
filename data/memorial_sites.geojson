@@ -1,0 +1,272 @@
+{
+  "type": "FeatureCollection",
+  "meta": {
+    "title": "长征相关烈士纪念设施",
+    "note": "坐标以腾讯地图POI(GCJ-02)为主，与项目高德GCJ-02底图同源可直接叠加；少量点位来自政府官网坐标定位，已在精度字段标注。baseline为国家/省级烈士纪念设施名录，正式展示前请按来源校核。",
+    "coordinateSystem": "GCJ-02",
+    "sources": [
+      "退役军人事务部/民政部 全国重点烈士纪念建筑物保护单位（第一至七批）",
+      "腾讯地图 POI",
+      "江西/贵州/甘肃/四川省级烈士纪念设施名录",
+      "各地方政府划界公告"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_yudu",
+        "name": "于都县烈士纪念园",
+        "nameEn": "Yudu County Martyrs Memorial Park",
+        "location": "江西省赣州市于都县新陂乡高田村",
+        "lat": 25.892989,
+        "lng": 115.364572,
+        "nationalList": "第七批",
+        "precision": "POI精确定位",
+        "related": "中央红军长征出发地",
+        "source": "腾讯地图POI；退役军人事务部第七批名单"
+      },
+      "geometry": { "type": "Point", "coordinates": [115.364572, 25.892989] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_yudu_departure",
+        "name": "中央红军长征出发地纪念园",
+        "nameEn": "Central Red Army Long March Departure Memorial",
+        "location": "江西省赣州市于都县贡江镇渡江大道690号",
+        "lat": 25.957972,
+        "lng": 115.430542,
+        "nationalList": "全国重点文保（非烈士设施名录）",
+        "precision": "POI精确定位",
+        "related": "长征出发渡口",
+        "source": "腾讯地图POI；馆方官网 ydczcfmuseum.cn"
+      },
+      "geometry": { "type": "Point", "coordinates": [115.430542, 25.957972] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_xiangjiang",
+        "name": "红军长征湘江战役纪念园",
+        "nameEn": "Xiangjiang Campaign Memorial Park",
+        "location": "广西桂林市全州县才湾镇脚山铺",
+        "lat": 25.915372,
+        "lng": 110.955817,
+        "nationalList": "第七批",
+        "precision": "政府官网坐标定位",
+        "related": "湘江战役",
+        "source": "广西文化和旅游厅官网坐标定位"
+      },
+      "geometry": { "type": "Point", "coordinates": [110.955817, 25.915372] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_jiuhaijing",
+        "name": "酒海井红军纪念园",
+        "nameEn": "Jiuhaijing Red Army Memorial Park",
+        "location": "广西桂林市灌阳县新圩镇和睦村",
+        "lat": 25.631964,
+        "lng": 111.117009,
+        "nationalList": "第七批",
+        "precision": "POI精确定位",
+        "related": "新圩阻击战",
+        "source": "腾讯地图POI；灌阳县政府划界公告"
+      },
+      "geometry": { "type": "Point", "coordinates": [111.117009, 25.631964] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_huining",
+        "name": "会宁红军烈士陵园（大墩梁）",
+        "nameEn": "Huining Red Army Martyrs Cemetery",
+        "location": "甘肃省白银市会宁县中川镇大墩村",
+        "lat": 35.466926,
+        "lng": 105.043716,
+        "nationalList": "第六批",
+        "precision": "POI精确定位",
+        "related": "会宁会师",
+        "source": "腾讯地图POI；会宁县政府官网"
+      },
+      "geometry": { "type": "Point", "coordinates": [105.043716, 35.466926] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_chishui",
+        "name": "四渡赤水红军烈士陵园",
+        "nameEn": "Four Crossings of Chishui Martyrs Cemetery",
+        "location": "贵州省遵义市赤水市市中街道凯旋路42号",
+        "lat": 28.577234,
+        "lng": 105.696255,
+        "nationalList": "第六批",
+        "precision": "POI精确定位",
+        "related": "四渡赤水",
+        "source": "腾讯地图POI；赤水市政府划界公告"
+      },
+      "geometry": { "type": "Point", "coordinates": [105.696255, 28.577234] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_qinggangpo",
+        "name": "习水青杠坡红军烈士陵园",
+        "nameEn": "Xishui Qinggangpo Martyrs Cemetery",
+        "location": "贵州省遵义市习水县土城镇青杠坡村",
+        "lat": 28.261993,
+        "lng": 106.036279,
+        "nationalList": "第六批",
+        "precision": "POI精确定位",
+        "related": "青杠坡战斗",
+        "source": "腾讯地图POI；习水县政府通告"
+      },
+      "geometry": { "type": "Point", "coordinates": [106.036279, 28.261993] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_kunniushan",
+        "name": "困牛山红军烈士陵园（甘溪困牛山保护点）",
+        "nameEn": "Kunniushan Martyrs Cemetery",
+        "location": "贵州省铜仁市石阡县龙塘镇困牛山村甘溪槽组",
+        "lat": 27.613671,
+        "lng": 108.08465,
+        "nationalList": "第七批",
+        "precision": "POI精确定位",
+        "related": "甘溪战斗",
+        "source": "腾讯地图POI；石阡县政府划界决定"
+      },
+      "geometry": { "type": "Point", "coordinates": [108.08465, 27.613671] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_ganxi",
+        "name": "甘溪保护点（困牛山陵园组成部分）",
+        "nameEn": "Ganxi Protection Site",
+        "location": "贵州省铜仁市石阡县甘溪乡甘溪村街上组",
+        "lat": 27.65,
+        "lng": 108.06,
+        "nationalList": "第七批（与困牛山同项）",
+        "precision": "乡镇级估算·需校核",
+        "related": "甘溪战斗",
+        "source": "石阡县政府划界决定（投影坐标，未给出经纬度）"
+      },
+      "geometry": { "type": "Point", "coordinates": [108.06, 27.65] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_liping",
+        "name": "黎平烈士陵园",
+        "nameEn": "Liping Martyrs Cemetery",
+        "location": "贵州省黔东南州黎平县德凤街道南泉山公园内",
+        "lat": 26.219555,
+        "lng": 109.140995,
+        "nationalList": "第五批",
+        "precision": "POI精确定位",
+        "related": "黎平会议",
+        "source": "腾讯地图POI；贵州省英烈网名录"
+      },
+      "geometry": { "type": "Point", "coordinates": [109.140995, 26.219555] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_hejiachong",
+        "name": "何家冲烈士陵园（红25军长征出发地）",
+        "nameEn": "Hejiachong Martyrs Cemetery",
+        "location": "河南省信阳市罗山县铁铺镇何家冲村",
+        "lat": 31.811515,
+        "lng": 114.318731,
+        "nationalList": "第七批",
+        "precision": "POI精确定位（政府公布坐标格式有误，勿用）",
+        "related": "红25军长征出发地",
+        "source": "腾讯地图POI"
+      },
+      "geometry": { "type": "Point", "coordinates": [114.318731, 31.811515] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_dushu",
+        "name": "独树镇烈士陵园",
+        "nameEn": "Dushu Town Martyrs Cemetery",
+        "location": "河南省南阳市方城县独树镇七里岗",
+        "lat": 33.349418,
+        "lng": 113.221727,
+        "nationalList": "第七批",
+        "precision": "POI精确定位",
+        "related": "独树镇战斗",
+        "source": "腾讯地图POI；河南省直机关主题党日基地"
+      },
+      "geometry": { "type": "Point", "coordinates": [113.221727, 33.349418] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_zhiluo",
+        "name": "直罗烈士陵园",
+        "nameEn": "Zhiluo Martyrs Cemetery",
+        "location": "陕西省延安市富县直罗镇宝塔山下",
+        "lat": 35.960511,
+        "lng": 108.997969,
+        "nationalList": "第六批",
+        "precision": "POI精确定位",
+        "related": "直罗镇战役",
+        "source": "腾讯地图POI；富县政府调研报告"
+      },
+      "geometry": { "type": "Point", "coordinates": [108.997969, 35.960511] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_zunyi",
+        "name": "遵义红军烈士陵园（红军山）",
+        "nameEn": "Zunyi Red Army Martyrs Cemetery",
+        "location": "贵州省遵义市红花岗区凤凰中路78号",
+        "lat": 27.696836,
+        "lng": 106.919444,
+        "nationalList": "第一批（首批全国重点）",
+        "precision": "POI精确定位",
+        "related": "遵义会议",
+        "source": "腾讯地图POI；遵义市政府划界公告"
+      },
+      "geometry": { "type": "Point", "coordinates": [106.919444, 27.696836] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_ludeming",
+        "name": "卢德铭烈士陵园（秋收起义烈士陵园）",
+        "nameEn": "Lu Deming Martyrs Cemetery",
+        "location": "江西省萍乡市芦溪县上埠镇山口岩村",
+        "lat": 27.58485,
+        "lng": 114.011444,
+        "nationalList": "第五批",
+        "precision": "POI精确定位",
+        "related": "秋收起义（非长征主线）",
+        "source": "腾讯地图POI；江西省退役军人事务厅电子地图"
+      },
+      "geometry": { "type": "Point", "coordinates": [114.011444, 27.58485] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "memorial_langzhong",
+        "name": "阆中市红军烈士纪念园",
+        "nameEn": "Langzhong Red Army Martyrs Memorial",
+        "location": "四川省南充市阆中市江南街道张宪街29号（黄花山）",
+        "lat": 31.565285,
+        "lng": 105.976331,
+        "nationalList": "第六批",
+        "precision": "POI精确定位",
+        "related": "川陕苏区·红四方面军长征出发地之一",
+        "source": "腾讯地图POI；园方官网 lzhjls.com"
+      },
+      "geometry": { "type": "Point", "coordinates": [105.976331, 31.565285] }
+    }
+  ]
+}

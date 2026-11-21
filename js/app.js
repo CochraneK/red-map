@@ -102,6 +102,7 @@ async function initApp() {
     prepareData();
     initMap();
     initForcePanel();
+    initMemorialLayer();
     initTimeline();
     bindPanelClose();
     bindLanguageToggle();
@@ -665,6 +666,65 @@ function escapeAttr(value) { return escapeHTML(value).replaceAll('`','&#096;'); 
 function hideLoading() { document.getElementById('loading')?.classList.add('hidden'); }
 function showLoadingError(err) { const loading = document.getElementById('loading'); if (!loading) return; loading.innerHTML = `<div class="loading-error"><h2>数据加载失败</h2><p>${escapeHTML(err.message || err)}</p><p>请使用项目根目录的 <code>start_server.bat</code> 启动。</p></div>`; }
 
-window.marchMap = { data: () => marchData, sortedEvents: () => sortedEvents, showEvent: index => { currentSortedIndex = Math.max(0, Math.min(sortedEvents.length - 1, Number(index) || 0)); renderCurrentState(true); }, activeForces: () => [...activeForces] };
+/* ===== 烈士纪念设施图层（数据自主 GeoJSON，无外部 API key）===== */
+let memorialLayer = null;
+let memorialData = null;
+let memorialVisible = false;
+
+async function initMemorialLayer() {
+  const btn = document.getElementById('memorial-toggle');
+  if (!btn) return;
+  try {
+    const res = await fetch('data/memorial_sites.geojson?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    memorialData = await res.json();
+  } catch (err) {
+    btn.disabled = true;
+    btn.textContent = '◈ 纪念设施数据缺失';
+    return;
+  }
+  btn.addEventListener('click', ev => {
+    ev.preventDefault();
+    memorialVisible = !memorialVisible;
+    btn.setAttribute('aria-pressed', String(memorialVisible));
+    btn.classList.toggle('active', memorialVisible);
+    if (memorialVisible) showMemorialLayer(); else hideMemorialLayer();
+  });
+}
+
+function showMemorialLayer() {
+  if (!map || !memorialData) return;
+  if (memorialLayer) { hideMemorialLayer(); }
+  memorialLayer = L.layerGroup().addTo(map);
+  (memorialData.features || []).forEach(f => {
+    const p = f.properties || {};
+    const c = f.geometry?.coordinates || [];
+    if (c.length < 2) return;
+    const [lng, lat] = c;
+    const marker = L.circleMarker([lat, lng], {
+      radius: 6,
+      color: '#7f1618',
+      weight: 2,
+      fillColor: '#bd2427',
+      fillOpacity: 0.85
+    });
+    const name = currentLang === 'en' ? (p.nameEn || p.name) : p.name;
+    const lines = [
+      `<strong>${escapeHTML(name)}</strong>`,
+      `<div class="memorial-pop-loc">${escapeHTML(currentLang === 'en' ? (p.location || '') : (p.location || ''))}</div>`,
+      `<div class="memorial-pop-meta">${escapeHTML(p.nationalList || '')} · ${escapeHTML(p.related || '')}</div>`,
+      `<div class="memorial-pop-note">${escapeHTML(p.precision || '')}</div>`
+    ];
+    marker.bindPopup(lines.join(''), { maxWidth: 260 });
+    marker.bindTooltip(escapeHTML(name), { direction: 'top', offset: [0, -6] });
+    marker.addTo(memorialLayer);
+  });
+}
+
+function hideMemorialLayer() {
+  if (memorialLayer && map) { map.removeLayer(memorialLayer); memorialLayer = null; }
+}
+
+window.marchMap = { data: () => marchData, sortedEvents: () => sortedEvents, showEvent: index => { currentSortedIndex = Math.max(0, Math.min(sortedEvents.length - 1, Number(index) || 0)); renderCurrentState(true); }, activeForces: () => [...activeForces], memorialSites: () => memorialData };
 
 

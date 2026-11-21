@@ -39,3 +39,24 @@ src_pengdehuai_people,彭德怀与长征,中国共产党新闻网/人民网,http
 src_steam_longmarch_1934_1936,《长征1934-1936》本地游戏文本抽取,Steam 本地安装文件 / Unreal 数据资产抽取,docs/STEAM_TEXT_EXTRACTION.md,仅作线索来源；正式采用前应继续用权威党史资料复核。导入事件已压缩改写为短策展文案。
 
 
+src_wxyj_dswxyjy,中国工农红军西路军（中央党史和文献研究院）,中央党史和文献研究院,https://www.dswxyjy.org.cn/n1/2020/0914/c244523-31860754.html,西路军西渡黄河、倪家营子、梨园口、石窝分兵、星星峡时间线
+src_wxyj_people_dangshi,西路军历史（人民网党史）,人民网·中国共产党新闻网,https://dangshi.people.com.cn/BIG5/n1/2019/0223/c85037-30898568-4.html,西路军总人数、结局与历史评价
+src_wxyj_cctv,西路军·西渡黄河（央视网）,央视网,https://tv.cctv.com/v/v1/VIDEdmFT86EHu9ewPUPGJspN190824.html,靖远虎豹口渡河地点参考
+src_wxyj_81,董振堂（中国军网）,中国军网,https://www.81.cn/2018zt/2018-11/29/content_9360152.htm,董振堂职务与高台牺牲事实
+src_dongzhengtang_cpc,董振堂：宁都起义与高台殉难（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/BIG5/n1/2021/0518/c64387-32106046.html,董振堂生平
+src_yangkeming_dangshi,杨克明（人民网党史）,人民网·中国共产党新闻网,https://dangshi.people.com.cn/n1/2019/0823/c427898-31312905.html,杨克明高台牺牲
+src_women_div_81,妇女独立师/妇女抗日先锋团（中国军网/中青报）,中国青年报,https://news.cyol.com/yuanchuang/2018-06/14/content_17292909.htm,西路军妇女团人员与贡献
+src_liuzhidan_81,刘志丹（中国军网）,中国军网,https://www.81.cn/yljnt_208627/ylml/9791206_8.html,刘志丹牺牲经过
+src_qiongya_hainan,琼崖革命斗争史（海南省人民政府网）,海南省人民政府网,https://hainan.gov.cn/hainan/lsyg/202606/8d451790b11442528fd9c3c9a5211ec6.shtml,椰子寨战斗与琼崖纵队诞生
+src_qiongya_cpc,琼崖纵队：二十三年红旗不倒（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2021/0611/c64387-32128318.html,母瑞山、突围、恢复
+src_qiongya_wangwenming,王文明与母瑞山（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2022/0509/c443712-32417363.html,王文明转移母瑞山
+src_qiongya_yunlong,云龙改编与潭口阻击（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2026/0521/c443712-40724285.html,琼崖抗日独立队成立与首战
+src_dongjiang_cpc,东江纵队（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2024/1201/c443712-40372710.html,东江纵队成立、规模、评价
+src_dongjiang_hk_rescue,香港大营救（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2021/0628/c64387-32142446.html,文化名人大营救
+src_dongjiang_gangjiu,港九大队（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2025/0703/c643712-40513912.html,港九大队海上游击战
+src_dongjiang_beiche,东江纵队北撤烟台（人民网党史）,人民网·中国共产党新闻网,https://dangshi.people.com.cn/n1/2020/0211/c85037-31581018.html,1946北撤
+src_dongjiang_huizhou,东江纵队北撤（惠州市政府网）,惠州市人民政府网,https://www.huizhou.gov.cn/zjhz/lsrw/content/mpost_5799584.html,北撤出发地沙鱼涌
+src_dongbeikanglian_people,东北抗日联军（人民网）,人民网,http://www.people.com.cn/n/2015/0825/c364391-27554663.html,抗联组建与番号
+src_dongbeikanglian_xinhua,东北抗联斗争（新华网）,新华网,http://www.news.cn/politics/2015-09/03/c_1116484708.htm,抗联番号与配合苏军
+src_yangjingyu_cpc,杨靖宇（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/BIG5/n1/2018/0218/c64387-29832218.html,杨靖宇牺牲
+src_zhaoyiman_people,赵一曼（人民网）,人民网,http://www.people.com.cn/n1/2018/0423/c64387-29944029.html,赵一曼被俘与就义

@@ -38,6 +38,13 @@ body {
 .force-toolbar { display: flex; gap: 6px; margin-bottom: 8px; }
 .force-toolbar button { flex: 1; border: 1px solid #d1d7d0; background: #fff; border-radius: 10px; padding: 6px 8px; cursor: pointer; color: #1d281f; }
 .force-toolbar button:hover { background: #f4f6f2; }
+/* 烈士纪念设施图层开关 */
+.memorial-toggle { width: 100%; margin-top: 10px; border: 1px solid #bd2427; background: rgba(189,36,39,.08); color: #6f1617; border-radius: 10px; padding: 8px; font-weight: 700; font-size: 12px; cursor: pointer; transition: background .2s, color .2s; }
+.memorial-toggle:hover { background: rgba(189,36,39,.16); }
+.memorial-toggle.active { background: #bd2427; color: #fff; }
+.memorial-pop-loc { font-size: 12px; color: #555; margin-top: 4px; line-height: 1.5; }
+.memorial-pop-meta { font-size: 11px; color: #7f1618; margin-top: 6px; }
+.memorial-pop-note { font-size: 10px; color: #999; margin-top: 4px; }
 /* 反馈(2026-05-28)：路线按视角分组的分组标题 */
 .force-group-heading { display: flex; align-items: center; gap: 7px; margin: 10px 2px 3px; padding-left: 2px; border-left: 3px solid #bd2427; }
 .force-group-heading:first-of-type { margin-top: 4px; }

@@ -271,6 +271,9 @@ a { color: inherit; }
 .new-longmarch-hall .section-heading h2 { color: #fff8ee; }
 .new-longmarch-panel { max-width: 900px; }
 .new-longmarch-quote { margin: 0 0 18px; padding-left: 18px; border-left: 4px solid #f0c98a; font-size: clamp(20px, 2.6vw, 30px); font-weight: 800; line-height: 1.5; letter-spacing: 1px; }
+.new-longmarch-cite { margin: -8px 0 16px; font-size: 12px; color: #f0c98a; }
+.new-longmarch-cite a { color: #ffe0a8; text-decoration: underline; }
+.new-longmarch-note a { color: #ffd79a; text-decoration: underline; }
 .new-longmarch-note { max-width: 720px; color: #f3e2d2; line-height: 1.8; font-size: 14px; }
 .new-longmarch-note strong { color: #ffd79a; }
 .new-longmarch-slots { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }

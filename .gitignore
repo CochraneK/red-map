@@ -5,3 +5,4 @@ test-results/
 tools/__pycache__/
 *.pyc
 .playwright-cli/
+.workbuddy/
