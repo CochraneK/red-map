@@ -52,3 +52,12 @@ Authorized historical research added with authoritative sources; see `research_p
 - New tool `tools/import_sourced_research.py` (idempotent, by id) reproduces the table additions.
 
 All new time-extended events (1927-1950) are marked as 延伸视角 in notes; they enlarge the timeline beyond 1934-1936 by design (西路军 is the Long March epilogue; 琼崖/东江/抗联 are the "星星之火" follow-on). Check passes with 0 errors (1 pre-existing visual-asset license warning).
+
+## 2026-11-22 evidence-model + multi-source + explore UI (v11)
+
+- **Evidence model**: `sources.csv` gained `sourceType` (authoritative/game_text/book/subtitle/oral_history/public_narrative). `check_project.py` now enforces a non-authoritative certainty ceiling — non-authoritative-backed events cannot be `certainty=high` (246 game events verified). Extend via `tools/extend_evidence_model.py`.
+- **Input pipelines** (candidates only, never auto-imported): `tools/extract_book_candidates.py` (PDF text layer / TXT / OCR text → anchored snippets with page + date hints; scanned PDFs require external OCR — no engine bundled), `tools/extract_subtitle_candidates.py` (srt/vtt/ass, timeline-block merge, ASR transcript entry point → public_narrative candidates). Both output to `research_private/`.
+- **Explore UI**: new `explore.html` + `js/explore.js` + `css/explore.css` — data-driven thematic entry (person/force/place/event cards), replaces index.html's direct jump to museum. `museum.html?person=<id>` deep-link selects a person automatically. Index now points to explore.html. check_project.py covers the new files.
+- Browser verified: 8 person / 12 force / 10 place / 6 event cards render; `?person=dongzhengtang` selects 董振堂 correctly. No runtime errors (favicon 404 only).
+
+Local scanned gazetteers (绥德州志 etc., PDF, 39-154MB) have NO text layer — need OCR before the book pipeline can use them. No OCR engine installed locally at time of writing.

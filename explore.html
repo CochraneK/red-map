@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>长征星火 · 从这里进入</title>
+<link rel="stylesheet" href="css/explore.css">
+</head>
+<body>
+<header class="ex-hero">
+  <div class="ex-hero-inner">
+    <p class="ex-kicker">1934 — 1950 · 多路红军与星星之火</p>
+    <h1>你想从哪里进入长征？</h1>
+    <p class="ex-lead">不按章节，按问题。选一个人、一支队伍、一个地点，或者直接回到路线本身。</p>
+    <nav class="ex-topnav">
+      <a href="museum.html">数字博物馆</a>
+      <a href="map.html">路线地图</a>
+      <a href="museum-immersive.html">沉浸展厅</a>
+    </nav>
+  </div>
+</header>
+
+<main class="ex-main">
+  <section class="ex-section" id="by-person">
+    <div class="ex-section-head">
+      <h2><span class="ex-num">01</span> 从一个人开始</h2>
+      <p>每个人物都连着一段路线。点击名字，在博物馆里展开他的时间线。</p>
+    </div>
+    <div class="ex-grid" id="grid-persons"></div>
+  </section>
+
+  <section class="ex-section ex-alt" id="by-force">
+    <div class="ex-section-head">
+      <h2><span class="ex-num">02</span> 从一支队伍开始</h2>
+      <p>红军主线、星星之火、敌军——按视角分组，不再是一长串展厅目录。</p>
+    </div>
+    <div class="ex-grid" id="grid-forces"></div>
+  </section>
+
+  <section class="ex-section" id="by-place">
+    <div class="ex-section-head">
+      <h2><span class="ex-num">03</span> 从一个地点开始</h2>
+      <p>高频历史现场与烈士纪念设施。地点切片把散落事件重新聚到一起。</p>
+    </div>
+    <div class="ex-grid" id="grid-places"></div>
+    <p class="ex-footnote">纪念设施点位可在<a href="map.html">路线地图</a>中点击"◈ 烈士纪念设施"开关查看。</p>
+  </section>
+
+  <section class="ex-section ex-alt" id="by-event">
+    <div class="ex-section-head">
+      <h2><span class="ex-num">04</span> 从一件事开始</h2>
+      <p>关键节点直接定位到地图上的那一刻。</p>
+    </div>
+    <div class="ex-grid" id="grid-events"></div>
+  </section>
+</main>
+
+<footer class="ex-footer">
+  <p>数据来源：结构化表格 → 生成 JSON → 静态页面。史料条目与游戏线索严格分级，详见仓库文档。</p>
+</footer>
+
+<script src="js/explore.js"></script>
+</body>
+</html>

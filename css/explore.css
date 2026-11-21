@@ -1,0 +1,40 @@
+/* 主题入口页：米白纸感 + 深红点缀，沿用博物馆视觉语言 */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; color: #1d1a18; background: #f3f4ef; line-height: 1.6; }
+a { color: inherit; }
+
+.ex-hero { background: #1f2521; color: #fff6ec; padding: 64px 24px 56px; }
+.ex-hero-inner { max-width: 980px; margin: 0 auto; }
+.ex-kicker { margin: 0 0 12px; color: #d6a24a; font-size: 12px; letter-spacing: 2px; }
+.ex-hero h1 { margin: 0 0 14px; font-size: 34px; line-height: 1.3; font-weight: 700; }
+.ex-lead { margin: 0 0 26px; color: #e6d9c8; font-size: 15px; max-width: 720px; }
+.ex-topnav { display: flex; flex-wrap: wrap; gap: 10px; }
+.ex-topnav a { display: inline-block; padding: 8px 14px; border: 1px solid rgba(255,240,220,.35); border-radius: 999px; text-decoration: none; font-size: 13px; }
+.ex-topnav a:hover { background: rgba(255,240,220,.12); }
+
+.ex-main { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+.ex-section { padding: 52px 0; border-bottom: 1px solid rgba(45,52,46,.12); }
+.ex-section.ex-alt { background: transparent; }
+.ex-section-head { margin-bottom: 24px; }
+.ex-section-head h2 { margin: 0 0 8px; font-size: 22px; font-weight: 700; }
+.ex-num { display: inline-block; min-width: 34px; color: #bd2427; font-size: 14px; letter-spacing: 1px; }
+.ex-section-head p { margin: 0; color: #64615a; font-size: 13px; }
+
+.ex-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+.ex-card { --accent: #bd2427; position: relative; display: flex; flex-direction: column; gap: 7px; min-height: 150px; padding: 16px 16px 14px; background: #fffdf7; border: 1px solid rgba(45,52,46,.14); border-top: 4px solid var(--accent); border-radius: 10px; text-decoration: none; transition: transform .18s, box-shadow .18s; }
+.ex-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(30,34,30,.12); }
+.ex-card-kicker { color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .5px; }
+.ex-card-title { font-size: 17px; font-weight: 700; color: #171514; }
+.ex-card-desc { font-size: 12px; color: #5f5c54; flex: 1; }
+.ex-card-cta { font-size: 12px; font-weight: 700; color: var(--accent); }
+.ex-footnote { margin: 18px 0 0; font-size: 12px; color: #64615a; }
+.ex-footnote a { color: #6f1617; text-decoration: underline; }
+.ex-error { grid-column: 1 / -1; color: #a32d2d; }
+
+.ex-footer { max-width: 1080px; margin: 0 auto; padding: 30px 24px 50px; color: #7a766e; font-size: 12px; }
+
+@media (max-width: 640px) {
+  .ex-hero h1 { font-size: 26px; }
+  .ex-section { padding: 38px 0; }
+  .ex-grid { grid-template-columns: 1fr; }
+}

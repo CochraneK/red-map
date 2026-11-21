@@ -12,413 +12,472 @@
       "title": "中国共产党一百年大事记（1921年7月－2021年6月）",
       "publisher": "最高人民检察院转载新华社/中共中央党史和文献研究院资料",
       "url": "https://www.spp.gov.cn/zdgz/202106/t20210628_522564.shtml",
-      "note": "用于中央红军长征开始、湘江战役损失、各路红军战略转移等基础时间线。"
+      "note": "用于中央红军长征开始、湘江战役损失、各路红军战略转移等基础时间线。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_zunyi_hunan",
       "title": "党史大事件·1935年：遵义会议等",
       "publisher": "湖南省工业和信息化厅党史学习资料",
       "url": "https://gxt.hunan.gov.cn/gxt/syzt/dsxxjy/dsydyy/dsdsj/202103/t20210329_15075565.html",
-      "note": "用于遵义会议、巧渡金沙江、强渡大渡河、飞夺泸定桥等条目。"
+      "note": "用于遵义会议、巧渡金沙江、强渡大渡河、飞夺泸定桥等条目。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_yihai_people",
       "title": "小叶丹：彝海结盟谱写民族团结之歌",
       "publisher": "中国共产党新闻网/人民网",
       "url": "https://cpc.people.com.cn/n1/2022/0729/c443712-32488716.html",
-      "note": "用于刘伯承与小叶丹彝海结盟、民族工作与向导协助。"
+      "note": "用于刘伯承与小叶丹彝海结盟、民族工作与向导协助。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_red2_start_12371",
       "title": "百年瞬间｜中国工农红军红二、六军团开始长征",
       "publisher": "共产党员网",
       "url": "https://www.12371.cn/2021/11/19/VIDE1637314320431426.shtml",
-      "note": "用于红二、六军团从桑植出发、人数约一万七千多人、贺捷生出生18天随军长征。"
+      "note": "用于红二、六军团从桑植出发、人数约一万七千多人、贺捷生出生18天随军长征。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_jiangtaibao_12371",
       "title": "身边的红色印记：将台堡",
       "publisher": "共产党员网",
       "url": "https://www.12371.cn/2022/01/07/VIDE1641535681331454.shtml",
-      "note": "用于1936年10月22日红一、红二方面军将台堡会师，标志长征胜利结束。"
+      "note": "用于1936年10月22日红一、红二方面军将台堡会师，标志长征胜利结束。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_jiangtaibao_cppcc",
       "title": "从这里走向胜利——追忆宁夏将台堡红军长征会师",
       "publisher": "中国政协网",
       "url": "https://www.cppcc.gov.cn/zxww/2021/06/25/ARTI1624583644785160.shtml",
-      "note": "用于将台堡会师地点、参加会师部队等。"
+      "note": "用于将台堡会师地点、参加会师部队等。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_meetings_xinhua",
       "title": "长征中的6次会师",
       "publisher": "新华网",
       "url": "https://www.xinhuanet.com/politics/2016-10/11/c_1119695332.htm",
-      "note": "用于懋功、甘孜、会宁、将台堡等会师关系。"
+      "note": "用于懋功、甘孜、会宁、将台堡等会师关系。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_red25_people",
       "title": "红二十五军：万里长征赤胆忠心",
       "publisher": "党史学习教育官网/人民网",
       "url": "https://dangshi.people.com.cn/n1/2021/0809/c436975-32185678.html",
-      "note": "用于红二十五军出发、宣传抗日救国、转战路线。"
+      "note": "用于红二十五军出发、宣传抗日救国、转战路线。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_dushuzhen_people",
       "title": "红二十五军鏖战独树镇",
       "publisher": "中国共产党新闻网/人民政协报",
       "url": "https://cpc.people.com.cn/n1/2024/1126/c443712-40369199.html",
-      "note": "用于1934年11月26日至27日独树镇战斗。"
+      "note": "用于1934年11月26日至27日独树镇战斗。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_yongping_people",
       "title": "永坪会师：为红军长征找到落脚点",
       "publisher": "中国共产党新闻网/人民网",
       "url": "https://dangshi.people.com.cn/n1/2021/0714/c436975-32157361.html",
-      "note": "用于红二十五军与红二十六、红二十七军会师，合编红十五军团。"
+      "note": "用于红二十五军与红二十六、红二十七军会师，合编红十五军团。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_shaanbei_12371",
       "title": "陕甘革命根据地：伟大长征的落脚点、伟大抗战的出发点",
       "publisher": "共产党员网",
       "url": "https://www.12371.cn/2021/06/18/ARTI1623971854207634.shtml",
-      "note": "用于陕甘革命根据地由刘志丹、谢子长、习仲勋等开拓，并成为长征落脚点。"
+      "note": "用于陕甘革命根据地由刘志丹、谢子长、习仲勋等开拓，并成为长征落脚点。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_liuzhidan_mva",
       "title": "刘志丹：群众领袖，民族英雄",
       "publisher": "退役军人事务部",
       "url": "https://www.mva.gov.cn/sy/zt/jdbn/qhxzc/202105/t20210517_47328.html",
-      "note": "用于刘志丹开辟陕甘边根据地、1936年4月14日牺牲。"
+      "note": "用于刘志丹开辟陕甘边根据地、1936年4月14日牺牲。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_hezizhen_81",
       "title": "贺子珍含泪托孤",
       "publisher": "中国军网",
       "url": "https://www.81.cn/jwzl/2016-08/24/content_7223651.htm",
-      "note": "用于贺子珍长征途中生女并托孤的情节。"
+      "note": "用于贺子珍长征途中生女并托孤的情节。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_xinhua_25000",
       "title": "二万五千里长征遭质疑？苍茫大地不答应！",
       "publisher": "新华网",
       "url": "https://www.xinhuanet.com/politics/2016-10/25/c_1119782026.htm",
-      "note": "用于中央红军行程二万五千里、红二十五军近万里等里程口径。"
+      "note": "用于中央红军行程二万五千里、红二十五军近万里等里程口径。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_xinhua_overall_stats",
       "title": "长征，红旗漫卷西风",
       "publisher": "新华网",
       "url": "https://www.xinhuanet.com/politics/2021-04/16/c_1127336547.htm",
-      "note": "用于长征历时两年、600余次战役战斗、近百条江河、40余座高山等总体口径。"
+      "note": "用于长征历时两年、600余次战役战斗、近百条江河、40余座高山等总体口径。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_epic_people",
       "title": "伟大的史诗 不朽的丰碑",
       "publisher": "中国共产党新闻网/人民网",
       "url": "https://cpc.people.com.cn/n1/2021/1022/c441345-32261301.html",
-      "note": "用于湘江牺牲、平均三天一次激战、平均300米一名红军牺牲等壮烈叙事。"
+      "note": "用于湘江牺牲、平均三天一次激战、平均300米一名红军牺牲等壮烈叙事。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_chenshuxiang_xinhua",
       "title": "绝对忠诚：断肠师长陈树湘的生命倒计时",
       "publisher": "新华网",
       "url": "https://www.xinhuanet.com/politics/2019-06/30/c_1124690507.htm",
-      "note": "用于陈树湘与红三十四师绝命后卫叙事。"
+      "note": "用于陈树湘与红三十四师绝命后卫叙事。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_hezizhen_people",
       "title": "解密：毛泽东长征川南痛失爱女始末",
       "publisher": "中国共产党新闻网/人民网",
       "url": "https://dangshi.people.com.cn/n/2013/0614/c85037-21844643.html",
-      "note": "用于贺子珍长征途中生女并托孤情节。"
+      "note": "用于贺子珍长征途中生女并托孤情节。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_hejiesheng_cppcc",
       "title": "贺捷生：唯有信仰不灭",
       "publisher": "中国政协网",
       "url": "https://www.cppcc.gov.cn/zxww/2016/01/19/ARTI1453173514705901.shtml",
-      "note": "用于贺捷生出生18天随军长征。"
+      "note": "用于贺捷生出生18天随军长征。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_longmarch_provinces",
       "title": "红军长征途经多少省",
       "publisher": "新华社",
       "url": "https://www.xinhuanet.com/politics/2016-09/26/c_1119625593.htm",
-      "note": "用于各路红军长征经过省份口径。"
+      "note": "用于各路红军长征经过省份口径。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_party_chronology_xinhua",
       "title": "中国共产党一百年大事记（1921年7月－2021年6月）",
       "publisher": "新华社/中共中央党史和文献研究院",
       "url": "https://www.xinhuanet.com/2021-06/28/c_1127603399.htm",
-      "note": "用于通道、黎平、遵义等会议与长征条目。"
+      "note": "用于通道、黎平、遵义等会议与长征条目。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_dengping_people_2025",
       "title": "邓萍：遵义烽火中的不朽英魂",
       "publisher": "中国共产党新闻网",
       "url": "https://cpc.people.com.cn/n1/2025/0322/c443712-40444333.html",
-      "note": "邓萍、娄山关、遵义战役"
+      "note": "邓萍、娄山关、遵义战役",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_wumeng_people_2023",
       "title": "乌蒙山回旋战：集游击战和运动战之大成",
       "publisher": "中国共产党新闻网/党建网",
       "url": "https://cpc.people.com.cn/BIG5/n1/2023/0615/c443712-40013864.html",
-      "note": "红二、六军团乌蒙山回旋战"
+      "note": "红二、六军团乌蒙山回旋战",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_red25_yuanjiagou_people_2026",
       "title": "红二十五军袁家沟口歼敌军",
       "publisher": "中国共产党新闻网",
       "url": "https://cpc.people.com.cn/n1/2026/0402/c443712-40693754.html",
-      "note": "红二十五军袁家沟口战斗"
+      "note": "红二十五军袁家沟口战斗",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_red25_xinhua_2017",
       "title": "红军长征到达陕北的第一支部队：红二十五军",
       "publisher": "新华网",
       "url": "https://www.xinhuanet.com/politics/2017-08/05/c_1121436475.htm",
-      "note": "红二十五军到达永坪并与西北红军会师"
+      "note": "红二十五军到达永坪并与西北红军会师",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_red25_base_ujn",
       "title": "鄂豫陕革命根据地——红军长征播撒的革命火种",
       "publisher": "济南大学党史学习教育资料",
       "url": "https://www.ujn.edu.cn/dsxxjy/info/1005/1476.htm",
-      "note": "红二十五军创建鄂豫陕根据地、相关战斗"
+      "note": "红二十五军创建鄂豫陕根据地、相关战斗",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_redfourth_sichuan",
       "title": "红四方面军曲折复杂的长征历程",
       "publisher": "四川省地方志工作办公室",
       "url": "https://scdfz.sc.gov.cn/ztzl/hjczzsc/zzyj/content_16665",
-      "note": "红四方面军嘉陵江、土门等条目"
+      "note": "红四方面军嘉陵江、土门等条目",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_stats_xinhua_2016",
       "title": "伟大的长征精神，远超悲情意识",
       "publisher": "新华网",
       "url": "https://www.xinhuanet.com/politics/2016-09/20/c_129289465.htm",
-      "note": "长征损失、总人数等统计口径"
+      "note": "长征损失、总人数等统计口径",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_stats_people_2021",
       "title": "震古烁今的伟大远征",
       "publisher": "人民网党史频道",
       "url": "https://dangshi.people.cn/n1/2021/0413/c436975-32076293.html",
-      "note": "长征出发人数、补充兵力、牺牲损失"
+      "note": "长征出发人数、补充兵力、牺牲损失",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_ganzi_12371",
       "title": "大会师阶段(1936.7.1——1936.12.12)",
       "publisher": "共产党员网",
       "url": "https://news.12371.cn/2014/10/14/ARTI1413280686525511.shtml",
-      "note": "红二、六军团与红四方面军甘孜会师及北上"
+      "note": "红二、六军团与红四方面军甘孜会师及北上",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_qilv_people",
       "title": "从毛泽东诗词感悟长征精神",
       "publisher": "人民网理论频道",
       "url": "https://theory.people.com.cn/n1/2017/1110/c415240-29639472.html",
-      "note": "七律长征涉及五岭、乌蒙、金沙、大渡、岷山等意象"
+      "note": "七律长征涉及五岭、乌蒙、金沙、大渡、岷山等意象",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_qilv_dangjian_2024",
       "title": "红军不怕远征难——长征诗歌价值初释",
       "publisher": "党建网",
       "url": "https://www.dangjian.cn/jdcd/2024/10/23/detail_202410237001577.html",
-      "note": "七律长征山川意象解读"
+      "note": "七律长征山川意象解读",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_hongchao_people",
       "title": "长征路上牺牲的第一位红军师长——洪超",
       "publisher": "中国共产党新闻网/人民网",
       "url": "https://cpc.people.com.cn/n1/2021/0820/c443712-32202080.html",
-      "note": "用于洪超在长征初期百石战斗中牺牲。"
+      "note": "用于洪超在长征初期百石战斗中牺牲。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_xiezichang_xinhua",
       "title": "谢子长：陕北红军和苏区创建人之一",
       "publisher": "新华网",
       "url": "https://www.xinhuanet.com/politics/2019-08/12/c_1124865941.htm",
-      "note": "用于谢子长与西北根据地、陕北红军线索。"
+      "note": "用于谢子长与西北根据地、陕北红军线索。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_luonanhui_xinhua",
       "title": "喋血长征的青年将军——罗南辉",
       "publisher": "新华网",
       "url": "https://www.xinhuanet.com/politics/2018-10/13/c_1123553410.htm",
-      "note": "用于罗南辉在会师前后相关阻击战牺牲。"
+      "note": "用于罗南辉在会师前后相关阻击战牺牲。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_women_redarmy_81",
       "title": "长征中的女红军",
       "publisher": "中国军网",
       "url": "https://www.81.cn/2016czsl80/2016-08/02/content_7188181.htm",
-      "note": "用于贺子珍、邓颖超、蔡畅、康克清、刘英、李坚真等女红军长征线索。"
+      "note": "用于贺子珍、邓颖超、蔡畅、康克清、刘英、李坚真等女红军长征线索。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_pengdehuai_people",
       "title": "彭德怀与长征",
       "publisher": "中国共产党新闻网/人民网",
       "url": "https://cpc.people.com.cn/GB/69112/78233/78687/78976/5421212.html",
-      "note": "用于彭德怀在长征与陕北战役中的指挥线索。"
+      "note": "用于彭德怀在长征与陕北战役中的指挥线索。",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_steam_longmarch_1934_1936",
       "title": "《长征1934-1936》本地游戏文本抽取",
       "publisher": "Steam 本地安装文件 / Unreal 数据资产抽取",
       "url": "docs/STEAM_TEXT_EXTRACTION.md",
-      "note": "仅作线索来源；正式采用前应继续用权威党史资料复核。导入事件已压缩改写为短策展文案。"
+      "note": "仅作线索来源；正式采用前应继续用权威党史资料复核。导入事件已压缩改写为短策展文案。",
+      "sourceType": "game_text"
     },
     {
       "id": "src_wxyj_dswxyjy",
       "title": "中国工农红军西路军（中央党史和文献研究院）",
       "publisher": "中央党史和文献研究院",
       "url": "https://www.dswxyjy.org.cn/n1/2020/0914/c244523-31860754.html",
-      "note": "西路军西渡黄河、倪家营子、梨园口、石窝分兵、星星峡时间线"
+      "note": "西路军西渡黄河、倪家营子、梨园口、石窝分兵、星星峡时间线",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_wxyj_people_dangshi",
       "title": "西路军历史（人民网党史）",
       "publisher": "人民网·中国共产党新闻网",
       "url": "https://dangshi.people.com.cn/BIG5/n1/2019/0223/c85037-30898568-4.html",
-      "note": "西路军总人数、结局与历史评价"
+      "note": "西路军总人数、结局与历史评价",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_wxyj_cctv",
       "title": "西路军·西渡黄河（央视网）",
       "publisher": "央视网",
       "url": "https://tv.cctv.com/v/v1/VIDEdmFT86EHu9ewPUPGJspN190824.html",
-      "note": "靖远虎豹口渡河地点参考"
+      "note": "靖远虎豹口渡河地点参考",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_wxyj_81",
       "title": "董振堂（中国军网）",
       "publisher": "中国军网",
       "url": "https://www.81.cn/2018zt/2018-11/29/content_9360152.htm",
-      "note": "董振堂职务与高台牺牲事实"
+      "note": "董振堂职务与高台牺牲事实",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_dongzhengtang_cpc",
       "title": "董振堂：宁都起义与高台殉难（中国共产党新闻网）",
       "publisher": "中国共产党新闻网",
       "url": "https://cpc.people.com.cn/BIG5/n1/2021/0518/c64387-32106046.html",
-      "note": "董振堂生平"
+      "note": "董振堂生平",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_yangkeming_dangshi",
       "title": "杨克明（人民网党史）",
       "publisher": "人民网·中国共产党新闻网",
       "url": "https://dangshi.people.com.cn/n1/2019/0823/c427898-31312905.html",
-      "note": "杨克明高台牺牲"
+      "note": "杨克明高台牺牲",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_women_div_81",
       "title": "妇女独立师/妇女抗日先锋团（中国军网/中青报）",
       "publisher": "中国青年报",
       "url": "https://news.cyol.com/yuanchuang/2018-06/14/content_17292909.htm",
-      "note": "西路军妇女团人员与贡献"
+      "note": "西路军妇女团人员与贡献",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_liuzhidan_81",
       "title": "刘志丹（中国军网）",
       "publisher": "中国军网",
       "url": "https://www.81.cn/yljnt_208627/ylml/9791206_8.html",
-      "note": "刘志丹牺牲经过"
+      "note": "刘志丹牺牲经过",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_qiongya_hainan",
       "title": "琼崖革命斗争史（海南省人民政府网）",
       "publisher": "海南省人民政府网",
       "url": "https://hainan.gov.cn/hainan/lsyg/202606/8d451790b11442528fd9c3c9a5211ec6.shtml",
-      "note": "椰子寨战斗与琼崖纵队诞生"
+      "note": "椰子寨战斗与琼崖纵队诞生",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_qiongya_cpc",
       "title": "琼崖纵队：二十三年红旗不倒（中国共产党新闻网）",
       "publisher": "中国共产党新闻网",
       "url": "https://cpc.people.com.cn/n1/2021/0611/c64387-32128318.html",
-      "note": "母瑞山、突围、恢复"
+      "note": "母瑞山、突围、恢复",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_qiongya_wangwenming",
       "title": "王文明与母瑞山（中国共产党新闻网）",
       "publisher": "中国共产党新闻网",
       "url": "https://cpc.people.com.cn/n1/2022/0509/c443712-32417363.html",
-      "note": "王文明转移母瑞山"
+      "note": "王文明转移母瑞山",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_qiongya_yunlong",
       "title": "云龙改编与潭口阻击（中国共产党新闻网）",
       "publisher": "中国共产党新闻网",
       "url": "https://cpc.people.com.cn/n1/2026/0521/c443712-40724285.html",
-      "note": "琼崖抗日独立队成立与首战"
+      "note": "琼崖抗日独立队成立与首战",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_dongjiang_cpc",
       "title": "东江纵队（中国共产党新闻网）",
       "publisher": "中国共产党新闻网",
       "url": "https://cpc.people.com.cn/n1/2024/1201/c443712-40372710.html",
-      "note": "东江纵队成立、规模、评价"
+      "note": "东江纵队成立、规模、评价",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_dongjiang_hk_rescue",
       "title": "香港大营救（中国共产党新闻网）",
       "publisher": "中国共产党新闻网",
       "url": "https://cpc.people.com.cn/n1/2021/0628/c64387-32142446.html",
-      "note": "文化名人大营救"
+      "note": "文化名人大营救",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_dongjiang_gangjiu",
       "title": "港九大队（中国共产党新闻网）",
       "publisher": "中国共产党新闻网",
       "url": "https://cpc.people.com.cn/n1/2025/0703/c643712-40513912.html",
-      "note": "港九大队海上游击战"
+      "note": "港九大队海上游击战",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_dongjiang_beiche",
       "title": "东江纵队北撤烟台（人民网党史）",
       "publisher": "人民网·中国共产党新闻网",
       "url": "https://dangshi.people.com.cn/n1/2020/0211/c85037-31581018.html",
-      "note": "1946北撤"
+      "note": "1946北撤",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_dongjiang_huizhou",
       "title": "东江纵队北撤（惠州市政府网）",
       "publisher": "惠州市人民政府网",
       "url": "https://www.huizhou.gov.cn/zjhz/lsrw/content/mpost_5799584.html",
-      "note": "北撤出发地沙鱼涌"
+      "note": "北撤出发地沙鱼涌",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_dongbeikanglian_people",
       "title": "东北抗日联军（人民网）",
       "publisher": "人民网",
       "url": "http://www.people.com.cn/n/2015/0825/c364391-27554663.html",
-      "note": "抗联组建与番号"
+      "note": "抗联组建与番号",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_dongbeikanglian_xinhua",
       "title": "东北抗联斗争（新华网）",
       "publisher": "新华网",
       "url": "http://www.news.cn/politics/2015-09/03/c_1116484708.htm",
-      "note": "抗联番号与配合苏军"
+      "note": "抗联番号与配合苏军",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_yangjingyu_cpc",
       "title": "杨靖宇（中国共产党新闻网）",
       "publisher": "中国共产党新闻网",
       "url": "https://cpc.people.com.cn/BIG5/n1/2018/0218/c64387-29832218.html",
-      "note": "杨靖宇牺牲"
+      "note": "杨靖宇牺牲",
+      "sourceType": "authoritative"
     },
     {
       "id": "src_zhaoyiman_people",
       "title": "赵一曼（人民网）",
       "publisher": "人民网",
       "url": "http://www.people.com.cn/n1/2018/0423/c64387-29944029.html",
-      "note": "赵一曼被俘与就义"
+      "note": "赵一曼被俘与就义",
+      "sourceType": "authoritative"
     }
   ],
   "subjects": [

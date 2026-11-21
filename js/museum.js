@@ -15,6 +15,9 @@ async function initMuseum() {
     if (!res.ok) throw new Error(`数据加载失败：${res.status}`);
     museumData = await res.json();
     selectedPersonId = getDefaultPersonId();
+    // 主题入口页 ?person=<id> 深链：跨页直达指定人物时间线
+    const personParam = new URLSearchParams(window.location.search).get('person');
+    if (personParam && museumData.persons.some(p => p.id === personParam)) selectedPersonId = personParam;
     applyHeroVisual();
     renderMetrics();
     renderHallNav();

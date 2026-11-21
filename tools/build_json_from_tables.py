@@ -102,7 +102,7 @@ def read_sources(errors, warnings):
         if not sid: warnings.append(f'sources.csv 第 {i} 行缺少 id，已跳过'); continue
         if sid in ids: errors.append(f'sources.csv 第 {i} 行 id 重复：{sid}'); continue
         ids.add(sid)
-        sources.append({'id':sid,'title':row.get('title',''),'publisher':row.get('publisher',''),'url':row.get('url',''),'note':row.get('note','')})
+        sources.append({'id':sid,'title':row.get('title',''),'publisher':row.get('publisher',''),'url':row.get('url',''),'note':row.get('note',''),'sourceType':row.get('sourceType','') or 'authoritative'})
     return sources, ids
 
 def check_refs(kind: str, row_no: int, field: str, values: list[str], allowed: set[str], errors: list[str]):

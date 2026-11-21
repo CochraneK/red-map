@@ -44,6 +44,13 @@ Keep the public museum/map reproducible from structured sources while reducing h
 - Memorial layer is data-autonomous: `data/memorial_sites.geojson` (16 sites, GCJ-02) + `#memorial-toggle` on map.html; no API key needed. Some coordinates are POI/估算 — marked in each feature's `precision` field; re-verify before public display.
 - 新长征 quote provenance corrected: main quote from 2016-10-21 长征胜利80周年讲话; the "一代人有一代人的长征" line is from 2019-04-30 五四讲话 — do not conflate.
 
+## 2026-11-22 evidence model + explore UI (v11)
+
+- Start at `explore.html` (index.html redirects there) — the issue-driven thematic entry (person/force/place/event). `museum.html` still works standalone; `museum.html?person=<id>` deep-links to a person.
+- To add material from books/subtitles: run the extract_* tools → review candidates in `research_private/` → only then import source-backed items with certainty <= medium. Non-authoritative sources are blocked from `certainty=high` by check_project.py.
+- Scanned PDFs (local 绥德州志 etc.) need OCR first; no OCR engine is bundled. Install one (PaddleOCR/Tesseract) or use an external OCR tool, then feed the text/TXT to extract_book_candidates.py.
+- Method note: "science-based enrichment" = measure coverage first (主体×时间×证据等级), prefer upgrading low→high over adding more low, deepen person-event links, then broaden. See conversation / STATUS for the four-dimension framework.
+
 ## Validation
 
 ```bash

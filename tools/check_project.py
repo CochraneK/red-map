@@ -65,6 +65,37 @@ def check_source_provenance_policy() -> None:
     print(f"[OK] game-only candidate events keep low certainty: {game_only}")
 
 
+def check_non_authoritative_certainty() -> None:
+    """非权威源（游戏/书籍/字幕/口述/公众叙事）不得支撑 certainty=high 的事件。"""
+    print("[CHECK] non-authoritative source certainty ceiling")
+    src_types: dict[str, str] = {}
+    for row in read_csv_rows("data_edit/sources.csv"):
+        sid = str(row.get("id", "")).strip()
+        if sid:
+            src_types[sid] = str(row.get("sourceType", "") or "authoritative").strip().lower()
+    non_auth = {"game_text", "book", "subtitle", "oral_history", "public_narrative"}
+    violations: list[str] = []
+    checked = 0
+    for row in read_csv_rows("data_edit/events.csv"):
+        if str(row.get("enabled", "TRUE")).strip().lower() in {"false", "0", "no", "n", "否", "禁用"}:
+            continue
+        refs = split_refs(row.get("sourceIds", ""))
+        if not refs:
+            continue
+        types = {src_types.get(r, "authoritative") for r in refs}
+        if not (types & non_auth):
+            continue
+        checked += 1
+        if str(row.get("certainty", "")).strip().lower() == "high":
+            violations.append(row.get("id") or row.get("title") or "<unnamed>")
+    if violations:
+        sample = ", ".join(violations[:10])
+        raise RuntimeError(
+            f"{len(violations)} 个非权威来源事件错误地标为 certainty=high。示例：{sample}"
+        )
+    print(f"[OK] non-authoritative source events avoid high certainty: {checked} checked")
+
+
 def check_visual_asset_provenance() -> None:
     print("[CHECK] visual asset provenance metadata")
     unresolved: list[str] = []
@@ -124,6 +155,7 @@ def check_required_files() -> None:
         "PROVENANCE_STATUS.md",
         "docs/architecture.md",
         "index.html",
+        "explore.html",
         "map.html",
         "index-en.html",
         "museum.html",
@@ -131,9 +163,11 @@ def check_required_files() -> None:
         "css/style.css",
         "css/museum.css",
         "css/immersive.css",
+        "css/explore.css",
         "js/app.js",
         "js/museum.js",
         "js/immersive.js",
+        "js/explore.js",
         "admin/index.html",
         "data_edit/sources.csv",
         "data_edit/events.csv",
@@ -205,6 +239,7 @@ def check_js_syntax() -> None:
     run([node, "--check", "admin/admin.js"])
     run([node, "--check", "js/museum.js"])
     run([node, "--check", "js/immersive.js"])
+    run([node, "--check", "js/explore.js"])
 
 
 def check_python_syntax() -> None:
@@ -258,6 +293,7 @@ def main() -> int:
         check_inline_handlers_removed()
         check_source_registry_metadata()
         check_source_provenance_policy()
+        check_non_authoritative_certainty()
         check_visual_asset_provenance()
         check_translation_placeholders(data)
     except Exception as exc:
