@@ -55,6 +55,8 @@ function renderHallNav() {
     halls.push(hall);
     if (hall.id === 'route') halls.push({ id: 'catalog', title: '资料总目录' });
   });
+  // 反馈(2026-05-28)：追加「新长征」视角入口
+  halls.push({ id: 'new-longmarch', title: '新长征' });
   nav.innerHTML = halls.map(h => `<a href="#${escapeAttr(h.id)}">${escapeHTML(h.title)}</a>`).join('');
 }
 

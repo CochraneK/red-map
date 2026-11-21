@@ -1,10 +1,10 @@
 {
   "title": "红军长征星火路线数据",
   "description": "红军长征多路路线、人物事迹、会师、敌军围堵与七律长征诗句联动，并融入Steam文本抽取线索。",
-  "version": "v8-steam-entities",
+  "version": "v9-feedback-structural",
   "timeRange": {
     "start": "1932-12-01",
-    "end": "1936-10-22"
+    "end": "1936-12-12"
   },
   "sources": [
     {
@@ -280,7 +280,7 @@
       "type": "force",
       "name": "红一方面军",
       "shortName": "红一方面军",
-      "color": "#d73027",
+      "color": "#d3212c",
       "leader": "毛泽东、周恩来、朱德、张闻天、王稼祥、彭德怀等",
       "sort": 10,
       "description": "中央红军主力。1934年10月从中央苏区战略转移，1935年10月到达陕北。",
@@ -289,14 +289,16 @@
       "leaderEn": "Mao Zedong, Zhou Enlai, Zhu De, Zhang Wentian, Wang Jiaxiang, Peng Dehuai, Lin Biao, etc.",
       "descriptionEn": "Main column of the Central Red Army, departing from the Central Soviet Area in October 1934 and reaching northern Shaanxi in October 1935.",
       "subUnits": "红一军团; 红三军团; 红五军团; 红八军团; 红九军团; 中央军委纵队; 红三十四师",
-      "subUnitsEn": "1st Corps; 3rd Corps; 5th Corps; 8th Corps; 9th Corps; Central Military Commission Column; 34th Division"
+      "subUnitsEn": "1st Corps; 3rd Corps; 5th Corps; 8th Corps; 9th Corps; Central Military Commission Column; 34th Division",
+      "group": "红军主线",
+      "groupEn": "Main Red Armies"
     },
     {
       "id": "red_25th",
       "type": "force",
       "name": "红二十五军",
       "shortName": "红二十五军",
-      "color": "#fdae61",
+      "color": "#e6550d",
       "leader": "程子华、吴焕先、徐海东等",
       "sort": 20,
       "description": "鄂豫皖根据地重要力量，1934年11月从河南罗山何家冲出发，最早到达陕北。",
@@ -305,14 +307,16 @@
       "leaderEn": "Cheng Zihua, Wu Huanxian, Xu Haidong, etc.",
       "descriptionEn": "A force from the Hubei-Henan-Anhui base area, among the earliest Red Army columns to reach northern Shaanxi.",
       "subUnits": "红二十五军第七十三师; 红二十五军第七十四师; 红二十五军第七十五师; 北上抗日第二先遣队",
-      "subUnitsEn": "73rd Division; 74th Division; 75th Division; Second Northern Anti-Japanese Advance Detachment"
+      "subUnitsEn": "73rd Division; 74th Division; 75th Division; Second Northern Anti-Japanese Advance Detachment",
+      "group": "红军主线",
+      "groupEn": "Main Red Armies"
     },
     {
       "id": "red_7th_advance",
       "type": "force",
       "name": "红七军团北上抗日先遣队",
       "shortName": "北上抗日先遣队",
-      "color": "#8c564b",
+      "color": "#f46d43",
       "leader": "寻淮洲、乐少华、粟裕等",
       "sort": 25,
       "description": "1934年由红七军团组成的北上抗日先遣队，是中央苏区战略转移前后重要的牵制作战力量。",
@@ -321,14 +325,16 @@
       "leaderEn": "Xun Huaizhou, Le Shaohua, Su Yu, etc.",
       "descriptionEn": "A Red Seventh Corps detachment active in 1934 as a related diversionary force before and during the broader strategic shift.",
       "subUnits": "红七军团",
-      "subUnitsEn": "Red Seventh Corps"
+      "subUnitsEn": "Red Seventh Corps",
+      "group": "红军主线",
+      "groupEn": "Main Red Armies"
     },
     {
       "id": "red_fourth",
       "type": "force",
       "name": "红四方面军",
       "shortName": "红四方面军",
-      "color": "#4575b4",
+      "color": "#b2182b",
       "leader": "徐向前、陈昌浩、张国焘、李先念等",
       "sort": 30,
       "description": "由川陕根据地转移，经历嘉陵江战役、懋功会师、南下挫折、甘孜会师，1936年10月与红一方面军会宁会师。",
@@ -337,14 +343,16 @@
       "leaderEn": "Xu Xiangqian, Chen Changhao, Zhang Guotao, Li Xiannian, etc.",
       "descriptionEn": "A major Red Army force from the Sichuan-Shaanxi base area, later converging with the First and Second Front Armies.",
       "subUnits": "红四军; 红九军; 红三十军; 红三十一军; 红三十三军; 妇女独立团",
-      "subUnitsEn": "4th Corps; 9th Corps; 30th Corps; 31st Corps; 33rd Corps; Women's Independent Regiment"
+      "subUnitsEn": "4th Corps; 9th Corps; 30th Corps; 31st Corps; 33rd Corps; Women's Independent Regiment",
+      "group": "红军主线",
+      "groupEn": "Main Red Armies"
     },
     {
       "id": "red_second",
       "type": "force",
       "name": "红二方面军",
       "shortName": "红二方面军",
-      "color": "#1a9850",
+      "color": "#d6604d",
       "leader": "贺龙、任弼时、萧克、关向应、刘伯承等",
       "sort": 40,
       "description": "1935年11月从湘鄂川黔根据地出发，1936年7月正式组成红二方面军，10月到达将台堡。",
@@ -353,14 +361,16 @@
       "leaderEn": "He Long, Ren Bishi, Guan Xiangying, Xiao Ke, Wang Zhen, etc.",
       "descriptionEn": "The Second and Sixth Corps departed from Sangzhi in 1935 and were later reorganized as the Second Front Army.",
       "subUnits": "红二军团; 红六军团; 红三十二军; 红十八师; 红十六师",
-      "subUnitsEn": "2nd Corps; 6th Corps; 32nd Corps; 18th Division; 16th Division"
+      "subUnitsEn": "2nd Corps; 6th Corps; 32nd Corps; 18th Division; 16th Division",
+      "group": "红军主线",
+      "groupEn": "Main Red Armies"
     },
     {
       "id": "shaanbei_red",
       "type": "force",
       "name": "陕甘红军",
       "shortName": "陕甘红军",
-      "color": "#984ea3",
+      "color": "#67000d",
       "leader": "刘志丹、谢子长、习仲勋、徐海东等",
       "sort": 50,
       "description": "陕甘边、陕北根据地革命武装，为中央和各路红军长征提供落脚点。",
@@ -369,14 +379,88 @@
       "leaderEn": "Liu Zhidan, Xie Zichang, Xi Zhongxun, Gao Gang, etc.",
       "descriptionEn": "The northwestern revolutionary base that became the landing point for the Long March.",
       "subUnits": "红二十六军; 红二十七军; 红二十八军; 红十五军团; 陕北游击队; 陕甘边游击队",
-      "subUnitsEn": "26th Army; 27th Army; 28th Army; 15th Corps; Northern Shaanxi guerrillas; Shaanxi-Gansu border guerrillas"
+      "subUnitsEn": "26th Army; 27th Army; 28th Army; 15th Corps; Northern Shaanxi guerrillas; Shaanxi-Gansu border guerrillas",
+      "group": "红军主线",
+      "groupEn": "Main Red Armies"
+    },
+    {
+      "id": "red_west_route",
+      "type": "force",
+      "name": "红西路军",
+      "shortName": "红西路军",
+      "color": "#8b0000",
+      "leader": "徐向前、陈昌浩、李先念等",
+      "sort": 55,
+      "description": "1936年宁夏战役后组成的西征部队，沿河西走廊向新疆方向前进寻求苏联援助，在马家军围攻下损失惨重；董振堂等于此役牺牲。事件条目待权威史料补充。",
+      "nameEn": "Red West Route Army",
+      "shortNameEn": "Red West Route Army",
+      "leaderEn": "Xu Xiangqian, Chen Changhao, Li Xiannian, etc.",
+      "descriptionEn": "Western expedition force formed after the 1936 Ningxia campaign; events pending sourced review.",
+      "subUnits": "红五军团; 红九军; 红三十军; 妇女独立师",
+      "subUnitsEn": "5th Corps; 9th Corps; 30th Corps; Women's Independent Division",
+      "group": "红军主线",
+      "groupEn": "Main Red Armies"
+    },
+    {
+      "id": "spark_qiongya",
+      "type": "force",
+      "name": "琼崖纵队",
+      "shortName": "琼崖纵队",
+      "color": "#d95f02",
+      "leader": "冯白驹等",
+      "sort": 60,
+      "description": "海南岛革命武装在主力长征后长期孤军奋战，坚持二十余年红旗不倒；具体时间线待权威史料补充。",
+      "nameEn": "Qiongya Column",
+      "shortNameEn": "Qiongya Column",
+      "leaderEn": "Feng Baiju, etc.",
+      "descriptionEn": "Revolutionary force on Hainan Island that held out for over two decades; timeline pending sourced review.",
+      "subUnits": "琼崖红军游击队",
+      "subUnitsEn": "Qiongya Red Guerrillas",
+      "group": "星星之火",
+      "groupEn": "Spark Forces"
+    },
+    {
+      "id": "spark_dongbei",
+      "type": "force",
+      "name": "东北抗联",
+      "shortName": "东北抗联",
+      "color": "#e08214",
+      "leader": "杨靖宇、赵尚志、赵一曼等",
+      "sort": 61,
+      "description": "九一八事变后在东北坚持游击战争的抗日武装；与长征主线的关联叙事待权威史料梳理。",
+      "nameEn": "Northeast Anti-Japanese United Army",
+      "shortNameEn": "Northeast AAJA",
+      "leaderEn": "Yang Jingyu, Zhao Shangzhi, Zhao Yiman, etc.",
+      "descriptionEn": "Anti-Japanese guerrilla force in northeast China; linkage to the Long March narrative pending sourced review.",
+      "subUnits": "东北抗日联军各军",
+      "subUnitsEn": "Units of the Northeast Anti-Japanese United Army",
+      "group": "星星之火",
+      "groupEn": "Spark Forces"
+    },
+    {
+      "id": "spark_dongjiang",
+      "type": "force",
+      "name": "东江纵队",
+      "shortName": "东江纵队",
+      "color": "#c43c39",
+      "leader": "曾生等",
+      "sort": 62,
+      "description": "活动于香港、广东一带的抗日武装；作为星星之火叙事的组成，具体条目待权威史料补充。",
+      "nameEn": "East River Column",
+      "shortNameEn": "East River Column",
+      "leaderEn": "Zeng Sheng, etc.",
+      "descriptionEn": "Anti-Japanese force in the Hong Kong and Guangdong area; entries pending sourced review.",
+      "subUnits": "东江纵队所属大队",
+      "subUnitsEn": "Brigades of the East River Column",
+      "group": "星星之火",
+      "groupEn": "Spark Forces"
     },
     {
       "id": "enemy_kmt",
       "type": "force",
       "name": "国民党军",
       "shortName": "国民党军",
-      "color": "#7b7b7b",
+      "color": "#1a1a1a",
       "leader": "蒋介石及各路追堵部队",
       "sort": 90,
       "description": "用于半透明灰色路线示意长征途中敌军追击、封锁、围堵与压迫态势。此路线为概括性叙事层，不代表精确战斗部署。",
@@ -386,6 +470,24 @@
       "descriptionEn": "A schematic grey layer showing pursuit, blockade, encirclement and pressure against Red Army routes; not a precise deployment map.",
       "subUnits": "中央军; 湘军; 桂军; 滇军; 黔军; 川军; 西北军; 马家军",
       "subUnitsEn": "Central Army; Hunan troops; Guangxi troops; Yunnan troops; Guizhou troops; Sichuan troops; Northwest Army; Ma clique forces",
+      "group": "敌军",
+      "groupEn": "Opposing Forces",
+      "isEnemy": true
+    },
+    {
+      "id": "enemy_japan",
+      "type": "force",
+      "name": "日军",
+      "shortName": "日军",
+      "color": "#2b2b2b",
+      "leader": "",
+      "sort": 91,
+      "description": "以旭日旗意象表现北上抗日的紧迫局势；本条为敌军叙事层占位，具体侵略进程待权威史料补充。",
+      "nameEn": "Japanese forces",
+      "shortNameEn": "Japanese forces",
+      "descriptionEn": "Schematic opposing-force layer; specific timeline pending sourced review.",
+      "group": "敌军",
+      "groupEn": "Opposing Forces",
       "isEnemy": true
     },
     {
@@ -16502,7 +16604,7 @@
     "halls": [
       {
         "id": "foyer",
-        "title": "总序厅",
+        "title": "序章 · 为什么出发",
         "titleEn": "Foyer",
         "subtitle": "为什么出发",
         "description": "从中央苏区出发、分路前进到西北会师，建立进入展馆的叙事主线。",
@@ -16512,7 +16614,7 @@
       },
       {
         "id": "route",
-        "title": "第一展厅：长征路线全景",
+        "title": "视角一 · 长征路线全景",
         "titleEn": "Hall 1: Route Panorama",
         "subtitle": "red-map 路线展板",
         "description": "以现有交互地图作为核心展板，连接路线、事件、人物和会师时刻。",
@@ -16522,7 +16624,7 @@
       },
       {
         "id": "martyrs",
-        "title": "第二展厅：英烈画像墙",
+        "title": "视角二 · 英烈画像墙",
         "titleEn": "Hall 2: Martyrs Portrait Wall",
         "subtitle": "让名字重新拥有面容",
         "description": "以英烈名录、画像、牺牲地点和人物时间线组织烈士展板。",
@@ -16532,7 +16634,7 @@
       },
       {
         "id": "persons",
-        "title": "第三展厅：人物生命时间线",
+        "title": "视角三 · 人物生命时间线",
         "titleEn": "Hall 3: Personal Timelines",
         "subtitle": "从宏大路线回到具体的人",
         "description": "将人物与事件条目关联，展示每个人在长征叙事中的发展轨迹。",
@@ -16542,7 +16644,7 @@
       },
       {
         "id": "costs",
-        "title": "第四展厅：暗线代价",
+        "title": "视角四 · 暗线代价",
         "titleEn": "Hall 4: Hidden Costs",
         "subtitle": "胜利背后的牺牲如何被看见",
         "description": "从牺牲事件、损失口径与家庭离散进入长征的隐痛层。",
@@ -16552,7 +16654,7 @@
       },
       {
         "id": "turning_points",
-        "title": "第五展厅：战役、会议与转折",
+        "title": "视角五 · 战役、会议与转折",
         "titleEn": "Hall 5: Battles and Turning Points",
         "subtitle": "关键环节如何改变路线",
         "description": "集中展示会议、战役、渡河、会师等决定路线变化的条目。",
@@ -16562,7 +16664,7 @@
       },
       {
         "id": "places",
-        "title": "第六展厅：地点与纪念设施",
+        "title": "视角六 · 地点与纪念设施",
         "titleEn": "Hall 6: Places and Memory Sites",
         "subtitle": "地点如何承载记忆",
         "description": "以于都、遵义、泸定、会宁、将台堡等历史现场组织展览。",
@@ -16572,7 +16674,7 @@
       },
       {
         "id": "archive",
-        "title": "第七展厅：资料档案与来源审校",
+        "title": "视角七 · 资料档案与来源审校",
         "titleEn": "Hall 7: Archives and Source Review",
         "subtitle": "把证据留在展板背后",
         "description": "展示资料来源、口述线索、史料口径和待考证字段。",
@@ -17450,7 +17552,7 @@
   },
   "statsModel": {
     "startDate": "1932-12-01",
-    "endDate": "1936-10-22",
+    "endDate": "1936-12-12",
     "centralDistanceLi": 25000,
     "overallParticipantsApprox": 200000,
     "overallLossesApprox": 150000,

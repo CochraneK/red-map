@@ -163,20 +163,42 @@ function initForcePanel() {
   toolbar.className = 'force-toolbar';
   toolbar.innerHTML = `<button type="button" id="select-all-forces"></button><button type="button" id="clear-all-forces"></button>`;
   container.appendChild(toolbar);
-  getForcesSorted().forEach(force => {
-    const item = document.createElement('div');
-    item.className = `force-item active ${force.isEnemy ? 'force-enemy' : ''}`;
-    item.dataset.forceId = force.id;
-    item.innerHTML = `
-      <div class="force-color" style="background:${escapeAttr(force.color || '#777')}"></div>
-      <div class="force-info">
-        <div class="force-name"></div>
-        <div class="force-short"></div>
-        <div class="force-subunits"></div>
-      </div>
-      <span class="force-switch" aria-hidden="true"></span>`;
-    item.addEventListener('click', ev => { ev.preventDefault(); toggleForce(force.id); });
-    container.appendChild(item);
+  const forces = getForcesSorted();
+  // 反馈(2026-05-28)：路线按「红军主线 / 星星之火 / 敌军」视角分组显示
+  const groupOrder = ['红军主线', '星星之火', '敌军'];
+  const groupI18n = {
+    '红军主线': { zh: '红军主线', en: 'Main Red Armies' },
+    '星星之火': { zh: '星星之火', en: 'Sparks' },
+    '敌军': { zh: '敌军', en: 'Opposing Forces' }
+  };
+  const grouped = new Map();
+  forces.forEach(force => {
+    const g = force.group || (force.isEnemy ? '敌军' : '红军主线');
+    if (!grouped.has(g)) grouped.set(g, []);
+    grouped.get(g).push(force);
+  });
+  const orderedGroups = [...groupOrder.filter(g => grouped.has(g)), ...[...grouped.keys()].filter(g => !groupOrder.includes(g))];
+  orderedGroups.forEach(groupName => {
+    const header = document.createElement('div');
+    header.className = `force-group-heading${groupName === '敌军' ? ' force-group-enemy' : ''}`;
+    const label = groupI18n[groupName] || { zh: groupName, en: groupName };
+    header.innerHTML = `<span class="force-group-title" data-group-zh="${escapeAttr(label.zh)}" data-group-en="${escapeAttr(label.en)}">${escapeHTML(label.zh)}</span><span class="force-group-count">${grouped.get(groupName).length}</span>`;
+    container.appendChild(header);
+    grouped.get(groupName).forEach(force => {
+      const item = document.createElement('div');
+      item.className = `force-item active ${force.isEnemy ? 'force-enemy' : ''}`;
+      item.dataset.forceId = force.id;
+      item.innerHTML = `
+        <div class="force-color" style="background:${escapeAttr(force.color || '#777')}"></div>
+        <div class="force-info">
+          <div class="force-name"></div>
+          <div class="force-short"></div>
+          <div class="force-subunits"></div>
+        </div>
+        <span class="force-switch" aria-hidden="true"></span>`;
+      item.addEventListener('click', ev => { ev.preventDefault(); toggleForce(force.id); });
+      container.appendChild(item);
+    });
   });
   document.getElementById('select-all-forces').addEventListener('click', ev => { ev.stopPropagation(); getForcesSorted().forEach(f => activeForces.add(f.id)); syncForcePanel(); renderCurrentState(false); });
   document.getElementById('clear-all-forces').addEventListener('click', ev => { ev.stopPropagation(); activeForces.clear(); syncForcePanel(); renderCurrentState(false); });
@@ -193,6 +215,7 @@ function syncForcePanel() {
     const desc = item.querySelector('.force-short'); if (desc) desc.textContent = currentLang === 'zh' ? (force.leader || '') : (force.leaderEn || force.descriptionEn || '');
     const sub = item.querySelector('.force-subunits'); if (sub) renderSubUnits(sub, force);
   });
+  document.querySelectorAll('.force-group-title').forEach(el => { el.textContent = currentLang === 'en' ? (el.dataset.groupEn || el.textContent) : (el.dataset.groupZh || el.textContent); });
   const selectAll = document.getElementById('select-all-forces'); if (selectAll) selectAll.textContent = t('all');
   const clearAll = document.getElementById('clear-all-forces'); if (clearAll) clearAll.textContent = t('clear');
 }

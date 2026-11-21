@@ -29,6 +29,13 @@ Keep the public museum/map reproducible from structured sources while reducing h
 - Add browser smoke tests for map/museum/admin load after the deterministic data checks.
 - Keep README/AUDIT_REPORT counts generated or non-stale instead of manually maintained snapshots.
 
+## 2026-11-22 update — feedback structural pass
+
+- Read `docs/FEEDBACK_ACTION_PLAN.md` first: structured checklist extracted from the 2026-05-28 meeting transcript (`docs/feedback_meeting_20260528.txt`). Several items are marked `[已解决]` because the canonical repo had already cleaned severe route cross-contamination; the remaining actionable structural items were applied.
+- Added 5 skeleton subjects (红西路军/琼崖纵队/东北抗联/东江纵队/日军) with `group` field — **no events attached**, explicitly pending authoritative sourcing. Do not treat them as verified history.
+- Historical-detail items (西路军/琼崖/抗联 event timelines, 英烈牺牲细节, 新长征 图文素材, 烈士陵园地图) are intentionally left as `[需史料]` / `[决策]` — they require authoritative sources, not invention.
+- `research_private/` now holds the consolidated reverse-engineering artifacts (pak tools, unpacked assets, legacy datasets, martyrs reference); it stays Git-ignored.
+
 ## Validation
 
 ```bash

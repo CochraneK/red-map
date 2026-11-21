@@ -89,7 +89,7 @@ def read_subjects(errors, warnings):
         stype = row.get('type','force') or 'force'
         if stype == 'force': force_ids.add(sid)
         s = {'id': sid, 'type': stype, 'name': row.get('name',''), 'shortName': row.get('shortName',''), 'color': row.get('color','#777777') or '#777777', 'leader': row.get('leader',''), 'sort': parse_int(row.get('sort',''), 999, 'subjects.sort'), 'description': row.get('description','')}
-        add_optional(s,row,'nameEn','shortNameEn','leaderEn','descriptionEn','subUnits','subUnitsEn')
+        add_optional(s,row,'nameEn','shortNameEn','leaderEn','descriptionEn','subUnits','subUnitsEn','group','groupEn')
         if row.get('isEnemy','').strip(): s['isEnemy'] = row.get('isEnemy','').strip().lower() in TRUE_VALUES
         subjects.append(s)
     return subjects, force_ids

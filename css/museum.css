@@ -265,6 +265,17 @@ a { color: inherit; }
   .person-list { max-height: none; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); }
   .live-map-panel { min-height: 460px; }
 }
+/* 反馈(2026-05-28)：新长征板块占位样式 */
+.new-longmarch-hall { background: linear-gradient(135deg, #7f1618 0%, #a8282b 55%, #6f1617 100%); color: #fff6ec; }
+.new-longmarch-hall .eyebrow { color: #f0c98a; }
+.new-longmarch-hall .section-heading h2 { color: #fff8ee; }
+.new-longmarch-panel { max-width: 900px; }
+.new-longmarch-quote { margin: 0 0 18px; padding-left: 18px; border-left: 4px solid #f0c98a; font-size: clamp(20px, 2.6vw, 30px); font-weight: 800; line-height: 1.5; letter-spacing: 1px; }
+.new-longmarch-note { max-width: 720px; color: #f3e2d2; line-height: 1.8; font-size: 14px; }
+.new-longmarch-note strong { color: #ffd79a; }
+.new-longmarch-slots { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.new-longmarch-slot { flex: 1 1 180px; min-height: 92px; display: grid; place-items: center; border: 1px dashed rgba(255,240,220,.5); border-radius: 12px; color: #f7e6d4; font-size: 13px; letter-spacing: 1px; background: rgba(255,255,255,.05); }
+
 @media (max-width: 640px) {
   .museum-hero { min-height: 68vh; padding: 96px 20px 34px; }
   .hero-actions { display: grid; }

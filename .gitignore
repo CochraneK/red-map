@@ -4,3 +4,4 @@ steam_text_dump/
 test-results/
 tools/__pycache__/
 *.pyc
+.playwright-cli/
