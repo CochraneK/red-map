@@ -93,3 +93,6 @@ TRUE,wangdetai,王德泰,Wang Detai,人物,1907,1936,吉林延边,,spark_dongbei
 TRUE,weizhengmin,魏拯民,Wei Zhengmin,人物,1909,1941,山西屯留,,spark_dongbei,东北抗日联军第一路军政治部主任，杨靖宇牺牲后继续领导部队。,,,东北抗联,src_dkb_lujun,high,906
 TRUE,yuan_geng,袁庚,Yuan Geng,人物,1917,2016,广东深圳,,spark_dongjiang,东江纵队情报负责人，1944年主持与美军的情报合作，后为改革开放重要人物。,,,东江纵队;情报,src_dj_kerr,high,804
 TRUE,leijingtian,雷经天,Lei Jingtian,人物,1904,1959,广西南宁,,spark_dongjiang,两广纵队政治委员，1947年部队成立时任职。,,,两广纵队,src_dj_liangguang,high,805
+TRUE,xiangying,项英,Xiang Ying,人物,1898,1941,湖北武昌,,shaanbei_red,中共中央分局书记、中央军区司令员。中央红军主力长征后留在南方领导三年游击战争，皖南事变中牺牲。,,,南方游击战争;英烈,src_100years_cpc,high,110
+TRUE,chenyi,陈毅,Chen Yi,人物,1901,1972,四川乐至,,shaanbei_red,中华苏维埃共和国中央政府办事处主任。中央红军主力长征后留在南方领导三年游击战争，1937年改编新四军。,,,南方游击战争;新四军,src_100years_cpc,high,111
+TRUE,quqiubai,瞿秋白,Qu Qiubai,人物,1899,1935-06-18,江苏常州,,shaanbei_red,中国共产党早期主要领导人之一。中央红军长征后留在南方坚持斗争，1935年2月在福建长汀被俘，6月就义。,,,南方游击战争;英烈,src_100years_cpc,high,112

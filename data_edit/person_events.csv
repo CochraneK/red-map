@@ -410,3 +410,12 @@ TRUE,wangzuoyao,ev_dj_193812,组建者,组建东宝惠边游击大队,src_dj_hui
 TRUE,wangzuoyao,ev_dj_19440508,指挥员,梅塘战斗,src_dj_meitang,40
 TRUE,yinlinping,ev_dj_194201,主任,广东人民抗日游击总队,src_dongjiang_gangjiu,20
 TRUE,yinlinping,ev_dj_194408,书记,土洋会议,src_dj_huizhou_media,30
+TRUE,xiangying,ev_south_guerrilla_193410,书记/领导,苏区中央分局书记,src_100years_cpc,10
+TRUE,chenyi,ev_south_guerrilla_193410,主任,中央政府办事处主任,src_100years_cpc,10
+TRUE,quqiubai,ev_south_guerrilla_193410,牺牲,南方斗争中被俘就义,src_100years_cpc,10
+TRUE,zhang_wentian,ev_zhaxi_19350205,负总责,代替博古负总责,src_zunyi_guanghui,9338
+TRUE,zhang_wentian,ev_gouba_19350312,参与,三人小组前的领导调整,src_zunyi_guanghui,9348
+TRUE,mao_zedong,ev_zhaxi_19350205,军事帮助者,协助周恩来军事指挥,src_zunyi_guanghui,9334
+TRUE,mao_zedong,ev_gouba_19350312,成员,三人军事小组成员,src_zunyi_guanghui,9344
+TRUE,zhou_enlai,ev_gouba_19350312,成员,三人军事小组成员,src_zunyi_guanghui,9348
+TRUE,wang_jiaxiang,ev_gouba_19350312,成员,三人军事小组成员,src_zunyi_guanghui,9242

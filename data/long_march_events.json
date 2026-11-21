@@ -790,6 +790,30 @@
       "url": "https://cpc.people.com.cn/n1/2021/1021/c441345-32260085.html",
       "note": "陕甘红军反围剿",
       "sourceType": "authoritative"
+    },
+    {
+      "id": "src_100years_cpc",
+      "title": "中国共产党一百年大事记（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2021/0628/c64387-32142446.html",
+      "note": "南方游击战争、扎西领导调整、陕甘支队改编",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_zunyi_guanghui",
+      "title": "遵义会议放光辉（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2021/0206/c435238-32024307.html",
+      "note": "张闻天负总责、三人军事小组",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_pengdehuai_cpc",
+      "title": "雄关如铁从头越——记长征中的彭德怀",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/GB/67481/68751/68760/4839447.html",
+      "note": "陕甘支队改编与彭德怀任命",
+      "sourceType": "authoritative"
     }
   ],
   "subjects": [
@@ -2355,6 +2379,34 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_south_guerrilla_193410",
+      "date": "1934-10-01",
+      "displayDate": "1934-10-01",
+      "sequence": 1,
+      "forceId": "shaanbei_red",
+      "type": "决策",
+      "title": "部署南方三年游击战争",
+      "description": "1934年10月中央红军主力长征后，中共中央决定成立以项英为首的苏区中央分局和中央军区，以陈毅为主任设中华苏维埃共和国中央政府办事处，领导留在南方根据地的红军和游击队坚持斗争。项英、陈毅、张鼎丞、邓子恢、谭震林、粟裕、叶飞等在南方八省十几个地区坚持三年游击战争，瞿秋白、何叔衡等牺牲。",
+      "location": {
+        "name": "江西瑞金",
+        "coordinates": [
+          25.89,
+          116.02
+        ]
+      },
+      "participants": [
+        "项英",
+        "陈毅",
+        "瞿秋白"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_100years_cpc"
+      ],
+      "certainty": "high",
+      "notes": "星星之火延伸：南方游击战争"
     },
     {
       "id": "steam_r4_19341001_d1182b92",
@@ -4795,6 +4847,36 @@
       "certainty": "low"
     },
     {
+      "id": "ev_zhaxi_19350205",
+      "date": "1935-02-05",
+      "displayDate": "1935-02-05",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "会议",
+      "title": "扎西转进途中张闻天负总责",
+      "description": "遵义会议后中央红军一渡赤水。1935年2月5日，中央政治局在向云南扎西转进途中（川滇黔交界鸡鸣三省一带）决定由张闻天代替博古在党内负总责，毛泽东为周恩来军事指挥上的帮助者；2月8日通过张闻天起草的遵义会议决议。",
+      "location": {
+        "name": "云南威信扎西",
+        "coordinates": [
+          27.85,
+          105.05
+        ]
+      },
+      "participants": [
+        "张闻天",
+        "博古",
+        "毛泽东",
+        "周恩来"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_zunyi_guanghui",
+        "src_100years_cpc"
+      ],
+      "certainty": "high",
+      "notes": "领导调整，非笼统1月下旬"
+    },
+    {
       "id": "rf_19350205_hezizhen",
       "date": "1935-02-05",
       "displayDate": "1935-02-05",
@@ -5493,6 +5575,35 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_gouba_19350312",
+      "date": "1935-03-12",
+      "displayDate": "1935-03-12",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "苟坝会议成立三人军事小组",
+      "description": "1935年3月12日苟坝会议后，成立由毛泽东、周恩来、王稼祥组成的三人军事指挥小组（新三人团），负责全军军事行动。此前2月5日扎西转进途中已决定张闻天代替博古负总责，两事相隔一月余，不应混为一谈。",
+      "location": {
+        "name": "贵州遵义苟坝",
+        "coordinates": [
+          27.5,
+          106.7
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "周恩来",
+        "王稼祥",
+        "张闻天"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_zunyi_guanghui"
+      ],
+      "certainty": "high",
+      "notes": "三人小组成立日期：3月12日"
     },
     {
       "id": "steam_rf_19350313_9baa5690",
@@ -9169,7 +9280,7 @@
       "forceId": "red_25th",
       "type": "会师",
       "title": "红二十五军与陕甘红军永坪会师",
-      "description": "红二十五军与红二十六军、红二十七军在永坪举行会师庆祝活动。两军会师后合编为红十五军团，徐海东任军团长，刘志丹任副军团长。",
+      "description": "红二十五军与红二十六军、红二十七军在永坪举行会师庆祝活动。两军会师后合编为红十五军团，徐海东任军团长，程子华任政治委员，刘志丹任副军团长。",
       "location": {
         "name": "陕西延川永坪",
         "coordinates": [
@@ -9183,6 +9294,7 @@
         "红二十六军",
         "红二十七军",
         "徐海东",
+        "程子华",
         "刘志丹"
       ],
       "importance": 5,
@@ -9190,6 +9302,7 @@
         "src_yongping_people"
       ],
       "certainty": "medium",
+      "notes": "补充程子华任政委（权威口径）",
       "titleEn": "Red Twenty-Fifth Army joins forces at Yongping, Yanchuan, Shaanxi",
       "descriptionEn": "On Sep 16, 1935, the Red Twenty-Fifth Army joined with another Red Army force and advanced the convergence narrative around Yongping, Yanchuan, Shaanxi. This entry keeps the chronological route, local context, and visual connection to adjacent events."
     },
@@ -13552,6 +13665,75 @@
       "sort": 110
     },
     {
+      "id": "xiangying",
+      "name": "项英",
+      "nameEn": "Xiang Ying",
+      "personType": "人物",
+      "birthDate": "1898",
+      "deathDate": "1941",
+      "hometown": "湖北武昌",
+      "hometownEn": "",
+      "forceId": "shaanbei_red",
+      "summary": "中共中央分局书记、中央军区司令员。中央红军主力长征后留在南方领导三年游击战争，皖南事变中牺牲。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "南方游击战争",
+        "英烈"
+      ],
+      "sourceIds": [
+        "src_100years_cpc"
+      ],
+      "certainty": "high",
+      "sort": 110
+    },
+    {
+      "id": "chenyi",
+      "name": "陈毅",
+      "nameEn": "Chen Yi",
+      "personType": "人物",
+      "birthDate": "1901",
+      "deathDate": "1972",
+      "hometown": "四川乐至",
+      "hometownEn": "",
+      "forceId": "shaanbei_red",
+      "summary": "中华苏维埃共和国中央政府办事处主任。中央红军主力长征后留在南方领导三年游击战争，1937年改编新四军。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "南方游击战争",
+        "新四军"
+      ],
+      "sourceIds": [
+        "src_100years_cpc"
+      ],
+      "certainty": "high",
+      "sort": 111
+    },
+    {
+      "id": "quqiubai",
+      "name": "瞿秋白",
+      "nameEn": "Qu Qiubai",
+      "personType": "人物",
+      "birthDate": "1899",
+      "deathDate": "1935-06-18",
+      "hometown": "江苏常州",
+      "hometownEn": "",
+      "forceId": "shaanbei_red",
+      "summary": "中国共产党早期主要领导人之一。中央红军长征后留在南方坚持斗争，1935年2月在福建长汀被俘，6月就义。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "南方游击战争",
+        "英烈"
+      ],
+      "sourceIds": [
+        "src_100years_cpc"
+      ],
+      "certainty": "high",
+      "sort": 112
+    },
+    {
       "id": "bogu",
       "name": "博古",
       "nameEn": "Bo Gu",
@@ -16006,6 +16188,16 @@
       "sort": 10
     },
     {
+      "personId": "chenyi",
+      "eventId": "ev_south_guerrilla_193410",
+      "role": "主任",
+      "note": "中央政府办事处主任",
+      "sourceIds": [
+        "src_100years_cpc"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "dai_jitao",
       "eventId": "steam_r2_19341205_f39cbe8b",
       "role": "Steam文本提及",
@@ -17241,6 +17433,26 @@
       "sort": 9324
     },
     {
+      "personId": "mao_zedong",
+      "eventId": "ev_zhaxi_19350205",
+      "role": "军事帮助者",
+      "note": "协助周恩来军事指挥",
+      "sourceIds": [
+        "src_zunyi_guanghui"
+      ],
+      "sort": 9334
+    },
+    {
+      "personId": "mao_zedong",
+      "eventId": "ev_gouba_19350312",
+      "role": "成员",
+      "note": "三人军事小组成员",
+      "sourceIds": [
+        "src_zunyi_guanghui"
+      ],
+      "sort": 9344
+    },
+    {
       "personId": "pan_hannian",
       "eventId": "steam_rf_19341005_63faf30f",
       "role": "Steam文本提及",
@@ -17343,6 +17555,16 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9270
+    },
+    {
+      "personId": "quqiubai",
+      "eventId": "ev_south_guerrilla_193410",
+      "role": "牺牲",
+      "note": "南方斗争中被俘就义",
+      "sourceIds": [
+        "src_100years_cpc"
+      ],
+      "sort": 10
     },
     {
       "personId": "ren_bishi",
@@ -17547,6 +17769,16 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9232
+    },
+    {
+      "personId": "wang_jiaxiang",
+      "eventId": "ev_gouba_19350312",
+      "role": "成员",
+      "note": "三人军事小组成员",
+      "sourceIds": [
+        "src_zunyi_guanghui"
+      ],
+      "sort": 9242
     },
     {
       "personId": "wang_shitai",
@@ -17861,6 +18093,16 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9304
+    },
+    {
+      "personId": "xiangying",
+      "eventId": "ev_south_guerrilla_193410",
+      "role": "书记/领导",
+      "note": "苏区中央分局书记",
+      "sourceIds": [
+        "src_100years_cpc"
+      ],
+      "sort": 10
     },
     {
       "personId": "xiao_ke",
@@ -19175,6 +19417,26 @@
       "sort": 9328
     },
     {
+      "personId": "zhang_wentian",
+      "eventId": "ev_zhaxi_19350205",
+      "role": "负总责",
+      "note": "代替博古负总责",
+      "sourceIds": [
+        "src_zunyi_guanghui"
+      ],
+      "sort": 9338
+    },
+    {
+      "personId": "zhang_wentian",
+      "eventId": "ev_gouba_19350312",
+      "role": "参与",
+      "note": "三人小组前的领导调整",
+      "sourceIds": [
+        "src_zunyi_guanghui"
+      ],
+      "sort": 9348
+    },
+    {
       "personId": "zhang_xueliang",
       "eventId": "en_19350110_zunyi_pressure",
       "role": "敌军将领",
@@ -19454,6 +19716,16 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9338
+    },
+    {
+      "personId": "zhou_enlai",
+      "eventId": "ev_gouba_19350312",
+      "role": "成员",
+      "note": "三人军事小组成员",
+      "sourceIds": [
+        "src_zunyi_guanghui"
+      ],
+      "sort": 9348
     },
     {
       "personId": "zhou_xieqing",

@@ -65,6 +65,13 @@ Keep the public museum/map reproducible from structured sources while reducing h
 - **Game-text extraction has systematic location splicing errors** (e.g. "在贵州遵义一带到达莫斯科", "在四川松潘毛儿盖占领西宁") — 4 such errors were disabled; they had polluted 8 person-event links. Always cross-check game-derived locationName against description before trusting.
 - Still 223 game-text low events — biggest remaining credibility debt. Prioritize by importance=4, but dedupe against existing authoritative events first (many are alternate phrasings of the same event).
 
+## 2026-11-22 multi-source capture + literature extraction
+
+- **ASR/subtitle toolchain** ready but low-yield at current quality: `tools/asr_to_srt.py` (faster-whisper-base from `C:/Users/cunyi/.workbuddy/skills/whisper-openai-shim/models`, run with `envs/default` python), `tools/correct_asr_terms.py` (domain term fix). B站 has no CC subtitles → must ASR; base model too inaccurate for military proper nouns; small model download blocked; film subtitle sites need Turnstile. Full findings: `research_private/sourced_research/06_多源采集实验报告.md`. All media artifacts stay git-ignored under `research_private/media_capture/`.
+- **Preferred enrichment method**: WebFetch structured extraction from authoritative党史 pages (事件-时间-地点-人物 五要素, mark 原文未注明, no invention) → `research_private/sourced_research/*.md` → verify with agent → import JSON via `import_extended_events.py`. This yields far higher quality than ASR subtitles.
+- Literature gaps filled (07_文献抽取补录.json): +3 events (南方游击战争/扎西张闻天负总责/苟坝三人小组), +3 persons (项英/陈毅/瞿秋白), +9 links. Corrected 程子华政委 in r25_19350918_yongping_meeting.
+- `import_extended_events.py` now accepts an optional JSON path argument (defaults to 04_extended_events.json).
+
 ## Validation
 
 ```bash

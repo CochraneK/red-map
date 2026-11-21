@@ -5,11 +5,13 @@ JSON 承载所有中文文案，本脚本只做通用合并，幂等（按 id �
 """
 import csv
 import json
+import sys
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[1]
 EDIT = BASE / "data_edit"
-DATA = BASE / "research_private" / "sourced_research" / "04_extended_events.json"
+DEFAULT_DATA = BASE / "research_private" / "sourced_research" / "04_extended_events.json"
+DATA = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_DATA
 
 
 def read(name):

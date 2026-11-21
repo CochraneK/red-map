@@ -85,3 +85,15 @@ Method: authoritative-source verification, NOT relabeling. `tools/upgrade_game_c
 - **Net**: high 63→79 (+16), game-only low 246→223 (-23: 16 upgraded + 7 disabled). No event carries both game source and high certainty. check_project.py passes; browser verified 437 events render.
 
 **Key finding**: game-text extraction has systematic place/event splicing errors (Moscow/Xining) — these were silently polluting the person timelines. Recommend always cross-checking game-derived location against the event description before import.
+
+## 2026-11-22 multi-source capture experiments + literature extraction
+
+User asked to add classic films (四渡赤水/长征/古田会议), books, video subtitles, and B站 subtitles. See `research_private/sourced_research/06_多源采集实验报告.md` for full findings.
+
+- **Toolchain built & tested** (all in `tools/`, outputs stay in git-ignored `research_private/media_capture/`): `asr_to_srt.py` (local faster-whisper-base, 534s→351 srt lines in ~4.5min), `correct_asr_terms.py` (domain-term correction, 157 lines fixed), `extract_subtitle_candidates.py` (existing, now also handles ASR transcripts). yt-dlp 2026.10.21 + ffmpeg available; faster-whisper 1.2.1 installed in `envs/default` Python.
+- **Blockers found (honest limits)**: B站 videos have NO CC subtitles (only danmaku) in all 3 tested → ASR is mandatory; base-model ASR error rate too high for military/proper-noun content ("四渡赤水"→"事都刺水", 351 lines→only 2 usable candidates even after correction); small-model download blocked by proxy 502 + direct timeout; film-subtitle sites require Turnstile verification. Result: subtitle/ASR route is technically working but low-yield at current model quality.
+- **Higher-value alternative proven**: WebFetch structured extraction from authoritative党史 text (中国共产党新闻网《一百年大事记》) yielded 31 reliable facts in one pass. `05_权威文献抽取示范.md` documents the method.
+- **Authoritative gaps filled** (verified by research agent, `07_文献抽取补录.json`): +3 events (南方三年游击战争部署1934.10 / 扎西张闻天负总责1935-02-05 / 苟坝三人军事小组1935-03-12), +3 persons (项英/陈毅/瞿秋白), +9 links, +3 sources. Corrected `r25_19350918_yongping_meeting` to add 程子华 as 政治委员 (was missing). Note: 红十五军团合编 and 红二方面军成立 were already in data — not duplicated.
+- Totals: events 437→440, persons 94→97, sources 98→101. check_project.py passes; browser verified 440 events render.
+
+**If better subtitles arrive** (user-provided srt / film subtitle files / larger whisper model): pipeline is ready — drop into `research_private/media_capture/`, run correct_asr_terms.py if ASR-generated, then extract_subtitle_candidates.py with `--source-type public_narrative`.
