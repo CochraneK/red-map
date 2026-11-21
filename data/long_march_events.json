@@ -670,6 +670,94 @@
       "url": "https://dangshi.people.com.cn/n1/2017/0420/c85037-29224169.html",
       "note": "两广纵队参加淮海战役",
       "sourceType": "authoritative"
+    },
+    {
+      "id": "src_nierongzhen_cpc",
+      "title": "聂荣臻（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/GB/67481/71472/4844403.html",
+      "note": "道县奔袭",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dashiji1934_cpc",
+      "title": "中国共产党大事记·1934年",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/GB/64162/64164/4415982.html",
+      "note": "湘江战役突破第四道封锁线",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_yijianmaoyi_cpc",
+      "title": "一件毛衣见初心",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2024/0313/c443712-40194857.html",
+      "note": "攻占施秉黄平",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_houchang_cpc",
+      "title": "重温伟大转折的前夜（猴场会议）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2021/0607/c437593-32124397.html",
+      "note": "猴场会议",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_zunyi_cpc",
+      "title": "遵义会议",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/GB/33837/2534276.html",
+      "note": "遵义会议",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dashiji1935_cpc",
+      "title": "中国共产党大事记·1935年",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/GB/64162/64164/4415983.html",
+      "note": "一二渡赤水",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_zhude_cpc",
+      "title": "三军过后尽开颜——记长征中的朱德总司令",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/GB/67481/68751/68760/4839338.html",
+      "note": "四渡赤水部署、大渡河",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_changzhenghe_cpc",
+      "title": "长征的河",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2024/1010/c443712-40335745.html",
+      "note": "巧渡金沙江",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_huishi_cpc",
+      "title": "红军长征中的会师",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2025/1030/c443712-40592732.html",
+      "note": "翻越夹金山与会师",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_luding_cpc",
+      "title": "飞夺泸定桥",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2025/0308/c443712-40434014.html",
+      "note": "飞夺泸定桥",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_xuxiangqian_cpc",
+      "title": "徐向前",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/GB/67481/71472/4844494.html",
+      "note": "过草地",
+      "sourceType": "authoritative"
     }
   ],
   "subjects": [
@@ -2599,7 +2687,8 @@
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
-      "certainty": "low"
+      "certainty": "low",
+      "notes": "核查保留low：日期地点严重错误：10月30日红军尚在江西，不可能在广西兴安全州"
     },
     {
       "id": "ev_fang_193411",
@@ -2928,9 +3017,10 @@
       ],
       "importance": 4,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_nierongzhen_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；攻占道县，聂荣臻回忆11月22日控制道县，日期吻合"
     },
     {
       "id": "steam_rf_19341124_8fd68573",
@@ -2978,9 +3068,10 @@
       ],
       "importance": 4,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_dashiji1934_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；突破第四道封锁线（湘江战役），11月25日中革军委下令抢渡湘江"
     },
     {
       "id": "steam_r2_19341125_303e8b71",
@@ -3040,31 +3131,6 @@
       "certainty": "medium",
       "titleEn": "Red Twenty-Fifth Army fights a battle at Dushuzhen, Fangcheng, Henan",
       "descriptionEn": "On Nov 26, 1934, the Red Twenty-Fifth Army fought a battle that affected the next stage of movement around Dushuzhen, Fangcheng, Henan. This entry keeps the chronological route, local context, and visual connection to adjacent events."
-    },
-    {
-      "id": "steam_rf_19341126_25d30a3d",
-      "date": "1934-11-26",
-      "displayDate": "1934-11-26",
-      "sequence": 9017,
-      "forceId": "red_first",
-      "type": "战斗",
-      "title": "中央红军占领了道县",
-      "description": "1934年11月26日，中央红军在福建永安一带占领了道县。",
-      "location": {
-        "name": "福建永安",
-        "coordinates": [
-          25.98,
-          117.36
-        ]
-      },
-      "participants": [
-        "中央红军"
-      ],
-      "importance": 4,
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "certainty": "low"
     },
     {
       "id": "steam_r2_19341126_b6d97637",
@@ -3205,32 +3271,6 @@
         "徐海东"
       ],
       "importance": 3,
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "certainty": "low"
-    },
-    {
-      "id": "steam_rf_19341129_a18d6f49",
-      "date": "1934-11-29",
-      "displayDate": "1934-11-29",
-      "sequence": 9018,
-      "forceId": "red_first",
-      "type": "战斗",
-      "title": "中央红军在兴安/全州湘江一线突破封锁",
-      "description": "1934年11月29日，中央红军在广西兴安/全州湘江一线一带在兴安/全州湘江一线突破封锁。",
-      "location": {
-        "name": "广西兴安/全州湘江一线",
-        "coordinates": [
-          25.6,
-          110.65
-        ]
-      },
-      "participants": [
-        "中央红军",
-        "彭德怀"
-      ],
-      "importance": 4,
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
@@ -3763,9 +3803,10 @@
       ],
       "importance": 4,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_yijianmaoyi_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；攻占施秉、黄平，实际为12月下旬，线索日期略早"
     },
     {
       "id": "steam_rf_19341220_d3104c4f",
@@ -3949,9 +3990,10 @@
       ],
       "importance": 4,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_houchang_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；即猴场会议，1934-12-31至1935-1-1，为遵义会议作准备"
     },
     {
       "id": "steam_r4_19350101_d0e44738",
@@ -4056,7 +4098,8 @@
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
-      "certainty": "low"
+      "certainty": "low",
+      "notes": "核查保留low：无权威史料记载1月5日攻占遵义计划，表述含糊"
     },
     {
       "id": "steam_rf_19350106_3bd576b4",
@@ -4082,7 +4125,8 @@
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
-      "certainty": "low"
+      "certainty": "low",
+      "notes": "核查保留low：出发表述模糊，疑为游戏演绎"
     },
     {
       "id": "rf_19350107_zunyi_city",
@@ -4245,7 +4289,8 @@
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
-      "certainty": "low"
+      "certainty": "low",
+      "notes": "核查保留low：无权威记载1月12日成立大会，红一方面军1930年已组建，与史实不符"
     },
     {
       "id": "rf_19350115_zunyi_meeting",
@@ -4304,9 +4349,10 @@
       ],
       "importance": 4,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_zunyi_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；即遵义会议，1月15-17日确立毛泽东领导地位"
     },
     {
       "id": "steam_rf_19350119_0b0af7cc",
@@ -5099,9 +5145,10 @@
       ],
       "importance": 2,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_dashiji1935_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；二渡赤水，2月18-21日太平渡二郎滩东渡，日期吻合"
     },
     {
       "id": "sha_19350221_xiezichang_death",
@@ -5588,9 +5635,10 @@
       ],
       "importance": 3,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_zhude_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；四渡赤水，3月20日朱德下达行动部署命令，日期吻合"
     },
     {
       "id": "rf_19350321_erlangtan_chishui4",
@@ -6356,9 +6404,10 @@
       ],
       "importance": 3,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_changzhenghe_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；巧渡金沙江，5月3-9日皎平渡，日期吻合"
     },
     {
       "id": "r25_19350505_base4",
@@ -6388,31 +6437,6 @@
       "certainty": "medium",
       "titleEn": "Red Twenty-Fifth Army builds a base area at Shangluo area in the Hubei-Henan-Shaanxi border region",
       "descriptionEn": "On May 5, 1935, the Red Twenty-Fifth Army built or consolidated a revolutionary base connected to the final landing point around Shangluo area in the Hubei-Henan-Shaanxi border region. This entry keeps the chronological route, local context, and visual connection to adjacent events."
-    },
-    {
-      "id": "steam_rf_19350506_b2a67b92",
-      "date": "1935-05-06",
-      "displayDate": "1935-05-06",
-      "sequence": 9030,
-      "forceId": "red_first",
-      "type": "决策",
-      "title": "中央红军渡过江外",
-      "description": "1935年5月6日至9日，中央红军在云南皎平渡一带渡过江外。",
-      "location": {
-        "name": "云南皎平渡",
-        "coordinates": [
-          26.13,
-          102.52
-        ]
-      },
-      "participants": [
-        "中央红军"
-      ],
-      "importance": 4,
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "certainty": "low"
     },
     {
       "id": "steam_rf_19350511_05133c0d",
@@ -6493,9 +6517,10 @@
       ],
       "importance": 4,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_zhude_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；抢渡大渡河，5月25日安顺场，线索14日偏早"
     },
     {
       "id": "steam_rf_19350516_9df15d5c",
@@ -7342,9 +7367,10 @@
       ],
       "importance": 2,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_huishi_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；翻越雪山（梦笔山等），属实"
     },
     {
       "id": "steam_r4_19350630_e0834dad",
@@ -17362,16 +17388,6 @@
         "src_pengdehuai_people"
       ],
       "sort": 40
-    },
-    {
-      "personId": "peng_dehuai",
-      "eventId": "steam_rf_19341129_a18d6f49",
-      "role": "率部或指挥行动",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9123
     },
     {
       "personId": "peng_dehuai",
