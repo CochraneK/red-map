@@ -494,6 +494,182 @@
       "url": "https://cpc.people.com.cn/BIG5/n1/2021/0516/c64387-32104494.html",
       "note": "方志敏红十军团、北上抗日先遣队、被俘与就义",
       "sourceType": "authoritative"
+    },
+    {
+      "id": "src_wxyj_gsds",
+      "title": "西路军在甘肃（甘肃党史网）",
+      "publisher": "甘肃党史网",
+      "url": "http://www.gsds.gov.cn/gsshsjng/gansudangshizhizui/20211217/1815358274f67af59be.htm",
+      "note": "一条山五佛寺、西安事变后西进",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_wxyj_studytimes",
+      "title": "西路军古浪战斗（学习时报）",
+      "publisher": "学习时报",
+      "url": "https://www.studytimes.cn/dsgs/202610/t20261030_93926.html",
+      "note": "古浪战斗细节",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_wxyj_xiaoshi",
+      "title": "追寻那支消失的红军（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/BIG5/64093/67507/5083600.html",
+      "note": "古浪战斗、陈伯稚等牺牲",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_wxyj_people_1936",
+      "title": "中国共产党大事记·1936年（人民网）",
+      "publisher": "人民网·中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/GB/64162/64164/4415984.html",
+      "note": "援西军组建、被俘将士营救",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_wxyj_weifang",
+      "title": "孙玉清（潍坊党史史志网）",
+      "publisher": "潍坊党史史志网",
+      "url": "http://www.wfsq.gov.cn/91/2076572658484514816.html",
+      "note": "孙玉清被俘就义（地方转述）",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_wxyj_chenhaisong",
+      "title": "陈海松（中国军网）",
+      "publisher": "中国军网",
+      "url": "https://www.81.cn/yljnt_208627/lsda_208656/16499146.html",
+      "note": "陈海松梨园口牺牲",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_qiongya_qionghai",
+      "title": "琼崖革命史（琼海市政府网）",
+      "publisher": "琼海市人民政府网",
+      "url": "https://qionghai.hainan.gov.cn/rdzt/qhtx/2153/202411/t20241122_3772464.html",
+      "note": "讨逆革命军、苏维埃政府、王文明病逝",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_qiongya_nvjun",
+      "title": "红色娘子军（中国军网）",
+      "publisher": "中国军网",
+      "url": "https://www.81.cn/js_208592/10159814.html",
+      "note": "红军第二独立师、女子军特务连",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_qiongya_baisha",
+      "title": "白沙起义（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n/2013/0813/c64102-22548434.html",
+      "note": "1943白沙起义",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dkb_yiyongjun",
+      "title": "东北抗日义勇军（中国军网）",
+      "publisher": "中国军网",
+      "url": "https://photo.81.cn/tsjs/2015-08/27/content_6651151.htm",
+      "note": "九一八后义勇军",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dkb_yangjingyu_qiushi",
+      "title": "杨靖宇与南满游击队（求是网）",
+      "publisher": "求是网",
+      "url": "https://www.qstheory.cn/books/2019-07/31/c_1119408590_13.htm",
+      "note": "杨靖宇组建南满游击队",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dkb_zhaoshangzhi",
+      "title": "赵尚志（中国军网）",
+      "publisher": "中国军网",
+      "url": "https://www.81.cn/yljnt_208627/ylml/Z_208654/9399127_2.html",
+      "note": "赵尚志创建珠河游击队",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dkb_jingbohu",
+      "title": "镜泊湖战斗（光明日报）",
+      "publisher": "光明日报",
+      "url": "https://epaper.gmw.cn/gmrb/html/2015-08/13/nw.D110000gmrb_20150813_3-16.htm",
+      "note": "镜泊湖连环战（数字存争议，只取经过）",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dkb_zhaoyiman_people",
+      "title": "赵一曼（人民网党史）",
+      "publisher": "人民网·中国共产党新闻网",
+      "url": "https://dangshi.people.com.cn/n1/2021/0519/c436975-32107111.html",
+      "note": "赵一曼被俘经过",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dkb_lujun",
+      "title": "抗联各路军（中国军网）",
+      "publisher": "中国军网",
+      "url": "https://www.81.cn/js_208592/jdt_208593/16340769.html",
+      "note": "抗联第一二三路军组建",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dkb_1945",
+      "title": "抗联配合苏军（中国军网）",
+      "publisher": "中国军网",
+      "url": "https://photo.81.cn/tsjs/2015-08/27/content_6651151.htm",
+      "note": "1945配合苏军解放东北",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dj_huizhou_media",
+      "title": "惠州红色元素（人民日报客户端）",
+      "publisher": "人民日报客户端",
+      "url": "https://www.peopleapp.com/rmharticle/30021528774",
+      "note": "惠宝/东宝惠游击队组建、土洋会议",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dj_kerr",
+      "title": "营救美军飞行员（人民网军事）",
+      "publisher": "人民网军事",
+      "url": "https://military.people.com.cn/BIG5/n/2015/0902/c1011-27541707-2.html",
+      "note": "营救克尔、与美军情报合作",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dj_meitang",
+      "title": "梅塘战斗（惠阳区政府网）",
+      "publisher": "惠州市惠阳区人民政府网",
+      "url": "https://www.huiyang.gov.cn/zt/hydstj/content/post_4484947.html",
+      "note": "梅塘战斗",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dj_wangzuoyao",
+      "title": "王作尧（惠阳区政府网）",
+      "publisher": "惠州市惠阳区人民政府网",
+      "url": "https://www.huiyang.gov.cn/zt/hydstj/content/post_4484947.html",
+      "note": "王作尧生平",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dj_liangguang",
+      "title": "两广纵队（人民网山东频道）",
+      "publisher": "人民网山东频道",
+      "url": "https://sd.people.com.cn/n2/2020/0211/c363933-33784924.html",
+      "note": "两广纵队山东成立",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_dj_huaihai",
+      "title": "两广纵队参战（人民网党史）",
+      "publisher": "人民网·中国共产党新闻网",
+      "url": "https://dangshi.people.com.cn/n1/2017/0420/c85037-29224169.html",
+      "note": "两广纵队参加淮海战役",
+      "sourceType": "authoritative"
     }
   ],
   "subjects": [
@@ -875,6 +1051,35 @@
   ],
   "events": [
     {
+      "id": "ev_qy_192707",
+      "date": "1927-07-01",
+      "displayDate": "1927-07-01",
+      "sequence": 1,
+      "forceId": "spark_qiongya",
+      "type": "整编",
+      "title": "琼崖讨逆革命军成立",
+      "description": "1927年7月，中共琼崖特委将各县革命武装统一改编为琼崖讨逆革命军，共11路700余人，冯平任总司令、杨善集任党代表、陈永芹任副总司令。这是琼崖人民武装的早期形态。",
+      "location": {
+        "name": "海南琼崖",
+        "coordinates": [
+          19.2,
+          110.3
+        ]
+      },
+      "participants": [
+        "冯平",
+        "杨善集",
+        "陈永芹"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_qiongya_hainan",
+        "src_qiongya_qionghai"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
       "id": "ev_qy_19270923",
       "date": "1927-09-23",
       "displayDate": "1927-09-23",
@@ -900,6 +1105,31 @@
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
     },
     {
+      "id": "ev_qy_19271216",
+      "date": "1927-12-16",
+      "displayDate": "1927-12-16",
+      "sequence": 1,
+      "forceId": "spark_qiongya",
+      "type": "决策",
+      "title": "陵水县苏维埃政府成立",
+      "description": "1927年12月16日，陵水县苏维埃政府成立，这是琼崖第一个县级苏维埃政权，也是全国较早的县级苏维埃政权之一。琼崖武装斗争与土地革命由此深入推进。",
+      "location": {
+        "name": "海南陵水",
+        "coordinates": [
+          18.5,
+          110.0
+        ]
+      },
+      "participants": [],
+      "importance": 3,
+      "sourceIds": [
+        "src_qiongya_hainan",
+        "src_qiongya_qionghai"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
       "id": "ev_qy_192803",
       "date": "1928-03-01",
       "displayDate": "1928-03-01",
@@ -922,6 +1152,194 @@
       ],
       "certainty": "high",
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
+    },
+    {
+      "id": "ev_qy_19280812",
+      "date": "1928-08-12",
+      "displayDate": "1928-08-12",
+      "sequence": 1,
+      "forceId": "spark_qiongya",
+      "type": "决策",
+      "title": "琼崖苏维埃政府成立",
+      "description": "1928年8月12日，琼崖苏维埃政府在母瑞山成立，王文明任主席，统一领导全琼苏维埃运动。在国民党军围剿下，琼崖党组织转入农村坚持斗争。",
+      "location": {
+        "name": "海南定安母瑞山",
+        "coordinates": [
+          19.4,
+          110.4
+        ]
+      },
+      "participants": [
+        "王文明"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_qiongya_qionghai"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
+      "id": "ev_qy_19300117",
+      "date": "1930-01-17",
+      "displayDate": "1930-01-17",
+      "sequence": 1,
+      "forceId": "spark_qiongya",
+      "type": "牺牲",
+      "title": "王文明病逝冯白驹接任",
+      "description": "1930年1月17日，琼崖苏维埃政府主席王文明在母瑞山病逝，年仅36岁。临终前提议由冯白驹主持特委工作，确保了琼崖革命领导核心的传承。",
+      "location": {
+        "name": "海南定安母瑞山",
+        "coordinates": [
+          19.4,
+          110.4
+        ]
+      },
+      "participants": [
+        "王文明",
+        "冯白驹"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_qiongya_qionghai"
+      ],
+      "certainty": "high",
+      "notes": "解决此前生卒存疑"
+    },
+    {
+      "id": "ev_qy_193008",
+      "date": "1930-08-01",
+      "displayDate": "1930-08-01",
+      "sequence": 1,
+      "forceId": "spark_qiongya",
+      "type": "整编",
+      "title": "红军第二独立师成立",
+      "description": "1930年8月，琼崖红军第二独立师成立，梁秉枢任师长、杨学哲任政治委员，全师约1300人。琼崖武装斗争进入新阶段。",
+      "location": {
+        "name": "海南琼崖",
+        "coordinates": [
+          19.2,
+          110.3
+        ]
+      },
+      "participants": [
+        "梁秉枢",
+        "杨学哲"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_qiongya_nvjun",
+        "src_qiongya_qionghai"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
+      "id": "ev_qy_19310501",
+      "date": "1931-05-01",
+      "displayDate": "1931-05-01",
+      "sequence": 1,
+      "forceId": "spark_qiongya",
+      "type": "整编",
+      "title": "红色娘子军成立",
+      "description": "1931年5月1日，中国工农红军第二独立师第三团女子军特务连在琼崖成立，即红色娘子军，全连103人，庞琼花任连长。她们在战斗中英勇杀敌，成为琼崖革命的光辉篇章。",
+      "location": {
+        "name": "海南琼海",
+        "coordinates": [
+          19.2,
+          110.5
+        ]
+      },
+      "participants": [
+        "庞琼花",
+        "冯增敏",
+        "王时香"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_qiongya_nvjun",
+        "src_qiongya_cpc"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
+      "id": "ev_dkb_193109",
+      "date": "1931-09-01",
+      "displayDate": "1931-09-01",
+      "sequence": 1,
+      "forceId": "spark_dongbei",
+      "type": "起义",
+      "title": "九一八后义勇军兴起",
+      "description": "1931年九一八事变后，东北各阶层人民和爱国官兵纷纷组织抗日义勇军，在白山黑水间开展游击战争。中国共产党派干部到东北创建党领导的抗日游击队，成为东北抗日联军的基础。",
+      "location": {
+        "name": "东北三省",
+        "coordinates": [
+          44.0,
+          126.0
+        ]
+      },
+      "participants": [],
+      "importance": 3,
+      "sourceIds": [
+        "src_dkb_yiyongjun"
+      ],
+      "certainty": "high",
+      "notes": "区域概括"
+    },
+    {
+      "id": "ev_dkb_19320313",
+      "date": "1932-03-13",
+      "displayDate": "1932-03-13",
+      "sequence": 1,
+      "forceId": "spark_dongbei",
+      "type": "战役",
+      "title": "镜泊湖连环战",
+      "description": "1932年3月，李延禄、王德林率东北抗日义勇军在镜泊湖一带设伏，连续作战重创日军。此战鼓舞了东北军民抗日信心。关于歼敌数字与定性存在不同说法，本条只记战役经过，不采用争议数字。",
+      "location": {
+        "name": "黑龙江宁安镜泊湖",
+        "coordinates": [
+          44.0,
+          128.9
+        ]
+      },
+      "participants": [
+        "李延禄",
+        "王德林"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_dkb_jingbohu"
+      ],
+      "certainty": "medium",
+      "notes": "数字与定性存争议，只取经过"
+    },
+    {
+      "id": "ev_dkb_1932_yang",
+      "date": "1932-11-01",
+      "displayDate": "1932-11-01",
+      "sequence": 1,
+      "forceId": "spark_dongbei",
+      "type": "整编",
+      "title": "杨靖宇组建南满游击队",
+      "description": "1932年11月，杨靖宇被派往南满，在磐石红石砬子一带组建中国工农红军第三十二军南满游击队，开展抗日游击战争。这支部队后来发展为东北抗日联军第一军。",
+      "location": {
+        "name": "吉林磐石",
+        "coordinates": [
+          42.9,
+          125.6
+        ]
+      },
+      "participants": [
+        "杨靖宇"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_dkb_yangjingyu_qiushi",
+        "src_dkb_lujun"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
     },
     {
       "id": "steam_sg_19321201_8f7ac593",
@@ -1107,6 +1525,32 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_dkb_193310",
+      "date": "1933-10-01",
+      "displayDate": "1933-10-01",
+      "sequence": 1,
+      "forceId": "spark_dongbei",
+      "type": "整编",
+      "title": "赵尚志创建珠河游击队",
+      "description": "1933年10月，赵尚志在黑龙江珠河（今尚志市）创建反日游击队，开展游击战争，后发展为东北抗日联军第三军。赵尚志以英勇善战著称，敌军称其为小小的满洲国大大的赵尚志。",
+      "location": {
+        "name": "黑龙江尚志",
+        "coordinates": [
+          45.2,
+          127.9
+        ]
+      },
+      "participants": [
+        "赵尚志"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_dkb_zhaoshangzhi"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
     },
     {
       "id": "steam_sg_19331001_6ab9782a",
@@ -9461,6 +9905,32 @@
       "descriptionEn": "On Oct 25, 1935, the Shaan-Gan Red Army conducted a campaign that shaped the movement of nearby columns around Yulinqiao, Ganquan, Shaanxi. This entry keeps the chronological route, local context, and visual connection to adjacent events."
     },
     {
+      "id": "ev_dkb_193511_zhao",
+      "date": "1935-11-01",
+      "displayDate": "1935-11-01",
+      "sequence": 1,
+      "forceId": "spark_dongbei",
+      "type": "被俘",
+      "title": "赵一曼掩护突围被俘",
+      "description": "1935年11月，赵一曼任东北抗日联军第三军第二团政治委员，在掩护部队突围时负重伤被俘。1936年6月28日押送途中逃脱，后再次被捕，8月2日在珠河就义。",
+      "location": {
+        "name": "黑龙江哈尔滨",
+        "coordinates": [
+          45.8,
+          126.5
+        ]
+      },
+      "participants": [
+        "赵一曼"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_dkb_zhaoyiman_people"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
       "id": "r2_19351101_hejiesheng_birth",
       "date": "1935-11-01",
       "displayDate": "1935-11-01",
@@ -10691,6 +11161,34 @@
       "certainty": "low"
     },
     {
+      "id": "ev_dkb_193607",
+      "date": "1936-07-01",
+      "displayDate": "1936-07-01",
+      "sequence": 1,
+      "forceId": "spark_dongbei",
+      "type": "整编",
+      "title": "抗联第一路军成立",
+      "description": "1936年7月，东北抗日联军第一路军成立，杨靖宇任总司令兼政治委员，王德泰任副总司令，魏拯民任政治部主任，活动于东南满地区。",
+      "location": {
+        "name": "吉林辽宁东部",
+        "coordinates": [
+          42.0,
+          126.5
+        ]
+      },
+      "participants": [
+        "杨靖宇",
+        "王德泰",
+        "魏拯民"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_dkb_lujun"
+      ],
+      "certainty": "high",
+      "notes": "区域概括"
+    },
+    {
       "id": "steam_r4_19360701_f441f9e0",
       "date": "1936-07-01",
       "displayDate": "1936-07-01",
@@ -11861,6 +12359,34 @@
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
     },
     {
+      "id": "ev_wxyj_19361031",
+      "date": "1936-10-31",
+      "displayDate": "1936-10-31",
+      "sequence": 1,
+      "forceId": "red_west_route",
+      "type": "战斗",
+      "title": "一条山五佛寺战斗",
+      "description": "1936年10月31日起，西路军第三十军、第九军在景泰一条山、五佛寺一带与马家军激战，击毙敌骑兵第五师副师长以下多人，初战告捷。此战牵制了马家军兵力。",
+      "location": {
+        "name": "甘肃景泰一条山",
+        "coordinates": [
+          37.19,
+          104.07
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "陈昌浩"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_wxyj_gsds",
+        "src_wxyj_studytimes"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
       "id": "ev_wxyj_19361111",
       "date": "1936-11-11",
       "displayDate": "1936-11-11",
@@ -11886,6 +12412,63 @@
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
     },
     {
+      "id": "ev_wxyj_19361111_women",
+      "date": "1936-11-11",
+      "displayDate": "1936-11-11",
+      "sequence": 1,
+      "forceId": "red_west_route",
+      "type": "战斗",
+      "title": "妇女抗日先锋团参战",
+      "description": "西路军组建时，妇女抗日先锋团随军行动，团长王泉媛、政委吴富莲。她们在古浪、永昌、倪家营子等战斗中承担救护、运输和掩护任务，梨园口战斗中剪发换男装掩护主力撤退，损失惨重。",
+      "location": {
+        "name": "甘肃河西走廊",
+        "coordinates": [
+          38.0,
+          102.0
+        ]
+      },
+      "participants": [
+        "王泉媛",
+        "吴富莲"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_women_div_81",
+        "src_qiongya_nvjun"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
+      "id": "ev_wxyj_19361114",
+      "date": "1936-11-14",
+      "displayDate": "1936-11-14",
+      "sequence": 1,
+      "forceId": "red_west_route",
+      "type": "战役",
+      "title": "古浪恶战红九军重创",
+      "description": "1936年11月，红九军在古浪县城与马家军激战三昼夜，巷战肉搏，毙伤敌二千余人，自身亦伤亡惨重。红二十五师师长陈伯稚、政治委员王海清等壮烈牺牲。",
+      "location": {
+        "name": "甘肃古浪",
+        "coordinates": [
+          37.47,
+          102.89
+        ]
+      },
+      "participants": [
+        "王树声",
+        "陈伯稚",
+        "王海清"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_wxyj_xiaoshi",
+        "src_wxyj_studytimes"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
       "id": "ev_wxyj_193612",
       "date": "1936-12-01",
       "displayDate": "1936-12-01",
@@ -11908,6 +12491,33 @@
       ],
       "certainty": "high",
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
+    },
+    {
+      "id": "ev_wxyj_19361228",
+      "date": "1936-12-28",
+      "displayDate": "1936-12-28",
+      "sequence": 1,
+      "forceId": "red_west_route",
+      "type": "战斗",
+      "title": "西安事变后再度西进",
+      "description": "西安事变和平解决后，1936年12月底西路军奉命再度西进，攻占临泽、高台等地，企图在河西走廊建立根据地。此时马家军已集中兵力围堵，形势日趋险恶。",
+      "location": {
+        "name": "甘肃临泽",
+        "coordinates": [
+          39.2,
+          100.1
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "陈昌浩"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_wxyj_gsds"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
     },
     {
       "id": "ev_wxyj_19370120",
@@ -11960,6 +12570,86 @@
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
     },
     {
+      "id": "ev_wxyj_19370227",
+      "date": "1937-02-27",
+      "displayDate": "1937-02-27",
+      "sequence": 1,
+      "forceId": "red_west_route",
+      "type": "决策",
+      "title": "组建援西军驰援西路军",
+      "description": "1937年2月27日，中共中央决定组成援西军，刘伯承任司令员、张浩任政治委员，率部驰援西路军。后因西路军已失败，援西军驻守镇原、固原一带，收容失散将士。",
+      "location": {
+        "name": "陕西甘肃交界",
+        "coordinates": [
+          35.5,
+          106.5
+        ]
+      },
+      "participants": [
+        "刘伯承",
+        "张浩"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_wxyj_people_1936"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
+      "id": "ev_wxyj_193703_sun",
+      "date": "1937-03-01",
+      "displayDate": "1937-03-01",
+      "sequence": 1,
+      "forceId": "red_west_route",
+      "type": "牺牲",
+      "title": "孙玉清被俘就义",
+      "description": "西路军第九军军长孙玉清在梨园口战斗后负伤被俘，被押解至西宁，面对敌人诱降坚贞不屈，于1937年3月被秘密杀害，年仅28岁。",
+      "location": {
+        "name": "青海西宁",
+        "coordinates": [
+          36.62,
+          101.78
+        ]
+      },
+      "participants": [
+        "孙玉清"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_wxyj_weifang"
+      ],
+      "certainty": "medium",
+      "notes": "地方党史转述，具体日期待核"
+    },
+    {
+      "id": "ev_wxyj_19370312_chen",
+      "date": "1937-03-12",
+      "displayDate": "1937-03-12",
+      "sequence": 1,
+      "forceId": "red_west_route",
+      "type": "牺牲",
+      "title": "陈海松梨园口壮烈牺牲",
+      "description": "1937年3月12日，红九军政治委员陈海松在梨园口战斗中率部阻击敌军，掩护主力向祁连山转移，激战中壮烈牺牲，年仅23岁。他是西路军牺牲的高级将领之一。",
+      "location": {
+        "name": "甘肃肃南梨园口",
+        "coordinates": [
+          38.8,
+          99.5
+        ]
+      },
+      "participants": [
+        "陈海松"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_wxyj_chenhaisong",
+        "src_wxyj_dswxyjy"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
       "id": "ev_wxyj_19370314",
       "date": "1937-03-14",
       "displayDate": "1937-03-14",
@@ -12008,6 +12698,61 @@
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
     },
     {
+      "id": "ev_wxyj_1937_rescue",
+      "date": "1937-09-01",
+      "displayDate": "1937-09-01",
+      "sequence": 1,
+      "forceId": "red_west_route",
+      "type": "到达",
+      "title": "被俘将士营救返延安",
+      "description": "西路军失败后，被俘将士遭受非人待遇。经党中央、周恩来及各界人士营救，部分被俘人员陆续脱险，于1937年至1938年间分批返回延安。近千名指战员化装乞讨回到陕北。",
+      "location": {
+        "name": "陕西延安",
+        "coordinates": [
+          36.6,
+          109.5
+        ]
+      },
+      "participants": [
+        "周恩来"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_wxyj_people_1936"
+      ],
+      "certainty": "high",
+      "notes": "日期为区间概括"
+    },
+    {
+      "id": "ev_dkb_193710",
+      "date": "1937-10-01",
+      "displayDate": "1937-10-01",
+      "sequence": 1,
+      "forceId": "spark_dongbei",
+      "type": "整编",
+      "title": "抗联第二三路军成立",
+      "description": "1937年10月，东北抗日联军第二路军成立，周保中任总指挥、赵尚志任副总指挥；1939年5月第三路军成立，李兆麟任总指挥、冯仲云任政治委员。抗联形成三路军格局。",
+      "location": {
+        "name": "黑龙江吉林",
+        "coordinates": [
+          45.0,
+          128.0
+        ]
+      },
+      "participants": [
+        "周保中",
+        "赵尚志",
+        "李兆麟",
+        "冯仲云"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_dkb_lujun"
+      ],
+      "certainty": "high",
+      "notes": "第三路军日期为1939年"
+    },
+    {
       "id": "ev_dkb_193805",
       "date": "1938-05-01",
       "displayDate": "1938-05-01",
@@ -12030,6 +12775,33 @@
       ],
       "certainty": "high",
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
+    },
+    {
+      "id": "ev_dj_193812",
+      "date": "1938-12-01",
+      "displayDate": "1938-12-01",
+      "sequence": 1,
+      "forceId": "spark_dongjiang",
+      "type": "整编",
+      "title": "惠宝东宝游击队组建",
+      "description": "1938年10月日军侵占广州、惠州后，曾生、王作尧分别在家乡惠阳坪山和东莞组建惠宝人民抗日游击总队、东宝惠边人民抗日游击大队，开展敌后游击战争。",
+      "location": {
+        "name": "广东惠阳东莞",
+        "coordinates": [
+          22.8,
+          114.3
+        ]
+      },
+      "participants": [
+        "曾生",
+        "王作尧"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_dj_huizhou_media"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
     },
     {
       "id": "ev_qy_19381205",
@@ -12128,6 +12900,35 @@
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
     },
     {
+      "id": "ev_dj_194201",
+      "date": "1942-01-01",
+      "displayDate": "1942-01-01",
+      "sequence": 1,
+      "forceId": "spark_dongjiang",
+      "type": "整编",
+      "title": "广东人民抗日游击总队成立",
+      "description": "1942年1月，根据中共南方工委决定，广东军政委员会成立，广东人民抗日游击队改称广东人民抗日游击总队，尹林平任主任，梁鸿钧、曾生、王作尧等为委员。",
+      "location": {
+        "name": "广东东江",
+        "coordinates": [
+          22.8,
+          113.9
+        ]
+      },
+      "participants": [
+        "尹林平",
+        "梁鸿钧",
+        "曾生",
+        "王作尧"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_dongjiang_gangjiu"
+      ],
+      "certainty": "high",
+      "notes": "成立月份有异说"
+    },
+    {
       "id": "ev_dj_194202",
       "date": "1942-02-01",
       "displayDate": "1942-02-01",
@@ -12176,6 +12977,33 @@
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
     },
     {
+      "id": "ev_qy_19430812",
+      "date": "1943-08-12",
+      "displayDate": "1943-08-12",
+      "sequence": 1,
+      "forceId": "spark_qiongya",
+      "type": "起义",
+      "title": "白沙起义爆发",
+      "description": "1943年8月12日，黎族首领王国兴、王玉锦领导白沙地区两万多黎苗群众举行武装起义，反抗国民党顽固派压迫。起义后遭残酷镇压，余部坚持斗争并主动寻找共产党。",
+      "location": {
+        "name": "海南白沙",
+        "coordinates": [
+          19.2,
+          109.4
+        ]
+      },
+      "participants": [
+        "王国兴",
+        "王玉锦"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_qiongya_baisha"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
       "id": "ev_dj_19431202",
       "date": "1943-12-02",
       "displayDate": "1943-12-02",
@@ -12198,6 +13026,142 @@
       ],
       "certainty": "high",
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
+    },
+    {
+      "id": "ev_dj_19440211",
+      "date": "1944-02-11",
+      "displayDate": "1944-02-11",
+      "sequence": 1,
+      "forceId": "spark_dongjiang",
+      "type": "行动",
+      "title": "营救美军飞行员克尔",
+      "description": "1944年2月11日，美军飞行员克尔中尉在袭击香港日军机场时跳伞，被东江纵队港九大队救护。游击队历尽艰险掩护其脱险，此为东纵国际合作的一段佳话。",
+      "location": {
+        "name": "香港",
+        "coordinates": [
+          22.4,
+          114.2
+        ]
+      },
+      "participants": [
+        "曾生"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_dj_kerr"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
+      "id": "ev_dj_19440508",
+      "date": "1944-05-08",
+      "displayDate": "1944-05-08",
+      "sequence": 1,
+      "forceId": "spark_dongjiang",
+      "type": "战役",
+      "title": "梅塘战斗",
+      "description": "1944年5月8日，日军出动一个大队偷袭东江纵队司令部驻地梅塘。王作尧、梁鸿钧、杨康华组成临时指挥部，指挥部队抢占马山阻击，毙伤日军四十余人，粉碎敌人偷袭。",
+      "location": {
+        "name": "广东东莞梅塘",
+        "coordinates": [
+          22.9,
+          113.9
+        ]
+      },
+      "participants": [
+        "王作尧",
+        "梁鸿钧",
+        "杨康华"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_dj_meitang",
+        "src_dj_wangzuoyao"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
+      "id": "ev_dj_194408",
+      "date": "1944-08-01",
+      "displayDate": "1944-08-01",
+      "sequence": 1,
+      "forceId": "spark_dongjiang",
+      "type": "会议",
+      "title": "土洋会议",
+      "description": "1944年8月，广东省临委和东江军政委员会在惠阳土洋村召开联席会议，决定将部队整编为七个支队和港九独立大队，推动东江纵队向粤北、粤东发展。",
+      "location": {
+        "name": "广东惠阳土洋村",
+        "coordinates": [
+          22.6,
+          114.5
+        ]
+      },
+      "participants": [
+        "曾生",
+        "尹林平"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_dj_huizhou_media"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
+      "id": "ev_dj_1944_intel",
+      "date": "1944-08-01",
+      "displayDate": "1944-08-01",
+      "sequence": 1,
+      "forceId": "spark_dongjiang",
+      "type": "行动",
+      "title": "与美军建立情报合作",
+      "description": "1944年，东江纵队应美军要求建立情报网，由袁庚等人负责，向美军提供日军在香港、广州等地的军事情报，为盟军对日作战作出贡献。",
+      "location": {
+        "name": "广东香港",
+        "coordinates": [
+          22.5,
+          114.1
+        ]
+      },
+      "participants": [
+        "袁庚",
+        "曾生"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_dj_kerr"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
+      "id": "ev_dkb_194508",
+      "date": "1945-08-01",
+      "displayDate": "1945-08-01",
+      "sequence": 1,
+      "forceId": "spark_dongbei",
+      "type": "胜利",
+      "title": "抗联配合苏军解放东北",
+      "description": "1945年8月苏联对日宣战后，抗联部队派数百名指战员空降牡丹江、磐石、海拉尔、赤峰、长春、满洲里等地执行侦察和向导任务，配合苏军收复佳木斯、牡丹江、哈尔滨、长春、沈阳等城市。",
+      "location": {
+        "name": "东北三省",
+        "coordinates": [
+          45.0,
+          126.0
+        ]
+      },
+      "participants": [
+        "周保中",
+        "李兆麟"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_dkb_1945"
+      ],
+      "certainty": "high",
+      "notes": "区域概括"
     },
     {
       "id": "ev_dj_194508",
@@ -12271,6 +13235,59 @@
       ],
       "certainty": "high",
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
+    },
+    {
+      "id": "ev_dj_19470801",
+      "date": "1947-08-01",
+      "displayDate": "1947-08-01",
+      "sequence": 1,
+      "forceId": "spark_dongjiang",
+      "type": "整编",
+      "title": "两广纵队在山东成立",
+      "description": "1947年8月1日，北撤到山东的东江纵队等部扩编为两广纵队，曾生任司令员，雷经天任政治委员，隶属华东野战军，参加解放战争。",
+      "location": {
+        "name": "山东",
+        "coordinates": [
+          36.5,
+          118.0
+        ]
+      },
+      "participants": [
+        "曾生",
+        "雷经天"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_dj_liangguang"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
+    },
+    {
+      "id": "ev_dj_194811",
+      "date": "1948-11-01",
+      "displayDate": "1948-11-01",
+      "sequence": 1,
+      "forceId": "spark_dongjiang",
+      "type": "战役",
+      "title": "两广纵队参加淮海战役",
+      "description": "1948年11月，两广纵队参加淮海战役，配合主力部队作战。此后随军南下，参加解放广东等战役。",
+      "location": {
+        "name": "江苏安徽",
+        "coordinates": [
+          34.0,
+          117.0
+        ]
+      },
+      "participants": [
+        "曾生"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_dj_huaihai"
+      ],
+      "certainty": "high",
+      "notes": "坐标待核"
     },
     {
       "id": "ev_qy_19500501",
@@ -13359,6 +14376,52 @@
       "sort": 603
     },
     {
+      "id": "chenhaisong",
+      "name": "陈海松",
+      "nameEn": "Chen Haisong",
+      "personType": "人物",
+      "birthDate": "1914",
+      "deathDate": "1937-03-12",
+      "hometown": "河南罗山",
+      "hometownEn": "",
+      "forceId": "red_west_route",
+      "summary": "红九军政治委员，1937年3月梨园口战斗中率部阻击敌军，壮烈牺牲，年仅23岁。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "西路军",
+        "英烈"
+      ],
+      "sourceIds": [
+        "src_wxyj_chenhaisong"
+      ],
+      "certainty": "high",
+      "sort": 604
+    },
+    {
+      "id": "sunyuqing",
+      "name": "孙玉清",
+      "nameEn": "Sun Yuqing",
+      "personType": "人物",
+      "birthDate": "1909",
+      "deathDate": "1937",
+      "hometown": "湖北公安",
+      "hometownEn": "",
+      "forceId": "red_west_route",
+      "summary": "红九军军长，西路军失败后被俘，在西宁坚贞不屈，秘密就义，年仅28岁。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "西路军",
+        "英烈"
+      ],
+      "sourceIds": [
+        "src_wxyj_weifang"
+      ],
+      "certainty": "high",
+      "sort": 605
+    },
+    {
       "id": "fengbaiju",
       "name": "冯白驹",
       "nameEn": "Feng Baiju",
@@ -13427,6 +14490,73 @@
       ],
       "certainty": "high",
       "sort": 703
+    },
+    {
+      "id": "wangguoxing",
+      "name": "王国兴",
+      "nameEn": "Wang Guoxing",
+      "personType": "人物",
+      "birthDate": "1894",
+      "deathDate": "1975",
+      "hometown": "海南白沙",
+      "hometownEn": "",
+      "forceId": "spark_qiongya",
+      "summary": "黎族首领，1943年领导白沙起义，后主动寻找共产党，为琼崖革命作出重要贡献。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "白沙起义",
+        "黎族"
+      ],
+      "sourceIds": [
+        "src_qiongya_baisha"
+      ],
+      "certainty": "high",
+      "sort": 704
+    },
+    {
+      "id": "pangqionghua",
+      "name": "庞琼花",
+      "nameEn": "Pang Qionghua",
+      "personType": "人物",
+      "birthDate": "1911",
+      "deathDate": "1942",
+      "hometown": "海南琼海",
+      "hometownEn": "",
+      "forceId": "spark_qiongya",
+      "summary": "红色娘子军首任连长，1931年女子军特务连成立时任连长。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红色娘子军"
+      ],
+      "sourceIds": [
+        "src_qiongya_nvjun"
+      ],
+      "certainty": "high",
+      "sort": 705
+    },
+    {
+      "id": "liangbingchu",
+      "name": "梁秉枢",
+      "nameEn": "Liang Bingchu",
+      "personType": "人物",
+      "birthDate": "1889",
+      "deathDate": "1975",
+      "hometown": "广东",
+      "hometownEn": "",
+      "forceId": "spark_qiongya",
+      "summary": "琼崖红军第二独立师师长，1930年部队整编时任师长。（此前存疑人物，现有权威来源确认）",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "琼崖红军"
+      ],
+      "sourceIds": [
+        "src_qiongya_nvjun"
+      ],
+      "certainty": "high",
+      "sort": 706
     },
     {
       "id": "du_heng",
@@ -13571,6 +14701,29 @@
       "sort": 803
     },
     {
+      "id": "yuan_geng",
+      "name": "袁庚",
+      "nameEn": "Yuan Geng",
+      "personType": "人物",
+      "birthDate": "1917",
+      "deathDate": "2016",
+      "hometown": "广东深圳",
+      "hometownEn": "",
+      "forceId": "spark_dongjiang",
+      "summary": "东江纵队情报负责人，1944年主持与美军的情报合作，后为改革开放重要人物。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "东江纵队",
+        "情报"
+      ],
+      "sourceIds": [
+        "src_dj_kerr"
+      ],
+      "certainty": "high",
+      "sort": 804
+    },
+    {
       "id": "zhou_dongzhi",
       "name": "周冬至",
       "nameEn": "",
@@ -13593,6 +14746,28 @@
       ],
       "certainty": "low",
       "sort": 804
+    },
+    {
+      "id": "leijingtian",
+      "name": "雷经天",
+      "nameEn": "Lei Jingtian",
+      "personType": "人物",
+      "birthDate": "1904",
+      "deathDate": "1959",
+      "hometown": "广西南宁",
+      "hometownEn": "",
+      "forceId": "spark_dongjiang",
+      "summary": "两广纵队政治委员，1947年部队成立时任职。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "两广纵队"
+      ],
+      "sourceIds": [
+        "src_dj_liangguang"
+      ],
+      "certainty": "high",
+      "sort": 805
     },
     {
       "id": "wang_taiji",
@@ -14334,6 +15509,74 @@
       ],
       "certainty": "high",
       "sort": 903
+    },
+    {
+      "id": "lizhilu",
+      "name": "李延禄",
+      "nameEn": "Li Yanlu",
+      "personType": "人物",
+      "birthDate": "1895",
+      "deathDate": "1985",
+      "hometown": "吉林延边",
+      "hometownEn": "",
+      "forceId": "spark_dongbei",
+      "summary": "东北抗日义勇军将领，1932年指挥镜泊湖连环战。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "东北抗联",
+        "义勇军"
+      ],
+      "sourceIds": [
+        "src_dkb_jingbohu"
+      ],
+      "certainty": "high",
+      "sort": 904
+    },
+    {
+      "id": "wangdetai",
+      "name": "王德泰",
+      "nameEn": "Wang Detai",
+      "personType": "人物",
+      "birthDate": "1907",
+      "deathDate": "1936",
+      "hometown": "吉林延边",
+      "hometownEn": "",
+      "forceId": "spark_dongbei",
+      "summary": "东北抗日联军第一路军副总司令，1936年牺牲。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "东北抗联",
+        "英烈"
+      ],
+      "sourceIds": [
+        "src_dkb_lujun"
+      ],
+      "certainty": "high",
+      "sort": 905
+    },
+    {
+      "id": "weizhengmin",
+      "name": "魏拯民",
+      "nameEn": "Wei Zhengmin",
+      "personType": "人物",
+      "birthDate": "1909",
+      "deathDate": "1941",
+      "hometown": "山西屯留",
+      "hometownEn": "",
+      "forceId": "spark_dongbei",
+      "summary": "东北抗日联军第一路军政治部主任，杨靖宇牺牲后继续领导部队。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "东北抗联"
+      ],
+      "sourceIds": [
+        "src_dkb_lujun"
+      ],
+      "certainty": "high",
+      "sort": 906
     }
   ],
   "personEvents": [
@@ -14812,6 +16055,16 @@
       "sort": 10
     },
     {
+      "personId": "chenhaisong",
+      "eventId": "ev_wxyj_19370312_chen",
+      "role": "政治委员/牺牲",
+      "note": "梨园口战斗壮烈牺牲",
+      "sourceIds": [
+        "src_wxyj_chenhaisong"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "dai_jitao",
       "eventId": "steam_r2_19341205_f39cbe8b",
       "role": "Steam文本提及",
@@ -15005,6 +16258,16 @@
         "src_qiongya_yunlong"
       ],
       "sort": 40
+    },
+    {
+      "personId": "fengbaiju",
+      "eventId": "ev_qy_19280812",
+      "role": "继任领导",
+      "note": "王文明病逝后主持特委",
+      "sourceIds": [
+        "src_qiongya_qionghai"
+      ],
+      "sort": 50
     },
     {
       "personId": "gao_gang",
@@ -15449,6 +16712,16 @@
       "sort": 10
     },
     {
+      "personId": "leijingtian",
+      "eventId": "ev_dj_19470801",
+      "role": "政治委员",
+      "note": "两广纵队政治委员",
+      "sourceIds": [
+        "src_dj_liangguang"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "li_jianzhen",
       "eventId": "rf_19341010_ruijin",
       "role": "参与者",
@@ -15489,6 +16762,26 @@
         "src_wxyj_dswxyjy"
       ],
       "sort": 20
+    },
+    {
+      "personId": "li_xiannian",
+      "eventId": "ev_wxyj_19370227",
+      "role": "关注",
+      "note": "援西军驰援",
+      "sourceIds": [
+        "src_wxyj_people_1936"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "liangbingchu",
+      "eventId": "ev_qy_193008",
+      "role": "师长",
+      "note": "琼崖红军第二独立师师长",
+      "sourceIds": [
+        "src_qiongya_nvjun"
+      ],
+      "sort": 10
     },
     {
       "personId": "liao_huaizhong",
@@ -15713,6 +17006,16 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9109
+    },
+    {
+      "personId": "lizhilu",
+      "eventId": "ev_dkb_19320313",
+      "role": "指挥员",
+      "note": "指挥镜泊湖连环战",
+      "sourceIds": [
+        "src_dkb_jingbohu"
+      ],
+      "sort": 10
     },
     {
       "personId": "luo_nanhui",
@@ -16007,6 +17310,16 @@
       "sort": 9118
     },
     {
+      "personId": "pangqionghua",
+      "eventId": "ev_qy_19310501",
+      "role": "连长",
+      "note": "红色娘子军首任连长",
+      "sourceIds": [
+        "src_qiongya_nvjun"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "peng_dehuai",
       "eventId": "rf_19341010_ruijin",
       "role": "参与者",
@@ -16233,6 +17546,16 @@
       "sort": 10
     },
     {
+      "personId": "sunyuqing",
+      "eventId": "ev_wxyj_193703_sun",
+      "role": "军长/牺牲",
+      "note": "被俘后就义",
+      "sourceIds": [
+        "src_wxyj_weifang"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "wang_jiaxiang",
       "eventId": "rf_19350115_zunyi_meeting",
       "role": "关键参与者",
@@ -16377,6 +17700,26 @@
       "sort": 9332
     },
     {
+      "personId": "wangdetai",
+      "eventId": "ev_dkb_193607",
+      "role": "副总司令",
+      "note": "抗联第一路军副总司令",
+      "sourceIds": [
+        "src_dkb_lujun"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "wangguoxing",
+      "eventId": "ev_qy_19430812",
+      "role": "领导者",
+      "note": "领导白沙起义",
+      "sourceIds": [
+        "src_qiongya_baisha"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "wangwenming",
       "eventId": "ev_qy_19270923",
       "role": "参与者",
@@ -16397,6 +17740,26 @@
       "sort": 20
     },
     {
+      "personId": "wangwenming",
+      "eventId": "ev_qy_19280812",
+      "role": "主席",
+      "note": "琼崖苏维埃政府主席",
+      "sourceIds": [
+        "src_qiongya_qionghai"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "wangwenming",
+      "eventId": "ev_qy_19300117",
+      "role": "病逝",
+      "note": "母瑞山病逝",
+      "sourceIds": [
+        "src_qiongya_qionghai"
+      ],
+      "sort": 40
+    },
+    {
       "personId": "wangzuoyao",
       "eventId": "ev_dj_19431202",
       "role": "副司令员",
@@ -16415,6 +17778,36 @@
         "src_dongjiang_beiche"
       ],
       "sort": 20
+    },
+    {
+      "personId": "wangzuoyao",
+      "eventId": "ev_dj_193812",
+      "role": "组建者",
+      "note": "组建东宝惠边游击大队",
+      "sourceIds": [
+        "src_dj_huizhou_media"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "wangzuoyao",
+      "eventId": "ev_dj_19440508",
+      "role": "指挥员",
+      "note": "梅塘战斗",
+      "sourceIds": [
+        "src_dj_meitang"
+      ],
+      "sort": 40
+    },
+    {
+      "personId": "weizhengmin",
+      "eventId": "ev_dkb_193607",
+      "role": "政治部主任",
+      "note": "抗联第一路军政治部主任",
+      "sourceIds": [
+        "src_dkb_lujun"
+      ],
+      "sort": 10
     },
     {
       "personId": "wu_huanxian",
@@ -17186,6 +18579,26 @@
       "sort": 20
     },
     {
+      "personId": "yangjingyu",
+      "eventId": "ev_dkb_1932_yang",
+      "role": "创建者",
+      "note": "组建南满游击队",
+      "sourceIds": [
+        "src_dkb_yangjingyu_qiushi"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "yangjingyu",
+      "eventId": "ev_dkb_193607",
+      "role": "总司令",
+      "note": "抗联第一路军总司令",
+      "sourceIds": [
+        "src_dkb_lujun"
+      ],
+      "sort": 40
+    },
+    {
       "personId": "yangkeming",
       "eventId": "ev_wxyj_19370120",
       "role": "牺牲",
@@ -17206,12 +18619,52 @@
       "sort": 10
     },
     {
+      "personId": "yangshanji",
+      "eventId": "ev_qy_192707",
+      "role": "党代表",
+      "note": "琼崖讨逆革命军党代表",
+      "sourceIds": [
+        "src_qiongya_hainan"
+      ],
+      "sort": 20
+    },
+    {
       "personId": "yinlinping",
       "eventId": "ev_dj_19431202",
       "role": "政治委员",
       "note": "东江纵队成立兼任政委",
       "sourceIds": [
         "src_dongjiang_cpc"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "yinlinping",
+      "eventId": "ev_dj_194201",
+      "role": "主任",
+      "note": "广东人民抗日游击总队",
+      "sourceIds": [
+        "src_dongjiang_gangjiu"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "yinlinping",
+      "eventId": "ev_dj_194408",
+      "role": "书记",
+      "note": "土洋会议",
+      "sourceIds": [
+        "src_dj_huizhou_media"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "yuan_geng",
+      "eventId": "ev_dj_1944_intel",
+      "role": "情报负责人",
+      "note": "主持与美军情报合作",
+      "sourceIds": [
+        "src_dj_kerr"
       ],
       "sort": 10
     },
@@ -17244,6 +18697,56 @@
         "src_dongjiang_beiche"
       ],
       "sort": 30
+    },
+    {
+      "personId": "zengsheng",
+      "eventId": "ev_dj_193812",
+      "role": "组建者",
+      "note": "组建惠宝游击总队",
+      "sourceIds": [
+        "src_dj_huizhou_media"
+      ],
+      "sort": 40
+    },
+    {
+      "personId": "zengsheng",
+      "eventId": "ev_dj_194201",
+      "role": "委员",
+      "note": "广东人民抗日游击总队",
+      "sourceIds": [
+        "src_dongjiang_gangjiu"
+      ],
+      "sort": 50
+    },
+    {
+      "personId": "zengsheng",
+      "eventId": "ev_dj_19440211",
+      "role": "指挥员",
+      "note": "营救美军飞行员",
+      "sourceIds": [
+        "src_dj_kerr"
+      ],
+      "sort": 60
+    },
+    {
+      "personId": "zengsheng",
+      "eventId": "ev_dj_194408",
+      "role": "参与者",
+      "note": "土洋会议",
+      "sourceIds": [
+        "src_dj_huizhou_media"
+      ],
+      "sort": 70
+    },
+    {
+      "personId": "zengsheng",
+      "eventId": "ev_dj_19470801",
+      "role": "司令员",
+      "note": "两广纵队司令员",
+      "sourceIds": [
+        "src_dj_liangguang"
+      ],
+      "sort": 80
     },
     {
       "personId": "zhang_dazhi",
@@ -17831,6 +19334,16 @@
       "sort": 10
     },
     {
+      "personId": "zhaoyiman",
+      "eventId": "ev_dkb_193511_zhao",
+      "role": "政委/被俘",
+      "note": "掩护突围负伤被俘",
+      "sourceIds": [
+        "src_dkb_zhaoyiman_people"
+      ],
+      "sort": 20
+    },
+    {
       "personId": "zheng_weisan",
       "eventId": "steam_r25_19341111_6bb7d2f0",
       "role": "Steam文本提及",
@@ -18080,6 +19593,26 @@
         "src_dongbeikanglian_xinhua"
       ],
       "sort": 20
+    },
+    {
+      "personId": "zhoubaozhong",
+      "eventId": "ev_dkb_193710",
+      "role": "总指挥",
+      "note": "抗联第二路军总指挥",
+      "sourceIds": [
+        "src_dkb_lujun"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "zhoubaozhong",
+      "eventId": "ev_dkb_194508",
+      "role": "指挥员",
+      "note": "配合苏军解放东北",
+      "sourceIds": [
+        "src_dkb_1945"
+      ],
+      "sort": 40
     },
     {
       "personId": "zhu_de",

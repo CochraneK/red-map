@@ -51,6 +51,13 @@ Keep the public museum/map reproducible from structured sources while reducing h
 - Scanned PDFs (local 绥德州志 etc.) need OCR first; no OCR engine is bundled. Install one (PaddleOCR/Tesseract) or use an external OCR tool, then feed the text/TXT to extract_book_candidates.py.
 - Method note: "science-based enrichment" = measure coverage first (主体×时间×证据等级), prefer upgrading low→high over adding more low, deepen person-event links, then broaden. See conversation / STATUS for the four-dimension framework.
 
+## 2026-11-22 data densification (v12/v13)
+
+- Data now: 444 events / 94 persons / 420 person-event links / 63 high-certainty. Zero person orphans. Extended routes (西路军/琼崖/抗联/东江) each 13-15 nodes.
+- Reproducible tools: `link_zero_person_events.py`, `add_key_persons.py`, `import_extended_events.py` (reads JSON in `research_private/sourced_research/`). All idempotent.
+- **Biggest remaining debt**: 246 `low` (game-text) events. The 58 with importance>=4 are the best upgrade candidates; many duplicate authoritative events already in the data, so dedupe first.
+- Note on tooling pitfall: hardcoding Chinese text with embedded ASCII quotes in Python source caused repeated syntax errors; final pipeline puts all Chinese copy in a JSON data file and keeps the Python script quote-free. Follow this pattern for future imports.
+
 ## Validation
 
 ```bash

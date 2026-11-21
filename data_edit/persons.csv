@@ -83,3 +83,13 @@ TRUE,zhoubaozhong,周保中,Zhou Baozhong,人物,,,云南大理,,spark_dongbei,�
 ,linbiao,林彪,Lin Biao,人物,1907,1971,湖北黄冈,"Huanggang, Hubei",red_first,红一军团军团长。1934年10月率部参加长征，指挥突破国民党军四道封锁线、强渡乌江；遵义会议后指挥四渡赤水、强渡大渡河、夺占泸定桥等作战。,Commander of the First Red Army Corps; led the breakout through four blockade lines and major crossings during the Long March.,,红一军团;指挥员,src_lin_biao_cpc,high,117
 ,fangzhimin,方志敏,Fang Zhimin,人物,1899,1935-08-06,江西弋阳,"Yiyang, Jiangxi",red_7th_advance,红十军团军政委员会主席，闽浙赣革命根据地创建人。1934年11月率北上抗日先遣队（红十军团）北上，1935年1月在怀玉山被俘，狱中写下《可爱的中国》，8月6日在南昌就义，时年36岁。,"Chairman of the Red Tenth Army Corps; led the Northern Anti-Japanese Advance Force, captured in January 1935 and executed in Nanchang.",,北上抗日先遣队;英烈,src_fangzhimin_cpc,high,118
 ,chengshicai,程世才,Cheng Shicai,人物,1912,1990,湖北大悟,"Dawu, Hubei",red_west_route,红四方面军将领。西路军失败后，与李先念率红30军余部编成左支队，穿越祁连山到达星星峡进入新疆。,Red Fourth Front Army commander; co-led the left detachment across the Qilian Mountains to Xingxingxia in 1937.,,西路军;左支队,src_wxyj_dswxyjy,high,119
+TRUE,chenhaisong,陈海松,Chen Haisong,人物,1914,1937-03-12,河南罗山,,red_west_route,红九军政治委员，1937年3月梨园口战斗中率部阻击敌军，壮烈牺牲，年仅23岁。,,,西路军;英烈,src_wxyj_chenhaisong,high,604
+TRUE,sunyuqing,孙玉清,Sun Yuqing,人物,1909,1937,湖北公安,,red_west_route,红九军军长，西路军失败后被俘，在西宁坚贞不屈，秘密就义，年仅28岁。,,,西路军;英烈,src_wxyj_weifang,high,605
+TRUE,wangguoxing,王国兴,Wang Guoxing,人物,1894,1975,海南白沙,,spark_qiongya,黎族首领，1943年领导白沙起义，后主动寻找共产党，为琼崖革命作出重要贡献。,,,白沙起义;黎族,src_qiongya_baisha,high,704
+TRUE,pangqionghua,庞琼花,Pang Qionghua,人物,1911,1942,海南琼海,,spark_qiongya,红色娘子军首任连长，1931年女子军特务连成立时任连长。,,,红色娘子军,src_qiongya_nvjun,high,705
+TRUE,liangbingchu,梁秉枢,Liang Bingchu,人物,1889,1975,广东,,spark_qiongya,琼崖红军第二独立师师长，1930年部队整编时任师长。（此前存疑人物，现有权威来源确认）,,,琼崖红军,src_qiongya_nvjun,high,706
+TRUE,lizhilu,李延禄,Li Yanlu,人物,1895,1985,吉林延边,,spark_dongbei,东北抗日义勇军将领，1932年指挥镜泊湖连环战。,,,东北抗联;义勇军,src_dkb_jingbohu,high,904
+TRUE,wangdetai,王德泰,Wang Detai,人物,1907,1936,吉林延边,,spark_dongbei,东北抗日联军第一路军副总司令，1936年牺牲。,,,东北抗联;英烈,src_dkb_lujun,high,905
+TRUE,weizhengmin,魏拯民,Wei Zhengmin,人物,1909,1941,山西屯留,,spark_dongbei,东北抗日联军第一路军政治部主任，杨靖宇牺牲后继续领导部队。,,,东北抗联,src_dkb_lujun,high,906
+TRUE,yuan_geng,袁庚,Yuan Geng,人物,1917,2016,广东深圳,,spark_dongjiang,东江纵队情报负责人，1944年主持与美军的情报合作，后为改革开放重要人物。,,,东江纵队;情报,src_dj_kerr,high,804
+TRUE,leijingtian,雷经天,Lei Jingtian,人物,1904,1959,广西南宁,,spark_dongjiang,两广纵队政治委员，1947年部队成立时任职。,,,两广纵队,src_dj_liangguang,high,805

@@ -63,3 +63,14 @@ All new time-extended events (1927-1950) are marked as 延伸视角 in notes; th
 Local scanned gazetteers (绥德州志 etc., PDF, 39-154MB) have NO text layer — need OCR before the book pipeline can use them. No OCR engine installed locally at time of writing.
 
 **UI decision (user, same day)**: keep the previous museum-first UI. `index.html` and both start scripts point back to `museum.html`. `explore.html` remains in the repo as an optional, non-default entry. Evidence-model and input-pipeline changes from v11 are unaffected.
+
+## 2026-11-22 data densification (v12/v13)
+
+Addressed the "is the data sufficient?" audit (main route was sufficient; person links + credibility were not):
+
+- **v12 — person-event links**: `tools/link_zero_person_events.py` added 33 evidence-based links (zero orphans 19→0); `tools/add_key_persons.py` added 5 key missing figures (博古/李德/林彪/方志敏/程世才) from authoritative sources + 2 红十军团 events + 10 links.
+- **v13 — extended routes**: `tools/import_extended_events.py` (data in `research_private/sourced_research/04_extended_events.json`) added 31 authoritative events + 10 persons + 29 links: 西路军 15, 琼崖 15, 抗联 13, 东江 13 — each route now 13-15 nodes, enough for a continuous story. All with source URLs; doubtful items (镜泊湖 disputed figures, 琼崖 renaming, 孙玉清 exact date) marked medium or excluded.
+- **Result**: events 411→444, persons 79→94, links 348→420, high-certainty 32→63, low share 60%→55%, zero person orphans.
+- Browser verified: 444 events, timeline 1927-1950, 12 forces, 3 groups, no runtime errors. check_project.py passes.
+
+**Remaining gap**: low-certainty (game-text) events still 246 — the single biggest credibility debt. Next priority is upgrading high-importance game clues with authoritative sources.
