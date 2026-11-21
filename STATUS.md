@@ -97,3 +97,13 @@ User asked to add classic films (四渡赤水/长征/古田会议), books, video
 - Totals: events 437→440, persons 94→97, sources 98→101. check_project.py passes; browser verified 440 events render.
 
 **If better subtitles arrive** (user-provided srt / film subtitle files / larger whisper model): pipeline is ready — drop into `research_private/media_capture/`, run correct_asr_terms.py if ASR-generated, then extract_subtitle_candidates.py with `--source-type public_narrative`.
+
+## 2026-11-22 ebooks + 斯诺一手细节 (v15)
+
+- Downloaded 《红星照耀中国》中文版 PDF (9.3MB/407p, OCR text layer) from a public GitHub Pages source; main long-march chapter (p162-183) exported to `research_private/ebooks/red_star_longmarch_chapter.md`; 400 book candidates extracted.
+- Platform reality: Gutenberg official 503 (maintenance), pglaf mirror works; Internet Archive/Anna's Archive/LibGen/Z-Lib unreachable or copyright-restricted — did NOT bypass paywalls/DRM. Details in `research_private/sourced_research/06`.
+- Research agent distilled 12 unique first-hand details from 斯诺's chapter (石达开之鉴/歃血结盟/泸定桥30勇士/18088里之辨/每天71华里/草地一条人命买头羊...), all marked `certainty=medium` with new source `src_snow_redstar`, notes state "一手见闻·非权威定论". Sensitive/unsourced items (彭德怀徐海东口述、兵力数字与张国焘分歧) deliberately excluded.
+- `09_斯诺细节补录.json` → +12 events. `import_extended_events.py` hardened: all JSON keys optional (selective imports no longer KeyError).
+- Totals: events 440→452, sources 101→102. check passes; browser verified 12 snow events load as medium.
+
+**Value note**: 斯诺 is a 1936 first-hand witness — these add the "detail layer" (numbers, dialogue, scenes) missing from authoritative党史 entries, but are explicitly NOT treated as high-certainty fact.

@@ -814,6 +814,14 @@
       "url": "https://cpc.people.com.cn/GB/67481/68751/68760/4839447.html",
       "note": "陕甘支队改编与彭德怀任命",
       "sourceType": "authoritative"
+    },
+    {
+      "id": "src_snow_redstar",
+      "title": "红星照耀中国·第五篇长征（埃德加·斯诺）",
+      "publisher": "埃德加·斯诺《红星照耀中国》中文版",
+      "url": "https://wintermelonc.github.io/WintermelonC_Docs/file/history_CPC/CPC_doc2.pdf",
+      "note": "斯诺1936年保安亲访毛泽东与红军幸存者的一手见闻；public_narrative层，非权威定论",
+      "sourceType": "authoritative"
     }
   ],
   "subjects": [
@@ -6007,6 +6015,32 @@
       "notes": "low→high：经权威史料核实，游戏文本线索升级；强渡嘉陵江战役中占领阆中，1935年3月底，日期吻合"
     },
     {
+      "id": "ev_snow_193504_ham",
+      "date": "1935-04-01",
+      "displayDate": "1935-04-01",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "火腿史上的新鲜事儿",
+      "description": "斯诺记录毛泽东口述：没收按苏维埃法律有计划进行，无线电上报财政部统一调配。在云南没收成千上万条火腿，农民从几里外赶来免费领取，被称为'火腿史上的新鲜事儿'；在贵州没收养鸭场，部队顿顿吃鸭。",
+      "location": {
+        "name": "云南/贵州",
+        "coordinates": [
+          26.0,
+          104.0
+        ]
+      },
+      "participants": [
+        "毛泽东（口述）"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_snow_redstar"
+      ],
+      "certainty": "medium",
+      "notes": "斯诺一手见闻(p180)；长征沿途筹粮细节"
+    },
+    {
       "id": "steam_r2_19350401_2a5f812d",
       "date": "1935-04-01",
       "displayDate": "1935-04-01",
@@ -6590,6 +6624,33 @@
       "descriptionEn": "On May 5, 1935, the Red Twenty-Fifth Army built or consolidated a revolutionary base connected to the final landing point around Shangluo area in the Hubei-Henan-Shaanxi border region. This entry keeps the chronological route, local context, and visual connection to adjacent events."
     },
     {
+      "id": "ev_snow_19350509_jinsha",
+      "date": "1935-05-09",
+      "displayDate": "1935-05-09",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "巧渡金沙江：一营智取渡船",
+      "description": "斯诺采访所得：红军一营身着缴获的国民党军服，强行军一天一夜约85英里抵达皎平渡；押村长喊话骗来对岸渡船，守军正在打麻将。六条大船昼夜摆渡九天，全军入川无一损失；渡后毁船酣睡，两天后追兵只能绕行200多英里。",
+      "location": {
+        "name": "云南皎平渡",
+        "coordinates": [
+          26.4,
+          101.9
+        ]
+      },
+      "participants": [
+        "毛泽东（讲述）",
+        "红军一营"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_snow_redstar"
+      ],
+      "certainty": "medium",
+      "notes": "斯诺一手见闻·水煮(p173)；非权威定论"
+    },
+    {
       "id": "steam_rf_19350511_05133c0d",
       "date": "1935-05-11",
       "displayDate": "1935-05-11",
@@ -6699,6 +6760,33 @@
       "certainty": "low"
     },
     {
+      "id": "ev_snow_193505_ymeng",
+      "date": "1935-05-22",
+      "displayDate": "1935-05-22",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "彝海结盟：刘伯承歃血为兄弟",
+      "description": "斯诺采访所得：刘伯承会几句彝语，提出'红汉'与'黑彝'同反'白汉'，与彝族总首领饮鸡血歃血结为兄弟，并宣布违约者'像那只鸡一样懦弱'。彝族索要武器红军当即给予，数百彝人加入红军并走到西北。",
+      "location": {
+        "name": "四川彝族区",
+        "coordinates": [
+          28.5,
+          102.5
+        ]
+      },
+      "participants": [
+        "刘伯承",
+        "彝族总首领"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_snow_redstar"
+      ],
+      "certainty": "medium",
+      "notes": "斯诺一手见闻(p175)；与彝海结盟权威条目互为印证"
+    },
+    {
       "id": "rf_19350522_yihai_alliance",
       "date": "1935-05-22",
       "displayDate": "1935-05-22",
@@ -6761,6 +6849,86 @@
         "enemyDefeated": 10000,
         "victory": true
       }
+    },
+    {
+      "id": "ev_snow_19350524_shida kai",
+      "date": "1935-05-24",
+      "displayDate": "1935-05-24",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "石达开之鉴：不重蹈三天误机",
+      "description": "斯诺记录毛泽东所述：石达开率十万太平军困于大渡河峡谷，因生子休息三天被清军包抄全军覆没。红军深知此先例，决心不重蹈'贻误军机'覆辙，从金沙江迅速北移进入四川。",
+      "location": {
+        "name": "四川大渡河",
+        "coordinates": [
+          29.3,
+          102.7
+        ]
+      },
+      "participants": [
+        "毛泽东（讲述）",
+        "石达开"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_snow_redstar"
+      ],
+      "certainty": "medium",
+      "notes": "斯诺一手见闻(p174)；石达开为历史对比人物"
+    },
+    {
+      "id": "ev_snow_19350525_17",
+      "date": "1935-05-25",
+      "displayDate": "1935-05-25",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "十七勇士悬崖上架机枪",
+      "description": "斯诺采访所得：红军五个连各派16名战士自愿抢渡大渡河，南岸机枪压制；渡船需上游启碇两小时，靠岸后攀陡崖架轻机枪、以手榴弹投向碉堡。三船往返三天，约一师人马抵达北岸。",
+      "location": {
+        "name": "四川安顺场大渡河",
+        "coordinates": [
+          29.4,
+          102.3
+        ]
+      },
+      "participants": [
+        "红军先锋部队"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_snow_redstar"
+      ],
+      "certainty": "medium",
+      "notes": "斯诺一手见闻(p175-176)；与权威强渡大渡河条目数量口径略有出入，标注 medium"
+    },
+    {
+      "id": "ev_snow_19350525_anshunchang",
+      "date": "1935-05-25",
+      "displayDate": "1935-05-25",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "安顺场：三艘渡船的奇袭",
+      "description": "斯诺采访所得：林彪先锋师由彝族战士带路穿行森林（南京方面飞行员失去踪迹），奇袭安顺场；三艘渡船竟有一艘系在南岸。守军团长的妻子是本地人、常来南岸，被红军俘获。",
+      "location": {
+        "name": "四川安顺场",
+        "coordinates": [
+          29.4,
+          102.3
+        ]
+      },
+      "participants": [
+        "林彪",
+        "彝族战士"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_snow_redstar"
+      ],
+      "certainty": "medium",
+      "notes": "斯诺一手见闻(p175)"
     },
     {
       "id": "rf_19350525_anshunchang",
@@ -6847,6 +7015,32 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_snow_19350529_luding",
+      "date": "1935-05-29",
+      "displayDate": "1935-05-29",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "泸定桥：是人是疯子还是神",
+      "description": "斯诺采访所得：泸定桥由16条约百码铁索构成、桥板被撬去一半，30名志愿战士背毛瑟枪攀索前进，首批三人中弹坠入急流。川军士兵嘀咕'是人，是疯子，还是神'，有人故意打乱枪暗中祈祷；敌军浇煤油烧桥板仍被压制。南岸高呼'大渡河三十英雄万岁'。",
+      "location": {
+        "name": "四川泸定桥",
+        "coordinates": [
+          29.9,
+          102.2
+        ]
+      },
+      "participants": [
+        "30名红军战士"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_snow_redstar"
+      ],
+      "certainty": "medium",
+      "notes": "斯诺一手见闻(p177-178)；与权威飞夺泸定桥22勇士口径不同，标注 medium"
     },
     {
       "id": "rf_19350529_luding_bridge",
@@ -7065,6 +7259,32 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_snow_19350612_jinshan",
+      "date": "1935-06-12",
+      "displayDate": "1935-06-12",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "夹金山：死掉三分之二驮畜",
+      "description": "斯诺记录毛泽东口述：一万六千英尺的雪山，六月里衣衫单薄的南方战士冻死不少；战士砍长竹在齐胸深的泥淖中铺路。'一个军团死掉了三分之二的驮畜，成百上千的战士倒下去就没有再起来。'",
+      "location": {
+        "name": "四川夹金山",
+        "coordinates": [
+          31.1,
+          102.7
+        ]
+      },
+      "participants": [
+        "毛泽东（口述）"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_snow_redstar"
+      ],
+      "certainty": "medium",
+      "notes": "斯诺一手见闻(p179)"
     },
     {
       "id": "rf_19350612_davi_meeting",
@@ -8531,6 +8751,32 @@
       "certainty": "low"
     },
     {
+      "id": "ev_snow_193508_grassland_trade",
+      "date": "1935-08-21",
+      "displayDate": "1935-08-21",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "草地：一条人命买头羊",
+      "description": "斯诺记录毛泽东口述：藏区坚壁清野几乎无人烟，找羊的战士有去无回，山民从山头推石砸人。红军中流行'一条人命买头羊'的说法；毛泽东幽默地称从藏民那里取得的给养是'唯一的外债'，日后必须偿还。",
+      "location": {
+        "name": "川西北草地",
+        "coordinates": [
+          33.5,
+          102.5
+        ]
+      },
+      "participants": [
+        "毛泽东（口述）"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_snow_redstar"
+      ],
+      "certainty": "medium",
+      "notes": "斯诺一手见闻(p181)；敏感表述已客观处理"
+    },
+    {
       "id": "r25_19350821_wuhuanxian_death",
       "date": "1935-08-21",
       "displayDate": "1935-08-21",
@@ -8586,6 +8832,33 @@
       "certainty": "medium",
       "titleEn": "Central Red Army faces severe terrain at Zoige grasslands, Sichuan",
       "descriptionEn": "On Aug 21, 1935, the Central Red Army faced difficult terrain, supply pressure, and exhaustion around Zoige grasslands, Sichuan. This entry keeps the chronological route, local context, and visual connection to adjacent events."
+    },
+    {
+      "id": "ev_snow_193508_grassland",
+      "date": "1935-08-24",
+      "displayDate": "1935-08-24",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "草地十天：灌木枝下躲雨",
+      "description": "斯诺采访所得：草地连续十天不见人烟，沼泽大雨，只有向导认得迷宫般的足迹；有人失足陷没头顶无从援手。无柴火，只能生吃青稞与野菜，蜷缩在灌木枝下仍挡不住雨。追击的白军因迷路折回，仅少数生还。",
+      "location": {
+        "name": "川西北草地",
+        "coordinates": [
+          33.5,
+          102.5
+        ]
+      },
+      "participants": [
+        "红军战士",
+        "向导"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_snow_redstar"
+      ],
+      "certainty": "medium",
+      "notes": "斯诺一手见闻(p182)"
     },
     {
       "id": "en_19350825_grassland_pressure",
@@ -9794,6 +10067,59 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_snow_1935_18088",
+      "date": "1935-10-19",
+      "displayDate": "1935-10-19",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "18088里之辨：不是二万五千里",
+      "description": "斯诺记录：红军通常称二万五千里，但第一军团的精确旅程表为18088里（约6000英里），这是主力部队的最低行军长度，全程几乎步行。斯诺还记录几十名参加者正在撰写约30万字的集体长征报告，当时尚未完稿。",
+      "location": {
+        "name": "长征全程",
+        "coordinates": [
+          35.0,
+          105.0
+        ]
+      },
+      "participants": [
+        "斯诺",
+        "红军一军团"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_snow_redstar"
+      ],
+      "certainty": "medium",
+      "notes": "斯诺一手记录(p171)；与通行'二万五千里'口径不同，标注 medium"
+    },
+    {
+      "id": "ev_snow_1935_stats",
+      "date": "1935-10-19",
+      "displayDate": "1935-10-19",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "事件",
+      "title": "长征统计：每天71华里",
+      "description": "斯诺统计：全程368天，其中235天白天行军、18天夜行军，约5000英里只休息44天，平均每天71华里（近24英里）。共爬18座山（5条终年积雪）、渡24条河、过12省、占62城、突破10支军阀包围、穿越6个少数民族地区；几乎每天有遭遇战，15个整天为决战。",
+      "location": {
+        "name": "长征全程",
+        "coordinates": [
+          35.0,
+          105.0
+        ]
+      },
+      "participants": [
+        "斯诺（统计）"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_snow_redstar"
+      ],
+      "certainty": "medium",
+      "notes": "斯诺一手统计(p182)；数字口径供参考"
     },
     {
       "id": "rf_19351019_wuqi",

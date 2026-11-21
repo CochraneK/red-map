@@ -27,6 +27,9 @@ def write(name, rows):
 
 def main():
     d = json.loads(DATA.read_text(encoding="utf-8"))
+    # 所有键都可选，缺省为空（如纯事件补录 JSON 没有 persons/links）
+    for k in ("sources", "persons", "events", "links"):
+        d.setdefault(k, [] if k != "links" else {})
 
     rows = read("sources.csv"); have = {r["id"] for r in rows}; n = 0
     for s in d["sources"]:
