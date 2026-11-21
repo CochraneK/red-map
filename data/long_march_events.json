@@ -478,6 +478,22 @@
       "url": "http://www.people.com.cn/n1/2018/0423/c64387-29944029.html",
       "note": "赵一曼被俘与就义",
       "sourceType": "authoritative"
+    },
+    {
+      "id": "src_lin_biao_cpc",
+      "title": "林彪（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html",
+      "note": "林彪任红一军团军团长、长征指挥经历",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_fangzhimin_cpc",
+      "title": "方志敏（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网/人民日报",
+      "url": "https://cpc.people.com.cn/BIG5/n1/2021/0516/c64387-32104494.html",
+      "note": "方志敏红十军团、北上抗日先遣队、被俘与就义",
+      "sourceType": "authoritative"
     }
   ],
   "subjects": [
@@ -2140,6 +2156,34 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_fang_193411",
+      "date": "1934-11-01",
+      "displayDate": "1934-11-01",
+      "sequence": 1,
+      "forceId": "red_7th_advance",
+      "type": "整编",
+      "title": "红十军团组成继续北上",
+      "description": "1934年11月，以红七军团组成的北上抗日先遣队到达闽浙皖赣边区，与红十军会合组成红十军团，方志敏任军政委员会主席，刘畴西任军团长，继续挥师北上抗日。",
+      "location": {
+        "name": "江西赣东北",
+        "coordinates": [
+          28.9,
+          117.6
+        ],
+        "nameEn": "Northeastern Jiangxi"
+      },
+      "participants": [
+        "方志敏",
+        "刘畴西"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_fangzhimin_cpc"
+      ],
+      "certainty": "high",
+      "notes": "延伸叙事：北上抗日先遣队后续"
     },
     {
       "id": "steam_r4_19341101_9eb18f46",
@@ -4027,6 +4071,34 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_fang_19350129",
+      "date": "1935-01-29",
+      "displayDate": "1935-01-29",
+      "sequence": 1,
+      "forceId": "red_7th_advance",
+      "type": "牺牲",
+      "title": "方志敏怀玉山被俘",
+      "description": "1935年1月，方志敏、刘畴西率红十军团在怀玉山区与敌英勇搏斗，终因寡不敌众、弹尽援绝，大部壮烈牺牲，方志敏于1月29日在江西玉山被俘。在狱中写下《可爱的中国》《清贫》等，8月6日在南昌就义，时年36岁。",
+      "location": {
+        "name": "江西玉山怀玉山",
+        "coordinates": [
+          28.7,
+          118.2
+        ],
+        "nameEn": "Huaiyu Mountain, Yushan, Jiangxi"
+      },
+      "participants": [
+        "方志敏",
+        "刘畴西"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_fangzhimin_cpc"
+      ],
+      "certainty": "high",
+      "notes": "延伸叙事：北上抗日先遣队结局"
     },
     {
       "id": "rf_19350129_tucheng_chishui1",
@@ -12502,6 +12574,121 @@
       "sort": 110
     },
     {
+      "id": "bogu",
+      "name": "博古",
+      "nameEn": "Bo Gu",
+      "personType": "人物",
+      "birthDate": "1907",
+      "deathDate": "1946",
+      "hometown": "江苏无锡",
+      "hometownEn": "Wuxi, Jiangsu",
+      "forceId": "red_first",
+      "summary": "秦邦宪，化名博古。中共中央主要负责人之一，长征初期推行错误军事路线；遵义会议后交出最高领导权，后任中央组织部部长等职，1946年因飞机失事遇难。",
+      "summaryEn": "Bo Gu (Qin Bangxian), a principal CCP leader at the start of the Long March; after the Zunyi Meeting he stepped down from top military leadership.",
+      "portrait": "",
+      "themeTags": [
+        "中央领导",
+        "遵义会议"
+      ],
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "high",
+      "sort": 115
+    },
+    {
+      "id": "lide",
+      "name": "李德",
+      "nameEn": "Otto Braun",
+      "personType": "人物",
+      "birthDate": "1900",
+      "deathDate": "1974",
+      "hometown": "德国",
+      "hometownEn": "Germany",
+      "forceId": "red_first",
+      "summary": "德国人，化名李德，共产国际派驻中国的军事顾问。长征初期参与军事指挥，其错误指挥导致湘江战役重大损失，遵义会议后不再拥有军事指挥权。",
+      "summaryEn": "Otto Braun (Li De), a Comintern military adviser in China; his command contributed to heavy losses at the Xiang River; relieved after Zunyi.",
+      "portrait": "",
+      "themeTags": [
+        "军事顾问",
+        "遵义会议"
+      ],
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "certainty": "high",
+      "sort": 116
+    },
+    {
+      "id": "linbiao",
+      "name": "林彪",
+      "nameEn": "Lin Biao",
+      "personType": "人物",
+      "birthDate": "1907",
+      "deathDate": "1971",
+      "hometown": "湖北黄冈",
+      "hometownEn": "Huanggang, Hubei",
+      "forceId": "red_first",
+      "summary": "红一军团军团长。1934年10月率部参加长征，指挥突破国民党军四道封锁线、强渡乌江；遵义会议后指挥四渡赤水、强渡大渡河、夺占泸定桥等作战。",
+      "summaryEn": "Commander of the First Red Army Corps; led the breakout through four blockade lines and major crossings during the Long March.",
+      "portrait": "",
+      "themeTags": [
+        "红一军团",
+        "指挥员"
+      ],
+      "sourceIds": [
+        "src_lin_biao_cpc"
+      ],
+      "certainty": "high",
+      "sort": 117
+    },
+    {
+      "id": "fangzhimin",
+      "name": "方志敏",
+      "nameEn": "Fang Zhimin",
+      "personType": "人物",
+      "birthDate": "1899",
+      "deathDate": "1935-08-06",
+      "hometown": "江西弋阳",
+      "hometownEn": "Yiyang, Jiangxi",
+      "forceId": "red_7th_advance",
+      "summary": "红十军团军政委员会主席，闽浙赣革命根据地创建人。1934年11月率北上抗日先遣队（红十军团）北上，1935年1月在怀玉山被俘，狱中写下《可爱的中国》，8月6日在南昌就义，时年36岁。",
+      "summaryEn": "Chairman of the Red Tenth Army Corps; led the Northern Anti-Japanese Advance Force, captured in January 1935 and executed in Nanchang.",
+      "portrait": "",
+      "themeTags": [
+        "北上抗日先遣队",
+        "英烈"
+      ],
+      "sourceIds": [
+        "src_fangzhimin_cpc"
+      ],
+      "certainty": "high",
+      "sort": 118
+    },
+    {
+      "id": "chengshicai",
+      "name": "程世才",
+      "nameEn": "Cheng Shicai",
+      "personType": "人物",
+      "birthDate": "1912",
+      "deathDate": "1990",
+      "hometown": "湖北大悟",
+      "hometownEn": "Dawu, Hubei",
+      "forceId": "red_west_route",
+      "summary": "红四方面军将领。西路军失败后，与李先念率红30军余部编成左支队，穿越祁连山到达星星峡进入新疆。",
+      "summaryEn": "Red Fourth Front Army commander; co-led the left detachment across the Qilian Mountains to Xingxingxia in 1937.",
+      "portrait": "",
+      "themeTags": [
+        "西路军",
+        "左支队"
+      ],
+      "sourceIds": [
+        "src_wxyj_dswxyjy"
+      ],
+      "certainty": "high",
+      "sort": 119
+    },
+    {
       "id": "he_jiesheng",
       "name": "贺捷生",
       "nameEn": "He Jiesheng",
@@ -14151,6 +14338,46 @@
   ],
   "personEvents": [
     {
+      "personId": "bai_chongxi",
+      "eventId": "en_19341127_xiangjiang_block",
+      "role": "敌军将领",
+      "note": "湘江封锁线国民党军指挥体系（概括叙事层）",
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "bogu",
+      "eventId": "rf_19341010_ruijin",
+      "role": "中央领导",
+      "note": "长征初期主要负责人",
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "bogu",
+      "eventId": "rf_19350115_zunyi_meeting",
+      "role": "被批评方",
+      "note": "遵义会议批评其军事路线，会后交出领导权",
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "bogu",
+      "eventId": "rf_19350820_maoergai",
+      "role": "参与者",
+      "note": "毛儿盖会议前后参与中央决策",
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "sort": 30
+    },
+    {
       "personId": "cai_chang",
       "eventId": "rf_19341010_ruijin",
       "role": "参与者",
@@ -14575,6 +14802,16 @@
       "sort": 9347
     },
     {
+      "personId": "chengshicai",
+      "eventId": "ev_wxyj_19370430",
+      "role": "指挥员",
+      "note": "与李先念率左支队到达星星峡",
+      "sourceIds": [
+        "src_wxyj_dswxyjy"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "dai_jitao",
       "eventId": "steam_r2_19341205_f39cbe8b",
       "role": "Steam文本提及",
@@ -14649,6 +14886,47 @@
       "sort": 30
     },
     {
+      "personId": "dongzhengtang",
+      "eventId": "ev_wxyj_19361024",
+      "role": "参与者",
+      "note": "率红五军西渡黄河",
+      "sourceIds": [
+        "src_wxyj_dswxyjy"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "dongzhengtang",
+      "eventId": "ev_wxyj_19361111",
+      "role": "参与者",
+      "note": "西路军组建，任红五军军长",
+      "sourceIds": [
+        "src_wxyj_dswxyjy"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "dongzhengtang",
+      "eventId": "ev_wxyj_193612",
+      "role": "指挥员",
+      "note": "永昌山丹一带作战",
+      "sourceIds": [
+        "src_wxyj_people_dangshi"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "dongzhengtang",
+      "eventId": "ev_wxyj_19370120",
+      "role": "主祭/牺牲",
+      "note": "高台血战，城破后壮烈牺牲",
+      "sourceIds": [
+        "src_dongzhengtang_cpc",
+        "src_wxyj_81"
+      ],
+      "sort": 40
+    },
+    {
       "personId": "du_heng",
       "eventId": "steam_sg_19321201_8f7ac593",
       "role": "担任军政治委员兼团政治委员",
@@ -14667,6 +14945,66 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9103
+    },
+    {
+      "personId": "fangzhimin",
+      "eventId": "ev_fang_193411",
+      "role": "军政委员会主席",
+      "note": "组成红十军团继续北上",
+      "sourceIds": [
+        "src_fangzhimin_cpc"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "fangzhimin",
+      "eventId": "ev_fang_19350129",
+      "role": "被俘/就义",
+      "note": "怀玉山被俘，南昌就义",
+      "sourceIds": [
+        "src_fangzhimin_cpc"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "fengbaiju",
+      "eventId": "ev_qy_193304",
+      "role": "领导者",
+      "note": "率25人母瑞山突围",
+      "sourceIds": [
+        "src_qiongya_cpc"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "fengbaiju",
+      "eventId": "ev_qy_193605",
+      "role": "领导者",
+      "note": "组建琼崖红军游击队司令部",
+      "sourceIds": [
+        "src_qiongya_cpc"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "fengbaiju",
+      "eventId": "ev_qy_19381205",
+      "role": "队长",
+      "note": "云龙改编任琼崖抗日独立队队长",
+      "sourceIds": [
+        "src_qiongya_yunlong"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "fengbaiju",
+      "eventId": "ev_qy_19390210",
+      "role": "指挥员",
+      "note": "潭口阻击打响海南抗战第一枪",
+      "sourceIds": [
+        "src_qiongya_yunlong"
+      ],
+      "sort": 40
     },
     {
       "personId": "gao_gang",
@@ -15101,6 +15439,16 @@
       "sort": 30
     },
     {
+      "personId": "le_shaohua",
+      "eventId": "steam_r7_19340706_bc42d0bf",
+      "role": "政委",
+      "note": "北上抗日先遣队政委",
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "li_jianzhen",
       "eventId": "rf_19341010_ruijin",
       "role": "参与者",
@@ -15123,6 +15471,26 @@
       "sort": 20
     },
     {
+      "personId": "li_xiannian",
+      "eventId": "ev_wxyj_19370314",
+      "role": "决策者",
+      "note": "石窝会议后率左支队",
+      "sourceIds": [
+        "src_wxyj_dswxyjy"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "li_xiannian",
+      "eventId": "ev_wxyj_19370430",
+      "role": "指挥员",
+      "note": "率左支队抵达星星峡进疆",
+      "sourceIds": [
+        "src_wxyj_dswxyjy"
+      ],
+      "sort": 20
+    },
+    {
       "personId": "liao_huaizhong",
       "eventId": "steam_r2_19341205_f39cbe8b",
       "role": "Steam文本提及",
@@ -15131,6 +15499,46 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9295
+    },
+    {
+      "personId": "lide",
+      "eventId": "rf_19341010_ruijin",
+      "role": "军事顾问",
+      "note": "参与长征初期军事指挥",
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "lide",
+      "eventId": "rf_19350115_zunyi_meeting",
+      "role": "被批评方",
+      "note": "遵义会议批评其错误军事指挥",
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "linbiao",
+      "eventId": "rf_19341010_ruijin",
+      "role": "军团长",
+      "note": "率红一军团开始长征",
+      "sourceIds": [
+        "src_lin_biao_cpc"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "linbiao",
+      "eventId": "rf_19350115_zunyi_meeting",
+      "role": "参与者",
+      "note": "参加遵义会议",
+      "sourceIds": [
+        "src_lin_biao_cpc"
+      ],
+      "sort": 20
     },
     {
       "personId": "liu_bocheng",
@@ -15815,6 +16223,16 @@
       "sort": 9330
     },
     {
+      "personId": "su_yu",
+      "eventId": "steam_r7_19340706_bc42d0bf",
+      "role": "参与者",
+      "note": "先遣队参谋长，后率部坚持",
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "wang_jiaxiang",
       "eventId": "rf_19350115_zunyi_meeting",
       "role": "关键参与者",
@@ -15957,6 +16375,46 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9332
+    },
+    {
+      "personId": "wangwenming",
+      "eventId": "ev_qy_19270923",
+      "role": "参与者",
+      "note": "琼崖特委领导，椰子寨暴动",
+      "sourceIds": [
+        "src_qiongya_hainan"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "wangwenming",
+      "eventId": "ev_qy_192803",
+      "role": "决策者",
+      "note": "率机关和红军转移母瑞山",
+      "sourceIds": [
+        "src_qiongya_wangwenming"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "wangzuoyao",
+      "eventId": "ev_dj_19431202",
+      "role": "副司令员",
+      "note": "任副司令员兼参谋长",
+      "sourceIds": [
+        "src_dongjiang_cpc"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "wangzuoyao",
+      "eventId": "ev_dj_19460630",
+      "role": "率领者",
+      "note": "参与率领北撤",
+      "sourceIds": [
+        "src_dongjiang_beiche"
+      ],
+      "sort": 20
     },
     {
       "personId": "wu_huanxian",
@@ -16688,6 +17146,16 @@
       "sort": 9222
     },
     {
+      "personId": "xun_huaizhou",
+      "eventId": "steam_r7_19340706_bc42d0bf",
+      "role": "军团长",
+      "note": "红七军团团长，率先遣队出发",
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "yang_qi",
       "eventId": "steam_sg_19350101_97c6888f",
       "role": "担任师长",
@@ -16696,6 +17164,86 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9115
+    },
+    {
+      "personId": "yangjingyu",
+      "eventId": "ev_dkb_193609",
+      "role": "总司令",
+      "note": "抗联第一路军总司令兼政委",
+      "sourceIds": [
+        "src_dongbeikanglian_people"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "yangjingyu",
+      "eventId": "ev_dkb_19400223",
+      "role": "牺牲",
+      "note": "三道崴子壮烈殉国",
+      "sourceIds": [
+        "src_yangjingyu_cpc"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "yangkeming",
+      "eventId": "ev_wxyj_19370120",
+      "role": "牺牲",
+      "note": "红五军政治部主任，高台掩护中弹牺牲",
+      "sourceIds": [
+        "src_yangkeming_dangshi"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "yangshanji",
+      "eventId": "ev_qy_19270923",
+      "role": "领导者/牺牲",
+      "note": "琼崖特委书记，领导椰子寨战斗并牺牲",
+      "sourceIds": [
+        "src_qiongya_hainan"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "yinlinping",
+      "eventId": "ev_dj_19431202",
+      "role": "政治委员",
+      "note": "东江纵队成立兼任政委",
+      "sourceIds": [
+        "src_dongjiang_cpc"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "zengsheng",
+      "eventId": "ev_dj_19431202",
+      "role": "司令员",
+      "note": "东江纵队成立任司令员",
+      "sourceIds": [
+        "src_dongjiang_cpc"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "zengsheng",
+      "eventId": "ev_dj_194508",
+      "role": "指挥员",
+      "note": "抗战胜利时纵队规模过万",
+      "sourceIds": [
+        "src_dongjiang_cpc"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "zengsheng",
+      "eventId": "ev_dj_19460630",
+      "role": "率领者",
+      "note": "率2583人北撤烟台",
+      "sourceIds": [
+        "src_dongjiang_beiche"
+      ],
+      "sort": 30
     },
     {
       "personId": "zhang_dazhi",
@@ -17233,6 +17781,56 @@
       "sort": 9328
     },
     {
+      "personId": "zhang_xueliang",
+      "eventId": "en_19350110_zunyi_pressure",
+      "role": "敌军将领",
+      "note": "西北军体系参与围堵（概括叙事层）",
+      "sourceIds": [
+        "src_cpc_century"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "zhang_ziyi",
+      "eventId": "r2_19351119_sangzhi_start",
+      "role": "政治部主任",
+      "note": "红二方面军政治部主任，随军长征",
+      "sourceIds": [
+        "src_red2_start_12371"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "zhangqiqiu",
+      "eventId": "ev_wxyj_19361111",
+      "role": "参与者",
+      "note": "西路军政治部组织部长，妇女团随军西渡",
+      "sourceIds": [
+        "src_women_div_81"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "zhangqiqiu",
+      "eventId": "ev_wxyj_19370314",
+      "role": "被俘",
+      "note": "梨园口战斗后被俘，后经交涉获释回延安",
+      "sourceIds": [
+        "src_women_div_81"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "zhaoyiman",
+      "eventId": "ev_dkb_19360802",
+      "role": "牺牲",
+      "note": "第3军第2团政委，哈尔滨就义",
+      "sourceIds": [
+        "src_zhaoyiman_people"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "zheng_weisan",
       "eventId": "steam_r25_19341111_6bb7d2f0",
       "role": "Steam文本提及",
@@ -17462,6 +18060,26 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9297
+    },
+    {
+      "personId": "zhoubaozhong",
+      "eventId": "ev_dkb_193609",
+      "role": "领导人",
+      "note": "抗联第二路军总指挥",
+      "sourceIds": [
+        "src_dongbeikanglian_xinhua"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "zhoubaozhong",
+      "eventId": "ev_dkb_194208",
+      "role": "旅长",
+      "note": "抗联教导旅旅长",
+      "sourceIds": [
+        "src_dongbeikanglian_xinhua"
+      ],
+      "sort": 20
     },
     {
       "personId": "zhu_de",

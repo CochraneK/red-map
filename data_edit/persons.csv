@@ -66,8 +66,6 @@ TRUE,chen_quzhen,陈渠珍,,相关对手,,,,,enemy_kmt,补充材料中出现于�
 TRUE,liao_huaizhong,廖怀中,,相关对手,,,,,enemy_kmt,补充材料中出现于沅陵防守和红二、红六军团攻势相关叙述。,,,沅陵;湘军;补充线索,src_steam_longmarch_1934_1936,low,830
 TRUE,dai_jitao,戴季韬,,相关对手,,,,,enemy_kmt,补充材料中出现于沅陵周边布防线索，作为红二、红六军团湘西行动的对照人物。,,,沅陵;湘西攻势;补充线索,src_steam_longmarch_1934_1936,low,831
 TRUE,zhou_xieqing,周燮卿,,相关对手,,,,,enemy_kmt,补充材料中出现于沅陵周边布防线索，补充红二、红六军团行动的地方军事背景。,,,沅陵;湘西攻势;补充线索,src_steam_longmarch_1934_1936,low,832
-
-
 TRUE,dongzhengtang,董振堂,Dong Zhentang,人物,1895,1937-01-20,河北新河,,red_west_route,红五军军长。1931年12月与赵博生等领导宁都起义加入红军，1932年入党。1937年1月率部血战高台，城破后壮烈牺牲，是红军牺牲的最高级别将领之一。,,,宁都起义;高台血战;英烈,src_dongzhengtang_cpc;src_wxyj_81,high,601
 TRUE,yangkeming,杨克明,Yang Keming,人物,1905,1937-01-20,四川涪陵,,red_west_route,红五军政治部主任。长征中三过草地，高台血战中掩护董振堂撤离，中弹牺牲，与2000余将士殉难。,,,西路军;高台血战;英烈,src_yangkeming_dangshi,high,602
 TRUE,zhangqiqiu,张琴秋,Zhang Qinqiu,人物,1904,1968,浙江桐乡,,red_fourth,西路军政治部组织部长，曾任妇女独立师师长。被俘后经周恩来交涉获释，1937年10月回延安。,,,妇女红军;西路军,src_women_div_81,high,603
@@ -80,3 +78,8 @@ TRUE,yinlinping,尹林平,Yin Linping,人物,,,广东,,spark_dongjiang,中共广
 TRUE,yangjingyu,杨靖宇,Yang Jingyu,人物,1905,1940-02-23,河南确山,,spark_dongbei,东北抗日联军第一路军总司令兼政委。1940年2月23日在靖宇县三道崴子壮烈牺牲，年仅35岁，胃中尽是草根树皮棉絮。,,,东北抗联;英烈,src_yangjingyu_cpc,high,901
 TRUE,zhaoyiman,赵一曼,Zhao Yiman,人物,1905,1936-08-02,四川宜宾,,spark_dongbei,东北抗联第3军第2团政治委员。1935年11月负重伤被俘，狱中坚贞不屈并写下致儿子遗书，1936年8月2日在哈尔滨就义，年仅31岁。,,,东北抗联;英烈,src_zhaoyiman_people,high,902
 TRUE,zhoubaozhong,周保中,Zhou Baozhong,人物,,,云南大理,,spark_dongbei,东北抗日联军领导人，抗联教导旅旅长，1945年配合苏军解放东北。,,,东北抗联;教导旅,src_dongbeikanglian_xinhua,high,903
+,bogu,博古,Bo Gu,人物,1907,1946,江苏无锡,"Wuxi, Jiangsu",red_first,秦邦宪，化名博古。中共中央主要负责人之一，长征初期推行错误军事路线；遵义会议后交出最高领导权，后任中央组织部部长等职，1946年因飞机失事遇难。,"Bo Gu (Qin Bangxian), a principal CCP leader at the start of the Long March; after the Zunyi Meeting he stepped down from top military leadership.",,中央领导;遵义会议,src_cpc_century,high,115
+,lide,李德,Otto Braun,人物,1900,1974,德国,Germany,red_first,德国人，化名李德，共产国际派驻中国的军事顾问。长征初期参与军事指挥，其错误指挥导致湘江战役重大损失，遵义会议后不再拥有军事指挥权。,"Otto Braun (Li De), a Comintern military adviser in China; his command contributed to heavy losses at the Xiang River; relieved after Zunyi.",,军事顾问;遵义会议,src_cpc_century,high,116
+,linbiao,林彪,Lin Biao,人物,1907,1971,湖北黄冈,"Huanggang, Hubei",red_first,红一军团军团长。1934年10月率部参加长征，指挥突破国民党军四道封锁线、强渡乌江；遵义会议后指挥四渡赤水、强渡大渡河、夺占泸定桥等作战。,Commander of the First Red Army Corps; led the breakout through four blockade lines and major crossings during the Long March.,,红一军团;指挥员,src_lin_biao_cpc,high,117
+,fangzhimin,方志敏,Fang Zhimin,人物,1899,1935-08-06,江西弋阳,"Yiyang, Jiangxi",red_7th_advance,红十军团军政委员会主席，闽浙赣革命根据地创建人。1934年11月率北上抗日先遣队（红十军团）北上，1935年1月在怀玉山被俘，狱中写下《可爱的中国》，8月6日在南昌就义，时年36岁。,"Chairman of the Red Tenth Army Corps; led the Northern Anti-Japanese Advance Force, captured in January 1935 and executed in Nanchang.",,北上抗日先遣队;英烈,src_fangzhimin_cpc,high,118
+,chengshicai,程世才,Cheng Shicai,人物,1912,1990,湖北大悟,"Dawu, Hubei",red_west_route,红四方面军将领。西路军失败后，与李先念率红30军余部编成左支队，穿越祁连山到达星星峡进入新疆。,Red Fourth Front Army commander; co-led the left detachment across the Qilian Mountains to Xingxingxia in 1937.,,西路军;左支队,src_wxyj_dswxyjy,high,119
