@@ -758,6 +758,38 @@
       "url": "https://cpc.people.com.cn/GB/67481/71472/4844494.html",
       "note": "过草地",
       "sourceType": "authoritative"
+    },
+    {
+      "id": "src_jialingjiang_cpc",
+      "title": "强渡嘉陵江（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2025/0322/c443712-40444339.html",
+      "note": "红四方面军占领阆中",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_liulangzhigu_cpc",
+      "title": "红六军团西征（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2023/0808/c443712-32608864.html",
+      "note": "红六军团占领新田、渡过湘江",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_red25_cpc",
+      "title": "红二十五军北上（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2021/0611/c64387-32128318.html",
+      "note": "北上抗日第二先遣队、独树镇战斗",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_shaanbei_cpc",
+      "title": "陕甘根据地（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2021/1021/c441345-32260085.html",
+      "note": "陕甘红军反围剿",
+      "sourceType": "authoritative"
     }
   ],
   "subjects": [
@@ -2243,9 +2275,10 @@
       ],
       "importance": 4,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_liulangzhigu_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；红六军团西征占领新田县城，1934年8月，日期吻合"
     },
     {
       "id": "steam_r7_19340903_da1e617f",
@@ -2293,9 +2326,10 @@
       ],
       "importance": 4,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_liulangzhigu_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；红六军团西征渡过湘江，1934年9月，日期吻合"
     },
     {
       "id": "steam_r2_19340917_4cab873f",
@@ -2966,9 +3000,10 @@
       ],
       "importance": 4,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_red25_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；红二十五军发布北上抗日第二先遣队宣言，1934年11月，日期吻合"
     },
     {
       "id": "steam_r2_19341117_f6e8ba98",
@@ -3246,9 +3281,10 @@
       ],
       "importance": 3,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_red25_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；红二十五军独树镇战斗占领高地，1934年11月27日，日期吻合"
     },
     {
       "id": "steam_r25_19341128_bb9dcee8",
@@ -5204,9 +5240,10 @@
       ],
       "importance": 4,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_shaanbei_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；陕甘红军反围剿，1935年春，属实"
     },
     {
       "id": "steam_rf_19350224_cfc285f2",
@@ -5395,7 +5432,8 @@
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
-      "certainty": "low"
+      "certainty": "low",
+      "notes": "核查保留low：川南游击纵队实为1935年2月成立，游戏文本日期3月1日不准"
     },
     {
       "id": "rf_19350310_gouba",
@@ -5852,9 +5890,10 @@
       ],
       "importance": 4,
       "sourceIds": [
-        "src_steam_longmarch_1934_1936"
+        "src_jialingjiang_cpc"
       ],
-      "certainty": "low"
+      "certainty": "high",
+      "notes": "low→high：经权威史料核实，游戏文本线索升级；强渡嘉陵江战役中占领阆中，1935年3月底，日期吻合"
     },
     {
       "id": "steam_r2_19350401_2a5f812d",
@@ -6212,7 +6251,8 @@
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
-      "certainty": "low"
+      "certainty": "low",
+      "notes": "核查保留low：中央红军巧渡金沙江为5月3-9日，游戏文本4月29日日期错位（已有5月4日权威条目）"
     },
     {
       "id": "r4_19350501_leave_soviet_area",
@@ -8437,64 +8477,6 @@
       "descriptionEn": "On Aug 21, 1935, the Central Red Army faced difficult terrain, supply pressure, and exhaustion around Zoige grasslands, Sichuan. This entry keeps the chronological route, local context, and visual connection to adjacent events."
     },
     {
-      "id": "steam_rf_19350821_508bf292",
-      "date": "1935-08-21",
-      "displayDate": "1935-08-21",
-      "sequence": 9050,
-      "forceId": "red_first",
-      "type": "战斗",
-      "title": "中央红军占领西宁",
-      "description": "1935年8月21日，中央红军在四川松潘毛儿盖一带占领西宁。",
-      "location": {
-        "name": "四川松潘毛儿盖",
-        "coordinates": [
-          32.67,
-          103.6
-        ]
-      },
-      "participants": [
-        "中央红军",
-        "陈昌浩",
-        "张国焘",
-        "徐向前",
-        "朱德"
-      ],
-      "importance": 3,
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "certainty": "low"
-    },
-    {
-      "id": "steam_r4_19350821_dc675bf6",
-      "date": "1935-08-21",
-      "displayDate": "1935-08-21",
-      "sequence": 9084,
-      "forceId": "red_fourth",
-      "type": "战斗",
-      "title": "红四方面军占领西宁",
-      "description": "1935年8月21日，红四方面军在四川松潘毛儿盖一带占领西宁。",
-      "location": {
-        "name": "四川松潘毛儿盖",
-        "coordinates": [
-          32.67,
-          103.6
-        ]
-      },
-      "participants": [
-        "红四方面军",
-        "朱德",
-        "徐向前",
-        "陈昌浩",
-        "张国焘"
-      ],
-      "importance": 3,
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "certainty": "low"
-    },
-    {
       "id": "en_19350825_grassland_pressure",
       "date": "1935-08-25",
       "displayDate": "1935-08-25",
@@ -8735,56 +8717,6 @@
         "红四方面军"
       ],
       "importance": 3,
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "certainty": "low"
-    },
-    {
-      "id": "steam_rf_19350901_445e10ba",
-      "date": "1935-09-01",
-      "displayDate": "1935-09-01",
-      "sequence": 9055,
-      "forceId": "red_first",
-      "type": "决策",
-      "title": "中央红军到达莫斯科",
-      "description": "1935年9月上旬，中央红军在贵州遵义一带到达莫斯科。",
-      "location": {
-        "name": "贵州遵义",
-        "coordinates": [
-          27.73,
-          106.92
-        ]
-      },
-      "participants": [
-        "中央红军"
-      ],
-      "importance": 4,
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "certainty": "low"
-    },
-    {
-      "id": "steam_r4_19350901_629304c0",
-      "date": "1935-09-01",
-      "displayDate": "1935-09-01",
-      "sequence": 9069,
-      "forceId": "red_fourth",
-      "type": "决策",
-      "title": "红四方面军到达莫斯科",
-      "description": "1935年9月上旬，红四方面军在贵州遵义一带到达莫斯科。",
-      "location": {
-        "name": "贵州遵义",
-        "coordinates": [
-          27.73,
-          106.92
-        ]
-      },
-      "participants": [
-        "红四方面军"
-      ],
-      "importance": 4,
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
@@ -10692,7 +10624,8 @@
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
-      "certainty": "low"
+      "certainty": "low",
+      "notes": "核查保留low：红二方面军渡金沙江为1936年4月，游戏文本记3月3日疑日期错位"
     },
     {
       "id": "en_19360310_wumeng_chase",
@@ -10953,7 +10886,8 @@
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
-      "certainty": "low"
+      "certainty": "low",
+      "notes": "核查保留low：张冠李戴：红四方面军1936年4月渡金沙江待核，游戏文本疑与红二方面军混淆"
     },
     {
       "id": "ev_qy_193605",
@@ -12093,7 +12027,8 @@
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
-      "certainty": "low"
+      "certainty": "low",
+      "notes": "核查保留low：会宁会师主力为红四方面军与红一方面军，但10月2日占领会宁县城的具体表述需权威核实"
     },
     {
       "id": "steam_r4_19361003_9a4a7e0c",
@@ -15755,16 +15690,6 @@
     },
     {
       "personId": "chen_changhao",
-      "eventId": "steam_rf_19350821_508bf292",
-      "role": "决策或组织活动",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9177
-    },
-    {
-      "personId": "chen_changhao",
       "eventId": "steam_rf_19350801_4e5f4183",
       "role": "Steam文本提及",
       "note": "",
@@ -15832,16 +15757,6 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9234
-    },
-    {
-      "personId": "chen_changhao",
-      "eventId": "steam_r4_19350821_dc675bf6",
-      "role": "决策或组织活动",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9237
     },
     {
       "personId": "chen_changhao",
@@ -18246,16 +18161,6 @@
     },
     {
       "personId": "xu_xiangqian",
-      "eventId": "steam_rf_19350821_508bf292",
-      "role": "决策或组织活动",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9176
-    },
-    {
-      "personId": "xu_xiangqian",
       "eventId": "steam_rf_19350801_4e5f4183",
       "role": "Steam文本提及",
       "note": "",
@@ -18333,16 +18238,6 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9233
-    },
-    {
-      "personId": "xu_xiangqian",
-      "eventId": "steam_r4_19350821_dc675bf6",
-      "role": "决策或组织活动",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9236
     },
     {
       "personId": "xu_xiangqian",
@@ -18877,16 +18772,6 @@
     },
     {
       "personId": "zhang_guotao",
-      "eventId": "steam_rf_19350821_508bf292",
-      "role": "Steam文本提及",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9178
-    },
-    {
-      "personId": "zhang_guotao",
       "eventId": "steam_rf_19350801_4e5f4183",
       "role": "Steam文本提及",
       "note": "",
@@ -18994,16 +18879,6 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9230
-    },
-    {
-      "personId": "zhang_guotao",
-      "eventId": "steam_r4_19350821_dc675bf6",
-      "role": "Steam文本提及",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9238
     },
     {
       "personId": "zhang_guotao",
@@ -19732,16 +19607,6 @@
     },
     {
       "personId": "zhu_de",
-      "eventId": "steam_rf_19350821_508bf292",
-      "role": "Steam文本提及",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9175
-    },
-    {
-      "personId": "zhu_de",
       "eventId": "steam_r4_19350617_c225f981",
       "role": "Steam文本提及",
       "note": "",
@@ -19779,16 +19644,6 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9217
-    },
-    {
-      "personId": "zhu_de",
-      "eventId": "steam_r4_19350821_dc675bf6",
-      "role": "Steam文本提及",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9235
     },
     {
       "personId": "zhu_de",

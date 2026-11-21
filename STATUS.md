@@ -74,3 +74,14 @@ Addressed the "is the data sufficient?" audit (main route was sufficient; person
 - Browser verified: 444 events, timeline 1927-1950, 12 forces, 3 groups, no runtime errors. check_project.py passes.
 
 **Remaining gap**: low-certainty (game-text) events still 246 — the single biggest credibility debt. Next priority is upgrading high-importance game clues with authoritative sources.
+
+## 2026-11-22 low→high upgrade pass
+
+Method: authoritative-source verification, NOT relabeling. `tools/upgrade_game_clues.py` reads a result JSON, replaces the game source with the authoritative source (so the "non-authoritative cannot be high" gate holds), disables duplicates + cleans their person-event links, and annotates keep-low items. All upgrade sources verified as 中国共产党新闻网 / 人民网.
+
+- **batch1 (红一方面军, 20 checked)**: 10 UPGRADE (道县/四道封锁线/施秉黄平/猴场会议/遵义会议/二渡赤水/四渡赤水/金沙江/大渡河/夹金山), 3 DUP disabled, 4 KEEP_LOW (bad dates/game invention).
+- **batch2 (data-quality errors)**: 4 游戏文本拼接错点 disabled — "到达莫斯科"×2 ("在贵州遵义一带到达莫斯科"), "占领西宁"×2 ("在四川松潘毛儿盖占领西宁"); also cleaned 8 bogus person-event links these errors had polluted.
+- **batch3 (other routes, 12 checked)**: 6 UPGRADE (阆中/红六军团占新田/渡湘江/红25军北上宣言/独树镇/陕甘反围剿), 5 KEEP_LOW (张冠李戴/日期错位: 红四渡金沙江, 会宁占领, 红二渡金沙江, 川南游击纵队, 金沙江日期).
+- **Net**: high 63→79 (+16), game-only low 246→223 (-23: 16 upgraded + 7 disabled). No event carries both game source and high certainty. check_project.py passes; browser verified 437 events render.
+
+**Key finding**: game-text extraction has systematic place/event splicing errors (Moscow/Xining) — these were silently polluting the person timelines. Recommend always cross-checking game-derived location against the event description before import.

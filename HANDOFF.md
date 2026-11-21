@@ -58,6 +58,13 @@ Keep the public museum/map reproducible from structured sources while reducing h
 - **Biggest remaining debt**: 246 `low` (game-text) events. The 58 with importance>=4 are the best upgrade candidates; many duplicate authoritative events already in the data, so dedupe first.
 - Note on tooling pitfall: hardcoding Chinese text with embedded ASCII quotes in Python source caused repeated syntax errors; final pipeline puts all Chinese copy in a JSON data file and keeps the Python script quote-free. Follow this pattern for future imports.
 
+## 2026-11-22 low→high upgrade pass
+
+- `tools/upgrade_game_clues.py` upgrades game-derived events with authoritative sources: reads a result JSON (in `research_private/sourced_research/upgrade_results_batch*.json`), REPLACES game source with authoritative (required — gate forbids game-text source at high certainty), disables duplicates + cleans their links, annotates keep-low. Idempotent.
+- Result: high 63→79, game low 246→223. 16 events upgraded (全部中国共产党新闻网/人民网核实), 7 disabled (3 dup + 4 extraction errors).
+- **Game-text extraction has systematic location splicing errors** (e.g. "在贵州遵义一带到达莫斯科", "在四川松潘毛儿盖占领西宁") — 4 such errors were disabled; they had polluted 8 person-event links. Always cross-check game-derived locationName against description before trusting.
+- Still 223 game-text low events — biggest remaining credibility debt. Prioritize by importance=4, but dedupe against existing authoritative events first (many are alternate phrasings of the same event).
+
 ## Validation
 
 ```bash
