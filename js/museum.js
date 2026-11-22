@@ -291,6 +291,7 @@ function eventCatalogCard(item) {
     <h3>${escapeHTML(item.title)}</h3>
     <p>${escapeHTML(item.body)}</p>
     ${moduleMeta(item.chips.slice(1))}
+    ${evidenceBadge(item.event.certainty)}
     ${moduleTags(item.tags)}
     <a class="module-action" href="map.html#event=${encodeURIComponent(item.id)}">地图查看</a>
   </article>`;
@@ -305,6 +306,23 @@ function forceCatalogCard(item) {
     ${moduleTags(item.tags)}
     <button class="module-action" type="button" data-catalog-force="${escapeAttr(item.id)}">相关事件</button>
   </article>`;
+}
+
+// 证据分层徽章：把英文 certainty 翻译成观众能懂的中文语义。
+// 只做呈现，不改变任何数据或史料优先级判断。
+const EVIDENCE_META = {
+  high:       { label: '权威史实', cls: 'ev-high',       title: '有权威来源支撑的史实' },
+  medium:     { label: '一手见闻', cls: 'ev-medium',     title: '亲历者/一手记述，细节存异' },
+  low:        { label: '线索待证', cls: 'ev-low',        title: '游戏文本等候选线索，尚无独立权威来源' },
+  month:      { label: '仅知月份', cls: 'ev-approx',     title: '日期只能确定到月份' },
+  range:      { label: '时间区间', cls: 'ev-approx',     title: '事件发生在一个时间段内' },
+  approximate:{ label: '约略时间', cls: 'ev-approx',     title: '时间为约略值' },
+  '口径有差异': { label: '口径有差异', cls: 'ev-approx', title: '不同来源记载口径不同' },
+};
+function evidenceBadge(certainty) {
+  const key = String(certainty || '').toLowerCase();
+  const meta = EVIDENCE_META[key] || { label: certainty || '未标注', cls: 'ev-unknown', title: '版权/证据状态未标注' };
+  return `<span class="evidence-badge ${meta.cls}" title="${escapeAttr(meta.title)}">${escapeHTML(meta.label)}</span>`;
 }
 
 function moduleMeta(values) {
@@ -499,6 +517,7 @@ function renderMethod() {
   if (!box) return;
   const steps = [
     ['研究材料', '事件、人物、地点、来源先进入表格，保留口径和可信度。'],
+    ['证据分层', '卡片上的徽章标明依据层级：绿色「权威史实」有权威来源；蓝色「一手见闻」是亲历者记述、细节或有出入；橙色「线索待证」尚无独立权威来源，仅作线索保留。'],
     ['策展文本', '把史实材料改写为展板标题、导言、图注和人物经验层。'],
     ['叙事结构', '分为路线明线、人物透镜、牺牲暗线、地点记忆和资料层。'],
     ['视觉语言', '地图是材料，肖像是证据，铭牌显示资料缺失，不做无依据复原。'],
@@ -523,7 +542,7 @@ function renderMemorial() {
 function eventTile(event) {
   if (!event) return '';
   const visual = getVisual('event', event.id);
-  return `<article class="event-tile">${imageFigure(visual, 'tile-image')}<h3>${escapeHTML(event.title)}</h3><p>${escapeHTML(event.description)}</p><div class="tile-meta"><span>${escapeHTML(event.date)}</span><span>${escapeHTML(event.type)}</span><span>${escapeHTML(getSubject(event.forceId)?.shortName || '')}</span></div></article>`;
+  return `<article class="event-tile">${imageFigure(visual, 'tile-image')}<h3>${escapeHTML(event.title)}</h3><p>${escapeHTML(event.description)}</p><div class="tile-meta"><span>${escapeHTML(event.date)}</span><span>${escapeHTML(event.type)}</span><span>${escapeHTML(getSubject(event.forceId)?.shortName || '')}</span>${evidenceBadge(event.certainty)}</div></article>`;
 }
 
 function placeTile(event, place) {
