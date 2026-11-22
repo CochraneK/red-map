@@ -75,6 +75,7 @@ class Book:
     year: Optional[int] = None
     language: str = ""
     isbn: str = ""
+    doi: str = ""                   # 学术来源用
     rights_status: str = Rights.UNKNOWN
     rights_basis: str = ""          # 版权依据（必须写清）
     source_url: str = ""            # 书页/原始来源
@@ -173,7 +174,7 @@ class BookIndex:
         self.conn.executescript("""
         CREATE TABLE IF NOT EXISTS books (
             key TEXT PRIMARY KEY,
-            title TEXT, author TEXT, year INTEGER, language TEXT, isbn TEXT,
+            title TEXT, author TEXT, year INTEGER, language TEXT, isbn TEXT, doi TEXT,
             rights_status TEXT, rights_basis TEXT,
             source TEXT, source_id TEXT, source_url TEXT,
             download_url TEXT, online_read_url TEXT,
@@ -188,6 +189,10 @@ class BookIndex:
             ts TEXT, action TEXT, detail TEXT
         );
         """)
+        # 轻量迁移：旧库补 doi 列
+        cols = {r[1] for r in self.conn.execute("PRAGMA table_info(books)")}
+        if "doi" not in cols:
+            self.conn.execute("ALTER TABLE books ADD COLUMN doi TEXT")
         self.conn.commit()
 
     def log(self, action: str, detail: str):
@@ -201,10 +206,10 @@ class BookIndex:
         if exists:
             return False
         self.conn.execute("""INSERT INTO books
-            (key,title,author,year,language,isbn,rights_status,rights_basis,
+            (key,title,author,year,language,isbn,doi,rights_status,rights_basis,
              source,source_id,source_url,download_url,online_read_url,format,note)
-            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
-            (key, b.title, b.author, b.year, b.language, b.isbn,
+            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+            (key, b.title, b.author, b.year, b.language, b.isbn, b.doi,
              b.rights_status, b.rights_basis, b.source, b.source_id,
              b.source_url, b.download_url, b.online_read_url, b.format, b.note))
         self.log("candidate", f"{b.source}:{b.source_id} {b.title[:50]}")
@@ -536,6 +541,66 @@ class InternetArchiveSource(BaseSource):
         return []      # 不自动下载：IA 需逐本判权
 
 
+# ---------------------------------------------------------------- OpenAlex（开放获取学术成果）
+class OpenAlexSource(BaseSource):
+    """OpenAlex：开放学术成果索引，含大量 OA 论文可直接下载 PDF。
+    注意：这里拿到的是**当代学术研究论文**（研究者观点），不是史料。
+    适合补充"研究综述/学术观点层"，不能当史实来源入库。"""
+
+    name = "openalex"
+    label = "OpenAlex"
+    API = "https://api.openalex.org/works"
+
+    def availability(self) -> str:
+        r = fetch_text(self.API + "?search=test&per-page=1", timeout=20)
+        return "可检索+可下载OA论文" if r and "results" in r else "不可达"
+
+    def search(self, query: str, limit: int = 20) -> list[Book]:
+        import urllib.parse as _up
+        url = self.API + "?" + _up.urlencode({
+            "search": query, "filter": "is_oa:true",
+            "per-page": str(min(limit * 2, 50)),
+        })
+        raw = fetch_text(url, timeout=35)
+        if not raw:
+            return []
+        try:
+            data = json.loads(raw)
+        except Exception:
+            return []
+        out = []
+        for w in data.get("results", []):
+            loc = w.get("best_oa_location") or {}
+            pdf = loc.get("pdf_url")
+            title = clean_title(w.get("title") or w.get("display_name") or "")
+            if not title:
+                continue
+            lic = (loc.get("license") or "").lower()
+            # cc-* 明确开放许可；其余（None/other-oa）标不明以免误判
+            rights = Rights.OPEN_LICENSE if lic.startswith("cc") else Rights.UNKNOWN
+            authors = [a.get("author", {}).get("display_name", "")
+                       for a in (w.get("authorships") or [])[:3]]
+            out.append(Book(
+                source=self.name, source_id=(w.get("id") or "").rsplit("/", 1)[-1],
+                title=title, author=", ".join([a for a in authors if a]),
+                year=w.get("publication_year"),
+                language="zh" if re.search(r"[\u4e00-\u9fff]", title) else "en",
+                doi=(w.get("doi") or "").replace("https://doi.org/", ""),
+                rights_status=rights,
+                rights_basis=(f"OpenAlex 标记 is_oa=true，许可 {lic}；"
+                              "内容为当代学术研究论文（研究者观点），非一手史料"),
+                source_url=(w.get("doi") or loc.get("landing_page_url") or ""),
+                download_url=pdf or "",
+                online_read_url=loc.get("landing_page_url") or "",
+                format="pdf", score=1.0,
+                note="学术研究论文：可用于综述/观点层，不可当史实依据",
+            ))
+        return out[:limit]
+
+    def download_links(self, b: Book) -> list[tuple[str, str]]:
+        return [("pdf", b.download_url)] if b.download_url else []
+
+
 # ---------------------------------------------------------------- 工作流编排
 SOURCES = {
     "gutenberg": GutenbergSource,
@@ -544,6 +609,7 @@ SOURCES = {
     "doab": DOABSource,
     "oapen": OAPENSource,
     "archive": InternetArchiveSource,
+    "openalex": OpenAlexSource,
 }
 
 
@@ -560,6 +626,7 @@ def cmd_sources():
         default = {
             "gutenberg": "公有领域", "wikisource": "开放许可", "standardebooks": "公有领域",
             "doab": "开放许可(OA)", "oapen": "开放许可(OA)", "archive": "不明/逐本判权",
+            "openalex": "CC许可OA论文(学术研究)",
         }[name]
         print(f"{name:<16}{av:<32}{default}")
 

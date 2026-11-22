@@ -2707,6 +2707,38 @@
       }
     },
     {
+      "id": "czj_19341021_first_blockade",
+      "date": "1934-10-21",
+      "displayDate": "1934-10-21",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "battle",
+      "title": "突破第一道封锁线（陈济棠防区）",
+      "description": "1934年10月21日夜至22日晨，中央红军主力在赣州以东、沿桃江（信丰河）的粤军防线发起突围。该防线经大埠、王母渡转向东南经韩坊、新田，部署四个师另一个独立旅，是国民党军堵击中央红军的第一道封锁线。中革军委以红1军团在左、红3军团在右，由王母渡、韩坊、金鸡、新田段突破；红9、红8军团分随两翼掩护，军委两纵队居中，红5军团殿后。因陈济棠与红军有借道默契但前沿未及传达，战斗一度激烈：红1师第1团攻占新田、红2师第6团袭占金鸡，红3军团攻占百室、韩坊、固陂。激战一夜后粤军按协议稍加抵抗即全线后撤，红军未作深远追击。",
+      "location": {
+        "name": "江西信丰、安远间（桃江沿线）",
+        "coordinates": [
+          25.39,
+          114.93
+        ],
+        "nameEn": "Xinfeng-An'yuan, Jiangxi"
+      },
+      "participants": [
+        "中央红军",
+        "陈济棠",
+        "红1军团",
+        "红3军团",
+        "洪超"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "此前仅有『突破第一道封锁线』概述条目，本条补入防线走向、部署与逐团动作",
+      "titleEn": "Breaking the First Blockade Line"
+    },
+    {
       "id": "rf_19341021_first_blockade",
       "date": "1934-10-21",
       "displayDate": "1934-10-21",
@@ -2765,6 +2797,36 @@
       "titleEn": "Hong Chao dies at Baishi",
       "descriptionEn": "Hong Chao, commander of the Red Fourth Division of the Third Corps, was killed in the fighting around Baishi during the early breakout.",
       "casualties": "洪超牺牲，时任红三军团红四师师长。"
+    },
+    {
+      "id": "czj_19341022_hongchao",
+      "date": "1934-10-22",
+      "displayDate": "1934-10-22",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "battle",
+      "title": "红4师师长洪超在百石战斗中牺牲",
+      "description": "1934年10月22日，右路红3军团向白石圩前进时，前卫红4师第11团突遭粤军截击。师长洪超指挥红11团奋力反击，很快将粤军击退，但洪超在战斗中不幸牺牲。同日左路红1军团在安西方向追击粤军第1师两个团，共歼灭其约一个团；红8军团由王母渡渡过桃江向坳口、大垅前进。",
+      "location": {
+        "name": "江西安远、信丰间百石",
+        "coordinates": [
+          25.3,
+          114.9
+        ],
+        "nameEn": "Baishi, Jiangxi"
+      },
+      "participants": [
+        "洪超",
+        "红4师",
+        "红3军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "原库仅有『洪超在百石战斗中牺牲』一句话，本条补入具体经过与当日战场态势",
+      "titleEn": "Divisional Commander Hong Chao Killed"
     },
     {
       "id": "steam_rf_19341025_2e33bd01",
@@ -3094,6 +3156,39 @@
       "certainty": "medium",
       "titleEn": "Central Red Army breaks through blockade lines at Yizhang and Linwu area, southern Hunan",
       "descriptionEn": "On Nov 15, 1934, the Central Red Army broke through blockade pressure and kept moving around Yizhang and Linwu area, southern Hunan. This entry keeps the chronological route, local context, and visual connection to adjacent events."
+    },
+    {
+      "id": "czj_19341116_shiwangping",
+      "date": "1934-11-16",
+      "displayDate": "1934-11-16",
+      "sequence": 1,
+      "forceId": "red_second",
+      "type": "battle",
+      "title": "十万坪（龙家寨）大捷：红2、红6军团首战湘西",
+      "description": "1934年11月，红2、红6军团弃永顺城诱敌深入，贺龙先后勘察钓矶岩、吊井岩等四处伏击点均放弃，最终选定永顺以北九十里、以龙家寨为中心的十万坪谷地（南北长十五里、东西最宽四里）。16日下午4时许，陈渠珍部龚仁杰、周燮卿两个旅进入谷地号房埋灶，红6军团自东侧山林居高临下猛攻周燮卿旅，红2军团扎紧谷口正面猛攻龚仁杰旅，两个多小时将其大部歼灭；追击中又在总河抓住断后的杨其昌旅，由萧克统一指挥红6军团第51团与红2军团第18团并肩突击，不到两小时再歼其大部。18日红军重占永顺。此役共歼陈渠珍部三个旅大部，毙敌一千余人、俘敌两千余人、缴枪两千余支。",
+      "location": {
+        "name": "湖南永顺龙家寨十万坪",
+        "coordinates": [
+          29.13,
+          109.85
+        ],
+        "nameEn": "Longjiazhai, Yongshun, Hunan"
+      },
+      "participants": [
+        "贺龙",
+        "任弼时",
+        "萧克",
+        "陈渠珍",
+        "龚仁杰",
+        "周燮卿"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "项目无此战役记录；萧克后以『万坪大捷奠大业』概括其意义",
+      "titleEn": "Victory at Shiwangping (Longjiazhai)"
     },
     {
       "id": "r25_19341116_hejiachong",
@@ -4326,6 +4421,71 @@
       "certainty": "low"
     },
     {
+      "id": "czj_19350102_wujiang_huilongchang",
+      "date": "1935-01-02",
+      "displayDate": "1935-01-02",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "battle",
+      "title": "强渡乌江回龙场渡口（红1团扎竹筏夜渡）",
+      "description": "1935年1月2日上午，红1军团第1师第1团团长团长杨得志、政治委员黎林、政治委员黎林率全团由余庆出发，顶着雨夹雪抵达回龙场渡口。此处江面不算太宽但江水湍急，两岸峭壁如削。黔军黔军易少荃旅在此布防旅在此布防，第8团守护渡口。红1团前卫营刚到江边即遭对岸射击，团长杨得志、政治委员黎林令配属炮兵以迫击炮向对岸制高点射击实施火力侦察，黔军遭炮击掉头躲入山后。红军在附近村庄找船，发现敌军撤往对岸前已洗劫村庄，连一支桨、一块像样的木板都未留下。当日下午，团长杨得志、政治委员黎林在江边发现江中漂浮的一根竹竿，灵机一动，与黎林商量后决定扎竹筏渡江，部队就地取材，用草绳、竹皮和绑腿带扎成一只一丈多宽、两丈多长的竹筏，挑选八名熟悉水性的战士当晚试渡。",
+      "location": {
+        "name": "贵州余庆回龙场渡口",
+        "coordinates": [
+          27.42,
+          107.62
+        ],
+        "nameEn": "Huilongchang, Yuqing, Guizhou"
+      },
+      "participants": [
+        "杨得志",
+        "黎林",
+        "易少荃"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "原库『回龙场』条目为土城东南回龙场，与乌江回龙场渡口是两处不同地点，本条目为后者",
+      "titleEn": "Forcing the Wu River at Huilongchang"
+    },
+    {
+      "id": "czj_19350102_wujiang_jiangjiehe",
+      "date": "1935-01-02",
+      "displayDate": "1935-01-02",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "battle",
+      "title": "强渡乌江江界河渡口（红4团佯攻老渡口、主攻新渡口）",
+      "description": "1935年1月1日红军三箭齐发直趋乌江各渡口。红1军团第2师进至江界河渡口强渡并架浮桥，红1军团第1师进至回龙场渡口，红3军团第4师进至茶山关渡口。江界河方向由红2师师长陈光亲率红4团，团长红4团团长耿飙、政治委员、政治委员红4团团长耿飙、政治委员杨成武组经火力侦察发现：对岸老渡口兵力火力严密、背后火金山有强大预备队，而渡口上游三公里处老虎洞脚另有新渡口，只有一条傍山小道相通，守敌仅一个排。遂定佯攻老渡口、主攻新渡口。1连长1连长毛振发等八人首次凫水过江被击退；当晚十八人乘竹筏偷渡再败，仅1连长毛振发率五名战士偷渡成功，隐蔽于对岸石崖下。1月2日拂晓军委副总参谋长军委副总参谋长张云逸赶赶到红4团传达命令：不能迅速渡江即有背水作战危险。3日上午9时许大规模强渡，潜伏的1连长毛振发等人突然杀出，夺取渡口阵地；黔军预备队反扑时，配属红4团的军团炮兵连连长炮兵连连长赵章成准三发炮弹全部落入敌群，压制反扑。红军夺回并巩固新渡口、攻占老渡口，工兵随即架起浮桥，红2师主力过江。1月3日攻占黔军江防前敌指挥部所在地猪场，军委纵队和红5军团相继从江界河过江。对岸守军为黔军教导师第3旅，教导师第3旅旅长林秀生率部率部扼守。",
+      "location": {
+        "name": "贵州瓮安江界河渡口",
+        "coordinates": [
+          27.19,
+          107.35
+        ],
+        "nameEn": "Jiangjiehe, Weng'an, Guizhou"
+      },
+      "participants": [
+        "陈光",
+        "耿飚",
+        "杨成武",
+        "毛振发",
+        "赵章成",
+        "张云逸",
+        "林秀生",
+        "侯之担"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "原库仅有『中央红军抢渡乌江、向黔北进发』概述，本条补入三个渡口分工与江界河战斗全过程",
+      "titleEn": "Forcing the Wu River at Jiangjiehe"
+    },
+    {
       "id": "steam_rf_19350102_2c6c33dd",
       "date": "1935-01-02",
       "displayDate": "1935-01-02",
@@ -4596,6 +4756,39 @@
       ],
       "certainty": "low",
       "notes": "核查保留low：无权威记载1月12日成立大会，红一方面军1930年已组建，与史实不符"
+    },
+    {
+      "id": "czj_19350115_zunyi_session",
+      "date": "1935-01-15",
+      "displayDate": "1935-01-15",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "battle",
+      "title": "遵义会议：扩大会议上的报告与发言次序",
+      "description": "1935年1月15日至17日，中共中央政治局扩大会议在遵义老城红军总司令部驻地举行。会议首先由博古作关于第五次反『围剿』的总结报告，把失败归因于敌强我弱等客观原因；周恩来作副报告，指出失败的主要原因是军事指挥上的错误并作自我批评；张闻天作反报告，系统批评博古、李德的军事指挥错误；毛泽东作长篇发言，就军事路线展开批判。会议增选毛泽东为政治局常委，取消长征前设立的三人团，仍由中革军委主要负责人朱德、周恩来指挥军事，周恩来为党内委托的对于指挥军事上下最后决心的负责者。",
+      "location": {
+        "name": "贵州遵义老城",
+        "coordinates": [
+          27.69,
+          106.92
+        ],
+        "nameEn": "Zunyi, Guizhou"
+      },
+      "participants": [
+        "博古",
+        "周恩来",
+        "张闻天",
+        "毛泽东",
+        "朱德",
+        "李德"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "原库有『遵义会议』条目但未记报告与发言的具体次序，本条补会议程序层细节",
+      "titleEn": "The Zunyi Conference Sessions"
     },
     {
       "id": "rf_19350115_zunyi_meeting",
@@ -6810,6 +7003,38 @@
       "notes": "核查保留low：中央红军巧渡金沙江为5月3-9日，游戏文本4月29日日期错位（已有5月4日权威条目）"
     },
     {
+      "id": "czj_19350430_jiaopingdu",
+      "date": "1935-04-30",
+      "displayDate": "1935-04-30",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "battle",
+      "title": "巧渡金沙江：三路分进与皎平渡抢占",
+      "description": "1935年4月29日中革军委发出《关于我军速渡金沙江在川西建立苏区的指示》。4月30日，军委纵队到达云南寻甸县柯渡的丹桂村，中革军委在此开会部署：红1军团为左翼经禄劝、武定、元谋直取龙街渡；红3军团为右翼经思力坝、马鹿塘夺占洪门渡；军委纵队和红5军团为中路经山仓街、海龙塘、石板河抢占龙街渡与洪门渡之间的皎平渡，红5军团并执行殿后掩护。要求各部务于5月3日以前抢占各渡口。红1军团先头红2师第4团利用二取遵义时缴获的国民党军服和配套武器，以三个连化装成国民党『中央军』，一日之内智取禄劝、武定、元谋三城。红1军团在龙街渡找船未果、架桥被冲垮；红3军团在洪门渡架桥亦被冲垮，只渡过一个团即被迫停止续渡。",
+      "location": {
+        "name": "云南寻甸柯渡、禄劝皎平渡",
+        "coordinates": [
+          26.05,
+          102.42
+        ],
+        "nameEn": "Jiaopingdu, Luquan, Yunnan"
+      },
+      "participants": [
+        "中央红军",
+        "红1军团",
+        "红3军团",
+        "红5军团",
+        "红2师第4团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "原库仅有『巧渡金沙江』概述，本条补入三路分工、柯渡会议部署与龙街/洪门渡架桥失败经过",
+      "titleEn": "Crossing the Jinsha River at Jiaopingdu"
+    },
+    {
       "id": "r4_19350501_leave_soviet_area",
       "date": "1935-05-01",
       "displayDate": "1935-05-01",
@@ -7732,6 +7957,64 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "czj_19350612_dawei_join",
+      "date": "1935-06-12",
+      "displayDate": "1935-06-12",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "battle",
+      "title": "达维会师：红一、红四方面军前锋首次会合",
+      "description": "1935年6月12日，中央红军先头部队翻越夹金山后，在四川懋功（今小金）东南的达维镇与红四方面军第30军第88师部队会合，两支主力前锋首次直接接触。会师后双方在达维举行会师大会，随后中央红军主力进入懋功地区，与红四方面军主力会师。",
+      "location": {
+        "name": "四川小金达维镇",
+        "coordinates": [
+          30.88,
+          102.68
+        ],
+        "nameEn": "Dawei, Xiaojin, Sichuan"
+      },
+      "participants": [
+        "中央红军",
+        "红四方面军",
+        "红30军第88师"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "原库有多条达维/懋功会师记录，本条仅补入具体会合部队番号",
+      "titleEn": "Meeting at Dawei"
+    },
+    {
+      "id": "czj_193506_jiajinshan_cross",
+      "date": "1935-06-12",
+      "displayDate": "1935-06-12",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "battle",
+      "title": "翻越夹金山：雪山行军的组织措施",
+      "description": "1935年6月，中央红军抵达宝兴，面临海拔四千多米的夹金山。为翻越雪山，部队要求每人准备一根木棍、喝辣椒水御寒，行军时不许停下、不许坐下休息，以防冻僵；队伍采取前后拉手、互相搀扶的方式结队前行。山上空气稀薄、气候骤变，不少战士在途中倒下。红军以极大代价翻越夹金山，随后向懋功方向前进，与红四方面军部队会合。",
+      "location": {
+        "name": "四川宝兴夹金山",
+        "coordinates": [
+          30.85,
+          102.75
+        ],
+        "nameEn": "Jiajin Mountains, Baoxing, Sichuan"
+      },
+      "participants": [
+        "中央红军"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "原库有『中央红军翻越夹金山』条目，本条补入具体防寒与行军组织措施",
+      "titleEn": "Crossing the Jiajin Mountains"
     },
     {
       "id": "ev_snow_19350612_jinshan",
@@ -10521,6 +10804,35 @@
       "descriptionEn": "On Oct 5, 1935, the Red Fourth Front Army entered a dispute over strategic direction around Zhuomudiao, Barkam, Sichuan. This entry keeps the chronological route, local context, and visual connection to adjacent events."
     },
     {
+      "id": "czj_19351007_qingshizui",
+      "date": "1935-10-07",
+      "displayDate": "1935-10-07",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "battle",
+      "title": "青石嘴战斗：缴获国民党军骑兵战马",
+      "description": "1935年10月7日，中央红军翻越六盘山后在甘肃固原青石嘴（今属宁夏）发现国民党军骑兵第七师一部正在休息，红1军团第4大队（原红4团）等部迅速发起突袭，歼灭该部两个连，缴获战马一百余匹及一批装备。红军以此组建了侦察骑兵，改善了通信与侦察条件。毛泽东为此写下《清平乐·六盘山》。",
+      "location": {
+        "name": "宁夏固原青石嘴",
+        "coordinates": [
+          35.68,
+          106.2
+        ],
+        "nameEn": "Qingshizui, Guyuan, Ningxia"
+      },
+      "participants": [
+        "红1军团",
+        "毛泽东"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "项目无此战斗条目；缴马与骑兵组建是长征末段的重要细节",
+      "titleEn": "Capturing Cavalry Horses at Qingshizui"
+    },
+    {
       "id": "rf_19351007_liupanshan",
       "date": "1935-10-07",
       "displayDate": "1935-10-07",
@@ -10827,6 +11139,36 @@
       "certainty": "low"
     },
     {
+      "id": "czj_19351021_zuihou",
+      "date": "1935-10-21",
+      "displayDate": "1935-10-21",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "battle",
+      "title": "吴起镇『切尾巴』战斗的组织与结果",
+      "description": "1935年10月19日中央红军到达陕北吴起镇。国民党军骑兵四个团尾追而至。毛泽东决定『打个尾巴』，以红1军团、红3军团主力在吴起镇西北的头道川、二道川设伏。10月21日晨战斗打响，红军一举击溃追敌骑兵，毙伤俘敌约七百人，缴获战马一批，从此摆脱了长征以来的追兵，中央红军胜利结束长征。",
+      "location": {
+        "name": "陕西吴起镇",
+        "coordinates": [
+          36.93,
+          108.18
+        ],
+        "nameEn": "Wuqi, Shaanxi"
+      },
+      "participants": [
+        "毛泽东",
+        "红1军团",
+        "红3军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "原库有『吴起镇切尾巴战斗击退追敌』，本条补入伏击地点、战果与战略意义",
+      "titleEn": "The 'Cut the Tail' Battle at Wuqi"
+    },
+    {
       "id": "rf_19351021_wuqi_tail",
       "date": "1935-10-21",
       "displayDate": "1935-10-21",
@@ -10994,6 +11336,69 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "czj_193511_baizhangguan",
+      "date": "1935-11-06",
+      "displayDate": "1935-11-06",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "battle",
+      "title": "百丈关战役：南下受挫的关键一仗",
+      "description": "1935年11月，红四方面军南下部队在四川名山百丈关一带与国民党军展开决战。红军以红4军、红30军、红31军等部向百丈关地区进攻，国民党军调集十几个旅的兵力并出动飞机助战，双方激战七昼夜。红军虽毙伤敌一万五千余人，但自身伤亡近万人，被迫撤出战斗，南下方针至此受挫，部队转入川康边。",
+      "location": {
+        "name": "四川名山百丈关",
+        "coordinates": [
+          30.18,
+          103.1
+        ],
+        "nameEn": "Baizhangguan, Mingshan, Sichuan"
+      },
+      "participants": [
+        "红四方面军",
+        "红4军",
+        "红30军",
+        "红31军",
+        "张国焘"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "原库有『红四方面军南下受挫，百丈关战役前后损失严重』，本条补入参战部队与双方伤亡规模",
+      "titleEn": "The Battle of Baizhangguan"
+    },
+    {
+      "id": "czj_193511_red15_join",
+      "date": "1935-11-06",
+      "displayDate": "1935-11-06",
+      "sequence": 1,
+      "forceId": "shaanbei_red",
+      "type": "battle",
+      "title": "红一方面军与红15军团会师（甘泉象鼻子湾）",
+      "description": "1935年11月初，红一方面军主力在陕西甘泉象鼻子湾与红15军团会师。会师后恢复红一方面军番号，彭德怀任司令员、毛泽东任政治委员，下辖红1军团和红15军团，全军约一万一千余人。随后发起直罗镇战役，为中共中央把全国革命大本营放在西北举行了奠基礼。",
+      "location": {
+        "name": "陕西甘泉象鼻子湾",
+        "coordinates": [
+          36.28,
+          109.35
+        ],
+        "nameEn": "Xiangbiziwang, Ganquan, Shaanxi"
+      },
+      "participants": [
+        "彭德怀",
+        "毛泽东",
+        "红15军团",
+        "红1军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "原库有红15军团成立与永坪会师，本条补入与红一方面军会师的地点与番号恢复",
+      "titleEn": "Red First Front Army Meets the 15th Corps"
     },
     {
       "id": "steam_r4_19351112_3e860ed8",
@@ -11173,6 +11578,36 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "czj_19351121_zhiluozhen",
+      "date": "1935-11-21",
+      "displayDate": "1935-11-21",
+      "sequence": 1,
+      "forceId": "shaanbei_red",
+      "type": "battle",
+      "title": "直罗镇战役：诱敌深入与战果",
+      "description": "1935年11月，国民党军以五个师兵力对陕甘苏区发动进攻。红一方面军决定诱敌深入，以少数兵力将敌第109师诱入直罗镇。11月21日至24日，红军主力突然发起攻击，全歼第109师并击毙师长牛元峰，同时在阻击援敌中歼其一个团。此役共歼敌一个师又一个团，俘敌五千余人，缴枪三千五百余支。毛泽东评价此役『给党中央把全国革命大本营放在西北的任务，举行了一个奠基礼』。",
+      "location": {
+        "name": "陕西富县直罗镇",
+        "coordinates": [
+          36.02,
+          109.1
+        ],
+        "nameEn": "Zhiluozhen, Fu County, Shaanxi"
+      },
+      "participants": [
+        "红一方面军",
+        "彭德怀",
+        "牛元峰"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "原库有『直罗镇战役』条目，本条补入歼敌番号、师长姓名与具体战果",
+      "titleEn": "The Battle of Zhiluozhen"
     },
     {
       "id": "rf_19351121_zhiluozhen",
@@ -13025,6 +13460,38 @@
       "certainty": "range",
       "titleEn": "Red Fourth Front Army reaches a key point at Tongwei, Weiyuan, and Zhangxian area, Gansu",
       "descriptionEn": "On Sep 10, 1936, the Red Fourth Front Army reached an important destination in the route sequence around Tongwei, Weiyuan, and Zhangxian area, Gansu. This entry keeps the chronological route, local context, and visual connection to adjacent events."
+    },
+    {
+      "id": "czj_193609_gannan",
+      "date": "1936-09-11",
+      "displayDate": "1936-09-11",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "battle",
+      "title": "红二、红四方面军北上甘南：岷州、漳县、渭源、通渭",
+      "description": "1936年8月至9月，红二、红四方面军走出草地后进入甘南，先后攻占漳县、渭源、通渭、岷州等地，开辟了临时根据地。此间中共中央多次电示，要求两个方面军迅速北上与红一方面军会合，共同执行静宁、会宁战役计划。9月底，两个方面军分路北上，向会宁、静宁地区前进。",
+      "location": {
+        "name": "甘肃岷州、漳县、渭源、通渭",
+        "coordinates": [
+          35.0,
+          104.3
+        ],
+        "nameEn": "Minxian, Zhangxian, Weiyuan, Tongwei, Gansu"
+      },
+      "participants": [
+        "红二方面军",
+        "红四方面军",
+        "朱德",
+        "张国焘",
+        "任弼时"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "原库有『红四方面军进入甘南并控制漳县、渭源、通渭等地』，本条补入红二方面军同期行动与会合部署",
+      "titleEn": "Moving North to Southern Gansu"
     },
     {
       "id": "steam_r2_19360911_698af2f2",
