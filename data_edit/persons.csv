@@ -96,3 +96,7 @@ TRUE,leijingtian,雷经天,Lei Jingtian,人物,1904,1959,广西南宁,,spark_don
 TRUE,xiangying,项英,Xiang Ying,人物,1898,1941,湖北武昌,,shaanbei_red,中共中央分局书记、中央军区司令员。中央红军主力长征后留在南方领导三年游击战争，皖南事变中牺牲。,,,南方游击战争;英烈,src_100years_cpc,high,110
 TRUE,chenyi,陈毅,Chen Yi,人物,1901,1972,四川乐至,,shaanbei_red,中华苏维埃共和国中央政府办事处主任。中央红军主力长征后留在南方领导三年游击战争，1937年改编新四军。,,,南方游击战争;新四军,src_100years_cpc,high,111
 TRUE,quqiubai,瞿秋白,Qu Qiubai,人物,1899,1935-06-18,江苏常州,,shaanbei_red,中国共产党早期主要领导人之一。中央红军长征后留在南方坚持斗争，1935年2月在福建长汀被俘，6月就义。,,,南方游击战争;英烈,src_100years_cpc,high,112
+TRUE,chenyun,陈云,Chen Yun,人物,1905,1995,江苏青浦,,red_first,中共高级领导人，长征中任中央驻共产国际代表团成员。1935年10月向共产国际报告长征；化名廉臣，1936年在《全民月刊》连载《随军西行见闻录》，是世界首部描写长征的著作。,,,传播史;共产国际,src_prop_dswy,high,120
+TRUE,yangshangkun,杨尚昆,Yang Shangkun,人物,1907,1998,四川潼南,,red_first,1936年任红军军委总政治部主任，与毛泽东联署发出《长征记》征稿通知，推动长征亲历叙事的系统整理与对外传播。,,,传播史;征稿,src_prop_cpc_chuanbo,high,122
+TRUE,fanchangjiang,范长江,Fan Changjiang,人物,1909,1970,四川内江,,red_first,中国著名记者，大公报特约通讯员。1935年7月起深入西北采访，报道红军长征，1936年8月《中国的西北角》结集出版，是国统区公众了解红军的重要新闻出版物。,,,传播史;记者,src_prop_xinhua,high,121
+TRUE,bofuli,薄复礼,Rudolf Alfred Bosshardt,人物,1897,1993,英国,,red_first,英国籍瑞士传教士，中文名勃沙特。被红六军团扣留并随军长征约16个月，1936年将亲历整理为《神灵之手》在伦敦出版，是西方最早系统介绍红军长征的专著之一。,,,传播史;传教士,src_prop_yunnan,high,123

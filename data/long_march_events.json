@@ -830,6 +830,62 @@
       "url": "https://dangshi.people.com.cn/GB/146570/406330/index.html",
       "note": "军事科学院专家著，权威史著事实层。页面请勿转载，仅提取事实要素注明出处",
       "sourceType": "authoritative"
+    },
+    {
+      "id": "src_prop_cpc_chuanbo",
+      "title": "长征的传播与影响（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/n1/2016/1101/c369835-28825929.html",
+      "note": "长征对外传播史权威综述",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_prop_dswy",
+      "title": "世界，是这样知道长征的（中共中央党史和文献研究院）",
+      "publisher": "中共中央党史和文献研究院",
+      "url": "https://www.dswxyjy.org.cn/n1/2017/0401/c244523-29185315.html",
+      "note": "丁晓平撰写，长征传播史",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_prop_qunmin",
+      "title": "长征亲历者的纪实之作（中国共产党新闻网）",
+      "publisher": "中国共产党新闻网",
+      "url": "https://cpc.people.com.cn/BIG5/n1/2026/1017/c64387-40816480.html",
+      "note": "随军西行见闻录等传播",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_prop_people_juzheng",
+      "title": "红军长征记相关报道（人民网）",
+      "publisher": "人民网",
+      "url": "http://media.people.com.cn/BIG5/n1/2016/1021/c40606-28795430.html",
+      "note": "长征记征稿",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_prop_people_hongxing",
+      "title": "红星照耀中国相关报道（人民网）",
+      "publisher": "人民网",
+      "url": "http://media.people.com.cn/BIG5/n1/2016/0705/c40606-28523748.html",
+      "note": "斯诺报道",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_prop_yunnan",
+      "title": "薄复礼相关报道（云南网）",
+      "publisher": "云南网",
+      "url": "https://llw.yunnan.cn/html/2018-11/02/content_5301316.htm",
+      "note": "神灵之手出版",
+      "sourceType": "authoritative"
+    },
+    {
+      "id": "src_prop_xinhua",
+      "title": "范长江与中国的西北角（新华网）",
+      "publisher": "新华网",
+      "url": "https://www.xinhuanet.com/politics/2021-09/13/c_1211367910.htm",
+      "note": "范长江报道",
+      "sourceType": "authoritative"
     }
   ],
   "subjects": [
@@ -10549,6 +10605,33 @@
       "certainty": "low"
     },
     {
+      "id": "ev_prop_19351015_chenyun",
+      "date": "1935-10-15",
+      "displayDate": "1935-10-15",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "传播",
+      "title": "陈云向共产国际报告长征",
+      "description": "1935年10月15日，共产国际执行委员会书记处会议听取中共驻共产国际代表团成员陈云所作关于中央红军长征和遵义会议的报告。俄文记录稿题为《共产国际执行委员会书记处会议（1935年10月15日）史平同志的报告》，“史平”为陈云化名，报告中将长征称为“西征”。这是目前可查的有关长征的第一份正式对外报告。",
+      "location": {
+        "name": "莫斯科",
+        "coordinates": [
+          55.75,
+          37.62
+        ]
+      },
+      "participants": [
+        "陈云"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_prop_dswy",
+        "src_prop_cpc_chuanbo"
+      ],
+      "certainty": "high",
+      "notes": "长征对外传播第一份正式报告"
+    },
+    {
       "id": "steam_r4_19351015_c52687db",
       "date": "1935-10-15",
       "displayDate": "1935-10-15",
@@ -11446,6 +11529,33 @@
       }
     },
     {
+      "id": "ev_prop_193603_chenyun",
+      "date": "1936-03-01",
+      "displayDate": "1936-03-01",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "传播",
+      "title": "随军西行见闻录巴黎连载",
+      "description": "1936年3月，陈云化名“廉臣”，以被红军俘虏的国民党军医口吻撰写的《随军西行见闻录》，在中共于法国巴黎主办的《全民月刊》上以连载形式发表，系统记述中央红军自江西出发至贵州阶段的长征经历。该文是较早向海外公开介绍红军长征的纪实作品，使国统区和海外读者得以了解长征实况。",
+      "location": {
+        "name": "巴黎",
+        "coordinates": [
+          48.85,
+          2.35
+        ]
+      },
+      "participants": [
+        "陈云"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_prop_qunmin",
+        "src_prop_dswy"
+      ],
+      "certainty": "high",
+      "notes": "连载起始月口径存在1月底/3月差异，已标注"
+    },
+    {
       "id": "r4_19360301_kangbei",
       "date": "1936-03-01",
       "displayDate": "1936-03-01",
@@ -12122,6 +12232,33 @@
       "notes": "区域概括"
     },
     {
+      "id": "ev_prop_193607_chenyun",
+      "date": "1936-07-01",
+      "displayDate": "1936-07-01",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "传播",
+      "title": "随军西行见闻录莫斯科单行本",
+      "description": "1936年7月，《随军西行见闻录》单行本（64开本）在莫斯科出版发行。这部由陈云以“廉臣”署名撰写的长征纪实，被公认为世界上第一部描写中国工农红军长征的著作，比斯诺《红星照耀中国》更早向世界传播长征事实。",
+      "location": {
+        "name": "莫斯科",
+        "coordinates": [
+          55.75,
+          37.62
+        ]
+      },
+      "participants": [
+        "陈云"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_prop_dswy",
+        "src_prop_cpc_chuanbo"
+      ],
+      "certainty": "high",
+      "notes": "世界首部长征著作"
+    },
+    {
       "id": "steam_r4_19360701_f441f9e0",
       "date": "1936-07-01",
       "displayDate": "1936-07-01",
@@ -12409,6 +12546,60 @@
       "certainty": "low"
     },
     {
+      "id": "ev_prop_193608_fan",
+      "date": "1936-08-01",
+      "displayDate": "1936-08-01",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "传播",
+      "title": "范长江中国西北角结集出版",
+      "description": "1936年8月，天津《大公报》馆将范长江西北采访通讯结集为《中国的西北角》出版。范长江1935年7月起深入川陕甘宁青等地采访，报道红军长征行踪与西北实况，书中含67张照片及20余幅路线图，出版后数月连出多版，成为国统区公众了解红军和长征的重要新闻出版物。",
+      "location": {
+        "name": "天津",
+        "coordinates": [
+          39.13,
+          117.2
+        ]
+      },
+      "participants": [
+        "范长江"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_prop_dswy",
+        "src_prop_xinhua"
+      ],
+      "certainty": "high",
+      "notes": "含67照片20余路线图"
+    },
+    {
+      "id": "ev_prop_1936_bofuli",
+      "date": "1936-08-01",
+      "displayDate": "1936-08-01",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "传播",
+      "title": "薄复礼神灵之手伦敦出版",
+      "description": "1936年，被红军释放的英国籍瑞士传教士薄复礼将随红军行军约16个月的亲历整理为回忆录《神灵之手》（The Restraining Hand），由英国伦敦哈德尔和斯托顿公司出版。该书被认为是西方最早系统介绍红军长征故事的图书之一，向英美读者呈现了长征中的红军形象。",
+      "location": {
+        "name": "伦敦",
+        "coordinates": [
+          51.5,
+          -0.13
+        ]
+      },
+      "participants": [
+        "薄复礼"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_prop_dswy",
+        "src_prop_yunnan"
+      ],
+      "certainty": "medium",
+      "notes": "出版月份存在8月/12月差异，标medium"
+    },
+    {
       "id": "steam_r2_19360801_5231f9b1",
       "date": "1936-08-01",
       "displayDate": "1936-08-01",
@@ -12459,6 +12650,34 @@
       ],
       "certainty": "high",
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
+    },
+    {
+      "id": "ev_prop_19360805_mao",
+      "date": "1936-08-05",
+      "displayDate": "1936-08-05",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "传播",
+      "title": "毛泽东杨尚昆联署长征记征稿",
+      "description": "1936年8月5日，毛泽东与红军军委总政治部主任杨尚昆联署发出征稿通知，号召参加长征的同志撰写亲历片段，汇编出版《长征记》，用于国际宣传和国内外募捐运动。通知要求文字“清通达意”，各部队于9月5日前汇总稿件至总政治部，推动长征亲历叙事的系统整理。",
+      "location": {
+        "name": "保安/陕北",
+        "coordinates": [
+          36.9,
+          109.0
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "杨尚昆"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_prop_cpc_chuanbo",
+        "src_prop_people_juzheng"
+      ],
+      "certainty": "high",
+      "notes": "长征记征稿启动"
     },
     {
       "id": "steam_r4_19360805_a714d9cb",
@@ -13490,6 +13709,34 @@
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
     },
     {
+      "id": "ev_prop_19361228_dengfa",
+      "date": "1936-12-28",
+      "displayDate": "1936-12-28",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "传播",
+      "title": "邓发长征记述巴黎连载汇入长征记",
+      "description": "1936年12月28日至1937年6月25日，邓发署名“杨定华”撰写的《雪山草地行军记》在巴黎《救国时报》连载；1937年7月5日至1938年1月20日又连载《从甘肃到山西》。1938年1月《全民月刊》停刊后，两文与陈云《随军西行见闻录》合刊为《长征记》出版，后又有俄文版在莫斯科面世，形成早期系统传播长征的海外文献。",
+      "location": {
+        "name": "巴黎",
+        "coordinates": [
+          48.85,
+          2.35
+        ]
+      },
+      "participants": [
+        "邓发",
+        "陈云"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_prop_dswy",
+        "src_prop_qunmin"
+      ],
+      "certainty": "high",
+      "notes": "与陈云合刊长征记"
+    },
+    {
       "id": "ev_wxyj_19361228",
       "date": "1936-12-28",
       "displayDate": "1936-12-28",
@@ -13748,6 +13995,34 @@
       ],
       "certainty": "high",
       "notes": "第三路军日期为1939年"
+    },
+    {
+      "id": "ev_prop_193710_snow",
+      "date": "1937-10-01",
+      "displayDate": "1937-10-01",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "传播",
+      "title": "斯诺出版红星照耀中国",
+      "description": "1936年6月至10月，美国记者埃德加·斯诺经宋庆龄与中共地下组织协助进入陕北保安等红区采访，记录毛泽东、周恩来等人谈话及红军长征经历。1937年10月，《红星照耀中国》（Red Star Over China）由伦敦戈兰茨公司首版出版，向西方世界系统报道红军与长征真相，产生广泛国际影响。",
+      "location": {
+        "name": "伦敦",
+        "coordinates": [
+          51.5,
+          -0.13
+        ]
+      },
+      "participants": [
+        "埃德加·斯诺",
+        "毛泽东",
+        "周恩来"
+      ],
+      "importance": 5,
+      "sourceIds": [
+        "src_prop_people_hongxing"
+      ],
+      "certainty": "high",
+      "notes": "西方系统报道长征的奠基著作"
     },
     {
       "id": "ev_dkb_193805",
@@ -14772,6 +15047,29 @@
       "sort": 119
     },
     {
+      "id": "chenyun",
+      "name": "陈云",
+      "nameEn": "Chen Yun",
+      "personType": "人物",
+      "birthDate": "1905",
+      "deathDate": "1995",
+      "hometown": "江苏青浦",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "中共高级领导人，长征中任中央驻共产国际代表团成员。1935年10月向共产国际报告长征；化名廉臣，1936年在《全民月刊》连载《随军西行见闻录》，是世界首部描写长征的著作。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "传播史",
+        "共产国际"
+      ],
+      "sourceIds": [
+        "src_prop_dswy"
+      ],
+      "certainty": "high",
+      "sort": 120
+    },
+    {
       "id": "he_jiesheng",
       "name": "贺捷生",
       "nameEn": "He Jiesheng",
@@ -14795,6 +15093,75 @@
       ],
       "certainty": "high",
       "sort": 120
+    },
+    {
+      "id": "fanchangjiang",
+      "name": "范长江",
+      "nameEn": "Fan Changjiang",
+      "personType": "人物",
+      "birthDate": "1909",
+      "deathDate": "1970",
+      "hometown": "四川内江",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "中国著名记者，大公报特约通讯员。1935年7月起深入西北采访，报道红军长征，1936年8月《中国的西北角》结集出版，是国统区公众了解红军的重要新闻出版物。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "传播史",
+        "记者"
+      ],
+      "sourceIds": [
+        "src_prop_xinhua"
+      ],
+      "certainty": "high",
+      "sort": 121
+    },
+    {
+      "id": "yangshangkun",
+      "name": "杨尚昆",
+      "nameEn": "Yang Shangkun",
+      "personType": "人物",
+      "birthDate": "1907",
+      "deathDate": "1998",
+      "hometown": "四川潼南",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "1936年任红军军委总政治部主任，与毛泽东联署发出《长征记》征稿通知，推动长征亲历叙事的系统整理与对外传播。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "传播史",
+        "征稿"
+      ],
+      "sourceIds": [
+        "src_prop_cpc_chuanbo"
+      ],
+      "certainty": "high",
+      "sort": 122
+    },
+    {
+      "id": "bofuli",
+      "name": "薄复礼",
+      "nameEn": "Rudolf Alfred Bosshardt",
+      "personType": "人物",
+      "birthDate": "1897",
+      "deathDate": "1993",
+      "hometown": "英国",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "英国籍瑞士传教士，中文名勃沙特。被红六军团扣留并随军长征约16个月，1936年将亲历整理为《神灵之手》在伦敦出版，是西方最早系统介绍红军长征的专著之一。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "传播史",
+        "传教士"
+      ],
+      "sourceIds": [
+        "src_prop_yunnan"
+      ],
+      "certainty": "high",
+      "sort": 123
     },
     {
       "id": "hong_chao",
@@ -16657,6 +17024,16 @@
       "sort": 10
     },
     {
+      "personId": "bofuli",
+      "eventId": "ev_prop_1936_bofuli",
+      "role": "作者",
+      "note": "作者出版",
+      "sourceIds": [
+        "src_prop_yunnan"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "bogu",
       "eventId": "rf_19341010_ruijin",
       "role": "中央领导",
@@ -17121,6 +17498,36 @@
       "sort": 10
     },
     {
+      "personId": "chenyun",
+      "eventId": "ev_prop_19351015_chenyun",
+      "role": "报告人",
+      "note": "向共产国际报告",
+      "sourceIds": [
+        "src_prop_dswy"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "chenyun",
+      "eventId": "ev_prop_193603_chenyun",
+      "role": "作者",
+      "note": "随军西行见闻录连载",
+      "sourceIds": [
+        "src_prop_qunmin"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "chenyun",
+      "eventId": "ev_prop_193607_chenyun",
+      "role": "作者",
+      "note": "莫斯科单行本",
+      "sourceIds": [
+        "src_prop_dswy"
+      ],
+      "sort": 30
+    },
+    {
       "personId": "dai_jitao",
       "eventId": "steam_r2_19341205_f39cbe8b",
       "role": "Steam文本提及",
@@ -17254,6 +17661,16 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9103
+    },
+    {
+      "personId": "fanchangjiang",
+      "eventId": "ev_prop_193608_fan",
+      "role": "作者",
+      "note": "作者出版",
+      "sourceIds": [
+        "src_prop_xinhua"
+      ],
+      "sort": 10
     },
     {
       "personId": "fangzhimin",
@@ -18374,6 +18791,16 @@
         "src_zunyi_guanghui"
       ],
       "sort": 9344
+    },
+    {
+      "personId": "mao_zedong",
+      "eventId": "ev_prop_19360805_mao",
+      "role": "联署",
+      "note": "联署长征记征稿",
+      "sourceIds": [
+        "src_prop_cpc_chuanbo"
+      ],
+      "sort": 9354
     },
     {
       "personId": "pan_hannian",
@@ -19681,6 +20108,16 @@
       "note": "红五军政治部主任，高台掩护中弹牺牲",
       "sourceIds": [
         "src_yangkeming_dangshi"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "yangshangkun",
+      "eventId": "ev_prop_19360805_mao",
+      "role": "联署",
+      "note": "联署长征记征稿",
+      "sourceIds": [
+        "src_prop_people_juzheng"
       ],
       "sort": 10
     },

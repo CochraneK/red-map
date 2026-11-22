@@ -419,3 +419,10 @@ TRUE,mao_zedong,ev_zhaxi_19350205,军事帮助者,协助周恩来军事指挥,sr
 TRUE,mao_zedong,ev_gouba_19350312,成员,三人军事小组成员,src_zunyi_guanghui,9344
 TRUE,zhou_enlai,ev_gouba_19350312,成员,三人军事小组成员,src_zunyi_guanghui,9348
 TRUE,wang_jiaxiang,ev_gouba_19350312,成员,三人军事小组成员,src_zunyi_guanghui,9242
+TRUE,fanchangjiang,ev_prop_193608_fan,作者,作者出版,src_prop_xinhua,10
+TRUE,bofuli,ev_prop_1936_bofuli,作者,作者出版,src_prop_yunnan,10
+TRUE,chenyun,ev_prop_19351015_chenyun,报告人,向共产国际报告,src_prop_dswy,10
+TRUE,chenyun,ev_prop_193603_chenyun,作者,随军西行见闻录连载,src_prop_qunmin,20
+TRUE,chenyun,ev_prop_193607_chenyun,作者,莫斯科单行本,src_prop_dswy,30
+TRUE,mao_zedong,ev_prop_19360805_mao,联署,联署长征记征稿,src_prop_cpc_chuanbo,9354
+TRUE,yangshangkun,ev_prop_19360805_mao,联署,联署长征记征稿,src_prop_people_juzheng,10
