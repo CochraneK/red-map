@@ -6,6 +6,7 @@ let martyrFilter = 'all';
 let personTypeFilter = 'all';
 let catalogModule = 'persons';
 let catalogQuery = '';
+let catalogEvidence = 'all';
 
 document.addEventListener('DOMContentLoaded', initMuseum);
 
@@ -110,7 +111,27 @@ function renderModuleCatalog() {
     catalogQuery = search.value.trim();
     renderCatalogContent();
   };
+  renderEvidenceFilter();
   renderCatalogContent();
+}
+
+function renderEvidenceFilter() {
+  const box = document.getElementById('catalog-evidence');
+  if (!box) return;
+  // 证据分级仅在事件模块显示
+  if (catalogModule !== 'events') { box.innerHTML = ''; return; }
+  const opts = [
+    { key: 'all', label: '全部证据' },
+    { key: 'high', label: '权威史实' },
+    { key: 'medium', label: '一手见闻' },
+    { key: 'low', label: '线索待证' },
+  ];
+  box.innerHTML = opts.map(o => `<button class="${catalogEvidence === o.key ? 'active' : ''}" data-evidence="${o.key}">${escapeHTML(o.label)}</button>`).join('');
+  box.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
+    catalogEvidence = btn.dataset.evidence;
+    renderEvidenceFilter();
+    renderCatalogContent();
+  }));
 }
 
 function renderCatalogContent() {
@@ -227,8 +248,12 @@ function getForceModules() {
 
 function filterCatalogItems(items) {
   const query = normalizeCatalogQuery(catalogQuery);
-  if (!query) return items;
-  return items.filter(item => normalizeCatalogQuery(item.searchText).includes(query));
+  let out = items;
+  if (catalogModule === 'events' && catalogEvidence && catalogEvidence !== 'all') {
+    out = out.filter(item => item.event && String(item.event.certainty).toLowerCase() === catalogEvidence);
+  }
+  if (!query) return out;
+  return out.filter(item => normalizeCatalogQuery(item.searchText).includes(query));
 }
 
 function catalogStats(items, shown) {

@@ -211,6 +211,13 @@ a { color: inherit; }
 .evidence-badge.ev-low { background: #f7eee0; color: #8a6428; border-color: #e8d4ae; }
 .evidence-badge.ev-approx { background: #eef0e8; color: #5b6157; border-color: #d8dccb; }
 .evidence-badge.ev-unknown { background: #f0eef0; color: #6b5f6b; border-color: #ddd6dd; }
+/* 证据等级筛选控件（仅事件模块） */
+.catalog-evidence { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.catalog-evidence button {
+  background: #eef0e8; color: #4f554d; border: 1px solid #d8dccb;
+  border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; cursor: pointer;
+}
+.catalog-evidence button.active { background: #2f6b34; color: #fff; border-color: #2f6b34; }
 .method-hall { background: #f8faf5; }
 .method-step span { color: var(--red-deep); font-weight: 900; font-size: 12px; }
 .method-step h3 { margin: 10px 0 8px; font-size: 19px; }
