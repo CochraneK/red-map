@@ -43,7 +43,7 @@ const TYPE_LABELS_EN = {
   '牺牲':'Sacrifice','诞生':'Birth','民族':'Alliance','根据':'Base','渡河':'River','转进':'March',
   '行军':'March','整编':'Reorg','险阻':'Hazard','雪山':'Snow','草地':'Grassland','分歧':'Split',
   '转折':'Turn','决策':'Decision','胜利':'Victory','生活':'Life','追堵':'Pursuit','封锁':'Blockade',
-  '空袭':'Air raid','围堵':'Encircle','突围':'Breakout','其他':'Other'
+  '空袭':'Air raid','围堵':'Encircle','突围':'Breakout','里程':'Distance','其他':'Other'
 };
 
 const UI = {
