@@ -337,7 +337,39 @@
    ]
   },
   {
-   "key": "1935-10-07|red_fourth|12",
+   "key": "1935-06-25|red_fourth|10",
+   "date": "1935-06-25",
+   "forceId": "red_fourth",
+   "title": "两河口暴雨中欢迎红四方面军",
+   "variants": [
+    {
+     "eventId": "hjdet_27",
+     "certainty": "medium",
+     "label": "一手见闻·红军长征记（1937年2月编定，",
+     "title": "两河口暴雨中欢迎红四方面军",
+     "summary": "四围蛮山老林紧抱，绝不肯让出数十米平地；西北从梦笔山、东北从虹桥山送来两条怒吼溪流，雨季雪融寒流泛滥如同黄河决口。经邓罗两局长亲自率队察勘，才勉强选定东溪南岸不到百米方的山脚斜坡作会场，调工兵连伐木斩荆抛石掘土，数十个红色英雄工作了三小时。土石削成主席台，标语只能安置在路旁小树棘条上。暴雨延续约二十分钟，雨柱粗大如子弹却丝毫不动摇欢迎者阵容。文末写明：\"这是有历史意义的一九三五年六月二十五日。\"",
+     "sourceIds": [
+      "src_hongjun_changzhengji"
+     ]
+    },
+    {
+     "eventId": "steam_r4_19350625_ac761650",
+     "certainty": "low",
+     "label": "线索待证·游戏文本线索",
+     "title": "红四方面军到达两河口",
+     "summary": "1935年6月25日，红四方面军在四川小金两河口一带到达两河口。",
+     "sourceIds": [
+      "src_steam_longmarch_1934_1936"
+     ]
+    }
+   ],
+   "certaintyKinds": [
+    "low",
+    "medium"
+   ]
+  },
+  {
+   "key": "1935-10-07|red_fourth|13",
    "date": "1935-10-07",
    "forceId": "red_fourth",
    "title": "绥（靖）崇（化）丹（巴）懋（功）战役计划",
@@ -370,7 +402,7 @@
    ]
   },
   {
-   "key": "1935-10-07|red_first|11",
+   "key": "1935-10-07|red_first|12",
    "date": "1935-10-07",
    "forceId": "red_first",
    "title": "青石嘴战斗：缴获国民党军骑兵战马",
@@ -402,7 +434,7 @@
    ]
   },
   {
-   "key": "1935-10-21|red_first|14",
+   "key": "1935-10-21|red_first|15",
    "date": "1935-10-21",
    "forceId": "red_first",
    "title": "吴起镇『切尾巴』战斗的组织与结果",
@@ -435,7 +467,7 @@
    ]
   },
   {
-   "key": "1936-01-28|red_fourth|15",
+   "key": "1936-01-28|red_fourth|16",
    "date": "1936-01-28",
    "forceId": "red_fourth",
    "title": "红四方面军总后方及西南局成立",
@@ -467,7 +499,7 @@
    ]
   },
   {
-   "key": "1936-03-01|red_fourth|16",
+   "key": "1936-03-01|red_fourth|17",
    "date": "1936-03-01",
    "forceId": "red_fourth",
    "title": "红四方面军在川康边整顿后准备北上",
@@ -500,7 +532,7 @@
    ]
   },
   {
-   "key": "1936-07-05|red_second|18",
+   "key": "1936-07-05|red_second|19",
    "date": "1936-07-05",
    "forceId": "red_second",
    "title": "甘孜会师与红二方面军组建",
@@ -532,7 +564,7 @@
    ]
   },
   {
-   "key": "1936-09-07|red_fourth|19",
+   "key": "1936-09-07|red_fourth|20",
    "date": "1936-09-07",
    "forceId": "red_fourth",
    "title": "红四方面军占领通渭",
@@ -565,7 +597,7 @@
    ]
   },
   {
-   "key": "1936-09-14|red_fourth|20",
+   "key": "1936-09-14|red_fourth|21",
    "date": "1936-09-14",
    "forceId": "red_fourth",
    "title": "红四方面军占领将台堡",
@@ -598,7 +630,7 @@
    ]
   },
   {
-   "key": "1936-09-30|red_fourth|21",
+   "key": "1936-09-30|red_fourth|22",
    "date": "1936-09-30",
    "forceId": "red_fourth",
    "title": "红四方面军占领青江驿、翟家所",
@@ -631,7 +663,7 @@
    ]
   },
   {
-   "key": "1936-10-02|red_fourth|22",
+   "key": "1936-10-02|red_fourth|23",
    "date": "1936-10-02",
    "forceId": "red_fourth",
    "title": "红四方面军进占会宁县城",
@@ -664,7 +696,7 @@
    ]
   },
   {
-   "key": "1936-10-10|red_fourth|23",
+   "key": "1936-10-10|red_fourth|24",
    "date": "1936-10-10",
    "forceId": "red_fourth",
    "title": "三大主力红军会师庆祝大会（会宁）",
