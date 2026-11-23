@@ -21985,6 +21985,86 @@
       "sort": 30
     },
     {
+      "personId": "chenyun",
+      "eventId": "czj_19341021_first_blockade",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见突破第一道封锁线（陈济棠防区）",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 40
+    },
+    {
+      "personId": "chenyun",
+      "eventId": "czj_19350102_wujiang_jiangjiehe",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见强渡乌江江界河渡口（红4团佯攻老渡口、主攻新渡口）",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 50
+    },
+    {
+      "personId": "chenyun",
+      "eventId": "steam_rf_19350126_f406083d",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见中央红军到达离赤水城15公里的黄陂洞时",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 60
+    },
+    {
+      "personId": "chenyun",
+      "eventId": "steam_rf_19350128_205c4223",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见中央红军召开紧急会议",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 70
+    },
+    {
+      "personId": "chenyun",
+      "eventId": "rf_19350225_loushanguan",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见娄山关战斗与遵义大捷",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 80
+    },
+    {
+      "personId": "chenyun",
+      "eventId": "en_19350320_chishui_encircle",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见赤水河两岸敌军重兵围堵",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 90
+    },
+    {
+      "personId": "chenyun",
+      "eventId": "steam_rf_19350320_5e121a29",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见中央红军发布四渡赤水河的命令",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 100
+    },
+    {
+      "personId": "chenyun",
+      "eventId": "steam_rf_19350514_1e69d87f",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见中央红军抢渡大渡河",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 110
+    },
+    {
       "personId": "dai_jitao",
       "eventId": "steam_r2_19341205_f39cbe8b",
       "role": "Steam文本提及",
@@ -22013,6 +22093,66 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9348
+    },
+    {
+      "personId": "deng_hua",
+      "eventId": "steam_rf_19350514_1e69d87f",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见中央红军抢渡大渡河",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "deng_hua",
+      "eventId": "en_19350525_dadu_block",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见大渡河一线敌军封锁与追击",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "deng_hua",
+      "eventId": "ev_snow_19350525_17",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见十七勇士悬崖上架机枪",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "deng_hua",
+      "eventId": "ev_snow_19350529_luding",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见泸定桥：是人是疯子还是神",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 40
+    },
+    {
+      "personId": "deng_hua",
+      "eventId": "hjdet_26",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见安顺场强渡：二十二英雄飞夺泸定桥",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 50
+    },
+    {
+      "personId": "deng_hua",
+      "eventId": "mileage_193505_days",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见长征行军天数统计：1935年5月27天",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 60
     },
     {
       "personId": "deng_ping",
@@ -22589,6 +22729,76 @@
       "sort": 9121
     },
     {
+      "personId": "jia_lun",
+      "eventId": "steam_rf_19350514_1e69d87f",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见中央红军抢渡大渡河",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "jia_lun",
+      "eventId": "en_19350525_dadu_block",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见大渡河一线敌军封锁与追击",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "jia_lun",
+      "eventId": "ev_snow_19350525_17",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见十七勇士悬崖上架机枪",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "jia_lun",
+      "eventId": "rf_19350529_luding_bridge",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见飞夺泸定桥",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 40
+    },
+    {
+      "personId": "jia_lun",
+      "eventId": "ev_snow_19350529_luding",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见泸定桥：是人是疯子还是神",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 50
+    },
+    {
+      "personId": "jia_lun",
+      "eventId": "hjdet_26",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见安顺场强渡：二十二英雄飞夺泸定桥",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 60
+    },
+    {
+      "personId": "jia_lun",
+      "eventId": "mileage_193505_days",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见长征行军天数统计：1935年5月27天",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 70
+    },
+    {
       "personId": "jin_like",
       "eventId": "steam_sg_19330301_0f21f603",
       "role": "担任书记",
@@ -22700,6 +22910,36 @@
       "note": "援西军驰援",
       "sourceIds": [
         "src_wxyj_people_1936"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "li_zhi",
+      "eventId": "hjdet_12",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见过雪山的七条防冻准备",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "li_zhi",
+      "eventId": "rf_19350602_jiajinshan",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见中央红军翻越夹金山",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "li_zhi",
+      "eventId": "ev_snow_19350612_jinshan",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见夹金山：死掉三分之二驮畜",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
       ],
       "sort": 30
     },
@@ -22834,6 +23074,86 @@
       "sort": 9213
     },
     {
+      "personId": "liu_tong",
+      "eventId": "steam_rf_19350514_1e69d87f",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见中央红军抢渡大渡河",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "liu_tong",
+      "eventId": "rf_19350525_anshunchang",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见强渡大渡河",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "liu_tong",
+      "eventId": "en_19350525_dadu_block",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见大渡河一线敌军封锁与追击",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "liu_tong",
+      "eventId": "ev_snow_19350525_17",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见十七勇士悬崖上架机枪",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 40
+    },
+    {
+      "personId": "liu_tong",
+      "eventId": "rf_19350529_luding_bridge",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见飞夺泸定桥",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 50
+    },
+    {
+      "personId": "liu_tong",
+      "eventId": "hjdet_26",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见安顺场强渡：二十二英雄飞夺泸定桥",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 60
+    },
+    {
+      "personId": "liu_tong",
+      "eventId": "mileage_193505_days",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见长征行军天数统计：1935年5月27天",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 70
+    },
+    {
+      "personId": "liu_tong",
+      "eventId": "hjdet_12",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见过雪山的七条防冻准备",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 80
+    },
+    {
       "personId": "liu_wenhui",
       "eventId": "steam_r4_19351020_b30acd89",
       "role": "Steam文本提及",
@@ -22946,6 +23266,76 @@
         "src_dkb_jingbohu"
       ],
       "sort": 10
+    },
+    {
+      "personId": "luo_huasheng",
+      "eventId": "steam_rf_19350514_1e69d87f",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见中央红军抢渡大渡河",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "luo_huasheng",
+      "eventId": "rf_19350525_anshunchang",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见强渡大渡河",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "luo_huasheng",
+      "eventId": "en_19350525_dadu_block",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见大渡河一线敌军封锁与追击",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "luo_huasheng",
+      "eventId": "ev_snow_19350525_17",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见十七勇士悬崖上架机枪",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 40
+    },
+    {
+      "personId": "luo_huasheng",
+      "eventId": "ev_snow_19350529_luding",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见泸定桥：是人是疯子还是神",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 50
+    },
+    {
+      "personId": "luo_huasheng",
+      "eventId": "hjdet_26",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见安顺场强渡：二十二英雄飞夺泸定桥",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 60
+    },
+    {
+      "personId": "luo_huasheng",
+      "eventId": "mileage_193505_days",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见长征行军天数统计：1935年5月27天",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 70
     },
     {
       "personId": "luo_nanhui",
@@ -23486,6 +23876,26 @@
       "sort": 9330
     },
     {
+      "personId": "six_marksmen",
+      "eventId": "rf_19350525_anshunchang",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见强渡大渡河",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "six_marksmen",
+      "eventId": "en_19350525_dadu_block",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见大渡河一线敌军封锁与追击",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 20
+    },
+    {
       "personId": "su_yu",
       "eventId": "steam_r7_19340706_bc42d0bf",
       "role": "参与者",
@@ -23586,6 +23996,16 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9097
+    },
+    {
+      "personId": "wang_shoudao",
+      "eventId": "minzu_1934_yao_region",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见长征所经民族区域统计：瑶族区域2天（占0.54%）",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
     },
     {
       "personId": "wang_taiji",
@@ -23902,6 +24322,56 @@
       "sort": 10
     },
     {
+      "personId": "xiao_hua",
+      "eventId": "steam_rf_19350514_1e69d87f",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见中央红军抢渡大渡河",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "xiao_hua",
+      "eventId": "en_19350525_dadu_block",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见大渡河一线敌军封锁与追击",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "xiao_hua",
+      "eventId": "ev_snow_19350525_17",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见十七勇士悬崖上架机枪",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "xiao_hua",
+      "eventId": "hjdet_26",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见安顺场强渡：二十二英雄飞夺泸定桥",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 40
+    },
+    {
+      "personId": "xiao_hua",
+      "eventId": "mileage_193505_days",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见长征行军天数统计：1935年5月27天",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 50
+    },
+    {
       "personId": "xiao_ke",
       "eventId": "r2_19351119_sangzhi_start",
       "role": "领导者",
@@ -24136,6 +24606,16 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9346
+    },
+    {
+      "personId": "xu_teluo",
+      "eventId": "hjdet_12",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见过雪山的七条防冻准备",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
     },
     {
       "personId": "xu_xiangqian",
@@ -24389,6 +24869,16 @@
       "sort": 9316
     },
     {
+      "personId": "xue_feng",
+      "eventId": "rf_19350225_loushanguan",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见娄山关战斗与遵义大捷",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "xue_yue",
       "eventId": "steam_rf_19341030_79a2d2a5",
       "role": "Steam文本提及",
@@ -24617,6 +25107,66 @@
         "src_dj_kerr"
       ],
       "sort": 10
+    },
+    {
+      "personId": "zeng_san",
+      "eventId": "steam_rf_19350514_1e69d87f",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见中央红军抢渡大渡河",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "zeng_san",
+      "eventId": "en_19350525_dadu_block",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见大渡河一线敌军封锁与追击",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "zeng_san",
+      "eventId": "ev_snow_19350525_17",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见十七勇士悬崖上架机枪",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "zeng_san",
+      "eventId": "rf_19350529_luding_bridge",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见飞夺泸定桥",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 40
+    },
+    {
+      "personId": "zeng_san",
+      "eventId": "hjdet_26",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见安顺场强渡：二十二英雄飞夺泸定桥",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 50
+    },
+    {
+      "personId": "zeng_san",
+      "eventId": "mileage_193505_days",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见长征行军天数统计：1935年5月27天",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 60
     },
     {
       "personId": "zengsheng",
@@ -25028,6 +25578,16 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9329
+    },
+    {
+      "personId": "zhang_jichun",
+      "eventId": "rf_19350225_loushanguan",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见娄山关战斗与遵义大捷",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
     },
     {
       "personId": "zhang_wentian",
@@ -25763,6 +26323,86 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9326
+    },
+    {
+      "personId": "陆定一",
+      "eventId": "czj_19341021_first_blockade",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见突破第一道封锁线（陈济棠防区）",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "陆定一",
+      "eventId": "dashi_19341027",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见10月27日红一军团、红三军团行军纪要·南溪",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "陆定一",
+      "eventId": "dashi_19341031",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见10月31日红一军团、红三军团行军纪要·横断",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "陆定一",
+      "eventId": "dashi_19341102",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见11月02日红一军团、红三军团行军纪要",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 40
+    },
+    {
+      "personId": "陆定一",
+      "eventId": "dashi_19341103",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见11月03日红一军团、红三军团行军纪要·三江口",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 50
+    },
+    {
+      "personId": "陆定一",
+      "eventId": "dashi_19341104",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见11月04日红一军团、红三军团行军纪要",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 60
+    },
+    {
+      "personId": "陆定一",
+      "eventId": "dashi_19341110",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见11月10日红一军团、红三军团行军纪要·宜章",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 70
+    },
+    {
+      "personId": "陆定一",
+      "eventId": "dashi_19341114",
+      "role": "亲历记述",
+      "note": "《红军长征记》署名作者，见11月14日红一军团、红三军团行军纪要·宜章",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 80
     }
   ],
   "museum": {
