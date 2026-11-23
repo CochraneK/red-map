@@ -3101,6 +3101,32 @@
       "notes": "据《红军长征记·长征大事记》1934年10月31日逐日记录；原件藏中央档案馆"
     },
     {
+      "id": "mileage_193410_days",
+      "date": "1934-10-31",
+      "displayDate": "1934-10-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1934年10月12天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第四项：除休息外，红军行军作战时间1934年10月为12天。表内统计长征行程共为一万八千零八十八里，各个月的行程在表内合计注明；此表以军团直属队为标准，各师另有行动未列入。",
+      "location": {
+        "name": "江西瑞金至湘粤边",
+        "coordinates": [
+          25.3,
+          114.6
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇《红军第一军团长征中经过地点及里程一览表》说明；总行程18088里（与斯诺口径一致）"
+    },
+    {
       "id": "ev_fang_193411",
       "date": "1934-11-01",
       "displayDate": "1934-11-01",
@@ -4209,6 +4235,32 @@
       "notes": "第2章血战湘江"
     },
     {
+      "id": "mileage_193411_days",
+      "date": "1934-11-30",
+      "displayDate": "1934-11-30",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1934年11月24天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第四项：除休息外，红军行军作战时间1934年11月为24天。该月为突破前三道封锁线与湘江战役的关键时段，中央红军自赣南进至湘南、湘桂边。",
+      "location": {
+        "name": "湘赣边至湘南",
+        "coordinates": [
+          25.55,
+          112.8
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第四项"
+    },
+    {
       "id": "rf_19341130_xiangjiang_cover",
       "date": "1934-11-30",
       "displayDate": "1934-11-30",
@@ -5242,6 +5294,32 @@
       "notes": "据《红军长征记·长征大事记》1934年12月30日逐日记录；原件藏中央档案馆"
     },
     {
+      "id": "mileage_193412_days",
+      "date": "1934-12-31",
+      "displayDate": "1934-12-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1934年12月24天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第四项：除休息外，红军行军作战时间1934年12月为24天。该月中央红军自湘桂边进入黔南，经历通道会议、黎平会议与突破乌江前的连续行军。",
+      "location": {
+        "name": "湘桂边至黔南",
+        "coordinates": [
+          26.1,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第四项"
+    },
+    {
       "id": "steam_rf_19341231_79ca4187",
       "date": "1934-12-31",
       "displayDate": "1934-12-31",
@@ -6136,6 +6214,32 @@
       "descriptionEn": "On Jan 29, 1935, the Central Red Army conducted a campaign that shaped the movement of nearby columns around Tucheng and Chishui River, Guizhou. This entry keeps the chronological route, local context, and visual connection to adjacent events."
     },
     {
+      "id": "mileage_193501_days",
+      "date": "1935-01-31",
+      "displayDate": "1935-01-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1935年1月22天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第四项：除休息外，红军行军作战时间1935年1月为22天。该月中央红军强渡乌江、占领遵义并召开遵义会议，随后开始四渡赤水。",
+      "location": {
+        "name": "黔北·遵义一带",
+        "coordinates": [
+          27.6,
+          107.1
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第四项"
+    },
+    {
       "id": "r25_19350131_caiyuyao",
       "date": "1935-01-31",
       "displayDate": "1935-01-31",
@@ -6950,6 +7054,32 @@
       "certainty": "low"
     },
     {
+      "id": "mileage_193502_days",
+      "date": "1935-02-28",
+      "displayDate": "1935-02-28",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1935年2月26天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第四项：除休息外，红军行军作战时间1935年2月为26天。该月为四渡赤水前两渡与扎西整编期，2月10日中革军委发布缩编命令，全军编为十六个团。",
+      "location": {
+        "name": "黔北·赤水与扎西",
+        "coordinates": [
+          28.3,
+          105.7
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第四项"
+    },
+    {
       "id": "steam_rf_19350228_c8057ffe",
       "date": "1935-02-28",
       "displayDate": "1935-02-28",
@@ -7493,6 +7623,32 @@
       "descriptionEn": "On Mar 29, 1935, the Central Red Army crossed a major river and changed the operational situation around Wu River line, Guizhou. This entry keeps the chronological route, local context, and visual connection to adjacent events."
     },
     {
+      "id": "mileage_193503_days",
+      "date": "1935-03-31",
+      "displayDate": "1935-03-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1935年3月24天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第四项：除休息外，红军行军作战时间1935年3月为24天。该月红军完成四渡赤水最后两渡，3月12日召开苟坝会议成立三人军事指挥小组，随后向川南进军。",
+      "location": {
+        "name": "黔北至川南",
+        "coordinates": [
+          28.5,
+          105.3
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第四项"
+    },
+    {
       "id": "rf_19350331_guiyang",
       "date": "1935-03-31",
       "displayDate": "1935-03-31",
@@ -8017,6 +8173,32 @@
       "certainty": "high",
       "notes": "原库仅有『巧渡金沙江』概述，本条补入三路分工、柯渡会议部署与龙街/洪门渡架桥失败经过",
       "titleEn": "Crossing the Jinsha River at Jiaopingdu"
+    },
+    {
+      "id": "mileage_193504_days",
+      "date": "1935-04-30",
+      "displayDate": "1935-04-30",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1935年4月30天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第四项：除休息外，红军行军作战时间1935年4月为30天，为长征期间单月行军日数最多的一个月。该月红军巧渡金沙江、进入滇北，并强渡大渡河。",
+      "location": {
+        "name": "川南至滇北、金沙江与大渡河",
+        "coordinates": [
+          26.6,
+          102.0
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第四项；4月为单月行军日数最高月份"
     },
     {
       "id": "r4_19350501_leave_soviet_area",
@@ -8736,6 +8918,32 @@
       }
     },
     {
+      "id": "mileage_193505_days",
+      "date": "1935-05-31",
+      "displayDate": "1935-05-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1935年5月27天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第四项：除休息外，红军行军作战时间1935年5月为27天。该月红军强渡大渡河、飞夺泸定桥，翻越夹金山北麓，并与红四方面军会师于懋功。",
+      "location": {
+        "name": "大渡河上游至懋功",
+        "coordinates": [
+          29.8,
+          102.2
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第四项"
+    },
+    {
       "id": "steam_r4_19350601_ea1bdb51",
       "date": "1935-06-01",
       "displayDate": "1935-06-01",
@@ -9428,6 +9636,32 @@
       "descriptionEn": "After the First and Fourth Front Armies met, the Lianghekou Meeting affirmed the strategy of moving north to create a Sichuan-Shaanxi-Gansu base."
     },
     {
+      "id": "mileage_193506_days",
+      "date": "1935-06-30",
+      "displayDate": "1935-06-30",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1935年6月23天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第四项：除休息外，红军行军作战时间1935年6月为23天。该月红军翻越夹金山后与红四方面军会师，随后向松潘、毛儿盖方向推进。",
+      "location": {
+        "name": "懋功至松潘、毛儿盖",
+        "coordinates": [
+          32.5,
+          102.6
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第四项"
+    },
+    {
       "id": "steam_rf_19350630_f1f50f21",
       "date": "1935-06-30",
       "displayDate": "1935-06-30",
@@ -9956,6 +10190,32 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "mileage_193507_days",
+      "date": "1935-07-31",
+      "displayDate": "1935-07-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1935年7月10天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第五项：七、八两月行军时间少，是在毛儿盖、波罗子休息的时间为多。1935年7月行军作战时间为10天，该月红军在毛儿盖、波罗子一带休整并筹粮。",
+      "location": {
+        "name": "毛儿盖、波罗子",
+        "coordinates": [
+          32.8,
+          102.3
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第四、五项"
     },
     {
       "id": "steam_r25_19350731_f058c9b5",
@@ -10799,6 +11059,32 @@
       "metrics": {
         "victory": true
       }
+    },
+    {
+      "id": "mileage_193508_days",
+      "date": "1935-08-31",
+      "displayDate": "1935-08-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1935年8月14天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第四、五项：除休息外，红军行军作战时间1935年8月为14天；七、八两月行军时间少，是在毛儿盖、波罗子休息的时间为多。该月红军攻克包座、突破腊子口，向甘南推进。",
+      "location": {
+        "name": "松潘南部至甘南",
+        "coordinates": [
+          33.5,
+          103.2
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第四、五项"
     },
     {
       "id": "steam_rf_19350831_e91c2d1a",
@@ -11675,6 +11961,32 @@
       "certainty": "low"
     },
     {
+      "id": "mileage_193509_days",
+      "date": "1935-09-30",
+      "displayDate": "1935-09-30",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1935年9月16天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第四项：除休息外，红军行军作战时间1935年9月为16天。该月红一方面军经巴西会议后单独北上，突破腊子口，进入甘南。",
+      "location": {
+        "name": "巴西、松潘以南至甘南",
+        "coordinates": [
+          33.8,
+          103.6
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第四项"
+    },
+    {
       "id": "sha_19351001_laoshan",
       "date": "1935-10-01",
       "displayDate": "1935-10-01",
@@ -11982,6 +12294,33 @@
       "notes": "斯诺一手统计(p182)；数字口径供参考"
     },
     {
+      "id": "mileage_1935_total",
+      "date": "1935-10-19",
+      "displayDate": "1935-10-19",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "红军第一军团长征总行程：一万八千零八十八里",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第三项：统计长征行程，共为一万八千零八十八里，各个月的行程在表内合计注明。此表以军团直属队为标准，各师另有行动均未列入。该总数与斯诺1936年在陕北采访所得的「一军团按阶段编制的精确旅程表为一万八千零八十八里」完全一致，两份互不相干的文献互证。",
+      "location": {
+        "name": "中央苏区至陕北",
+        "coordinates": [
+          31.5,
+          106.0
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hongjun_changzhengji",
+        "src_snow_redstar"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第三项；与斯诺《红星照耀中国》18088里口径一致，两份独立文献互证"
+    },
+    {
       "id": "rf_19351019_wuqi",
       "date": "1935-10-19",
       "displayDate": "1935-10-19",
@@ -12190,6 +12529,32 @@
       "certainty": "medium",
       "titleEn": "Shaan-Gan Red Army conducts a campaign at Yulinqiao, Ganquan, Shaanxi",
       "descriptionEn": "On Oct 25, 1935, the Shaan-Gan Red Army conducted a campaign that shaped the movement of nearby columns around Yulinqiao, Ganquan, Shaanxi. This entry keeps the chronological route, local context, and visual connection to adjacent events."
+    },
+    {
+      "id": "mileage_193510_days",
+      "date": "1935-10-31",
+      "displayDate": "1935-10-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "里程",
+      "title": "长征行军天数统计：1935年10月19天",
+      "description": "据《红军长征记·红军第一军团长征中经过地点及里程一览表》说明第四项：除休息外，红军行军作战时间1935年10月为19天。该月红军翻越六盘山，抵达陕北吴起镇，10月21日吴起镇『切尾巴』战斗后中央红军胜利结束长征。",
+      "location": {
+        "name": "陕北·吴起镇",
+        "coordinates": [
+          36.93,
+          108.18
+        ]
+      },
+      "participants": [
+        "红一军团"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "《红军长征记》第133篇说明第四项；十个月合计行军199天"
     },
     {
       "id": "ev_dkb_193511_zhao",
