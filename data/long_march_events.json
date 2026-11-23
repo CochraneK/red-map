@@ -2992,31 +2992,6 @@
       "certainty": "low"
     },
     {
-      "id": "steam_r25_19341106_01ba26b7",
-      "date": "1934-11-06",
-      "displayDate": "1934-11-06",
-      "sequence": 9131,
-      "forceId": "red_25th",
-      "type": "战斗",
-      "title": "红二十五军突破了敌军四道封锁线",
-      "description": "1934年11月6日，红二十五军在河南罗山葛藤山一带突破了敌军四道封锁线。",
-      "location": {
-        "name": "河南罗山葛藤山",
-        "coordinates": [
-          31.78,
-          114.55
-        ]
-      },
-      "participants": [
-        "红二十五军"
-      ],
-      "importance": 3,
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "certainty": "low"
-    },
-    {
       "id": "sha_19341107_nanliang",
       "date": "1934-11-07",
       "displayDate": "1934-11-07",
@@ -3071,6 +3046,36 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "ev_red25_19341111_declare",
+      "date": "1934-11-11",
+      "displayDate": "1934-11-11",
+      "sequence": 1,
+      "forceId": "red_25th",
+      "type": "会议",
+      "title": "红二十五军发布北上抗日第二先遣队出发宣言",
+      "description": "1934年11月11日，红军第二十五军军长程子华、政治委员吴焕先率部从河南罗山何家冲出发，开始长征，军中成立中国工农红军北上抗日第二先遣队，于11月16日发布出发宣言，宣告红二十五军踏上了北上抗日的征途。这支部队与同年7月由红七军团组成的北上抗日先遣队（粟裕、乐少华率领，活动于闽赣皖边）分属不同的建制与行动区域，是长征中两支易被混淆的部队。",
+      "location": {
+        "name": "河南罗山何家冲",
+        "coordinates": [
+          32.13,
+          114.42
+        ]
+      },
+      "participants": [
+        "程子华",
+        "吴焕先",
+        "徐海东",
+        "戴季英"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red25_cpc",
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "由原游戏文本线索升级；特别标注与1934年7月红七军团北上抗日先遣队的区别，避免混淆"
     },
     {
       "id": "steam_r25_19341111_6bb7d2f0",
@@ -3601,10 +3606,10 @@
       "title": "红二十五军渡过澧河",
       "description": "1934年11月28日，红二十五军在湖南通道一带渡过澧河。",
       "location": {
-        "name": "湖南通道",
+        "name": "河南罗山何家冲（澧河段伊河源一带）",
         "coordinates": [
-          26.16,
-          109.78
+          32.13,
+          114.42
         ]
       },
       "participants": [
@@ -3615,7 +3620,8 @@
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
-      "certainty": "low"
+      "certainty": "low",
+      "notes": "| 地点已校正（原游戏文本抽取地点有误）"
     },
     {
       "id": "ev_czj_19341129_guanghua",
@@ -3874,6 +3880,36 @@
       ],
       "certainty": "high",
       "notes": "第6章红25军开始长征"
+    },
+    {
+      "id": "ev_red25_19341116_yujiahe",
+      "date": "1934-12-10",
+      "displayDate": "1934-12-10",
+      "sequence": 1,
+      "forceId": "red_25th",
+      "type": "战斗",
+      "title": "红二十五军庾家河战斗（权威口径）",
+      "description": "1934年12月10日，红二十五军长征途中在河南灵宝南境的庾家河召开常委会议时，国民党军第六十师突然占领制高点坳口并向红军突袭。军长程子华、政委吴焕先临危指挥，从军长到炊事员全部投入战斗，与敌反复冲杀二十余次，激战至黄昏歼敌八百余人，师长程子华、政委吴焕先均负伤。此役是红二十五军长征中最险恶的一仗，也是其主力由原二十五军改编为红二十五军的起点。",
+      "location": {
+        "name": "河南灵宝庾家河",
+        "coordinates": [
+          34.52,
+          110.89
+        ]
+      },
+      "participants": [
+        "程子华",
+        "吴焕先",
+        "徐海东",
+        "陈沛"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_red25_cpc",
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "与原库已有条目 ev_czj_19341210_yujiahe 并存：新增版本补充了会议中断、双方伤亡与改编背景"
     },
     {
       "id": "rf_19341210_chenshuxiang",
@@ -4730,6 +4766,36 @@
       "certainty": "medium",
       "titleEn": "The 25th Red Army develops the Hubei-Henan-Shaanxi base area",
       "descriptionEn": "In the border region, the 25th Red Army developed a new guerrilla base through mountain warfare and mass work."
+    },
+    {
+      "id": "ev_red4_19350112_guangzhao",
+      "date": "1935-01-12",
+      "displayDate": "1935-01-12",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "战役",
+      "title": "广（元）昭（化）战役：红四方面军牵制川敌",
+      "description": "1935年1月12日，红四方面军集中十八个团兵力发起广（元）昭（化）战役，包围广元、昭化，歼灭胡宗南部一部。此役是徐向前在11月中旬巴中清江渡军事会议上提出的「依托老区、发展新区、以打击胡宗南部为主要目标、夺取甘南地区、力争把川陕根据地发展为川陕甘根据地」战略方针的首次实施，目的是牵制四川军阀部队、配合中央红军入川。战役期间，中共中央政治局在遵义召开会议并于1月22日致电红四方面军领导人，明确「集中红军全力向西线进攻」、以苍溪、阆中、南部之线为主要方向，与中央红军协同作战。",
+      "location": {
+        "name": "四川广元、昭化",
+        "coordinates": [
+          32.43,
+          105.84
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "张国焘",
+        "朱德",
+        "陈云"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_100years_cpc",
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "由原游戏文本线索升级：原 low 线索「红四方面军发起广昭战役」仅一句话，本条据长征记第13章与权威党史补入战役日期、兵力规模、战略意图与中央协同指示"
     },
     {
       "id": "steam_rf_19350112_ac6c45bc",
@@ -7116,32 +7182,6 @@
       "certainty": "low"
     },
     {
-      "id": "steam_r4_19350501_c29cd8fa",
-      "date": "1935-05-01",
-      "displayDate": "1935-05-01",
-      "sequence": 9060,
-      "forceId": "red_fourth",
-      "type": "决策",
-      "title": "红四方面军召开由军负责人参加的高级干部会议",
-      "description": "1935年5月初，红四方面军在云南皎平渡一带召开由军负责人参加的高级干部会议。",
-      "location": {
-        "name": "云南皎平渡",
-        "coordinates": [
-          26.13,
-          102.52
-        ]
-      },
-      "participants": [
-        "红四方面军",
-        "张国焘"
-      ],
-      "importance": 4,
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "certainty": "low"
-    },
-    {
       "id": "rf_19350503_jinsha_crossing",
       "date": "1935-05-03",
       "displayDate": "1935-05-03",
@@ -9009,10 +9049,10 @@
       "title": "红二十五军占领了川陕边界公路要地双石铺（今凤县县城",
       "description": "1935年7月31日，红二十五军在四川若尔盖草地一带占领了川陕边界公路要地双石铺（今凤县县城。",
       "location": {
-        "name": "四川若尔盖草地",
+        "name": "陕西凤县双石铺",
         "coordinates": [
-          33.58,
-          102.97
+          34.05,
+          106.55
         ]
       },
       "participants": [
@@ -9022,7 +9062,8 @@
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
-      "certainty": "low"
+      "certainty": "low",
+      "notes": "| 地点已校正（原游戏文本抽取地点有误）"
     },
     {
       "id": "steam_rf_19350801_4e5f4183",
@@ -9042,35 +9083,6 @@
       },
       "participants": [
         "中央红军",
-        "陈昌浩",
-        "张国焘",
-        "徐向前",
-        "毛泽东"
-      ],
-      "importance": 3,
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "certainty": "low"
-    },
-    {
-      "id": "steam_r4_19350801_9b010e2b",
-      "date": "1935-08-01",
-      "displayDate": "1935-08-01",
-      "sequence": 9068,
-      "forceId": "red_fourth",
-      "type": "战斗",
-      "title": "红四方面军占领包座后的行动计划",
-      "description": "1935年8月底，红四方面军在四川若尔盖包座一带占领包座后的行动计划。",
-      "location": {
-        "name": "四川若尔盖包座",
-        "coordinates": [
-          33.69,
-          103.24
-        ]
-      },
-      "participants": [
-        "红四方面军",
         "陈昌浩",
         "张国焘",
         "徐向前",
@@ -10833,6 +10845,35 @@
       "titleEn": "Capturing Cavalry Horses at Qingshizui"
     },
     {
+      "id": "ev_red4_19351007_suichong",
+      "date": "1935-10-07",
+      "displayDate": "1935-10-07",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "会议",
+      "title": "绥（靖）崇（化）丹（巴）懋（功）战役计划",
+      "description": "1935年10月上旬，红四方面军发布绥靖、崇化、丹巴、懋功战役计划，企图南下川康边、在成都平原边缘求得发展，以实现其另立中央的路线主张。此前红四方面军南下后先后占领宝兴、天全、芦山，突破刘湘防线，击败川军十七个旅。战役计划发布后，红四方面军南下受挫，在百丈关与川军激战，歼敌一万五千余人但自身伤亡近万人，被迫撤回川康边。",
+      "location": {
+        "name": "四川丹巴、懋功（小金）",
+        "coordinates": [
+          30.88,
+          102.22
+        ]
+      },
+      "participants": [
+        "张国焘",
+        "徐向前",
+        "朱德"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_100years_cpc",
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "由原游戏文本线索升级，并校正地点（原标为湖南通道，实为四川丹巴懋功一带）"
+    },
+    {
       "id": "rf_19351007_liupanshan",
       "date": "1935-10-07",
       "displayDate": "1935-10-07",
@@ -10873,10 +10914,10 @@
       "title": "红四方面军发布了绥（靖）崇（化）丹（巴）懋（功）战役计划",
       "description": "1935年10月7日，红四方面军在湖南通道一带发布了绥（靖）崇（化）丹（巴）懋（功）战役计划。",
       "location": {
-        "name": "湖南通道",
+        "name": "四川丹巴",
         "coordinates": [
-          26.16,
-          109.78
+          30.88,
+          102.22
         ]
       },
       "participants": [
@@ -10889,7 +10930,8 @@
       "sourceIds": [
         "src_steam_longmarch_1934_1936"
       ],
-      "certainty": "low"
+      "certainty": "low",
+      "notes": "| 地点已校正（原游戏文本抽取地点有误）"
     },
     {
       "id": "steam_r2_19351010_e82fe7cd",
@@ -11762,6 +11804,35 @@
       "descriptionEn": "On Jan 15, 1936, the Red Second Front Army maneuvered through the area to redirect or continue the march around Shiqian, Zhenyuan, and Huangping area, Guizhou. This entry keeps the chronological route, local context, and visual connection to adjacent events."
     },
     {
+      "id": "ev_red4_19360128_xinanju",
+      "date": "1936-01-28",
+      "displayDate": "1936-01-28",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "会议",
+      "title": "红四方面军总后方及西南局成立",
+      "description": "1936年1月28日，红四方面军在四川懋功、丹巴地区召开会议，决定成立红四方面军总后方部与中共西南局，撤销由红四方面军单独领导并入的川康省委，统一由中央直接领导。红军第二方面军于1936年1月到达川黔边，与红四方面军会师后，中共中央于2月决定成立以朱德为总政治委员、任弼时为政治委员的红四方面军总后方部，并设立中共西康省委。",
+      "location": {
+        "name": "四川懋功（小金）",
+        "coordinates": [
+          30.88,
+          102.68
+        ]
+      },
+      "participants": [
+        "张国焘",
+        "朱德",
+        "任弼时",
+        "陈云"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_100years_cpc"
+      ],
+      "certainty": "high",
+      "notes": "由原游戏文本线索升级，并校正地点（原标为陕西瓦窑堡，实为四川懋功丹巴一带）"
+    },
+    {
       "id": "steam_r4_19360128_6960ab2a",
       "date": "1936-01-28",
       "displayDate": "1936-01-28",
@@ -12374,6 +12445,36 @@
       ],
       "certainty": "high",
       "notes": "第24章红2、红6军团开始长征"
+    },
+    {
+      "id": "ev_red4_19360426_jinsha",
+      "date": "1936-04-26",
+      "displayDate": "1936-04-26",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "战斗",
+      "title": "红四方面军渡过金沙江",
+      "description": "1936年4月，红四方面军奉中共中央命令北进，在金沙江沿岸击溃国民党军阻击，渡江进入川西北地区，随即向陕甘边推进。徐向前、陈昌浩率红四方面军主力于1936年6月底到达甘孜地区，7月1日与红二方面军会师，7月5日两军与红32军合编成立红二方面军。此次渡江是红四方面军摆脱川康边困境、重新回到党中央统一指挥下的关键一步。",
+      "location": {
+        "name": "四川石棉、泸定一带金沙江",
+        "coordinates": [
+          29.23,
+          102.36
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "陈昌浩",
+        "朱德",
+        "刘伯承"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_100years_cpc",
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "由原游戏文本线索升级，并校正地点（原标为云南皎平渡，实为四川金沙江渡段）"
     },
     {
       "id": "steam_r4_19360427_fe081696",
@@ -13381,6 +13482,35 @@
       "certainty": "low"
     },
     {
+      "id": "ev_red4_19360907_tongwei",
+      "date": "1936-09-07",
+      "displayDate": "1936-09-07",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "战斗",
+      "title": "红四方面军占领通渭",
+      "description": "1936年9月7日，红四方面军攻占甘肃通渭城。此前红二、红四方面军已于8月攻占漳县、渭源，红四方面军继而夺取通渭，扫清了通向静宁、会宁的通道。此役为三大主力红军会师前的关键攻占行动。",
+      "location": {
+        "name": "甘肃通渭",
+        "coordinates": [
+          35.13,
+          104.93
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "朱德",
+        "任弼时"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_100years_cpc",
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "由原游戏文本线索升级，并校正地点（原标为甘肃会宁，实为通渭）"
+    },
+    {
       "id": "steam_r4_19360907_d3ee222a",
       "date": "1936-09-07",
       "displayDate": "1936-09-07",
@@ -13519,6 +13649,35 @@
       "certainty": "low"
     },
     {
+      "id": "ev_red4_19360914_jiangtaibao",
+      "date": "1936-09-14",
+      "displayDate": "1936-09-14",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "战斗",
+      "title": "红四方面军占领将台堡",
+      "description": "1936年9月14日，红四方面军先头部队攻占甘肃将台堡，打开了通向静宁、会宁的门户。会宁是三大主力红军会师地之一，红四方面军于10月2日进占会宁县城，10月9日与红一方面军在会宁会师，10月10日在会宁城西静宁会宁广场举行庆祝大会，三大主力红军会师胜利实现。",
+      "location": {
+        "name": "甘肃静宁将台堡",
+        "coordinates": [
+          35.52,
+          105.73
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "朱德",
+        "任弼时"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_100years_cpc",
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "由原游戏文本线索升级，并校正地点（原标为宁夏西吉将台堡，实为甘肃静宁）"
+    },
+    {
       "id": "steam_r4_19360914_37586873",
       "date": "1936-09-14",
       "displayDate": "1936-09-14",
@@ -13637,6 +13796,34 @@
       "certainty": "low"
     },
     {
+      "id": "ev_red4_19360930_qingjiangyi",
+      "date": "1936-09-30",
+      "displayDate": "1936-09-30",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "战斗",
+      "title": "红四方面军占领青江驿、翟家所",
+      "description": "1936年9月底，红四方面军继攻占通渭后，占领甘肃通渭县青江驿、陇西县翟家所等地，为挺进静宁、会宁奠定基础。红军沿途发动群众，开展筹粮与群众工作，为三大主力会师提供了后勤与地方基础。",
+      "location": {
+        "name": "甘肃通渭青江驿、陇西翟家所",
+        "coordinates": [
+          35.2,
+          104.85
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "任弼时"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_100years_cpc",
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "由原游戏文本线索升级，并校正地点（原标为甘肃会宁）"
+    },
+    {
       "id": "steam_r4_19360930_91576ac3",
       "date": "1936-09-30",
       "displayDate": "1936-09-30",
@@ -13694,6 +13881,35 @@
       "descriptionEn": "As the main Red Army forces approached convergence, enemy forces still tried to prevent them from meeting around Gansu and Ningxia."
     },
     {
+      "id": "ev_red4_19361002_huining",
+      "date": "1936-10-02",
+      "displayDate": "1936-10-02",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "战斗",
+      "title": "红四方面军进占会宁县城",
+      "description": "1936年10月2日，红四方面军进占甘肃会宁县城。此前红一方面军已于9月23日进占会宁，红十五军团于10月7日攻占静宁县城。红四方面军的进占使会宁成为三大主力红军的汇合点。",
+      "location": {
+        "name": "甘肃会宁",
+        "coordinates": [
+          35.7,
+          105.05
+        ]
+      },
+      "participants": [
+        "徐向前",
+        "任弼时",
+        "朱德"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_100years_cpc",
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "由原游戏文本线索升级并补入会师进程"
+    },
+    {
       "id": "steam_r4_19361002_f447cac2",
       "date": "1936-10-02",
       "displayDate": "1936-10-02",
@@ -13718,31 +13934,6 @@
       ],
       "certainty": "low",
       "notes": "核查保留low：会宁会师主力为红四方面军与红一方面军，但10月2日占领会宁县城的具体表述需权威核实"
-    },
-    {
-      "id": "steam_r4_19361003_9a4a7e0c",
-      "date": "1936-10-03",
-      "displayDate": "1936-10-03",
-      "sequence": 9098,
-      "forceId": "red_fourth",
-      "type": "战斗",
-      "title": "红四方面军会师创造了条件",
-      "description": "1936年10月3日，红四方面军在甘肃会宁一带会师创造了条件。",
-      "location": {
-        "name": "甘肃会宁",
-        "coordinates": [
-          35.7,
-          105.05
-        ]
-      },
-      "participants": [
-        "红四方面军"
-      ],
-      "importance": 4,
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "certainty": "low"
     },
     {
       "id": "r2_19361004_weihe_north",
@@ -13829,6 +14020,37 @@
       "certainty": "medium",
       "titleEn": "Central Red Army joins forces at Huining, Gansu",
       "descriptionEn": "On Oct 9, 1936, the Central Red Army joined with another Red Army force and advanced the convergence narrative around Huining, Gansu. This entry keeps the chronological route, local context, and visual connection to adjacent events."
+    },
+    {
+      "id": "ev_red4_19361010_meeting",
+      "date": "1936-10-10",
+      "displayDate": "1936-10-10",
+      "sequence": 1,
+      "forceId": "red_fourth",
+      "type": "会师",
+      "title": "三大主力红军会师庆祝大会（会宁）",
+      "description": "1936年10月10日，红一、红二、红四方面军在甘肃会宁县城西的静宁会宁广场举行庆祝大会，宣告三大主力红军胜利会师，标志长征胜利结束。此前红一方面军与红十五军团于10月7日会师于静宁，红二方面军于10月9日会师于会宁。",
+      "location": {
+        "name": "甘肃会宁静宁会宁广场",
+        "coordinates": [
+          35.7,
+          105.05
+        ]
+      },
+      "participants": [
+        "朱德",
+        "徐向前",
+        "任弼时",
+        "贺龙",
+        "毛泽东"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_100years_cpc",
+        "src_changzhengji_people"
+      ],
+      "certainty": "high",
+      "notes": "由原游戏文本线索升级并补入会师序列"
     },
     {
       "id": "steam_r4_19361010_86a05ab4",
@@ -17709,16 +17931,6 @@
     },
     {
       "personId": "chen_changhao",
-      "eventId": "steam_r4_19350801_9b010e2b",
-      "role": "Steam文本提及",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9241
-    },
-    {
-      "personId": "chen_changhao",
       "eventId": "steam_r4_19350910_861d25a1",
       "role": "率部或指挥行动",
       "note": "",
@@ -19201,16 +19413,6 @@
     },
     {
       "personId": "mao_zedong",
-      "eventId": "steam_r4_19350801_9b010e2b",
-      "role": "Steam文本提及",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9239
-    },
-    {
-      "personId": "mao_zedong",
       "eventId": "steam_r4_19360625_7791aca4",
       "role": "Steam文本提及",
       "note": "",
@@ -20300,16 +20502,6 @@
     },
     {
       "personId": "xu_xiangqian",
-      "eventId": "steam_r4_19350801_9b010e2b",
-      "role": "Steam文本提及",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9240
-    },
-    {
-      "personId": "xu_xiangqian",
       "eventId": "steam_r4_19350910_861d25a1",
       "role": "Steam文本提及",
       "note": "",
@@ -20881,16 +21073,6 @@
     },
     {
       "personId": "zhang_guotao",
-      "eventId": "steam_r4_19350501_c29cd8fa",
-      "role": "Steam文本提及",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9195
-    },
-    {
-      "personId": "zhang_guotao",
       "eventId": "steam_r4_19350625_ac761650",
       "role": "Steam文本提及",
       "note": "",
@@ -20948,16 +21130,6 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9230
-    },
-    {
-      "personId": "zhang_guotao",
-      "eventId": "steam_r4_19350801_9b010e2b",
-      "role": "Steam文本提及",
-      "note": "",
-      "sourceIds": [
-        "src_steam_longmarch_1934_1936"
-      ],
-      "sort": 9242
     },
     {
       "personId": "zhang_guotao",

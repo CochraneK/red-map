@@ -113,6 +113,7 @@ function renderModuleCatalog() {
   };
   renderEvidenceFilter();
   renderCatalogContent();
+  loadVariantGroups();
 }
 
 function renderEvidenceFilter() {
@@ -143,6 +144,7 @@ function renderCatalogContent() {
   stats.innerHTML = catalogStats(items, shown);
   grid.innerHTML = shown.length ? shown.map(item => catalogCard(item)).join('') : `<div class="catalog-empty">没有匹配的资料模块</div>`;
   bindCatalogCards();
+  bindVariantBadges(grid);
 }
 
 function getCatalogModules() {
@@ -317,6 +319,7 @@ function eventCatalogCard(item) {
     <p>${escapeHTML(item.body)}</p>
     ${moduleMeta(item.chips.slice(1))}
     ${evidenceBadge(item.event.certainty)}
+    ${variantBadge(item.id)}
     ${moduleTags(item.tags)}
     <a class="module-action" href="map.html#event=${encodeURIComponent(item.id)}">地图查看</a>
   </article>`;
@@ -348,6 +351,78 @@ function evidenceBadge(certainty) {
   const key = String(certainty || '').toLowerCase();
   const meta = EVIDENCE_META[key] || { label: certainty || '未标注', cls: 'ev-unknown', title: '版权/证据状态未标注' };
   return `<span class="evidence-badge ${meta.cls}" title="${escapeAttr(meta.title)}">${escapeHTML(meta.label)}</span>`;
+}
+
+// 口径差异：同一史实在不同来源里记载不同（人数/里程/战果等）。
+// 这些差异被有意保留，不强行合并 —— 观众需要看到"有几种说法、各自依据什么"。
+let variantGroups = [];
+let variantIndex = new Map();
+
+function loadVariantGroups() {
+  if (variantGroups.length) return;
+  fetch('data/variant_groups.json', { cache: 'no-store' })
+    .then(r => r.ok ? r.json() : { groups: [] })
+    .then(data => {
+      variantGroups = data.groups || [];
+      variantIndex = new Map();
+      variantGroups.forEach(g => (g.variants || []).forEach(v => variantIndex.set(v.eventId, g)));
+      renderCatalogContent();
+    })
+    .catch(() => { variantGroups = []; });
+}
+
+function variantBadge(eventId) {
+  const g = variantIndex.get(eventId);
+  if (!g) return '';
+  const n = g.variants.length;
+  const certs = (g.certaintyKinds || []).join(' / ');
+  return `<button type="button" class="variant-badge" data-variant-group="${escapeAttr(g.key)}"
+    title="同一史实存在 ${n} 种来源记载：${escapeAttr(certs)}">${n} 种记载</button>`;
+}
+
+function variantPanelHtml(groupKey) {
+  const g = variantGroups.find(x => x.key === groupKey);
+  if (!g) return '';
+  const rows = g.variants.map(v => {
+    const ev = (museumData.events || []).find(e => e.id === v.eventId);
+    const srcs = (v.sourceIds || []).map(s => {
+      const src = (museumData.sources || []).find(x => x.id === s);
+      return src ? `<a href="${escapeAttr(src.url || '#')}" target="_blank" rel="noopener">${escapeHTML(src.title || s)}</a>` : escapeHTML(s);
+    }).join(' · ');
+    return `<li class="variant-item">
+      <div class="variant-head">${evidenceBadge(v.certainty)}<strong>${escapeHTML(v.label)}</strong></div>
+      <h5>${escapeHTML(v.title)}</h5>
+      <p>${escapeHTML(v.summary || '')}</p>
+      ${ev ? `<a class="variant-link" href="map.html#event=${encodeURIComponent(v.eventId)}">在地图中查看</a>` : ''}
+      ${srcs ? `<div class="variant-sources">${srcs}</div>` : ''}
+    </li>`;
+  }).join('');
+  return `<div class="variant-panel" id="variant-panel" data-variant-panel="${escapeAttr(g.key)}">
+    <div class="variant-panel-head">
+      <strong>同一史实的 ${g.variants.length} 种来源记载</strong>
+      <button type="button" class="variant-close" data-variant-close>收起</button>
+    </div>
+    <p class="variant-note">各来源记载在人数、里程或战果等细节上存在差异。本馆不做强行合并，以保留原始来源的独立说法。</p>
+    <ul class="variant-list">${rows}</ul>
+  </div>`;
+}
+
+function bindVariantBadges(root) {
+  root.querySelectorAll('[data-variant-group]').forEach(btn => {
+    btn.addEventListener('click', ev => {
+      ev.preventDefault();
+      ev.stopPropagation();
+      const key = btn.getAttribute('data-variant-group');
+      const existing = document.querySelector(`[data-variant-panel="${CSS.escape(key)}"]`);
+      if (existing) { existing.remove(); return; }
+      document.querySelectorAll('[data-variant-panel]').forEach(p => p.remove());
+      const holder = btn.closest('.catalog-card') || btn.parentElement;
+      if (holder) holder.insertAdjacentHTML('beforeend', variantPanelHtml(key));
+      document.querySelectorAll('[data-variant-close]').forEach(c => {
+        c.addEventListener('click', () => document.querySelectorAll('[data-variant-panel]').forEach(p => p.remove()));
+      });
+    });
+  });
 }
 
 function moduleMeta(values) {

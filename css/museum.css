@@ -211,6 +211,25 @@ a { color: inherit; }
 .evidence-badge.ev-low { background: #f7eee0; color: #8a6428; border-color: #e8d4ae; }
 .evidence-badge.ev-approx { background: #eef0e8; color: #5b6157; border-color: #d8dccb; }
 .evidence-badge.ev-unknown { background: #f0eef0; color: #6b5f6b; border-color: #ddd6dd; }
+
+/* 口径差异：同一史实的多种来源记载 */
+.variant-badge { display: inline-flex; align-items: center; margin: 6px 6px 0 0; padding: 3px 9px; font-size: 11px; font-weight: 700; cursor: pointer; border-radius: 999px; background: #f3ecf5; color: #6d4a78; border: 1px solid #ddc9e3; font-family: inherit; transition: background .15s, color .15s; }
+.variant-badge:hover { background: #e9ddec; color: #58366a; }
+.variant-panel { margin-top: 10px; padding: 12px 14px; border-radius: 10px; background: #faf7fb; border: 1px solid #e2d5e6; font-size: 13px; line-height: 1.65; }
+.variant-panel-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+.variant-panel-head strong { color: #4a2f55; font-size: 13px; }
+.variant-close { cursor: pointer; font-family: inherit; font-size: 12px; padding: 3px 9px; border-radius: 6px; background: #fff; border: 1px solid #ddc9e3; color: #6d4a78; }
+.variant-close:hover { background: #f2e9f4; }
+.variant-note { margin: 0 0 10px; font-size: 12px; color: #6f6377; }
+.variant-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.variant-item { padding: 10px 12px; border-radius: 8px; background: #fff; border: 1px solid #ece3ee; }
+.variant-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
+.variant-head strong { font-size: 12px; color: #553a60; }
+.variant-item h5 { margin: 0 0 4px; font-size: 13px; color: #33283a; }
+.variant-item p { margin: 0 0 6px; font-size: 12.5px; color: #5c5366; }
+.variant-link { display: inline-block; font-size: 12px; color: #6d4a78; text-decoration: underline; }
+.variant-sources { margin-top: 5px; font-size: 11.5px; color: #857a8c; }
+.variant-sources a { color: #6d4a78; }
 /* 证据等级筛选控件（仅事件模块） */
 .catalog-evidence { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .catalog-evidence button {

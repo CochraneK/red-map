@@ -188,7 +188,7 @@ TRUE,xu_xiangqian,steam_r4_19341101_625c61d6,决策或组织活动,,src_steam_lo
 TRUE,chen_changhao,steam_r4_19341101_625c61d6,Steam文本提及,,src_steam_longmarch_1934_1936,9192
 TRUE,zhang_guotao,steam_r4_19341101_625c61d6,Steam文本提及,,src_steam_longmarch_1934_1936,9193
 TRUE,liu_xiang,steam_r4_19350202_9eec714b,Steam文本提及,,src_steam_longmarch_1934_1936,9194
-TRUE,zhang_guotao,steam_r4_19350501_c29cd8fa,Steam文本提及,,src_steam_longmarch_1934_1936,9195
+FALSE,zhang_guotao,steam_r4_19350501_c29cd8fa,Steam文本提及, | 关联事件已禁用,src_steam_longmarch_1934_1936,9195
 TRUE,mao_zedong,steam_r4_19350617_c225f981,Steam文本提及,,src_steam_longmarch_1934_1936,9196
 TRUE,zhou_enlai,steam_r4_19350617_c225f981,Steam文本提及,,src_steam_longmarch_1934_1936,9197
 TRUE,zhu_de,steam_r4_19350617_c225f981,Steam文本提及,,src_steam_longmarch_1934_1936,9198
@@ -228,10 +228,10 @@ TRUE,mao_zedong,steam_r4_19350820_a4366fdb,决策或组织活动,,src_steam_long
 TRUE,wang_jiaxiang,steam_r4_19350820_a4366fdb,Steam文本提及,,src_steam_longmarch_1934_1936,9232
 TRUE,xu_xiangqian,steam_r4_19350820_a4366fdb,Steam文本提及,,src_steam_longmarch_1934_1936,9233
 TRUE,chen_changhao,steam_r4_19350820_a4366fdb,Steam文本提及,,src_steam_longmarch_1934_1936,9234
-TRUE,mao_zedong,steam_r4_19350801_9b010e2b,Steam文本提及,,src_steam_longmarch_1934_1936,9239
-TRUE,xu_xiangqian,steam_r4_19350801_9b010e2b,Steam文本提及,,src_steam_longmarch_1934_1936,9240
-TRUE,chen_changhao,steam_r4_19350801_9b010e2b,Steam文本提及,,src_steam_longmarch_1934_1936,9241
-TRUE,zhang_guotao,steam_r4_19350801_9b010e2b,Steam文本提及,,src_steam_longmarch_1934_1936,9242
+FALSE,mao_zedong,steam_r4_19350801_9b010e2b,Steam文本提及, | 关联事件已禁用,src_steam_longmarch_1934_1936,9239
+FALSE,xu_xiangqian,steam_r4_19350801_9b010e2b,Steam文本提及, | 关联事件已禁用,src_steam_longmarch_1934_1936,9240
+FALSE,chen_changhao,steam_r4_19350801_9b010e2b,Steam文本提及, | 关联事件已禁用,src_steam_longmarch_1934_1936,9241
+FALSE,zhang_guotao,steam_r4_19350801_9b010e2b,Steam文本提及, | 关联事件已禁用,src_steam_longmarch_1934_1936,9242
 TRUE,zhou_enlai,steam_r4_19350906_e68a7685,决策或组织活动,,src_steam_longmarch_1934_1936,9243
 TRUE,xu_xiangqian,steam_r4_19350910_861d25a1,Steam文本提及,,src_steam_longmarch_1934_1936,9244
 TRUE,chen_changhao,steam_r4_19350910_861d25a1,率部或指挥行动,,src_steam_longmarch_1934_1936,9245

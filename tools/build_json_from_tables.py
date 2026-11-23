@@ -292,6 +292,16 @@ def main():
     out.parent.mkdir(parents=True, exist_ok=True); out.write_text(json.dumps(data,ensure_ascii=False,indent=2), encoding='utf-8')
     print(f'[OK] 已生成：{out}')
     print(f"[OK] subjects={len(data['subjects'])}, sources={len(data['sources'])}, events={len(data['events'])}, persons={len(data.get('persons',[]))}, halls={len(data.get('museum',{}).get('halls',[]))}, visuals={len(data.get('museum',{}).get('visualAssets',[]))}")
+    # 同步生成「口径差异」关联组（同一史实的多种来源记载）
+    # 仅当输出到正式 data/ 时才落盘，避免污染 check_project 的临时目录
+    try:
+        if out.parent == (ROOT / 'data'):
+            import importlib.util as _ilu
+            _spec = _ilu.spec_from_file_location('_vg', ROOT / 'tools' / 'build_variant_groups.py')
+            _vg = _ilu.module_from_spec(_spec); _spec.loader.exec_module(_vg)
+            _vg.build(src=out)
+    except Exception as exc:
+        print('[WARN] 口径差异组生成失败：', exc, file=sys.stderr)
     if warnings:
         print('\n[WARNINGS]'); [print('-',w) for w in warnings]
     if errors:
