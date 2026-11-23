@@ -12921,6 +12921,36 @@
       "notes": "长征对外传播第一份正式报告"
     },
     {
+      "id": "wenxian_19361202_chenyun_report",
+      "date": "1935-10-15",
+      "displayDate": "1935-10-15",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "陈云《报告》原稿在共产国际档案中发现",
+      "description": "据《红军长征记》前言篇：《党的文献》2001年第4期发表陈云《关于红军长征和遵义会议情况的报告》，这是陈云1935年10月15日在共产国际执行委员会会议上所作的报告。报告原稿找不到了，是根据俄文记录翻译的。陈云生前没有看到这个文件，是中共中央文献研究室1996年通过俄罗斯远东研究所的协助，在共产国际档案中发现的。原记录稿标题为《共产国际执行委员会书记处会议史平同志的报告》，这是陈云代表中共中央做的正式报告，陈潭秋、潘汉年做了补充发言，中共驻共产国际代表团王明、康生列席了会议。陈云在报告中特别强调了遵义会议\"撤换了靠铅笔指挥的战略家（指李德），推选毛泽东同志担任领导\"。会后中共代表团将陈云报告的主要内容整理，以《英勇的西征》为标题发表在《共产国际》杂志\"中国革命问题专号\"上，署名施平——\"施平\"是陈云化名\"史平\"的谐音。",
+      "location": {
+        "name": "莫斯科",
+        "coordinates": [
+          55.75,
+          37.62
+        ]
+      },
+      "participants": [
+        "陈云",
+        "王明",
+        "康生",
+        "陈潭秋",
+        "潘汉年"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记》前言篇；该报告是1935年共产国际执委会书记处会议的正式记录"
+    },
+    {
       "id": "steam_r4_19351015_c52687db",
       "date": "1935-10-15",
       "displayDate": "1935-10-15",
@@ -14023,6 +14053,33 @@
       "descriptionEn": "On Dec 20, 1935, the Red Second Front Army maneuvered through the area to redirect or continue the march around Hunan-Hubei-Sichuan-Guizhou border area. This entry keeps the chronological route, local context, and visual connection to adjacent events."
     },
     {
+      "id": "wenxian_193512_naming",
+      "date": "1935-12-31",
+      "displayDate": "1935-12-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "\"长征\"一词由毛泽东命名并载入史册",
+      "description": "据《红军长征记》前言篇：红军长征作为中国革命的英雄史诗在中国家喻户晓，但红军长征的历史是怎样形成的并非人所共知。当年开始长征的时候，谁都没想到会走两万五千里；陈云被中共中央派往共产国际报告时讲的是\"西征\"。给长征命名的是毛泽东，他在1935年12月的报告中说：\"讲到长征，请问有什么意义呢？我们说，长征是历史纪录上的第一次，长征是宣言书，长征是宣传队，长征是播种机……十二个月光阴中间，天上每日几十架飞机侦察轰炸，地下几十万大军围追堵截，路上遇着了说不尽的艰难险阻，我们却开动了每人的两只脚，长驱二万余里，纵横十一个省。\"从此，\"长征\"一词被载入史册。",
+      "location": {
+        "name": "陕西保安",
+        "coordinates": [
+          37.14,
+          109.67
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "陈云"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记》前言篇；\"长征\"命名与\"西征\"称谓的差异"
+    },
+    {
       "id": "r2_19360115_guizhou_transfer",
       "date": "1936-01-15",
       "displayDate": "1936-01-15",
@@ -14308,6 +14365,33 @@
       ],
       "certainty": "high",
       "notes": "连载起始月口径存在1月底/3月差异，已标注"
+    },
+    {
+      "id": "wenxian_193603_liangchen_record",
+      "date": "1936-03-01",
+      "displayDate": "1936-03-01",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "《随军西行见闻录》1936年3月发表于巴黎《全民月刊》",
+      "description": "据《红军长征记》前言篇：1955年版《中国工农红军第一方面军长征记》收录了化名\"廉臣\"的《随军西行见闻录》。这篇两万多字的长文1936年3月发表于中国共产党主办的巴黎《全民月刊》，当年莫斯科中文出版社出版了《随军西行见闻录》的单行本。1938年，《随军西行见闻录》更名为《随军西征记》后在国内由生活书店出版，后被多家报刊转载。为方便在白区流传，作者假托一个被红军俘虏的军医，以第三者身份客观、详细地介绍了红军长征的经过。",
+      "location": {
+        "name": "巴黎",
+        "coordinates": [
+          48.85,
+          2.35
+        ]
+      },
+      "participants": [
+        "陈云",
+        "廉臣"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记》前言篇；比斯诺《红星照耀中国》（1937）早近一年"
     },
     {
       "id": "r4_19360301_kangbei",
@@ -15330,6 +15414,34 @@
       "certainty": "low"
     },
     {
+      "id": "wenxian_19360731_donation",
+      "date": "1936-07-31",
+      "displayDate": "1936-07-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "廉臣与杨定华捐赠《长征记》版权予《救国时报》出版",
+      "description": "据《红军长征记》前言篇：廉臣（《随军西行见闻录》）和杨定华（《雪山草地行军记》《由甘肃到陕西》）的文章发表后反响很大。《救国时报》编辑部征得二人同意，决定将三篇文章合集为《长征记》一书出版，并对该书作热情推荐与高度评价。为支持出版，廉臣和杨定华于1937年7月31日《救国时报》第114期上发表捐赠文章版权启事，声明自愿牺牲稿费以支持该报经费。",
+      "location": {
+        "name": "巴黎",
+        "coordinates": [
+          48.85,
+          2.35
+        ]
+      },
+      "participants": [
+        "陈云",
+        "邓发",
+        "救国时报编辑部"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记》前言篇；《救国时报》评价称此书\"不独可作为文艺作品读，且实为珍贵之史料\""
+    },
+    {
       "id": "ev_prop_193608_fan",
       "date": "1936-08-01",
       "displayDate": "1936-08-01",
@@ -15462,6 +15574,34 @@
       ],
       "certainty": "high",
       "notes": "长征记征稿启动"
+    },
+    {
+      "id": "wenxian_19360805_solicit",
+      "date": "1936-08-05",
+      "displayDate": "1936-08-05",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "《长征记》征稿：毛泽东、杨尚昆联署征集长征回忆",
+      "description": "1936年8月5日，毛泽东与红军总政治部主任杨尚昆联名给参加过长征的同志发出征稿信，为《长征记》征稿。信中说明：因进行国际宣传及在国内国外进行大规模的募捐运动，需要出版《长征记》，所以特发起集体创作，各人就自己所经历的战斗、行军、地方及部队工作，择其精彩有趣的写上若干片断，文字只求清通达意，不求钻研深奥，写上一段即是为红军作了募捐宣传，为红军扩大了国际影响。同时毛泽东又给各部队首长发电报，动员师团干部就战斗、民情风俗、奇闻轶事写成片断，于9月5日以前汇交总政治部。",
+      "location": {
+        "name": "陕西保安",
+        "coordinates": [
+          37.14,
+          109.67
+        ]
+      },
+      "participants": [
+        "毛泽东",
+        "杨尚昆",
+        "总政治部"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记》前言篇《集体创作的英雄史诗》（刘统撰）；征稿信原文"
     },
     {
       "id": "steam_r4_19360805_a714d9cb",
@@ -16507,6 +16647,34 @@
       "notes": "坐标待核"
     },
     {
+      "id": "wenxian_1936_receipts",
+      "date": "1936-10-31",
+      "displayDate": "1936-10-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "《长征记》征稿：收到200余篇约50万言来稿",
+      "description": "据《红军长征记》前言篇：红军总政治部成立编辑委员会，由总政治部宣传部部长主编，丁玲、徐特立、成仿吾等人分头编辑。到10月底收到稿件200篇以上，以字数计约50万言；写稿者有三分之一是素来从事文化工作的，其余是战士和从红角星墙报上学会写字作文的人。编辑方针四条：同一内容的稿子依其简单或丰富以及文字技术的工拙决定取舍；虽同样内容散在两篇以上稿子里但内容有不同者不割爱；独有内容不管文字通与不通也采用；虽有独有内容但寥寥百数十字而过于简单平常者割爱。",
+      "location": {
+        "name": "陕西延安",
+        "coordinates": [
+          36.6,
+          109.5
+        ]
+      },
+      "participants": [
+        "丁玲",
+        "成仿吾",
+        "艾平"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记》前言篇；艾平写了18篇、童小朋写了7篇，李一氓完成3万字《从金沙江到大渡河》"
+    },
+    {
       "id": "ev_wxyj_19361111",
       "date": "1936-11-11",
       "displayDate": "1936-11-11",
@@ -16646,6 +16814,34 @@
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
     },
     {
+      "id": "wenxian_19360805_snow_alias",
+      "date": "1936-12-02",
+      "displayDate": "1936-12-02",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "杨定华笔名考证：确认为邓发",
+      "description": "据《红军长征记》前言篇：直到八十年代，经过陈云确认，《随军西行见闻录》是他1935年8月于上海等待去苏联的期间写的。1983年11月人民出版社《陈云文选》尚未收录；《红旗》杂志1985年第1期发表中央文献研究室整理注释的《随军西行见闻录》，后收入1995年《陈云文选》第二版。关于杨定华的身份，2006年中央文献出版社出版《亲历长征》时尚未考证出；后来查《邓发纪念文集》，知邓发受中央委派，化名杨鼎华于1936年4月离开陕北瓦窑堡去苏联，12月2日王明、陈云致电中共中央\"邓发同志昨日已到此地\"。杨鼎华与杨定华同音，邓发参加红军长征全程，1935年9月红一方面军整编为陕甘支队时邓发任第三纵队政治委员，这与《由甘肃到陕西》中作者自称\"我从来行军都是随着第三纵队走的\"契合。可以认定杨定华是邓发的笔名。",
+      "location": {
+        "name": "新疆迪化",
+        "coordinates": [
+          43.83,
+          87.62
+        ]
+      },
+      "participants": [
+        "邓发",
+        "陈云",
+        "王明"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记》前言篇；化名杨鼎华/杨定华，同音于杨定华"
+    },
+    {
       "id": "ev_prop_19361228_dengfa",
       "date": "1936-12-28",
       "displayDate": "1936-12-28",
@@ -16776,6 +16972,33 @@
       ],
       "certainty": "high",
       "notes": "坐标待核"
+    },
+    {
+      "id": "wenxian_193702_compile",
+      "date": "1937-02-28",
+      "displayDate": "1937-02-28",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "《红军长征记》编成于1937年2月",
+      "description": "据《红军长征记》前言篇：本书的写作系1936年，编成于1937年2月。当许多作者在回忆这些历史事实时，仍处于国内战争的前线，因此写作时所用语句在今天看来自然有些不妥。全书延安内部版包括文章100篇、诗歌10首、战斗英雄名录2份、附表3份。因当年印数很少，加上战争年代的动荡等原因，国内现在已极为罕见。",
+      "location": {
+        "name": "陕西延安",
+        "coordinates": [
+          36.6,
+          109.5
+        ]
+      },
+      "participants": [
+        "刘统",
+        "总政治部"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记》前言篇《集体创作的英雄史诗》"
     },
     {
       "id": "ev_wxyj_193703_sun",
@@ -17186,6 +17409,33 @@
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
     },
     {
+      "id": "wenxian_194211_print",
+      "date": "1942-11-30",
+      "displayDate": "1942-11-30",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "1942年延安印行《红军长征记》，原文一字未改",
+      "description": "据《红军长征记》前言篇：1942年印行的延安内部版说明称，为供给一些同志作研究我军历史的参考，以及保存这珍贵的历史资料（近来借阅的同志很多，原稿只有一本，深恐损毁或遗失），趁印刷厂工作较空的机会把它印出来；因当年条件困难，印书用的是草做的纸，不易阅读也不易保存，印数也很少。此次付印目的在供作参考及保存史料，故仍依本来面目，一字未改；并要求接到本书的同志妥为保存，不得转让他人，不准再行翻印。哈佛大学燕京图书馆2002年发现一部朱德签名赠给美国作家的延安1942年版《红军长征记》，弥足珍贵。",
+      "location": {
+        "name": "陕西延安",
+        "coordinates": [
+          36.6,
+          109.5
+        ]
+      },
+      "participants": [
+        "朱德",
+        "哈佛燕京图书馆"
+      ],
+      "importance": 4,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记》前言篇；该版为现存最完整、且经三重交叉验证的版本"
+    },
+    {
       "id": "ev_qy_19430812",
       "date": "1943-08-12",
       "displayDate": "1943-08-12",
@@ -17521,6 +17771,59 @@
       ],
       "certainty": "high",
       "notes": "权威来源核实；延伸视角条目，非1934-1936长征主线"
+    },
+    {
+      "id": "wenxian_1954_reprint",
+      "date": "1954-12-31",
+      "displayDate": "1954-12-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "1954年《党史资料》重印《红军长征记》",
+      "description": "据《红军长征记》前言篇：1954年中共中央宣传部编的内部刊物《党史资料》第1—3期重新发表了《中国工农红军第一方面军长征记》，重印序言称：本书原名《红军长征记》，是工农红军第一方面军的同志们经过长征到达陕北后集体写成的；1936年春由第一方面军政治部发起征稿，1937年编成，1942年由总政治部在延安出版，作为党内参考资料；因当时条件困难，印书用的是草做的纸，不易阅读也不易保存，印数也很少，现在所存无几。为了保存史料，决定作为党内参考资料重新印行。重印前将错字校正，尽可能加了些补注和附注，文字上略作修改，并删去了很少几篇，但凡是有些史料价值的统统谨慎地保存下来。内容含文章95篇、诗歌10首、战斗英雄名录2份、附表4份。",
+      "location": {
+        "name": "北京",
+        "coordinates": [
+          39.9,
+          116.4
+        ]
+      },
+      "participants": [
+        "中共中央宣传部"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记》前言篇；1954年重印本较1942年版删去很少几篇"
+    },
+    {
+      "id": "wenxian_1955_selected",
+      "date": "1955-12-31",
+      "displayDate": "1955-12-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "决策",
+      "title": "1955年人民出版社出版《中国工农红军第一方面军长征记》选本",
+      "description": "据《红军长征记》前言篇：1955年人民出版社编辑出版《中国工农红军第一方面军长征记》，这是选本，包含《红军长征记》的回忆录51篇、诗1首、附表3份和4篇综述文章。编者有感于《红军长征记》反映的是红一方面军的情况、没有包含二、四方面军的长征，在书中又附加了缪楚黄的《中国工农红军长征概述》，将长征经过做了一个全面描述。",
+      "location": {
+        "name": "北京",
+        "coordinates": [
+          39.9,
+          116.4
+        ]
+      },
+      "participants": [
+        "人民出版社",
+        "缪楚黄"
+      ],
+      "importance": 3,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记》前言篇；此选本收录了署名\"施平\"的《英勇的西征》"
     }
   ],
   "persons": [
@@ -17784,17 +18087,22 @@
       "hometown": "湖南汨罗",
       "hometownEn": "Miluo, Hunan",
       "forceId": "red_second",
-      "summary": "红二、六军团和红二方面军重要领导人。人物线体现红二方面军从湘鄂川黔到西北会师的政治组织脉络。",
+      "summary": "长征中任红军总政治部副主任、红三军团政治委员，参加遵义会议。以“富春”笔名供稿《红军长征记》，篇目涉及行军纪要与长征后期。",
       "summaryEn": "A major leader of the Second and Sixth Corps and the Red Second Front Army. His timeline shows the political and organizational thread from the Hunan-Hubei-Sichuan-Guizhou base area to the final northwestern convergence.",
       "portrait": "",
       "themeTags": [
         "红二方面军",
         "政治工作",
-        "会师"
+        "会师",
+        "红三军团政委",
+        "遵义会议",
+        "总政治部",
+        "《红军长征记》"
       ],
       "sourceIds": [
         "src_red2_start_12371",
-        "src_jiangtaibao_12371"
+        "src_jiangtaibao_12371",
+        "src_hongjun_changzhengji"
       ],
       "certainty": "high",
       "sort": 110
@@ -17998,10 +18306,13 @@
       "portrait": "",
       "themeTags": [
         "传播史",
-        "共产国际"
+        "共产国际",
+        "《随军西行见闻录》",
+        "《红军长征记》"
       ],
       "sourceIds": [
-        "src_prop_dswy"
+        "src_prop_dswy",
+        "src_hongjun_changzhengji"
       ],
       "certainty": "high",
       "sort": 120
@@ -19947,6 +20258,1225 @@
       ],
       "certainty": "high",
       "sort": 906
+    },
+    {
+      "id": "bi_wu",
+      "name": "毕武",
+      "nameEn": "Bi Wu",
+      "personType": "其他",
+      "birthDate": "1886",
+      "deathDate": "1975",
+      "hometown": "湖北黄安",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "原名毕鸣勋。1911年参加辛亥革命，1920年秋在武汉建立共产主义小组，1921年7月出席中国共产党第一次全国代表大会。长征中任中央纵队干部休养连总支部书记，留下《长征中的医院》《长征中的女英雄》两篇医疗与妇女工作实录。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "一大代表",
+        "中央党校",
+        "妇女工作",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "chang_zhong",
+      "name": "李月波",
+      "nameEn": "Chang Zhong",
+      "personType": "其他",
+      "birthDate": "",
+      "deathDate": "",
+      "hometown": "",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "红三军团保卫局工作人员。留下《我失联络》篇，记述1935年正月初一在遵义府尚溪场一带与民团遭遇、杀出重围的经历。1937年原刊未附生平脚注，姓名待考。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "保卫局",
+        "失联络",
+        "贵州赤水",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "chen_ming",
+      "name": "陈明",
+      "nameEn": "Chen Ming",
+      "personType": "烈士",
+      "birthDate": "1902",
+      "deathDate": "1941",
+      "hometown": "福建龙岩",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "1928年3月任中共福建省委代理书记，组织闽西农民暴动。长征中随干部团行动。1941年11月30日在大青山反扫荡作战中陷入重围壮烈牺牲。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "闽西",
+        "鲁南抗日根据地",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "deng_fa",
+      "name": "邓发",
+      "nameEn": "Deng Fa",
+      "personType": "其他",
+      "birthDate": "1906",
+      "deathDate": "1946",
+      "hometown": "广东云浮",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中任中央军委第二野纵队副司令员、政委，参加遵义会议。其《雪山草地行军记》《从甘肃到陕西》两篇托名俘虏身份写成，1936—1937年曾在巴黎《救国时报》连载，是研究长征后期行动的重要文献。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "雪山草地行军记",
+        "特科",
+        "肃反",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "deng_hua",
+      "name": "邓华",
+      "nameEn": "Deng Hua",
+      "personType": "将帅",
+      "birthDate": "1910",
+      "deathDate": "1980",
+      "hometown": "湖南郴州",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "1928年参加湘南起义。长征时任红一军团第二师第二团政委，留下《长征前的红五军团》等篇。1950年任志愿军司令员兼政委，1955年被授予上将军衔。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "湘南起义",
+        "志愿军",
+        "海南岛",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "feng_wenbin",
+      "name": "冯文彬",
+      "nameEn": "Feng Wenbin",
+      "personType": "其他",
+      "birthDate": "1911",
+      "deathDate": "1997",
+      "hometown": "浙江诸暨",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中任红一军团政治部组织部副部长兼巡视团主任。留下《从西昌坝子到安顺场》篇，是记录彝海结盟与安顺场强渡最详尽的亲历者之一。1936年任共青团中央书记。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红一军团",
+        "共青团中央",
+        "党史研究",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "geng_biao",
+      "name": "耿飚",
+      "nameEn": "Geng Biao",
+      "personType": "将帅",
+      "birthDate": "1909",
+      "deathDate": "2000",
+      "hometown": "湖南醴陵",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征时任红一军团第一师参谋长。建国后长期从事外交工作，曾任多国大使，后任国务院副总理、国防部部长。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红一军团",
+        "外交",
+        "国防部长",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "guo_diren",
+      "name": "郭滴人",
+      "nameEn": "Guo Diren",
+      "personType": "烈士",
+      "birthDate": "1907",
+      "deathDate": "1936",
+      "hometown": "福建龙岩",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "闽西革命根据地创建人之一。长征中随红三军团行动，留下《广西瑶民》篇，是全书唯一系统记述瑶族习俗与红军民族政策的专文。因病早逝，该篇稿未完。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "闽西苏区",
+        "民族工作",
+        "瑶民",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "he_zhaochang",
+      "name": "何涤宙",
+      "nameEn": "He Zhaochang",
+      "personType": "其他",
+      "birthDate": "1908",
+      "deathDate": "1942",
+      "hometown": "浙江临海",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "原名何兆昌。黄埔四期学员，1933年在中央苏区第四次反“围剿”中被红军俘虏。长征中随干部团行动，在突破乌江战斗中是架桥的主要功臣。留下《遵义日记》《绝食的一天》等篇。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "工兵",
+        "架桥",
+        "乌江",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "huang_kegong",
+      "name": "黄克功",
+      "nameEn": "Huang Kegong",
+      "personType": "烈士",
+      "birthDate": "1911",
+      "deathDate": "1937",
+      "hometown": "江西南康",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中在二渡赤水的娄山关战役中立大功。延安时期任抗大第二期第十五队、第三期第六队队长。1937年10月5日因逼婚未遂枪杀陕北公学学员刘茜，同年10月12日经陕甘宁边区高等法院判决执行死刑。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "娄山关",
+        "抗大",
+        "陕北公学事件",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "huang_zhen",
+      "name": "黄镇",
+      "nameEn": "Huang Zhen",
+      "personType": "其他",
+      "birthDate": "1909",
+      "deathDate": "1989",
+      "hometown": "安徽桐城",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "1931年参加宁都起义。长征中任红五军团政治部文化科科长等职，留下《长征前的红五军团》篇。建国后历任文化部部长，出版有《长征画集》。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红五军团",
+        "文化",
+        "《长征画集》",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "jia_lun",
+      "name": "彭加伦",
+      "nameEn": "Jia Lun",
+      "personType": "其他",
+      "birthDate": "1906",
+      "deathDate": "1970",
+      "hometown": "江西奉新",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "笔名加伦，红一军团政治部宣传科长，为《红色中华》等苏区报纸撰写大量战地通讯和诗歌。长征中留下《飞夺泸定桥》《十七个》《病员的话》等11篇，为《红军长征记》中记录战斗与医疗救护的重要作者。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红一军团",
+        "宣传",
+        "战地通讯",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "jia_tuofu",
+      "name": "贾拓夫",
+      "nameEn": "Jia Tuofu",
+      "personType": "其他",
+      "birthDate": "1912",
+      "deathDate": "1967",
+      "hometown": "陕西神木",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中任红军总政治部白军工作部部长，1935年10月中央红军到达陕甘地区后受中央委托负责陕北党组织与红军的联络工作。留下《松潘的西北》《榜罗镇》等篇。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "白军工作部",
+        "陕北联络",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "li_xuesan",
+      "name": "李雪三",
+      "nameEn": "Li Xuesan",
+      "personType": "将帅",
+      "birthDate": "1910",
+      "deathDate": "1992",
+      "hometown": "河南修武",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "1931年参加宁都起义。长征中任红五军团三十八师政治部宣传科长，到陕北后任红十五军团统战部部长。留下《艰苦奋斗的五军团》等篇，1955年被授予中将军衔。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "宁都起义",
+        "红五军团",
+        "统战",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "li_yimang",
+      "name": "李一氓",
+      "nameEn": "Li Yimang",
+      "personType": "其他",
+      "birthDate": "1903",
+      "deathDate": "1990",
+      "hometown": "四川成都",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征时任红军总政治部宣传部科长、干部团教员。留下《由金沙江到大渡河——一页日记》《吃冰琪林》等篇，是全书日记体与抒情文字的主要作者之一。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红军总政治部",
+        "新四军",
+        "《长征组歌》",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "li_zhi",
+      "name": "李治",
+      "nameEn": "Li Zhi",
+      "personType": "将帅",
+      "birthDate": "1899",
+      "deathDate": "1989",
+      "hometown": "江西永新",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中任红军卫生学校教育长，随总卫生部行动。留下《长征中卫生教育和医疗工作》篇，系统记述卫生学校、卓克基休养连、过雪山与过草地的医疗救护措施，1955年被授予少将军衔。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "卫生学校",
+        "休养连",
+        "医疗救护",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "liao_zhigao",
+      "name": "廖志高",
+      "nameEn": "Liao Zhigao",
+      "personType": "其他",
+      "birthDate": "1913",
+      "deathDate": "2000",
+      "hometown": "四川冕宁",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "四川冕宁人，红军长征到达冕宁后参加红军，任红军总政治部地方工作部干事等职。留下《一个忠实的革命“倮倮”》篇，是全书唯一以彝族红军当事人身份写作的篇目。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "冕宁",
+        "地方工作部",
+        "民族工作",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "liu_tong",
+      "name": "刘统",
+      "nameEn": "Liu Tong",
+      "personType": "其他",
+      "birthDate": "1963",
+      "deathDate": "",
+      "hometown": "上海",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "《红军长征记》现代整理者，为2006年生活·读书·新知三联书店版作《前言：集体创作的英雄史诗》。考证出莫休即总政治部宣传部长徐梦秋，并据1937年誊清稿恢复5篇被1942年版删改的文章。非长征亲历者。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "整理",
+        "《红军长征记》前言",
+        "文献学"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "liu_zhong",
+      "name": "刘忠",
+      "nameEn": "Liu Zhong",
+      "personType": "将帅",
+      "birthDate": "1906",
+      "deathDate": "2002",
+      "hometown": "福建上杭",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征时任红一军团司令部侦察科科长。留下《泸沽到大渡河》篇，记述越嶲释放彝人狱囚、争取彝民参军经过。1955年被授予中将军衔。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红一军团侦察科",
+        "十八兵团",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "luo_huasheng",
+      "name": "罗华生",
+      "nameEn": "Luo Huasheng",
+      "personType": "将帅",
+      "birthDate": "1910",
+      "deathDate": "1991",
+      "hometown": "湖南湘潭",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中任红一军团二师四团政治委员。留下《强渡大渡河泸定桥的经过》篇，详细记录飞夺泸定桥全过程。1955年被授予少将军衔。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红一军团二师四团",
+        "泸定桥",
+        "铁道兵",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "shu_tong",
+      "name": "舒同",
+      "nameEn": "Shu Tong",
+      "personType": "其他",
+      "birthDate": "1905",
+      "deathDate": "1998",
+      "hometown": "江西东乡",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中任红二师政治部宣传科长、政治部主任。留下《芦花运粮》《由金沙江到大渡河——一页日记》等篇。是中国书法家协会第一届主席。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红二师",
+        "书法",
+        "宣传",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "shu_xia",
+      "name": "曙霞",
+      "nameEn": "Shu Xia",
+      "personType": "其他",
+      "birthDate": "",
+      "deathDate": "",
+      "hometown": "",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "笔名曙霞，《红军长征记》供稿人之一，留下《小茅屋——贵州西北边境的贫民生活写真》《渡金沙江》《通过草地》三篇。1937年原刊未附生平脚注，生卒年与籍贯待考。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "渡金沙江",
+        "通过草地",
+        "贫民生活",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "six_marksmen",
+      "name": "六个模范特等射手",
+      "nameEn": "Six model sharpshooters",
+      "personType": "其他",
+      "birthDate": "",
+      "deathDate": "",
+      "hometown": "",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "《红军长征记》集体署名篇《安顺场战斗的英雄》的作者署名，为安顺场战斗中六名模范特等射手群体。篇末录1935年5月30日《战斗报》所载袁行安、宋远海等战士姓名。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "集体署名",
+        "安顺场",
+        "英雄名录",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "swimmers_and_punters",
+      "name": "泅水及撑排的",
+      "nameEn": "Swimmers and punters",
+      "personType": "其他",
+      "birthDate": "",
+      "deathDate": "",
+      "hometown": "",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "《红军长征记》集体署名篇《乌江战斗中的英雄》的作者署名，实为参加乌江战斗的泅水与撑排战士群体。篇末录1935年1月15日《红星报》所载八名战士姓名（曾传林、刘昌华、钟家通、朱光宣、林文来、温赞元、刘福炳、罗家平）。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "集体署名",
+        "乌江",
+        "英雄名录",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "tan_zheng",
+      "name": "谭政",
+      "nameEn": "Tan Zheng",
+      "personType": "其他",
+      "birthDate": "1906",
+      "deathDate": "1988",
+      "hometown": "湖南湘乡",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征时任红一军团第一师政治委员、军团政治部组织部部长。抗日及解放战争时期长期任政治部门领导，建国后任解放军总政治部主任。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红一军团",
+        "政治工作",
+        "总政治部",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "tong_xiaopeng",
+      "name": "童小朋",
+      "nameEn": "Tong Xiaopeng",
+      "personType": "其他",
+      "birthDate": "1914",
+      "deathDate": "2007",
+      "hometown": "福建长汀",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征时任红一军团政治部秘书。著有《军中日记》《风雨四十年》等。抗战及建国后长期从事机要、秘书与统战工作，任中共中央统战部秘书长、国务院副秘书长。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红一军团",
+        "机要",
+        "秘书",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "wang_huazheng",
+      "name": "王华政",
+      "nameEn": "Wang Huazheng",
+      "personType": "将帅",
+      "birthDate": "1910",
+      "deathDate": "2003",
+      "hometown": "四川达县",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "本名王华政，笔名艾平、斯顿，《红军长征记》供稿最多的作者（18篇）。长征中任红三军团第四师政治部主任，第十一团、第十三团政委。1949年受命组建海军部队，任华东海军司令员兼政委；1955年指挥一江山岛联合登陆作战，后组织领导“两弹一星”研制工程。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红三军团",
+        "政治工作",
+        "海军",
+        "国防科技",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "wang_huiqiu",
+      "name": "王辉球",
+      "nameEn": "Wang Huiqiu",
+      "personType": "将帅",
+      "birthDate": "1911",
+      "deathDate": "2003",
+      "hometown": "江西万安",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "曾任红一军团特务连政治委员、第五师政治部代秘书长等职，参加长征。建国后历任空军政治委员、沈阳军区政治委员，1955年被授予中将军衔。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红一军团",
+        "宣传",
+        "空军政治委员",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "wang_ping_san11",
+      "name": "王平",
+      "nameEn": "Wang Ping",
+      "personType": "将帅",
+      "birthDate": "",
+      "deathDate": "",
+      "hometown": "",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "即红三军团第四师第十一团政治委员王平。原文以“斯顿”署名供稿《“没有到敌人呀！”》《占领宜章城》两篇，写第二道封锁线突破经过。1937年原刊未附生平脚注。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红三军团第四师",
+        "政治委员",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "wang_shoudao",
+      "name": "王首道",
+      "nameEn": "Wang Shoudao",
+      "personType": "其他",
+      "birthDate": "1906",
+      "deathDate": "1996",
+      "hometown": "湖南浏阳",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "湘赣苏区创建人。长征中任军委第一野战纵队政治部主任，到陕北后任红十五军团政治部主任。留下《到了亲家》篇，记述苏区群众慰劳红军的场景。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红十五军团",
+        "南下支队",
+        "地方工作",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "xiao_hua",
+      "name": "萧华",
+      "nameEn": "Xiao Hua",
+      "personType": "将帅",
+      "birthDate": "1916",
+      "deathDate": "1985",
+      "hometown": "江西兴国",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中任红一军团第二师政委，指挥强渡乌江、大渡河战斗。留下《强渡大渡河泸定桥的经过》篇。作有《长征组歌》歌词，1955年被授予上将军衔。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "少共国际师",
+        "红一军团第二师政委",
+        "《长征组歌》",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "xiao_jinguang",
+      "name": "刘亚楼",
+      "nameEn": "Xiao Jinguang",
+      "personType": "将帅",
+      "birthDate": "1910",
+      "deathDate": "1965",
+      "hometown": "福建武平",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中任红一军团第二师政委，率部担任前锋，取得强搜乌江、智取遵义、勇夺娄山关和四渡赤水等胜利。建国后任空军司令员，1955年被授予上将军衔。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红一军团第二师政委",
+        "空军司令员",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "xie_hanwen",
+      "name": "谢翰文",
+      "nameEn": "Xie Hanwen",
+      "personType": "烈士",
+      "birthDate": "1908",
+      "deathDate": "1942",
+      "hometown": "湖南耒阳",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "1928年初领导水口山铅锌矿工人武装起义。长征中任红三军团政治部宣传部长，为红军编写许多行军快板。留下《扩大红军》《过单家集》等篇，1942年在山西武乡反“扫荡”作战中英勇牺牲。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红三军团",
+        "宣传",
+        "行军快板",
+        "扩红",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "xiong_bo_tao",
+      "name": "熊伯涛",
+      "nameEn": "Xiong Botao",
+      "personType": "将帅",
+      "birthDate": "1904",
+      "deathDate": "1975",
+      "hometown": "湖北黄陂",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "1931年12月宁都起义参加红军。长征中任红三军八师参谋长、红一军团二师参谋长。留下《茅台酒》篇，1955年被授予少将军衔。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "宁都起义",
+        "红一军团",
+        "茅台",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "xu_sidai",
+      "name": "徐思迪",
+      "nameEn": "Xu Sidai",
+      "personType": "将帅",
+      "birthDate": "1909",
+      "deathDate": "1995",
+      "hometown": "湖北荆门",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "1927年参加秋收起义。长征时任红一军团教导营营长，留下《倒流水四个连控制敌人三个师》《夺取定番城》等篇，1947年任华东野战军参谋长，1955年被授予上将军衔。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红一军团教导营",
+        "直罗镇",
+        "平型关",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "xu_teluo",
+      "name": "徐特立",
+      "nameEn": "Xu Teluo",
+      "personType": "其他",
+      "birthDate": "1877",
+      "deathDate": "1968",
+      "hometown": "湖南长沙",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中任中华苏维埃共和国临时中央政府教育部部长，参加南昌起义。留下《长征中的医院》篇，以六十岁老头身份记述医院看护、妇女工作团与夜行军经历。著有《徐特立文集》。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "教育部长",
+        "休养连",
+        "长征中的医院",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "xue_feng",
+      "name": "彭雪枫",
+      "nameEn": "Xue Feng",
+      "personType": "烈士",
+      "birthDate": "1907",
+      "deathDate": "1944",
+      "hometown": "河南镇平",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中任红三军团第十三团团长，指挥夺取娄山关。留下《娄山关前后》《老山界》《榜罗镇》等篇，1944年9月11日在河南夏邑八里庄指挥作战时中弹牺牲。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红三军团十三团",
+        "娄山关",
+        "新四军第四师",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "yang_chengwu",
+      "name": "杨诚武",
+      "nameEn": "Yang Chengwu",
+      "personType": "将帅",
+      "birthDate": "1914",
+      "deathDate": "2004",
+      "hometown": "福建长汀",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中任红一军团第二师四团政治委员，参与指挥强渡乌江、攻打娄山关、飞夺泸定桥、攻占腊子口。留下《突破天险的腊子口》篇，1955年被授予上将军衔。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红一军团二师四团政委",
+        "腊子口",
+        "代总参谋长",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "zeng_san",
+      "name": "曾三",
+      "nameEn": "Zeng San",
+      "personType": "其他",
+      "birthDate": "1906",
+      "deathDate": "1990",
+      "hometown": "湖南益阳",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "红军和中央苏区无线电通信事业创建人，苏区中央局电台政委、台长。长征中记述了电讯保障工作。1946年冬负责将中央机密档案安全转移到河北平山西柏坡。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "无线电",
+        "档案",
+        "西柏坡",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "zhang_jichun",
+      "name": "张际春",
+      "nameEn": "Zhang Jichun",
+      "personType": "其他",
+      "birthDate": "1900",
+      "deathDate": "1968",
+      "hometown": "湖南宜章",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征前任红五军团政治部宣传部长，参加长征。留下《铁屁股》篇，论述红五军团担任军委指定殿后任务的战斗作风。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红五军团",
+        "殿后",
+        "抗战",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "zhang_zhen",
+      "name": "张震",
+      "nameEn": "Zhang Zhen",
+      "personType": "将帅",
+      "birthDate": "1914",
+      "deathDate": "2015",
+      "hometown": "湖南平江",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "长征中任红三军团第四师十团三营营长。建国后历任第三野战军参谋长、总后勤部部长、国防大学校长、中央军委副主席。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红三军团",
+        "第三野战军参谋长",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "zhou_biquan",
+      "name": "周碧泉",
+      "nameEn": "Zhou Biquan",
+      "personType": "其他",
+      "birthDate": "1910",
+      "deathDate": "1981",
+      "hometown": "湖南平江",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "1927年参加平江农民自卫军。长征中任红五军团十三师师政治部主任等职。留下《长征中走在最后头的一个师》篇，记述后卫部队过湘江、老山界与苗山的经历。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红五军团十三师",
+        "后卫",
+        "湘江",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "zhou_shidi",
+      "name": "周士第",
+      "nameEn": "Zhou Shidi",
+      "personType": "将帅",
+      "birthDate": "1900",
+      "deathDate": "1979",
+      "hometown": "广东乐会",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "字士梯。1924年黄埔军校第一期毕业。长征时任军委干部团上干队指挥科长、队长，留下《吃冰琪林》等篇。建国后历任西南军区副司令员、防空部队司令员，1955年被授予上将军衔，著有《周士第回忆录》。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "黄埔一期",
+        "干部团",
+        "参谋长",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "张云逸",
+      "name": "张云逸",
+      "nameEn": "Fang Zhimin",
+      "personType": "将帅",
+      "birthDate": "1892",
+      "deathDate": "1974",
+      "hometown": "广东文昌",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "早年参加同盟会与黄花岗起义。1929年参与领导广西百色起义，任红七军军长。留下《聂都游击队的记述》篇，记述粤赣湘边游击队创建、扩大红军与群众工作方法。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "百色起义",
+        "红七军",
+        "新四军",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "徐梦秋",
+      "name": "徐梦秋",
+      "nameEn": "Mo Xiu",
+      "personType": "其他",
+      "birthDate": "1895",
+      "deathDate": "1976",
+      "hometown": "安徽寿县",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "《红军长征记》实际编者，长征中任红三军团宣传部长、到陕北后任总政治部宣传部长，主编全书。过雪山时冻坏双腿截肢，1937年赴苏联治病，抵迪化后被盛世才留用。1943年盛世才投向国民党后叛变投靠军统，1949年被捕归案长期关押，1976年病死狱中。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "《红军长征记》主编",
+        "红三军团宣传部长",
+        "叛变"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "莫文骅",
+      "name": "莫文骅",
+      "nameEn": "Deng Zihua",
+      "personType": "将帅",
+      "birthDate": "1910",
+      "deathDate": "2000",
+      "hometown": "广西南宁",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "1929年参加百色起义。长征中任红八军团宣传部长、上级干部队政委、干部团政治处主任。抗战后历任抗大政治部主任、解放军政治学院院长，1955年被授予中将军衔。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "百色起义",
+        "红八军团",
+        "抗大",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "谢扶民",
+      "name": "谢扶民",
+      "nameEn": "Wei Guoqiang",
+      "personType": "其他",
+      "birthDate": "1911",
+      "deathDate": "1974",
+      "hometown": "广西田东",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "1929年参加百色起义，被誉为“红色宣传员”。长征中任红三军团团政委、军政治部副主任，留下《经贵州苗山》《草地行军六天缩影》《到了亲家》等篇，是全书民族工作与群众工作的主要记录者之一。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "百色起义",
+        "红三军团",
+        "民族工作",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "谢觉哉",
+      "name": "谢觉哉",
+      "nameEn": "Jue Zhai",
+      "personType": "其他",
+      "birthDate": "1884",
+      "deathDate": "1971",
+      "hometown": "湖南宁乡",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "笔名觉哉。1933年到中央苏区工作，任中华苏维埃共和国临时中央政府秘书长、内务部长，主持和参加起草最早的《劳动法》《土地法》《婚姻条例》。长征中留下《番民生活鳞片》《卓克基土司宫》《真是“蛮子”》等民族工作与法制考察篇。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "苏区法制",
+        "土司",
+        "番民生活",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
+    },
+    {
+      "id": "陆定一",
+      "name": "陆定一",
+      "nameEn": "Ding Yi",
+      "personType": "其他",
+      "birthDate": "1906",
+      "deathDate": "1996",
+      "hometown": "江苏无锡",
+      "hometownEn": "",
+      "forceId": "red_first",
+      "summary": "笔名定一。1934年随中央第二纵队干部队参加长征，遵义会议后任红军总政治部宣传部部长，主编《红星》报。著有《老山界》《茅山四连扼守乌江》等篇，抗战后任中宣部部长。",
+      "summaryEn": "",
+      "portrait": "",
+      "themeTags": [
+        "红军总政治部",
+        "《红星》报",
+        "宣传",
+        "《红军长征记》"
+      ],
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "medium",
+      "sort": 999
     }
   ],
   "personEvents": [
