@@ -112,6 +112,7 @@ function renderModuleCatalog() {
     renderCatalogContent();
   };
   renderEvidenceFilter();
+  renderTopicFilter();
   renderCatalogContent();
   loadVariantGroups();
 }
@@ -131,6 +132,35 @@ function renderEvidenceFilter() {
   box.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
     catalogEvidence = btn.dataset.evidence;
     renderEvidenceFilter();
+    renderCatalogContent();
+  }));
+}
+
+// 主题筛选：把 599 条事件里新出现的维度（民族工作、医疗救护、妇女、里程统计、
+// 逐日行军纪要）暴露成可点的入口。纯呈现层，不改数据。
+let catalogTopic = 'all';
+const TOPIC_FILTERS = [
+  { key: 'all', label: '全部主题', types: null },
+  { key: 'ethnic', label: '民族工作', types: ['民族'] },
+  { key: 'medical', label: '医疗救护', types: ['医疗'] },
+  { key: 'women', label: '妇女与生活', types: ['生活'] },
+  { key: 'march', label: '逐日行军纪要', types: ['行军'] },
+  { key: 'distance', label: '里程统计', types: ['里程'] },
+  { key: 'spread', label: '长征传播', types: ['传播'] },
+];
+
+function renderTopicFilter() {
+  const box = document.getElementById('catalog-topic');
+  if (!box) return;
+  if (catalogModule !== 'events') { box.innerHTML = ''; return; }
+  box.innerHTML = TOPIC_FILTERS.map(t => {
+    const n = t.types ? (museumData.events || []).filter(e => t.types.includes(e.type)).length : null;
+    const label = t.types ? `${t.label} ${n}` : t.label;
+    return `<button class="${catalogTopic === t.key ? 'active' : ''}" data-topic="${t.key}">${escapeHTML(label)}</button>`;
+  }).join('');
+  box.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
+    catalogTopic = btn.dataset.topic;
+    renderTopicFilter();
     renderCatalogContent();
   }));
 }
@@ -253,6 +283,12 @@ function filterCatalogItems(items) {
   let out = items;
   if (catalogModule === 'events' && catalogEvidence && catalogEvidence !== 'all') {
     out = out.filter(item => item.event && String(item.event.certainty).toLowerCase() === catalogEvidence);
+  }
+  if (catalogModule === 'events' && catalogTopic && catalogTopic !== 'all') {
+    const t = TOPIC_FILTERS.find(x => x.key === catalogTopic);
+    if (t && t.types) {
+      out = out.filter(item => item.event && t.types.includes(item.event.type));
+    }
   }
   if (!query) return out;
   return out.filter(item => normalizeCatalogQuery(item.searchText).includes(query));

@@ -232,6 +232,7 @@ a { color: inherit; }
 .variant-sources a { color: #6d4a78; }
 /* 证据等级筛选控件（仅事件模块） */
 .catalog-evidence { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.catalog-topic { margin-top: 6px; padding-top: 6px; border-top: 1px dashed rgba(0,0,0,.08); }
 .catalog-evidence button {
   background: #eef0e8; color: #4f554d; border: 1px solid #d8dccb;
   border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 700; cursor: pointer;
