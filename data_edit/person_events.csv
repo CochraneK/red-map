@@ -490,3 +490,16 @@ TRUE,li_zhi,ev_snow_19350612_jinshan,亲历记述,《红军长征记》署名作
 TRUE,xu_teluo,hjdet_12,亲历记述,《红军长征记》署名作者，见过雪山的七条防冻准备,src_hongjun_changzhengji,10
 TRUE,six_marksmen,rf_19350525_anshunchang,亲历记述,《红军长征记》署名作者，见强渡大渡河,src_hongjun_changzhengji,10
 TRUE,six_marksmen,en_19350525_dadu_block,亲历记述,《红军长征记》署名作者，见大渡河一线敌军封锁与追击,src_hongjun_changzhengji,20
+TRUE,jia_lun,ev_czj_19350529_luding,作者,其篇《飞夺泸定桥》,src_hongjun_changzhengji,80
+TRUE,谢觉哉,hjdet_10,作者,其篇《卓克基土司宫》,src_hongjun_changzhengji,10
+TRUE,谢觉哉,hj2_19350225_erlangtan,作者,其篇《番民生活鳞片》关联金川藏区,src_hongjun_changzhengji,20
+TRUE,xue_feng,hj2_19350228_loushanguan,作者,其篇《娄山关前后》,src_hongjun_changzhengji,20
+TRUE,xue_feng,hj2_19350228_loushanguan_assault,作者,其篇《娄山关前后》,src_hongjun_changzhengji,30
+TRUE,xue_feng,hj2_19350228_loushanguan_pursuit,作者,其篇《娄山关前后》,src_hongjun_changzhengji,40
+TRUE,xiao_jinguang,czj_19350102_wujiang_jiangjiehe,作者,其篇《渡乌江》,src_hongjun_changzhengji,10
+TRUE,xiao_jinguang,czj_19350102_wujiang_huilongchang,亲历者,其篇《渡乌江》,src_hongjun_changzhengji,20
+TRUE,guo_diren,hjdet_04,作者,其篇《广西瑶民》,src_hongjun_changzhengji,10
+TRUE,feng_wenbin,rf_19350522_yihai_alliance,作者,其篇《从西昌坝子到安顺场》,src_hongjun_changzhengji,10
+TRUE,xie_hanwen,hjdet_18,作者,其篇《过单家集》,src_hongjun_changzhengji,10
+TRUE,陆定一,steam_rf_19341204_26d6a580,作者,其篇《老山界》,src_hongjun_changzhengji,90
+TRUE,陆定一,dashi_19341012,作者,追记《长征大事记》（1934年10月）,src_hongjun_changzhengji,100

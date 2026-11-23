@@ -22537,6 +22537,16 @@
       "sort": 20
     },
     {
+      "personId": "feng_wenbin",
+      "eventId": "rf_19350522_yihai_alliance",
+      "role": "作者",
+      "note": "其篇《从西昌坝子到安顺场》",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
       "personId": "fengbaiju",
       "eventId": "ev_qy_193304",
       "role": "领导者",
@@ -22707,6 +22717,16 @@
         "src_steam_longmarch_1934_1936"
       ],
       "sort": 9333
+    },
+    {
+      "personId": "guo_diren",
+      "eventId": "hjdet_04",
+      "role": "作者",
+      "note": "其篇《广西瑶民》",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
     },
     {
       "personId": "guo_hongtao",
@@ -23044,6 +23064,16 @@
         "src_hongjun_changzhengji"
       ],
       "sort": 70
+    },
+    {
+      "personId": "jia_lun",
+      "eventId": "ev_czj_19350529_luding",
+      "role": "作者",
+      "note": "其篇《飞夺泸定桥》",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 80
     },
     {
       "personId": "jin_like",
@@ -24619,6 +24649,26 @@
       "sort": 50
     },
     {
+      "personId": "xiao_jinguang",
+      "eventId": "czj_19350102_wujiang_jiangjiehe",
+      "role": "作者",
+      "note": "其篇《渡乌江》",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "xiao_jinguang",
+      "eventId": "czj_19350102_wujiang_huilongchang",
+      "role": "亲历者",
+      "note": "其篇《渡乌江》",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 20
+    },
+    {
       "personId": "xiao_ke",
       "eventId": "r2_19351119_sangzhi_start",
       "role": "领导者",
@@ -24697,6 +24747,16 @@
       "note": "彝海结盟后派向导带路",
       "sourceIds": [
         "src_yihai_people"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "xie_hanwen",
+      "eventId": "hjdet_18",
+      "role": "作者",
+      "note": "其篇《过单家集》",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
       ],
       "sort": 10
     },
@@ -25124,6 +25184,36 @@
         "src_hongjun_changzhengji"
       ],
       "sort": 10
+    },
+    {
+      "personId": "xue_feng",
+      "eventId": "hj2_19350228_loushanguan",
+      "role": "作者",
+      "note": "其篇《娄山关前后》",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 20
+    },
+    {
+      "personId": "xue_feng",
+      "eventId": "hj2_19350228_loushanguan_assault",
+      "role": "作者",
+      "note": "其篇《娄山关前后》",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 30
+    },
+    {
+      "personId": "xue_feng",
+      "eventId": "hj2_19350228_loushanguan_pursuit",
+      "role": "作者",
+      "note": "其篇《娄山关前后》",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 40
     },
     {
       "personId": "xue_yue",
@@ -26572,6 +26662,26 @@
       "sort": 9326
     },
     {
+      "personId": "谢觉哉",
+      "eventId": "hjdet_10",
+      "role": "作者",
+      "note": "其篇《卓克基土司宫》",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 10
+    },
+    {
+      "personId": "谢觉哉",
+      "eventId": "hj2_19350225_erlangtan",
+      "role": "作者",
+      "note": "其篇《番民生活鳞片》关联金川藏区",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 20
+    },
+    {
       "personId": "陆定一",
       "eventId": "czj_19341021_first_blockade",
       "role": "亲历记述",
@@ -26650,6 +26760,26 @@
         "src_hongjun_changzhengji"
       ],
       "sort": 80
+    },
+    {
+      "personId": "陆定一",
+      "eventId": "steam_rf_19341204_26d6a580",
+      "role": "作者",
+      "note": "其篇《老山界》",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 90
+    },
+    {
+      "personId": "陆定一",
+      "eventId": "dashi_19341012",
+      "role": "作者",
+      "note": "追记《长征大事记》（1934年10月）",
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "sort": 100
     }
   ],
   "museum": {
