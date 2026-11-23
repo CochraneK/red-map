@@ -886,6 +886,14 @@
       "url": "https://www.xinhuanet.com/politics/2021-09/13/c_1211367910.htm",
       "note": "范长江报道",
       "sourceType": "authoritative"
+    },
+    {
+      "id": "src_hongjun_changzhengji",
+      "title": "红军长征记（1937年2月编定，1942年11月延安印行）",
+      "publisher": "延安解放出版社（1942内部印行）；刘统整理注释本（生活·读书·新知三联书店）",
+      "url": "https://mooc1.chaoxing.com/mooc-ans/ztnodedetailcontroller/visitnodedetail?courseId=223004759&knowledgeId=524772136",
+      "note": "中共党史上最早的长征集体回忆录，百余位亲历者亲笔，共135篇（100篇文章+10首歌曲+3个统计表）。底本1937/1942年出版，多数单篇作者已逝世逾50年，底本已进入公有领域；现代整理注释本受保护，本项目仅提取事实要素并注明出处，不转载原文。核心篇目含《随军西行见闻录》（陈云，92KB）、《英勇的西征》（陈云）、《雪山草地行军记》（邓发）、《从甘肃到陕西》（邓发）、《长征大事记》（陆定一，逐日编年）、《红军第一军团长征中经过地点及里程一览表》（总行程18088里）。",
+      "sourceType": "authoritative"
     }
   ],
   "subjects": [
@@ -2650,6 +2658,32 @@
       }
     },
     {
+      "id": "dashi_19341012",
+      "date": "1934-10-12",
+      "displayDate": "1934-10-12",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "10月12日中央红军野战军行军纪要",
+      "description": "红一方面军改编为野战军，开始向西南移动。",
+      "location": {
+        "name": "赣南·信丰至于都一线",
+        "coordinates": [
+          25.3,
+          114.6
+        ]
+      },
+      "participants": [
+        "中央红军野战军"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年10月12日逐日记录；原件藏中央档案馆"
+    },
+    {
       "id": "steam_rf_19341016_6cb371a0",
       "date": "1934-10-16",
       "displayDate": "1934-10-16",
@@ -2829,6 +2863,58 @@
       "titleEn": "Divisional Commander Hong Chao Killed"
     },
     {
+      "id": "dashi_19341023",
+      "date": "1934-10-23",
+      "displayDate": "1934-10-23",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "10月23日红一军团、红三军团行军纪要·安息圩",
+      "description": "一军团主力与粤敌第一师在安息圩附近激战，俘获敌官兵三百余人，缴轻机枪二挺，步枪及军用品甚多。当晚主力向铁石圩石材圩前进。三军团先头第五师在大塘铺将粤敌之二个连全部消灭，俘获人枪二百余。主力当晚渡过信丰河，在大江圩小河圩王庄地域宿营。五军团到达小岔双芫地域，其一个团进至韩坊。八军团全部到达凹头，以一部向龙回侦察前进。九军团到达安息附近，监视安息之粤敌。军委二纵队不动。野战军司令部移至古陂东十里之杨坊。",
+      "location": {
+        "name": "安息圩、石材圩、铁石圩",
+        "coordinates": [
+          25.3,
+          114.1
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年10月23日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341024",
+      "date": "1934-10-24",
+      "displayDate": "1934-10-24",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "10月24日红一军团、红三军团行军纪要·乌径",
+      "description": "一军团主力在石材圩休息。其第二师当晚二十四时向乌径前进。三军团主力在小河圩大江圩休息。其第五师黄昏后向九渡水江口前进。五军团休息一天。八军团在凹头不动，向信丰警戒。九军团到大坪附近。军委二纵队移古陂。野战军司令部在杨坊休息。",
+      "location": {
+        "name": "乌径、石材圩、九渡水",
+        "coordinates": [
+          25.3,
+          114.6
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年10月24日逐日记录；原件藏中央档案馆"
+    },
+    {
       "id": "steam_rf_19341025_2e33bd01",
       "date": "1934-10-25",
       "displayDate": "1934-10-25",
@@ -2884,6 +2970,84 @@
       "certainty": "low"
     },
     {
+      "id": "dashi_19341027",
+      "date": "1934-10-27",
+      "displayDate": "1934-10-27",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "10月27日红一军团、红三军团行军纪要·南溪",
+      "description": "一军团主力经小溪渡大庾河，进至南溪青龙长江之线。三军团主力到达新溪附近。五军团到九渡水附近。八军团向大摆坑杨眉寺前进。九军团到达三江口附近。军委二纵队到达九渡水潭塘坑之间地域。野战司令部到潭塘坑宿营。",
+      "location": {
+        "name": "南溪、大庾河、小溪",
+        "coordinates": [
+          25.3,
+          114.6
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年10月27日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341028",
+      "date": "1934-10-28",
+      "displayDate": "1934-10-28",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "10月28日红一军团、红三军团行军纪要·下坑",
+      "description": "一军团第二师经石门口大龙山到义安圩及其以西宿营。主力随后跟进，在下坑石头坝之线宿营。三军团一部占领崇义城。县长率“铲匪”百余人，二十六日急向大庾逃走。该军团主力在稳下横断地区宿营。五军团进至新城附近。八军团，二十三师到达大摆坑，二十一师在杨眉寺。九军团到达凤凰城青龙圩青秋坝地区。军委二纵队到达老池口池江街地区。野战军司令部到达王村杨梅城。",
+      "location": {
+        "name": "下坑、义安圩、大龙山",
+        "coordinates": [
+          25.3,
+          114.6
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年10月28日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341029",
+      "date": "1934-10-29",
+      "displayDate": "1934-10-29",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "10月29日中央红军野战军行军纪要",
+      "description": "野战军全部各在原地休息。准备迎击由大庾方面进攻之粤敌。",
+      "location": {
+        "name": "赣南·信丰至于都一线",
+        "coordinates": [
+          25.3,
+          114.6
+        ]
+      },
+      "participants": [
+        "中央红军野战军"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年10月29日逐日记录；原件藏中央档案馆"
+    },
+    {
       "id": "steam_rf_19341030_79a2d2a5",
       "date": "1934-10-30",
       "displayDate": "1934-10-30",
@@ -2909,6 +3073,32 @@
       ],
       "certainty": "low",
       "notes": "核查保留low：日期地点严重错误：10月30日红军尚在江西，不可能在广西兴安全州"
+    },
+    {
+      "id": "dashi_19341031",
+      "date": "1934-10-31",
+      "displayDate": "1934-10-31",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "10月31日红一军团、红三军团行军纪要·横断",
+      "description": "一军团分左右两纵队前进。左纵队到达聂都地域，右纵队到达沙溪。三军团以第四师为右纵队，经黄竹洞古亭集龙，向汝城前进。主力到达新坪地域。五军团到杨梅城，其三十四师进到横断。八军团到达过埠石玉地区。九军团黄昏脱离黄龙之敌，当夜进东坑石头坝，转至义安圩。军委二纵队进至铅厂田心里。野战军司令部到密溪圩。",
+      "location": {
+        "name": "横断、义安圩、石头坝",
+        "coordinates": [
+          25.3,
+          114.6
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年10月31日逐日记录；原件藏中央档案馆"
     },
     {
       "id": "ev_fang_193411",
@@ -2992,6 +3182,136 @@
       "certainty": "low"
     },
     {
+      "id": "dashi_19341102",
+      "date": "1934-11-02",
+      "displayDate": "1934-11-02",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月02日红一军团、红三军团行军纪要",
+      "description": "一军团左纵队经雷岭到陈奢。右纵队（二师）向城口前进，二十时攻占城口。三军团左纵队迫近汝城，并占领汝城东南之制高点。右纵队经益将，穿风坳，向汝城前进，沿途“铲匪”据险扼守，均被我山炮轰退。五军团右纵队到官田，左纵队在沙溪地域，担任掩护军委两个纵队并抗击追敌之任务。八军团进到猪头圩，樟溪地域。有掩护三军团右翼之任务。九军团缺一个团，进至塘铺里洞地域，留一个团于聂都附近，掩护军委二纵队。军委二纵队到达聂都以北地域。野战司令部到文英。朱总司令命令：迅速通过湘南边境之第一道封锁线，对于野战军今后行动的胜利，有决定的意义。因此各军团应坚决地执行战斗任务。各纵队后方部队及掩护部队，必须确实执行行军命令。在行军和宿营时，应成纵深的梯队，以便全部能于日间运动，使各梯队不致互相阻碍。",
+      "location": {
+        "name": "湘南·宜章至道州一线",
+        "coordinates": [
+          25.55,
+          112.8
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、军委纵队、红八军团、红九军团"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月02日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341103",
+      "date": "1934-11-03",
+      "displayDate": "1934-11-03",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月03日红一军团、红三军团行军纪要·三江口",
+      "description": "一军团左纵队经八丘田到三江口。右纵队在城口及其以西地区。三军团包围汝城，以一部附山炮攻敌碉堡，占领敌堡二十余个，打开了敌人封锁线。五军团向文英前进。八军团向汝城前进。军委第二纵队到文英官田之间。野战司令部到百担丘。",
+      "location": {
+        "name": "三江口",
+        "coordinates": [
+          25.55,
+          112.8
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月03日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341104",
+      "date": "1934-11-04",
+      "displayDate": "1934-11-04",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月04日红一军团、红三军团行军纪要",
+      "description": "一军团全部在城口及其以西地区。三军团第四师占领官路下大来圩。主力在汝城西南。五军团到达文英热水之间。八军团到达汝城以北。九军团向东岭岗子坳前进。军委第二纵队到百担丘。野战司令部到热水圩。",
+      "location": {
+        "name": "湘南·宜章至道州一线",
+        "coordinates": [
+          25.55,
+          112.8
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月04日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341105",
+      "date": "1934-11-05",
+      "displayDate": "1934-11-05",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月05日红一军团、红三军团行军纪要·新田",
+      "description": "一军团由城口移新田。三军团将围攻汝城之任务交与八军团后，即向文明司前进。五军团到热水。八军团接替三军团围攻汝城之任务。九军团到达东岭地域。军委二纵队到达热水鱼旺。野战司令部到八丘田。",
+      "location": {
+        "name": "新田",
+        "coordinates": [
+          25.15,
+          114.66
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红八军团、红五军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月05日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341106",
+      "date": "1934-11-06",
+      "displayDate": "1934-11-06",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月06日红一军团、红三军团行军纪要·新溪",
+      "description": "一军团经三载岐到麻坑。三军团主力向文明司前进中。五军团到鱼旺。八军团转到汝城西南。九军团向麻坑前进。军委二纵队到八丘田。野战司令部到新溪。",
+      "location": {
+        "name": "新溪",
+        "coordinates": [
+          25.55,
+          112.8
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月06日逐日记录；原件藏中央档案馆"
+    },
+    {
       "id": "sha_19341107_nanliang",
       "date": "1934-11-07",
       "displayDate": "1934-11-07",
@@ -3046,6 +3366,58 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "dashi_19341109",
+      "date": "1934-11-09",
+      "displayDate": "1934-11-09",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月09日红一军团、红三军团行军纪要·宜章",
+      "description": "一军团因攻茶寮九峰未得手，主力由大小王山及砖头凹向九峰东北转进，到桃竹坑宿营。三军团全部到赤石司集结。以第四师为右纵队，直出良田。以第六师全部经摺田袭取宜章。五军团到大山都木江地域。八军团向文明司前进。九军团由麻坑转向石洞前进。军委二纵队到文明司。野战军司令部到文明司。",
+      "location": {
+        "name": "宜章",
+        "coordinates": [
+          25.4,
+          112.93
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月09日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341110",
+      "date": "1934-11-10",
+      "displayDate": "1934-11-10",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月10日红一军团、红三军团行军纪要·宜章",
+      "description": "一军团经官家桥到彭古岭。在唐村破敌堡五个，消灭当地团匪，缴枪十余支。三军团第五师占领良田、黄泥坳，迫近郴州，切断郴宜大道，毁敌堡垒百余个。第六师迫近宜章县城，夜袭未得手。五军团在原地休息。八军团到达文明司以东地域。九军团到延寿圩地域。军委二纵队在文明司休息。野战军司令部在文明司休息。",
+      "location": {
+        "name": "宜章",
+        "coordinates": [
+          25.4,
+          112.93
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月10日逐日记录；原件藏中央档案馆"
     },
     {
       "id": "ev_red25_19341111_declare",
@@ -3133,6 +3505,58 @@
       ],
       "certainty": "high",
       "notes": "第2章血战湘江；官方授权连载事实要素"
+    },
+    {
+      "id": "dashi_19341113",
+      "date": "1934-11-13",
+      "displayDate": "1934-11-13",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月13日红一军团、红三军团行军纪要·宜章",
+      "description": "一军团第二师到香花树下。主力在宜章以东之白石渡地域。三军团第六师在宜章城内。主力向郴州迫进。五军团仍在弯刀坳地域未动。八军团到良田。九军团到赤石司。军委二纵队到廖家湾。野战军司令部到黄茅。",
+      "location": {
+        "name": "宜章",
+        "coordinates": [
+          25.4,
+          112.93
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月13日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341114",
+      "date": "1934-11-14",
+      "displayDate": "1934-11-14",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月14日红一军团、红三军团行军纪要·宜章",
+      "description": "一军团第二师到小溪。主力在白石渡未动。十五师到宜章。三军团主力未动。第六师由宜章西进至张公潭廖家洞地域。五军团到达赤石司以西。八军团主力进到天南溪。二十三师到宝和圩。九军团到宜章城。军委二纵队在廖家湾未动。野战军司令部到安源。",
+      "location": {
+        "name": "宜章、小溪、南溪",
+        "coordinates": [
+          25.4,
+          112.93
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月14日逐日记录；原件藏中央档案馆"
     },
     {
       "id": "rf_19341115_third_blockade",
@@ -3286,6 +3710,110 @@
       "certainty": "low"
     },
     {
+      "id": "dashi_19341118",
+      "date": "1934-11-18",
+      "displayDate": "1934-11-18",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月18日红一军团、红三军团行军纪要",
+      "description": "一军团到羊牯岭坳。三军团到楠木圩。五军团未动，阻止敌人。八军团渡河，尾三军团前进。九军团占领蓝山县城。军委二纵队到田心铺。野战军司令部到雷家岭。",
+      "location": {
+        "name": "湘南·宜章至道州一线",
+        "coordinates": [
+          25.55,
+          112.8
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月18日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341119",
+      "date": "1934-11-19",
+      "displayDate": "1934-11-19",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月19日红一军团、红三军团行军纪要",
+      "description": "一军团经太平圩到朱家坪。三军团集结于永乐圩以南，甘露田以东及洪观圩西北地区，与由嘉禾城向洪观圩出击之敌作战终日。五军团在楠木圩地域，准备参加三军团之战斗。八军团在黄泥井黄泥铺一带，实行缩编。九军团向江华城前进。军委二纵队到蓝山。野战军司令部在雷家岭休息。",
+      "location": {
+        "name": "湘南·宜章至道州一线",
+        "coordinates": [
+          25.55,
+          112.8
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月19日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341120",
+      "date": "1934-11-20",
+      "displayDate": "1934-11-20",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月20日红一军团、红三军团行军纪要",
+      "description": "一军团在朱家坪休息。三军团在洪观圩休息。五军团在楠木圩休息。八军团在黄泥井休息。九军团占领江华城。军委二纵队在蓝山休息一天。野战军司令部到界头铺。",
+      "location": {
+        "name": "湘南·宜章至道州一线",
+        "coordinates": [
+          25.55,
+          112.8
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月20日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341121",
+      "date": "1934-11-21",
+      "displayDate": "1934-11-21",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月21日红一军团、红三军团行军纪要",
+      "description": "一军团经祠堂圩到天堂圩。三军团到水源洞。五军团未动。八军团到新屋地。九军团在江华休息。军委二纵队到蓝坪圩附近。野战军司令部到蓝坪圩。",
+      "location": {
+        "name": "湘南·宜章至道州一线",
+        "coordinates": [
+          25.55,
+          112.8
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月21日逐日记录；原件藏中央档案馆"
+    },
+    {
       "id": "ev_czj_19341122_gui",
       "date": "1934-11-22",
       "displayDate": "1934-11-22",
@@ -3337,6 +3865,32 @@
       ],
       "certainty": "high",
       "notes": "low→high：经权威史料核实，游戏文本线索升级；攻占道县，聂荣臻回忆11月22日控制道县，日期吻合"
+    },
+    {
+      "id": "dashi_19341123",
+      "date": "1934-11-23",
+      "displayDate": "1934-11-23",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "11月23日红一军团、红三军团行军纪要·道州",
+      "description": "一军团占领道州城。三军团在天堂圩附近，准备与周浑元纵队作战。五军团在蓝坪圩下灌红岭地域，准备协同三军团作战。八军团到宁善圩。九军团继续在江华休息。军委二纵队在四眼桥休息。野战军司令部到新岩口。",
+      "location": {
+        "name": "道州",
+        "coordinates": [
+          25.53,
+          111.59
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年11月23日逐日记录；原件藏中央档案馆"
     },
     {
       "id": "steam_rf_19341124_8fd68573",
@@ -3746,6 +4300,58 @@
       "certainty": "low"
     },
     {
+      "id": "dashi_19341202",
+      "date": "1934-12-02",
+      "displayDate": "1934-12-02",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月02日红一军团、红三军团行军纪要·界首",
+      "description": "一军团主力到油榨坪。第二师占领土地凹，扼阻由全州来攻之敌。三军团主力到阜塘、雷霹州地域。第五师由路江圩扼阻界首方向可能来追之敌。五军团集结于南宅、田川地域扼阻追敌。八军团到胡岭。九军团向土地坳增援。军委二纵队到余家亭。野战军司令部到枫木山。",
+      "location": {
+        "name": "界首",
+        "coordinates": [
+          25.3,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月02日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341203",
+      "date": "1934-12-03",
+      "displayDate": "1934-12-03",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月03日红一军团、红三军团行军纪要",
+      "description": "一军团到四十田。三军团进至千家寺。五、八军团移枫木山、步竹冲地域。九军团到小里五排、水竹铺地域。军委二纵队向水埠塘移动，在老山界脚露营。野战军司令部向塘坊边移动，在老山界顶露营。",
+      "location": {
+        "name": "湘桂边·全州与湘江以西",
+        "coordinates": [
+          26.1,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红八军团、红九军团、军委纵队、中央红军野战军"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月03日逐日记录；原件藏中央档案馆"
+    },
+    {
       "id": "steam_rf_19341204_26d6a580",
       "date": "1934-12-04",
       "displayDate": "1934-12-04",
@@ -3804,6 +4410,32 @@
       "certainty": "low"
     },
     {
+      "id": "dashi_19341206",
+      "date": "1934-12-06",
+      "displayDate": "1934-12-06",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月06日红一军团、红三军团行军纪要",
+      "description": "一军团到茶元。三军团向河口前进，与桂敌激战终日。五军团一部与突入千家寺之桂敌作战，主力撤塘洞。八军团继续扼守老山界，与追敌作战。九军团扼守红水东南阵地，掩护主力通过。军委二纵队到塘洞。野战司令部到花桥。",
+      "location": {
+        "name": "湘桂边·全州与湘江以西",
+        "coordinates": [
+          26.1,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月06日逐日记录；原件藏中央档案馆"
+    },
+    {
       "id": "steam_r2_19341207_300041ab",
       "date": "1934-12-07",
       "displayDate": "1934-12-07",
@@ -3827,6 +4459,32 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "dashi_19341208",
+      "date": "1934-12-08",
+      "displayDate": "1934-12-08",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月08日红一军团、红三军团行军纪要",
+      "description": "一军团主力经五塘到白竹坪。二师向通道前进。三军团进到马蹄河口。五、八军团进到江底。九军团到鸡公界、水布蓬地域。军委二纵队进至黄祥。野战军司令部进到坳头。",
+      "location": {
+        "name": "湘桂边·全州与湘江以西",
+        "coordinates": [
+          26.1,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红八军团、红九军团、军委纵队、中央红军野战军"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月08日逐日记录；原件藏中央档案馆"
     },
     {
       "id": "steam_r25_19341209_63652e47",
@@ -4085,6 +4743,58 @@
       "descriptionEn": "On Dec 12, 1934, the Central Red Army held a political or military meeting that influenced later decisions around Tongdao, Hunan. This entry keeps the chronological route, local context, and visual connection to adjacent events."
     },
     {
+      "id": "dashi_19341213",
+      "date": "1934-12-13",
+      "displayDate": "1934-12-13",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月13日红一军团、红三军团行军纪要",
+      "description": "一军团主力经新昌到平查所。第一师向黎平前进。第二师在通道休息。三军团到牙屯堡，先头师到播扬所。五、八军团到土溪。九军团休息一天。军委一二纵队在播扬所以北。",
+      "location": {
+        "name": "湘桂边·全州与湘江以西",
+        "coordinates": [
+          26.1,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红八军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月13日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341214",
+      "date": "1934-12-14",
+      "displayDate": "1934-12-14",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月14日红一军团、红三军团行军纪要",
+      "description": "一军团占领黎平。三军团主力到播扬所，先头至洪洲司。五、八军团向深渡前进。九军团向锦屏前进。军委二纵队到洪老塘。野战军司令部到洪洲司。",
+      "location": {
+        "name": "湘桂边·全州与湘江以西",
+        "coordinates": [
+          26.1,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红八军团、红九军团、军委纵队、中央红军野战军"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月14日逐日记录；原件藏中央档案馆"
+    },
+    {
       "id": "steam_rf_19341215_77b32a71",
       "date": "1934-12-15",
       "displayDate": "1934-12-15",
@@ -4274,6 +4984,136 @@
       "certainty": "low"
     },
     {
+      "id": "dashi_19341221",
+      "date": "1934-12-21",
+      "displayDate": "1934-12-21",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月21日红一军团、红三军团行军纪要",
+      "description": "一军团占领剑河县城。三军团进至松岭及其东南地区。五军团进至小苗光。九军团到剑河城。军委纵队到大苗光。",
+      "location": {
+        "name": "湘桂边·全州与湘江以西",
+        "coordinates": [
+          26.1,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月21日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341222",
+      "date": "1934-12-22",
+      "displayDate": "1934-12-22",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月22日红一军团、红三军团行军纪要·新城",
+      "description": "一军团沿清水河南岸，向新城汛前进，经中斗，到上格东地域。三军团到九宜堡、南哨、朗洞地域。五军团到南家堡。军委纵队到南寨柳寨。",
+      "location": {
+        "name": "新城",
+        "coordinates": [
+          26.1,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月22日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341223",
+      "date": "1934-12-23",
+      "displayDate": "1934-12-23",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月23日红一军团、红三军团行军纪要",
+      "description": "一军团经乌鸦铺，到偏寨。三军团占领台拱县城。五军团到南寨柳寨。九军团在剑河休息。军委纵队进至上甲东，范排。",
+      "location": {
+        "name": "湘桂边·全州与湘江以西",
+        "coordinates": [
+          26.1,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月23日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341224",
+      "date": "1934-12-24",
+      "displayDate": "1934-12-24",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月24日红一军团、红三军团行军纪要",
+      "description": "一军团在偏寨休息，收集渡河器材。三军团在台拱休息，开团以上干部大会。五军团到上甲东、范排。九军团沿清水河北岸前进，限二十六号前占领镇远。军委纵队到剑河城。",
+      "location": {
+        "name": "湘桂边·全州与湘江以西",
+        "coordinates": [
+          26.1,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月24日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341225",
+      "date": "1934-12-25",
+      "displayDate": "1934-12-25",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月25日红一军团、红三军团行军纪要",
+      "description": "一军团欠第二师经平寨，到翁古垅。三军团主力进至施洞口，向黄平前进。五军团进至大田角、九坑。九军团与第十五师会合，向镇远前进。军委纵队到革东。",
+      "location": {
+        "name": "湘桂边·全州与湘江以西",
+        "coordinates": [
+          26.1,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月25日逐日记录；原件藏中央档案馆"
+    },
+    {
       "id": "steam_r2_19341226_a0af7683",
       "date": "1934-12-26",
       "displayDate": "1934-12-26",
@@ -4299,6 +5139,32 @@
       "certainty": "low"
     },
     {
+      "id": "dashi_19341227",
+      "date": "1934-12-27",
+      "displayDate": "1934-12-27",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月27日红一军团、红三军团行军纪要·新城",
+      "description": "一军团留施秉休息。三军团进到黄标。五军团在台拱休息半天。九军团全部集中镇远。军委纵队进至新城平寨。",
+      "location": {
+        "name": "新城",
+        "coordinates": [
+          26.1,
+          111.2
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月27日逐日记录；原件藏中央档案馆"
+    },
+    {
       "id": "steam_rf_19341228_0d4feabe",
       "date": "1934-12-28",
       "displayDate": "1934-12-28",
@@ -4322,6 +5188,58 @@
         "src_steam_longmarch_1934_1936"
       ],
       "certainty": "low"
+    },
+    {
+      "id": "dashi_19341229",
+      "date": "1934-12-29",
+      "displayDate": "1934-12-29",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月29日红一军团、红三军团行军纪要·瓮安",
+      "description": "一军团主力经孙家铺到老塘寨。三军团第四师向瓮安前进，有相机占领该城之任务，主力留新黄平休息一天。五军团到翁古垅。九军团在镇雄关刘家庄之间，扼阻追敌。军委纵队到带翁铺。",
+      "location": {
+        "name": "瓮安、镇雄",
+        "coordinates": [
+          27.05,
+          107.48
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月29日逐日记录；原件藏中央档案馆"
+    },
+    {
+      "id": "dashi_19341230",
+      "date": "1934-12-30",
+      "displayDate": "1934-12-30",
+      "sequence": 1,
+      "forceId": "red_first",
+      "type": "行军",
+      "title": "12月30日红一军团、红三军团行军纪要·余庆",
+      "description": "一军团主力到余庆城。三军团第四师进至蓝家关，主力到老黄平。五军团到老黄平。九军团在施秉附近扼阻敌人。军委纵队到对牙铺，后洞。",
+      "location": {
+        "name": "余庆",
+        "coordinates": [
+          27.52,
+          107.75
+        ]
+      },
+      "participants": [
+        "红一军团、红三军团、红五军团、红九军团、军委纵队"
+      ],
+      "importance": 2,
+      "sourceIds": [
+        "src_hongjun_changzhengji"
+      ],
+      "certainty": "high",
+      "notes": "据《红军长征记·长征大事记》1934年12月30日逐日记录；原件藏中央档案馆"
     },
     {
       "id": "steam_rf_19341231_79ca4187",
