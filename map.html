@@ -43,6 +43,20 @@
             <button type="button" id="memorial-toggle" class="memorial-toggle" aria-pressed="false">◈ 烈士纪念设施</button>
         </div>
 
+        <div id="place-panel" class="place-panel">
+            <div class="place-panel-head">
+                <h3 data-i18n="placeSearch">地名检索</h3>
+                <button type="button" id="place-panel-close" class="close-btn place-close" aria-label="关闭">×</button>
+            </div>
+            <input type="search" id="place-search-input" class="place-search-input" autocomplete="off"
+                   placeholder="输入地名，如 两河口 / 老山界 / 通道" data-i18n-placeholder="placeSearchPlaceholder">
+            <div id="place-results" class="place-results"></div>
+            <div id="place-hint" class="place-hint" hidden></div>
+        </div>
+        <button type="button" id="place-panel-toggle" class="place-panel-toggle" aria-expanded="false">
+            <span data-i18n="placeSearch">地名检索</span>
+        </button>
+
         <div id="timeline-control" class="timeline-control">
             <div class="timeline-info">
                 <span class="date-display" id="current-date">1934年10月</span>

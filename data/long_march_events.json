@@ -26080,6 +26080,5875 @@
       "sort": 100
     }
   ],
+  "gazetteer": [
+    {
+      "id": "gaz_001",
+      "name": "东北三省",
+      "province": "东北",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "spark_dongbei"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        44.0,
+        126.0
+      ]
+    },
+    {
+      "id": "gaz_002",
+      "name": "云南/贵州",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.0,
+        104.0
+      ]
+    },
+    {
+      "id": "gaz_003",
+      "name": "云南中甸/香格里拉一带",
+      "province": "云南",
+      "historicalNames": "中甸",
+      "modernName": "云南迪庆州香格里拉市",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "旧称“中甸县”，2001年更名香格里拉。",
+      "coordinates": [
+        27.83,
+        99.7
+      ]
+    },
+    {
+      "id": "gaz_004",
+      "name": "云南丽江石鼓",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.89,
+        100.09
+      ]
+    },
+    {
+      "id": "gaz_005",
+      "name": "云南威信/贵州毕节乌蒙山区",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.85,
+        105.05
+      ]
+    },
+    {
+      "id": "gaz_006",
+      "name": "云南威信大河滩",
+      "province": "云南",
+      "historicalNames": "威信大河滩/庄子上",
+      "modernName": "云南昭通市威信县水田镇",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "【消歧】1935年2月8日通过《遵义会议决议》的政治局会议在云南威信大河滩，非贵州遵义。",
+      "coordinates": [
+        27.848,
+        105.05
+      ]
+    },
+    {
+      "id": "gaz_007",
+      "name": "云南威信扎西",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.85,
+        105.05
+      ]
+    },
+    {
+      "id": "gaz_008",
+      "name": "云南威信扎西石坎子",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.845,
+        105.048
+      ]
+    },
+    {
+      "id": "gaz_009",
+      "name": "云南寻甸柯渡、禄劝皎平渡",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.05,
+        102.42
+      ]
+    },
+    {
+      "id": "gaz_010",
+      "name": "云南扎西",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.85,
+        105.05
+      ]
+    },
+    {
+      "id": "gaz_011",
+      "name": "云南昆明周边",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.04,
+        102.71
+      ]
+    },
+    {
+      "id": "gaz_012",
+      "name": "云南皎平渡",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.13,
+        102.52
+      ]
+    },
+    {
+      "id": "gaz_013",
+      "name": "云南皎平渡附近",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "enemy_kmt"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.29,
+        102.94
+      ]
+    },
+    {
+      "id": "gaz_014",
+      "name": "云南石鼓金沙江",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.9,
+        99.9
+      ]
+    },
+    {
+      "id": "gaz_015",
+      "name": "云南禄劝皎平渡",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.214,
+        102.451
+      ]
+    },
+    {
+      "id": "gaz_016",
+      "name": "云南金沙江至四川大渡河沿线",
+      "province": "云南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.2,
+        101.8
+      ]
+    },
+    {
+      "id": "gaz_017",
+      "name": "北京",
+      "province": "北京",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        39.9,
+        116.4
+      ]
+    },
+    {
+      "id": "gaz_018",
+      "name": "吉林磐石",
+      "province": "吉林",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongbei"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        42.9,
+        125.6
+      ]
+    },
+    {
+      "id": "gaz_019",
+      "name": "吉林辽宁东部",
+      "province": "吉林",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongbei"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        42.0,
+        126.5
+      ]
+    },
+    {
+      "id": "gaz_020",
+      "name": "吉林靖宇县三道崴子",
+      "province": "吉林",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongbei"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        42.6,
+        126.8
+      ]
+    },
+    {
+      "id": "gaz_021",
+      "name": "四川万源",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.08,
+        108.03
+      ]
+    },
+    {
+      "id": "gaz_022",
+      "name": "四川丹巴、懋功（小金）",
+      "province": "四川",
+      "historicalNames": "懋功",
+      "modernName": "四川阿坝州小金县",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "旧称“懋功县”，1953年更名小金县，红一、红四方面军会师地。",
+      "coordinates": [
+        30.88,
+        102.22
+      ]
+    },
+    {
+      "id": "gaz_023",
+      "name": "四川会理",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.66,
+        102.24
+      ]
+    },
+    {
+      "id": "gaz_024",
+      "name": "四川冕宁",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.55,
+        102.18
+      ]
+    },
+    {
+      "id": "gaz_025",
+      "name": "四川冕宁彝海",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.78,
+        102.17
+      ]
+    },
+    {
+      "id": "gaz_026",
+      "name": "四川剑阁剑门关",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.2,
+        105.5
+      ]
+    },
+    {
+      "id": "gaz_027",
+      "name": "四川北川土门一带",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.85,
+        104.45
+      ]
+    },
+    {
+      "id": "gaz_028",
+      "name": "四川古蔺白沙场一带",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.04,
+        105.81
+      ]
+    },
+    {
+      "id": "gaz_029",
+      "name": "四川古蔺镇龙山",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.05,
+        105.78
+      ]
+    },
+    {
+      "id": "gaz_030",
+      "name": "四川名山百丈关",
+      "province": "四川",
+      "historicalNames": "百丈",
+      "modernName": "四川雅安市名山区百丈镇",
+      "eventCount": 2,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "1935年11月红四方面军南下百丈关决战发生地。",
+      "coordinates": [
+        30.18,
+        103.1
+      ]
+    },
+    {
+      "id": "gaz_031",
+      "name": "四川大渡河",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.3,
+        102.7
+      ]
+    },
+    {
+      "id": "gaz_032",
+      "name": "四川夹金山",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.1,
+        102.7
+      ]
+    },
+    {
+      "id": "gaz_033",
+      "name": "四川夹金山一线",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        30.85,
+        102.75
+      ]
+    },
+    {
+      "id": "gaz_034",
+      "name": "四川安顺场",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.4,
+        102.3
+      ]
+    },
+    {
+      "id": "gaz_035",
+      "name": "四川安顺场—泸定桥一线",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "enemy_kmt",
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.23,
+        102.23
+      ]
+    },
+    {
+      "id": "gaz_036",
+      "name": "四川安顺场大渡河",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.4,
+        102.3
+      ]
+    },
+    {
+      "id": "gaz_037",
+      "name": "四川宝兴",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        30.369,
+        102.815
+      ]
+    },
+    {
+      "id": "gaz_038",
+      "name": "四川宝兴天全一带",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        30.369,
+        102.815
+      ]
+    },
+    {
+      "id": "gaz_039",
+      "name": "四川宝兴夹金山",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        30.61,
+        102.785
+      ]
+    },
+    {
+      "id": "gaz_040",
+      "name": "四川小金两河口",
+      "province": "四川",
+      "historicalNames": "两河口（川西北）",
+      "modernName": "四川阿坝州小金县两河口镇",
+      "eventCount": 6,
+      "forces": [
+        "red_first",
+        "red_fourth"
+      ],
+      "disambiguationNote": "【同名消歧】1935年6月两河口会议在四川小金两河口；区别于湖南桑植两河口（红二、六军团陈家河战区）与四川古蔺两河口。",
+      "coordinates": [
+        31.02,
+        102.5
+      ]
+    },
+    {
+      "id": "gaz_041",
+      "name": "四川小金达维",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first",
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        30.92,
+        102.49
+      ]
+    },
+    {
+      "id": "gaz_042",
+      "name": "四川小金达维镇",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        30.88,
+        102.68
+      ]
+    },
+    {
+      "id": "gaz_043",
+      "name": "四川巴中清江渡",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.72,
+        106.72
+      ]
+    },
+    {
+      "id": "gaz_044",
+      "name": "四川广元/剑阁一带",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.23,
+        105.83
+      ]
+    },
+    {
+      "id": "gaz_045",
+      "name": "四川广元、昭化",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.43,
+        105.84
+      ]
+    },
+    {
+      "id": "gaz_046",
+      "name": "四川彝族区",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.5,
+        102.5
+      ]
+    },
+    {
+      "id": "gaz_047",
+      "name": "四川懋功/小金",
+      "province": "四川",
+      "historicalNames": "懋功",
+      "modernName": "四川阿坝州小金县",
+      "eventCount": 5,
+      "forces": [
+        "red_first",
+        "red_fourth"
+      ],
+      "disambiguationNote": "旧称“懋功县”，1953年更名小金县，红一、红四方面军会师地。",
+      "coordinates": [
+        31.0,
+        102.36
+      ]
+    },
+    {
+      "id": "gaz_048",
+      "name": "四川懋功（小金）",
+      "province": "四川",
+      "historicalNames": "懋功",
+      "modernName": "四川阿坝州小金县",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "旧称“懋功县”，1953年更名小金县，红一、红四方面军会师地。",
+      "coordinates": [
+        30.88,
+        102.68
+      ]
+    },
+    {
+      "id": "gaz_049",
+      "name": "四川旺苍坝",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.23,
+        106.29
+      ]
+    },
+    {
+      "id": "gaz_050",
+      "name": "四川松潘毛儿盖",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 6,
+      "forces": [
+        "red_first",
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.67,
+        103.515
+      ]
+    },
+    {
+      "id": "gaz_051",
+      "name": "四川松潘沙窝一带",
+      "province": "四川",
+      "historicalNames": "沙窝",
+      "modernName": "四川阿坝州松潘县毛儿盖/血洛一带",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "1935年8月4-6日中共中央政治局沙窝会议召开地。",
+      "coordinates": [
+        32.63,
+        103.6
+      ]
+    },
+    {
+      "id": "gaz_052",
+      "name": "四川松潘波罗子",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.65,
+        103.22
+      ]
+    },
+    {
+      "id": "gaz_053",
+      "name": "四川泸定县安顺场至泸定桥",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.4,
+        102.45
+      ]
+    },
+    {
+      "id": "gaz_054",
+      "name": "四川泸定桥",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.9,
+        102.2
+      ]
+    },
+    {
+      "id": "gaz_055",
+      "name": "四川甘孜",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 5,
+      "forces": [
+        "red_fourth",
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.62,
+        100.0
+      ]
+    },
+    {
+      "id": "gaz_056",
+      "name": "四川甘孜、炉霍一带",
+      "province": "四川",
+      "historicalNames": "炉霍（西康）",
+      "modernName": "四川甘孜州炉霍县",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "民国时期属西康省，1936年3月15日红四方面军攻占并以此迎接红二、六军团。",
+      "coordinates": [
+        31.5,
+        100.35
+      ]
+    },
+    {
+      "id": "gaz_057",
+      "name": "四川甘孜一带",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.62,
+        100.0
+      ]
+    },
+    {
+      "id": "gaz_058",
+      "name": "四川甘孜北上路段",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_fourth",
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.0,
+        101.0
+      ]
+    },
+    {
+      "id": "gaz_059",
+      "name": "四川甘孜康区",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.62,
+        100.0
+      ]
+    },
+    {
+      "id": "gaz_060",
+      "name": "四川石棉安顺场",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.23,
+        102.35
+      ]
+    },
+    {
+      "id": "gaz_061",
+      "name": "四川红原龙日坝",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.65,
+        102.3
+      ]
+    },
+    {
+      "id": "gaz_062",
+      "name": "四川芦山",
+      "province": "四川",
+      "historicalNames": "芦山",
+      "modernName": "四川雅安市芦山县",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "1935年6月8日红1团夜克芦山；1935年底红四方面军南下亦转战天全、芦山、宝兴一带。",
+      "coordinates": [
+        30.144,
+        102.927
+      ]
+    },
+    {
+      "id": "gaz_063",
+      "name": "四川苍溪嘉陵江",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.73,
+        105.93
+      ]
+    },
+    {
+      "id": "gaz_064",
+      "name": "四川苍溪至阆中一线",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.74,
+        105.93
+      ]
+    },
+    {
+      "id": "gaz_065",
+      "name": "四川若尔盖包座",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 6,
+      "forces": [
+        "red_first",
+        "red_fourth",
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.69,
+        103.24
+      ]
+    },
+    {
+      "id": "gaz_066",
+      "name": "四川若尔盖巴西",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.6,
+        103.08
+      ]
+    },
+    {
+      "id": "gaz_067",
+      "name": "四川若尔盖毛儿盖至包座草地",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.8,
+        102.3
+      ]
+    },
+    {
+      "id": "gaz_068",
+      "name": "四川若尔盖班佑",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.545,
+        103.04
+      ]
+    },
+    {
+      "id": "gaz_069",
+      "name": "四川若尔盖草地",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.41,
+        103.025
+      ]
+    },
+    {
+      "id": "gaz_070",
+      "name": "四川越嶲（今越西）",
+      "province": "四川",
+      "historicalNames": "越嶲",
+      "modernName": "四川凉山州越西县",
+      "eventCount": 3,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "旧称“越嶲（xī）厅/县”，1959年改写为“越西县”。",
+      "coordinates": [
+        28.64,
+        102.51
+      ]
+    },
+    {
+      "id": "gaz_071",
+      "name": "四川越西",
+      "province": "四川",
+      "historicalNames": "越嶲",
+      "modernName": "四川凉山州越西县",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "旧称“越嶲”，《红军长征记》多篇作“越嶲”。",
+      "coordinates": [
+        28.641,
+        102.509
+      ]
+    },
+    {
+      "id": "gaz_072",
+      "name": "四川通江毛裕镇",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.05,
+        107.05
+      ]
+    },
+    {
+      "id": "gaz_073",
+      "name": "四川道孚",
+      "province": "四川",
+      "historicalNames": "道孚（西康）",
+      "modernName": "四川甘孜州道孚县",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "民国时期属西康省，1936年3月红四方面军康道炉战役率先攻占。",
+      "coordinates": [
+        30.98,
+        101.125
+      ]
+    },
+    {
+      "id": "gaz_074",
+      "name": "四川阿坝",
+      "province": "四川",
+      "historicalNames": "阿坝",
+      "modernName": "四川阿坝州阿坝县",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "【消歧】1935年9月13日红四方面军阿坝会议在四川阿坝，区别于中央红军同期的甘肃迭部俄界/腊子口。",
+      "coordinates": [
+        32.903,
+        101.706
+      ]
+    },
+    {
+      "id": "gaz_075",
+      "name": "四川雅安百丈关",
+      "province": "四川",
+      "historicalNames": "百丈",
+      "modernName": "四川雅安市名山区百丈镇",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "1935年11月红四方面军南下百丈关决战发生地。",
+      "coordinates": [
+        30.1,
+        103.05
+      ]
+    },
+    {
+      "id": "gaz_076",
+      "name": "四川马尔康卓克基",
+      "province": "四川",
+      "historicalNames": "卓克基",
+      "modernName": "四川阿坝州马尔康市卓克基镇",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "1935年7月初红军翻越梦笔山后驻扎卓克基土司官寨与休养连。",
+      "coordinates": [
+        31.9,
+        102.31
+      ]
+    },
+    {
+      "id": "gaz_077",
+      "name": "四川马尔康卓木碉",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.9,
+        102.22
+      ]
+    },
+    {
+      "id": "gaz_078",
+      "name": "四川黑水打鼓山",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.22,
+        102.77
+      ]
+    },
+    {
+      "id": "gaz_079",
+      "name": "四川黑水瓦布梁子",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.14,
+        103.16
+      ]
+    },
+    {
+      "id": "gaz_080",
+      "name": "四川黑水芦花",
+      "province": "四川",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.062,
+        102.991
+      ]
+    },
+    {
+      "id": "gaz_081",
+      "name": "宁夏六盘山",
+      "province": "宁夏",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.58,
+        106.22
+      ]
+    },
+    {
+      "id": "gaz_082",
+      "name": "宁夏固原青石嘴",
+      "province": "宁夏",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.68,
+        106.2
+      ]
+    },
+    {
+      "id": "gaz_083",
+      "name": "宁夏西吉单家集",
+      "province": "宁夏",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.8,
+        105.62
+      ]
+    },
+    {
+      "id": "gaz_084",
+      "name": "宁夏西吉将台堡",
+      "province": "宁夏",
+      "historicalNames": "将台堡",
+      "modernName": "宁夏固原市西吉县将台堡镇",
+      "eventCount": 2,
+      "forces": [
+        "red_first",
+        "red_second"
+      ],
+      "disambiguationNote": "1936年10月22日红一、红二方面军会师，标志三大主力长征胜利结束。",
+      "coordinates": [
+        35.93,
+        105.88
+      ]
+    },
+    {
+      "id": "gaz_085",
+      "name": "宁夏隆德",
+      "province": "宁夏",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.62,
+        106.12
+      ]
+    },
+    {
+      "id": "gaz_086",
+      "name": "山西中阳三交镇",
+      "province": "山西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        37.33,
+        111.18
+      ]
+    },
+    {
+      "id": "gaz_087",
+      "name": "川滇康边雪山地带",
+      "province": "川滇",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.35,
+        99.7
+      ]
+    },
+    {
+      "id": "gaz_088",
+      "name": "川甘交界草地",
+      "province": "川甘",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.2,
+        102.9
+      ]
+    },
+    {
+      "id": "gaz_089",
+      "name": "广东东江",
+      "province": "广东",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongjiang"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        22.8,
+        113.9
+      ]
+    },
+    {
+      "id": "gaz_090",
+      "name": "广东东江游击区",
+      "province": "广东",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongjiang"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        23.0,
+        114.0
+      ]
+    },
+    {
+      "id": "gaz_091",
+      "name": "广东东莞梅塘",
+      "province": "广东",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongjiang"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        22.9,
+        113.9
+      ]
+    },
+    {
+      "id": "gaz_092",
+      "name": "广东仁化城口、湖南汝城",
+      "province": "广东",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.485,
+        113.71
+      ]
+    },
+    {
+      "id": "gaz_093",
+      "name": "广东大鹏湾至山东烟台",
+      "province": "广东",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongjiang"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        22.6,
+        114.5
+      ]
+    },
+    {
+      "id": "gaz_094",
+      "name": "广东惠阳东莞",
+      "province": "广东",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongjiang"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        22.8,
+        114.3
+      ]
+    },
+    {
+      "id": "gaz_095",
+      "name": "广东惠阳土洋村",
+      "province": "广东",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "spark_dongjiang"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        22.6,
+        114.5
+      ]
+    },
+    {
+      "id": "gaz_096",
+      "name": "广东香港",
+      "province": "广东",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongjiang"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        22.5,
+        114.1
+      ]
+    },
+    {
+      "id": "gaz_097",
+      "name": "广西全州文市",
+      "province": "广西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.75,
+        111.08
+      ]
+    },
+    {
+      "id": "gaz_098",
+      "name": "广西全州湘江一线",
+      "province": "广西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "enemy_kmt",
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.95,
+        111.07
+      ]
+    },
+    {
+      "id": "gaz_099",
+      "name": "广西全州灌阳一带",
+      "province": "广西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.735,
+        111.081
+      ]
+    },
+    {
+      "id": "gaz_100",
+      "name": "广西兴安/全州湘江一线",
+      "province": "广西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first",
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.6,
+        110.65
+      ]
+    },
+    {
+      "id": "gaz_101",
+      "name": "广西兴安、全州湘江一线",
+      "province": "广西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.82,
+        111.05
+      ]
+    },
+    {
+      "id": "gaz_102",
+      "name": "广西兴安、资源瑶区",
+      "province": "广西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.95,
+        110.45
+      ]
+    },
+    {
+      "id": "gaz_103",
+      "name": "广西兴安全州湘江一线",
+      "province": "广西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.775,
+        110.952
+      ]
+    },
+    {
+      "id": "gaz_104",
+      "name": "广西兴安老山界",
+      "province": "广西",
+      "historicalNames": "越城岭老山界",
+      "modernName": "广西桂林市兴安/龙胜交界",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "【消歧】老山界位于广西兴安、龙胜越城岭山区，切勿误标为湖南通道。",
+      "coordinates": [
+        25.9,
+        110.2
+      ]
+    },
+    {
+      "id": "gaz_105",
+      "name": "广西兴安至全州",
+      "province": "广西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.6,
+        110.9
+      ]
+    },
+    {
+      "id": "gaz_106",
+      "name": "广西兴安龙胜老山界",
+      "province": "广西",
+      "historicalNames": "越城岭老山界",
+      "modernName": "广西桂林市兴安/龙胜交界",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "【消歧】老山界位于广西兴安、龙胜越城岭山区，切勿误标为湖南通道。",
+      "coordinates": [
+        25.882,
+        110.419
+      ]
+    },
+    {
+      "id": "gaz_107",
+      "name": "广西灌阳新圩",
+      "province": "广西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.5,
+        111.1
+      ]
+    },
+    {
+      "id": "gaz_108",
+      "name": "广西界首",
+      "province": "广西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.7,
+        110.9
+      ]
+    },
+    {
+      "id": "gaz_109",
+      "name": "新疆迪化",
+      "province": "新疆",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        43.83,
+        87.62
+      ]
+    },
+    {
+      "id": "gaz_110",
+      "name": "桂湘黔边苗山",
+      "province": "桂湘黔",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.98,
+        110.12
+      ]
+    },
+    {
+      "id": "gaz_111",
+      "name": "江西中央苏区周边",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "enemy_kmt"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.88,
+        116.03
+      ]
+    },
+    {
+      "id": "gaz_112",
+      "name": "江西于都",
+      "province": "江西",
+      "historicalNames": "雩都",
+      "modernName": "江西赣州市于都县",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "旧称“雩都”，1957年简化为“于都”，中央红军集结出发第一渡口。",
+      "coordinates": [
+        25.9505,
+        115.415
+      ]
+    },
+    {
+      "id": "gaz_113",
+      "name": "江西信丰、安远间（桃江沿线）",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.39,
+        114.93
+      ]
+    },
+    {
+      "id": "gaz_114",
+      "name": "江西信丰古陂圩",
+      "province": "江西",
+      "historicalNames": "古陂圩",
+      "modernName": "江西赣州市信丰县古陂镇",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "1934年10月下旬红三军团突破第一道封锁线重要战斗地。",
+      "coordinates": [
+        25.252,
+        114.956
+      ]
+    },
+    {
+      "id": "gaz_115",
+      "name": "江西信丰新田、石背、安息",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.15,
+        114.66
+      ]
+    },
+    {
+      "id": "gaz_116",
+      "name": "江西信丰百石村",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.32,
+        114.93
+      ]
+    },
+    {
+      "id": "gaz_117",
+      "name": "江西安远、信丰间百石",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.3,
+        114.9
+      ]
+    },
+    {
+      "id": "gaz_118",
+      "name": "江西寻乌",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        24.95,
+        115.65
+      ]
+    },
+    {
+      "id": "gaz_119",
+      "name": "江西崇义聂都、沙溪",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.6,
+        114.15
+      ]
+    },
+    {
+      "id": "gaz_120",
+      "name": "江西崇义聂都镇（粤湘赣三省交界）",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.6,
+        114.2
+      ]
+    },
+    {
+      "id": "gaz_121",
+      "name": "江西广昌",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.84,
+        116.33
+      ]
+    },
+    {
+      "id": "gaz_122",
+      "name": "江西玉山怀玉山",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_7th_advance"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.7,
+        118.2
+      ]
+    },
+    {
+      "id": "gaz_123",
+      "name": "江西瑞金",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_7th_advance",
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.8878,
+        116.0235
+      ]
+    },
+    {
+      "id": "gaz_124",
+      "name": "江西瑞金/于都一带",
+      "province": "江西",
+      "historicalNames": "雩都",
+      "modernName": "江西赣州市于都县",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "旧称“雩都”，1957年简化为“于都”，中央红军集结出发第一渡口。",
+      "coordinates": [
+        25.88,
+        116.03
+      ]
+    },
+    {
+      "id": "gaz_125",
+      "name": "江西瑞金于都",
+      "province": "江西",
+      "historicalNames": "雩都",
+      "modernName": "江西赣州市于都县",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "旧称“雩都”，1957年简化为“于都”，中央红军集结出发第一渡口。",
+      "coordinates": [
+        25.952,
+        115.415
+      ]
+    },
+    {
+      "id": "gaz_126",
+      "name": "江西瑞金至湘粤边",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.3,
+        114.6
+      ]
+    },
+    {
+      "id": "gaz_127",
+      "name": "江西赣东北",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_7th_advance"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.9,
+        117.6
+      ]
+    },
+    {
+      "id": "gaz_128",
+      "name": "江西遂川五斗江",
+      "province": "江西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.43,
+        114.37
+      ]
+    },
+    {
+      "id": "gaz_129",
+      "name": "河南伏牛山一带",
+      "province": "河南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.7,
+        111.5
+      ]
+    },
+    {
+      "id": "gaz_130",
+      "name": "河南商城豹子岩",
+      "province": "河南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.73,
+        115.45
+      ]
+    },
+    {
+      "id": "gaz_131",
+      "name": "河南方城、叶县澧河",
+      "province": "河南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.5,
+        113.25
+      ]
+    },
+    {
+      "id": "gaz_132",
+      "name": "河南方城独树镇",
+      "province": "河南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.3,
+        113.05
+      ]
+    },
+    {
+      "id": "gaz_133",
+      "name": "河南罗山何家冲",
+      "province": "河南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.965,
+        114.47
+      ]
+    },
+    {
+      "id": "gaz_134",
+      "name": "海南定安母瑞山",
+      "province": "海南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "spark_qiongya"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        19.4,
+        110.4
+      ]
+    },
+    {
+      "id": "gaz_135",
+      "name": "海南岛",
+      "province": "海南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "spark_qiongya"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        19.2,
+        109.8
+      ]
+    },
+    {
+      "id": "gaz_136",
+      "name": "海南母瑞山至琼文",
+      "province": "海南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_qiongya"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        19.4,
+        110.5
+      ]
+    },
+    {
+      "id": "gaz_137",
+      "name": "海南琼山云龙墟",
+      "province": "海南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_qiongya"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        19.9,
+        110.4
+      ]
+    },
+    {
+      "id": "gaz_138",
+      "name": "海南琼山潭口渡口",
+      "province": "海南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_qiongya"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        20.0,
+        110.4
+      ]
+    },
+    {
+      "id": "gaz_139",
+      "name": "海南琼崖",
+      "province": "海南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "spark_qiongya"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        19.2,
+        110.3
+      ]
+    },
+    {
+      "id": "gaz_140",
+      "name": "海南琼海",
+      "province": "海南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_qiongya"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        19.2,
+        110.5
+      ]
+    },
+    {
+      "id": "gaz_141",
+      "name": "海南琼海椰子寨",
+      "province": "海南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_qiongya"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        19.2,
+        110.5
+      ]
+    },
+    {
+      "id": "gaz_142",
+      "name": "海南白沙",
+      "province": "海南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_qiongya"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        19.2,
+        109.4
+      ]
+    },
+    {
+      "id": "gaz_143",
+      "name": "海南陵水",
+      "province": "海南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_qiongya"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        18.5,
+        110.0
+      ]
+    },
+    {
+      "id": "gaz_144",
+      "name": "湖北红安紫云寨",
+      "province": "湖北",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.29,
+        114.62
+      ]
+    },
+    {
+      "id": "gaz_145",
+      "name": "湖南/广西湘江一线",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "enemy_kmt"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.0,
+        111.0
+      ]
+    },
+    {
+      "id": "gaz_146",
+      "name": "湖南临武至道县",
+      "province": "湖南",
+      "historicalNames": "道州",
+      "modernName": "湖南永州市道县",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "历史文献（如《由临武至道州》）常称“道州”，即今湖南道县。",
+      "coordinates": [
+        25.526,
+        111.601
+      ]
+    },
+    {
+      "id": "gaz_147",
+      "name": "湖南嘉禾、宁远一带",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.55,
+        112.35
+      ]
+    },
+    {
+      "id": "gaz_148",
+      "name": "湖南大庸/张家界",
+      "province": "湖南",
+      "historicalNames": "大庸",
+      "modernName": "湖南张家界市永定区",
+      "eventCount": 3,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "旧称“大庸县”，1994年更名张家界市。",
+      "coordinates": [
+        29.13,
+        110.48
+      ]
+    },
+    {
+      "id": "gaz_149",
+      "name": "湖南宁远天堂圩一带",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.48,
+        111.88
+      ]
+    },
+    {
+      "id": "gaz_150",
+      "name": "湖南宜章",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.399,
+        112.951
+      ]
+    },
+    {
+      "id": "gaz_151",
+      "name": "湖南慈利",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.43,
+        111.13
+      ]
+    },
+    {
+      "id": "gaz_152",
+      "name": "湖南新田",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.91,
+        112.22
+      ]
+    },
+    {
+      "id": "gaz_153",
+      "name": "湖南桂东寨前圩",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.08,
+        113.91
+      ]
+    },
+    {
+      "id": "gaz_154",
+      "name": "湖南桃源",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.9,
+        111.48
+      ]
+    },
+    {
+      "id": "gaz_155",
+      "name": "湖南桃源梧溪河",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.86,
+        111.35
+      ]
+    },
+    {
+      "id": "gaz_156",
+      "name": "湖南桑植刘家坪/洪家关",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.4,
+        110.16
+      ]
+    },
+    {
+      "id": "gaz_157",
+      "name": "湖南桑植刘家坪/轿子垭",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.4,
+        110.17
+      ]
+    },
+    {
+      "id": "gaz_158",
+      "name": "湖南桑植洪家关/刘家坪一带",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.4,
+        110.17
+      ]
+    },
+    {
+      "id": "gaz_159",
+      "name": "湖南桑植澧水一线",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.4,
+        110.16
+      ]
+    },
+    {
+      "id": "gaz_160",
+      "name": "湖南桑植陈家河、两河口",
+      "province": "湖南",
+      "historicalNames": "桑植两河口",
+      "modernName": "湖南张家界市桑植县两河口乡",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "【同名消歧】红二、六军团1935年4月陈家河/两河口战区在湖南桑植，区别于四川小金两河口。",
+      "coordinates": [
+        29.38,
+        109.95
+      ]
+    },
+    {
+      "id": "gaz_161",
+      "name": "湖南永顺、大庸一带",
+      "province": "湖南",
+      "historicalNames": "大庸",
+      "modernName": "湖南张家界市永定区",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "旧称“大庸县”，1994年更名张家界市。",
+      "coordinates": [
+        29.1,
+        110.15
+      ]
+    },
+    {
+      "id": "gaz_162",
+      "name": "湖南永顺龙家寨十万坪",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.13,
+        109.85
+      ]
+    },
+    {
+      "id": "gaz_163",
+      "name": "湖南汝城、三江口",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.55,
+        113.68
+      ]
+    },
+    {
+      "id": "gaz_164",
+      "name": "湖南汝城文明司、新田",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.48,
+        113.55
+      ]
+    },
+    {
+      "id": "gaz_165",
+      "name": "湖南汝城文明司一带",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.42,
+        113.4
+      ]
+    },
+    {
+      "id": "gaz_166",
+      "name": "湖南沅陵鸳鸯山",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.45,
+        110.4
+      ]
+    },
+    {
+      "id": "gaz_167",
+      "name": "湖南蓝山、临武一带",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.37,
+        112.2
+      ]
+    },
+    {
+      "id": "gaz_168",
+      "name": "湖南蓝山、江华一带",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.35,
+        112.0
+      ]
+    },
+    {
+      "id": "gaz_169",
+      "name": "湖南通道",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first",
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.16,
+        109.78
+      ]
+    },
+    {
+      "id": "gaz_170",
+      "name": "湖南通道平茶所一带",
+      "province": "湖南",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.18,
+        109.75
+      ]
+    },
+    {
+      "id": "gaz_171",
+      "name": "湖南道县一带",
+      "province": "湖南",
+      "historicalNames": "道州",
+      "modernName": "湖南永州市道县",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "历史文献（如《由临武至道州》）常称“道州”，即今湖南道县。",
+      "coordinates": [
+        25.52,
+        111.6
+      ]
+    },
+    {
+      "id": "gaz_172",
+      "name": "湘桂边·全州与湘江以西",
+      "province": "湘桂",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.1,
+        111.2
+      ]
+    },
+    {
+      "id": "gaz_173",
+      "name": "湘桂边境湘江一线",
+      "province": "湘桂",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.792,
+        110.905
+      ]
+    },
+    {
+      "id": "gaz_174",
+      "name": "湘桂边至黔南",
+      "province": "湘桂",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.1,
+        111.2
+      ]
+    },
+    {
+      "id": "gaz_175",
+      "name": "湘赣边至湘南",
+      "province": "湘赣",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.55,
+        112.8
+      ]
+    },
+    {
+      "id": "gaz_176",
+      "name": "湘鄂川黔苏区",
+      "province": "湘鄂川黔",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.0,
+        110.0
+      ]
+    },
+    {
+      "id": "gaz_177",
+      "name": "湘鄂川黔边境",
+      "province": "湘鄂川黔",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        29.2,
+        109.1
+      ]
+    },
+    {
+      "id": "gaz_178",
+      "name": "滇黔交界乌蒙山",
+      "province": "滇黔",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.22,
+        104.1
+      ]
+    },
+    {
+      "id": "gaz_179",
+      "name": "甘肃临泽",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        39.2,
+        100.1
+      ]
+    },
+    {
+      "id": "gaz_180",
+      "name": "甘肃临泽倪家营子",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        39.2,
+        100.1
+      ]
+    },
+    {
+      "id": "gaz_181",
+      "name": "甘肃会宁",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 4,
+      "forces": [
+        "red_first",
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.7,
+        105.05
+      ]
+    },
+    {
+      "id": "gaz_182",
+      "name": "甘肃会宁—宁夏将台堡一线",
+      "province": "甘肃",
+      "historicalNames": "将台堡",
+      "modernName": "宁夏固原市西吉县将台堡镇",
+      "eventCount": 1,
+      "forces": [
+        "enemy_kmt"
+      ],
+      "disambiguationNote": "1936年10月22日红一、红二方面军会师，标志三大主力长征胜利结束。",
+      "coordinates": [
+        35.7,
+        105.35
+      ]
+    },
+    {
+      "id": "gaz_183",
+      "name": "甘肃会宁静宁会宁广场",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.7,
+        105.05
+      ]
+    },
+    {
+      "id": "gaz_184",
+      "name": "甘肃华池南梁",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.5,
+        108.0
+      ]
+    },
+    {
+      "id": "gaz_185",
+      "name": "甘肃华池豹子川",
+      "province": "甘肃",
+      "historicalNames": "保安豹子川",
+      "modernName": "甘肃庆阳市华池县豹子川",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "1935年原属保安县合水东北，今属甘肃华池县，红25军9月7日省委会议召开地。",
+      "coordinates": [
+        36.5,
+        108.0
+      ]
+    },
+    {
+      "id": "gaz_186",
+      "name": "甘肃古浪",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        37.47,
+        102.89
+      ]
+    },
+    {
+      "id": "gaz_187",
+      "name": "甘肃合水",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.819,
+        108.02
+      ]
+    },
+    {
+      "id": "gaz_188",
+      "name": "甘肃合水包家寨",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.95,
+        108.05
+      ]
+    },
+    {
+      "id": "gaz_189",
+      "name": "甘肃合水板桥",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.7,
+        107.6
+      ]
+    },
+    {
+      "id": "gaz_190",
+      "name": "甘肃宕昌哈达铺",
+      "province": "甘肃",
+      "historicalNames": "哈达铺",
+      "modernName": "甘肃陇南市宕昌县哈达铺镇",
+      "eventCount": 5,
+      "forces": [
+        "red_first",
+        "red_fourth",
+        "red_second"
+      ],
+      "disambiguationNote": "1935年9月中央红军在此获取陕北红军报纸并整编为陕甘支队；1936年8-9月红二方面军亦抵此决策成徽两康战役。",
+      "coordinates": [
+        34.33,
+        104.47
+      ]
+    },
+    {
+      "id": "gaz_191",
+      "name": "甘肃岷县/漳县一带",
+      "province": "甘肃",
+      "historicalNames": "岷州",
+      "modernName": "甘肃定西市岷县",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "古称及民国文献常称“岷州”，即今甘肃岷县。",
+      "coordinates": [
+        34.44,
+        104.04
+      ]
+    },
+    {
+      "id": "gaz_192",
+      "name": "甘肃岷山/哈达铺以北",
+      "province": "甘肃",
+      "historicalNames": "哈达铺",
+      "modernName": "甘肃陇南市宕昌县哈达铺镇",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "1935年9月中央红军在此获取陕北红军报纸并整编为陕甘支队；1936年8-9月红二方面军亦抵此决策成徽两康战役。",
+      "coordinates": [
+        34.2,
+        104.25
+      ]
+    },
+    {
+      "id": "gaz_193",
+      "name": "甘肃岷州、漳县、渭源、通渭",
+      "province": "甘肃",
+      "historicalNames": "漳县",
+      "modernName": "甘肃定西市漳县",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "【消歧】1936年8月红四方面军岷洮西战役攻克甘肃漳县，切勿误标四川若尔盖包座。",
+      "coordinates": [
+        35.0,
+        104.3
+      ]
+    },
+    {
+      "id": "gaz_194",
+      "name": "甘肃成县/徽县/两当/康县一带",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.75,
+        105.73
+      ]
+    },
+    {
+      "id": "gaz_195",
+      "name": "甘肃景泰一条山",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        37.1933,
+        104.0712
+      ]
+    },
+    {
+      "id": "gaz_196",
+      "name": "甘肃榜罗镇",
+      "province": "甘肃",
+      "historicalNames": "榜罗镇",
+      "modernName": "甘肃定西市通渭县榜罗镇",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "1935年9月27-28日中共中央政治局常委榜罗镇会议最终确定落脚陕北。",
+      "coordinates": [
+        35.13,
+        104.95
+      ]
+    },
+    {
+      "id": "gaz_197",
+      "name": "甘肃永昌山丹一线",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        38.5,
+        102.2
+      ]
+    },
+    {
+      "id": "gaz_198",
+      "name": "甘肃河西走廊",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        38.0,
+        102.0
+      ]
+    },
+    {
+      "id": "gaz_199",
+      "name": "甘肃泾川",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.33,
+        107.37
+      ]
+    },
+    {
+      "id": "gaz_200",
+      "name": "甘肃泾川四坡村",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.3,
+        107.37
+      ]
+    },
+    {
+      "id": "gaz_201",
+      "name": "甘肃渭河一线",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        34.6,
+        105.7
+      ]
+    },
+    {
+      "id": "gaz_202",
+      "name": "甘肃漳县",
+      "province": "甘肃",
+      "historicalNames": "漳县",
+      "modernName": "甘肃定西市漳县",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "【消歧】1936年8月红四方面军岷洮西战役攻克甘肃漳县，切勿误标四川若尔盖包座。",
+      "coordinates": [
+        34.849,
+        104.467
+      ]
+    },
+    {
+      "id": "gaz_203",
+      "name": "甘肃环县山城堡",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.8,
+        107.0
+      ]
+    },
+    {
+      "id": "gaz_204",
+      "name": "甘肃肃南梨园口",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        38.8,
+        99.5
+      ]
+    },
+    {
+      "id": "gaz_205",
+      "name": "甘肃肃南石窝山",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        38.8,
+        99.5
+      ]
+    },
+    {
+      "id": "gaz_206",
+      "name": "甘肃迭部俄界",
+      "province": "甘肃",
+      "historicalNames": "俄界",
+      "modernName": "甘肃甘南州迭部县达拉乡高吉村",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "【消歧】1935年9月11-12日系红一方面军/中央纵队抵俄界并召开俄界会议，红四方面军未至俄界。",
+      "coordinates": [
+        34.05,
+        103.1
+      ]
+    },
+    {
+      "id": "gaz_207",
+      "name": "甘肃迭部腊子口",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first",
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        34.07,
+        103.22
+      ]
+    },
+    {
+      "id": "gaz_208",
+      "name": "甘肃通渭",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.13,
+        104.93
+      ]
+    },
+    {
+      "id": "gaz_209",
+      "name": "甘肃通渭/渭源/漳县一带",
+      "province": "甘肃",
+      "historicalNames": "漳县",
+      "modernName": "甘肃定西市漳县",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "【消歧】1936年8月红四方面军岷洮西战役攻克甘肃漳县，切勿误标四川若尔盖包座。",
+      "coordinates": [
+        35.2,
+        105.2
+      ]
+    },
+    {
+      "id": "gaz_210",
+      "name": "甘肃通渭榜罗镇",
+      "province": "甘肃",
+      "historicalNames": "榜罗镇",
+      "modernName": "甘肃定西市通渭县榜罗镇",
+      "eventCount": 3,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "1935年9月27-28日中共中央政治局常委榜罗镇会议最终确定落脚陕北。",
+      "coordinates": [
+        35.04,
+        105.3
+      ]
+    },
+    {
+      "id": "gaz_211",
+      "name": "甘肃通渭青江驿、陇西翟家所",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.2,
+        104.85
+      ]
+    },
+    {
+      "id": "gaz_212",
+      "name": "甘肃靖远虎豹口",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.5314,
+        104.6187
+      ]
+    },
+    {
+      "id": "gaz_213",
+      "name": "甘肃静宁将台堡",
+      "province": "甘肃",
+      "historicalNames": "将台堡",
+      "modernName": "宁夏固原市西吉县将台堡镇",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "1936年10月22日红一、红二方面军会师，标志三大主力长征胜利结束。",
+      "coordinates": [
+        35.52,
+        105.73
+      ]
+    },
+    {
+      "id": "gaz_214",
+      "name": "甘肃高台县",
+      "province": "甘肃",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        39.4,
+        99.8
+      ]
+    },
+    {
+      "id": "gaz_215",
+      "name": "福建大田",
+      "province": "福建",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_7th_advance"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.69,
+        117.85
+      ]
+    },
+    {
+      "id": "gaz_216",
+      "name": "福建尤溪口",
+      "province": "福建",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_7th_advance"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.17,
+        118.19
+      ]
+    },
+    {
+      "id": "gaz_217",
+      "name": "福建崇安闽北苏区",
+      "province": "福建",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_7th_advance"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.75,
+        118.03
+      ]
+    },
+    {
+      "id": "gaz_218",
+      "name": "福建闽侯水口",
+      "province": "福建",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_7th_advance"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.38,
+        118.82
+      ]
+    },
+    {
+      "id": "gaz_219",
+      "name": "贵州乌江一线",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.3,
+        106.7
+      ]
+    },
+    {
+      "id": "gaz_220",
+      "name": "贵州乌江茶山关一线",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.285,
+        107.265
+      ]
+    },
+    {
+      "id": "gaz_221",
+      "name": "贵州习水、四川古蔺一带",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.2,
+        105.9
+      ]
+    },
+    {
+      "id": "gaz_222",
+      "name": "贵州习水土城",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.33,
+        106.2
+      ]
+    },
+    {
+      "id": "gaz_223",
+      "name": "贵州习水太平渡",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.15,
+        106.24
+      ]
+    },
+    {
+      "id": "gaz_224",
+      "name": "贵州二郎滩",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.12,
+        106.28
+      ]
+    },
+    {
+      "id": "gaz_225",
+      "name": "贵州仁怀枫香坝倒流水",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.648,
+        106.43
+      ]
+    },
+    {
+      "id": "gaz_226",
+      "name": "贵州仁怀猿猴场",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.27,
+        106.1
+      ]
+    },
+    {
+      "id": "gaz_227",
+      "name": "贵州仁怀茅台镇",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.8,
+        106.4
+      ]
+    },
+    {
+      "id": "gaz_228",
+      "name": "贵州余庆回龙场渡口",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.42,
+        107.62
+      ]
+    },
+    {
+      "id": "gaz_229",
+      "name": "贵州兴义、贞丰一带",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.09,
+        104.9
+      ]
+    },
+    {
+      "id": "gaz_230",
+      "name": "贵州剑河",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.73,
+        108.45
+      ]
+    },
+    {
+      "id": "gaz_231",
+      "name": "贵州剑河、台江清水江沿岸",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.85,
+        108.3
+      ]
+    },
+    {
+      "id": "gaz_232",
+      "name": "贵州台拱偏寨",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.75,
+        108.28
+      ]
+    },
+    {
+      "id": "gaz_233",
+      "name": "贵州台拱（今台江）",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.67,
+        108.32
+      ]
+    },
+    {
+      "id": "gaz_234",
+      "name": "贵州土城",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.3,
+        106.0
+      ]
+    },
+    {
+      "id": "gaz_235",
+      "name": "贵州土城/赤水河",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.17,
+        106.17
+      ]
+    },
+    {
+      "id": "gaz_236",
+      "name": "贵州娄山关",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.13,
+        106.86
+      ]
+    },
+    {
+      "id": "gaz_237",
+      "name": "贵州开江县属高寨",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.05,
+        107.0
+      ]
+    },
+    {
+      "id": "gaz_238",
+      "name": "贵州惠水定番",
+      "province": "贵州",
+      "historicalNames": "定番",
+      "modernName": "贵州黔南州惠水县",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "旧称“定番县”，1941年更名惠水县。",
+      "coordinates": [
+        26.133,
+        106.659
+      ]
+    },
+    {
+      "id": "gaz_239",
+      "name": "贵州施秉施洞口",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.83,
+        108.12
+      ]
+    },
+    {
+      "id": "gaz_240",
+      "name": "贵州桐梓娄山关",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.0675,
+        106.844
+      ]
+    },
+    {
+      "id": "gaz_241",
+      "name": "贵州毕节",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.3,
+        105.29
+      ]
+    },
+    {
+      "id": "gaz_242",
+      "name": "贵州猴场与瓮安",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.35,
+        106.9
+      ]
+    },
+    {
+      "id": "gaz_243",
+      "name": "贵州瓮安",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.068,
+        107.479
+      ]
+    },
+    {
+      "id": "gaz_244",
+      "name": "贵州瓮安、新黄平",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.05,
+        107.48
+      ]
+    },
+    {
+      "id": "gaz_245",
+      "name": "贵州瓮安江界河渡口",
+      "province": "贵州",
+      "historicalNames": "江界河渡口",
+      "modernName": "贵州黔南州瓮安县江界河镇",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "1935年1月红四团强渡乌江主渡口之一。",
+      "coordinates": [
+        27.255,
+        107.4
+      ]
+    },
+    {
+      "id": "gaz_246",
+      "name": "贵州瓮安江界河渡口（乌江）",
+      "province": "贵州",
+      "historicalNames": "江界河渡口",
+      "modernName": "贵州黔南州瓮安县江界河镇",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "1935年1月红四团强渡乌江主渡口之一。",
+      "coordinates": [
+        27.19,
+        107.35
+      ]
+    },
+    {
+      "id": "gaz_247",
+      "name": "贵州瓮安猴场",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first",
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.1,
+        107.48
+      ]
+    },
+    {
+      "id": "gaz_248",
+      "name": "贵州石阡/镇远/黄平一带",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.05,
+        108.05
+      ]
+    },
+    {
+      "id": "gaz_249",
+      "name": "贵州茅台",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.85,
+        106.38
+      ]
+    },
+    {
+      "id": "gaz_250",
+      "name": "贵州营盘山、木宜之间",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.25,
+        105.85
+      ]
+    },
+    {
+      "id": "gaz_251",
+      "name": "贵州贞丰白层北盘江",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.565,
+        105.612
+      ]
+    },
+    {
+      "id": "gaz_252",
+      "name": "贵州贵阳周边",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.65,
+        106.63
+      ]
+    },
+    {
+      "id": "gaz_253",
+      "name": "贵州赤水河二郎滩",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.0,
+        106.2
+      ]
+    },
+    {
+      "id": "gaz_254",
+      "name": "贵州遵义",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 5,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.73,
+        106.92
+      ]
+    },
+    {
+      "id": "gaz_255",
+      "name": "贵州遵义仁怀一带",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.785,
+        106.48
+      ]
+    },
+    {
+      "id": "gaz_256",
+      "name": "贵州遵义十字坡",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.75,
+        106.85
+      ]
+    },
+    {
+      "id": "gaz_257",
+      "name": "贵州遵义周边",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "enemy_kmt"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.69,
+        106.93
+      ]
+    },
+    {
+      "id": "gaz_258",
+      "name": "贵州遵义城",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.71,
+        106.92
+      ]
+    },
+    {
+      "id": "gaz_259",
+      "name": "贵州遵义城南",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.662,
+        106.915
+      ]
+    },
+    {
+      "id": "gaz_260",
+      "name": "贵州遵义外围",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.7,
+        106.95
+      ]
+    },
+    {
+      "id": "gaz_261",
+      "name": "贵州遵义娄山关",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.85,
+        106.75
+      ]
+    },
+    {
+      "id": "gaz_262",
+      "name": "贵州遵义娄山关、板桥",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.85,
+        106.75
+      ]
+    },
+    {
+      "id": "gaz_263",
+      "name": "贵州遵义板桥至遵义城",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.7,
+        106.95
+      ]
+    },
+    {
+      "id": "gaz_264",
+      "name": "贵州遵义桐梓一带",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.132,
+        106.826
+      ]
+    },
+    {
+      "id": "gaz_265",
+      "name": "贵州遵义老城",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.695,
+        106.925
+      ]
+    },
+    {
+      "id": "gaz_266",
+      "name": "贵州遵义老城北",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.71,
+        106.92
+      ]
+    },
+    {
+      "id": "gaz_267",
+      "name": "贵州遵义苟坝",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.49,
+        106.71
+      ]
+    },
+    {
+      "id": "gaz_268",
+      "name": "贵州遵义鸭溪",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.56,
+        106.66
+      ]
+    },
+    {
+      "id": "gaz_269",
+      "name": "贵州遵义鸭溪白腊坎",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.558,
+        106.718
+      ]
+    },
+    {
+      "id": "gaz_270",
+      "name": "贵州马鬃岭",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.4,
+        106.6
+      ]
+    },
+    {
+      "id": "gaz_271",
+      "name": "贵州黄平",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.897,
+        107.901
+      ]
+    },
+    {
+      "id": "gaz_272",
+      "name": "贵州黄平、施秉",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.9,
+        107.9
+      ]
+    },
+    {
+      "id": "gaz_273",
+      "name": "贵州黄平新城、施秉",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.92,
+        108.05
+      ]
+    },
+    {
+      "id": "gaz_274",
+      "name": "贵州黎平",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 4,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.23,
+        109.13
+      ]
+    },
+    {
+      "id": "gaz_275",
+      "name": "贵州黔东南苗山",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.4,
+        108.6
+      ]
+    },
+    {
+      "id": "gaz_276",
+      "name": "贵州龙里县崖脚",
+      "province": "贵州",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.45,
+        106.98
+      ]
+    },
+    {
+      "id": "gaz_277",
+      "name": "巴黎",
+      "province": "跨区/海外",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 4,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        48.85,
+        2.35
+      ]
+    },
+    {
+      "id": "gaz_278",
+      "name": "莫斯科",
+      "province": "跨区/海外",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        55.75,
+        37.62
+      ]
+    },
+    {
+      "id": "gaz_279",
+      "name": "下坑、义安圩、大龙山",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.3,
+        114.6
+      ]
+    },
+    {
+      "id": "gaz_280",
+      "name": "中央红军长征全程",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.5,
+        106.0
+      ]
+    },
+    {
+      "id": "gaz_281",
+      "name": "中央红军长征沿线",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 4,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.5,
+        106.0
+      ]
+    },
+    {
+      "id": "gaz_282",
+      "name": "中央苏区至陕北",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.5,
+        106.0
+      ]
+    },
+    {
+      "id": "gaz_283",
+      "name": "中央苏区至陕北沿线汉族区域",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.5,
+        106.0
+      ]
+    },
+    {
+      "id": "gaz_284",
+      "name": "乌径、石材圩、九渡水",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.3,
+        114.6
+      ]
+    },
+    {
+      "id": "gaz_285",
+      "name": "乌蒙山区",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "enemy_kmt",
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.725,
+        104.775
+      ]
+    },
+    {
+      "id": "gaz_286",
+      "name": "乌蒙山区周边",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "enemy_kmt"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.6,
+        104.9
+      ]
+    },
+    {
+      "id": "gaz_287",
+      "name": "伦敦",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        51.5,
+        -0.13
+      ]
+    },
+    {
+      "id": "gaz_288",
+      "name": "余庆",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.52,
+        107.75
+      ]
+    },
+    {
+      "id": "gaz_289",
+      "name": "保安/陕北",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.9,
+        109.0
+      ]
+    },
+    {
+      "id": "gaz_290",
+      "name": "南溪、大庾河、小溪",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.3,
+        114.6
+      ]
+    },
+    {
+      "id": "gaz_291",
+      "name": "大渡河上游至懋功",
+      "province": "跨省/综合",
+      "historicalNames": "懋功",
+      "modernName": "四川阿坝州小金县",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "旧称“懋功县”，1953年更名小金县，红一、红四方面军会师地。",
+      "coordinates": [
+        29.8,
+        102.2
+      ]
+    },
+    {
+      "id": "gaz_292",
+      "name": "天津",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        39.13,
+        117.2
+      ]
+    },
+    {
+      "id": "gaz_293",
+      "name": "安息圩、石材圩、铁石圩",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.3,
+        114.1
+      ]
+    },
+    {
+      "id": "gaz_294",
+      "name": "宜章",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.4,
+        112.93
+      ]
+    },
+    {
+      "id": "gaz_295",
+      "name": "宜章、小溪、南溪",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.4,
+        112.93
+      ]
+    },
+    {
+      "id": "gaz_296",
+      "name": "山东",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongjiang"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.5,
+        118.0
+      ]
+    },
+    {
+      "id": "gaz_297",
+      "name": "川南至滇北、金沙江与大渡河",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        26.6,
+        102.0
+      ]
+    },
+    {
+      "id": "gaz_298",
+      "name": "川西北与康东藏区",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.8,
+        102.6
+      ]
+    },
+    {
+      "id": "gaz_299",
+      "name": "川西北草地",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first",
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.5,
+        102.5
+      ]
+    },
+    {
+      "id": "gaz_300",
+      "name": "川西北草地周边",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "enemy_kmt"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.58,
+        102.96
+      ]
+    },
+    {
+      "id": "gaz_301",
+      "name": "川西西昌、冕宁彝族区域",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.45,
+        102.27
+      ]
+    },
+    {
+      "id": "gaz_302",
+      "name": "川黔赤水河流域",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "enemy_kmt"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.585,
+        105.695
+      ]
+    },
+    {
+      "id": "gaz_303",
+      "name": "巴西、松潘以南至甘南",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.8,
+        103.6
+      ]
+    },
+    {
+      "id": "gaz_304",
+      "name": "懋功至松潘、毛儿盖",
+      "province": "跨省/综合",
+      "historicalNames": "懋功",
+      "modernName": "四川阿坝州小金县",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "旧称“懋功县”，1953年更名小金县，红一、红四方面军会师地。",
+      "coordinates": [
+        32.5,
+        102.6
+      ]
+    },
+    {
+      "id": "gaz_305",
+      "name": "松潘南部至甘南",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.5,
+        103.2
+      ]
+    },
+    {
+      "id": "gaz_306",
+      "name": "桂北僮族区域",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.8,
+        110.0
+      ]
+    },
+    {
+      "id": "gaz_307",
+      "name": "桂北越城岭一带",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.52,
+        110.75
+      ]
+    },
+    {
+      "id": "gaz_308",
+      "name": "桂北黔边瑶族区域",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.9,
+        110.2
+      ]
+    },
+    {
+      "id": "gaz_309",
+      "name": "毛儿盖、波罗子",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        32.8,
+        102.3
+      ]
+    },
+    {
+      "id": "gaz_310",
+      "name": "江苏安徽",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongjiang"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        34.0,
+        117.0
+      ]
+    },
+    {
+      "id": "gaz_311",
+      "name": "湘南宜章/临武一带",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.28,
+        112.56
+      ]
+    },
+    {
+      "id": "gaz_312",
+      "name": "甘新交界星星峡",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        41.2,
+        94.7
+      ]
+    },
+    {
+      "id": "gaz_313",
+      "name": "界首",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.3,
+        111.2
+      ]
+    },
+    {
+      "id": "gaz_314",
+      "name": "苏联远东/中国东北",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongbei"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        45.0,
+        130.0
+      ]
+    },
+    {
+      "id": "gaz_315",
+      "name": "赣南·信丰至于都一线",
+      "province": "跨省/综合",
+      "historicalNames": "雩都",
+      "modernName": "江西赣州市于都县",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "旧称“雩都”，1957年简化为“于都”，中央红军集结出发第一渡口。",
+      "coordinates": [
+        25.3,
+        114.6
+      ]
+    },
+    {
+      "id": "gaz_316",
+      "name": "赣南安远/信丰一带",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.13,
+        115.39
+      ]
+    },
+    {
+      "id": "gaz_317",
+      "name": "道州",
+      "province": "跨省/综合",
+      "historicalNames": "道州",
+      "modernName": "湖南永州市道县",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "历史文献常称“道州”，即今湖南道县。",
+      "coordinates": [
+        25.53,
+        111.59
+      ]
+    },
+    {
+      "id": "gaz_318",
+      "name": "长征全程",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.0,
+        105.0
+      ]
+    },
+    {
+      "id": "gaz_319",
+      "name": "陕北·吴起镇",
+      "province": "跨省/综合",
+      "historicalNames": "吴起镇/吴旗",
+      "modernName": "陕西延安市吴起县",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "旧亦作“吴旗镇”，1935年10月19日中央红军长征落脚点。",
+      "coordinates": [
+        36.93,
+        108.18
+      ]
+    },
+    {
+      "id": "gaz_320",
+      "name": "陕北黄河西岸",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        37.2,
+        110.3
+      ]
+    },
+    {
+      "id": "gaz_321",
+      "name": "陕甘边/陕北根据地",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.6,
+        108.8
+      ]
+    },
+    {
+      "id": "gaz_322",
+      "name": "香港",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongjiang"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        22.4,
+        114.2
+      ]
+    },
+    {
+      "id": "gaz_323",
+      "name": "香港九龙新界",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongjiang"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        22.4,
+        114.3
+      ]
+    },
+    {
+      "id": "gaz_324",
+      "name": "香港至广东东江",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongjiang"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        22.3,
+        114.2
+      ]
+    },
+    {
+      "id": "gaz_325",
+      "name": "黔北·赤水与扎西",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.3,
+        105.7
+      ]
+    },
+    {
+      "id": "gaz_326",
+      "name": "黔北·遵义一带",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        27.6,
+        107.1
+      ]
+    },
+    {
+      "id": "gaz_327",
+      "name": "黔北至川南",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.5,
+        105.3
+      ]
+    },
+    {
+      "id": "gaz_328",
+      "name": "黔南桂北苗族区域",
+      "province": "跨省/综合",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        25.8,
+        109.5
+      ]
+    },
+    {
+      "id": "gaz_329",
+      "name": "鄂豫皖根据地",
+      "province": "鄂豫皖",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        31.6,
+        115.4
+      ]
+    },
+    {
+      "id": "gaz_330",
+      "name": "鄂豫陕边区",
+      "province": "鄂豫陕",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "enemy_kmt",
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.65,
+        110.15
+      ]
+    },
+    {
+      "id": "gaz_331",
+      "name": "鄂豫陕边区商洛一带",
+      "province": "鄂豫陕",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.87,
+        109.94
+      ]
+    },
+    {
+      "id": "gaz_332",
+      "name": "重庆酉阳南腰界",
+      "province": "重庆",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_second"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        28.57,
+        108.58
+      ]
+    },
+    {
+      "id": "gaz_333",
+      "name": "陕甘宁区域",
+      "province": "陕甘宁",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.65,
+        108.05
+      ]
+    },
+    {
+      "id": "gaz_334",
+      "name": "陕甘宁边区一带",
+      "province": "陕甘宁",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.7,
+        107.4
+      ]
+    },
+    {
+      "id": "gaz_335",
+      "name": "陕甘宁边回族区域",
+      "province": "陕甘宁",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.5,
+        106.5
+      ]
+    },
+    {
+      "id": "gaz_336",
+      "name": "陕西保安",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "red_first"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        37.14,
+        109.67
+      ]
+    },
+    {
+      "id": "gaz_337",
+      "name": "陕西凤县双石铺",
+      "province": "陕西",
+      "historicalNames": "双石铺",
+      "modernName": "陕西宝鸡市凤县双石铺镇",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "今陕西凤县县城所在地，红25军1935年7月西征占领之川陕公路要地；切勿误标川西北草地。",
+      "coordinates": [
+        34.05,
+        106.55
+      ]
+    },
+    {
+      "id": "gaz_338",
+      "name": "陕西南部",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_fourth"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.0,
+        106.9
+      ]
+    },
+    {
+      "id": "gaz_339",
+      "name": "陕西吴起镇",
+      "province": "陕西",
+      "historicalNames": "吴起镇/吴旗",
+      "modernName": "陕西延安市吴起县",
+      "eventCount": 7,
+      "forces": [
+        "red_first",
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "旧亦作“吴旗镇”，1935年10月19日中央红军长征落脚点。",
+      "coordinates": [
+        36.93,
+        108.176
+      ]
+    },
+    {
+      "id": "gaz_340",
+      "name": "陕西商洛庾家河",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.62,
+        110.0
+      ]
+    },
+    {
+      "id": "gaz_341",
+      "name": "陕西子长瓦窑堡",
+      "province": "陕西",
+      "historicalNames": "安定",
+      "modernName": "陕西延安市子长市",
+      "eventCount": 2,
+      "forces": [
+        "red_first",
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "旧称“安定县”，1942年为纪念谢子长改名子长县。",
+      "coordinates": [
+        37.14,
+        109.67
+      ]
+    },
+    {
+      "id": "gaz_342",
+      "name": "陕西安定一带",
+      "province": "陕西",
+      "historicalNames": "安定",
+      "modernName": "陕西延安市子长市",
+      "eventCount": 5,
+      "forces": [
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "【消歧】陕甘红军文献中“安定”指今陕西子长，区别于甘肃定西安定区。",
+      "coordinates": [
+        37.15,
+        109.65
+      ]
+    },
+    {
+      "id": "gaz_343",
+      "name": "陕西富县直罗镇",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 3,
+      "forces": [
+        "red_first",
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.0,
+        109.37
+      ]
+    },
+    {
+      "id": "gaz_344",
+      "name": "陕西山阳紫荆关一带",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.43,
+        109.88
+      ]
+    },
+    {
+      "id": "gaz_345",
+      "name": "陕西山阳袁家沟口",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.44,
+        109.89
+      ]
+    },
+    {
+      "id": "gaz_346",
+      "name": "陕西延安",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 4,
+      "forces": [
+        "red_first",
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.6,
+        109.5
+      ]
+    },
+    {
+      "id": "gaz_347",
+      "name": "陕西延川永坪",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 4,
+      "forces": [
+        "red_25th",
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.88,
+        110.18
+      ]
+    },
+    {
+      "id": "gaz_348",
+      "name": "陕西柞水蔡玉窑一带",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.68,
+        109.13
+      ]
+    },
+    {
+      "id": "gaz_349",
+      "name": "陕西洋县华阳",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.59,
+        107.54
+      ]
+    },
+    {
+      "id": "gaz_350",
+      "name": "陕西洛南庾家河",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        33.8,
+        110.2
+      ]
+    },
+    {
+      "id": "gaz_351",
+      "name": "陕西甘泉劳山",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.26,
+        109.4
+      ]
+    },
+    {
+      "id": "gaz_352",
+      "name": "陕西甘泉榆林桥",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.31,
+        109.33
+      ]
+    },
+    {
+      "id": "gaz_353",
+      "name": "陕西甘泉象鼻子湾",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.28,
+        109.35
+      ]
+    },
+    {
+      "id": "gaz_354",
+      "name": "陕西甘肃交界",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.5,
+        106.5
+      ]
+    },
+    {
+      "id": "gaz_355",
+      "name": "陕西耀县照金",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 5,
+      "forces": [
+        "shaanbei_red"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        35.08,
+        108.82
+      ]
+    },
+    {
+      "id": "gaz_356",
+      "name": "陕西蓝田九间房",
+      "province": "陕西",
+      "historicalNames": "蓝田九间房",
+      "modernName": "陕西西安市蓝田县九间房镇",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "【消歧】1935年4月9日红25军九间房伏击战在陕西蓝田葛牌镇以南，切勿误标为山阳袁家沟口。",
+      "coordinates": [
+        33.916,
+        109.538
+      ]
+    },
+    {
+      "id": "gaz_357",
+      "name": "陕西蓝田文公岭一带",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        34.05,
+        109.33
+      ]
+    },
+    {
+      "id": "gaz_358",
+      "name": "陕西西安南郊韦曲/子午镇",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        34.06,
+        108.94
+      ]
+    },
+    {
+      "id": "gaz_359",
+      "name": "陕西长安沣峪口",
+      "province": "陕西",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_25th"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        34.02,
+        108.78
+      ]
+    },
+    {
+      "id": "gaz_360",
+      "name": "青海西宁",
+      "province": "青海",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "red_west_route"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        36.62,
+        101.78
+      ]
+    },
+    {
+      "id": "gaz_361",
+      "name": "黑龙江乌斯浑河畔",
+      "province": "黑龙江",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongbei"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        44.6,
+        129.7
+      ]
+    },
+    {
+      "id": "gaz_362",
+      "name": "黑龙江吉林",
+      "province": "黑龙江",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongbei"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        45.0,
+        128.0
+      ]
+    },
+    {
+      "id": "gaz_363",
+      "name": "黑龙江哈尔滨",
+      "province": "黑龙江",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 2,
+      "forces": [
+        "spark_dongbei"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        45.8,
+        126.5
+      ]
+    },
+    {
+      "id": "gaz_364",
+      "name": "黑龙江宁安镜泊湖",
+      "province": "黑龙江",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongbei"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        44.0,
+        128.9
+      ]
+    },
+    {
+      "id": "gaz_365",
+      "name": "黑龙江尚志",
+      "province": "黑龙江",
+      "historicalNames": "",
+      "modernName": "",
+      "eventCount": 1,
+      "forces": [
+        "spark_dongbei"
+      ],
+      "disambiguationNote": "",
+      "coordinates": [
+        45.2,
+        127.9
+      ]
+    }
+  ],
   "museum": {
     "halls": [
       {

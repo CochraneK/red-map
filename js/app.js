@@ -28,6 +28,9 @@ let currentZoom = 5;
 let currentLang = 'zh';
 let effectLayer = null;
 let meetingFlagLayer = null;
+let gazetteer = [];
+let gazetteerByName = new Map();
+let placeMarker = null;
 
 const markerById = new Map();
 const routeByKey = new Map();
@@ -64,7 +67,11 @@ const UI = {
     poemKicker: '七律·长征', poemSubtitle: '诗句在这里落到山川、河流与行军现场。',
     scopeCore: '核心长征 1934–36', scopeAll: '全域星火',
     evVerified: '权威+一手', evHigh: '仅权威', evAll: '含待证线索',
-    sourcesTitle: '来源考证', archiveLink: '参考书目 ↗'
+    sourcesTitle: '来源考证', archiveLink: '参考书目 ↗',
+    placeSearch: '地名检索', placeSearchPlaceholder: '输入地名，如 两河口 / 老山界 / 通道',
+    placeResults: '处相关地点', placeNoResult: '未找到匹配地名', placeDisambig: '同名消歧',
+    placeModern: '今属', placeHistorical: '旧称', placeEvents: '相关事件',
+    placeOpen: '展开地名检索', placeClose: '收起地名检索'
   },
   en: {
     appTitle: 'Long March Spark Map',
@@ -80,7 +87,11 @@ const UI = {
     poemKicker: 'Qilu · Long March', poemSubtitle: 'A poetic line meets the actual mountains and rivers on the route.',
     scopeCore: 'Core 1934–36', scopeAll: 'All Sparks',
     evVerified: 'Verified', evHigh: 'Authoritative', evAll: 'All + Clues',
-    sourcesTitle: 'Sources & Provenance', archiveLink: 'Bibliography ↗'
+    sourcesTitle: 'Sources & Provenance', archiveLink: 'Bibliography ↗',
+    placeSearch: 'Place search', placeSearchPlaceholder: 'Type a place, e.g. Lianghekou / Laoshanjie',
+    placeResults: 'matching places', placeNoResult: 'No matching place found', placeDisambig: 'Disambiguation',
+    placeModern: 'Modern', placeHistorical: 'Historical', placeEvents: 'events',
+    placeOpen: 'Open place search', placeClose: 'Collapse place search'
   }
 };
 
@@ -114,6 +125,7 @@ async function initApp() {
     initMapFilters();
     initForcePanel();
     initMemorialLayer();
+    initPlaceSearch();
     initTimeline();
     bindPanelClose();
     bindLanguageToggle();
@@ -149,6 +161,8 @@ async function loadVariantGroupsForMap() {
 function prepareData() {
   if (!marchData || !Array.isArray(marchData.subjects) || !Array.isArray(marchData.events)) throw new Error('数据格式错误：必须包含 subjects 与 events。');
   sourceById = new Map((marchData.sources || []).map(s => [s.id, s]));
+  gazetteer = Array.isArray(marchData.gazetteer) ? marchData.gazetteer : [];
+  gazetteerByName = new Map(gazetteer.map(p => [p.name, p]));
   marchData.subjects.forEach(s => { if (s.id === 'enemy_kmt' || s.id === 'enemy_japan') s.isEnemy = true; });
   const forceIds = new Set(marchData.subjects.filter(s => s.type === 'force').map(s => s.id));
   const seen = new Set();
@@ -373,8 +387,16 @@ function applyHashEvent() {
   if (eventId) {
     target = allNormalizedEvents.find(e => e.id === eventId);
   } else if (placeName) {
-    target = sortedEvents.find(e => (e.location?.name || '').includes(placeName))
-      || allNormalizedEvents.find(e => (e.location?.name || '').includes(placeName));
+    // 地名深链：优先 gazetteer 精确命中（含同名消歧），再退回到模糊包含匹配
+    const gaz = gazetteerByName.get(placeName);
+    if (gaz) {
+      const exact = allNormalizedEvents.filter(e => e.location?.name === placeName);
+      target = exact.find(e => e.certainty === 'high') || exact[0] || null;
+    }
+    if (!target) {
+      target = sortedEvents.find(e => (e.location?.name || '').includes(placeName))
+        || allNormalizedEvents.find(e => (e.location?.name || '').includes(placeName));
+    }
   }
   if (!target) return false;
   // 若目标事件在当前滤镜之外，自动放宽模式确保可达
@@ -387,6 +409,139 @@ function applyHashEvent() {
   if (idx < 0) return false;
   currentSortedIndex = idx;
   return true;
+}
+
+/* ============ 地名检索（gazetteer 驱动） ============ */
+function initPlaceSearch() {
+  const input = document.getElementById('place-search-input');
+  const panel = document.getElementById('place-panel');
+  const toggle = document.getElementById('place-panel-toggle');
+  const closeBtn = document.getElementById('place-panel-close');
+  if (!input || !panel || !toggle) return;
+
+  const openPanel = () => {
+    panel.classList.add('open');
+    toggle.setAttribute('aria-expanded', 'true');
+    toggle.querySelector('span').textContent = t('placeClose');
+    input.focus();
+    if (!input.value.trim()) renderPlaceResults('');
+  };
+  const closePanel = () => {
+    panel.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.querySelector('span').textContent = t('placeSearch');
+  };
+  toggle.addEventListener('click', () => panel.classList.contains('open') ? closePanel() : openPanel());
+  if (closeBtn) closeBtn.addEventListener('click', closePanel);
+  input.addEventListener('input', () => renderPlaceResults(input.value.trim()));
+  input.addEventListener('keydown', ev => {
+    if (ev.key === 'Escape') { closePanel(); }
+    if (ev.key === 'Enter') {
+      const first = document.querySelector('#place-results .place-result');
+      if (first) first.click();
+    }
+  });
+}
+
+function normalizePlaceKey(value) {
+  return String(value || '').replace(/[\s　]/g, '').replace(/[（(].*?[)）]/g, '');
+}
+
+function searchGazetteer(query) {
+  const q = normalizePlaceKey(query);
+  if (!q) return [];
+  const scored = [];
+  for (const place of gazetteer) {
+    const name = normalizePlaceKey(place.name);
+    const modern = normalizePlaceKey(place.modernName || '');
+    const hist = normalizePlaceKey(place.historicalNames || '');
+    let score = 0;
+    if (name === q) score = 100;
+    else if (name.includes(q)) score = 80 - Math.min(20, name.length - q.length);
+    else if (modern.includes(q)) score = 60;
+    else if (hist && hist.includes(q)) score = 50;
+    if (!score) continue;
+    // 有消歧注释的地名优先，避免同名地点抢占首位
+    if (place.disambiguationNote) score += 5;
+    scored.push({ place, score });
+  }
+  scored.sort((a, b) => b.score - a.score || a.place.name.localeCompare(b.place.name, 'zh-CN'));
+  return scored.map(s => s.place);
+}
+
+function eventsAtPlace(place) {
+  return allNormalizedEvents.filter(e => e.location?.name === place.name);
+}
+
+function renderPlaceResults(query) {
+  const box = document.getElementById('place-results');
+  const hint = document.getElementById('place-hint');
+  if (!box) return;
+  if (!query) { box.innerHTML = ''; if (hint) hint.hidden = true; return; }
+  const matches = searchGazetteer(query);
+  if (!matches.length) {
+    box.innerHTML = `<div class="place-empty">${escapeHTML(t('placeNoResult'))}</div>`;
+    if (hint) hint.hidden = true;
+    return;
+  }
+  box.innerHTML = matches.slice(0, 12).map(place => {
+    const evs = eventsAtPlace(place);
+    const alias = [];
+    if (place.modernName && place.modernName !== place.name) alias.push(`${t('placeModern')}：${place.modernName}`);
+    if (place.historicalNames) alias.push(`${t('placeHistorical')}：${place.historicalNames}`);
+    return `<button type="button" class="place-result${place.disambiguationNote ? ' has-note' : ''}" data-place="${escapeAttr(place.name)}">
+      <span class="place-result-name">${escapeHTML(place.name)}</span>
+      <span class="place-result-meta">${escapeHTML(place.province || '')} · ${evs.length} ${escapeHTML(t('placeEvents'))}</span>
+      ${alias.length ? `<span class="place-result-alias">${escapeHTML(alias.join(' · '))}</span>` : ''}
+      ${place.disambiguationNote ? `<span class="place-result-note"><b>${escapeHTML(t('placeDisambig'))}</b> ${escapeHTML(place.disambiguationNote)}</span>` : ''}
+    </button>`;
+  }).join('');
+  box.querySelectorAll('.place-result').forEach(btn => {
+    btn.addEventListener('click', () => focusPlace(btn.dataset.place));
+  });
+  if (hint) hint.hidden = true;
+}
+
+function focusPlace(placeName) {
+  const place = gazetteerByName.get(placeName);
+  const evs = eventsAtPlace({ name: placeName });
+  if (!evs.length) return;
+  // 选中最能代表该地点的一条：优先权威、其次最早
+  const target = [...evs].sort((a, b) => {
+    const rank = e => (e.certainty === 'high' ? 0 : e.certainty === 'medium' ? 1 : 2);
+    return rank(a) - rank(b) || String(a.date).localeCompare(String(b.date));
+  })[0];
+
+  // 若目标不在当前筛选内，自动放宽到可见
+  if (!eventPassesFilters(target)) {
+    if (scopeMode === 'core' && (target.layer || 'march') !== 'march') scopeMode = 'all';
+    if (evidenceMode === 'high' || (evidenceMode === 'verified' && target.certainty === 'low')) {
+      evidenceMode = target.certainty === 'low' ? 'all' : 'verified';
+    }
+    syncMapFilterButtons();
+    rebuildVisibleEvents(target.id);
+  }
+  const idx = sortedEvents.findIndex(e => e.id === target.id);
+  if (idx >= 0) { currentSortedIndex = idx; renderCurrentState(true); }
+
+  // 消歧提示优先于地图操作，保证 UI 反馈不依赖地图动画成功
+  const hint = document.getElementById('place-hint');
+  if (hint) {
+    if (place?.disambiguationNote) {
+      hint.innerHTML = `<b>${escapeHTML(t('placeDisambig'))}</b> ${escapeHTML(place.disambiguationNote)}`;
+      hint.hidden = false;
+    } else {
+      hint.hidden = true;
+    }
+  }
+
+  if (place?.coordinates) {
+    if (placeMarker) map.removeLayer(placeMarker);
+    placeMarker = L.circleMarker(place.coordinates, {
+      radius: 12, color: '#1f6feb', weight: 3, fillColor: '#1f6feb', fillOpacity: 0.18
+    }).addTo(map);
+    map.setView(place.coordinates, Math.max(map.getZoom(), 6), { animate: true });
+  }
 }
 function applyLanguage() { document.querySelectorAll('[data-i18n]').forEach(el => el.textContent = t(el.dataset.i18n)); document.title = t('appTitle'); const btn = document.getElementById('lang-toggle'); if (btn) btn.textContent = t('langBtn'); updateTimelineLabels(); updateFilterSummary(); }
 function stepTimeline(delta) { const next = Math.max(0, Math.min(sortedEvents.length - 1, currentSortedIndex + delta)); if (next !== currentSortedIndex) { currentSortedIndex = next; renderCurrentState(true); } }
@@ -960,7 +1115,10 @@ window.marchMap = {
   setEvidence: mode => { evidenceMode = mode; syncMapFilterButtons(); rebuildVisibleEvents(); renderCurrentState(false); },
   showEvent: index => { currentSortedIndex = Math.max(0, Math.min(sortedEvents.length - 1, Number(index) || 0)); renderCurrentState(true); },
   activeForces: () => [...activeForces],
-  memorialSites: () => memorialData
+  memorialSites: () => memorialData,
+  gazetteer: () => gazetteer,
+  searchPlaces: query => searchGazetteer(query),
+  focusPlace: name => focusPlace(name)
 };
 
 

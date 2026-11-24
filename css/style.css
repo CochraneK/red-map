@@ -45,6 +45,31 @@ body {
 .memorial-pop-loc { font-size: 12px; color: #555; margin-top: 4px; line-height: 1.5; }
 .memorial-pop-meta { font-size: 11px; color: #7f1618; margin-top: 6px; }
 .memorial-pop-note { font-size: 10px; color: #999; margin-top: 4px; }
+/* 地名检索面板（gazetteer 驱动，含同名消歧提示） */
+.place-panel-toggle { position: absolute; top: 104px; right: 282px; z-index: 1000; border: 1px solid var(--line); background: var(--panel); color: var(--text); border-radius: 999px; padding: 7px 14px; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: var(--shadow); backdrop-filter: blur(12px); }
+.place-panel-toggle:hover { background: #fff; }
+.place-panel { position: absolute; top: 104px; right: 282px; z-index: 1001; width: 290px; max-height: 66vh; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); backdrop-filter: blur(12px); padding: 12px; display: none; flex-direction: column; }
+.place-panel.open { display: flex; }
+.place-panel-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.place-panel-head h3 { font-size: 13px; letter-spacing: .14em; color: var(--text); }
+.place-close { border: none; background: transparent; font-size: 18px; line-height: 1; cursor: pointer; color: var(--muted); padding: 0 2px; }
+.place-close:hover { color: var(--text); }
+.place-search-input { width: 100%; border: 1px solid #d1d7d0; border-radius: 10px; padding: 8px 10px; font-size: 13px; font-family: inherit; background: #fff; color: var(--text); }
+.place-search-input:focus { outline: 2px solid rgba(31,111,235,.35); outline-offset: 1px; }
+.place-results { margin-top: 8px; overflow-y: auto; display: flex; flex-direction: column; gap: 5px; }
+.place-results::-webkit-scrollbar { width: 5px; }
+.place-results::-webkit-scrollbar-thumb { background: rgba(0,0,0,.22); border-radius: 6px; }
+.place-result { display: block; width: 100%; text-align: left; border: 1px solid var(--line); background: #fff; border-radius: 10px; padding: 7px 9px; cursor: pointer; }
+.place-result:hover { border-color: #1f6feb; background: #f6f9ff; }
+.place-result.has-note { border-left: 3px solid #bd2427; }
+.place-result-name { display: block; font-size: 13px; font-weight: 700; color: var(--text); }
+.place-result-meta { display: block; font-size: 11px; color: var(--muted); margin-top: 2px; }
+.place-result-alias { display: block; font-size: 11px; color: #1f6feb; margin-top: 2px; }
+.place-result-note { display: block; font-size: 11px; color: #6f1617; margin-top: 4px; line-height: 1.45; }
+.place-result-note b { font-weight: 800; }
+.place-empty { font-size: 12px; color: var(--muted); padding: 8px 2px; }
+.place-hint { margin-top: 8px; border-top: 1px dashed var(--line); padding-top: 8px; font-size: 11px; color: #6f1617; line-height: 1.5; }
+.place-hint b { font-weight: 800; }
 /* 反馈(2026-05-28)：路线按视角分组的分组标题 */
 .force-group-heading { display: flex; align-items: center; gap: 7px; margin: 10px 2px 3px; padding-left: 2px; border-left: 3px solid #bd2427; }
 .force-group-heading:first-of-type { margin-top: 4px; }
@@ -143,7 +168,7 @@ body {
 @keyframes spin { to { transform: rotate(360deg); } }
 .loading-error { text-align: center; max-width: 560px; line-height: 1.8; }
 .loading-error code { background: #23372a; color: #fff; padding: 2px 6px; border-radius: 4px; }
-@media (max-width: 900px) { .force-panel { right: 10px; width: 220px; } .event-panel { width: 330px; } .stats-panel { display: none; } .header h1 { font-size: 22px; } .subtitle { display: none; } .timeline-control { bottom: 12px; padding: 14px 16px; } .timeline-info { grid-template-columns: 1fr; } .date-display { display:none; } .event-title { grid-column:1; font-size: 14px; } }
+@media (max-width: 900px) { .force-panel { right: 10px; width: 220px; } .event-panel { width: 330px; } .stats-panel { display: none; } .header h1 { font-size: 22px; } .subtitle { display: none; } .timeline-control { bottom: 12px; padding: 14px 16px; } .timeline-info { grid-template-columns: 1fr; } .date-display { display:none; } .event-title { grid-column:1; font-size: 14px; } .place-panel { right: 10px; top: auto; bottom: 128px; width: 260px; max-height: 46vh; } .place-panel-toggle { right: 10px; top: 90px; } }
 
 /* v6 refinements */
 .leaflet-tile-pane img.leaflet-tile {
@@ -261,6 +286,8 @@ body { overscroll-behavior: none; }
   .header h1 { font-size: 24px; }
   .subtitle { display: none; }
   .force-panel { width: 254px; }
+  .place-panel, .place-panel-toggle { right: 246px; }
+  .place-panel { width: 262px; }
   .event-panel { width: 320px; }
   .stats-panel { width: 300px; }
   .timeline-control { min-width: 0; width: min(650px, calc(100vw - 370px)); }

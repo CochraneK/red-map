@@ -42,6 +42,20 @@
             <div id="force-list" class="force-list"></div>
         </div>
 
+        <div id="place-panel" class="place-panel">
+            <div class="place-panel-head">
+                <h3 data-i18n="placeSearch">Place search</h3>
+                <button type="button" id="place-panel-close" class="close-btn place-close" aria-label="Close">×</button>
+            </div>
+            <input type="search" id="place-search-input" class="place-search-input" autocomplete="off"
+                   placeholder="Type a place, e.g. Lianghekou / Laoshanjie" data-i18n-placeholder="placeSearchPlaceholder">
+            <div id="place-results" class="place-results"></div>
+            <div id="place-hint" class="place-hint" hidden></div>
+        </div>
+        <button type="button" id="place-panel-toggle" class="place-panel-toggle" aria-expanded="false">
+            <span data-i18n="placeSearch">Place search</span>
+        </button>
+
         <div id="timeline-control" class="timeline-control">
             <div class="timeline-info">
                 <span class="date-display" id="current-date">1934年10月</span>

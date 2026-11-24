@@ -227,6 +227,27 @@ def read_visual_assets(errors, warnings, hall_ids, exhibit_ids, event_ids, perso
                        'license':row.get('license',''),'sort':parse_int(row.get('sort',''),999,'visual_assets.sort')})
     return sorted(assets,key=lambda a:(a['targetType'], a['targetId'], int(a.get('sort') or 999), a.get('id','')))
 
+def read_gazetteer(errors, warnings):
+    """Read the canonical historical place-name layer (data_edit/gazetteer.csv)."""
+    places=[]; ids=set()
+    for i,row in enumerate(read_optional_csv('gazetteer.csv'), start=2):
+        if not any(row.values()): continue
+        pid=row.get('id','').strip()
+        if not pid: warnings.append(f'gazetteer.csv 第 {i} 行缺少 id，已跳过'); continue
+        if pid in ids: errors.append(f'gazetteer.csv 第 {i} 行 id 重复：{pid}'); continue
+        ids.add(pid)
+        lat=parse_float(row.get('lat',''),'lat') if row.get('lat','').strip() else None
+        lng=parse_float(row.get('lng',''),'lng') if row.get('lng','').strip() else None
+        place={'id':pid,'name':row.get('name',''),'province':row.get('province',''),
+               'historicalNames':row.get('historicalNames',''),'modernName':row.get('modernName',''),
+               'eventCount':parse_int(row.get('eventCount',''),0,'gazetteer.eventCount'),
+               'forces':split_cell(row.get('forces','')),
+               'disambiguationNote':row.get('disambiguationNote','')}
+        if lat is not None and lng is not None:
+            place['coordinates']=[lat,lng]
+        places.append(place)
+    return places
+
 def build(strict=True):
     errors=[]; warnings=[]
     metadata = read_metadata()
@@ -277,10 +298,12 @@ def build(strict=True):
     exhibits, exhibit_ids = read_exhibits(errors, warnings, hall_ids, event_ids, person_ids, source_ids)
     artifacts, artifact_ids = read_artifacts(errors, warnings, hall_ids, event_ids, person_ids, source_ids)
     visual_assets = read_visual_assets(errors, warnings, hall_ids, exhibit_ids, event_ids, person_ids, artifact_ids)
+    gazetteer = read_gazetteer(errors, warnings)
     for hid, primary in [(h.get('id',''), h.get('primaryExhibitId','')) for h in museum_halls if h.get('primaryExhibitId','')]:
         check_refs('museum_halls.csv', 0, f'primaryExhibitId for {hid}', [primary], exhibit_ids, errors)
     output={**metadata, 'sources':sources, 'subjects':sorted(subjects,key=lambda s:(int(s.get('sort') or 999),s.get('id',''))), 'events':events,
-            'persons':persons, 'personEvents':person_events, 'museum': {'halls':museum_halls, 'exhibits':exhibits, 'artifacts':artifacts, 'visualAssets':visual_assets},
+            'persons':persons, 'personEvents':person_events, 'gazetteer':gazetteer,
+            'museum': {'halls':museum_halls, 'exhibits':exhibits, 'artifacts':artifacts, 'visualAssets':visual_assets},
             'statsModel': {'startDate': metadata['timeRange']['start'], 'endDate': metadata['timeRange']['end'], 'centralDistanceLi':25000, 'overallParticipantsApprox':200000, 'overallLossesApprox':150000, 'survivorsApprox':'5–6万人', 'note':'动态统计采用史实口径与点位累积结合。'}}
     if strict and errors: raise ValueError('\n'.join(errors))
     return output, warnings, errors
@@ -295,7 +318,7 @@ def main():
     out=Path(args.out); out = out if out.is_absolute() else ROOT/out
     out.parent.mkdir(parents=True, exist_ok=True); out.write_text(json.dumps(data,ensure_ascii=False,indent=2), encoding='utf-8')
     print(f'[OK] 已生成：{out}')
-    print(f"[OK] subjects={len(data['subjects'])}, sources={len(data['sources'])}, events={len(data['events'])}, persons={len(data.get('persons',[]))}, halls={len(data.get('museum',{}).get('halls',[]))}, visuals={len(data.get('museum',{}).get('visualAssets',[]))}")
+    print(f"[OK] subjects={len(data['subjects'])}, sources={len(data['sources'])}, events={len(data['events'])}, persons={len(data.get('persons',[]))}, halls={len(data.get('museum',{}).get('halls',[]))}, visuals={len(data.get('museum',{}).get('visualAssets',[]))}, gazetteer={len(data.get('gazetteer',[]))}")
     # 同步生成「口径差异」关联组（同一史实的多种来源记载）
     # 仅当输出到正式 data/ 时才落盘，避免污染 check_project 的临时目录
     try:
