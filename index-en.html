@@ -26,6 +26,18 @@
         </div>
 
         <div id="force-panel" class="force-panel">
+            <div class="map-filter-box" id="map-filter-box">
+                <div class="map-filter-row" role="group" aria-label="Scope">
+                    <button type="button" class="filter-pill active" data-scope="core" data-i18n="scopeCore">Core 1934–36</button>
+                    <button type="button" class="filter-pill" data-scope="all" data-i18n="scopeAll">All Sparks</button>
+                </div>
+                <div class="map-filter-row" role="group" aria-label="Evidence level">
+                    <button type="button" class="filter-pill active" data-evidence="verified" data-i18n="evVerified">Verified</button>
+                    <button type="button" class="filter-pill" data-evidence="high" data-i18n="evHigh">Authoritative</button>
+                    <button type="button" class="filter-pill" data-evidence="all" data-i18n="evAll">All + Clues</button>
+                </div>
+                <div class="map-filter-summary" id="map-filter-summary"></div>
+            </div>
             <h3 data-i18n="routes">路线</h3>
             <div id="force-list" class="force-list"></div>
         </div>

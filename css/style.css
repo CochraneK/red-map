@@ -1603,3 +1603,198 @@ body {
     max-width: 88px !important;
   }
 }
+
+/* v22 (P1): 双模式时空切换、证据滤镜、考证出处胶囊、口径差异与人物联动 */
+.map-filter-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(98, 68, 38, .14);
+}
+.map-filter-row {
+  display: flex;
+  gap: 4px;
+}
+.filter-pill {
+  flex: 1 1 0;
+  border: 1px solid rgba(98, 68, 38, .20);
+  background: rgba(255, 250, 240, .94);
+  color: #3f3428;
+  border-radius: 8px;
+  padding: 4px 5px;
+  font-size: 10.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .16s ease;
+  white-space: nowrap;
+}
+.filter-pill:hover { border-color: #b92722; color: #8f171a; }
+.filter-pill.active {
+  background: #9f1f1c;
+  color: #fff;
+  border-color: #9f1f1c;
+}
+.map-filter-summary {
+  font-size: 10px;
+  color: #6e6658;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  min-height: 16px;
+}
+.person-hl-clear {
+  border: none;
+  background: #fdecec;
+  color: #9e1b1e;
+  border-radius: 999px;
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+@media (min-width: 901px) {
+  .event-panel {
+    max-height: min(440px, calc(100vh - 220px)) !important;
+  }
+  .panel-content {
+    max-height: min(378px, calc(100vh - 282px)) !important;
+  }
+}
+.event-badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.map-ev-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.map-ev-high { background: #e8f5e9; color: #1b5e20; border: 1px solid #a5d6a7; }
+.map-ev-medium { background: #e8f1fb; color: #164e87; border: 1px solid #9dc3ea; }
+.map-ev-low { background: #fff3e0; color: #a14d00; border: 1px solid #ffcc80; }
+.map-ev-prec { background: #f5efe3; color: #5b5143; border: 1px solid rgba(98, 68, 38, .18); }
+.map-ev-layer { background: #f5edf8; color: #63347a; border: 1px solid #d9c2e4; }
+.event-sources-box {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(98, 68, 38, .20);
+}
+.event-sources-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.event-sources-head h4 {
+  font-size: 11px;
+  color: #5b5143;
+  margin: 0;
+  letter-spacing: .04em;
+}
+.event-sources-head a {
+  font-size: 10.5px;
+  color: #9f1f1c;
+  text-decoration: none;
+  font-weight: 700;
+}
+.event-sources-head a:hover { text-decoration: underline; }
+.event-citation-loc {
+  font-size: 11px;
+  color: #254a2a;
+  background: #eff6ef;
+  border-left: 3px solid #2f6b34;
+  padding: 4px 7px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+.source-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.source-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10.5px;
+  color: #2a2119;
+  background: #fbf6ec;
+  border: 1px solid rgba(98, 68, 38, .20);
+  border-radius: 6px;
+  padding: 3px 7px;
+  text-decoration: none;
+  max-width: 100%;
+  line-height: 1.35;
+}
+.source-pill:hover { border-color: #9f1f1c; color: #9f1f1c; background: #fff9f6; }
+.source-pill-kind {
+  font-size: 9.5px;
+  font-weight: 800;
+  color: #7a6b58;
+}
+.map-variant-box {
+  margin-top: 8px;
+  padding: 7px 8px;
+  border-radius: 8px;
+  background: #fff8eb;
+  border: 1px solid #ebd09e;
+}
+.map-variant-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #9a5200;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.map-variant-list {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0;
+  display: grid;
+  gap: 6px;
+}
+.map-variant-list.hidden { display: none; }
+.map-variant-list li {
+  font-size: 11px;
+  line-height: 1.45;
+  color: #3a342c;
+  padding-top: 5px;
+  border-top: 1px solid rgba(154, 82, 0, .15);
+}
+.map-variant-list li strong { display: block; color: #1f1b16; margin: 2px 0; }
+.participant-tag.clickable {
+  cursor: pointer;
+  transition: all .15s ease;
+}
+.participant-tag.clickable:hover,
+.participant-tag.clickable.active {
+  background: #9f1f1c;
+  color: #fff;
+  border-color: #9f1f1c;
+}
+.event-marker-person-hl .marker-core {
+  background: #ffb300 !important;
+  box-shadow: 0 0 0 4px rgba(255, 179, 0, .45), 0 0 14px rgba(189, 36, 39, .78) !important;
+  transform: scale(1.38);
+}
+.event-marker-nonroute .marker-core {
+  border-radius: 3px !important;
+  transform: rotate(45deg);
+}

@@ -58,16 +58,16 @@ SECTION_C = """## C. 候选线索来源
 游戏文本**不是史料**，仅作为候选线索来源（certainty=low），独立核实后才升级。
 """
 
-FOOTER = """
+FOOTER_TEMPLATE = """
 ---
 
 ## 数据文件
 
 | 文件 | 说明 |
 |---|---|
-| `data_edit/sources.csv` | 111 条来源完整著录（含 author/year/mediaType/citedDetail/usageCount） |
+| `data_edit/sources.csv` | {ref_count} 条来源完整著录（含 author/year/mediaType/citedDetail/usageCount） |
 | `data/references.json` | 机器可读版参考书目 |
-| `data/long_march_events.json` | 617 条事件，每条 `sourceIds` 可反查上述来源 |
+| `data/long_march_events.json` | {event_count} 条事件，每条 `sourceIds` 可反查上述来源 |
 
 ## 引用位置统计（摘选）
 
@@ -158,14 +158,17 @@ def main():
         lines.append(f"  - 项目纪律：此来源的事件 certainty=low，仅作候选线索。")
 
     # 引用位置统计
-    lines.append(FOOTER)
+    events_path = BASE / "data" / "long_march_events.json"
+    event_count = len(json.loads(events_path.read_text(encoding="utf-8")).get("events", [])) if events_path.exists() else 0
+    gen_date = data.get("accessedDate") or "2026-11-24"
+    lines.append(FOOTER_TEMPLATE.format(ref_count=len(refs), event_count=event_count))
     top = sorted(refs, key=usage)[:14]
     for r in top:
         cited = (r.get("citedDetail") or "—")[:72]
         lines.append(f"| {r.get('title','')[:30]} | {r.get('usageCount',0)} | {cited} |")
 
     lines.append("")
-    lines.append(f"*生成日期：2026-11-23；共 {len(refs)} 条来源，其中专著 {len(books)}、网页 {len(webs)}、数据库 {len(dbase)}。*")
+    lines.append(f"*生成日期：{gen_date}；共 {len(refs)} 条来源，其中专著 {len(books)}、网页 {len(webs)}、数据库 {len(dbase)}。*")
     lines.append("")
 
     OUT.write_text("\n".join(lines), encoding="utf-8")

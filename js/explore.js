@@ -6,8 +6,8 @@
 
   var PERSON_PICK = [
     'dongzhengtang', 'yangjingyu', 'zhaoyiman', 'fengbaiju', 'zengsheng',
-    'liuzhidan', 'xiezichang', 'xiaoyedan', 'maozedong', 'zhouenlai',
-    'zhude', 'xuhaidong', 'zhangqiqiu', 'yangkeming', 'wangzuoyao'
+    'liu_zhidan', 'xie_zichang', 'xiao_yedan', 'mao_zedong', 'zhou_enlai',
+    'zhu_de', 'xu_haidong', 'zhangqiqiu', 'yangkeming', 'wangzuoyao'
   ];
   var PLACE_PICK = [
     '贵州遵义', '甘肃会宁', '江西于都', '四川小金两河口', '四川松潘毛儿盖',
@@ -30,8 +30,8 @@
   }
 
   function linkPerson(id) { return 'museum.html?person=' + encodeURIComponent(id) + '#persons'; }
-  function linkForce(id) { return 'museum.html#catalog'; }
-  function linkPlace(name) { return 'map.html#event-' + encodeURIComponent(name); }
+  function linkForce(id) { return 'museum.html?force=' + encodeURIComponent(id) + '#catalog'; }
+  function linkPlace(name) { return 'map.html#place=' + encodeURIComponent(name); }
   function linkEvent(id) { return 'map.html#event=' + encodeURIComponent(id); }
 
   function card(opts) {

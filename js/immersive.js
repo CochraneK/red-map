@@ -42,6 +42,11 @@ async function init() {
     const res = await fetch(`${DATA_URL}?v=${Date.now()}`, { cache: 'no-store' });
     if (!res.ok) throw new Error(`数据加载失败：${res.status}`);
     data = await res.json();
+    const heroCopy = document.getElementById('immersive-hero-copy');
+    if (heroCopy) {
+      const forcesCount = (data.subjects || []).filter(s => s.type === 'force' && !s.isEnemy).length;
+      heroCopy.textContent = `${data.events.length} 个事件、${data.persons.length} 个人物与 ${forcesCount} 路红军及星火路线被组织为一座可漫游的实验性三维展厅。`;
+    }
     boards = createBoardData();
     setupScene();
     buildMuseum();
@@ -445,7 +450,7 @@ function buildEventPanelCloud(board) {
 }
 
 function getEventPanelItems() {
-  const priorityTypes = new Set(['会议', '战役', '会师', '牺牲', '渡河']);
+  const priorityTypes = new Set(['决策', '战斗', '会师', '牺牲', '渡险']);
   return data.events
     .filter(event => priorityTypes.has(event.type) || Number(event.importance || 0) >= 4)
     .sort((a, b) => Number(b.importance || 0) - Number(a.importance || 0) || compareEvents(a, b))

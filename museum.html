@@ -80,8 +80,10 @@
           <div class="catalog-evidence" id="catalog-evidence" role="group" aria-label="证据等级筛选"></div>
           <div class="catalog-evidence catalog-topic" id="catalog-topic" role="group" aria-label="主题筛选"></div>
         </div>
+        <div class="catalog-source-banner hidden" id="catalog-source-banner"></div>
         <div class="catalog-stats" id="catalog-stats"></div>
         <div class="catalog-grid" id="catalog-grid"></div>
+        <div class="catalog-pager" id="catalog-pager"></div>
       </section>
 
       <section class="hall-section" id="martyrs" aria-labelledby="martyrs-title">
@@ -100,6 +102,7 @@
         </div>
         <div class="person-browser">
           <aside class="person-sidebar">
+            <input id="person-search" class="person-search-input" type="search" autocomplete="off" placeholder="检索姓名、籍贯、部队或身份">
             <div class="person-type-filters" id="person-type-filters"></div>
             <div class="person-list" id="person-list"></div>
           </aside>
@@ -134,9 +137,16 @@
 
       <section class="hall-section" id="archive" aria-labelledby="archive-title">
         <div class="section-heading">
-          <p class="eyebrow">视角七 · 档案</p>
-          <h2 id="archive-title">资料档案与来源审校</h2>
+          <p class="eyebrow">视角七 · 考证与书目</p>
+          <h2 id="archive-title">参考书目与史料考证中心</h2>
         </div>
+        <div class="archive-summary" id="archive-summary"></div>
+        <div class="archive-toolbar">
+          <div class="archive-tabs" id="archive-tabs" role="group" aria-label="来源分类"></div>
+          <input id="archive-search" class="archive-search-input" type="search" autocomplete="off" placeholder="检索书名、作者、发布机构或具体引用篇目">
+        </div>
+        <div class="reference-list" id="reference-list"></div>
+        <h3 class="archive-subhead">馆藏精选文献展板</h3>
         <div class="archive-grid" id="archive-grid"></div>
       </section>
 

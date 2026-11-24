@@ -323,3 +323,253 @@ a { color: inherit; }
   .person-list { grid-template-columns: 1fr; }
   .person-head, .timeline-item, .ledger-row { grid-template-columns: 1fr; }
 }
+
+/* ===== P1: 博物馆考证显性化、目录分页、人物检索、参考书目中心 ===== */
+.catalog-source-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  background: #f2f7f2;
+  border: 1px solid #b7d3b9;
+  color: #1f4723;
+  font-size: 13px;
+}
+.catalog-source-banner.hidden { display: none; }
+.catalog-source-banner button {
+  border: 1px solid #2f6b34;
+  background: #fff;
+  color: #1f4723;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.catalog-source-banner button:hover { background: #2f6b34; color: #fff; }
+.card-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 6px;
+}
+.layer-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #f5edf8;
+  color: #63347a;
+  border: 1px solid #d9c2e4;
+}
+.card-provenance {
+  margin: 8px 0 6px;
+  padding-top: 7px;
+  border-top: 1px dashed rgba(30, 42, 33, .12);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card-cite-hint {
+  font-size: 11.5px;
+  color: #254a2a;
+  background: #f1f7f1;
+  border-left: 3px solid #2f6b34;
+  padding: 3px 7px;
+  border-radius: 3px;
+  line-height: 1.45;
+}
+.card-source-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.card-source-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #3a342c;
+  background: #f8f5ef;
+  border: 1px solid rgba(90, 65, 35, .18);
+  border-radius: 6px;
+  padding: 2px 7px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.card-source-pill:hover { border-color: var(--red-deep, #8f171a); color: var(--red-deep, #8f171a); }
+.catalog-pager {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.catalog-pager button {
+  border: 1px solid rgba(30, 42, 33, .22);
+  background: #fff;
+  color: #1f2a21;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.catalog-pager button:hover { background: var(--red-deep, #8f171a); color: #fff; border-color: var(--red-deep, #8f171a); }
+.catalog-pager span { font-size: 12.5px; color: var(--muted, #666); }
+
+.person-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 8px 11px;
+  border: 1px solid rgba(30, 42, 33, .20);
+  border-radius: 8px;
+  background: #fff;
+  font: inherit;
+  font-size: 13px;
+}
+.person-search-input:focus { outline: 2px solid rgba(189, 36, 39, .24); border-color: #bd2427; }
+
+.archive-summary {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 18px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: #fbf8f1;
+  border: 1px solid rgba(90, 65, 35, .14);
+}
+.archive-kpi-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+.archive-kpi {
+  background: #fff;
+  border: 1px solid rgba(90, 65, 35, .12);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.archive-kpi strong { display: block; font-size: 22px; color: #211d17; }
+.archive-kpi span { font-size: 12px; color: #6e6658; }
+.evidence-bar-wrap { display: grid; gap: 6px; }
+.evidence-bar {
+  display: flex;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #ece8df;
+}
+.evidence-bar-high { background: #2f6b34; }
+.evidence-bar-med { background: #2b6cb0; }
+.evidence-bar-low { background: #d9822b; }
+.evidence-bar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  color: #5b5346;
+}
+.archive-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.archive-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.archive-tabs button {
+  border: 1px solid rgba(90, 65, 35, .22);
+  background: #fff;
+  color: #362f26;
+  border-radius: 999px;
+  padding: 6px 13px;
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.archive-tabs button.active { background: #8f171a; color: #fff; border-color: #8f171a; }
+.archive-search-input {
+  flex: 1 1 260px;
+  max-width: 380px;
+  padding: 8px 12px;
+  border: 1px solid rgba(90, 65, 35, .22);
+  border-radius: 8px;
+  font: inherit;
+  font-size: 13px;
+  background: #fff;
+}
+.reference-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.ref-card {
+  background: #fff;
+  border: 1px solid rgba(90, 65, 35, .15);
+  border-left: 4px solid #2f6b34;
+  border-radius: 10px;
+  padding: 13px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ref-card.ref-book { border-left-color: #8f171a; }
+.ref-card.ref-clue { border-left-color: #d9822b; }
+.ref-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 11.5px;
+  color: #6e6658;
+}
+.ref-card h4 { margin: 0; font-size: 14.5px; line-height: 1.4; color: #1f1b16; }
+.ref-card-meta { font-size: 12px; color: #5b5346; line-height: 1.5; }
+.ref-card-cited {
+  font-size: 11.5px;
+  color: #254a2a;
+  background: #f1f7f1;
+  padding: 4px 8px;
+  border-radius: 5px;
+  line-height: 1.45;
+}
+.ref-card-actions {
+  margin-top: auto;
+  padding-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.ref-btn {
+  border: 1px solid #8f171a;
+  background: #fff;
+  color: #8f171a;
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.ref-btn:hover { background: #8f171a; color: #fff; }
+.ref-ext-link { font-size: 12px; color: #2b5b84; text-decoration: none; font-weight: 600; }
+.ref-ext-link:hover { text-decoration: underline; }
+.archive-subhead {
+  margin: 24px 0 12px;
+  font-size: 16px;
+  color: #362f26;
+}

@@ -33,9 +33,11 @@ MAX_LOC = 6
 
 # 引用位置模式：捕获（来源名, 位置描述）
 PATTERNS = [
-    # 据《红军长征记》第51篇《娄山关前后》 / 《红军长征记》第133篇
+    # 据《红军长征记》第51篇《娄山关前后》 / 《红军长征记》第133篇 / 第老山界篇
     (re.compile(r'据?《?红军长征记[》·]?第(\d+)篇(?:《([^》]+)》)?'),
      lambda m: f'第{m.group(1)}篇' + (f'《{m.group(2)}》' if m.group(2) else '')),
+    (re.compile(r'据?《红军长征记》第([^篇《》\d]{2,18})篇'),
+     lambda m: f'《{m.group(1).strip()}》'),
     # 据《红军长征记》前言篇
     (re.compile(r'据?《红军长征记》前言篇(?:《([^》]+)》)?'),
      lambda m: '前言篇' + (f'《{m.group(1)}》' if m.group(1) else '')),
@@ -161,8 +163,9 @@ def main():
                      ["id", "author", "title", "publisher", "year", "pubDate", "edition",
                       "mediaType", "url", "accessed", "sourceType", "citedDetail",
                       "usageCount", "note"]})
+    from datetime import date as _date
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUT_JSON.write_text(json.dumps({"accessedDate": "2026-11-23", "count": len(refs),
+    OUT_JSON.write_text(json.dumps({"accessedDate": _date.today().isoformat(), "count": len(refs),
                                     "references": refs}, ensure_ascii=False, indent=1),
                         encoding="utf-8")
     print(f"references.json 已更新")

@@ -1,11 +1,11 @@
 {
- "accessedDate": "2026-11-23",
+ "accessedDate": "2026-11-24",
  "count": 111,
  "references": [
   {
    "id": "src_cpc_century",
    "author": "中共中央党史和文献研究院",
-   "title": "中国共产党一百年大事记（1921年7月－2021年6月）",
+   "title": "中国共产党一百年大事记（最高检转载版）",
    "publisher": "最高人民检察院转载新华社/中共中央党史和文献研究院资料",
    "year": "2021",
    "pubDate": "",
@@ -16,7 +16,7 @@
    "sourceType": "authoritative",
    "citedDetail": "",
    "usageCount": "25",
-   "note": "用于中央红军长征开始、湘江战役损失、各路红军战略转移等基础时间线。"
+   "note": "用于中央红军长征开始、湘江战役损失、各路红军战略转移等基础时间线。；与 src_party_chronology_xinhua / src_100years_cpc 为同源官方大事记镜像；与 src_party_chronology_xinhua / src_100years_cpc 为同源官方大事记镜像"
   },
   {
    "id": "src_zunyi_hunan",
@@ -325,7 +325,7 @@
   {
    "id": "src_party_chronology_xinhua",
    "author": "新华网",
-   "title": "中国共产党一百年大事记（1921年7月－2021年6月）",
+   "title": "中国共产党一百年大事记（新华网发布版）",
    "publisher": "新华社/中共中央党史和文献研究院",
    "year": "2021",
    "pubDate": "",
@@ -336,7 +336,7 @@
    "sourceType": "authoritative",
    "citedDetail": "",
    "usageCount": "13",
-   "note": "用于通道、黎平、遵义等会议与长征条目。"
+   "note": "用于通道、黎平、遵义等会议与长征条目。；与 src_cpc_century / src_100years_cpc 为同源官方大事记镜像；与 src_cpc_century / src_100years_cpc 为同源官方大事记镜像"
   },
   {
    "id": "src_dengping_people_2025",
@@ -607,7 +607,7 @@
    "accessed": "",
    "sourceType": "game_text",
    "citedDetail": "",
-   "usageCount": "251",
+   "usageCount": "242",
    "note": "仅作线索来源；正式采用前应继续用权威党史资料复核。导入事件已压缩改写为短策展文案。"
   },
   {
@@ -768,7 +768,7 @@
    "sourceType": "authoritative",
    "citedDetail": "",
    "usageCount": "7",
-   "note": "母瑞山、突围、恢复"
+   "note": "母瑞山、突围、恢复；同页专题文章不同章节引用"
   },
   {
    "id": "src_qiongya_wangwenming",
@@ -832,7 +832,7 @@
    "sourceType": "authoritative",
    "citedDetail": "",
    "usageCount": "1",
-   "note": "文化名人大营救"
+   "note": "文化名人大营救；摘自中国共产党新闻网《中国共产党一百年大事记》香港大营救条目；摘自中国共产党新闻网《中国共产党一百年大事记》香港大营救条目"
   },
   {
    "id": "src_dongjiang_gangjiu",
@@ -1136,7 +1136,7 @@
    "sourceType": "authoritative",
    "citedDetail": "",
    "usageCount": "1",
-   "note": "九一八后义勇军"
+   "note": "九一八后义勇军；同页抗联专题图集不同时期条目；同页抗联专题图集不同时期条目"
   },
   {
    "id": "src_dkb_yangjingyu_qiushi",
@@ -1232,7 +1232,7 @@
    "sourceType": "authoritative",
    "citedDetail": "",
    "usageCount": "1",
-   "note": "1945配合苏军解放东北"
+   "note": "1945配合苏军解放东北；同页抗联专题图集不同时期条目；同页抗联专题图集不同时期条目"
   },
   {
    "id": "src_dj_huizhou_media",
@@ -1280,7 +1280,7 @@
    "sourceType": "authoritative",
    "citedDetail": "",
    "usageCount": "1",
-   "note": "梅塘战斗"
+   "note": "梅塘战斗；同页惠阳党史专题不同条目；同页惠阳党史专题不同条目"
   },
   {
    "id": "src_dj_wangzuoyao",
@@ -1296,7 +1296,7 @@
    "sourceType": "authoritative",
    "citedDetail": "",
    "usageCount": "1",
-   "note": "王作尧生平"
+   "note": "王作尧生平；同页惠阳党史专题不同条目；同页惠阳党史专题不同条目"
   },
   {
    "id": "src_dj_liangguang",
@@ -1407,7 +1407,7 @@
    "accessed": "2026-11-23",
    "sourceType": "authoritative",
    "citedDetail": "",
-   "usageCount": "1",
+   "usageCount": "0",
    "note": "遵义会议（人民网老栏目页，页面未标注发布日期，year 留空）"
   },
   {
@@ -1552,7 +1552,7 @@
    "sourceType": "authoritative",
    "citedDetail": "",
    "usageCount": "4",
-   "note": "北上抗日第二先遣队、独树镇战斗"
+   "note": "北上抗日第二先遣队、独树镇战斗；同页专题文章不同章节引用"
   },
   {
    "id": "src_shaanbei_cpc",
@@ -1573,7 +1573,7 @@
   {
    "id": "src_100years_cpc",
    "author": "中共中央党史和文献研究院",
-   "title": "中国共产党一百年大事记（中国共产党新闻网）",
+   "title": "中国共产党一百年大事记（中国共产党新闻网版）",
    "publisher": "中国共产党新闻网",
    "year": "2021",
    "pubDate": "",
@@ -1583,8 +1583,8 @@
    "accessed": "2026-11-23",
    "sourceType": "authoritative",
    "citedDetail": "",
-   "usageCount": "14",
-   "note": "南方游击战争、扎西领导调整、陕甘支队改编"
+   "usageCount": "13",
+   "note": "南方游击战争、扎西领导调整、陕甘支队改编；与 src_cpc_century / src_party_chronology_xinhua 为同源官方大事记镜像；与 src_cpc_century / src_party_chronology_xinhua 为同源官方大事记镜像"
   },
   {
    "id": "src_zunyi_guanghui",
@@ -1629,7 +1629,7 @@
    "mediaType": "专著",
    "url": "https://wintermelonc.github.io/WintermelonC_Docs/file/history_CPC/CPC_doc2.pdf",
    "accessed": "2026-11-23",
-   "sourceType": "authoritative",
+   "sourceType": "book",
    "citedDetail": "",
    "usageCount": "13",
    "note": "斯诺1936年保安亲访毛泽东与红军幸存者的一手见闻；public_narrative层，非权威定论"
@@ -1647,7 +1647,7 @@
    "accessed": "2026-11-23",
    "sourceType": "authoritative",
    "citedDetail": "",
-   "usageCount": "46",
+   "usageCount": "45",
    "note": "军事科学院专家著，权威史著事实层。页面请勿转载，仅提取事实要素注明出处"
   },
   {
@@ -1773,8 +1773,8 @@
    "mediaType": "专著",
    "url": "https://mooc1.chaoxing.com/mooc-ans/ztnodedetailcontroller/visitnodedetail?courseId=223004759&knowledgeId=524772136",
    "accessed": "2026-11-23",
-   "sourceType": "authoritative",
-   "citedDetail": "《红军长征记·长征大事记》；第133篇；前言篇；第135篇；第51篇；前言篇《集体创作的英雄史诗》 等56处",
+   "sourceType": "book",
+   "citedDetail": "《红军长征记·长征大事记》；第133篇；前言篇；第135篇；第51篇；《长征中卫生教育和医疗工作》 等78处",
    "usageCount": "166",
    "note": "中共党史上最早的长征集体回忆录，百余位亲历者亲笔，共135篇（100篇文章+10首歌曲+3个统计表）。底本1937/1942年出版，多数单篇作者已逝世逾50年，底本已进入公有领域；现代整理注释本受保护，本项目仅提取事实要素并注明出处，不转载原文。核心篇目含《随军西行见闻录》（陈云，92KB）、《英勇的西征》（陈云）、《雪山草地行军记》（邓发）、《从甘肃到陕西》（邓发）、《长征大事记》（陆定一，逐日编年）、《红军第一军团长征中经过地点及里程一览表》（总行程18088里）。"
   }

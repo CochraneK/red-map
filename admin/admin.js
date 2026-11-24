@@ -1,5 +1,5 @@
 const DATA_URL = '../data/long_march_events.json';
-const EVENT_TYPES = ['启程','到达','战役','战斗','会议','会师','牺牲','诞生','民族','根据','渡河','转进','行军','整编','险阻','雪山','草地','分歧','转折','决策','胜利','生活','追堵','封锁','空袭','围堵','突围','其他'];
+const EVENT_TYPES = ['战斗','行军','决策','渡险','会师','牺牲','民生','史料'];
 let marchData = null;
 let currentPage = 1;
 let pageSize = 14;

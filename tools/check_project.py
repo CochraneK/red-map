@@ -10,11 +10,13 @@ from __future__ import annotations
 
 import csv
 import json
+import math
 import re
 import shutil
 import subprocess
 import sys
 import tempfile
+from collections import defaultdict
 from pathlib import Path
 
 
@@ -22,6 +24,14 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 GAME_SOURCE_ID = "src_steam_longmarch_1934_1936"
+VALID_CERTAINTIES = {"high", "medium", "low"}
+VALID_LAYERS = {"march", "spark_march", "theme_stat", "historiography"}
+VALID_DATE_PRECISIONS = {"day", "month", "range", "approx"}
+VALID_EVENT_TYPES = {"战斗", "行军", "决策", "渡险", "会师", "牺牲", "民生", "史料"}
+# 经人工考据核验的真实长距离跨越（>300km）白名单：(prev_event_id, next_event_id)
+ALLOWED_MARCH_JUMPS = {
+    ("r2_19360328_wumeng", "r2_19360425_shigu"),  # 红二、六军团1936年3月28日至4月25日横穿滇中至石鼓（28天392km）
+}
 GENERIC_LICENSE_VALUES = {
     "",
     "see file page",
@@ -66,34 +76,133 @@ def check_source_provenance_policy() -> None:
 
 
 def check_non_authoritative_certainty() -> None:
-    """非权威源（游戏/书籍/字幕/口述/公众叙事）不得支撑 certainty=high 的事件。"""
+    """certainty=high 的事件必须至少有一条 sourceType=authoritative 的权威来源支撑。"""
     print("[CHECK] non-authoritative source certainty ceiling")
     src_types: dict[str, str] = {}
     for row in read_csv_rows("data_edit/sources.csv"):
         sid = str(row.get("id", "")).strip()
         if sid:
             src_types[sid] = str(row.get("sourceType", "") or "authoritative").strip().lower()
-    non_auth = {"game_text", "book", "subtitle", "oral_history", "public_narrative"}
     violations: list[str] = []
     checked = 0
     for row in read_csv_rows("data_edit/events.csv"):
         if str(row.get("enabled", "TRUE")).strip().lower() in {"false", "0", "no", "n", "否", "禁用"}:
             continue
+        if str(row.get("certainty", "")).strip().lower() != "high":
+            continue
         refs = split_refs(row.get("sourceIds", ""))
+        checked += 1
         if not refs:
+            violations.append(row.get("id") or row.get("title") or "<unnamed>")
             continue
         types = {src_types.get(r, "authoritative") for r in refs}
-        if not (types & non_auth):
-            continue
-        checked += 1
-        if str(row.get("certainty", "")).strip().lower() == "high":
+        if "authoritative" not in types:
             violations.append(row.get("id") or row.get("title") or "<unnamed>")
     if violations:
         sample = ", ".join(violations[:10])
         raise RuntimeError(
-            f"{len(violations)} 个非权威来源事件错误地标为 certainty=high。示例：{sample}"
+            f"{len(violations)} 个无权威来源支撑的事件错误地标为 certainty=high。示例：{sample}"
         )
-    print(f"[OK] non-authoritative source events avoid high certainty: {checked} checked")
+    print(f"[OK] all {checked} certainty=high events have authoritative source support")
+
+
+def _haversine_km(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
+    r = 6371.0
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dp, dl = math.radians(lat2 - lat1), math.radians(lng2 - lng1)
+    a = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * r * math.asin(math.sqrt(min(1.0, a)))
+
+
+def check_event_schema_and_cleanliness() -> None:
+    """严格校验 certainty/layer/datePrecision/type 枚举与 locationName 洁净度。"""
+    print("[CHECK] event schema enums & locationName cleanliness")
+    enum_errors: list[str] = []
+    dirty_locs: list[str] = []
+    enabled_count = 0
+    for row in read_csv_rows("data_edit/events.csv"):
+        if str(row.get("enabled", "TRUE")).strip().lower() in {"false", "0", "no", "n", "否", "禁用"}:
+            continue
+        enabled_count += 1
+        eid = row.get("id") or "<unnamed>"
+        cert = row.get("certainty", "").strip().lower()
+        layer = row.get("layer", "").strip()
+        prec = row.get("datePrecision", "").strip().lower()
+        etype = row.get("type", "").strip()
+        if cert not in VALID_CERTAINTIES:
+            enum_errors.append(f"{eid}: certainty={cert!r}")
+        if layer not in VALID_LAYERS:
+            enum_errors.append(f"{eid}: layer={layer!r}")
+        if prec not in VALID_DATE_PRECISIONS:
+            enum_errors.append(f"{eid}: datePrecision={prec!r}")
+        if etype not in VALID_EVENT_TYPES:
+            enum_errors.append(f"{eid}: type={etype!r}")
+        loc = row.get("locationName", "").strip()
+        if not loc or len(loc) > 24 or any(ch in loc for ch in ('"', "《", "》", "——")):
+            dirty_locs.append(f"{eid}: {loc!r}")
+    if enum_errors:
+        raise RuntimeError(f"事件枚举值违规（{len(enum_errors)}处）：" + "; ".join(enum_errors[:8]))
+    if dirty_locs:
+        raise RuntimeError(f"locationName 不洁净（{len(dirty_locs)}处）：" + "; ".join(dirty_locs[:8]))
+    print(f"[OK] {enabled_count} enabled events pass strict enum & locationName checks")
+
+
+def check_march_route_jumps(data: dict) -> None:
+    """核心长征行军层（layer=march，非敌军）相邻节点跨度 >300km 硬门禁。"""
+    print("[CHECK] core march route geographic continuity (>300km gate)")
+    enemy_ids = {s["id"] for s in data.get("subjects", []) if s.get("isEnemy")}
+    by_force: dict[str, list[dict]] = defaultdict(list)
+    for ev in data.get("events", []):
+        if ev.get("layer", "march") != "march":
+            continue
+        if ev.get("forceId") in enemy_ids:
+            continue
+        by_force[ev["forceId"]].append(ev)
+
+    bad: list[str] = []
+    whitelisted = 0
+    for fid, evs in sorted(by_force.items()):
+        evs.sort(key=lambda e: (e["date"], int(e.get("sequence") or 0), e["id"]))
+        for a, b in zip(evs, evs[1:]):
+            c1 = a["location"]["coordinates"]
+            c2 = b["location"]["coordinates"]
+            dist = _haversine_km(float(c1[0]), float(c1[1]), float(c2[0]), float(c2[1]))
+            if dist > 300.0:
+                if (a["id"], b["id"]) in ALLOWED_MARCH_JUMPS:
+                    whitelisted += 1
+                    continue
+                bad.append(
+                    f"{fid} {dist:.0f}km: {a['id']}({a['date']},{a['location']['name']}) -> "
+                    f"{b['id']}({b['date']},{b['location']['name']})"
+                )
+    if bad:
+        raise RuntimeError(f"核心行军层存在 {len(bad)} 处未授权 >300km 异常跳点：\n  " + "\n  ".join(bad[:10]))
+    print(f"[OK] core march layer has 0 abnormal jumps (>300km); whitelisted genuine spans: {whitelisted}")
+
+
+def check_subjects_and_sources_hygiene() -> None:
+    """禁止 subjects.csv 残留 type=person 行；禁止 sources.csv 出现重复标题。"""
+    print("[CHECK] subjects & sources hygiene")
+    legacy_persons = [
+        r.get("id") or "<unnamed>"
+        for r in read_csv_rows("data_edit/subjects.csv")
+        if r.get("type", "").strip().lower() == "person"
+    ]
+    if legacy_persons:
+        raise RuntimeError(f"subjects.csv 残留 {len(legacy_persons)} 行 type=person：{', '.join(legacy_persons[:6])}")
+
+    seen_titles: dict[str, str] = {}
+    dups: list[str] = []
+    for r in read_csv_rows("data_edit/sources.csv"):
+        t = r.get("title", "").strip()
+        sid = r.get("id", "").strip()
+        if t in seen_titles:
+            dups.append(f"{t!r} ({seen_titles[t]} & {sid})")
+        elif t:
+            seen_titles[t] = sid
+    if dups:
+        raise RuntimeError(f"sources.csv 存在重复标题：" + "; ".join(dups[:6]))
+    print("[OK] subjects has no legacy person rows; sources titles are unique")
 
 
 def check_visual_asset_provenance() -> None:
@@ -243,16 +352,8 @@ def check_js_syntax() -> None:
 
 
 def check_python_syntax() -> None:
-    run([
-        sys.executable,
-        "-m",
-        "py_compile",
-        "tools/build_json_from_tables.py",
-        "tools/check_project.py",
-        "tools/extract_steam_texts.py",
-        "tools/extract_unreal_text_assets.py",
-        "tools/import_steam_timeline.py",
-    ])
+    py_files = sorted(str(p.relative_to(ROOT)) for p in (ROOT / "tools").glob("*.py"))
+    run([sys.executable, "-m", "py_compile", *py_files])
 
 
 def check_inline_handlers_removed() -> None:
@@ -292,6 +393,9 @@ def main() -> int:
         check_js_syntax()
         check_inline_handlers_removed()
         check_source_registry_metadata()
+        check_subjects_and_sources_hygiene()
+        check_event_schema_and_cleanliness()
+        check_march_route_jumps(data)
         check_source_provenance_policy()
         check_non_authoritative_certainty()
         check_visual_asset_provenance()

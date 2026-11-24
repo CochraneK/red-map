@@ -1,24 +1,52 @@
 const DATA_URL = 'data/long_march_events.json';
+const REFERENCES_URL = 'data/references.json';
+const CATALOG_PAGE_SIZE = 36;
 
 let museumData = null;
+let referencesData = [];
 let selectedPersonId = '';
 let martyrFilter = 'all';
 let personTypeFilter = 'all';
+let personQuery = '';
 let catalogModule = 'persons';
 let catalogQuery = '';
 let catalogEvidence = 'all';
+let catalogSourceId = '';
+let catalogPageLimit = CATALOG_PAGE_SIZE;
+let archiveTab = 'all';
+let archiveQuery = '';
 
 document.addEventListener('DOMContentLoaded', initMuseum);
 
 async function initMuseum() {
   try {
-    const res = await fetch(`${DATA_URL}?v=${Date.now()}`, { cache: 'no-store' });
+    const [res, refRes] = await Promise.all([
+      fetch(`${DATA_URL}?v=${Date.now()}`, { cache: 'no-store' }),
+      fetch(`${REFERENCES_URL}?v=${Date.now()}`, { cache: 'no-store' }).catch(() => null),
+    ]);
     if (!res.ok) throw new Error(`数据加载失败：${res.status}`);
     museumData = await res.json();
+    if (refRes && refRes.ok) {
+      const refJson = await refRes.json();
+      referencesData = refJson.references || [];
+    }
+    if (!referencesData.length) referencesData = museumData.sources || [];
     selectedPersonId = getDefaultPersonId();
-    // 主题入口页 ?person=<id> 深链：跨页直达指定人物时间线
-    const personParam = new URLSearchParams(window.location.search).get('person');
+    // 主题入口页 ?person=<id> / ?force=<id> / ?source=<id> 深链支持
+    const qs = new URLSearchParams(window.location.search);
+    const personParam = qs.get('person');
+    const forceParam = qs.get('force');
+    const sourceParam = qs.get('source');
     if (personParam && museumData.persons.some(p => p.id === personParam)) selectedPersonId = personParam;
+    if (forceParam) {
+      const subj = getSubject(forceParam);
+      catalogModule = 'events';
+      catalogQuery = subj?.shortName || subj?.name || forceParam;
+    }
+    if (sourceParam && museumData.sources.some(s => s.id === sourceParam)) {
+      catalogModule = 'events';
+      catalogSourceId = sourceParam;
+    }
     applyHeroVisual();
     renderMetrics();
     renderHallNav();
@@ -104,11 +132,14 @@ function renderModuleCatalog() {
   </button>`).join('');
   tabs.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
     catalogModule = btn.dataset.catalogModule || 'persons';
+    catalogPageLimit = CATALOG_PAGE_SIZE;
+    if (catalogModule !== 'events') catalogSourceId = '';
     renderModuleCatalog();
   }));
   search.value = catalogQuery;
   search.oninput = () => {
     catalogQuery = search.value.trim();
+    catalogPageLimit = CATALOG_PAGE_SIZE;
     renderCatalogContent();
   };
   renderEvidenceFilter();
@@ -131,22 +162,24 @@ function renderEvidenceFilter() {
   box.innerHTML = opts.map(o => `<button class="${catalogEvidence === o.key ? 'active' : ''}" data-evidence="${o.key}">${escapeHTML(o.label)}</button>`).join('');
   box.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
     catalogEvidence = btn.dataset.evidence;
+    catalogPageLimit = CATALOG_PAGE_SIZE;
     renderEvidenceFilter();
     renderCatalogContent();
   }));
 }
 
-// 主题筛选：把 599 条事件里新出现的维度（民族工作、医疗救护、妇女、里程统计、
-// 逐日行军纪要）暴露成可点的入口。纯呈现层，不改数据。
+// 语义化主题筛选（适配 8 大标准类型 + 4 大分层）
 let catalogTopic = 'all';
 const TOPIC_FILTERS = [
-  { key: 'all', label: '全部主题', types: null },
-  { key: 'ethnic', label: '民族工作', types: ['民族'] },
-  { key: 'medical', label: '医疗救护', types: ['医疗'] },
-  { key: 'women', label: '妇女与生活', types: ['生活'] },
-  { key: 'march', label: '逐日行军纪要', types: ['行军'] },
-  { key: 'distance', label: '里程统计', types: ['里程'] },
-  { key: 'spread', label: '长征传播', types: ['传播'] },
+  { key: 'all', label: '全部主题', match: null },
+  { key: 'battle', label: '战斗交锋', match: e => e.type === '战斗' },
+  { key: 'decision', label: '战略决策', match: e => e.type === '决策' },
+  { key: 'hazard', label: '渡险克难', match: e => e.type === '渡险' },
+  { key: 'meeting', label: '会师汇流', match: e => e.type === '会师' },
+  { key: 'sacrifice', label: '牺牲代价', match: e => e.type === '牺牲' },
+  { key: 'people', label: '民生与民族', match: e => e.type === '民生' },
+  { key: 'dashi', label: '逐日行军纪要', match: e => String(e.id || '').startsWith('dashi_') || e.type === '行军' },
+  { key: 'hist', label: '史料与传播', match: e => e.type === '史料' || e.layer === 'historiography' || e.layer === 'theme_stat' },
 ];
 
 function renderTopicFilter() {
@@ -154,27 +187,67 @@ function renderTopicFilter() {
   if (!box) return;
   if (catalogModule !== 'events') { box.innerHTML = ''; return; }
   box.innerHTML = TOPIC_FILTERS.map(t => {
-    const n = t.types ? (museumData.events || []).filter(e => t.types.includes(e.type)).length : null;
-    const label = t.types ? `${t.label} ${n}` : t.label;
+    const n = t.match ? (museumData.events || []).filter(t.match).length : null;
+    const label = t.match ? `${t.label} ${n}` : t.label;
     return `<button class="${catalogTopic === t.key ? 'active' : ''}" data-topic="${t.key}">${escapeHTML(label)}</button>`;
   }).join('');
   box.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
     catalogTopic = btn.dataset.topic;
+    catalogPageLimit = CATALOG_PAGE_SIZE;
     renderTopicFilter();
     renderCatalogContent();
   }));
 }
 
+function renderCatalogSourceBanner() {
+  const banner = document.getElementById('catalog-source-banner');
+  if (!banner) return;
+  if (catalogModule !== 'events' || !catalogSourceId) {
+    banner.classList.add('hidden');
+    banner.innerHTML = '';
+    return;
+  }
+  const src = getSource(catalogSourceId);
+  const title = src ? `${src.title}${src.year ? ` (${src.year})` : ''}` : catalogSourceId;
+  banner.classList.remove('hidden');
+  banner.innerHTML = `<span>正在按来源反查：<strong>${escapeHTML(title)}</strong>${src?.citedDetail ? ` · ${escapeHTML(src.citedDetail)}` : ''}</span><button type="button" id="clear-source-filter">清除来源筛选</button>`;
+  document.getElementById('clear-source-filter')?.addEventListener('click', () => {
+    catalogSourceId = '';
+    catalogPageLimit = CATALOG_PAGE_SIZE;
+    renderCatalogContent();
+  });
+}
+
 function renderCatalogContent() {
   const stats = document.getElementById('catalog-stats');
   const grid = document.getElementById('catalog-grid');
+  const pager = document.getElementById('catalog-pager');
   if (!stats || !grid) return;
+  renderCatalogSourceBanner();
   const items = getCatalogItems(catalogModule);
   const shown = filterCatalogItems(items);
+  const visible = shown.slice(0, catalogPageLimit);
   stats.innerHTML = catalogStats(items, shown);
-  grid.innerHTML = shown.length ? shown.map(item => catalogCard(item)).join('') : `<div class="catalog-empty">没有匹配的资料模块</div>`;
+  grid.innerHTML = visible.length ? visible.map(item => catalogCard(item)).join('') : `<div class="catalog-empty">没有匹配的资料模块</div>`;
+  if (pager) {
+    const remaining = shown.length - visible.length;
+    if (remaining > 0) {
+      pager.innerHTML = `<span>已显示 ${visible.length} / ${shown.length} 项</span><button type="button" id="catalog-load-more">加载更多（剩余 ${remaining}）</button><button type="button" id="catalog-show-all">全部展开</button>`;
+      document.getElementById('catalog-load-more')?.addEventListener('click', () => {
+        catalogPageLimit += CATALOG_PAGE_SIZE;
+        renderCatalogContent();
+      });
+      document.getElementById('catalog-show-all')?.addEventListener('click', () => {
+        catalogPageLimit = shown.length;
+        renderCatalogContent();
+      });
+    } else {
+      pager.innerHTML = shown.length > CATALOG_PAGE_SIZE ? `<span>已展示全部 ${shown.length} 项</span>` : '';
+    }
+  }
   bindCatalogCards();
   bindVariantBadges(grid);
+  bindImageFallbacks();
 }
 
 function getCatalogModules() {
@@ -281,13 +354,16 @@ function getForceModules() {
 function filterCatalogItems(items) {
   const query = normalizeCatalogQuery(catalogQuery);
   let out = items;
+  if (catalogModule === 'events' && catalogSourceId) {
+    out = out.filter(item => item.event && Array.isArray(item.event.sourceIds) && item.event.sourceIds.includes(catalogSourceId));
+  }
   if (catalogModule === 'events' && catalogEvidence && catalogEvidence !== 'all') {
     out = out.filter(item => item.event && String(item.event.certainty).toLowerCase() === catalogEvidence);
   }
   if (catalogModule === 'events' && catalogTopic && catalogTopic !== 'all') {
     const t = TOPIC_FILTERS.find(x => x.key === catalogTopic);
-    if (t && t.types) {
-      out = out.filter(item => item.event && t.types.includes(item.event.type));
+    if (t && t.match) {
+      out = out.filter(item => item.event && t.match(item.event));
     }
   }
   if (!query) return out;
@@ -348,14 +424,56 @@ function placeCatalogCard(item) {
   </article>`;
 }
 
+function extractEventCitation(event) {
+  const notes = String(event?.notes || '').trim();
+  if (!notes) return '';
+  const m = notes.match(/据《[^》]+》[^；。\n]{0,44}/);
+  if (m) return m[0];
+  const m2 = notes.match(/《红军长征记》[^；。\n]{0,36}/);
+  return m2 ? m2[0] : '';
+}
+
+function datePrecisionBadge(prec) {
+  const labels = { month: '仅知月份', range: '时间区间', approx: '约略时间' };
+  const label = labels[String(prec || '').toLowerCase()];
+  return label ? `<span class="evidence-badge ev-approx">${escapeHTML(label)}</span>` : '';
+}
+
+function layerBadge(layer) {
+  const labels = { spark_march: '延伸星火', theme_stat: '专题/统计', historiography: '文献传播史' };
+  const label = labels[layer];
+  return label ? `<span class="layer-badge">${escapeHTML(label)}</span>` : '';
+}
+
+function eventProvenanceHtml(event) {
+  const sids = Array.isArray(event?.sourceIds) ? event.sourceIds : [];
+  if (!sids.length) return '';
+  const hint = extractEventCitation(event);
+  const pills = sids.slice(0, 3).map(id => {
+    const src = getSource(id);
+    const label = src ? `${src.mediaType === '专著' ? '书·' : src.sourceType === 'game_text' ? '线索·' : ''}${src.title}` : id;
+    return `<button type="button" class="card-source-pill" data-filter-source="${escapeAttr(id)}" title="点击按此来源反查全部事件">${escapeHTML(label.slice(0, 26))}${label.length > 26 ? '…' : ''}</button>`;
+  }).join('');
+  return `<div class="card-provenance">
+    ${hint ? `<div class="card-cite-hint">${escapeHTML(hint)}</div>` : ''}
+    <div class="card-source-pills">${pills}</div>
+  </div>`;
+}
+
 function eventCatalogCard(item) {
+  const ev = item.event;
   return `<article class="catalog-card" style="--accent:${escapeAttr(item.accent)}">
-    <div class="module-kicker"><span>${escapeHTML(item.subtitle)}</span><strong>${escapeHTML(formatDate(item.event.date))}</strong></div>
+    <div class="module-kicker"><span>${escapeHTML(item.subtitle)}</span><strong>${escapeHTML(formatDate(ev.date))}</strong></div>
     <h3>${escapeHTML(item.title)}</h3>
     <p>${escapeHTML(item.body)}</p>
-    ${moduleMeta(item.chips.slice(1))}
-    ${evidenceBadge(item.event.certainty)}
-    ${variantBadge(item.id)}
+    ${moduleMeta(item.chips.slice(1, 3))}
+    <div class="card-badge-row">
+      ${evidenceBadge(ev.certainty)}
+      ${datePrecisionBadge(ev.datePrecision)}
+      ${layerBadge(ev.layer)}
+      ${variantBadge(item.id)}
+    </div>
+    ${eventProvenanceHtml(ev)}
     ${moduleTags(item.tags)}
     <a class="module-action" href="map.html#event=${encodeURIComponent(item.id)}">地图查看</a>
   </article>`;
@@ -487,11 +605,31 @@ function bindCatalogCards() {
       event.stopPropagation();
       const subject = getSubject(button.dataset.catalogForce);
       catalogModule = 'events';
+      catalogSourceId = '';
+      catalogPageLimit = CATALOG_PAGE_SIZE;
       catalogQuery = subject?.shortName || subject?.name || button.dataset.catalogForce || '';
       renderModuleCatalog();
       document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
+  document.querySelectorAll('[data-filter-source]').forEach(button => {
+    button.addEventListener('click', event => {
+      event.stopPropagation();
+      jumpToSourceEvents(button.dataset.filterSource);
+    });
+  });
+}
+
+function jumpToSourceEvents(sourceId) {
+  if (!sourceId) return;
+  catalogModule = 'events';
+  catalogSourceId = sourceId;
+  catalogEvidence = 'all';
+  catalogTopic = 'all';
+  catalogQuery = '';
+  catalogPageLimit = CATALOG_PAGE_SIZE;
+  renderModuleCatalog();
+  document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function renderMartyrWall() {
@@ -522,12 +660,23 @@ function portraitCard(person) {
 function renderPersonBrowser() {
   const list = document.getElementById('person-list');
   if (!list) return;
+  const searchInput = document.getElementById('person-search');
+  if (searchInput && !searchInput.dataset.bound) {
+    searchInput.dataset.bound = '1';
+    searchInput.addEventListener('input', () => {
+      personQuery = searchInput.value.trim();
+      renderPersonBrowser();
+      bindImageFallbacks();
+    });
+  }
   renderPersonTypeFilters();
   const persons = getFilteredPersons();
-  if (!persons.some(person => person.id === selectedPersonId)) selectedPersonId = persons[0]?.id || museumData.persons[0]?.id || '';
-  list.innerHTML = persons.map(person => `<button class="${person.id === selectedPersonId ? 'active' : ''}" data-person-id="${escapeAttr(person.id)}">
-    <span>${escapeHTML(person.name)}</span><small>${escapeHTML(person.personType || '人物')}</small>
-  </button>`).join('');
+  if (persons.length && !persons.some(person => person.id === selectedPersonId)) selectedPersonId = persons[0].id;
+  list.innerHTML = persons.length
+    ? persons.map(person => `<button class="${person.id === selectedPersonId ? 'active' : ''}" data-person-id="${escapeAttr(person.id)}">
+        <span>${escapeHTML(person.name)}</span><small>${escapeHTML(person.personType || '人物')}</small>
+      </button>`).join('')
+    : `<div class="catalog-empty">无匹配人物</div>`;
   list.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => { selectedPersonId = btn.dataset.personId; renderPersonBrowser(); renderPersonDetail(); bindImageFallbacks(); }));
   renderPersonDetail();
 }
@@ -561,7 +710,7 @@ function renderPersonDetail() {
     ['籍贯', person.hometown],
     ['所属', subject?.shortName || subject?.name],
     ['关联事件', `${links.length} 个`],
-    ['可信度', person.certainty || 'medium'],
+    ['考证层级', EVIDENCE_META[String(person.certainty || 'medium').toLowerCase()]?.label || '一手见闻'],
   ].filter(([, value]) => value);
   detail.innerHTML = `
     <div class="person-head">
@@ -582,7 +731,7 @@ function timelineItem(event, rel) {
   return `<div class="timeline-item">
     <div class="timeline-date">${escapeHTML(formatDate(event.date))}</div>
     <div>
-      <h4>${escapeHTML(event.title)}</h4>
+      <h4>${escapeHTML(event.title)} ${evidenceBadge(event.certainty)}</h4>
       <p>${escapeHTML(rel.note || event.description || '')}</p>
       <a href="map.html#event=${encodeURIComponent(event.id)}">在路线地图中查看</a>
     </div>
@@ -639,13 +788,118 @@ function renderPlaces() {
 }
 
 function renderArchive() {
+  renderArchiveSummary();
+  renderArchiveControls();
+  renderReferenceList();
   const box = document.getElementById('archive-grid');
   if (!box) return;
   box.innerHTML = museumData.museum.artifacts.map(artifact => `<article class="archive-tile">
     <h3>${escapeHTML(artifact.title)}</h3>
     <p>${escapeHTML(artifact.summary)}</p>
-    <div class="tile-meta"><span>${escapeHTML(artifact.artifactType || 'archive')}</span><span>${escapeHTML(artifact.certainty || 'medium')}</span></div>
+    <div class="tile-meta"><span>${escapeHTML(artifact.artifactType || 'archive')}</span>${evidenceBadge(artifact.certainty || 'medium')}</div>
   </article>`).join('');
+}
+
+function renderArchiveSummary() {
+  const box = document.getElementById('archive-summary');
+  if (!box) return;
+  const events = museumData.events || [];
+  const total = Math.max(1, events.length);
+  const hi = events.filter(e => e.certainty === 'high').length;
+  const med = events.filter(e => e.certainty === 'medium').length;
+  const low = events.filter(e => e.certainty === 'low').length;
+  const books = referencesData.filter(r => r.mediaType === '专著' || r.mediaType === '档案').length;
+  const webs = referencesData.filter(r => r.mediaType === '网页').length;
+  box.innerHTML = `
+    <div class="archive-kpi-row">
+      <div class="archive-kpi"><strong>${referencesData.length}</strong><span>登记文献与来源总数</span></div>
+      <div class="archive-kpi"><strong>${books}</strong><span>核心专著与原刊文献</span></div>
+      <div class="archive-kpi"><strong>${webs}</strong><span>权威党史军史官网</span></div>
+      <div class="archive-kpi"><strong>${Math.round(((hi + med) / total) * 100)}%</strong><span>权威+一手核实占比（${hi + med}/${events.length}）</span></div>
+    </div>
+    <div class="evidence-bar-wrap">
+      <div class="evidence-bar" aria-label="事件证据分层分布">
+        <div class="evidence-bar-high" style="width:${((hi / total) * 100).toFixed(1)}%" title="权威史实 ${hi} 条"></div>
+        <div class="evidence-bar-med" style="width:${((med / total) * 100).toFixed(1)}%" title="一手见闻 ${med} 条"></div>
+        <div class="evidence-bar-low" style="width:${((low / total) * 100).toFixed(1)}%" title="线索待证 ${low} 条"></div>
+      </div>
+      <div class="evidence-bar-legend">
+        <span>🟢 权威史实 ${hi} 条 · 🔵 一手见闻 ${med} 条 · 🟠 线索待证 ${low} 条</span>
+        <a class="ref-ext-link" href="REFERENCES.md" target="_blank" rel="noopener">查看完整 GB/T 7714 参考书目文档 ↗</a>
+      </div>
+    </div>`;
+}
+
+function renderArchiveControls() {
+  const tabs = document.getElementById('archive-tabs');
+  const search = document.getElementById('archive-search');
+  if (tabs) {
+    const booksCnt = referencesData.filter(r => r.mediaType === '专著' || r.mediaType === '档案').length;
+    const websCnt = referencesData.filter(r => r.mediaType === '网页').length;
+    const clueCnt = referencesData.filter(r => r.sourceType === 'game_text' || r.mediaType === '数据库').length;
+    const opts = [
+      { key: 'all', label: `全部来源 (${referencesData.length})` },
+      { key: 'book', label: `核心专著 (${booksCnt})` },
+      { key: 'web', label: `权威官网 (${websCnt})` },
+      { key: 'clue', label: `候选线索 (${clueCnt})` },
+    ];
+    tabs.innerHTML = opts.map(o => `<button type="button" class="${archiveTab === o.key ? 'active' : ''}" data-archive-tab="${o.key}">${escapeHTML(o.label)}</button>`).join('');
+    tabs.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
+      archiveTab = btn.dataset.archiveTab || 'all';
+      renderArchiveControls();
+      renderReferenceList();
+    }));
+  }
+  if (search && !search.dataset.bound) {
+    search.dataset.bound = '1';
+    search.addEventListener('input', () => {
+      archiveQuery = search.value.trim();
+      renderReferenceList();
+    });
+  }
+}
+
+function renderReferenceList() {
+  const box = document.getElementById('reference-list');
+  if (!box) return;
+  const q = normalizeCatalogQuery(archiveQuery);
+  const eventCountBySrc = new Map();
+  (museumData.events || []).forEach(e => (e.sourceIds || []).forEach(sid => {
+    eventCountBySrc.set(sid, (eventCountBySrc.get(sid) || 0) + 1);
+  }));
+  let list = [...referencesData];
+  if (archiveTab === 'book') list = list.filter(r => r.mediaType === '专著' || r.mediaType === '档案');
+  else if (archiveTab === 'web') list = list.filter(r => r.mediaType === '网页');
+  else if (archiveTab === 'clue') list = list.filter(r => r.sourceType === 'game_text' || r.mediaType === '数据库');
+  if (q) {
+    list = list.filter(r => normalizeCatalogQuery([r.title, r.author, r.publisher, r.citedDetail, r.note, r.year].join(' ')).includes(q));
+  }
+  list.sort((a, b) => (eventCountBySrc.get(b.id) || 0) - (eventCountBySrc.get(a.id) || 0) || Number(b.usageCount || 0) - Number(a.usageCount || 0));
+  if (!list.length) {
+    box.innerHTML = `<div class="catalog-empty">没有匹配的参考书目</div>`;
+    return;
+  }
+  box.innerHTML = list.map(r => {
+    const evCnt = eventCountBySrc.get(r.id) || 0;
+    const cls = r.mediaType === '专著' ? 'ref-book' : r.sourceType === 'game_text' ? 'ref-clue' : '';
+    const kindLabel = r.mediaType === '专著' ? '专著 / 原始文献' : r.sourceType === 'game_text' ? '候选线索数据库' : '权威机构网页';
+    const metaBits = [r.author, r.publisher, r.year, r.edition].filter(Boolean).join(' · ');
+    const isHttp = r.url && /^https?:\/\//.test(r.url);
+    return `<article class="ref-card ${cls}">
+      <div class="ref-card-head"><span>${escapeHTML(kindLabel)}</span><strong>引用 ${evCnt} 条事件</strong></div>
+      <h4>${escapeHTML(r.title)}</h4>
+      ${metaBits ? `<div class="ref-card-meta">${escapeHTML(metaBits)}</div>` : ''}
+      ${r.citedDetail ? `<div class="ref-card-cited">具体引用：${escapeHTML(r.citedDetail)}</div>` : ''}
+      ${r.note ? `<div class="ref-card-meta">${escapeHTML(r.note)}</div>` : ''}
+      <div class="ref-card-actions">
+        ${evCnt ? `<button type="button" class="ref-btn" data-ref-events="${escapeAttr(r.id)}">反查 ${evCnt} 条关联事件</button>` : ''}
+        ${isHttp ? `<a class="ref-ext-link" href="${escapeAttr(r.url)}" target="_blank" rel="noopener noreferrer">原文链接 ↗</a>` : ''}
+      </div>
+    </article>`;
+  }).join('');
+  box.querySelectorAll('[data-ref-events]').forEach(btn => {
+    btn.addEventListener('click', () => jumpToSourceEvents(btn.dataset.refEvents));
+  });
 }
 
 function renderMethod() {
@@ -774,7 +1028,15 @@ function getSubject(id) { return museumData.subjects.find(s => s.id === id); }
 function getSource(id) { return museumData.sources.find(s => s.id === id); }
 function getPersonEvents(personId) { return museumData.personEvents.filter(rel => rel.personId === personId); }
 function getVisual(targetType, targetId) { return (museumData.museum.visualAssets || []).find(v => v.targetType === targetType && v.targetId === targetId); }
-function getFilteredPersons() { return personTypeFilter === 'all' ? museumData.persons : museumData.persons.filter(p => (p.personType || '人物') === personTypeFilter); }
+function getFilteredPersons() {
+  let list = personTypeFilter === 'all' ? museumData.persons : museumData.persons.filter(p => (p.personType || '人物') === personTypeFilter);
+  const q = normalizeCatalogQuery(personQuery);
+  if (!q) return list;
+  return list.filter(p => {
+    const subj = getSubject(p.forceId);
+    return normalizeCatalogQuery([p.name, p.nameEn, p.personType, p.hometown, subj?.name, subj?.shortName, p.summary].join(' ')).includes(q);
+  });
+}
 function getCostEvents() {
   return museumData.events.filter(event => {
     const text = `${event.type || ''}${event.title || ''}${event.description || ''}${event.casualties || ''}`;

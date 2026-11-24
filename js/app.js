@@ -13,9 +13,15 @@ const TILE_URL = 'https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1
 
 let map = null;
 let marchData = null;
+let allNormalizedEvents = [];
 let sortedEvents = [];
 let currentSortedIndex = 0;
 let activeForces = new Set();
+let scopeMode = 'core';        // 'core' (核心长征 1934-36) | 'all' (全域星火+专题+文献史)
+let evidenceMode = 'verified'; // 'verified' (权威+一手) | 'high' (仅权威) | 'all' (全部含待证线索)
+let highlightedPerson = '';
+let sourceById = new Map();
+let variantIndex = new Map();
 let playTimer = null;
 let playSpeed = 1;
 let currentZoom = 5;
@@ -28,22 +34,19 @@ const routeByKey = new Map();
 const labelByKey = new Map();
 
 const EVENT_TYPE_MAP = {
-  '出发': '启程', '启程': '启程', '到达': '到达', '战役': '战役', '战斗': '战斗',
-  '会议': '会议', '会师': '会师', '牺牲': '牺牲', '出生': '诞生', '诞生': '诞生',
-  '民族工作': '民族', '民族': '民族', '根据地': '根据', '根据': '根据',
-  '渡河': '渡河', '转移': '转进', '行军': '行军', '转进': '转进',
-  '整编': '整编', '自然险阻': '险阻', '险阻': '险阻', '雪山': '雪山', '草地': '草地',
-  '分歧': '分歧', '转折': '转折', '决策': '决策', '总结': '胜利', '胜利': '胜利',
-  '生活': '生活', '追堵': '追堵', '封锁': '封锁', '空袭': '空袭', '围堵': '围堵',
-  '突围': '突围', '其他': '其他'
+  '战斗': '战斗', '战役': '战斗', '围堵': '战斗', '追堵': '战斗', '封锁': '战斗', '空袭': '战斗', '突围': '战斗', '起义': '战斗',
+  '行军': '行军', '转进': '行军', '转移': '行军', '整编': '行军', '根据': '行军', '根据地': '行军', '启程': '行军', '出发': '行军', '到达': '行军', '胜利': '行军', '总结': '行军', '行动': '行军',
+  '决策': '决策', '会议': '决策', '分歧': '决策', '转折': '决策',
+  '渡险': '渡险', '渡河': '渡险', '险阻': '渡险', '自然险阻': '渡险', '雪山': '渡险', '草地': '渡险',
+  '会师': '会师',
+  '牺牲': '牺牲', '被俘': '牺牲',
+  '民生': '民生', '民族': '民生', '民族工作': '民生', '生活': '民生', '医疗': '民生', '诞生': '民生', '出生': '民生',
+  '史料': '史料', '里程': '史料', '传播': '史料', '其他': '行军'
 };
 
 const TYPE_LABELS_EN = {
-  '启程':'Start','到达':'Arrive','战役':'Campaign','战斗':'Battle','会议':'Meeting','会师':'Meet',
-  '牺牲':'Sacrifice','诞生':'Birth','民族':'Alliance','根据':'Base','渡河':'River','转进':'March',
-  '行军':'March','整编':'Reorg','险阻':'Hazard','雪山':'Snow','草地':'Grassland','分歧':'Split',
-  '转折':'Turn','决策':'Decision','胜利':'Victory','生活':'Life','追堵':'Pursuit','封锁':'Blockade',
-  '空袭':'Air raid','围堵':'Encircle','突围':'Breakout','里程':'Distance','其他':'Other'
+  '战斗':'Battle','行军':'March','决策':'Decision','渡险':'Crossing / Hazard',
+  '会师':'Convergence','牺牲':'Sacrifice','民生':'People & Unity','史料':'Historiography'
 };
 
 const UI = {
@@ -58,7 +61,10 @@ const UI = {
     meetingKicker: '会师', meetingSubtitle: '分散的星火汇流，长征胜利向前推进。',
     sacrificeKicker: '牺牲', sacrificeSubtitle: '以生命守护队伍前行，壮烈不应被路线遮蔽。',
     enemyKicker: '围堵', enemySubtitle: '敌军围追堵截形成压迫，红军在夹缝中机动突围。',
-    poemKicker: '七律·长征', poemSubtitle: '诗句在这里落到山川、河流与行军现场。'
+    poemKicker: '七律·长征', poemSubtitle: '诗句在这里落到山川、河流与行军现场。',
+    scopeCore: '核心长征 1934–36', scopeAll: '全域星火',
+    evVerified: '权威+一手', evHigh: '仅权威', evAll: '含待证线索',
+    sourcesTitle: '来源考证', archiveLink: '参考书目 ↗'
   },
   en: {
     appTitle: 'Long March Spark Map',
@@ -71,7 +77,10 @@ const UI = {
     meetingKicker: 'Convergence', meetingSubtitle: 'Scattered sparks converge, pushing the Long March toward victory.',
     sacrificeKicker: 'Sacrifice', sacrificeSubtitle: 'Lives were given so the columns could continue.',
     enemyKicker: 'Encirclement', enemySubtitle: 'Pursuit and blockade pressed from all sides; mobility became survival.',
-    poemKicker: 'Qilu · Long March', poemSubtitle: 'A poetic line meets the actual mountains and rivers on the route.'
+    poemKicker: 'Qilu · Long March', poemSubtitle: 'A poetic line meets the actual mountains and rivers on the route.',
+    scopeCore: 'Core 1934–36', scopeAll: 'All Sparks',
+    evVerified: 'Verified', evHigh: 'Authoritative', evAll: 'All + Clues',
+    sourcesTitle: 'Sources & Provenance', archiveLink: 'Bibliography ↗'
   }
 };
 
@@ -99,8 +108,10 @@ async function initApp() {
     currentLang = document.body?.dataset?.lang === 'en' ? 'en' : 'zh';
     document.documentElement.lang = currentLang === 'en' ? 'en' : 'zh-CN';
     marchData = await loadDataFromFile();
+    await loadVariantGroupsForMap();
     prepareData();
     initMap();
+    initMapFilters();
     initForcePanel();
     initMemorialLayer();
     initTimeline();
@@ -123,9 +134,22 @@ async function loadDataFromFile() {
   return await res.json();
 }
 
+async function loadVariantGroupsForMap() {
+  try {
+    const res = await fetch(`data/variant_groups.json?v=${Date.now()}`, { cache: 'no-store' });
+    if (!res.ok) return;
+    const payload = await res.json();
+    variantIndex = new Map();
+    (payload.groups || []).forEach(g => (g.variants || []).forEach(v => variantIndex.set(v.eventId, g)));
+  } catch (_) {
+    variantIndex = new Map();
+  }
+}
+
 function prepareData() {
   if (!marchData || !Array.isArray(marchData.subjects) || !Array.isArray(marchData.events)) throw new Error('数据格式错误：必须包含 subjects 与 events。');
-  marchData.subjects.forEach(s => { if (s.id === 'enemy_kmt') s.isEnemy = true; });
+  sourceById = new Map((marchData.sources || []).map(s => [s.id, s]));
+  marchData.subjects.forEach(s => { if (s.id === 'enemy_kmt' || s.id === 'enemy_japan') s.isEnemy = true; });
   const forceIds = new Set(marchData.subjects.filter(s => s.type === 'force').map(s => s.id));
   const seen = new Set();
   marchData.events = marchData.events.filter(e => {
@@ -135,12 +159,95 @@ function prepareData() {
     if (seen.has(e.id) || seen.has(key)) return false;
     seen.add(e.id); seen.add(key);
     e.type = normalizeType(e.type);
+    e.layer = e.layer || 'march';
+    e.datePrecision = e.datePrecision || 'day';
     return true;
   });
-  sortedEvents = [...marchData.events].sort((a,b) => new Date(a.date) - new Date(b.date) || Number(a.sequence || 0) - Number(b.sequence || 0) || String(a.id).localeCompare(String(b.id),'zh-CN'));
-  sortedEvents.forEach((e, idx) => e._globalOrder = idx + 1);
+  allNormalizedEvents = [...marchData.events].sort((a,b) => new Date(a.date) - new Date(b.date) || Number(a.sequence || 0) - Number(b.sequence || 0) || String(a.id).localeCompare(String(b.id),'zh-CN'));
   activeForces = new Set(marchData.subjects.filter(s => s.type === 'force').map(s => s.id));
-  currentSortedIndex = 0;
+  rebuildVisibleEvents(null);
+}
+
+function eventPassesFilters(e) {
+  if (scopeMode === 'core' && (e.layer || 'march') !== 'march') return false;
+  const cert = String(e.certainty || 'medium').toLowerCase();
+  if (evidenceMode === 'high' && cert !== 'high') return false;
+  if (evidenceMode === 'verified' && cert === 'low') return false;
+  return true;
+}
+
+function rebuildVisibleEvents(anchorEventId = null) {
+  const prevId = anchorEventId || sortedEvents[currentSortedIndex]?.id || null;
+  sortedEvents = allNormalizedEvents.filter(eventPassesFilters);
+  if (!sortedEvents.length) sortedEvents = [...allNormalizedEvents];
+  sortedEvents.forEach((e, idx) => { e._globalOrder = idx + 1; });
+  if (prevId) {
+    const idx = sortedEvents.findIndex(e => e.id === prevId);
+    currentSortedIndex = idx >= 0 ? idx : Math.min(currentSortedIndex, Math.max(0, sortedEvents.length - 1));
+  } else {
+    currentSortedIndex = Math.max(0, sortedEvents.length - 1);
+  }
+  const slider = document.getElementById('timeline-slider');
+  if (slider) {
+    slider.min = 0;
+    slider.max = Math.max(sortedEvents.length - 1, 0);
+    slider.value = currentSortedIndex;
+  }
+  updateTimelineLabels();
+  updateFilterSummary();
+}
+
+function initMapFilters() {
+  const box = document.getElementById('map-filter-box');
+  if (!box) return;
+  box.querySelectorAll('[data-scope]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const next = btn.dataset.scope || 'core';
+      if (next === scopeMode) return;
+      scopeMode = next;
+      syncMapFilterButtons();
+      rebuildVisibleEvents();
+      renderCurrentState(false);
+    });
+  });
+  box.querySelectorAll('[data-evidence]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const next = btn.dataset.evidence || 'verified';
+      if (next === evidenceMode) return;
+      evidenceMode = next;
+      syncMapFilterButtons();
+      rebuildVisibleEvents();
+      renderCurrentState(false);
+    });
+  });
+  syncMapFilterButtons();
+}
+
+function syncMapFilterButtons() {
+  document.querySelectorAll('#map-filter-box [data-scope]').forEach(btn => btn.classList.toggle('active', btn.dataset.scope === scopeMode));
+  document.querySelectorAll('#map-filter-box [data-evidence]').forEach(btn => btn.classList.toggle('active', btn.dataset.evidence === evidenceMode));
+  updateFilterSummary();
+}
+
+function updateFilterSummary() {
+  const el = document.getElementById('map-filter-summary');
+  if (!el) return;
+  const hiddenLow = evidenceMode === 'verified'
+    ? allNormalizedEvents.filter(e => (scopeMode === 'all' || e.layer === 'march') && e.certainty === 'low').length
+    : 0;
+  const countText = currentLang === 'en'
+    ? `${sortedEvents.length} / ${allNormalizedEvents.length} nodes${hiddenLow ? ` (${hiddenLow} clues hidden)` : ''}`
+    : `当前 ${sortedEvents.length} / ${allNormalizedEvents.length} 节点${hiddenLow ? `（已滤 ${hiddenLow} 条待证线索）` : ''}`;
+  const hlHtml = highlightedPerson
+    ? `<button type="button" class="person-hl-clear" id="clear-person-hl">${escapeHTML(highlightedPerson)} ×</button>`
+    : '';
+  el.innerHTML = `<span>${escapeHTML(countText)}</span>${hlHtml}`;
+  document.getElementById('clear-person-hl')?.addEventListener('click', () => {
+    highlightedPerson = '';
+    updateFilterSummary();
+    refreshAllMarkerIcons();
+    updateEventPanel(sortedEvents[currentSortedIndex]);
+  });
 }
 
 function normalizeType(type) {
@@ -258,16 +365,30 @@ function bindHashNavigation() {
 }
 function applyHashEvent() {
   const raw = window.location.hash.replace(/^#/, '');
-  if (!raw || !sortedEvents.length) return false;
+  if (!raw || !allNormalizedEvents.length) return false;
   const params = new URLSearchParams(raw);
   const eventId = params.get('event');
-  if (!eventId) return false;
-  const idx = sortedEvents.findIndex(e => e.id === eventId);
+  const placeName = params.get('place');
+  let target = null;
+  if (eventId) {
+    target = allNormalizedEvents.find(e => e.id === eventId);
+  } else if (placeName) {
+    target = sortedEvents.find(e => (e.location?.name || '').includes(placeName))
+      || allNormalizedEvents.find(e => (e.location?.name || '').includes(placeName));
+  }
+  if (!target) return false;
+  // 若目标事件在当前滤镜之外，自动放宽模式确保可达
+  let changed = false;
+  if (scopeMode === 'core' && (target.layer || 'march') !== 'march') { scopeMode = 'all'; changed = true; }
+  if (evidenceMode === 'high' && target.certainty !== 'high') { evidenceMode = target.certainty === 'low' ? 'all' : 'verified'; changed = true; }
+  else if (evidenceMode === 'verified' && target.certainty === 'low') { evidenceMode = 'all'; changed = true; }
+  if (changed) { syncMapFilterButtons(); rebuildVisibleEvents(target.id); }
+  const idx = sortedEvents.findIndex(e => e.id === target.id);
   if (idx < 0) return false;
   currentSortedIndex = idx;
   return true;
 }
-function applyLanguage() { document.querySelectorAll('[data-i18n]').forEach(el => el.textContent = t(el.dataset.i18n)); document.title = t('appTitle'); const btn = document.getElementById('lang-toggle'); if (btn) btn.textContent = t('langBtn'); updateTimelineLabels(); }
+function applyLanguage() { document.querySelectorAll('[data-i18n]').forEach(el => el.textContent = t(el.dataset.i18n)); document.title = t('appTitle'); const btn = document.getElementById('lang-toggle'); if (btn) btn.textContent = t('langBtn'); updateTimelineLabels(); updateFilterSummary(); }
 function stepTimeline(delta) { const next = Math.max(0, Math.min(sortedEvents.length - 1, currentSortedIndex + delta)); if (next !== currentSortedIndex) { currentSortedIndex = next; renderCurrentState(true); } }
 function togglePlay() { playTimer ? stopPlay() : startPlay(); }
 function getPlaybackDelay(event) {
@@ -275,6 +396,10 @@ function getPlaybackDelay(event) {
   return event?.type === '会师' ? Math.max(base + 2200, 4400) : base;
 }
 function startPlay() {
+  if (currentSortedIndex >= sortedEvents.length - 1) {
+    currentSortedIndex = 0;
+    renderCurrentState(true);
+  }
   document.getElementById('play-btn').textContent = '⏸';
   scheduleNextStep();
 }
@@ -303,9 +428,15 @@ function renderCurrentState(panToCurrent = true) {
 }
 function getLatestEventByForce(events) { const latest = new Map(); events.forEach(e => { const old = latest.get(e.forceId); if (!old || e._globalOrder > old._globalOrder) latest.set(e.forceId, e); }); return latest; }
 
+function isRouteLayerEvent(event) {
+  const layer = event?.layer || 'march';
+  return layer === 'march' || layer === 'spark_march';
+}
+
 function reconcileRoutes(events) {
   const wanted = new Set();
-  const byForce = groupBy(events, e => e.forceId);
+  const routeEvents = events.filter(isRouteLayerEvent);
+  const byForce = groupBy(routeEvents, e => e.forceId);
   Object.entries(byForce).forEach(([forceId, forceEvents]) => {
     const force = getSubject(forceId); if (!force || forceEvents.length < 2) return;
     const sorted = [...forceEvents].sort(sortEventAscending);
@@ -516,15 +647,17 @@ function markerStatus(event, latestByForce) {
   const sacrifice = event.type === '牺牲';
   const enemy = getSubject(event.forceId)?.isEnemy;
   const poem = Boolean(event.poem);
-  const key = [current?'current':'', latest?'latest':'', meeting?'meeting':'', sacrifice?'sacrifice':'', enemy?'enemy':'', poem?'poem':'', currentLang, currentZoom].join('|');
-  const zIndex = enemy ? 500 : current ? 10000 : latest ? 8500 : meeting ? 7600 : sacrifice ? 7300 : poem ? 7000 : 1000 + event._globalOrder;
-  return { current, latest, meeting, sacrifice, enemy, poem, key, zIndex };
+  const nonRoute = !isRouteLayerEvent(event);
+  const personHl = Boolean(highlightedPerson && Array.isArray(event.participants) && event.participants.includes(highlightedPerson));
+  const key = [current?'current':'', latest?'latest':'', meeting?'meeting':'', sacrifice?'sacrifice':'', enemy?'enemy':'', poem?'poem':'', nonRoute?'nr':'', personHl?'phl':'', currentLang, currentZoom].join('|');
+  const zIndex = personHl ? 9800 : enemy ? 500 : current ? 10000 : latest ? 8500 : meeting ? 7600 : sacrifice ? 7300 : poem ? 7000 : 1000 + event._globalOrder;
+  return { current, latest, meeting, sacrifice, enemy, poem, nonRoute, personHl, key, zIndex };
 }
 function refreshAllMarkerIcons() { markerById.forEach(rec => rec.statusKey = 'refresh'); renderCurrentState(false); }
 function makeEventIcon(event, force, status) {
   const size = getMarkerSize(status);
   const color = status.enemy ? '#777' : (force.color || '#555');
-  const cls = ['event-marker', status.current?'event-marker-current':'', status.latest?'event-marker-latest':'', status.meeting?'event-marker-meeting':'', status.sacrifice?'event-marker-sacrifice':'', status.enemy?'event-marker-enemy':'', status.poem?'event-marker-poem':''].join(' ');
+  const cls = ['event-marker', status.current?'event-marker-current':'', status.latest?'event-marker-latest':'', status.meeting?'event-marker-meeting':'', status.sacrifice?'event-marker-sacrifice':'', status.enemy?'event-marker-enemy':'', status.poem?'event-marker-poem':'', status.nonRoute?'event-marker-nonroute':'', status.personHl?'event-marker-person-hl':''].join(' ');
   const html = `<div class="marker-shell ${cls}" style="width:${size}px;height:${size}px;--marker-color:${escapeAttr(color)}"><div class="marker-core"></div></div>`;
   return L.divIcon({ className:'event-marker-wrapper', html, iconSize:[size,size], iconAnchor:[size/2,size/2] });
 }
@@ -550,7 +683,7 @@ function updateSpecialEffects(event) {
     radius = 72000;
   } else if (event.type === '会师') { show = true; kicker = t('meetingKicker'); subtitle = t('meetingSubtitle'); radius = 76000; }
   else if (event.type === '牺牲') { show = true; kicker = t('sacrificeKicker'); subtitle = t('sacrificeSubtitle'); radius = 52000; }
-  else if (force.isEnemy && ['追堵','封锁','围堵','空袭'].includes(event.type)) { show = true; kicker = t('enemyKicker'); subtitle = t('enemySubtitle'); radius = 56000; color = '#777'; }
+  else if (force.isEnemy && ['战斗','追堵','封锁','围堵','空袭'].includes(event.type)) { show = true; kicker = t('enemyKicker'); subtitle = t('enemySubtitle'); radius = 56000; color = '#777'; }
   if (show && event.location?.coordinates) {
     effectLayer = L.circle(event.location.coordinates, { radius, color, weight:event.type === '会师' ? 3 : 2, fillColor:color, fillOpacity:event.poem ? .08 : .06, opacity:.62, className:'event-effect-circle' }).addTo(map);
     if (event.type === '会师') showMeetingFlag(event);
@@ -578,6 +711,78 @@ function showMeetingFlag(event) {
 function offsetCoordinates(coords, count) { if (count === 0) return coords; const angle = (count * 47) * Math.PI / 180; const radius = .022 + Math.floor(count / 6) * .012; return [coords[0] + Math.sin(angle) * radius, coords[1] + Math.cos(angle) * radius]; }
 
 function updateTimelineDisplay() { const event = sortedEvents[currentSortedIndex]; if (!event) return; document.getElementById('timeline-slider').value = currentSortedIndex; document.getElementById('current-date').textContent = getDisplayDate(event); document.getElementById('current-event-title').textContent = getEventTitle(event); }
+function getEvidenceBadgeHTML(certainty) {
+  const c = String(certainty || 'medium').toLowerCase();
+  const mapZh = { high: ['权威史实', 'map-ev-high'], medium: ['一手见闻', 'map-ev-medium'], low: ['线索待证', 'map-ev-low'] };
+  const mapEn = { high: ['Authoritative', 'map-ev-high'], medium: ['Firsthand', 'map-ev-medium'], low: ['Unverified clue', 'map-ev-low'] };
+  const [label, cls] = (currentLang === 'en' ? mapEn : mapZh)[c] || [c, 'map-ev-medium'];
+  return `<span class="map-ev-badge ${cls}">${escapeHTML(label)}</span>`;
+}
+
+function getPrecisionBadgeHTML(prec) {
+  const p = String(prec || 'day').toLowerCase();
+  if (p === 'day') return '';
+  const labels = currentLang === 'en'
+    ? { month: 'Month-level', range: 'Date range', approx: 'Approximate' }
+    : { month: '仅知月份', range: '时间区间', approx: '约略日期' };
+  return labels[p] ? `<span class="map-ev-badge map-ev-prec">${escapeHTML(labels[p])}</span>` : '';
+}
+
+function getLayerBadgeHTML(layer) {
+  if (!layer || layer === 'march') return '';
+  const labels = currentLang === 'en'
+    ? { spark_march: 'Extended Spark', theme_stat: 'Thematic / Stat', historiography: 'Historiography' }
+    : { spark_march: '延伸星火', theme_stat: '专题/统计', historiography: '文献传播史' };
+  return labels[layer] ? `<span class="map-ev-badge map-ev-layer">${escapeHTML(labels[layer])}</span>` : '';
+}
+
+function extractCitationHint(event) {
+  const notes = String(event?.notes || '').trim();
+  if (!notes) return '';
+  const m = notes.match(/据《[^》]+》[^；。\n]{0,42}/);
+  if (m) return m[0];
+  const m2 = notes.match(/《红军长征记》[^；。\n]{0,36}/);
+  return m2 ? m2[0] : '';
+}
+
+function renderEventSourcesHTML(event) {
+  const sids = Array.isArray(event?.sourceIds) ? event.sourceIds : [];
+  if (!sids.length) return '';
+  const hint = extractCitationHint(event);
+  const pills = sids.map(id => {
+    const src = sourceById.get(id);
+    if (!src) return `<span class="source-pill">${escapeHTML(id)}</span>`;
+    const kind = src.mediaType === '专著' ? '书' : src.sourceType === 'game_text' ? '线索' : '网';
+    const year = src.year ? ` (${src.year})` : '';
+    const label = `${src.title}${year}`;
+    const href = src.url && /^https?:\/\//.test(src.url) ? src.url : `museum.html?source=${encodeURIComponent(id)}#catalog`;
+    const targetAttr = /^https?:\/\//.test(href) ? ' target="_blank" rel="noopener noreferrer"' : '';
+    return `<a class="source-pill" href="${escapeAttr(href)}"${targetAttr} title="${escapeAttr(src.publisher || src.title)}"><span class="source-pill-kind">[${kind}]</span><span>${escapeHTML(label)}</span></a>`;
+  }).join('');
+  return `<div class="event-sources-box">
+    <div class="event-sources-head">
+      <h4>${escapeHTML(t('sourcesTitle'))}</h4>
+      <a href="museum.html#archive" target="_blank" rel="noopener">${escapeHTML(t('archiveLink'))}</a>
+    </div>
+    ${hint ? `<div class="event-citation-loc">${escapeHTML(hint)}</div>` : ''}
+    <div class="source-pill-list">${pills}</div>
+  </div>`;
+}
+
+function renderMapVariantHTML(event) {
+  const g = variantIndex.get(event.id);
+  if (!g || !Array.isArray(g.variants) || g.variants.length < 2) return '';
+  const items = g.variants.map(v => `<li>
+    ${getEvidenceBadgeHTML(v.certainty)} <span>${escapeHTML(v.label || '')}</span>
+    <strong>${escapeHTML(v.title || '')}</strong>
+    <div>${escapeHTML((v.summary || '').slice(0, 120))}${(v.summary || '').length > 120 ? '…' : ''}</div>
+  </li>`).join('');
+  return `<div class="map-variant-box">
+    <button type="button" class="map-variant-toggle" id="map-variant-toggle">⚖ 同一史实有 ${g.variants.length} 种来源记载（点击展开对比）</button>
+    <ul class="map-variant-list hidden" id="map-variant-list">${items}</ul>
+  </div>`;
+}
+
 function updateEventPanel(event) {
   if (!event) return;
   const panel = document.getElementById('event-panel');
@@ -585,10 +790,13 @@ function updateEventPanel(event) {
   const content = document.getElementById('panel-content');
   const force = getSubject(event.forceId) || {};
 
-  // The left detail card is intentionally compact. It only shows the fields that
-  // help the visitor understand the current node without covering the map.
-  title.textContent = '';
+  title.textContent = getEventTitle(event);
   content.innerHTML = `
+    <div class="event-badges-row">
+      ${getEvidenceBadgeHTML(event.certainty)}
+      ${getPrecisionBadgeHTML(event.datePrecision)}
+      ${getLayerBadgeHTML(event.layer)}
+    </div>
     <div class="event-meta event-meta-compact event-meta-grid-2x2">
       <div class="event-meta-item"><span class="event-meta-label">${t('time')}</span><span class="event-meta-value">${escapeHTML(getDisplayDate(event))}</span></div>
       <div class="event-meta-item"><span class="event-meta-label">${t('force')}</span><span class="event-meta-value"><span class="force-dot" style="background:${escapeAttr(force.color || '#777')}"></span>${escapeHTML(getSubjectName(force))}</span></div>
@@ -596,10 +804,27 @@ function updateEventPanel(event) {
       <div class="event-meta-item"><span class="event-meta-label">${t('place')}</span><span class="event-meta-value">${escapeHTML(getLocationName(event))}</span></div>
     </div>
     <div class="event-description">${escapeHTML(getEventDescription(event))}</div>
-    ${Array.isArray(event.participants) && event.participants.length ? `<div class="event-participants"><h4>${t('participants')}</h4><div class="participant-tags">${event.participants.map(p => `<span class="participant-tag">${escapeHTML(p)}</span>`).join('')}</div></div>` : ''}`;
+    ${Array.isArray(event.participants) && event.participants.length ? `<div class="event-participants"><h4>${t('participants')}</h4><div class="participant-tags">${event.participants.map(p => `<span class="participant-tag clickable${highlightedPerson === p ? ' active' : ''}" data-person-hl="${escapeAttr(p)}" title="点击在地图上高亮该人物轨迹">${escapeHTML(p)}</span>`).join('')}</div></div>` : ''}
+    ${renderEventSourcesHTML(event)}
+    ${renderMapVariantHTML(event)}`;
+  content.querySelectorAll('[data-person-hl]').forEach(tag => {
+    tag.addEventListener('click', () => {
+      const name = tag.dataset.personHl || '';
+      highlightedPerson = highlightedPerson === name ? '' : name;
+      updateFilterSummary();
+      refreshAllMarkerIcons();
+      updateEventPanel(event);
+    });
+  });
+  document.getElementById('map-variant-toggle')?.addEventListener('click', () => {
+    document.getElementById('map-variant-list')?.classList.toggle('hidden');
+  });
   panel.classList.add('show');
 }
-function getPopupHTML(event, force) { return `<div class="popup-card"><h4 style="color:${escapeAttr(force.isEnemy ? '#777' : (force.color || '#555'))}">${escapeHTML(getEventTitle(event))}</h4><p>${escapeHTML(getDisplayDate(event))}｜${escapeHTML(getSubjectName(force))}｜${escapeHTML(getTypeLabel(event.type))}</p><p>${escapeHTML(getLocationName(event))}</p><p class="popup-desc">${escapeHTML(getEventDescription(event)).slice(0,105)}${getEventDescription(event).length > 105 ? '……' : ''}</p></div>`; }
+function getPopupHTML(event, force) {
+  const firstSrc = (event.sourceIds || []).map(id => sourceById.get(id)?.title).filter(Boolean)[0] || '';
+  return `<div class="popup-card"><h4 style="color:${escapeAttr(force.isEnemy ? '#777' : (force.color || '#555'))}">${escapeHTML(getEventTitle(event))}</h4><p>${getEvidenceBadgeHTML(event.certainty)} ${escapeHTML(getDisplayDate(event))}｜${escapeHTML(getSubjectName(force))}｜${escapeHTML(getTypeLabel(event.type))}</p><p>${escapeHTML(getLocationName(event))}</p><p class="popup-desc">${escapeHTML(getEventDescription(event)).slice(0,105)}${getEventDescription(event).length > 105 ? '……' : ''}</p>${firstSrc ? `<p style="font-size:11px;color:#6e6658;margin-top:5px;">出处：${escapeHTML(firstSrc)}</p>` : ''}</div>`;
+}
 
 function updateStats(activeDisplayedEvents = null, allDisplayedEvents = null) {
   if (!sortedEvents.length) return;
@@ -725,6 +950,17 @@ function hideMemorialLayer() {
   if (memorialLayer && map) { map.removeLayer(memorialLayer); memorialLayer = null; }
 }
 
-window.marchMap = { data: () => marchData, sortedEvents: () => sortedEvents, showEvent: index => { currentSortedIndex = Math.max(0, Math.min(sortedEvents.length - 1, Number(index) || 0)); renderCurrentState(true); }, activeForces: () => [...activeForces], memorialSites: () => memorialData };
+window.marchMap = {
+  data: () => marchData,
+  sortedEvents: () => sortedEvents,
+  allEvents: () => allNormalizedEvents,
+  scopeMode: () => scopeMode,
+  evidenceMode: () => evidenceMode,
+  setScope: mode => { scopeMode = mode; syncMapFilterButtons(); rebuildVisibleEvents(); renderCurrentState(false); },
+  setEvidence: mode => { evidenceMode = mode; syncMapFilterButtons(); rebuildVisibleEvents(); renderCurrentState(false); },
+  showEvent: index => { currentSortedIndex = Math.max(0, Math.min(sortedEvents.length - 1, Number(index) || 0)); renderCurrentState(true); },
+  activeForces: () => [...activeForces],
+  memorialSites: () => memorialData
+};
 
 

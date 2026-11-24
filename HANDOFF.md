@@ -75,7 +75,16 @@ Keep the public museum/map reproducible from structured sources while reducing h
 ## Validation
 
 ```bash
-python tools/check_project.py
+python tools/pipeline.py
 ```
+
+## 2026-11-24 update — P0 + P1 refactor complete (v31)
+
+- **Single build command**: always run `python tools/pipeline.py` (runs `build_cited_details.py` → `build_json_from_tables.py` + `build_variant_groups.py` → `build_references_md.py` → `check_project.py`). Legacy one-off scripts are archived in `tools/archive/`.
+- **Strict schema gates** in `tools/check_project.py`:
+  - `events.csv` requires valid `layer` (`march`/`spark_march`/`theme_stat`/`historiography`), `datePrecision` (`day`/`month`/`range`/`approx`), `certainty` (`high`/`medium`/`low`), canonical 8 `type` values (`战斗`/`行军`/`决策`/`渡险`/`会师`/`牺牲`/`民生`/`史料`), clean `locationName` (<=24 chars, no quotes/essay titles), and 0 unwhitelisted >300km jumps in `layer=march`.
+  - `certainty=high` requires at least one `sourceType=authoritative` source; `subjects.csv` forbids `type=person`; `sources.csv` requires unique titles.
+- **Frontend state**: `map.html` defaults to `scopeMode=core` (1934–36) + `evidenceMode=verified` (287 verified core march nodes) and exposes provenance/variants/person-track highlights; `museum.html` paginates catalog (36/page), supports live person search, and turns Viewpoint 7 into a searchable Reference Center with reverse event lookup; `explore.js` 15/15 person IDs and deep links fixed.
+- **Next milestone (P2 in `ROADMAP.md`)**: verify/clean the remaining 210 `low` game-text clues, mine remaining ~90 essays of《红军长征记》to zero out 31 orphan authors, resolve 34 external visual-asset licenses, and build `data_edit/gazetteer.csv`.
 
 Do not rely on chat history as project state; update Git before handing off.

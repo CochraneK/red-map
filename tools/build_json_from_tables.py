@@ -102,7 +102,11 @@ def read_sources(errors, warnings):
         if not sid: warnings.append(f'sources.csv 第 {i} 行缺少 id，已跳过'); continue
         if sid in ids: errors.append(f'sources.csv 第 {i} 行 id 重复：{sid}'); continue
         ids.add(sid)
-        sources.append({'id':sid,'title':row.get('title',''),'publisher':row.get('publisher',''),'url':row.get('url',''),'note':row.get('note',''),'sourceType':row.get('sourceType','') or 'authoritative'})
+        src={'id':sid,'title':row.get('title',''),'publisher':row.get('publisher',''),'url':row.get('url',''),'note':row.get('note',''),'sourceType':row.get('sourceType','') or 'authoritative'}
+        add_optional(src,row,'author','year','pubDate','mediaType','edition','citedDetail','accessed')
+        if row.get('usageCount','').strip():
+            src['usageCount']=parse_int(row.get('usageCount',''),0,'sources.usageCount')
+        sources.append(src)
     return sources, ids
 
 def check_refs(kind: str, row_no: int, field: str, values: list[str], allowed: set[str], errors: list[str]):
@@ -254,7 +258,7 @@ def build(strict=True):
         srcs=split_cell(row.get('sourceIds',''))
         missing=[sid for sid in srcs if sid not in source_ids]
         if missing: errors.append(f'events.csv 第 {i} 行 sourceIds 未定义：{"; ".join(missing)}'); continue
-        ev={'id':eid,'date':event_date,'displayDate':event_date,'sequence':seq,'forceId':force_id,'type':row.get('type','其他') or '其他','title':title,'description':row.get('description',''),'location':{'name':loc,'coordinates':[lat,lng]},'participants':split_cell(row.get('participants','')),'importance':importance,'sourceIds':srcs,'certainty':row.get('certainty','medium') or 'medium'}
+        ev={'id':eid,'date':event_date,'displayDate':event_date,'datePrecision':row.get('datePrecision','day') or 'day','sequence':seq,'forceId':force_id,'layer':row.get('layer','march') or 'march','type':row.get('type','行军') or '行军','title':title,'description':row.get('description',''),'location':{'name':loc,'coordinates':[lat,lng]},'participants':split_cell(row.get('participants','')),'importance':importance,'sourceIds':srcs,'certainty':row.get('certainty','medium') or 'medium'}
         add_optional(ev,row,'notes','titleEn','descriptionEn','result','casualties')
         if row.get('locationNameEn','').strip(): ev['location']['nameEn']=row['locationNameEn'].strip()
         metrics={}
