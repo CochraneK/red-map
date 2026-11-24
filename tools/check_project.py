@@ -226,18 +226,37 @@ def check_visual_asset_provenance() -> None:
             unresolved.append(row.get("id") or "<unnamed>")
     if missing_page:
         sample = ", ".join(missing_page[:8])
-        print(
-            f"[WARN] {len(missing_page)} visual assets have no source page and are not marked project asset. "
+        raise RuntimeError(
+            f"{len(missing_page)} visual assets have no source page and are not marked project asset. "
             f"Sample: {sample}"
         )
     if unresolved:
         sample = ", ".join(unresolved[:8])
-        print(
-            f"[WARN] {len(unresolved)}/{external} external visual assets still have unresolved exact "
+        raise RuntimeError(
+            f"{len(unresolved)}/{external} external visual assets have unresolved exact "
             f"credit/license metadata. Sample: {sample}"
         )
-    else:
-        print(f"[OK] exact credit/license metadata present for {external} external visual assets")
+    print(f"[OK] exact credit/license metadata present for {external} external visual assets")
+
+
+def check_gazetteer_integrity() -> None:
+    print("[CHECK] historical gazetteer integrity")
+    rows = read_csv_rows("data_edit/gazetteer.csv")
+    if len(rows) < 100:
+        raise RuntimeError(f"gazetteer.csv 记录过少（{len(rows)}）")
+    bad = []
+    for r in rows:
+        try:
+            lat = float(r.get("lat", ""))
+            lng = float(r.get("lng", ""))
+            if not (-90 <= lat <= 90 and -180 <= lng <= 180):
+                bad.append(r.get("name", "<unnamed>"))
+        except Exception:
+            bad.append(r.get("name", "<unnamed>"))
+    if bad:
+        raise RuntimeError(f"gazetteer.csv 存在非法坐标（{len(bad)}处）：{', '.join(bad[:6])}")
+    disambig = sum(1 for r in rows if r.get("disambiguationNote"))
+    print(f"[OK] gazetteer.csv has {len(rows)} canonical places ({disambig} with disambiguation notes)")
 
 
 def check_source_registry_metadata() -> None:
@@ -286,6 +305,7 @@ def check_required_files() -> None:
         "data_edit/exhibits.csv",
         "data_edit/artifacts.csv",
         "data_edit/visual_assets.csv",
+        "data_edit/gazetteer.csv",
         "tools/extract_steam_texts.py",
         "tools/extract_unreal_text_assets.py",
         "tools/import_steam_timeline.py",
@@ -399,6 +419,7 @@ def main() -> int:
         check_source_provenance_policy()
         check_non_authoritative_certainty()
         check_visual_asset_provenance()
+        check_gazetteer_integrity()
         check_translation_placeholders(data)
     except Exception as exc:
         print(f"[ERROR] {exc}", file=sys.stderr)

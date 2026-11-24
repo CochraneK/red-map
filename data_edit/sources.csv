@@ -36,7 +36,7 @@ src_xiezichang_xinhua,谢子长：陕北红军和苏区创建人之一,新华网
 src_luonanhui_xinhua,喋血长征的青年将军——罗南辉,新华网,https://www.xinhuanet.com/politics/2018-10/13/c_1123553410.htm,用于罗南辉在会师前后相关阻击战牺牲。,authoritative,新华网,2018,,网页,,2026-11-23,,1
 src_women_redarmy_81,长征中的女红军,中国军网,https://www.81.cn/2016czsl80/2016-08/02/content_7188181.htm,用于贺子珍、邓颖超、蔡畅、康克清、刘英、李坚真等女红军长征线索。,authoritative,中国军网,2016,,网页,,2026-11-23,,6
 src_pengdehuai_people,彭德怀与长征,中国共产党新闻网/人民网,https://cpc.people.com.cn/GB/69112/78233/78687/78976/5421212.html,用于彭德怀在长征与陕北战役中的指挥线索。,authoritative,中国共产党新闻网,,,网页,,2026-11-23,,1
-src_steam_longmarch_1934_1936,《长征1934-1936》本地游戏文本抽取,Steam 本地安装文件 / Unreal 数据资产抽取,docs/STEAM_TEXT_EXTRACTION.md,仅作线索来源；正式采用前应继续用权威党史资料复核。导入事件已压缩改写为短策展文案。,game_text,游戏《长征 1934-1936》文本,—,,数据库,,,,242
+src_steam_longmarch_1934_1936,《长征1934-1936》本地游戏文本抽取,Steam 本地安装文件 / Unreal 数据资产抽取,docs/STEAM_TEXT_EXTRACTION.md,仅作线索来源；正式采用前应继续用权威党史资料复核。导入事件已压缩改写为短策展文案。,game_text,游戏《长征 1934-1936》文本,—,,数据库,,,,72
 src_wxyj_dswxyjy,中国工农红军西路军（中央党史和文献研究院）,中央党史和文献研究院,https://www.dswxyjy.org.cn/n1/2020/0914/c244523-31860754.html,西路军西渡黄河、倪家营子、梨园口、石窝分兵、星星峡时间线,authoritative,中共中央党史和文献研究院,2020,,网页,,2026-11-23,,7
 src_wxyj_people_dangshi,西路军历史（人民网党史）,人民网·中国共产党新闻网,https://dangshi.people.com.cn/BIG5/n1/2019/0223/c85037-30898568-4.html,西路军总人数、结局与历史评价,authoritative,人民网·党史频道,2019,,网页,,2026-11-23,,2
 src_wxyj_cctv,西路军·西渡黄河（央视网）,央视网,https://tv.cctv.com/v/v1/VIDEdmFT86EHu9ewPUPGJspN190824.html,靖远虎豹口渡河地点参考,authoritative,,,,网页,,2026-11-23,,1
@@ -94,14 +94,14 @@ src_huishi_cpc,红军长征中的会师,中国共产党新闻网,https://cpc.peo
 src_luding_cpc,飞夺泸定桥,中国共产党新闻网,https://cpc.people.com.cn/n1/2025/0308/c443712-40434014.html,飞夺泸定桥,authoritative,中国共产党新闻网,2025,,网页,,2026-11-23,,0
 src_xuxiangqian_cpc,徐向前,中国共产党新闻网,https://cpc.people.com.cn/GB/67481/71472/4844494.html,过草地（人民网老栏目页，页面未标注发布日期，year 留空）,authoritative,中国共产党新闻网,,,网页,,2026-11-23,,0
 src_jialingjiang_cpc,强渡嘉陵江（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2025/0322/c443712-40444339.html,红四方面军占领阆中,authoritative,中国共产党新闻网,2025,,网页,,2026-11-23,,1
-src_liulangzhigu_cpc,红六军团西征（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2023/0808/c443712-32608864.html,红六军团占领新田、渡过湘江,authoritative,中国共产党新闻网,2023,,网页,,2026-11-23,,2
+src_liulangzhigu_cpc,红六军团西征（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2023/0808/c443712-32608864.html,红六军团占领新田、渡过湘江,authoritative,中国共产党新闻网,2023,,网页,,2026-11-23,,3
 src_red25_cpc,红二十五军北上（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2021/0611/c64387-32128318.html,北上抗日第二先遣队、独树镇战斗；同页专题文章不同章节引用,authoritative,中国共产党新闻网,2021,,网页,,2026-11-23,,4
 src_shaanbei_cpc,陕甘根据地（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2021/1021/c441345-32260085.html,陕甘红军反围剿,authoritative,中国共产党新闻网,2021,,网页,,2026-11-23,,1
 src_100years_cpc,中国共产党一百年大事记（中国共产党新闻网版）,中国共产党新闻网,https://cpc.people.com.cn/n1/2021/0628/c64387-32142446.html,南方游击战争、扎西领导调整、陕甘支队改编；与 src_cpc_century / src_party_chronology_xinhua 为同源官方大事记镜像；与 src_cpc_century / src_party_chronology_xinhua 为同源官方大事记镜像,authoritative,中共中央党史和文献研究院,2021,,专著,,2026-11-23,,13
 src_zunyi_guanghui,遵义会议放光辉（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2021/0206/c435238-32024307.html,张闻天负总责、三人军事小组,authoritative,中国共产党新闻网,2021,,网页,,2026-11-23,,2
 src_pengdehuai_cpc,雄关如铁从头越——记长征中的彭德怀,中国共产党新闻网,https://cpc.people.com.cn/GB/67481/68751/68760/4839447.html,陕甘支队改编与彭德怀任命（人民网老栏目页，页面未标注发布日期，year 留空）,authoritative,中国共产党新闻网,,,网页,,2026-11-23,,0
-src_snow_redstar,红星照耀中国·第五篇长征（埃德加·斯诺）,埃德加·斯诺《红星照耀中国》中文版,https://wintermelonc.github.io/WintermelonC_Docs/file/history_CPC/CPC_doc2.pdf,斯诺1936年保安亲访毛泽东与红军幸存者的一手见闻；public_narrative层，非权威定论,book,斯诺（Edgar Snow）著,1937,,专著,,2026-11-23,,13
-src_changzhengji_people,长征记（曲爱国、张从田）,中国共产党新闻网·党史频道（华夏出版社授权发布）,https://dangshi.people.com.cn/GB/146570/406330/index.html,军事科学院专家著，权威史著事实层。页面请勿转载，仅提取事实要素注明出处,authoritative,曲爱国、张从田,2016,,专著,,2026-11-23,授权连载版,45
+src_snow_redstar,红星照耀中国·第五篇长征（埃德加·斯诺）,埃德加·斯诺《红星照耀中国》中文版,https://wintermelonc.github.io/WintermelonC_Docs/file/history_CPC/CPC_doc2.pdf,斯诺1936年保安亲访毛泽东与红军幸存者的一手见闻；public_narrative层，非权威定论,book,斯诺（Edgar Snow）著,1937,,专著,《红星照耀中国》第五篇《长征》,2026-11-23,,13
+src_changzhengji_people,长征记（曲爱国、张从田）,中国共产党新闻网·党史频道（华夏出版社授权发布）,https://dangshi.people.com.cn/GB/146570/406330/index.html,军事科学院专家著，权威史著事实层。页面请勿转载，仅提取事实要素注明出处,authoritative,曲爱国、张从田,2016,,专著,《长征记》第二十六章；《长征记》引子；《长征记》第四章；《长征记》第十三章；《长征记》第三章；《长征记》第六章 等23处,2026-11-23,授权连载版,95
 src_prop_cpc_chuanbo,长征的传播与影响（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/n1/2016/1101/c369835-28825929.html,长征对外传播史权威综述,authoritative,中国共产党新闻网,2016,,网页,,2026-11-23,,4
 src_prop_dswy,世界，是这样知道长征的（中共中央党史和文献研究院）,中共中央党史和文献研究院,https://www.dswxyjy.org.cn/n1/2017/0401/c244523-29185315.html,丁晓平撰写，长征传播史,authoritative,中共中央党史和文献研究院,2017,,网页,,2026-11-23,,7
 src_prop_qunmin,长征亲历者的纪实之作（中国共产党新闻网）,中国共产党新闻网,https://cpc.people.com.cn/BIG5/n1/2026/1017/c64387-40816480.html,随军西行见闻录等传播,authoritative,中国共产党新闻网,2026,,网页,,2026-11-23,,2
@@ -109,4 +109,4 @@ src_prop_people_juzheng,红军长征记相关报道（人民网）,人民网,htt
 src_prop_people_hongxing,红星照耀中国相关报道（人民网）,人民网,http://media.people.com.cn/BIG5/n1/2016/0705/c40606-28523748.html,斯诺报道,authoritative,人民网,2016,,网页,,2026-11-23,,1
 src_prop_yunnan,薄复礼相关报道（云南网）,云南网,https://llw.yunnan.cn/html/2018-11/02/content_5301316.htm,神灵之手出版,authoritative,,2018,,网页,,2026-11-23,,2
 src_prop_xinhua,范长江与中国的西北角（新华网）,新华网,https://www.xinhuanet.com/politics/2021-09/13/c_1211367910.htm,范长江报道,authoritative,新华网,2021,,网页,,2026-11-23,,2
-src_hongjun_changzhengji,红军长征记（1937年2月编定，1942年11月延安印行）,延安解放出版社（1942内部印行）；刘统整理注释本（生活·读书·新知三联书店）,https://mooc1.chaoxing.com/mooc-ans/ztnodedetailcontroller/visitnodedetail?courseId=223004759&knowledgeId=524772136,中共党史上最早的长征集体回忆录，百余位亲历者亲笔，共135篇（100篇文章+10首歌曲+3个统计表）。底本1937/1942年出版，多数单篇作者已逝世逾50年，底本已进入公有领域；现代整理注释本受保护，本项目仅提取事实要素并注明出处，不转载原文。核心篇目含《随军西行见闻录》（陈云，92KB）、《英勇的西征》（陈云）、《雪山草地行军记》（邓发）、《从甘肃到陕西》（邓发）、《长征大事记》（陆定一，逐日编年）、《红军第一军团长征中经过地点及里程一览表》（总行程18088里）。,book,红军长征记（集体创作，1936年征稿，丁玲、徐特立、成仿吾等编辑）,1937,,专著,《红军长征记·长征大事记》；第133篇；前言篇；第135篇；第51篇；《长征中卫生教育和医疗工作》 等78处,2026-11-23,1942年延安内部印行本,166
+src_hongjun_changzhengji,红军长征记（1937年2月编定，1942年11月延安印行）,延安解放出版社（1942内部印行）；刘统整理注释本（生活·读书·新知三联书店）,https://mooc1.chaoxing.com/mooc-ans/ztnodedetailcontroller/visitnodedetail?courseId=223004759&knowledgeId=524772136,中共党史上最早的长征集体回忆录，百余位亲历者亲笔，共135篇（100篇文章+10首歌曲+3个统计表）。底本1937/1942年出版，多数单篇作者已逝世逾50年，底本已进入公有领域；现代整理注释本受保护，本项目仅提取事实要素并注明出处，不转载原文。核心篇目含《随军西行见闻录》（陈云，92KB）、《英勇的西征》（陈云）、《雪山草地行军记》（邓发）、《从甘肃到陕西》（邓发）、《长征大事记》（陆定一，逐日编年）、《红军第一军团长征中经过地点及里程一览表》（总行程18088里）。,book,红军长征记（集体创作，1936年征稿，丁玲、徐特立、成仿吾等编辑）,1937,,专著,《红军长征记·长征大事记》；第133篇；前言篇；第135篇；第51篇；《长征中卫生教育和医疗工作》 等112处,2026-11-23,1942年延安内部印行本,203

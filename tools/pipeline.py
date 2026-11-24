@@ -28,11 +28,12 @@ def main() -> int:
     parser.add_argument("--skip-check", action="store_true", help="跳过 check_project.py 硬门禁检查")
     args = parser.parse_args()
 
-    run_step("1/4 反向汇总来源引用位置与频次", "tools/build_cited_details.py")
-    run_step("2/4 构建发布 JSON 与口径差异组", "tools/build_json_from_tables.py")
-    run_step("3/4 生成学术规范参考书目 REFERENCES.md", "tools/build_references_md.py")
+    run_step("1/5 反向汇总来源引用位置与频次", "tools/build_cited_details.py")
+    run_step("2/5 更新县镇级历史地名词典 gazetteer.csv", "tools/build_gazetteer.py")
+    run_step("3/5 构建发布 JSON 与口径差异组", "tools/build_json_from_tables.py")
+    run_step("4/5 生成学术规范参考书目 REFERENCES.md", "tools/build_references_md.py")
     if not args.skip_check:
-        run_step("4/4 运行全套硬门禁与一致性验收", "tools/check_project.py")
+        run_step("5/5 运行全套硬门禁与一致性验收", "tools/check_project.py")
 
     print("\n[PIPELINE OK] 全流程构建与验收通过。")
     return 0

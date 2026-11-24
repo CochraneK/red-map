@@ -33,40 +33,7 @@
    ]
   },
   {
-   "key": "1934-11-11|red_25th|1",
-   "date": "1934-11-11",
-   "forceId": "red_25th",
-   "title": "红二十五军发布北上抗日第二先遣队出发宣言",
-   "variants": [
-    {
-     "eventId": "ev_red25_19341111_declare",
-     "certainty": "high",
-     "label": "权威史实·军事科学院《长征记》",
-     "title": "红二十五军发布北上抗日第二先遣队出发宣言",
-     "summary": "1934年11月11日，红军第二十五军军长程子华、政治委员吴焕先率部从河南罗山何家冲出发，开始长征，军中成立中国工农红军北上抗日第二先遣队，于11月16日发布出发宣言，宣告红二十五军踏上了北上抗日的征途。这支部队与同年7月由红七军团组成的北上抗日先遣队（粟裕、乐少华率领，活动于闽赣皖边）分属不同的建制与行动区域，是长征中两支易被混淆的部队。",
-     "sourceIds": [
-      "src_red25_cpc",
-      "src_changzhengji_people"
-     ]
-    },
-    {
-     "eventId": "steam_r25_19341111_6bb7d2f0",
-     "certainty": "low",
-     "label": "线索待证·游戏文本线索",
-     "title": "红二十五军北上抗日第二先遣队",
-     "summary": "1934年11月11日，红二十五军在鄂豫皖根据地一带北上抗日第二先遣队。",
-     "sourceIds": [
-      "src_steam_longmarch_1934_1936"
-     ]
-    }
-   ],
-   "certaintyKinds": [
-    "high",
-    "low"
-   ]
-  },
-  {
-   "key": "1934-11-16|red_25th|2",
+   "key": "1934-11-16|red_25th|1",
    "date": "1934-11-16",
    "forceId": "red_25th",
    "title": "红二十五军发布了中国工农红军北上抗日第二先遣队出发宣言",
@@ -99,7 +66,7 @@
    ]
   },
   {
-   "key": "1934-12-10|red_25th|3",
+   "key": "1934-12-10|red_25th|2",
    "date": "1934-12-10",
    "forceId": "red_25th",
    "title": "红25军庾家河战斗",
@@ -124,26 +91,15 @@
       "src_red25_people",
       "src_red25_base_ujn"
      ]
-    },
-    {
-     "eventId": "steam_r25_19341210_9defdcc6",
-     "certainty": "low",
-     "label": "线索待证·游戏文本线索",
-     "title": "红二十五军召开了第十八次常委会议",
-     "summary": "1934年12月10日，鄂豫皖省委在陕西商洛庾家河召开第十八次常委会议，决定创建鄂豫陕革命根据地。",
-     "sourceIds": [
-      "src_steam_longmarch_1934_1936"
-     ]
     }
    ],
    "certaintyKinds": [
     "high",
-    "low",
     "medium"
    ]
   },
   {
-   "key": "1935-02-18|red_first|5",
+   "key": "1935-02-18|red_first|4",
    "date": "1935-02-18",
    "forceId": "red_first",
    "title": "中央红军开始二渡赤水",
@@ -175,41 +131,7 @@
    ]
   },
   {
-   "key": "1935-04-29|red_first|6",
-   "date": "1935-04-29",
-   "forceId": "red_first",
-   "title": "巧渡金沙江开始",
-   "variants": [
-    {
-     "eventId": "rf_19350429_jiaopingdu_start",
-     "certainty": "medium",
-     "label": "一手见闻·党史大事件·1935年：遵义会议",
-     "title": "巧渡金沙江开始",
-     "summary": "中央红军抢占金沙江渡口，准备利用少量船只渡江，摆脱南岸追兵。",
-     "sourceIds": [
-      "src_zunyi_hunan",
-      "src_qilv_dangjian_2024",
-      "src_qilv_people"
-     ]
-    },
-    {
-     "eventId": "steam_rf_19350429_4b7f9aa3",
-     "certainty": "low",
-     "label": "线索待证·游戏文本线索",
-     "title": "中央红军渡过金沙江",
-     "summary": "1935年4月29日，中央红军在云南皎平渡一带渡过金沙江。",
-     "sourceIds": [
-      "src_steam_longmarch_1934_1936"
-     ]
-    }
-   ],
-   "certaintyKinds": [
-    "low",
-    "medium"
-   ]
-  },
-  {
-   "key": "1935-05-25|red_first|8",
+   "key": "1935-05-25|red_first|6",
    "date": "1935-05-25",
    "forceId": "red_first",
    "title": "中央红军抢渡大渡河",
@@ -241,7 +163,7 @@
    ]
   },
   {
-   "key": "1935-05-25|red_first|7",
+   "key": "1935-05-25|red_first|5",
    "date": "1935-05-25",
    "forceId": "red_first",
    "title": "十七勇士强渡安顺场（权威口径）",
@@ -273,39 +195,7 @@
    ]
   },
   {
-   "key": "1935-06-12|red_fourth|10",
-   "date": "1935-06-12",
-   "forceId": "red_fourth",
-   "title": "红四方面军与中央红军达维会师",
-   "variants": [
-    {
-     "eventId": "r4_19350612_davi_meeting",
-     "certainty": "medium",
-     "label": "一手见闻·长征中的6次会师",
-     "title": "红四方面军与中央红军达维会师",
-     "summary": "红四方面军前锋与中央红军在达维会师。该事件作为红四方面军路线独立连线终点之一，避免与中央红军路线混连。",
-     "sourceIds": [
-      "src_meetings_xinhua"
-     ]
-    },
-    {
-     "eventId": "steam_r4_19350612_c2405efb",
-     "certainty": "low",
-     "label": "线索待证·游戏文本线索",
-     "title": "红四方面军到达懋功县城东南的达维镇",
-     "summary": "1935年6月12日，红四方面军在四川懋功/小金一带到达懋功县城东南的达维镇。",
-     "sourceIds": [
-      "src_steam_longmarch_1934_1936"
-     ]
-    }
-   ],
-   "certaintyKinds": [
-    "low",
-    "medium"
-   ]
-  },
-  {
-   "key": "1935-06-12|red_first|9",
+   "key": "1935-06-12|red_first|7",
    "date": "1935-06-12",
    "forceId": "red_first",
    "title": "达维会师：红一、红四方面军前锋首次会合",
@@ -337,72 +227,40 @@
    ]
   },
   {
-   "key": "1935-06-25|red_fourth|11",
-   "date": "1935-06-25",
-   "forceId": "red_fourth",
-   "title": "两河口暴雨中欢迎红四方面军",
+   "key": "1935-09-09|red_first|9",
+   "date": "1935-09-09",
+   "forceId": "red_first",
+   "title": "巴西会议与红一方面军单独北上（权威口径）",
    "variants": [
     {
-     "eventId": "hjdet_27",
-     "certainty": "medium",
-     "label": "一手见闻·红军长征记（1937年2月编定，",
-     "title": "两河口暴雨中欢迎红四方面军",
-     "summary": "四围蛮山老林紧抱，绝不肯让出数十米平地；西北从梦笔山、东北从虹桥山送来两条怒吼溪流，雨季雪融寒流泛滥如同黄河决口。经邓罗两局长亲自率队察勘，才勉强选定东溪南岸不到百米方的山脚斜坡作会场，调工兵连伐木斩荆抛石掘土，数十个红色英雄工作了三小时。土石削成主席台，标语只能安置在路旁小树棘条上。暴雨延续约二十分钟，雨柱粗大如子弹却丝毫不动摇欢迎者阵容。文末写明：\"这是有历史意义的一九三五年六月二十五日。\"",
-     "sourceIds": [
-      "src_hongjun_changzhengji"
-     ]
-    },
-    {
-     "eventId": "steam_r4_19350625_ac761650",
-     "certainty": "low",
-     "label": "线索待证·游戏文本线索",
-     "title": "红四方面军到达两河口",
-     "summary": "1935年6月25日，红四方面军在四川小金两河口一带到达两河口。",
-     "sourceIds": [
-      "src_steam_longmarch_1934_1936"
-     ]
-    }
-   ],
-   "certaintyKinds": [
-    "low",
-    "medium"
-   ]
-  },
-  {
-   "key": "1935-10-07|red_fourth|14",
-   "date": "1935-10-07",
-   "forceId": "red_fourth",
-   "title": "绥（靖）崇（化）丹（巴）懋（功）战役计划",
-   "variants": [
-    {
-     "eventId": "ev_red4_19351007_suichong",
+     "eventId": "czj_193509_brazil_council",
      "certainty": "high",
      "label": "权威史实·军事科学院《长征记》",
-     "title": "绥（靖）崇（化）丹（巴）懋（功）战役计划",
-     "summary": "1935年10月上旬，红四方面军发布绥靖、崇化、丹巴、懋功战役计划，企图南下川康边、在成都平原边缘求得发展，以实现其另立中央的路线主张。此前红四方面军南下后先后占领宝兴、天全、芦山，突破刘湘防线，击败川军十七个旅。战役计划发布后，红四方面军南下受挫，在百丈关与川军激战，歼敌一万五千余人但自身伤亡近万人，被迫撤回川康边。",
+     "title": "巴西会议与红一方面军单独北上（权威口径）",
+     "summary": "1935年9月上旬，中共中央在巴西（今四川若尔盖东）召开政治局会议，针对张国焘坚持南下、拒不执行北上方针的情况，决定率红一方面军主力先行北上。9月10日凌晨，中央率红3军团和军委纵队离开巴西地区北上，并发布《为执行北上方针告同志书》。此后红军攻克腊子口、越过岷山，于9月中旬进入甘南。",
      "sourceIds": [
-      "src_100years_cpc",
       "src_changzhengji_people"
      ]
     },
     {
-     "eventId": "steam_r4_19351007_509f379b",
-     "certainty": "low",
-     "label": "线索待证·游戏文本线索",
-     "title": "红四方面军发布了绥（靖）崇（化）丹（巴）懋（功）战役计划",
-     "summary": "1935年10月7日，红四方面军在湖南通道一带发布了绥（靖）崇（化）丹（巴）懋（功）战役计划。",
+     "eventId": "rf_19350909_baxi",
+     "certainty": "medium",
+     "label": "一手见闻·中国共产党一百年大事记（新华网发",
+     "title": "巴西会议后红一方面军单独北上",
+     "summary": "张国焘拒绝执行北上方针并率部南下后，中共中央在巴西一带作出继续北上的决定，红一方面军独自向陕甘方向推进。",
      "sourceIds": [
-      "src_steam_longmarch_1934_1936"
+      "src_party_chronology_xinhua",
+      "src_meetings_xinhua"
      ]
     }
    ],
    "certaintyKinds": [
     "high",
-    "low"
+    "medium"
    ]
   },
   {
-   "key": "1935-10-07|red_first|13",
+   "key": "1935-10-07|red_first|10",
    "date": "1935-10-07",
    "forceId": "red_first",
    "title": "青石嘴战斗：缴获国民党军骑兵战马",
@@ -434,7 +292,7 @@
    ]
   },
   {
-   "key": "1935-10-15|red_first|15",
+   "key": "1935-10-15|red_first|11",
    "date": "1935-10-15",
    "forceId": "red_first",
    "title": "陈云向共产国际报告长征",
@@ -467,7 +325,7 @@
    ]
   },
   {
-   "key": "1935-10-21|red_first|17",
+   "key": "1935-10-21|red_first|13",
    "date": "1935-10-21",
    "forceId": "red_first",
    "title": "吴起镇『切尾巴』战斗的组织与结果",
@@ -500,11 +358,21 @@
    ]
   },
   {
-   "key": "1936-03-01|red_fourth|19",
+   "key": "1936-03-01|red_fourth|15",
    "date": "1936-03-01",
    "forceId": "red_fourth",
-   "title": "红四方面军在川康边整顿后准备北上",
+   "title": "红四方面军先头红三十军攻占道孚、炉霍",
    "variants": [
+    {
+     "eventId": "steam_r4_19360301_b3951370",
+     "certainty": "high",
+     "label": "权威史实·军事科学院《长征记》",
+     "title": "红四方面军先头红三十军攻占道孚、炉霍",
+     "summary": "1936年3月1日，红四方面军先头部队红三十军攻占西康省道孚，15日占领炉霍，随后乘胜攻占甘孜等重镇，为迎接红二、红六军团会师开辟川康边立足点。",
+     "sourceIds": [
+      "src_changzhengji_people"
+     ]
+    },
     {
      "eventId": "r4_19360301_kangbei",
      "certainty": "medium",
@@ -515,25 +383,15 @@
       "src_meetings_xinhua",
       "src_epic_people"
      ]
-    },
-    {
-     "eventId": "steam_r4_19360301_b3951370",
-     "certainty": "low",
-     "label": "线索待证·游戏文本线索",
-     "title": "红四方面军在懋功/小金集结",
-     "summary": "1936年3月上旬，红四方面军在四川懋功/小金一带在懋功/小金集结。",
-     "sourceIds": [
-      "src_steam_longmarch_1934_1936"
-     ]
     }
    ],
    "certaintyKinds": [
-    "low",
+    "high",
     "medium"
    ]
   },
   {
-   "key": "1936-03-01|red_first|18",
+   "key": "1936-03-01|red_first|14",
    "date": "1936-03-01",
    "forceId": "red_first",
    "title": "随军西行见闻录巴黎连载",
@@ -566,7 +424,7 @@
    ]
   },
   {
-   "key": "1936-07-05|red_second|21",
+   "key": "1936-07-05|red_second|17",
    "date": "1936-07-05",
    "forceId": "red_second",
    "title": "甘孜会师与红二方面军组建",
@@ -598,7 +456,7 @@
    ]
   },
   {
-   "key": "1936-08-05|red_first|22",
+   "key": "1936-08-05|red_first|18",
    "date": "1936-08-05",
    "forceId": "red_first",
    "title": "毛泽东杨尚昆联署长征记征稿",
@@ -628,171 +486,6 @@
    "certaintyKinds": [
     "high",
     "medium"
-   ]
-  },
-  {
-   "key": "1936-09-07|red_fourth|23",
-   "date": "1936-09-07",
-   "forceId": "red_fourth",
-   "title": "红四方面军占领通渭",
-   "variants": [
-    {
-     "eventId": "ev_red4_19360907_tongwei",
-     "certainty": "high",
-     "label": "权威史实·军事科学院《长征记》",
-     "title": "红四方面军占领通渭",
-     "summary": "1936年9月7日，红四方面军攻占甘肃通渭城。此前红二、红四方面军已于8月攻占漳县、渭源，红四方面军继而夺取通渭，扫清了通向静宁、会宁的通道。此役为三大主力红军会师前的关键攻占行动。",
-     "sourceIds": [
-      "src_100years_cpc",
-      "src_changzhengji_people"
-     ]
-    },
-    {
-     "eventId": "steam_r4_19360907_d3ee222a",
-     "certainty": "low",
-     "label": "线索待证·游戏文本线索",
-     "title": "红四方面军占领通渭",
-     "summary": "1936年9月7日，红四方面军在甘肃会宁一带占领通渭。",
-     "sourceIds": [
-      "src_steam_longmarch_1934_1936"
-     ]
-    }
-   ],
-   "certaintyKinds": [
-    "high",
-    "low"
-   ]
-  },
-  {
-   "key": "1936-09-14|red_fourth|24",
-   "date": "1936-09-14",
-   "forceId": "red_fourth",
-   "title": "红四方面军占领将台堡",
-   "variants": [
-    {
-     "eventId": "ev_red4_19360914_jiangtaibao",
-     "certainty": "high",
-     "label": "权威史实·军事科学院《长征记》",
-     "title": "红四方面军占领将台堡",
-     "summary": "1936年9月14日，红四方面军先头部队攻占甘肃将台堡，打开了通向静宁、会宁的门户。会宁是三大主力红军会师地之一，红四方面军于10月2日进占会宁县城，10月9日与红一方面军在会宁会师，10月10日在会宁城西静宁会宁广场举行庆祝大会，三大主力红军会师胜利实现。",
-     "sourceIds": [
-      "src_100years_cpc",
-      "src_changzhengji_people"
-     ]
-    },
-    {
-     "eventId": "steam_r4_19360914_37586873",
-     "certainty": "low",
-     "label": "线索待证·游戏文本线索",
-     "title": "红四方面军占领将台堡",
-     "summary": "1936年9月14日，红四方面军在宁夏西吉将台堡一带占领将台堡。",
-     "sourceIds": [
-      "src_steam_longmarch_1934_1936"
-     ]
-    }
-   ],
-   "certaintyKinds": [
-    "high",
-    "low"
-   ]
-  },
-  {
-   "key": "1936-09-30|red_fourth|25",
-   "date": "1936-09-30",
-   "forceId": "red_fourth",
-   "title": "红四方面军占领青江驿、翟家所",
-   "variants": [
-    {
-     "eventId": "ev_red4_19360930_qingjiangyi",
-     "certainty": "high",
-     "label": "权威史实·军事科学院《长征记》",
-     "title": "红四方面军占领青江驿、翟家所",
-     "summary": "1936年9月底，红四方面军继攻占通渭后，占领甘肃通渭县青江驿、陇西县翟家所等地，为挺进静宁、会宁奠定基础。红军沿途发动群众，开展筹粮与群众工作，为三大主力会师提供了后勤与地方基础。",
-     "sourceIds": [
-      "src_100years_cpc",
-      "src_changzhengji_people"
-     ]
-    },
-    {
-     "eventId": "steam_r4_19360930_91576ac3",
-     "certainty": "low",
-     "label": "线索待证·游戏文本线索",
-     "title": "红四方面军占领青江驿、翟家所",
-     "summary": "1936年9月30日，红四方面军在甘肃会宁一带占领青江驿、翟家所。",
-     "sourceIds": [
-      "src_steam_longmarch_1934_1936"
-     ]
-    }
-   ],
-   "certaintyKinds": [
-    "high",
-    "low"
-   ]
-  },
-  {
-   "key": "1936-10-02|red_fourth|26",
-   "date": "1936-10-02",
-   "forceId": "red_fourth",
-   "title": "红四方面军进占会宁县城",
-   "variants": [
-    {
-     "eventId": "ev_red4_19361002_huining",
-     "certainty": "high",
-     "label": "权威史实·军事科学院《长征记》",
-     "title": "红四方面军进占会宁县城",
-     "summary": "1936年10月2日，红四方面军进占甘肃会宁县城。此前红一方面军已于9月23日进占会宁，红十五军团于10月7日攻占静宁县城。红四方面军的进占使会宁成为三大主力红军的汇合点。",
-     "sourceIds": [
-      "src_100years_cpc",
-      "src_changzhengji_people"
-     ]
-    },
-    {
-     "eventId": "steam_r4_19361002_f447cac2",
-     "certainty": "low",
-     "label": "线索待证·游戏文本线索",
-     "title": "红四方面军占领会宁县城",
-     "summary": "1936年10月2日，红四方面军在甘肃会宁一带占领会宁县城。",
-     "sourceIds": [
-      "src_steam_longmarch_1934_1936"
-     ]
-    }
-   ],
-   "certaintyKinds": [
-    "high",
-    "low"
-   ]
-  },
-  {
-   "key": "1936-10-10|red_fourth|27",
-   "date": "1936-10-10",
-   "forceId": "red_fourth",
-   "title": "三大主力红军会师庆祝大会（会宁）",
-   "variants": [
-    {
-     "eventId": "ev_red4_19361010_meeting",
-     "certainty": "high",
-     "label": "权威史实·军事科学院《长征记》",
-     "title": "三大主力红军会师庆祝大会（会宁）",
-     "summary": "1936年10月10日，红一、红二、红四方面军在甘肃会宁县城西的静宁会宁广场举行庆祝大会，宣告三大主力红军胜利会师，标志长征胜利结束。此前红一方面军与红十五军团于10月7日会师于静宁，红二方面军于10月9日会师于会宁。",
-     "sourceIds": [
-      "src_100years_cpc",
-      "src_changzhengji_people"
-     ]
-    },
-    {
-     "eventId": "steam_r4_19361010_86a05ab4",
-     "certainty": "low",
-     "label": "线索待证·游戏文本线索",
-     "title": "红四方面军会师大会",
-     "summary": "1936年10月10日，红四方面军在甘肃会宁一带会师大会。",
-     "sourceIds": [
-      "src_steam_longmarch_1934_1936"
-     ]
-    }
-   ],
-   "certaintyKinds": [
-    "high",
-    "low"
    ]
   }
  ]

@@ -607,7 +607,7 @@
    "accessed": "",
    "sourceType": "game_text",
    "citedDetail": "",
-   "usageCount": "242",
+   "usageCount": "72",
    "note": "仅作线索来源；正式采用前应继续用权威党史资料复核。导入事件已压缩改写为短策展文案。"
   },
   {
@@ -1535,7 +1535,7 @@
    "accessed": "2026-11-23",
    "sourceType": "authoritative",
    "citedDetail": "",
-   "usageCount": "2",
+   "usageCount": "3",
    "note": "红六军团占领新田、渡过湘江"
   },
   {
@@ -1630,7 +1630,7 @@
    "url": "https://wintermelonc.github.io/WintermelonC_Docs/file/history_CPC/CPC_doc2.pdf",
    "accessed": "2026-11-23",
    "sourceType": "book",
-   "citedDetail": "",
+   "citedDetail": "《红星照耀中国》第五篇《长征》",
    "usageCount": "13",
    "note": "斯诺1936年保安亲访毛泽东与红军幸存者的一手见闻；public_narrative层，非权威定论"
   },
@@ -1646,8 +1646,8 @@
    "url": "https://dangshi.people.com.cn/GB/146570/406330/index.html",
    "accessed": "2026-11-23",
    "sourceType": "authoritative",
-   "citedDetail": "",
-   "usageCount": "45",
+   "citedDetail": "《长征记》第二十六章；《长征记》引子；《长征记》第四章；《长征记》第十三章；《长征记》第三章；《长征记》第六章 等23处",
+   "usageCount": "95",
    "note": "军事科学院专家著，权威史著事实层。页面请勿转载，仅提取事实要素注明出处"
   },
   {
@@ -1774,8 +1774,8 @@
    "url": "https://mooc1.chaoxing.com/mooc-ans/ztnodedetailcontroller/visitnodedetail?courseId=223004759&knowledgeId=524772136",
    "accessed": "2026-11-23",
    "sourceType": "book",
-   "citedDetail": "《红军长征记·长征大事记》；第133篇；前言篇；第135篇；第51篇；《长征中卫生教育和医疗工作》 等78处",
-   "usageCount": "166",
+   "citedDetail": "《红军长征记·长征大事记》；第133篇；前言篇；第135篇；第51篇；《长征中卫生教育和医疗工作》 等112处",
+   "usageCount": "203",
    "note": "中共党史上最早的长征集体回忆录，百余位亲历者亲笔，共135篇（100篇文章+10首歌曲+3个统计表）。底本1937/1942年出版，多数单篇作者已逝世逾50年，底本已进入公有领域；现代整理注释本受保护，本项目仅提取事实要素并注明出处，不转载原文。核心篇目含《随军西行见闻录》（陈云，92KB）、《英勇的西征》（陈云）、《雪山草地行军记》（邓发）、《从甘肃到陕西》（邓发）、《长征大事记》（陆定一，逐日编年）、《红军第一军团长征中经过地点及里程一览表》（总行程18088里）。"
   }
  ]

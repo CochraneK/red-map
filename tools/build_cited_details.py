@@ -44,15 +44,15 @@ PATTERNS = [
     # 据《红军长征记·长征大事记》+ 日期
     (re.compile(r'据《红军长征记[·》]?长征大事记[》]?([0-9年月日-]*)'),
      lambda m: '第132篇《长征大事记》' + (f'（{m.group(1).strip()}）' if m.group(1).strip() else '')),
-    # 据人民网《长征记》第13章
-    (re.compile(r'据?人民网《长征记》第?(\d+)章'),
-     lambda m: f'第{m.group(1)}章（人民网《长征记》）'),
+    # 曲爱国、张从田《长征记》第X章 / 引子 / 人民网《长征记》
+    (re.compile(r'《长征记》(第[一二三四五六七八九十百\d]+章|引子|结语)(?:《([^》]+)》)?'),
+     lambda m: f'《长征记》{m.group(1)}' + (f'《{m.group(2)}》' if m.group(2) else '')),
     # 据《中国共产党一百年大事记》
-    (re.compile(r'据《中国共产党一百年大事记》([0-9年月日-]*)'),
-     lambda m: f'《一百年大事记》' + (f'（{m.group(1).strip()}）' if m.group(1).strip() else '')),
-    # 据斯诺《红星照耀中国》
-    (re.compile(r'据?斯诺《红星照耀中国》(?:第五篇(?:《([^》]+)》))?'),
-     lambda m: '第五篇《长征》' + (f'《{m.group(1)}》' if m.group(1) else '')),
+    (re.compile(r'据?《中国共产党一百年大事记》([0-9年月日-]*)'),
+     lambda m: '《中国共产党一百年大事记》' + (f'（{m.group(1).strip()}）' if m.group(1).strip() else '')),
+    # 斯诺《红星照耀中国》
+    (re.compile(r'据?斯诺?《红星照耀中国》(?:(第[一二三四五六七八九十\d]+[篇部章])(?:《([^》]+)》)?)?'),
+     lambda m: '《红星照耀中国》' + ((m.group(1) or '第五篇《长征》') + (f'《{m.group(2)}》' if m.group(2) else ''))),
     # 通用：据《书名》（无回调，单独处理）
 ]
 GENERIC_PAT = re.compile(r'据《([^》]{2,20})》')

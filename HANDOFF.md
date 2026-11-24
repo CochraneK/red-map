@@ -87,4 +87,21 @@ python tools/pipeline.py
 - **Frontend state**: `map.html` defaults to `scopeMode=core` (1934–36) + `evidenceMode=verified` (287 verified core march nodes) and exposes provenance/variants/person-track highlights; `museum.html` paginates catalog (36/page), supports live person search, and turns Viewpoint 7 into a searchable Reference Center with reverse event lookup; `explore.js` 15/15 person IDs and deep links fixed.
 - **Next milestone (P2 in `ROADMAP.md`)**: verify/clean the remaining 210 `low` game-text clues, mine remaining ~90 essays of《红军长征记》to zero out 31 orphan authors, resolve 34 external visual-asset licenses, and build `data_edit/gazetteer.csv`.
 
+## 2026-11-24 update — P2 credit cleanup + source depth closed (v32)
+
+- **P2 全部四项子任务完成并达成硬验收标准**：`low` 210 → **40（7.6%）**，`high+medium` **92.4%**；零关联人物 **31 → 0**；未清债外部图片 **34 → 0**；新增 `data_edit/gazetteer.csv`（**365 个规范地名**，53 条同名消歧注释）。
+- **裁决方法论（可复用）**：
+  - 权威核验只认**逐字命中本地权威全文**——`research_private/ebooks/changzhengji_people/`（曲爱国/张从田《长征记》29 章，人民网党史频道）与 `research_private/ebooks/hongjun_changzhengji/`（1937《红军长征记》135 篇 + 附录《长征大事记》）。
+  - **匹配器必须带数字边界**：`(?<!\d){m}月{day}日` + 年份约束 + 关键词共现，否则 `1月25日` 会误命中 `11月25日`、`1935年6月25日` 会误命中 `1934年6月25日`。这一坑已写进 `research_private/p2_analyze_all.py`。
+  - Steam 抽取的三类系统性格局错误需成批识别：**主语倒置**（敌军会议/敌军反扑误套红军，如「中央红军召开了敌薛岳部师以上将领参加的军事会议」）、**跨部队克隆**（同一天同一事件被同时记到红一/红二/红四方面军）、**地点串台**（如「若尔盖草地」「贵州遵义」硬贴到实际在云南/陕西的事件）。
+  - 处置必须是**可审计四分类**：`UPGRADE_HIGH` / `UPGRADE_MEDIUM` / `DISABLE_DUP` / `DISABLE_BROKEN`，外加诚实保留 `low`；每条禁用都要在 `notes` 写明理由与归并目标，人物关联要么重映射要么禁用，**不允许悬空**。
+- **新增工具**：
+  - `tools/build_gazetteer.py` → `data_edit/gazetteer.csv`（`pipeline.py` 第 2 步自动重建）。
+  - `tools/archive/p2_adjudicate_low_events.py`、`p2_second_pass_low_cleanup.py`、`p2_harvest_hongjun_and_link_authors.py`、`p2_resolve_visual_licenses.py`（均幂等，可重放审计）。
+  - `tools/build_cited_details.py` 新增《长征记》章目与《红星照耀中国》篇次识别模式 → `src_changzhengji_people` 的 `citedDetail` 从空变为 23 处章目定位。
+- **门禁升级**：`check_project.py` 的视觉资产版权检查由 WARN 改为**硬失败**（未清债即阻断）；新增 `check_gazetteer_integrity`（≥100 条规范地名且坐标合法）。
+- **验收方式**：`python tools/pipeline.py`（五步全绿）+ Edge 无头浏览器冒烟测试（`research_private/p2_smoke_test.py`：6 页 + 4 条深链 0 运行时错误，含 `window.marchMap` 双模式切换往返断言）。注意离线冒烟测试需为 Leaflet 提供 stub（`L.control.zoom` / `L.Symbol.arrowHead` / `L.point` 是三个必填桩）。
+- **下一步（P3）**：OCR 批处理管线补全陕北地方志；敌军节点与烈士陵园坐标精校；`gazetteer.csv` 接入前端地名检索与同名异地说提示；剩余 40 条 `low`（多为 1933–1935 陕甘根据地建设史与红七军团闽赣转战）定点核实。
+
+
 Do not rely on chat history as project state; update Git before handing off.
